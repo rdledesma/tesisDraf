@@ -1,0 +1,699 @@
+\begin{thebibliography}{79}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abal et~al.(2020)Abal, Alonso-Suárez, and Laguarda]{abal2020}
+Gonzalo Abal, Rodrigo Alonso-Suárez, and Agustín Laguarda.
+\newblock \emph{Radiación Solar: Notas del curso Fundamentos del Recurso
+  Solar}.
+\newblock Laboratorio de Energía Solar, Uruguay, versión 4.0 edition, junio
+  2020.
+\newblock URL \url{http://les.edu.uy/}.
+
+\bibitem[{Alonso Suárez} et~al.(2012){Alonso Suárez}, Abal, Siri, and
+  Musé]{ALONSOSUAREZ2012}
+R.~{Alonso Suárez}, G.~Abal, R.~Siri, and P.~Musé.
+\newblock Brightness-dependent tarpley model for global solar radiation
+  estimation using goes satellite images: Application to uruguay.
+\newblock \emph{Solar Energy}, 86\penalty0 (11):\penalty0 3205--3215, 2012.
+\newblock ISSN 0038-092X.
+\newblock \doi{https://doi.org/10.1016/j.solener.2012.08.012}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0038092X12003040}.
+
+\bibitem[Aristegui and Righini(2012)]{aristegui2012}
+R.~Aristegui and R.~Righini.
+\newblock Discusión sobre el proceso de selección de sitios apropiados para
+  la ubicación de estaciones de una futura red solarimétrica nacional.
+\newblock \emph{GERSolar-INEDES, Departamento de Ciencias Básicas, Universidad
+  Nacional de Luján}, 2012.
+\newblock Recibido: 31/07/12; Aceptado: 02/10/12, Tel. 02323-440241, e-mail:
+  gersolar@yahoo.com.ar.
+
+\bibitem[Babar et~al.(2020)Babar, Luppino, Boström, and Anfinsen]{BABAR2020}
+Bilal Babar, Luigi~Tommaso Luppino, Tobias Boström, and Stian~Normann
+  Anfinsen.
+\newblock Random forest regression for improved mapping of solar irradiance at
+  high latitudes.
+\newblock \emph{Solar Energy}, 198:\penalty0 81--92, 2020.
+\newblock ISSN 0038-092X.
+\newblock \doi{https://doi.org/10.1016/j.solener.2020.01.034}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0038092X20300426}.
+
+\bibitem[Belmonte et~al.(2006)Belmonte, Núñez, Franco, and
+  Viramonte]{Belmonte2006}
+Silvina Belmonte, Virgilio Núñez, Judith Franco, and José Viramonte.
+\newblock Mapas de radiación solar para el valle de lerma (salta –
+  argentina).
+\newblock \emph{Avances en Energías Renovables y Medio Ambiente}, 10:\penalty0
+  1149--1156, 2006.
+\newblock ISSN 0329-5184.
+
+\bibitem[Breiman et~al.(1984)Breiman, Friedman, Stone, and Olshen]{breiman1984}
+L.~Breiman, J.~Friedman, C.J. Stone, and R.A. Olshen.
+\newblock \emph{Classification and Regression Trees}.
+\newblock Taylor \& Francis, 1984.
+\newblock ISBN 9780412048418.
+\newblock URL \url{https://books.google.com.ar/books?id=JwQx-WOmSyQC}.
+
+\bibitem[Che et~al.(2024{\natexlab{a}})Che, Li, and Huang]{Che2024b}
+Chang Che, Chen Li, and Zengyi Huang.
+\newblock The integration of generative artificial intelligence and computer
+  vision in industrial robotic arms.
+\newblock \emph{International Journal of Computer Science and Information
+  Technology}, 2\penalty0 (3):\penalty0 1–9, May 2024{\natexlab{a}}.
+\newblock \doi{10.62051/ijcsit.v2n3.01}.
+\newblock URL \url{https://wepub.org/index.php/IJCSIT/article/view/1820}.
+
+\bibitem[Che et~al.(2024{\natexlab{b}})Che, Lin, Zhao, Huang, and Yu]{che2024a}
+Chang Che, Qunwei Lin, Xinyu Zhao, Jiaxin Huang, and Liqiang Yu.
+\newblock Enhancing multimodal understanding with clip-based image-to-text
+  transformation, 2024{\natexlab{b}}.
+\newblock URL \url{https://arxiv.org/abs/2401.06167}.
+
+\bibitem[Chen and Guestrin(2016{\natexlab{a}})]{Chen2016}
+Tianqi Chen and Carlos Guestrin.
+\newblock Xgboost: A scalable tree boosting system.
+\newblock In \emph{Proceedings of the 22nd ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '16, page 785–794, New York,
+  NY, USA, 2016{\natexlab{a}}. Association for Computing Machinery.
+\newblock ISBN 9781450342322.
+\newblock \doi{10.1145/2939672.2939785}.
+\newblock URL \url{https://doi.org/10.1145/2939672.2939785}.
+
+\bibitem[Chen and Guestrin(2016{\natexlab{b}})]{chen2016xgboost}
+Tianqi Chen and Carlos Guestrin.
+\newblock Xgboost: A scalable tree boosting system.
+\newblock In \emph{Proceedings of the 22nd ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, pages 785--794, 2016{\natexlab{b}}.
+\newblock \doi{10.1145/2939672.2939785}.
+
+\bibitem[Cheng(2024)]{Cheng2024}
+Xueyi Cheng.
+\newblock A comprehensive study of feature selection techniques in machine
+  learning models.
+\newblock \emph{Insights in Computer, Signals and Systems}, 1:\penalty0 65--78,
+  11 2024.
+\newblock \doi{10.70088/xpf2b276}.
+
+\bibitem[Claveria et~al.(2015)Claveria, Monte, and Torra]{Claveria2015}
+Oscar Claveria, Enric Monte, and Salvador Torra.
+\newblock Effects of removing the trend and the seasonal component on the
+  forecasting performance of artificial neural network techniques.
+\newblock IREA Working Papers 201503, University of Barcelona, Research
+  Institute of Applied Economics, January 2015.
+\newblock URL \url{https://ideas.repec.org/p/ira/wpaper/201503.html}.
+
+\bibitem[Cutler et~al.(2011)Cutler, Cutler, and Stevens]{cutler2011}
+Adele Cutler, D.~Richard Cutler, and John~R. Stevens.
+\newblock Random forests.
+\newblock In \emph{Machine Learning}, pages 157--175. Springer, 2011.
+
+\bibitem[Developers(2018)]{xgboostdoc}
+XGBoost Developers.
+\newblock \emph{XGBoost Documentation, Release 0.80}, 2018.
+\newblock URL \url{https://xgboost.readthedocs.io/en/release_0.80/}.
+
+\bibitem[Duffie and Beckman(2013)]{duffie2013}
+John~A. Duffie and William~A. Beckman.
+\newblock \emph{Solar Engineering of Thermal Processes}.
+\newblock Wiley, Hoboken, NJ, 4th edition, 2013.
+
+\bibitem[Ellis et~al.(1978)Ellis, Haar, Levitus, and Oort]{Ellis1978}
+J.~S. Ellis, T.~H.~Vonder Haar, S.~Levitus, and A.~H. Oort.
+\newblock The annual variation in the global heat balance of the earth.
+\newblock \emph{Journal of Geophysical Research: Oceans}, 83\penalty0
+  (C4):\penalty0 1958--1962, 1978.
+\newblock \doi{https://doi.org/10.1029/JC083iC04p01958}.
+\newblock URL
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JC083iC04p01958}.
+
+\bibitem[Espinosa-Zúñiga(2020)]{espinoza2020aplicacion}
+Javier~Jesús Espinosa-Zúñiga.
+\newblock Aplicación de algoritmos random forest y xgboost en una base de
+  solicitudes de tarjetas de crédito.
+\newblock \emph{Ingeniería Investigación y Tecnología}, 21\penalty0
+  (3):\penalty0 1--16, 2020.
+\newblock \doi{10.22201/fi.25940732e.2020.21.3.022}.
+
+\bibitem[Fernández-Peruchena et~al.(2020)Fernández-Peruchena, Polo, Martín,
+  and Mazorra]{Fernández2020}
+Carlos~M. Fernández-Peruchena, Jesús Polo, Luis Martín, and Luis Mazorra.
+\newblock Site-adaptation of modeled solar radiation data: The siteadapt
+  procedure.
+\newblock \emph{Remote Sensing}, 12\penalty0 (13), 2020.
+\newblock ISSN 2072-4292.
+\newblock \doi{10.3390/rs12132127}.
+\newblock URL \url{https://www.mdpi.com/2072-4292/12/13/2127}.
+
+\bibitem[Fritz et~al.(1964)Fritz, Rao, and Weinstein]{Fritz1964}
+S.~Fritz, P.~Krishna Rao, and M.~Weinstein.
+\newblock Satellite measurements of reflected solar energy and the energy
+  received at the ground.
+\newblock \emph{Journal of Atmospheric Sciences}, 21\penalty0 (2):\penalty0 141
+  -- 151, 1964.
+\newblock \doi{10.1175/1520-0469(1964)021<0141:SMORSE>2.0.CO;2}.
+\newblock URL
+  \url{https://journals.ametsoc.org/view/journals/atsc/21/2/1520-0469_1964_021_0141_smorse_2_0_co_2.xml}.
+
+\bibitem[Gautier et~al.(1980)Gautier, Diak, and Masse]{Gautier1980}
+Catherine Gautier, Georges Diak, and Serge Masse.
+\newblock A simple physical model to estimate incident solar radiation at the
+  surface from goes satellite data.
+\newblock \emph{Journal of Applied Meteorology and Climatology}, 19\penalty0
+  (8):\penalty0 1005 -- 1012, 1980.
+\newblock \doi{10.1175/1520-0450(1980)019<1005:ASPMTE>2.0.CO;2}.
+\newblock URL
+  \url{https://journals.ametsoc.org/view/journals/apme/19/8/1520-0450_1980_019_1005_aspmte_2_0_co_2.xml}.
+
+\bibitem[Goodfellow et~al.(2016)Goodfellow, Bengio, and
+  Courville]{Goodfellow2016}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock \emph{Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock URL \url{http://www.deeplearningbook.org}.
+\newblock Book in preparation for MIT Press.
+
+\bibitem[Grossi~Gallegos(1998{\natexlab{a}})]{GrossiGallegos1998A}
+Hugo Grossi~Gallegos.
+\newblock Distribucion de la radiacion solar global en argentina. i. analisis
+  de la informacion.
+\newblock \emph{Energías Renovables y Medio Ambiente}, 4:\penalty0 13--17, 01
+  1998{\natexlab{a}}.
+
+\bibitem[Grossi~Gallegos(1998{\natexlab{b}})]{GrossiGallegos1998B}
+Hugo Grossi~Gallegos.
+\newblock Distribución de la radiación solar global en la república
+  argentina. ii. cartas de radiación.
+\newblock \emph{Energías Renovables y Medio Ambiente}, 5:\penalty0 33--42, 01
+  1998{\natexlab{b}}.
+
+\bibitem[Grossi~Gallegos and Righini(2007)]{GrossiRighini2007}
+Hugo Grossi~Gallegos and R.~Righini.
+\newblock \emph{Atlas de Energía Solar de la República Argentina}.
+\newblock 05 2007.
+\newblock ISBN 978-987-9285-36-7.
+
+\bibitem[Grossi~Gallegos et~al.(1999)Grossi~Gallegos, Roberti, and
+  Renzini]{GrossiGallegos1999}
+Hugo Grossi~Gallegos, Alejandro Roberti, and Graciela Renzini.
+\newblock Evaluacion de las bases de datos de radiacion global disponibles en
+  la republica argentina.
+\newblock \emph{Avances en Energías Renovables y Medio Ambiente}, 3:\penalty0
+  11.13--11.17, 10 1999.
+
+\bibitem[Gueymard(2003)]{Gueymard2003}
+Chris Gueymard.
+\newblock Direct solar transmittance and irradiance predictions with broadband
+  models. part i: Detailed theoretical performance assessment.
+\newblock \emph{Solar Energy}, 74:\penalty0 355--379, 05 2003.
+\newblock \doi{10.1016/S0038-092X(03)00195-6}.
+
+\bibitem[Hanson(1976)]{Hanson1976}
+Kirby~J. Hanson.
+\newblock A new estimate of solar irradiance at the earth's surface on zonal
+  and global scales.
+\newblock \emph{Journal of Geophysical Research (1896-1977)}, 81\penalty0
+  (24):\penalty0 4435--4443, 1976.
+\newblock \doi{https://doi.org/10.1029/JC081i024p04435}.
+\newblock URL
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JC081i024p04435}.
+
+\bibitem[Hay(1993)]{Hay1993}
+John~E. Hay.
+\newblock Satellite based estimates of solar irradiance at the earth's
+  surface—i. modelling approaches.
+\newblock \emph{Renewable Energy}, 3\penalty0 (4):\penalty0 381--393, 1993.
+\newblock ISSN 0960-1481.
+\newblock \doi{https://doi.org/10.1016/0960-1481(93)90105-P}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/096014819390105P}.
+\newblock Solar radiation, environment and climate change.
+
+\bibitem[Hernández(2003)]{Hernandez2003}
+Alejandro Hernández.
+\newblock Geosol: Una herramienta computacional para el cÁlculo de coordenadas
+  solares y la estimaciÓn de irradiaciÓn solar horaria.
+\newblock \emph{Avances en Energías Renovables y Medio Ambiente}, 7:\penalty0
+  19 -- 24, 10 2003.
+
+\bibitem[Hongn et~al.(2018)Hongn, Lozano, and Salazar]{Hongn2018}
+M.~Hongn, R.~Lozano, and G.~Salazar.
+\newblock Simulación del funcionamiento de una planta solar térmica de gran
+  escala situada en la localidad de san carlos, salta.
+\newblock \emph{Avances en Energías Renovables y Medio Ambiente}, 22:\penalty0
+  02.119--02.129, 2018.
+
+\bibitem[Huang et~al.(2024)Huang, Zheng, Li, and Che]{Huang2024}
+Zengyi Huang, Haotian Zheng, Chen Li, and Chang Che.
+\newblock Application of machine learning-based k-means clustering for
+  financial fraud detection.
+\newblock \emph{Academic Journal of Science and Technology}, 10\penalty0
+  (1):\penalty0 33–39, Mar. 2024.
+\newblock \doi{10.54097/74414c90}.
+\newblock URL \url{https://drpress.org/ojs/index.php/ajst/article/view/19142}.
+
+\bibitem[(IEA-PVPS)(2023)]{ieapvps2023}
+International Energy Agency Photovoltaic Power Systems~Programme (IEA-PVPS).
+\newblock Worldwide benchmark of modelled solar radiation data.
+\newblock Technical report, IEA PVPS Task 16, Paris, France, 2023.
+
+\bibitem[Laguarda(2025)]{Laguarda2021}
+A.~Laguarda.
+\newblock \emph{Modelado de la irradiancia solar sobre la superficie terrestre:
+  Modelos físicos e híbridos utilizando información satelital sobre la Pampa
+  Húmeda}.
+\newblock Tesis de doctorado, Universidad de la República, Uruguay, 2025.
+
+\bibitem[Laguarda et~al.(2022)Laguarda, Iturbide, Orsi, Denegri, Luza, Burgos,
+  Stern, and Alonso-Suárez]{Laguarda2022}
+A.~Laguarda, P.~Iturbide, X.~Orsi, M.~J. Denegri, S.~Luza, B.~L. Burgos,
+  V.~Stern, and R.~Alonso-Suárez.
+\newblock Validación de modelos satelitales heliosat-4 y cim-esra para la
+  estimación de irradiancia solar en la pampa húmeda.
+\newblock \emph{Energías Renovables y Medio Ambiente}, 48:\penalty0 1–9, may
+  2022.
+\newblock URL
+  \url{https://portalderevistas.unsa.edu.ar/index.php/erma/article/view/2877}.
+
+\bibitem[Laspiur et~al.(2013)Laspiur, Salazar, Zerpa, and Watkins]{Laspiur2013}
+R.~Laspiur, G.~A. Salazar, J.~Zerpa, and M.~Watkins.
+\newblock Trazado de mapas medios anuales de energía solar global, directa,
+  difusa y tilt, usando la base de datos de swera. caso de estudio: Provincias
+  de salta y jujuy.
+\newblock \emph{Avances en Energías Renovables y Medio Ambiente}, 17:\penalty0
+  08.47--08.52, 2013.
+
+\bibitem[Ledesma et~al.(2023)Ledesma, Salazar, and Vilela]{Ledesma2023}
+R.~Ledesma, G.~Salazar, and O.~Vilela.
+\newblock Avances en la estimación de irradiancia solar en las provincias de
+  salta y jujuy mediante imágenes satelitales goes-16, 2023.
+\newblock Manuscrito no publicado.
+
+\bibitem[Ledesma et~al.(2025)Ledesma, Alonso-Suárez, Salazar, Nollas, and
+  Vilela]{Ledesma2025}
+Rubén Ledesma, Rodrigo Alonso-Suárez, Germán Salazar, Fernando Nollas, and
+  Olga Vilela.
+\newblock Evaluation of satellite and reanalysis models for solar irradiance
+  estimation in northwest argentina.
+\newblock \emph{IEEE Latin America Transactions}, 23\penalty0 (8):\penalty0
+  706--717, 2025.
+\newblock \doi{10.1109/TLA.2025.11072498}.
+
+\bibitem[Liu et~al.(2023)Liu, Yu, Che, Lin, Hu, and Zhao]{liu2023}
+Bo~Liu, Liqiang Yu, Chang Che, Qunwei Lin, Hao Hu, and Xinyu Zhao.
+\newblock Integration and performance analysis of artificial intelligence and
+  computer vision based on deep learning algorithms, 2023.
+\newblock URL \url{https://arxiv.org/abs/2312.12872}.
+
+\bibitem[Liu et~al.(2024)Liu, Wang, Zhan, Zheng, and Che]{liu2024}
+Houze Liu, Chongqing Wang, Xiaoan Zhan, Haotian Zheng, and Chang Che.
+\newblock Enhancing 3d object detection by using neural network with
+  self-adaptive thresholding, 2024.
+\newblock URL \url{https://arxiv.org/abs/2405.07479}.
+
+\bibitem[Louppe(2015)]{louppe2015}
+Gilles Louppe.
+\newblock \emph{Understanding Random Forests from theory to practice}.
+\newblock PhD thesis, Universit\'e de Li\`ege, 2015.
+
+\bibitem[Narvaez et~al.(2021)Narvaez, Giraldo, Bressan, and
+  Pantoja]{NARVAEZ2021}
+Gabriel Narvaez, Luis~Felipe Giraldo, Michael Bressan, and Andres Pantoja.
+\newblock Machine learning for site-adaptation and solar radiation forecasting.
+\newblock \emph{Renewable Energy}, 167:\penalty0 333--342, 2021.
+\newblock ISSN 0960-1481.
+\newblock \doi{https://doi.org/10.1016/j.renene.2020.11.089}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0960148120318395}.
+
+\bibitem[Nollas et~al.(2023)Nollas, Salazar, and Gueymard]{Nollas2023}
+Fernando~M. Nollas, German~A. Salazar, and Christian~A. Gueymard.
+\newblock Quality control procedure for 1-minute pyranometric measurements of
+  global and shadowband-based diffuse solar irradiance.
+\newblock \emph{Renewable Energy}, 202:\penalty0 40--55, 2023.
+\newblock ISSN 0960-1481.
+\newblock \doi{https://doi.org/10.1016/j.renene.2022.11.056}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0960148122016962}.
+
+\bibitem[Olivas et~al.(2022)Olivas, Belenguer, Vidal, Estalr1ich, Camisón, and
+  Tomás]{Olivas2022}
+Emilio~Salia Olivas, Pablo~Rodríguez Belenguer, Quique~García Vidal,
+  Fran~Vaquer Estalr1ich, Juan~Vicent Camisón, and Jorge~Vila Tomás.
+\newblock \emph{Inteligencia artificial: Casos pr{\'a}cticos con aprendizaje
+  profundo}.
+\newblock Ediciones de la U, 2022.
+\newblock ISBN 9789587924411.
+\newblock URL \url{https://books.google.com.ar/books?id=XHugEAAAQBAJ}.
+
+\bibitem[Pedregosa et~al.(2012)Pedregosa, Varoquaux, Gramfort, Michel, Thirion,
+  Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos,
+  Cournapeau, Brucher, Perrot, Duchesnay, and Louppe]{Pedregosa2012}
+Fabian Pedregosa, Gael Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand
+  Thirion, Olivier Grisel, Mathieu Blondel, Peter Prettenhofer, Ron Weiss,
+  Vincent Dubourg, Jake Vanderplas, Alexandre Passos, David Cournapeau,
+  Matthieu Brucher, Matthieu Perrot, Edouard Duchesnay, and Gilles Louppe.
+\newblock Scikit-learn: Machine learning in python.
+\newblock \emph{Journal of Machine Learning Research}, 12, 01 2012.
+
+\bibitem[Peel et~al.(2007)Peel, Finlayson, and McMahon]{peel2007}
+M.~C. Peel, B.~L. Finlayson, and T.~A. McMahon.
+\newblock Updated world map of the köppen-geiger climate classification.
+\newblock \emph{Hydrology and Earth System Sciences}, 11\penalty0 (5):\penalty0
+  1633--1644, 2007.
+\newblock \doi{10.5194/hess-11-1633-2007}.
+\newblock URL \url{https://hess.copernicus.org/articles/11/1633/2007/}.
+
+\bibitem[Perez et~al.(2002)Perez, Ineichen, Moore, Kmiecik, Chain, George, and
+  Vignola]{Perez2002}
+Richard Perez, Pierre Ineichen, Kathy Moore, Marek Kmiecik, Cyril Chain, Ray
+  George, and Frank Vignola.
+\newblock A new operational model for satellite-derived irradiances:
+  description and validation.
+\newblock \emph{Solar Energy}, 73\penalty0 (5):\penalty0 307--317, 2002.
+\newblock ISSN 0038-092X.
+\newblock \doi{https://doi.org/10.1016/S0038-092X(02)00122-6}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0038092X02001226}.
+
+\bibitem[Polo et~al.(2016)Polo, Wilbert, Ruiz-Arias, Meyer, Gueymard, Súri,
+  Martín, Mieslinger, Blanc, Grant, Boland, Ineichen, Remund, Escobar,
+  Troccoli, Sengupta, Nielsen, Renne, Geuder, and Cebecauer]{POLO2016}
+J.~Polo, S.~Wilbert, J.A. Ruiz-Arias, R.~Meyer, C.~Gueymard, M.~Súri,
+  L.~Martín, T.~Mieslinger, P.~Blanc, I.~Grant, J.~Boland, P.~Ineichen,
+  J.~Remund, R.~Escobar, A.~Troccoli, M.~Sengupta, K.P. Nielsen, D.~Renne,
+  N.~Geuder, and T.~Cebecauer.
+\newblock Preliminary survey on site-adaptation techniques for
+  satellite-derived and reanalysis solar radiation datasets.
+\newblock \emph{Solar Energy}, 132:\penalty0 25--37, 2016.
+\newblock ISSN 0038-092X.
+\newblock \doi{https://doi.org/10.1016/j.solener.2016.03.001}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0038092X16001754}.
+
+\bibitem[Polo et~al.(2020)Polo, Fernández-Peruchena, Salamalikis,
+  Mazorra-Aguiar, Turpin, Martín-Pomares, Kazantzidis, Blanc, and
+  Remund]{POLO2020}
+Jesus Polo, Carlos Fernández-Peruchena, Vasileios Salamalikis, Luis
+  Mazorra-Aguiar, Mathieu Turpin, Luis Martín-Pomares, Andreas Kazantzidis,
+  Philippe Blanc, and Jan Remund.
+\newblock Benchmarking on improvement and site-adaptation techniques for
+  modeled solar radiation datasets.
+\newblock \emph{Solar Energy}, 201:\penalty0 469--479, 2020.
+\newblock ISSN 0038-092X.
+\newblock \doi{https://doi.org/10.1016/j.solener.2020.03.040}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0038092X20302784}.
+
+\bibitem[Potter et~al.(2008)Potter, Lew, McCaa, Cheng, Eichelberger, and
+  Grimit]{Potter}
+Cameron~W. Potter, Debra Lew, Jim McCaa, Sam Cheng, Scott Eichelberger, and
+  Eric Grimit.
+\newblock Creating the dataset for the western wind and solar integration study
+  (u.s.a.).
+\newblock \emph{Wind Engineering}, 32\penalty0 (4):\penalty0 325--338, 2008.
+\newblock \doi{10.1260/0309-524X.32.4.325}.
+\newblock URL \url{https://doi.org/10.1260/0309-524X.32.4.325}.
+
+\bibitem[Qu et~al.(2017)Qu, Oumbe, Blanc, Espinar, Gesell, Gschwind,
+  Kl{\"u}ser, Lef{\`e}vre, Saboret, Schroedter-Homscheidt, and Wald]{qu2017}
+Zhipeng Qu, Armel Oumbe, Philippe Blanc, Bella Espinar, Gerhard Gesell,
+  Beno{\^i}t Gschwind, Lars Kl{\"u}ser, Mireille Lef{\`e}vre, Laurent Saboret,
+  Marion Schroedter-Homscheidt, and Lucien Wald.
+\newblock Fast radiative transfer parameterisation for assessing the surface
+  solar irradiance: The heliosat?4 method.
+\newblock \emph{Meteorologische Zeitschrift}, 26\penalty0 (1):\penalty0 33--57,
+  02 2017.
+\newblock \doi{10.1127/metz/2016/0781}.
+\newblock URL \url{http://dx.doi.org/10.1127/metz/2016/0781}.
+
+\bibitem[Ramchoun et~al.(2016)Ramchoun, Ghanou, Amine, Idrissi, and
+  Tairi]{ghanou2016mlp}
+Hassan Ramchoun, Youssef Ghanou, Mohammed Amine, Mohammed A.~Janati Idrissi,
+  and Hamid Tairi.
+\newblock Multilayer perceptron: Architecture optimization and training.
+\newblock \emph{International Journal of Interactive Multimedia and Artificial
+  Intelligence}, 4\penalty0 (1):\penalty0 26--30, 2016.
+\newblock \doi{10.9781/ijimai.2016.415}.
+
+\bibitem[Romano~Armada et~al.(2017)Romano~Armada, Suligoy, Fernández, and
+  Salazar]{RomanoArmada2017}
+Martín Romano~Armada, Hugo~César Suligoy, Carlos Fernández, and
+  Germán~Ariel Salazar.
+\newblock Aplicación de protocolos de control de calidad de datos de
+  radiación solar medidos en salta (argentina).
+\newblock \emph{Avances en Energías Renovables y Medio Ambiente}, 21:\penalty0
+  61--66, 2017.
+\newblock ISSN 2314-1433, 2796-8111.
+\newblock URL
+  \url{http://portalderevistas.unsa.edu.ar/index.php/averma/article/view/1292}.
+\newblock Peer-reviewed.
+
+\bibitem[Salamalikis et~al.(2022)Salamalikis, Tzoumanikas, Argiriou, and
+  Kazantzidis]{SALAMALIKIS2022}
+Vasileios Salamalikis, Panayiotis Tzoumanikas, Athanassios~A. Argiriou, and
+  Andreas Kazantzidis.
+\newblock Site adaptation of global horizontal irradiance from the copernicus
+  atmospheric monitoring service for radiation using supervised machine
+  learning techniques.
+\newblock \emph{Renewable Energy}, 195:\penalty0 92--106, 2022.
+\newblock ISSN 0960-1481.
+\newblock \doi{https://doi.org/10.1016/j.renene.2022.06.043}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0960148122008758}.
+
+\bibitem[Salazar and Raichijk(2014)]{Salazar2014}
+G.~Salazar and C.~Raichijk.
+\newblock Evaluation of clear-sky conditions in high altitude sites.
+\newblock \emph{Renewable Energy}, 64:\penalty0 197--202, 2014.
+\newblock \doi{10.1016/j.renene.2013.11.003}.
+\newblock URL \url{https://doi.org/10.1016/j.renene.2013.11.003}.
+
+\bibitem[Salazar(2010)]{Salazar2010b}
+Germ{\'a}n~A. Salazar.
+\newblock Aplicaci{\'o}n del modelo h{\'i}brido de yang a datos clim{\'a}ticos
+  medios mensuales de 10 localidades de argentina.
+\newblock \emph{Energ{\'i}as Renovables y Medio Ambiente}, 25:\penalty0 15--21,
+  2010.
+\newblock ISSN 0328-932X.
+
+\bibitem[Salazar et~al.(2007)Salazar, Hern{\'a}ndez, Saravia, and
+  Romero]{Salazar2007}
+Germ{\'a}n~A. Salazar, Alejandro~L. Hern{\'a}ndez, Luis~R. Saravia, and
+  Guillermo~G. Romero.
+\newblock Determinaci{\'o}n de los coeficientes de la relaci{\'o}n de
+  {\aa}ngstr{\"o}m–prescott para la ciudad de salta (argentina) a partir de
+  datos tomados durante un a{\~n}o.
+\newblock \emph{Avances en Energ{\'i}as Renovables y Medio Ambiente},
+  11:\penalty0 --, 2007.
+\newblock ISSN 0329-5184.
+
+\bibitem[Salazar et~al.(2008{\natexlab{a}})Salazar, Hern{\'a}ndez, Cadena,
+  Saravia, and Romero]{Salazar2008a}
+Germ{\'a}n~A. Salazar, Alejandro~L. Hern{\'a}ndez, Carlos Cadena, Luis~R.
+  Saravia, and Guillermo~G. Romero.
+\newblock Caracterizaci{\'o}n de valores de radiaci{\'o}n solar global para
+  d{\'i}a claro en sitios de altura en el noroeste de la rep{\'u}blica
+  argentina.
+\newblock \emph{Avances en Energ{\'i}as Renovables y Medio Ambiente},
+  12:\penalty0 11.33--11.42, 2008{\natexlab{a}}.
+\newblock ISSN 0329-5184.
+
+\bibitem[Salazar et~al.(2008{\natexlab{b}})Salazar, Hern{\'a}ndez, and
+  Saravia]{Salazar2008b}
+Germ{\'a}n~A. Salazar, Alejandro~L. Hern{\'a}ndez, and Luis~R. Saravia.
+\newblock Estudio de la radiaci{\'o}n solar difusa en la b{\'o}veda celeste,
+  utilizando kriging como m{\'e}todo estimador.
+\newblock In \emph{II Congresso Brasileiro de Energia Solar e III
+  Confer{\^e}ncia Regional Latino-Americana da ISES}, Florian{\'o}polis,
+  Brasil, 2008{\natexlab{b}}.
+
+\bibitem[Salazar et~al.(2010)Salazar, Hern{\'a}ndez, and Saravia]{Salazar2010a}
+Germ{\'a}n~A. Salazar, Alejandro~L. Hern{\'a}ndez, and Luis~R. Saravia.
+\newblock Practical models to estimate horizontal irradiance in clear sky
+  conditions: Preliminary results.
+\newblock \emph{Renewable Energy}, 2010.
+\newblock \doi{10.1016/j.renene.2010.01.033}.
+
+\bibitem[Salazar et~al.(2013)Salazar, Hernández, Echazú, Saravia, and
+  Romero]{Salazar2013}
+Germán Salazar, Alejandro Hernández, Ricardo Echazú, Luis Saravia, and
+  Graciela Romero.
+\newblock Comparison between measured mean monthly solar insolation data and
+  estimates from swera database for salta city (northwestern argentina).
+\newblock \emph{Electronic Journal of Energy and Environment}, 3:\penalty0 1,
+  11 2013.
+\newblock \doi{10.7770/ejee-V0N0-art531}.
+
+\bibitem[Salman et~al.(2024)Salman, Kalakech, and Steiti]{salman2024}
+Hasan~Ahmed Salman, Ali Kalakech, and Amani Steiti.
+\newblock Random forest algorithm overview.
+\newblock \emph{Babylonian Journal of Machine Learning}, 2024:\penalty0 69--79,
+  2024.
+\newblock \doi{10.58496/BJML/2024/007}.
+
+\bibitem[Samuel(1959)]{samuel1959}
+A.~L. Samuel.
+\newblock Some studies in machine learning using the game of checkers.
+\newblock \emph{IBM Journal of Research and Development}, 3\penalty0
+  (3):\penalty0 210--229, 1959.
+\newblock \doi{10.1147/rd.33.0210}.
+
+\bibitem[Sarmiento~Barbieri et~al.(2019)Sarmiento~Barbieri, Belmonte,
+  Dellicompagni, Franco, Escalante, and et~al.]{SarmientoBarbieri2019}
+Nilsa~Maria Sarmiento~Barbieri, Silvina Belmonte, Pablo~Roberto Dellicompagni,
+  Ada~Judith Franco, Karina~Natalia Escalante, and et~al.
+\newblock A solar irradiation gis as decision support tool for the province of
+  salta, argentina.
+\newblock \emph{Renewable Energy}, 132:\penalty0 68--80, March 2019.
+
+\bibitem[Soria~Olivas et~al.(2022)Soria~Olivas, Rodríguez~Belenguer,
+  García~Vidal, Vaquer~Estalrich, Camisón, and Vila~Tomás]{Soria2022}
+Emilio Soria~Olivas, Pablo Rodríguez~Belenguer, Quique García~Vidal, Fran
+  Vaquer~Estalrich, Juan~Vicent Camisón, and Jorge Vila~Tomás.
+\newblock \emph{Inteligencia artificial: Casos prácticos con aprendizaje
+  profundo}.
+\newblock Ediciones de la U, Bogotá, Colombia, 1 edition, 2022.
+\newblock ISBN 978-958-792-440-4.
+
+\bibitem[Suárez et~al.(2021)Suárez, Castillo, Salazar, Acosta, Cadena, Marin,
+  Utrillas, and Martínez]{Suazarez2014}
+H.~Suárez, J.~Castillo, G.~Salazar, D.~Acosta, C.~Cadena, M.~J. Marin,
+  P.~Utrillas, and L.~J.~A. Martínez.
+\newblock Variabilidad diaria y anual de radiación solar eritémica en tres
+  regiones de la provincia de salta.
+\newblock \emph{Avances en Energías Renovables y Medio Ambiente - AVERMA},
+  18:\penalty0 53–61, oct. 2021.
+\newblock URL
+  \url{https://portalderevistas.unsa.edu.ar/index.php/averma/article/view/2015}.
+
+\bibitem[Tarpley(1979)]{Tarpley1979}
+J.~D. Tarpley.
+\newblock Estimating incident solar radiation at the surface from geostationary
+  satellite data.
+\newblock \emph{Journal of Applied Meteorology and Climatology}, 18\penalty0
+  (9):\penalty0 1172 -- 1181, 1979.
+\newblock \doi{10.1175/1520-0450(1979)018<1172:EISRAT>2.0.CO;2}.
+\newblock URL
+  \url{https://journals.ametsoc.org/view/journals/apme/18/9/1520-0450_1979_018_1172_eisrat_2_0_co_2.xml}.
+
+\bibitem[Thejll and Gleisner(2015)]{Thejll2015}
+Peter Thejll and Hans Gleisner.
+\newblock \emph{Reanalysis data}.
+\newblock 03 2015.
+\newblock ISBN 2759817334.
+
+\bibitem[Theobald(2024)]{Theobald2024}
+O.~Theobald.
+\newblock \emph{Machine Learning for Absolute Beginners: A Plain English
+  Introduction (Third Edition)}.
+\newblock Repro India Limited, 2024.
+\newblock ISBN 9789362056863.
+\newblock URL \url{https://books.google.com.ar/books?id=wUmv0AEACAAJ}.
+
+\bibitem[Thornton(2013)]{THORNTON2013}
+Michael~A. Thornton.
+\newblock Removing seasonality under a changing regime: Filtering new car
+  sales.
+\newblock \emph{Computational Statistics \& Data Analysis}, 58:\penalty0 4--14,
+  2013.
+\newblock ISSN 0167-9473.
+\newblock \doi{https://doi.org/10.1016/j.csda.2011.06.021}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0167947311002386}.
+\newblock The Third Special Issue on Statistical Signal Extraction and
+  Filtering.
+
+\bibitem[Toro~Bayona and Lizarazo~Salcedo(2012)]{torobayona2012mlp}
+Guillermo~Antonio Toro~Bayona and Iván~Alberto Lizarazo~Salcedo.
+\newblock Evaluación de las redes neuronales artificiales perceptron multicapa
+  y fuzzy-artmap en la clasificación de imágenes satelitales.
+\newblock \emph{Ingeniería}, 17\penalty0 (1):\penalty0 61--72, 2012.
+\newblock URL \url{http://www.redalyc.org/articulo.oa?id=498850174008}.
+
+\bibitem[Vilela et~al.(2015)Vilela, Pedrosa~Filho, Escobedo, Dal~Pai, Salazar,
+  Raichjk, Righini, Grossi, and Fraidenraich]{Vilela2015}
+O.~C. Vilela, M.~H.~O. Pedrosa~Filho, J.~F. Escobedo, A.~Dal~Pai, G.~Salazar,
+  C.~Raichjk, R.~Righini, H.~Grossi, and N.~Fraidenraich.
+\newblock Qualificação y caracterización da radiação direta, difusa e
+  global em diferentes localidades do brasil e argentina.
+\newblock In \emph{Acta de la XXXVIII Reunión de Trabajo de la Asociación
+  Argentina de Energías Renovables y Medio Ambiente}, volume~3, pages
+  11.123--11.130, 2015.
+
+\bibitem[Wald(2007)]{Wald2007}
+Lucien Wald.
+\newblock \emph{Solar radiation energy (fundamentals).}
+\newblock 01 2007.
+
+\bibitem[Wald(2018)]{wald2018}
+Lucien Wald.
+\newblock Basics in solar radiation at earth surface.
+\newblock Technical report, MINES ParisTech, Paris, France, 2018.
+
+\bibitem[Wald(2021)]{Wald2021}
+Lucien Wald.
+\newblock \emph{Fundamentals of Solar Radiation}.
+\newblock 05 2021.
+\newblock ISBN 9781003155454.
+\newblock \doi{10.1201/9781003155454}.
+
+\bibitem[Yang and Gueymard(2021{\natexlab{a}})]{YANG2021}
+Dazhi Yang and Christian~A. Gueymard.
+\newblock Probabilistic post-processing of gridded atmospheric variables and
+  its application to site adaptation of shortwave solar radiation.
+\newblock \emph{Solar Energy}, 225:\penalty0 427--443, 2021{\natexlab{a}}.
+\newblock ISSN 0038-092X.
+\newblock \doi{https://doi.org/10.1016/j.solener.2021.05.050}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0038092X21004205}.
+
+\bibitem[Yang and Gueymard(2021{\natexlab{b}})]{YANG2021427}
+Dazhi Yang and Christian~A. Gueymard.
+\newblock Probabilistic post-processing of gridded atmospheric variables and
+  its application to site adaptation of shortwave solar radiation.
+\newblock \emph{Solar Energy}, 225:\penalty0 427--443, 2021{\natexlab{b}}.
+\newblock ISSN 0038-092X.
+\newblock \doi{https://doi.org/10.1016/j.solener.2021.05.050}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0038092X21004205}.
+
+\bibitem[Ye et~al.(2025)Ye, Liu, Fu, Wu, Shi, and Huang]{rs17101720}
+Lianlian Ye, Mengqi Liu, Disong Fu, Hao Wu, Hongrong Shi, and Chunlin Huang.
+\newblock Probabilistic site adaptation for high-accuracy solar radiation
+  datasets in the western sichuan plateau.
+\newblock \emph{Remote Sensing}, 17\penalty0 (10), 2025.
+\newblock ISSN 2072-4292.
+\newblock \doi{10.3390/rs17101720}.
+\newblock URL \url{https://www.mdpi.com/2072-4292/17/10/1720}.
+
+\bibitem[Zainali et~al.(2024)Zainali, Yang, Landelius, and
+  Campana]{ZAINALI2024}
+Sebastian Zainali, Dazhi Yang, Tomas Landelius, and Pietro~Elia Campana.
+\newblock Site adaptation with machine learning for a northern europe gridded
+  global solar irradiance product.
+\newblock \emph{Energy and AI}, 15:\penalty0 100331, 2024.
+\newblock ISSN 2666-5468.
+\newblock \doi{https://doi.org/10.1016/j.egyai.2023.100331}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S2666546823001039}.
+
+\bibitem[Zhang et~al.(2015)Zhang, Florita, Hodge, Lu, Hamann, Banunarayanan,
+  and Brockway]{ZHANG}
+Jie Zhang, Anthony Florita, Bri-Mathias Hodge, Siyuan Lu, Hendrik~F. Hamann,
+  Venkat Banunarayanan, and Anna~M. Brockway.
+\newblock A suite of metrics for assessing the performance of solar power
+  forecasting.
+\newblock \emph{Solar Energy}, 111:\penalty0 157--175, 2015.
+\newblock ISSN 0038-092X.
+\newblock \doi{https://doi.org/10.1016/j.solener.2014.10.016}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0038092X14005027}.
+\newblock Available: \url{https://doi.org/10.1016/j.solener.2014.10.016}.
+
+\end{thebibliography}

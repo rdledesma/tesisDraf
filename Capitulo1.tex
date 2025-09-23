@@ -1,0 +1,181 @@
+\lhead{Capítulo \ref{ch_1}}
+\rhead{\newtitle}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\chapter{Introducción}\label{ch_1}
+
+La radiación solar, también conocida como energía solar, es la vasta cantidad de energía emitida por el Sol \citep{Wald2007, Wald2021}. El Sol, con una temperatura superficial de aproximadamente 5780 K (alrededor de 5500 °C), irradia energía a través de un amplio espectro de longitudes de onda, principalmente entre 200 nm y 4000 nm \citep{Wald2021}. Esta energía es el resultado de procesos termonucleares \citep{Wald2021}.
+
+La cantidad promedio de radiación solar recibida justo fuera de la atmósfera terrestre, por unidad de área, es de aproximadamente 1361.7 W/m², conocida como la constante solar. Sin embargo, la radiación solar real que llega fuera de la atmósfera (radiación extraterrestre) varía anualmente entre 1412 W/m² (principios de julio) y 1322 W/m² (cambio de año), una variación del 3.3\% debido a la órbita elíptica de la Tierra alrededor del Sol.\\
+
+
+Para describir la radiación, se utilizan dos cantidades principales:
+Irradiancia: Es la potencia recibida por unidad de área, con unidades en vatios por metro cuadrado (W/m²)
+Irradiación: Es la energía recibida por unidad de área, con unidades en julios por metro cuadrado (J/m²).  En aplicaciones de energía solar, el vatio-hora por metro cuadrado (Wh/m²) es una unidad de uso común para la irradiación, aunque no forma parte del Sistema Internacional (SI). La conversión es 1 Wh/m² = 3600 J/m².\\
+
+
+La radiación solar es fundamental para la vida en la Tierra y para numerosas actividades humanas. Su impacto abarca diversos ámbitos, desde el clima hasta la energía.
+
+En primer lugar, regula el equilibrio energético del planeta: la energía absorbida se transforma en calor y se distribuye a través de la atmósfera y los océanos, lo que origina procesos meteorológicos como la convección, la evaporación, la formación de nubes, los vientos y las precipitaciones.
+
+En el diseño arquitectónico, la radiación solar se aprovecha en estrategias pasivas y en la iluminación natural. Gracias a ello, es posible calcular de manera adecuada el tamaño de ventanas y acristalamientos para optimizar la entrada de luz, mejorar el confort térmico y equilibrar las ganancias y pérdidas de calor.
+
+En la agricultura, resulta determinante para el crecimiento y desarrollo de los cultivos, influyendo en procesos como la maduración de la uva en los viñedos o la gestión del riego en invernaderos.
+
+En el medio ambiente, interviene en reacciones fotoquímicas, como la fotólisis de contaminantes atmosféricos, lo que puede generar sustancias secundarias dañinas para la salud y la vegetación. Asimismo, la radiación ultravioleta acelera la degradación de materiales poliméricos expuestos al sol.
+
+En cuanto a la producción de energía, constituye la base de tecnologías renovables como los paneles fotovoltaicos y los sistemas solares térmicos. Por ello, una estimación precisa y el pronóstico de la radiación son esenciales para diseñar y ubicar adecuadamente las plantas de energía solar.
+
+Finalmente, en la salud humana, la radiación solar influye en el estado de ánimo y en los ritmos biológicos. Los rayos ultravioleta favorecen la síntesis de vitamina D, indispensable para la fijación del calcio en los huesos. No obstante, una exposición excesiva puede provocar efectos negativos como quemaduras, envejecimiento prematuro de la piel e incluso cáncer.\\
+
+
+La radiación solar que llega a la superficie terrestre está compuesta por tres contribuciones:  
+\begin{itemize}
+    \item \textbf{Radiación directa}, que proviene del disco solar sin desviaciones.  
+    \item \textbf{Radiación difusa}, resultado de la dispersión por moléculas, aerosoles y nubes, que alcanza la superficie desde todas las direcciones del cielo.  
+    \item \textbf{Radiación reflejada}, correspondiente a la fracción devuelta por el suelo o elementos circundantes.  
+\end{itemize}
+
+La suma de estas tres componentes constituye la \textbf{radiación global}. Para su medición se emplean principalmente dos instrumentos: los \textit{piranómetros}, que registran la radiación global (directa + difusa), y los \textit{pirheliómetros}, que miden la radiación directa en un ángulo sólido muy reducido orientado hacia el sol. Además, los \textit{piranómetros con anillo de sombra} o los \textit{irradiómetros de banda rotatoria} permiten aislar el componente difuso \citep{duffie2013}.  
+
+La precisión en estas mediciones es crucial para la \textbf{ingeniería solar} y para aplicaciones energéticas. Conocer la disponibilidad de radiación solar en un lugar permite dimensionar adecuadamente sistemas fotovoltaicos y térmicos, optimizar el diseño de colectores y predecir la producción a lo largo del tiempo. Asimismo, estas mediciones son esenciales en climatología y meteorología para modelar balances de energía en la atmósfera y en la superficie terrestre \citep{wald2018, ieapvps2023}.  
+
+No obstante, la instrumentación terrestre presenta limitaciones: las estaciones de medición suelen ser escasas y su cobertura en espacio y tiempo es reducida, lo que dificulta la construcción de series largas y continuas de datos. Estas restricciones explican el creciente interés en el uso de modelos numéricos y productos satelitales como complemento a las observaciones directas.  
+
+En síntesis, medir la radiación solar es fundamental tanto para el desarrollo de tecnologías renovables como para comprender los procesos energéticos que gobiernan el sistema climático.\\
+
+
+
+Ante estas limitaciones, se han desarrollado métodos de estimación alternativos. Los modelos meteorológicos numéricos y de reanálisis permiten simular los procesos radiativos de la atmósfera para estimar la radiación solar. De manera complementaria, las imágenes satelitales de observación de la Tierra, obtenidas mediante sensores multiespectrales, se procesan con algoritmos especializados para calcular la radiación a nivel del suelo, como ocurre con servicios tales como HelioClim. También se emplean técnicas de interpolación espacial que estiman valores en un sitio de interés a partir de mediciones de estaciones cercanas, considerando la variabilidad regional de la radiación. Asimismo, se utilizan modelos empíricos basados en correlaciones estadísticas, que permiten derivar los distintos componentes de la radiación a partir de la global medida o bien estimarla en función de variables meteorológicas como la insolación, la temperatura del aire o la nubosidad. La calidad de estas mediciones y estimaciones es un aspecto crítico, por lo que se aplican procedimientos rigurosos de control y validación de datos, incluyendo inspecciones visuales y métodos automáticos de detección de valores atípicos, con el fin de garantizar la confiabilidad de la información disponible.
+
+
+
+
+
+\section{Estudio de la Radiación Solar en Argentina y en el Noroeste Argentino}
+
+Las primeras estaciones de medición de la Red Solarimétrica en Argentina datan desde el año 1978, a partir de un proyecto financiado inicialmente por la Organización de los Estados Americanos (O.E.A.) \cite{GrossiGallegos1999}.
+
+A fines de 1997 se publicaron los resultados de las primeras evaluaciones a nivel de superficie de radiación solar global en la República Argentina, donde se proceso toda la información disponible en el país complementadas con datos registrados en países vecinos \cite{GrossiGallegos1998A, GrossiGallegos1998B}. En estos trabajos se reporta que  las cartas elaboradas responden adecuadamente a los datos  disponibles en Argentina, dentro de las condiciones que se impusieron en la metodología, siendo compatibles con el mejor nivel del estado del conocimiento del recurso en esta parte del continente.
+Desde el punto de vista nacional, deberán transcurrir no menos de cinco años para que puedan registrarse modificaciones de
+importancia a las isolíneas presentadas, las que no superan la incerteza del 10\%.
+
+
+En Mayo del 2007 se publica el ATLAS DE ENERGÍA SOLAR DE LA REPÚBLICA ARGENTINA, mismo que se declara de interés cultural y educativo por la Dirección General
+de Cultura y Educación de la Provincia de Buenos Aires Apoyado por la ASADES (Asociación Argentina de Energías Renovables y Ambiente) \cite{GrossiRighini2007}. El objetivo planteado para el presente trabajo fue actualizar la evaluación a nivel de superficie del campo de la radiación solar global en Argentina, procesando para ello toda la información disponible en el país hasta el año 1997, proveniente ya sea de mediciones directas del parámetro (28 estaciones piranométricas) o de estimaciones obtenidas a partir de información meteorológica terrestre (24 estaciones heliográficas) o satelital, complementada con la de los países vecinos, evaluándose la precisión y validez de los resultados obtenidos.
+
+
+%\section{Radiación Solar en el Noroeste Argentino}
+
+El estudio de la radiación solar en Argentina, particularmente en la región del Noroeste Argentino (NOA), ha evolucionado significativamente a lo largo de las décadas, impulsado por la necesidad de caracterizar este recurso renovable para diversas aplicaciones energéticas y ambientales. La escasez de mediciones terrestres sistemáticas y de alta calidad en muchas áreas ha llevado al desarrollo y la evaluación de modelos empíricos, físicos y satelitales.\\
+
+A principios de la década de 2000, se empezaron a desarrollar herramientas computacionales clave para facilitar el cálculo y la estimación de la radiación solar. En 2003, Alejandro L. Hernández presentó GEOSOL, un programa para Windows diseñado para calcular coordenadas solares y estimar la irradiación solar horaria. GEOSOL ofrecía funcionalidades gráficas útiles para visualizar la trayectoria solar en 2D y 3D, y permitía el análisis de obstáculos, lo cual es vital para el diseño de instalaciones solares. El programa incorporaba tres métodos de estimación de irradiación: el de Page y el de Hottel para días claros, y el de Liu-Jordan para días medios mensuales, todos validados con mediciones realizadas en la Universidad Nacional de Salta (UNSa) \cite{Hernandez2003}.\\
+
+Estos desarrollos iniciales sentaron las bases para estudios más amplios, como la creación de mapas de radiación solar. En \cite{Belmonte2006} utilizaron GEOSOL y Sistemas de Información Geográfica (SIG) para desarrollar mapas de radiación solar en el Valle de Lerma, Salta. Su metodología combinaba cálculos de radiación con tratamiento estadístico y procesamiento SIG, destacando una alta correlación lineal entre la radiación solar total y la altitud, así como entre los valores de diferentes meses. Esto sugirió que las ecuaciones de regresión eran un método eficaz para el mapeo, especialmente en zonas montañosas. El trabajo también reconoció la ausencia de series de mediciones históricas en el área, lo que justificaba la necesidad de generar modelos digitales para definir este parámetro climático esencial.\\
+
+Continuando con la caracterización del recurso, en 2007, Germán A. Salazar, Luis A. Hernández, Luis R. Saravia y Graciela G. Romero realizaron un estudio para determinar los coeficientes de la relación de Ångström-Prescott para la ciudad de Salta, utilizando datos recopilados entre abril de 2006 y abril de 2007
+. Esta relación empírica vincula la irradiación global con las horas de insolación (heliofanía). Observaron que los coeficientes 'a' y 'b' se ven afectados por factores como la latitud, la altura y el vapor de agua en la atmósfera. Al comparar sus resultados con otros métodos de correlación, encontraron que el método de Rietveld mostró una mejor correlación con los datos medidos que el de Glover y McCulloch. Este estudio resaltó la importancia de la relación Ångström-Prescott para estimar la radiación global en sitios con datos limitados de heliofanía \cite{Salazar2007}.\\ 
+
+En 2008, Salazar, Hernández, Cadena, Saravia y Romero avanzaron en la caracterización de la radiación solar global para día claro en sitios de altura en el NOA, analizando datos de irradiancia en Salar El Rincón (3730 m), Huacalera (2680 m) y Salta Capital (1190 m) \cite{Salazar2008a}. Propusieron tres modelos basados en una ecuación tipo ASHRAE, que estiman la irradiancia instantánea (G) utilizando solo la altura sobre el nivel del mar (A) y la masa de aire (ma) como variables. Los modelos mostraron una muy buena correlación con los datos medidos, con errores porcentuales RMSE promedio inferiores al 3\%. Se destacó que el índice de claridad representativo (Kt-R) se incrementa con la altura, lo cual es consistente con la menor atenuación atmosférica a mayor altitud. Ese mismo año, Salazar et al. continuaron desarrollando un modelo para estimar irradiancia e irradiación solar para día claro, ahora incorporando datos de Buenos Aires para evaluar el comportamiento en bajas altitudes. La versión "Modelo A" demostró una mejor aproximación a los resultados de GEOSOL en un rango más amplio de alturas.\\
+
+Paralelamente, el estudio de la radiación difusa también se benefició de nuevas metodologías. En \cite{Salazar2008b} Saravia exploraron el uso del método geoestadístico Kriging para estimar los valores de irradiación difusa en la bóveda celeste. Compararon la radiación difusa registrada en Salta (1200 m) y El Rosal (3350 m), confirmando que Salta presentaba valores más altos debido a una mayor dispersión atmosférica a menor altitud. La metodología implicó la proyección de la superficie en un plano (gnomónica o cilíndrica) y el uso del software SURFER 7.0 para el procesamiento de datos y la visualización de mapas de contorno.\\
+
+%En 2009, se llevó a cabo un análisis preliminar de datos de irradiancia global horizontal, temperatura, humedad relativa y humedad absoluta en el paraje El Rosal (3355 m s.n.m.). En el estudio \cite{Salaza2009}, se compararon los datos medidos de radiación solar con el modelo empírico ARG-P (para día claro), encontrando una buena correlación, aunque el modelo tendía a subestimar la irradiancia en condiciones de muy baja humedad y sobrestimarla con alta humedad, lo que indicaba que el ARG-P no consideraba la cantidad de humedad en el ambiente. También se realizó un análisis de la humedad absoluta y su variación temporal
+
+La década de 2010 marcó una profundización en el desarrollo de modelos y una evaluación crítica de las fuentes de datos. En \cite{Salazar2010a} presentaron modelos prácticos (Modelos 3 y 4) para estimar la irradiancia horizontal en condiciones de cielo claro, especialmente útiles para sitios de altura en el NOA. Estos modelos utilizaban la altitud para generar un índice de claridad representativo (kt-R-p) y mostraron errores no superiores al 5\% para masas de aire corregidas por presión (AMc<2). Se destacó su potencial para estudios de factibilidad en la instalación de plantas de energía solar térmica. Los autores también señalaron la necesidad de una nueva convención para clasificar los días de cielo claro, ya que el criterio previamente utilizado (Kt > 0.7) clasificaba incorrectamente días parcialmente nublados como claros.\\
+
+En el mismo año 2010, en \cite{Salazar2010b} se aplicó el modelo híbrido de Yang a datos climáticos medios mensuales de diez localidades de Argentina. Este modelo, validado previamente en Japón, busca estimar las componentes directa y difusa de la irradiación global. El estudio encontró una muy buena correlación con los valores medidos de irradiación global horizontal, con un RMSE\% de aproximadamente 6\% después de realizar correcciones por exceso en los datos de heliofanía. Aunque el modelo de Yang fue calificado como ``altamente confiable'' por \cite{Gueymard2003}, se señaló la necesidad de continuar investigando para estimar variables relacionadas con las transmitancias de los componentes atmosféricos para el contexto argentino.\\
+
+La disponibilidad de bases de datos satelitales también fue un foco de análisis. En \cite{Laspiur2013} trazaron mapas medios anuales de energía solar (global, directa, difusa y Tilt) para las provincias de Salta y Jujuy, utilizando la base de datos satelital SWERA y el método geoestadístico Kriging. Este trabajo buscaba proporcionar una herramienta inicial para el estudio de la distribución del recurso solar en el Norte de Argentina.\\
+
+Una evaluación más profunda de estas bases de datos fue realizada por \cite{Salazar2013}, comparando los datos de irradiación solar global media mensual medidos en Salta Capital (periodos 1968-2007) con las estimaciones de las bases de datos SWERA, SoDa y SSE. El estudio concluyó que los datos de SWERA mostraban la mejor correlación con los valores medidos (RMSE\% promedio del 14\%), mientras que SoDa y SSE presentaban errores superiores al 24\%, atribuidos al mayor tamaño de sus celdas satelitales. Este análisis evidenció la importancia de verificar la validez de los datos satelitales para cada región específica.\\ 
+
+En 2014, Germán Salazar y Carlos Raichijk llevaron a cabo una evaluación de las condiciones de cielo claro en sitios de altura, desafiando la aplicabilidad del criterio de Iqbal para clasificar la nubosidad en estas ubicaciones \cite{Salazar2014}. Encontraron que el criterio de Iqbal a menudo clasificaba incorrectamente días parcialmente nublados como días de cielo claro en sitios a gran altitud. Para ello, utilizaron los índices de claridad (Kt) y de cielo claro (Kc), revelando que el valor más probable de Kc para un día de cielo claro dependía del modelo utilizado para estimar la radiación de cielo claro (ESRA y ARG-P).\\
+
+El interés se extendió también a la radiación ultravioleta (UV). En \cite{Suazarez2014} realizaron un estudio sobre la variabilidad diaria y anual de la radiación solar eritémica (UVER) en Salta, San Carlos y El Rosal (periodo 2012-2013). Los resultados indicaron elevados niveles de riesgo solar en las tres localidades, con un incremento de la UVER con la altura. Por ejemplo, en verano, se midieron valores máximos de Índice UV (IUV) de 17 en El Rosal y 15 en Salta, mientras que en invierno los promedios eran de 6 y 5 respectivamente. El estudio proporcionó una caracterización detallada de la distribución anual y diaria de la UVER, crucial para la salud pública.\\
+
+En el trabajo \cite{Vilela2015} se exploró la caracterización de la radiación directa, difusa y global en localidades de Brasil (Recife, Botucatu) y Argentina (Salta, Luján). Desarrollaron un software para aplicar filtros físicos y estadísticos a los datos de radiación, calculando correlaciones entre las fracciones difusa (kd) y directa (kn) en función del índice de claridad (kt). A pesar de las diferencias climáticas entre las localidades, las relaciones kd vs. kt y kn vs. kt se mostraron consistentes, lo que sugiere su aplicabilidad generalizada.\\
+
+En la recta final de la década de 2010, el enfoque en el control de calidad de los datos medidos se hizo más prominente. En \cite{RomanoArmada2017} aplicaron protocolos de control de calidad de la red BSRN a datos de radiación solar global medidos en Salta entre 2013 y 2015. Sus hallazgos sugirieron que los datos de referencia históricos para Salta subestimaban el recurso, subrayando la importancia de filtrar los datos para asegurar su validez estadística y representatividad.\\
+
+Las aplicaciones de la energía solar también continuaron evolucionando. \cite{Hongn2018} simularon el funcionamiento de una planta solar térmica de gran escala (30 MWe) en San Carlos, Salta, utilizando el modelo analítico FAE. Compararon los resultados con el software de referencia SAM (NREL) y con la planta real SEGS VI en el desierto de Mojave. Descubrieron que, si bien la producción anual en San Carlos sería ligeramente menor que en Mojave, la generación eléctrica resultaría más uniforme a lo largo del año, lo que la convierte en una opción viable para la inyección de energía a la red.\\
+
+
+
+En \cite{SarmientoBarbieri2019} desarrollaron una herramienta SIG para la provincia de Salta. Validaron los datos satelitales LSA-SAF con modelos empíricos y mediciones de cinco estaciones terrestres regionales (Abra Pampa, El Pongo, La Viña, El Rincón, Cafayate) durante un período de siete años. Este trabajo subrayó la escasez de datos de medición en tierra en el norte de Argentina, y señaló que la información derivada de imágenes satelitales puede contribuir a llenar las brechas existentes.\\
+
+
+
+
+
+ En \cite{Ledesma2023} se repotaron avances en la estimación de irradiancia solar en Salta y Jujuy mediante imágenes satelitales GOES-16. Ante la persistente falta de estaciones radiométricas con mediciones sistemáticas y prolongadas en Argentina, la estimación por satélite se presenta como una alternativa eficiente para cubrir grandes áreas geográficas. El estudio evaluó dos modelos simples basados en un índice de nubosidad (SUNY y Cano) aplicados a imágenes del canal visible de GOES-16, comparando las estimaciones con valores medidos de irradiancia global horizontal (GHI) en tres sitios. Los modelos locales (Cano et al. y SUNY) mostraron una clara ganancia en desempeño en comparación con el modelo Heliosat-4, confirmando el potencial de las imágenes GOES para esta región.
+%Estos estudios demuestran el esfuerzo continuo en Argentina por comprender y cuantificar el recurso solar, a pesar de los desafíos inherentes a la recopilación de datos, impulsando el desarrollo de metodologías y herramientas que faciliten el aprovechamiento de la energía solar para un futuro más sostenible.
+
+Uno de los estudios más recientes sobre la radiación solar evalúa el rendimiento de diversos modelos satelitales y de re-análisis (CAMS Heliosat-4, NREL NSRDB, GOES DSR, LSA-SAF MDSSFTD, GOES G-CIM, MERRA-2 y ERA-5) para la estimación de GHI en el Noroeste Argentino \cite{Ledesma2025}. Este análisis compara estos modelos con mediciones terrestres de alta calidad (2020-2023) en La Quiaca y Salta. Los resultados preliminares indican que los modelos G-CIM (desarrollado localmente y ajustado con imágenes GOES-16) y NSRDB ofrecen las estimaciones más precisas, incluso en entornos complejos con altitudes extremas o reflectividad variable del terreno. Este estudio reitera la falta de redes operativas de estaciones radiométricas con sensores trazables y control de calidad adecuado en el Noroeste Argentino, enfatizando la importancia de usar datos satelitales validados localmente y la necesidad de ajustes específicos de sitio para los modelos globales de irradiancia.\\
+
+En el apartado \ref{ModelosDeEstimación} se explican en detalle modelos de estimación de radiación solar.
+
+\section{Redes de Medidas}
+
+Una de las redes de observación más reconocidas en la comunidad especializada en energía solar es la \textbf{Baseline Surface Radiation Network (BSRN)}. Se trata de una red internacional integrada por estaciones distribuidas estratégicamente en distintos entornos climáticos, cuyo objetivo es obtener mediciones de alta calidad de los flujos radiativos de onda corta y larga en la superficie terrestre, con elevada frecuencia de muestreo. Su propósito central es monitorear los componentes radiativos de fondo menos influidos por la actividad humana, validar y evaluar las estimaciones satelitales de radiación superficial, así como proveer datos de referencia para modelos climáticos y estudios de climatología regional. Gracias a la consistencia y precisión de sus registros, la BSRN contribuye a una mejor comprensión de los procesos climáticos, a la evaluación de modelos de circulación y al apoyo de programas científicos internacionales como el \textit{World Climate Research Programme (WCRP)} y el \textit{Global Energy and Water Cycle Experiment (GEWEX)}.
+
+En la actualidad, la red cuenta con 51 estaciones en operación, 16 cerradas (de manera temporal o definitiva), 9 clasificadas como inactivas y varias con estatus de candidatas. Las estaciones realizan distintos tipos de mediciones radiativas: algunas se limitan a las \textit{mediciones básicas}, mientras que otras incluyen \textit{mediciones adicionales}, observaciones sinópticas, sondeos atmosféricos y registros de ozono. Asimismo, se proyecta la incorporación de nuevas estaciones, algunas de las cuales deberían entrar en funcionamiento durante el año en curso. Los datos generados se almacenan en PANGAEA, un repositorio de acceso abierto especializado en datos georreferenciados del sistema terrestre, donde se encuentran disponibles los conjuntos de mediciones y sus metadatos, junto con la información de los investigadores responsables, siguiendo los lineamientos establecidos para su liberación.
+
+En Latinoamérica, la presencia de estaciones BSRN es escasa y, en particular, Argentina no cuenta actualmente con ninguna. Los proyectos nacionales destinados al sostenimiento de redes radiométricas han sido limitados. Entre ellos, uno de los más destacados fue el proyecto ENARSOL, iniciado en 2012, con el objetivo de coordinar esfuerzos entre el INTA, YPF y el grupo GERSolar de la UNLu. La iniciativa contemplaba la instalación de 40 estaciones distribuidas estratégicamente para la medición del recurso solar \cite{aristegui2012}; sin embargo, el proyecto fue discontinuado y los registros obtenidos no se distribuyen a través de fuentes oficiales.\\
+
+El \textbf{Servicio Meteorológico Nacional (SMN)} es actualmente una de las pocas instituciones argentinas que mantiene estaciones radiométricas activas. Sus mediciones pueden solicitarse mediante contacto oficial ([cim@smn.gob.ar](mailto:cim@smn.gob.ar)). El SMN opera 10 estaciones distribuidas en diferentes regiones del país.
+
+Otro aporte relevante es el proyecto \textbf{SAVER-Net}, que monitorea en casi tiempo real aerosoles, ozono y radiación UV, difundiendo la información desde el CEILAP y la Universidad de Magallanes a las instituciones competentes.
+
+En la misma línea, el programa \textbf{SATREPS} constituye una colaboración científica entre Japón y países en desarrollo para enfrentar desafíos globales como el cambio climático, la energía, las enfermedades y los desastres naturales. Desde 2013, Argentina, Chile y Japón llevan adelante un proyecto trinacional que permite monitorear aerosoles, radiación UV y el agujero de ozono en la región, con 10 estaciones radiométricas operativas en territorio argentino.\\
+
+Por su parte, el \textbf{Grupo de Estudios de la Radiación Solar (GERSolar)} fue creado el 2 de septiembre de 2002 en la División Física del Departamento de Ciencias Básicas de la Universidad Nacional de Luján (UNLu). Su propósito ha sido conformar una pequeña red de estaciones para la medición de radiación solar global en la región de la Pampa Húmeda Argentina, zona de mayor relevancia agrícola del país. Las estaciones se han instalado en distintas instituciones y, gracias a la colaboración de sus operadores, generan integrales horarias y diarias de radiación solar global en superficie. Actualmente, la red mantiene 9 estaciones activas en la región pampeana.
+
+Asimismo, el \textbf{Grupo de Evaluación y Estudio del Recurso Solar (GEERS)}, del Instituto de Investigaciones en Energía No Convencional (INENCO), mantiene una pequeña red de medidas ubicada en el Noroeste Argentino. Dicha red ha posibilitado el desarrollo de trabajos destinados a evaluar el recurso solar en sitios de altura.
+
+
+
+
+\section{Modelos de Estimación} \label{ModelosDeEstimación}
+
+Como se ha comentado anteriormente son escasas la redes de medición de irradiancia solar, lo que limita el desarrollo de proyectos que necesiten cuantificar la disponibilidad de este recurso. Añadido a que en las estaciones donde se llevan registros de medidas de GHI no comprenden periodos extensos, lo que presenta una limitante tanto para la bancabilidad de proyectos de energía solar como para análisis ambientales, o cualquier aplicación que requiera un conocimiento preciso de este recurso.\\
+
+Como un complemento a las medidas en tierra pueden encontrarse modelos de estimación de GHI. Estos modelos pueden ubicarse en dos grandes grupos. Por un lado los modelos de re-análisis y por otro lado los modelos satelitales.
+
+
+\subsubsection{Modelos de reanálisis}
+
+Los modelos de reanálisis son sistemas que integran observaciones meteorológicas históricas con modelos físicos de predicción numérica del tiempo, con el objetivo de generar una descripción continua, coherente y físicamente consistente de la atmósfera y el clima a lo largo del tiempo \cite{Thejll2015}. Aunque las observaciones provienen de múltiples fuentes —como estaciones meteorológicas, radiosondas, aeronaves y satélites—, su cobertura espacial y temporal es incompleta y su calidad varía, por lo que una simple interpolación matemática no resulta suficiente.
+
+El reanálisis supera esta limitación mediante el uso de modelos físicos que asimilan las observaciones, simulan la evolución atmosférica y ajustan iterativamente las condiciones iniciales para reducir al mínimo las discrepancias con los datos reales. Esto permite estimar con coherencia física las condiciones en lugares y momentos donde no existen mediciones directas. Estos modelos trabajan con datos históricos —algunos con más de un siglo de antigüedad— y se actualizan conforme se digitalizan nuevos registros o se perfeccionan las representaciones de los procesos físicos. Debido a su alta demanda computacional y elevado coste, solo un número limitado de proyectos de reanálisis se encuentran actualmente en operación.
+
+En el caso particular de la radiación solar, los modelos de reanálisis combinan observaciones históricas con modelos numéricos del clima para estimar de forma coherente y completa variables atmosféricas que incluyen la radiación global, directa y difusa en la superficie terrestre. Este enfoque resulta especialmente útil cuando los datos disponibles son escasos, incompletos o no homogéneos, y se aplica en ámbitos como la investigación climática, la planificación energética y los estudios agrícolas.
+
+Entre los modelos de reanálisis más utilizados en el estudio de la radiación solar destacan MERRA-2 y ERA5. El Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA-2) proporciona datos desde 1980 y fue desarrollado para sustituir al conjunto original MERRA, incorporando mejoras en la asimilación de datos que permiten integrar observaciones modernas de radiancia hiperespectral y microondas, así como mediciones de ocultación de radio GPS. También asimila perfiles de ozono obtenidos por la NASA desde 2004 e incluye avances en el modelo GEOS y el sistema de asimilación GSI. Con una resolución espacial cercana a 50 km, MERRA-2 es el primer reanálisis global de largo plazo que asimila observaciones satelitales de aerosoles y modela sus interacciones con otros procesos del sistema climático, además de representar las capas de hielo en Groenlandia y la Antártida.
+
+Por su parte, ERA5 constituye la quinta generación de reanálisis atmosférico global desarrollado por el European Centre for Medium-Range Weather Forecasts (ECMWF) y cubre el periodo desde enero de 1940 hasta la actualidad. Producido por el Copernicus Climate Change Service (C3S), ERA5 ofrece estimaciones horarias de una amplia gama de variables atmosféricas, terrestres y oceánicas, con cobertura global y resolución espacial de 31 km. La atmósfera se representa mediante 137 niveles verticales, desde la superficie hasta unos 80 km de altitud, e incluye estimaciones de incertidumbre para todas las variables, aunque a resoluciones espaciales y temporales más bajas.
+
+
+
+
+\subsubsection{Modelos satelitales}
+
+La estimación de la irradiancia solar por satélite es un campo de estudio crucial que busca calcular la radiación solar que llega a la superficie terrestre utilizando datos obtenidos desde sensores remotos \cite{Hay1993, ALONSOSUAREZ2012}. Esta metodología resulta esencial debido a la alta variabilidad espacial de la radiación solar, influenciada principalmente por la presencia y características de las nubes \cite{Laguarda2022}. Las redes de monitoreo en superficie suelen carecer de la densidad necesaria para capturar esta complejidad, mientras que los satélites ofrecen amplia cobertura geográfica, alta resolución espacial y un muestreo temporal frecuente —a menudo horario o subhorario—, ventajas que ningún otro sistema de observación puede igualar.
+
+Desde el trabajo pionero de Fritz et al. (1964), que correlacionó el albedo terrestre medido por satélite con la irradiancia solar en superficie \cite{Fritz1964}, se han desarrollado numerosos modelos para estimar la radiación solar a partir de observaciones satelitales. En general, estos modelos se agrupan en dos grandes enfoques: métodos cualitativos y subjetivos, y técnicas objetivas que pueden ser estadísticas o basadas en fundamentos físicos.
+
+Los métodos subjetivos requieren la interpretación manual de imágenes satelitales —a menudo impresas y de baja resolución— para estimar la cobertura nubosa y aplicar relaciones estadísticas que determinen la transmitancia atmosférica. En cambio, los métodos objetivos incluyen varias subcategorías. Los modelos empíricos o estadísticos se apoyan en relaciones funcionales derivadas de mediciones simultáneas de radiación solar y datos satelitales en un mismo lugar. Debido a su carácter empírico, su capacidad de extrapolación es limitada \cite{Laguarda2021}, aunque presentan la ventaja de ser simples y eficientes computacionalmente. Dentro de ellos, los denominados “estadísticos puros” seleccionan variables independientes —como nivel de brillo, ángulo cenital solar, agua precipitable o cobertura nubosa estimada— únicamente por su capacidad de explicar la variabilidad de la radiación solar, como es el caso del modelo de Tarpley \cite{Tarpley1979}.
+
+Por su parte, los modelos basados físicamente con componentes empíricas parten del balance radiativo Tierra–atmósfera e incorporan coeficientes ajustados mediante observaciones, como los propuestos por Hanson \cite{Hanson1976} y Ellis \cite{Ellis1978}. Los modelos teóricos simulan de manera explícita los intercambios radiativos en el sistema Tierra–atmósfera, evitando la calibración empírica, aunque requieren datos ambientales auxiliares dependientes del tiempo y la localización. Entre ellos se distinguen los modelos de banda ancha, que utilizan el balance global de radiación solar, con el trabajo pionero de Gautier et al. \cite{Gautier1980}, y los modelos espectrales, que resuelven la ecuación de transferencia radiativa en una atmósfera absorbente y dispersora.
+
+Finalmente, los modelos híbridos o semiempíricos combinan fundamentos físicos con parametrizaciones empíricas de bajo número de coeficientes ajustables. Ejemplos destacados son Heliosat-4 \cite{qu2017} y SUNY \cite{Perez2002}, en los que la irradiancia bajo cielo arbitrario se estima multiplicando la irradiancia de cielo despejado (proveniente de un modelo físico) por un factor de nubosidad derivado de índices satelitales.
+
+La complejidad de estos métodos varía en función de los datos de entrada requeridos, que pueden ir desde imágenes impresas de baja resolución hasta información digital de alta definición. También difieren en la necesidad de datos atmosféricos adicionales —como agua precipitable, aerosoles u ozono—, que pueden provenir tanto de los propios satélites como de otras fuentes. La precisión de las estimaciones puede verse afectada por errores de navegación, limitaciones temporales de muestreo o imprecisiones en el cálculo del flujo radiativo. La calidad de los datos para modelos de cielo despejado es un factor crítico, y la calibración con mediciones terrestres de alta calidad resulta indispensable para optimizar el desempeño. En particular, los modelos empíricos no deben extrapolarse a otras regiones o periodos sin una validación local, ya que el ajuste de sus parámetros es fundamental para reducir el sesgo y mejorar la exactitud.\\
+
+
+
+
+Puede verse que existe una amplia cantidad de alternativas referidas a la estimación de la irradiancia solar. Sin embargo, debe notarse que estos modelos no sustituyen de ninguna manera a las mediciones en tierra y son más bien un complemento a las mismas o una opción a considerar cuando no se disponen de dichas medidas. 
+
