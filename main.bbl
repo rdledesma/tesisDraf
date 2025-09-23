@@ -1,4 +1,4 @@
-\begin{thebibliography}{79}
+\begin{thebibliography}{80}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -261,6 +261,18 @@ Zengyi Huang, Haotian Zheng, Chen Li, and Chang Che.
 International Energy Agency Photovoltaic Power Systems~Programme (IEA-PVPS).
 \newblock Worldwide benchmark of modelled solar radiation data.
 \newblock Technical report, IEA PVPS Task 16, Paris, France, 2023.
+
+\bibitem[Ihsan et~al.(2024)Ihsan, Takenaka, Higuchi, Sakti, and
+  Wikantika]{IHSAN2024}
+Kalingga Titon~Nur Ihsan, Hideaki Takenaka, Atsushi Higuchi, Anjar~Dimara
+  Sakti, and Ketut Wikantika.
+\newblock Solar irradiance variability around asia pacific: Spatial and
+  temporal perspective for active use of solar energy.
+\newblock \emph{Solar Energy}, 276:\penalty0 112678, 2024.
+\newblock ISSN 0038-092X.
+\newblock \doi{https://doi.org/10.1016/j.solener.2024.112678}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0038092X24003736}.
 
 \bibitem[Laguarda(2025)]{Laguarda2021}
 A.~Laguarda.

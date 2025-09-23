@@ -13,52 +13,51 @@ A level-1 auxiliary file: bibliografia.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: anexo.aux
 Database file #1: bibliografia.bib
-Warning--I didn't find a database entry for "IHSAN2024"
 Warning--empty publisher in GrossiRighini2007
 Warning--empty chapter and pages in Thejll2015
 Warning--empty publisher in Thejll2015
 Warning--empty chapter and pages in Wald2007
 Warning--empty publisher in Wald2007
 Warning--empty publisher in Wald2021
-You've used 79 entries,
+You've used 80 entries,
             2773 wiz_defined-function locations,
-            1184 strings with 25600 characters,
-and the built_in function-call counts, 41833 in all, are:
-= -- 3730
-> -- 2888
+            1190 strings with 25942 characters,
+and the built_in function-call counts, 42453 in all, are:
+= -- 3786
+> -- 2936
 < -- 36
-+ -- 981
-- -- 897
-* -- 3740
-:= -- 6690
-add.period$ -- 351
-call.type$ -- 79
-change.case$ -- 528
-chr.to.int$ -- 74
-cite$ -- 164
-duplicate$ -- 1649
-empty$ -- 2958
-format.name$ -- 996
-if$ -- 8616
++ -- 997
+- -- 912
+* -- 3800
+:= -- 6792
+add.period$ -- 357
+call.type$ -- 80
+change.case$ -- 536
+chr.to.int$ -- 75
+cite$ -- 166
+duplicate$ -- 1670
+empty$ -- 2997
+format.name$ -- 1012
+if$ -- 8742
 int.to.chr$ -- 6
 int.to.str$ -- 1
-missing$ -- 80
-newline$ -- 515
-num.names$ -- 316
-pop$ -- 924
+missing$ -- 81
+newline$ -- 523
+num.names$ -- 320
+pop$ -- 935
 preamble$ -- 1
-purify$ -- 457
+purify$ -- 464
 quote$ -- 0
-skip$ -- 1284
+skip$ -- 1301
 stack$ -- 0
-substring$ -- 1324
-swap$ -- 163
+substring$ -- 1344
+swap$ -- 164
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 814
+type$ -- 825
 warning$ -- 6
-while$ -- 309
+while$ -- 313
 width$ -- 0
-write$ -- 1250
-(There were 7 warnings)
+write$ -- 1269
+(There were 6 warnings)
