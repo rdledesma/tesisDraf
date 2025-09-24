@@ -69,21 +69,28 @@
 \@writefile{toc}{\contentsline {paragraph}{Métodos embebidos.}{50}{section*.20}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Eliminación recursiva de características (RFE).}{50}{section*.21}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{LASSO (Least Absolute Shrinkage and Selection Operator).}{50}{section*.22}\protected@file@percent }
+\citation{Ledesma2023a}
+\citation{Gueymard2003}
 \@writefile{toc}{\contentsline {paragraph}{Stepwise (selección hacia adelante y hacia atrás).}{51}{section*.23}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{}{51}{section*.24}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Flujo de procesamiento para la adaptación de GHI en un sitio. A partir de un conjunto de medida, los datos pasan por un control de calidad y en paralelo se obtienen variables regresoras de reanálisis y geométricas. Con estas se entrenan modelos de regresión en dos enfoques: usando todas las variables disponibles o aplicando selección de características. El segundo enfoque genera un núcleo de variables que es refinado con Random Forest para identificar las más relevantes. Finalmente, se comparan las métricas de desempeño entre los modelos construidos con todas las variables y aquellos basados en las variables óptimas.}}{52}{figure.3.13}\protected@file@percent }
-\newlabel{fig:procedureSA01}{{3.13}{52}{Flujo de procesamiento para la adaptación de GHI en un sitio. A partir de un conjunto de medida, los datos pasan por un control de calidad y en paralelo se obtienen variables regresoras de reanálisis y geométricas. Con estas se entrenan modelos de regresión en dos enfoques: usando todas las variables disponibles o aplicando selección de características. El segundo enfoque genera un núcleo de variables que es refinado con Random Forest para identificar las más relevantes. Finalmente, se comparan las métricas de desempeño entre los modelos construidos con todas las variables y aquellos basados en las variables óptimas}{figure.3.13}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.8}{\ignorespaces Métricas de desempeño (MBE, MAE, RMSE) para cada modelo y conjunto de datos satelital en los cinco sitios. Los valores están normalizados y expresados como porcentajes relativos a la media de GHI en cada sitio: 429.2~W/m$^2$ (Yu), 432.9~W/m$^2$ (Sa), 554.4~W/m$^2$ (Sca), 628.4~W/m$^2$ (Ero), y 648.7~W/m$^2$ (Lq). Los modelos etiquetados con ``(1 var.)'' indican adaptación al sitio realizada utilizando solo un regresor (CAMS o LSA-SAF).}}{53}{table.3.8}\protected@file@percent }
-\newlabel{tab:metrics_model_satellite}{{3.8}{53}{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo y conjunto de datos satelital en los cinco sitios. Los valores están normalizados y expresados como porcentajes relativos a la media de GHI en cada sitio: 429.2~W/m$^2$ (Yu), 432.9~W/m$^2$ (Sa), 554.4~W/m$^2$ (Sca), 628.4~W/m$^2$ (Ero), y 648.7~W/m$^2$ (Lq). Los modelos etiquetados con ``(1 var.)'' indican adaptación al sitio realizada utilizando solo un regresor (CAMS o LSA-SAF)}{table.3.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.8}{\ignorespaces Métricas de desempeño (MBE, MAE, RMSE) para cada modelo en el conjunto de prubeas de los cinco sitios. Los valores están normalizados y expresados como porcentajes relativos a la media de GHI en cada sitio: 429.2~W/m$^2$ (Yu), 432.9~W/m$^2$ (Sa), 554.4~W/m$^2$ (Sca), 628.4~W/m$^2$ (Ero), y 648.7~W/m$^2$ (Lq). Los modelos etiquetados con ``(1 var.)'' indican adaptación al sitio realizada utilizando solo un regresor (CAMS o LSA-SAF).}}{52}{table.3.8}\protected@file@percent }
+\newlabel{tab:metricas_3_1}{{3.8}{52}{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo en el conjunto de prubeas de los cinco sitios. Los valores están normalizados y expresados como porcentajes relativos a la media de GHI en cada sitio: 429.2~W/m$^2$ (Yu), 432.9~W/m$^2$ (Sa), 554.4~W/m$^2$ (Sca), 628.4~W/m$^2$ (Ero), y 648.7~W/m$^2$ (Lq). Los modelos etiquetados con ``(1 var.)'' indican adaptación al sitio realizada utilizando solo un regresor (CAMS o LSA-SAF)}{table.3.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Flujo de procesamiento para la adaptación de GHI en un sitio. A partir de un conjunto de medida, los datos pasan por un control de calidad y en paralelo se obtienen variables regresoras de reanálisis y geométricas. Con estas se entrenan modelos de regresión en dos enfoques: usando todas las variables disponibles o aplicando selección de características. El segundo enfoque genera un núcleo de variables que es refinado con Random Forest para identificar las más relevantes. Finalmente, se comparan las métricas de desempeño entre los modelos construidos con todas las variables y aquellos basados en las variables óptimas.}}{53}{figure.3.13}\protected@file@percent }
+\newlabel{fig:procedureSA01}{{3.13}{53}{Flujo de procesamiento para la adaptación de GHI en un sitio. A partir de un conjunto de medida, los datos pasan por un control de calidad y en paralelo se obtienen variables regresoras de reanálisis y geométricas. Con estas se entrenan modelos de regresión en dos enfoques: usando todas las variables disponibles o aplicando selección de características. El segundo enfoque genera un núcleo de variables que es refinado con Random Forest para identificar las más relevantes. Finalmente, se comparan las métricas de desempeño entre los modelos construidos con todas las variables y aquellos basados en las variables óptimas}{figure.3.13}{}}
 \citation{SALAMALIKIS2022}
+\@writefile{lot}{\contentsline {table}{\numberline {3.9}{\ignorespaces Predictores mejor posicionados según el análisis de importancia de Random Forest en los distintos sitios y fuentes satelitales (CAMS, LSA-SAF). Los valores representan puntuaciones de importancia normalizadas.}}{56}{table.3.9}\protected@file@percent }
+\newlabel{tab:rf_importance}{{3.9}{56}{Predictores mejor posicionados según el análisis de importancia de Random Forest en los distintos sitios y fuentes satelitales (CAMS, LSA-SAF). Los valores representan puntuaciones de importancia normalizadas}{table.3.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces Comparación del rendimiento entre el modelo original y los modelos ajustados con 15, 7 y 1 regresor en términos de RMSD. Las barras se muestran agrupadas por sitio y conjunto de datos, junto con flechas que indican la mejora o el deterioro con respecto al modelo original, así como deltas en puntos porcentuales (pp) y porcentaje relativo.}}{57}{figure.3.14}\protected@file@percent }
+\newlabel{fig:rrmsd-multiple}{{3.14}{57}{Comparación del rendimiento entre el modelo original y los modelos ajustados con 15, 7 y 1 regresor en términos de RMSD. Las barras se muestran agrupadas por sitio y conjunto de datos, junto con flechas que indican la mejora o el deterioro con respecto al modelo original, así como deltas en puntos porcentuales (pp) y porcentaje relativo}{figure.3.14}{}}
 \citation{Olivas2022}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Adaptación al sitio tomando consideraciones de una serie temporal}{55}{section.3.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.10}{\ignorespaces Métricas de desempeño (MBE, MAE, RMSE) para cada modelo y conjunto satelital en los cinco sitios, utilizando los siete predictores mejor posicionados con resolución de 15 minutos. Los valores están normalizados y expresados como porcentaje respecto al GHI promedio de cada sitio: 429.2~W/m$^2$ (YU), 432.9~W/m$^2$ (SA), 554.4~W/m$^2$ (SCA), 628.4~W/m$^2$ (ERO) y 648.7~W/m$^2$ (LQ).}}{58}{table.3.10}\protected@file@percent }
+\newlabel{tab:metrics_7pred}{{3.10}{58}{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo y conjunto satelital en los cinco sitios, utilizando los siete predictores mejor posicionados con resolución de 15 minutos. Los valores están normalizados y expresados como porcentaje respecto al GHI promedio de cada sitio: 429.2~W/m$^2$ (YU), 432.9~W/m$^2$ (SA), 554.4~W/m$^2$ (SCA), 628.4~W/m$^2$ (ERO) y 648.7~W/m$^2$ (LQ)}{table.3.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Adaptación al sitio tomando consideraciones de una serie temporal}{58}{section.3.5}\protected@file@percent }
 \citation{IHSAN2024}
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{56}{section.3.6}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces Grilla }}{57}{figure.3.14}\protected@file@percent }
-\newlabel{fig:gridSA}{{3.14}{57}{Grilla}{figure.3.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{59}{section.3.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces Grilla }}{61}{figure.3.15}\protected@file@percent }
+\newlabel{fig:gridSA}{{3.15}{61}{Grilla}{figure.3.15}{}}
 \@setckpt{Capitulo3}{
-\setcounter{page}{58}
+\setcounter{page}{62}
 \setcounter{equation}{3}
 \setcounter{enumi}{4}
 \setcounter{enumii}{0}
@@ -98,8 +105,8 @@
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{14}
-\setcounter{table}{8}
+\setcounter{figure}{15}
+\setcounter{table}{10}
 \setcounter{float@type}{4}
 \setcounter{parentequation}{0}
 \setcounter{NAT@ctr}{0}

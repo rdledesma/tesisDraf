@@ -1,4 +1,4 @@
-\begin{thebibliography}{83}
+\begin{thebibliography}{84}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -300,10 +300,11 @@ R.~Laspiur, G.~A. Salazar, J.~Zerpa, and M.~Watkins.
 \newblock \emph{Avances en Energías Renovables y Medio Ambiente}, 17:\penalty0
   08.47--08.52, 2013.
 
-\bibitem[Ledesma et~al.(2023)Ledesma, Salazar, and Vilela]{Ledesma2023}
+\bibitem[Ledesma et~al.(2023{\natexlab{a}})Ledesma, Salazar, and
+  Vilela]{Ledesma2023}
 R.~Ledesma, G.~Salazar, and O.~Vilela.
 \newblock Avances en la estimación de irradiancia solar en las provincias de
-  salta y jujuy mediante imágenes satelitales goes-16, 2023.
+  salta y jujuy mediante imágenes satelitales goes-16, 2023{\natexlab{a}}.
 \newblock Manuscrito no publicado.
 
 \bibitem[Ledesma et~al.(2025)Ledesma, Alonso-Suárez, Salazar, Nollas, and
@@ -315,6 +316,16 @@ Rubén Ledesma, Rodrigo Alonso-Suárez, Germán Salazar, Fernando Nollas, and
 \newblock \emph{IEEE Latin America Transactions}, 23\penalty0 (8):\penalty0
   706--717, 2025.
 \newblock \doi{10.1109/TLA.2025.11072498}.
+
+\bibitem[Ledesma et~al.(2023{\natexlab{b}})Ledesma, Salazar, and
+  de~Castro~Vilela]{Ledesma2023a}
+Rubén~D. Ledesma, Germán~A. Salazar, and Olga de~Castro~Vilela.
+\newblock Argp-v2 un modelo práctico para la estimación de irradiancia global
+  horizontal en condiciones de cielo claro para sitios de altura.
+\newblock \emph{Avances en Energías Renovables y Medio Ambiente - AVERMA},
+  26:\penalty0 283–289, jun. 2023{\natexlab{b}}.
+\newblock URL
+  \url{https://portalderevistas.unsa.edu.ar/index.php/averma/article/view/3838}.
 
 \bibitem[Liu et~al.(2023)Liu, Yu, Che, Lin, Hu, and Zhao]{liu2023}
 Bo~Liu, Liqiang Yu, Chang Che, Qunwei Lin, Hao Hu, and Xinyu Zhao.

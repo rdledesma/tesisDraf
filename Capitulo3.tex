@@ -508,13 +508,13 @@ Además, el análisis reveló que los modelos más flexibles, como el MLP, son p
 
 
 \section{Adaptación al sitio con múltiples variables descriptivas}
-En la sección anterior se presentaron los resultados del proceso de Adaptación al Sitio (SA) utilizando un enfoque basado en mejorar la estimación de un modelo a partir de la variable propiamente modelada y de mediciones in situ. Este enfoque tradicional se centra en la relación directa entre la variable objetivo y sus observaciones, pero en los últimos años se ha desarrollado una estrategia más avanzada que consiste en incorporar variables regresoras adicionales durante el entrenamiento de los modelos de regresión. La idea subyacente es que estas variables aportan información complementaria, lo que podría mejorar la precisión de la estimación en comparación con un enfoque que utiliza únicamente una variable regresora.
+En la sección anterior se presentaron los resultados del proceso de Adaptación al Sitio (SA) utilizando un enfoque basado en mejorar la estimación de un modelo a partir de la variable propiamente modelada y de mediciones in situ. Este enfoque tradicional se centra en la relación directa entre la variable objetivo y sus observaciones, pero en los últimos años se ha desarrollado una estrategia más avanzada que consiste en incorporar variables regresoras adicionales durante el entrenamiento de los modelos de regresión. La idea subyacente es que estas variables pueden aportar información complementaria, lo que podría mejorar la precisión de la estimación en comparación con un enfoque que utiliza únicamente una variable regresora. 
 
 En la práctica, estas variables adicionales pueden provenir de distintos modelos de reanálisis o de fuentes satelitales, y se seleccionan con la expectativa de que estén correlacionadas, de alguna manera, con la irradiancia global horizontal (GHI) medida. Este enfoque ha sido aplicado y documentado en trabajos previos, como \cite{Salazar2025, Miranda2021, Miranda2023}.\\
 
 La idea de ampliar el conjunto de regresores y automatizar el proceso de entrenamiento con la expectativa de obtener mejores resultados resulta atractiva, especialmente considerando que los modelos de aprendizaje automático son cada vez más utilizados para identificar patrones y extraer información de grandes volúmenes de datos. Sin embargo, la efectividad de estos modelos depende en gran medida de la calidad y relevancia de los regresores empleados. No basta con añadir más variables; estas deben ser apropiadas y contener información útil para la tarea de predicción.\\
 
-En este contexto, la selección de características se convierte en un paso crítico del preprocesamiento de datos. Este proceso consiste en identificar las variables más relevantes y eliminar aquellas redundantes o irrelevantes \cite{liu2023, Huang2024}. La selección adecuada de características no solo incrementa la interpretabilidad del modelo, sino que también mejora su eficiencia computacional y su capacidad predictiva. Por el contrario, la inclusión de un exceso de variables o de regresores irrelevantes puede generar sobreajuste, donde el modelo muestra un buen desempeño en los datos de entrenamiento pero falla al generalizar a datos no vistos \cite{che2024a}. Al reducir la dimensionalidad y centrarse en las características más informativas, la selección de características fomenta la creación de modelos más robustos y generalizables, al tiempo que disminuye los costos computacionales y el tiempo requerido para entrenar el modelo, consolidándose como una herramienta esencial tanto para investigadores como para profesionales \cite{Cheng2024}.
+En este contexto, la \textbf{selección de características} se convierte en un paso crítico del preprocesamiento de datos. Este proceso consiste en identificar las variables más relevantes y eliminar aquellas redundantes o irrelevantes \cite{liu2023, Huang2024}. La selección adecuada de características no solo incrementa la interpretabilidad del modelo, sino que también mejora su eficiencia computacional y su capacidad predictiva. Por el contrario, la inclusión de un exceso de variables o de regresores irrelevantes puede generar sobreajuste, donde el modelo muestra un buen desempeño en los datos de entrenamiento pero falla al generalizar a datos no vistos \cite{che2024a}. Al reducir la dimensionalidad y centrarse en las características más informativas, la selección de características fomenta la creación de modelos más robustos y generalizables, al tiempo que disminuye los costos computacionales y el tiempo requerido para entrenar el modelo, consolidándose como una herramienta esencial tanto para investigadores como para profesionales \cite{Cheng2024}.
 
 
 
@@ -534,37 +534,29 @@ En esta sección se documentan los resultados obtenidos al seleccionar tres mét
 
 \paragraph{LASSO (Least Absolute Shrinkage and Selection Operator).} LASSO integra la selección de variables en el propio proceso de entrenamiento mediante regularización L1. Este método penaliza los coeficientes de variables menos relevantes, promoviendo modelos más simples y generalizables. La utilización de LASSO en nuestro estudio permite manejar de manera eficiente la multicolinealidad entre parámetros solares y resaltar únicamente los regresores que contribuyen de manera significativa a la predicción de la GHI.  
 
-\paragraph{Stepwise (selección hacia adelante y hacia atrás).} Los métodos Stepwise combinan criterios estadísticos de inclusión y exclusión de variables, permitiendo construir un modelo óptimo de manera secuencial. Este enfoque es especialmente adecuado cuando se busca un balance entre interpretabilidad y rendimiento predictivo. En el contexto de variables solares, Stepwise ayuda a identificar combinaciones de regresores que optimizan la estimación de la GHI sin introducir redundancias innecesarias.  
-
-\paragraph{}  
+\paragraph{Stepwise (selección hacia adelante y hacia atrás).} Los métodos Stepwise combinan criterios estadísticos de inclusión y exclusión de variables, permitiendo construir un modelo óptimo de manera secuencial. Este enfoque es especialmente adecuado cuando se busca un balance entre interpretabilidad y rendimiento predictivo. En el contexto de variables solares, Stepwise ayuda a identificar combinaciones de regresores que optimizan la estimación de la GHI sin introducir redundancias innecesarias. \\ 
 
 
-La elección de los tres métodos de selección de variables se justifica por su complementariedad: RFE se centra en la importancia iterativa de cada predictor, LASSO introduce regularización para reducir la complejidad y Stepwise optimiza la construcción del modelo desde un enfoque estadístico. La combinación de estas técnicas permite una selección robusta de variables, maximizando la eficiencia del modelo y mejorando la precisión de la estimación de la irradiancia global horizontal (GHI) en el posprocesamiento.\\
+La elección de los tres métodos de selección de variables se justifica por su complementariedad: RFE se centra en la importancia iterativa de cada predictor, LASSO introduce regularización para reducir la complejidad, y Stepwise optimiza la construcción del modelo desde un enfoque estadístico. Pretendemos que la combinación de estas técnicas permita una selección robusta de variables, maximizando la eficiencia del modelo.\\
 
-En esta investigación se trabajó con un conjunto de variables de carácter astronómico, atmosférico, satelital y meteorológico, definidas de la siguiente manera: 
+En este trabajo el se propuso utilizar un conjunto de variables de carácter astronómico, atmosférico, satelital y meteorológico, definidas de la siguiente manera:
 
 \begin{itemize}
-    \item \texttt{N}: día del año.
-    \item \texttt{delta}: declinación solar.
-    \item \texttt{Fn}: factor de corrección orbital.
-    \item \texttt{w}: ángulo horario.
-    \item \texttt{SZA}: ángulo cenital solar.
-    \item \texttt{alphaS}: altura solar.
-    \item \texttt{E0}: ecuación del tiempo.
-    \item \texttt{TOA}: irradiancia en el tope de la atmósfera.
-    \item \texttt{GHIargp2}: estimación de la GHI en condiciones de cielo claro según el modelo Argpv2.
-    \item \texttt{mr}: masa de aire óptica relativa.
-    \item \texttt{kt}: índice de claridad.
-    \item \texttt{tm}: temperatura del aire a 2 m (ERA5).
-    \item \texttt{uw}: componente zonal del viento (ERA5).
-    \item \texttt{vw}: componente meridional del viento (ERA5).
-    \item \texttt{cams}: estimación satelital de la GHI a partir del modelo CAMS.
-    \item \texttt{lsasaf}: estimación satelital de la GHI a partir del modelo LSA-SAF.
+\item \texttt{SZA}: Ángulo cenital solar.
+\item \texttt{$\alpha$}: Altura solar.
+\item \texttt{TOA}: Irradiancia en la parte superior de la atmósfera.
+\item \texttt{GHIargp2}: Irradiancia bajo cielo despejado basada en \cite{Ledesma2023a}.
+\item \texttt{delta}: Declinación solar.
+\item \texttt{Fn}: Función normalizada de duración del día.
+\item \texttt{E0}: Factor de corrección extraterrestre.
+\item \texttt{mr}: Masa de aire relativa \cite{Gueymard2003}.
+\item \texttt{kt}: Índice de claridad.
+\item \texttt{tm}: Temperatura media del aire según ERA-5.
+\item \texttt{uw}: Componente U del viento según ERA-5.
+\item \texttt{dw}: Componente V del viento según ERA-5.
+\item \texttt{hr}: Humedad relativa según ERA-5.
+\item \texttt{p}: Presión según ERA-5.
 \end{itemize}
-
-Estas variables fueron seleccionadas bajo la premisa de que son relativamente fáciles de calcular o de obtener a partir de modelos satelitales y de reanálisis, porque que podrían estar disponibles para caulquier sitio de interés.\\
-
-
 
 
 \begin{figure}
@@ -576,11 +568,11 @@ Estas variables fueron seleccionadas bajo la premisa de que son relativamente f�
 
 
 
-Las métricas de desempeño obtenidas sobre las series generadas a partir del conjunto completo de variables regresoras se reporta en la Tabla \ref{tab:metrics_model_satellite}. Además se han incluido, para comidad del lector, nuevamente las métricas obtenidas en partir de la adaptación con una ùnica variable y sin adaptar.
+Las métricas de desempeño obtenidas sobre las series generadas a partir del conjunto completo de variables regresoras se reporta en la Tabla \ref{tab:metricas_3_1}. Además se han incluido, para comidad del lector, nuevamente las métricas obtenidas en partir de la adaptación con una ùnica variable y sin adaptar.
 
-\begin{table*}[ht!]
-\caption{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo y conjunto de datos satelital en los cinco sitios. Los valores están normalizados y expresados como porcentajes relativos a la media de GHI en cada sitio: 429.2~W/m$^2$ (Yu), 432.9~W/m$^2$ (Sa), 554.4~W/m$^2$ (Sca), 628.4~W/m$^2$ (Ero), y 648.7~W/m$^2$ (Lq). Los modelos etiquetados con ``(1 var.)'' indican adaptación al sitio realizada utilizando solo un regresor (CAMS o LSA-SAF).}
-\label{tab:metrics_model_satellite}
+\begin{table*}
+\caption{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo en el conjunto de prubeas de los cinco sitios. Los valores están normalizados y expresados como porcentajes relativos a la media de GHI en cada sitio: 429.2~W/m$^2$ (Yu), 432.9~W/m$^2$ (Sa), 554.4~W/m$^2$ (Sca), 628.4~W/m$^2$ (Ero), y 648.7~W/m$^2$ (Lq). Los modelos etiquetados con ``(1 var.)'' indican adaptación al sitio realizada utilizando solo un regresor (CAMS o LSA-SAF).}
+\label{tab:metricas_3_1}
 \centering
 \resizebox{\linewidth}{!}{
 \def\arraystretch{1.5}
@@ -617,49 +609,102 @@ MLP-LSASAF  & -4.9 & 21.9 & 32.2 &  3.5 & 27.1 & 40.7 & -3.7 & 21.0 & 29.7 &  0.
 \end{table*}
 
 
+La Tabla \ref{tab:metricas_3_1} permite ver que al incorporar los 15 regresores, los MLR y XGB logran una mejora adicional en MAE y RMSE en casi todos los sitios. En contraste, en las evaluaciones de MLP con muchas variables se experimenta un aumento de los errores en varios sitios en comparación a los demás modelos de regresión. Incluso empeorando la estimación origanl de los modelos. Debe tenerse en cuenta que a pesar de implementar un esquema de entrenamiento con conjunto de entrenamiento, validación y prueba (TVT) y aplicar early stopping para evitar sobreajuste, los modelos MLP aparentan tener un desempeño inferior al esperado cuando se incluyen múltiples variables regresoras. Esto se debe a que las redes neuronales dependen de que las entradas contengan información relevante y no redundante; si algunas variables son irrelevantes el modelo podría aprender patrones espurios, lo que incrementa métricas como MAE o RMSE. En este contexto, incluso estrategias de regularización y control de complejidad solo limitan parcialmente la degradación del desempeño. Por ello, la selección cuidadosa de variables mediante técnicas como RFE, LASSO o Stepwise resulta crucial para garantizar que los MLP aprovechen su capacidad de modelar relaciones no lineales sin comprometer la precisión de la estimación de la GHI.\\
 
 
+Seguido de esto aplicamos los mismos algoritmos (MLR, MLP, XGBoost) después de reducir las variables mediante tres técnicas complementarias de selección: Eliminación Recursiva de Variables (RFE), LASSO y selección Stepwise. Estas metodologías se emplearon de manera conjunta, ya que ofrecen distintas perspectivas sobre la relevancia de las variables: RFE mediante eliminación iterativa, LASSO a través de regularización incorporada, y Stepwise basándose en criterios estadísticos. A nuestro criterio ninguna de estas técnicas por sí sola podría denifir un conjunto de variables a considerar óptimas, pero su uso combinado nos permitió identificar un conjunto central consistente de variables relevantes, reduciendo la complejidad del modelo sin comprometer su capacidad predictiva.\\
 
-El análisis comparativo de los métodos de selección de variables (RFE, LASSO y Stepwise) aplicado a distintos sitios (YU, SA, SCA, ERO y LQ) permitió evaluar el impacto de los predictores en el desempeño de los modelos de estimación de la GHI.\\
+El análisis comparativo de los métodos de selección a lo largo de los sitios estudiados (YU, SA, SCA, ERO y LQ) reveló que Stepwise generalmente ofreció el mejor desempeño, con la menor desviación cuadrática media relativa (\textit{rrmsd}). Por ejemplo, en ERO y LQ los errores se aproximaron al 21\%, mientras que en YU y SCA oscilaron entre 25–27\%. Esto sugiere que la inclusión progresiva únicamente de aquellos predictores que mejoran significativamente el ajuste proporciona un equilibrio más efectivo que la eliminación exhaustiva (RFE) o la penalización intensa (LASSO).
 
-En términos generales, se observó que el método \textit{Stepwise} ofreció el mejor rendimiento en la mayoría de los casos, presentando los valores más bajos de \textit{rrmsd}. Por ejemplo, en ERO y LQ se obtuvieron errores relativos cercanos al 21\%, mientras que en YU y SCA se situaron en torno al 25--27\%. Esto confirma que la selección progresiva de predictores, incorporando únicamente aquellos que generan mejoras significativas en el ajuste, resulta más eficiente que estrategias exhaustivas (RFE) o con regularización estricta (LASSO). \\
+En a las series de GHI, los resultados, nuevamente podrían indicarnos que no existe una fuente superior de manera universal: la elección entre CAMS y LSA-SAF depende del sitio específico. En YU y ERO, los modelos basados en LSA-SAF mostraron menores errores, mientras que en SCA y LQ CAMS presentó un mejor desempeño. En SA, sin embargo, ambos productos mostraron un rendimiento inferior (\textit{rrmsd} entre 31\% y 34\%), probablemente esto indique que SA presenta condiciones locales más complejas en comparación a los otros sitios lo que introduce limitaciones en los resultados de los modelos de satélite.\\
 
-Respecto a la comparación entre las fuentes satelitales, los resultados muestran que no existe un modelo universalmente superior, sino que la conveniencia de utilizar CAMS o LSA-SAF depende del sitio específico. En YU y ERO los modelos con LSA-SAF alcanzaron menor error, mientras que en SCA y LQ los mejores resultados se obtuvieron con CAMS. En SA, ambos conjuntos presentaron un desempeño inferior, con errores significativamente más altos (\textit{rrmsd} entre 31\% y 34\%), lo que sugiere la influencia de condiciones locales complejas o limitaciones en la representatividad de los productos satelitales. En este sitio, sin embargo, las variables meteorológicas derivadas de ERA5 (temperatura y viento) fueron seleccionadas con mayor frecuencia, lo que sugiere que aportan información adicional relevante.\\
+Respecto a la composición de los predictores, la variable GHI derivada de satélites (\texttt{cams} o \texttt{lsasaf}) se incluyó de manera consistente en todos los modelos, confirmando su rol central. De igual manera, variables geométricas como el ángulo cenital solar (\texttt{SZA}), ángulo horario (\texttt{w}), día del año (\texttt{N}) e índice de claridad (\texttt{kt}) aparecieron recurrentemente en las configuraciones de mejor desempeño. Otras variables astronómicas y meteorológicas, incluyendo \texttt{TOA}, \texttt{GHIargp2}, temperatura del aire (\texttt{tm}) y componentes del viento (\texttt{uw}, \texttt{vw}), fueron seleccionadas con frecuencia, reforzando la importancia de integrar tanto la geometría solar como las condiciones meteorológicas locales. Por el contrario, variables como \texttt{Fn}, \texttt{delta}, \texttt{alphaS}, \texttt{E0} y \texttt{mr} fueron menos elegidas, indicando una contribución más dependiente del sitio.\\
 
-En cuanto a la composición de los conjuntos de predictores, se constató que la variable satelital correspondiente (\texttt{cams} o \texttt{lsasaf}) fue incluida de manera consistente en todos los modelos, confirmando su papel central. Asimismo, variables geométricas como el ángulo cenital solar (\texttt{SZA}), el ángulo horario (\texttt{w}), el día del año (\texttt{N}) y el índice de claridad (\texttt{kt}) aparecieron recurrentemente en las configuraciones con mejor desempeño. Otros predictores astronómicos y atmosféricos, como \texttt{TOA}, \texttt{GHIargp2}, la temperatura (\texttt{tm}) y las componentes del viento (\texttt{uw}, \texttt{vw}), fueron seleccionados en varios sitios, reforzando la importancia de integrar tanto la geometría solar como las condiciones meteorológicas en el ajuste. Variables como \texttt{Fn}, \texttt{delta}, \texttt{alphaS}, \texttt{E0} y \texttt{mr} aparecieron con menor frecuencia, sugiriendo que su aporte es más dependiente de condiciones locales particulares.
-
-En conjunto, los resultados permiten concluir que:
+En términos generales, el análisis conduce a las siguientes conclusiones:
 \begin{itemize}
-    \item El método Stepwise constituye la estrategia más recomendable para la selección de variables, al balancear complejidad y precisión.
-    \item La fuente satelital óptima depende del sitio de estudio: LSA-SAF fue más favorable en YU y ERO, mientras que CAMS resultó superior en SCA y LQ. 
-    \item Las variables astronómicas y atmosféricas son complementarias a los predictores satelitales, y su integración mejora de forma significativa la capacidad explicativa de los modelos.
-    \item La incorporación de variables meteorológicas de ERA5 (\texttt{tm}, \texttt{uw}, \texttt{vw}) aporta beneficios adicionales, especialmente en sitios donde los modelos satelitales muestran limitaciones.
-    \item Existen diferencias notables entre sitios: ERO y LQ son los más favorables (\textit{rrmsd} $\approx$ 21\%), YU y SCA presentan un desempeño intermedio (25--27\%), y SA muestra los peores resultados (>31\%).
+\item La selección Stepwise constituye la estrategia de selección de variables más efectiva, equilibrando precisión y complejidad.
+\item La fuente satelital óptima depende del sitio: LSA-SAF es favorable en YU y ERO, mientras que CAMS funciona mejor en SCA y LQ.
+\item Los predictores astronómicos y meteorológicos complementan los regresores basados en satélite y mejoran significativamente el desempeño del modelo.
+\item Las variables derivadas de ERA5 (\texttt{tm}, \texttt{uw}, \texttt{vw}) aportan beneficios adicionales, especialmente en sitios donde los productos satelitales presentan un desempeño inferior.
+\item Las diferencias específicas por sitio son significativas: ERO y LQ muestran el mejor desempeño (\textit{rrmsd} $\approx$ 21\%), YU y SCA presentan resultados intermedios (25–27\%), mientras que SA registra los mayores errores (>31\%).
 \end{itemize}
 
-Finalmente, el análisis de recurrencia de predictores revela un núcleo de variables esenciales que debería formar parte de cualquier configuración robusta: 
+A partir de este análisis, se puede identificar un conjunto central de predictores consistentemente relevantes: {N,; w,; TOA,; kt,; SZA,; GHIargp2,; \text{cams/lsasaf},; tm,; uw,; vw}. Este conjunto combina predictores con sólida fundamentación física y selección recurrente, ofreciendo un equilibrio robusto entre generalización y adaptabilidad específica por sitio. Variables secundarias como \texttt{Fn}, \texttt{delta}, \texttt{alphaS}, \texttt{E0} y \texttt{mr} aún pueden contribuir en contextos particulares.\
 
-\[
-\{N,\; w,\; TOA,\; kt,\; SZA,\; GHIargp2,\; \text{cams/lsasaf},\; tm,\; uw,\; vw\}
-\]
-
-Este conjunto concentra los predictores más consistentes y con mayor fundamentación física, garantizando un buen compromiso entre precisión y aplicabilidad transversal. Según el sitio, se podrían añadir variables secundarias (\texttt{Fn}, \texttt{delta}, \texttt{alphaS}, \texttt{E0}, \texttt{mr}), cuyo aporte es más dependiente de condiciones locales específicas.
-
-Es importante remarcar que los métodos de selección utilizados en este análisis (RFE, LASSO y Stepwise) no ordenan explícitamente las variables por importancia, como lo haría, por ejemplo, un algoritmo de tipo Random Forest que entrega un ranking de importancia. Lo que sí podemos inferir es la frecuencia y consistencia con la que cada predictor es seleccionado a lo largo de los sitios y métodos. En este sentido, variables como \texttt{N} (día del año), \texttt{w} (ángulo horario), \texttt{SZA} (ángulo cenital solar) y \texttt{kt} (índice de claridad) aparecen de forma reiterada y estable, confirmando su relevancia central. En contraste, predictores como la temperatura del aire (\texttt{tm}) o las componentes de viento (\texttt{uw}, \texttt{vw}) tienden a ser seleccionados en casos específicos, sugiriendo un aporte complementario más que universal.
+Es importante señalar, no obstante, que RFE, LASSO y Stepwise no producen rankings explícitos de importancia de las variables. Sus resultados deben interpretarse en función de la frecuencia y consistencia con la que los predictores son seleccionados a lo largo de sitios y métodos. Para complementar esta limitación, se empleó posteriormente Random Forest como modelo de regresión, con hiperparámetros optimizados mediante búsqueda en malla (Tabla~T). Más allá de su función predictiva, RF proporciona un ranking directo de importancia de los regresores. Aunque estudios previos \cite{SALAMALIKIS2022} han demostrado que XGBoost generalmente supera a RF en tareas de adaptación por sitio, el ranking obtenido con RF sigue siendo valioso para optimizar costo computacional y tiempo de entrenamiento en aplicaciones futuras. El ranking de importancia resultante se presenta en la Tabla \ref{tab:rf_importance}.\\
 
 
-Seguramente sería útil contar algún ranking de importancia que busque establecer cuál es el orden de importancia con el que se deberían escoger las variables regresoras. Como se mencionó en el párrafo anterior, el algoritmo RF permite definir este ranking. Si bien este modelo no ha mostrado ser superior en comparación al modelo XGBoost en el contexto de la adaptación al sitio, según lo reportado en \cite{SALAMALIKIS2022}, conocer el orden de importancia de las variables regresoras para nuestros sitios de estudio puede ser relevante al momento de optimizar costo computacional y tiempo en el entrenamiento de los modelos, en trabajos que busquen replicar los procesos de adaptacion al sitio en la región.\\
+\begin{table}[t]
+\centering
+\caption{Predictores mejor posicionados según el análisis de importancia de Random Forest en los distintos sitios y fuentes satelitales (CAMS, LSA-SAF). Los valores representan puntuaciones de importancia normalizadas.}
+\label{tab:rf_importance}
+\resizebox{\linewidth}{!}{
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Sitio} & \textbf{Fuente} & \textbf{1°} & \textbf{2°} & \textbf{3°} & \textbf{4°} & \textbf{5°} \\
+\midrule
+YU & CAMS & cams (0.310) & kt (0.193) & SZA (0.080) & GHIargp2 (0.070) & alphaS (0.069) \\
+YU & LSA-SAF & lsasaf (0.296) & kt (0.214) & SZA (0.078) & GHIargp2 (0.068) & alphaS (0.063) \\
+SA & CAMS & cams (0.276) & kt (0.198) & SZA (0.096) & mr (0.076) & alphaS (0.073) \\
+SA & LSA-SAF & lsasaf (0.274) & kt (0.130) & SZA (0.106) & mr (0.100) & alphaS (0.072) \\
+SCA & CAMS & cams (0.674) & TOA (0.054) & GHIargp2 (0.047)& alphaS (0.035) & tm (0.026) \\
+SCA & LSA-SAF & lsasaf (0.682) & alphaS (0.055) & GHIargp2 (0.029)& tm (0.029) & w (0.028) \\
+ERO & CAMS & alphaS (0.388) & SZA (0.158) & mr (0.158) & cams (0.052) & tm (0.034) \\
+ERO & LSA-SAF & alphaS (0.351) & SZA (0.149) & mr (0.143) & lsasaf (0.141) & N (0.030) \\
+LQ & CAMS & cams (0.208) & SZA (0.145) & alphaS (0.141) & mr (0.134) & GHIargp2 (0.108) \\
+LQ & LSA-SAF & lsasaf (0.246) & SZA (0.177) & mr (0.146) & alphaS (0.143) & GHIargp2 (0.094) \\
+\bottomrule
+\end{tabular}}
+\end{table}
 
 
-En este sentido hemos tomado RF como modelo de regresión para realizar la adaptación en cada uno de los sitios, utilizando una búsqueda en rejilla según se especifica en la Tabla T. Como resultado se ha generado un ranking de importancia de las variables regresoras que se muestra en la  
+Los rankings de importancia obtenidos con RF evidencian tanto patrones comunes como diferencias específicas por sitio. En todos los casos, el predictor derivado de satélite (\texttt{cams} o \texttt{lsasaf}) apareció de manera consistente entre las variables mejor clasificadas, confirmando su rol central en la estimación de GHI. Predictores complementarios como el índice de claridad (\texttt{kt}), el ángulo cenital solar (\texttt{SZA}) y variables astronómicas auxiliares (p. ej., \texttt{alphaS}, \texttt{mr}, y \texttt{TOA}) también recibieron puntuaciones de importancia elevadas de manera recurrente, reforzando la conclusión de que la combinación de entradas satelitales con geometría solar mejora la robustez del modelo.\\
+
+A pesar de esta estructura común, los rankings revelaron dependencias marcadas por sitio. Por ejemplo, en SCA la variable satelital dominó el ranking, representando más del 67\% de la importancia total, lo que indica una fuerte dependencia del GHI derivado de satélite en este sitio. En contraste, en ERO los predictores principales fueron variables angulares (\texttt{alphaS}, \texttt{SZA}, \texttt{mr}), con la contribución del satélite inferior al 15\%, destacando el papel de la geometría solar bajo condiciones locales. En LQ, la importancia se distribuyó de manera más equilibrada entre satélite (\texttt{cams}/\texttt{lsasaf}), variables angulares y factores atmosféricos, reflejando una contribución balanceada de los predictores.\\
+
+Las variables meteorológicas de ERA5, como la temperatura del aire (\texttt{tm}) y los componentes del viento (\texttt{uw}, \texttt{vw}), aparecieron consistentemente en posiciones medias o bajas del ranking. Aunque su contribución relativa fue menor en comparación con las variables satelitales y geométricas, su selección recurrente sugiere que aportan poder explicativo complementario, especialmente en sitios donde los productos satelitales presentan menor desempeño (p. ej., SA).\\
+
+En conjunto, los rankings de RF refuerzan las conclusiones obtenidas a partir de los métodos de selección: (i) el GHI derivado de satélite es indispensable, (ii) las variables geométricas son recurrentemente importantes en todos los sitios, (iii) los predictores atmosféricos agregan mejoras dependientes del sitio, y (iv) la contribución relativa de cada familia de predictores varía considerablemente según la ubicación. Esta variabilidad específica por sitio confirma la importancia de adaptar los modelos de regresión no solo a la fuente de datos disponible, sino también a las condiciones locales predominantes.\\
+
+
+\begin{table*}[ht!]
+\caption{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo y conjunto satelital en los cinco sitios, utilizando los siete predictores mejor posicionados con resolución de 15 minutos. Los valores están normalizados y expresados como porcentaje respecto al GHI promedio de cada sitio: 429.2~W/m$^2$ (YU), 432.9~W/m$^2$ (SA), 554.4~W/m$^2$ (SCA), 628.4~W/m$^2$ (ERO) y 648.7~W/m$^2$ (LQ).}
+\label{tab:metrics_7pred}
+\centering
+\resizebox{\linewidth}{!}{
+\def\arraystretch{1.5}
+\begin{tabular}{cccccccccccccccc}
+\hline
+& \multicolumn{3}{c}{YU} & \multicolumn{3}{c}{SA} & \multicolumn{3}{c}{SCA} & \multicolumn{3}{c}{ERO} & \multicolumn{3}{c}{LQ} \\
+Modelo & MBE & MAE & RMSE & MBE & MAE & RMSE & MBE & MAE & RMSE & MBE & MAE & RMSE & MBE & MAE & RMSE \\
+\hline
+\multicolumn{16}{|c|}{\textit{Adaptación por sitio con 7 regresores}} \\
+\hline
+MLR-CAMS & -1.6 & 17.1 & 25.9 & 4.1 & 20.9 & 31.1 & 1.5 & 18.5 & 26.8 & 1.0 & 14.3 & 22.3 & 4.5 & 12.8 & 21.4 \\
+MLP-CAMS & 1.4 & 16.4 & 24.8 & 1.5 & 20.5 & 30.9 & 0.6 & 18.0 & 25.8 & 0.5 & 13.6 & 22.0 & 2.9 & 12.9 & 21.3 \\
+XGB-CAMS & -1.7 & 16.9 & 25.6 & 4.0 & 20.8 & 31.3 & 0.0 & 19.0 & 26.5 & 0.3 & 13.6 & 22.1 & 2.5 & 12.6 & 21.2 \\
+MLR-LSA-SAF & -4.9 & 17.1 & 24.6 & 4.5 & 23.4 & 34.3 & 2.2 & 19.8 & 28.3 & 1.6 & 13.4 & 21.8 & 6.4 & 13.2 & 23.1 \\
+MLP-LSA-SAF & -5.7 & 16.5 & 24.4 & 4.8 & 22.9 & 34.1 & 2.4 & 20.2 & 28.8 & -0.5 & 13.3 & 21.4 & 3.0 & 13.2 & 21.8 \\
+XGB-LSA-SAF & -5.0 & 16.6 & 24.2 & 4.2 & 23.8 & 34.4 & 1.8 & 20.0 & 28.6 & 0.8 & 12.7 & 21.5 & 2.2 & 13.2 & 21.9 \\
+\hline
+\end{tabular}}
+\end{table*}
 
 
 
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figuras/rmsd-multiple-mejor.png}
+    \caption{Comparación del rendimiento entre el modelo original y los modelos ajustados con 15, 7 y 1 regresor en términos de RMSD. Las barras se muestran agrupadas por sitio y conjunto de datos, junto con flechas que indican la mejora o el deterioro con respecto al modelo original, así como deltas en puntos porcentuales (pp) y porcentaje relativo.}
+    \label{fig:rrmsd-multiple}
+\end{figure}
+
+
+La Figura \ref{fig:rrmsd-multiple} muestra que incluso ante el mejor resultado que se puede obtener usando un conjunto amplio de variables regresoras se puede obtener un desempeño similar si toman algunas consideraciones sobre qué variables van a introducirse como fuentes descriptivas al modelo de regresiòn.\\
 
 
 
-
-
+Por otro lado, pensamos que la selección de siete predictores representa un compromiso adecuado entre la simplicidad del modelo y su capacidad predictiva. Este subconjunto fue elegido considerando tanto los rankings de importancia de variables como los resultados de los análisis de selección de características, lo que permite capturar de manera consistente los factores que más influyen en la variabilidad del GHI, al tiempo que se minimiza la redundancia. La utilización de siete regresores facilita la retención de información clave proveniente de fuentes satelitales y meteorológicas, permitiendo una adaptación precisa por sitio sin incurrir en un elevado costo computacional. Como se observa en la Tabla~\ref{tab:metrics_7pred}, los modelos que emplean este conjunto de variables presentan valores de MAE entre 12 y 20\% y RMSE en el rango de 21–31\% del GHI promedio, lo que indica que un conjunto compacto puede ofrecer un desempeño comparable al de configuraciones más extensas, a la vez que mejora la interpretabilidad y la eficiencia del entrenamiento. No obstante, es importante reconocer que un análisis más profundo podría evaluar el impacto de reducir aún más el número de variables, especialmente en términos de precisión y generalización del modelo.\\
 
 
 
