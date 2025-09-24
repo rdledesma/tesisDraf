@@ -1,4 +1,4 @@
-\begin{thebibliography}{80}
+\begin{thebibliography}{83}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -333,6 +333,27 @@ Gilles Louppe.
 \newblock \emph{Understanding Random Forests from theory to practice}.
 \newblock PhD thesis, Universit\'e de Li\`ege, 2015.
 
+\bibitem[Miranda(2023)]{Miranda2023}
+Diego Miranda.
+\newblock Procedimento de classificação e regressão aplicado ao site
+  adaptation da radiação solar.
+\newblock Dissertação (mestrado em tecnologias energéticas e nucleares),
+  Universidade Federal de Pernambuco, Recife, Brasil, February 2023.
+\newblock URL \url{https://repositorio.ufpe.br/handle/123456789/49667}.
+
+\bibitem[Miranda et~al.(2021)Miranda, Galdino, Petribú, Vilela, Bacelar, and
+  de~S.~Barbosa]{Miranda2021}
+Diego Miranda, Janis Galdino, Leonardo Petribú, Olga~C. Vilela, Tarcísio~S.
+  Bacelar, and Elielza~M. de~S.~Barbosa.
+\newblock Análise de longo prazo e obtenção do ano meteorológico típico
+  para a usina fotovoltaica flutuante de sobradinho.
+\newblock \emph{Avances en Energías Renovables y Medio Ambiente}, 25:\penalty0
+  374--385, 2021.
+\newblock ISSN 2796-8111.
+\newblock Departamento de Energia Nuclear da Universidade Federal de Pernambuco
+  (DEN-UFPE) e Centro de Energias Renováveis da Universidade Federal de
+  Pernambuco (CER-UFPE).
+
 \bibitem[Narvaez et~al.(2021)Narvaez, Giraldo, Bressan, and
   Pantoja]{NARVAEZ2021}
 Gabriel Narvaez, Luis~Felipe Giraldo, Michael Bressan, and Andres Pantoja.
@@ -542,6 +563,18 @@ Germán Salazar, Alejandro Hernández, Ricardo Echazú, Luis Saravia, and
   11 2013.
 \newblock \doi{10.7770/ejee-V0N0-art531}.
 
+\bibitem[Salazar et~al.(2025)Salazar, Ledesma, López~Ruiz, and
+  de~Castro~Vilela]{Salazar2025}
+Germán Salazar, Rubén~Darío Ledesma, Constanza López~Ruiz, and Olga
+  de~Castro~Vilela.
+\newblock Análisis de desempeño de diferentes técnicas de aprendizaje
+  automático en una adaptación al sitio de irradiancia solar global para
+  salta (argentina).
+\newblock \emph{Avances en Energías Renovables y Medio Ambiente - AVERMA},
+  28:\penalty0 308–320, abr. 2025.
+\newblock URL
+  \url{https://portalderevistas.unsa.edu.ar/index.php/averma/article/view/4892}.
+
 \bibitem[Salman et~al.(2024)Salman, Kalakech, and Steiti]{salman2024}
 Hasan~Ahmed Salman, Ali Kalakech, and Amani Steiti.
 \newblock Random forest algorithm overview.
@@ -628,9 +661,9 @@ Guillermo~Antonio Toro~Bayona and Iván~Alberto Lizarazo~Salcedo.
 \newblock \emph{Ingeniería}, 17\penalty0 (1):\penalty0 61--72, 2012.
 \newblock URL \url{http://www.redalyc.org/articulo.oa?id=498850174008}.
 
-\bibitem[Vilela et~al.(2015)Vilela, Pedrosa~Filho, Escobedo, Dal~Pai, Salazar,
+\bibitem[Vilela et~al.(2015)Vilela, Pedrosa~Filho, Escobedo, Dal~Pai, Salazr,
   Raichjk, Righini, Grossi, and Fraidenraich]{Vilela2015}
-O.~C. Vilela, M.~H.~O. Pedrosa~Filho, J.~F. Escobedo, A.~Dal~Pai, G.~Salazar,
+O.~C. Vilela, M.~H.~O. Pedrosa~Filho, J.~F. Escobedo, A.~Dal~Pai, G.~Salazr,
   C.~Raichjk, R.~Righini, H.~Grossi, and N.~Fraidenraich.
 \newblock Qualificação y caracterización da radiação direta, difusa e
   global em diferentes localidades do brasil e argentina.

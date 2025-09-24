@@ -24,7 +24,7 @@ Los sitios analizados en esta tesis se resumen en la Tabla \ref{tab:sites}, dond
 
 La estación Sa se encuentra en el campus experimental del INENCO, en la Universidad Nacional de Salta. Está situada en un entorno urbano preandino dentro del Valle de Lerma, una zona donde es común la formación de nubes debido a la cercanía de la cordillera. Su clima es subtropical de montaña, con inviernos secos y veranos frescos (Cwb). Las mediciones se realizaron entre 2009 y 2020 utilizando un piranómetro Eppley PSP.\\
 
-La estación Lq, localizada en La Quiaca, presenta un clima estepario frío semiárido (BSk) típico de regiones andinas, y destaca por registrar uno de los mayores niveles de horas de sol anuales en Argentina. Contó con un piranómetro Kipp \& Zonen CMP11 y recopiló datos entre 2021 y 2023.
+La estación Lq, localizada en La Quiaca, presenta un clima estepario frío semiárido (BSk) típico de regiones andinas, y destaca por registrar uno de los mayores niveles de horas de sol anuales en Argentina. Contó con un piranómetro Kipp \& Zonen CMP11 y recopiló datos entre 2018 y 2023.
 
 La estación Yu, ubicada en una zona de clima subtropical húmedo (Cwa), registró datos entre 2017 y 2018 con un sensor CMP11. La estación Sca, también con clima Cwb, operó entre 2012 y 2013 con un piranómetro CMP3. Finalmente, la estación Ero, situada en una región de gran altitud con clima BSk, recopiló datos entre 2016 y 2018, igualmente con un CMP3.
 
@@ -238,7 +238,7 @@ De acuerdo a lo indicado en la sección \ref{MLM} el conjunto de datos debe ser 
         \textbf{SA}  & 2009 & 2009 & 2010 - 2024 \\ 
         \textbf{SCA} & 2013 & 2013 & 2012-2014 \\
         \textbf{ERO} & 2013 & 2013 & 2014 - 2024  \\
-        \textbf{LQ}  & 2020 & 2020 & 2021 - 2024  \\
+        \textbf{LQ}  & 2019 & 2019 & 2018, 2021 - 2023  \\
     \hline
     \end{tabular}
     \caption{División del conjunto de datos en entrenamiento, validación y prueba }
@@ -285,21 +285,17 @@ De acuerdo a lo indicado en la sección \ref{MLM} el conjunto de datos debe ser 
 \section{Adaptación al sitio con una variable descriptiva}
 
 
+En los trabajos citados en la Sección \ref{ch_3} sobre la evaluación del proceso de Adaptación al Sitio (SA), se ha prestado escasa atención a las razones subyacentes por las cuales ciertos modelos de aprendizaje automático (ML) superan a otros en este proceso. Dado que algunos modelos de ML poseen una naturaleza inherentemente más compleja que otros, podría suponerse que los modelos más complejos ofrecerían un rendimiento superior frente a aquellos de menor complejidad. En este contexto, el término complejidad hace referencia tanto a la complejidad computacional —es decir, la cantidad de operaciones necesarias para ejecutar el modelo— como a la complejidad conceptual, relacionada con el nivel de conocimiento requerido para comprender su funcionamiento.\\
+
+En esta sección se presenta una implementación del proceso de SA basada en uno de los enfoques clásicos, que consiste en adaptar una serie temporal modelada (proveniente de datos satelitales o de reanálisis) utilizando como referencia una serie de mediciones in situ.\\
+
+Dado que el modelo de Regresión Lineal Simple (RLS) puede considerarse el menos complejo entre los empleados en este estudio, la primera evaluación del proceso de SA en la región de interés se realiza utilizando este modelo. El objetivo es comparar el desempeño de la RLS con el de modelos de regresión más complejos, como el Perceptrón Multicapa (MLP) y XGBoost, utilizando las mismas métricas de evaluación.\\
+
+Para los modelos MLP y XGBoost, la determinación de la configuración óptima de hiperparámetros fue fundamental para lograr un desempeño consistente en las particiones de validación cruzada. Esto se llevó a cabo mediante una búsqueda exhaustiva en rejilla (Grid Search) implementada con la función \textbf{GridSearchCV} de la biblioteca \textbf{Scikit-learn} en Python \cite{Pedregosa2012}. Los rangos específicos de hiperparámetros evaluados para MLP y XGBoost se presentan en la Tabla \ref{tab:gridsearch}. La selección de hiperparámetros óptimos constituye un paso crítico en el aprendizaje automático, ya que influye directamente en la complejidad del modelo, su capacidad de generalización y su rendimiento predictivo global \cite{Goodfellow2016}.\\
 
 
 
-
-
-En los trabajos citados en las secciones anteriores sobre la evaluación del proceso de Adaptación al Sitio (AS), se ha prestado escasa atención a las razones subyacentes por las cuales ciertos modelos de ML superan a otros en dicho proceso. Considerando que algunos modelos de ML presentan una naturaleza inherentemente más compleja que otros, podría pensarse que modelos más complejos ofrecerían un mejor rendimiento en comparación con aquellos de menor complejidad. En este contexto, el término complejidad hace referencia tanto a la complejidad computacional —es decir, la cantidad de operaciones necesarias para ejecutar el modelo— como a la complejidad conceptual asociada al nivel de conocimiento requerido para comprender su funcionamiento.\\
-
-En esta sección, se presenta una implementación del proceso de AS basada en uno de los enfoques clásicos, el cual consiste en adaptar una serie temporal modelada (proveniente de datos satelitales o de reanálisis) utilizando como referencia una serie de mediciones in situ.\\
-
-Dado que el modelo de Regresión Lineal Simple (RLS) puede considerarse el menos complejo entre los modelos empleados en este estudio, la primera evaluación del proceso de SA en la región de interés se realiza utilizando dicho modelo. El objetivo es comparar el desempeño de la RLS con el de otros modelos de regresión más complejos, tales como Perceptrón Multicapa (MLP) y XGBoost, utilizando las mismas métricas de evaluación.\\
-
-
-Para ambos modelos, MLP y XGBoost, determinar la configuración óptima de hiperparámetros fue esencial para lograr un desempeño consistente a través de las particiones de validación cruzada. Esto se llevó a cabo mediante una búsqueda exhaustiva en rejilla implementada con la función \textbf{GridSearchCV} de la biblioteca \textbf{Scikit-learn} en Python \cite{Pedregosa2012}. Los rangos específicos de hiperparámetros evaluados para los modelos MLP y XGB se describen en la Tabla \ref{tab:gridsearch}. La selección de hiperparámetros óptimos es un paso crítico en el aprendizaje automático, ya que influyen directamente en la complejidad del modelo, su capacidad de generalización y su rendimiento predictivo global \cite{Goodfellow2016}.
-
-\begin{table}[ht!]
+\begin{table}[ht]
 \caption{Espacio cartesiano de hiperparámetros para las técnicas de aprendizaje supervisado.}
 \label{tab:gridsearch}
 \centering
@@ -434,13 +430,53 @@ No obstante, el incremento de la complejidad del modelo no se tradujo en gananci
 \label{fig:rmse15}
 \end{figure}
 
-La Figura \ref{fig:rmse15} muestra el comportamiento del RMSE (\%) en cada sitio para los diferentes modelos de regresión utilizados. Se observa que todas las propuestas de adaptación logran reducir el RMSE en cada sitio. Aunque en algunos casos la mejora puede ser modesta, como en YU y LQ, queda evidenciado que un simple ajuste específico puede mejorar el desempeño del modelo para una ubicación determinada.
-
-Además, los resultados de la adaptación dependen del modelo de estimación empleado. Cada modelo impone un límite sobre la precisión de la serie resultante, y optimizar su salida no garantiza necesariamente un desempeño superior frente a otro modelo que, de forma natural, ya proporciona una estimación más adecuada para un sitio específico.\\
+La Figura \ref{fig:rmse15} muestra el comportamiento del RMSE (\%) en cada sitio para los diferentes modelos de regresión utilizados. Se observa que todas las propuestas de adaptación logran reducir el RMSE en cada sitio. Aunque en algunos casos la mejora puede ser modesta, como en YU y LQ, queda evidenciado que un simple ajuste específico puede mejorar el desempeño del modelo para una ubicación determinada. Además se puede apreciar que el grado de mejora mediante la adaptación aparenta depender del modelo de estimación empleado. Cada modelo impone un límite sobre la precisión de la serie resultante, y optimizar su salida no garantiza necesariamente un desempeño superior frente a otro modelo que, de forma natural, ya proporciona una estimación más adecuada para un sitio específico.\\
 
 
 
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figuras/scatter_yu_1.png}
+    \caption{Comparación de modelos CAMS y LSASAF y las adpaciones con SLR y MLP en Yuto.}
+    \label{fig:scatter-yu-01}
+\end{figure}
+
+
+La Figura \ref{fig:scatter-yu-01} muestra un gráfico de dispersión para la GHI medida y las los modelos de CAMS (izquierdo) y LSA-SAF (derecho) con sus correspondeintes adaptaciones usando SLR y MLP.   
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figuras/scatter_sa_1.png}
+    \caption{Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR Y MLP en Salta.}
+    \label{fig:scatter-sa-01}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figuras/scatter_sca_1.png}
+    \caption{Comparación de modelos CAMS y LSASAF y las adpataciones con SLR y MLP en San Carlos.}
+    \label{fig:scatter-sca-01}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figuras/scatter_ero_1.png}
+    \caption{Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en El Rosal.}
+    \label{fig:scatter-ero-01}
+\end{figure}
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figuras/scatter_lq_1.png}
+    \caption{Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en La Quiaca.}
+    \label{fig:scatter-lq-01}
+\end{figure}
 
 
 
@@ -472,8 +508,15 @@ Además, el análisis reveló que los modelos más flexibles, como el MLP, son p
 
 
 \section{Adaptación al sitio con múltiples variables descriptivas}
+En la sección anterior se presentaron los resultados del proceso de Adaptación al Sitio (SA) utilizando un enfoque basado en mejorar la estimación de un modelo a partir de la variable propiamente modelada y de mediciones in situ. Este enfoque tradicional se centra en la relación directa entre la variable objetivo y sus observaciones, pero en los últimos años se ha desarrollado una estrategia más avanzada que consiste en incorporar variables regresoras adicionales durante el entrenamiento de los modelos de regresión. La idea subyacente es que estas variables aportan información complementaria, lo que podría mejorar la precisión de la estimación en comparación con un enfoque que utiliza únicamente una variable regresora.
 
-Los modelos de aprendizaje automático se emplean cada vez más para identificar patrones y extraer información significativa de grandes volúmenes de datos. No obstante, la efectividad de estos modelos depende en gran medida de la calidad de las características utilizadas durante el entrenamiento. La \textbf{selección de características}, un paso crucial en el preprocesamiento de datos, consiste en identificar las variables más relevantes y eliminar aquellas que sean redundantes o irrelevantes \cite{liu2023, Huang2024}. Este proceso no solo incrementa la interpretabilidad del modelo, sino que también mejora su eficiencia computacional y su capacidad predictiva. Un exceso de características o la inclusión de variables irrelevantes puede causar \textbf{sobreajuste}, donde el modelo presenta un buen desempeño con los datos de entrenamiento pero falla al generalizar a datos no vistos \cite{che2024a}. La selección de características ayuda a mitigar este problema al reducir la dimensionalidad, fomentando la creación de modelos más robustos y generalizables. Además, contribuye a disminuir los costos computacionales y el tiempo requerido para entrenar el modelo, consolidándose como una herramienta esencial tanto para investigadores como para profesionales \cite{Cheng2024}.\\
+En la práctica, estas variables adicionales pueden provenir de distintos modelos de reanálisis o de fuentes satelitales, y se seleccionan con la expectativa de que estén correlacionadas, de alguna manera, con la irradiancia global horizontal (GHI) medida. Este enfoque ha sido aplicado y documentado en trabajos previos, como \cite{Salazar2025, Miranda2021, Miranda2023}.\\
+
+La idea de ampliar el conjunto de regresores y automatizar el proceso de entrenamiento con la expectativa de obtener mejores resultados resulta atractiva, especialmente considerando que los modelos de aprendizaje automático son cada vez más utilizados para identificar patrones y extraer información de grandes volúmenes de datos. Sin embargo, la efectividad de estos modelos depende en gran medida de la calidad y relevancia de los regresores empleados. No basta con añadir más variables; estas deben ser apropiadas y contener información útil para la tarea de predicción.\\
+
+En este contexto, la selección de características se convierte en un paso crítico del preprocesamiento de datos. Este proceso consiste en identificar las variables más relevantes y eliminar aquellas redundantes o irrelevantes \cite{liu2023, Huang2024}. La selección adecuada de características no solo incrementa la interpretabilidad del modelo, sino que también mejora su eficiencia computacional y su capacidad predictiva. Por el contrario, la inclusión de un exceso de variables o de regresores irrelevantes puede generar sobreajuste, donde el modelo muestra un buen desempeño en los datos de entrenamiento pero falla al generalizar a datos no vistos \cite{che2024a}. Al reducir la dimensionalidad y centrarse en las características más informativas, la selección de características fomenta la creación de modelos más robustos y generalizables, al tiempo que disminuye los costos computacionales y el tiempo requerido para entrenar el modelo, consolidándose como una herramienta esencial tanto para investigadores como para profesionales \cite{Cheng2024}.
+
+
 
 Las técnicas de selección de características se agrupan en tres categorías principales: \textbf{métodos de filtro, métodos envolventes y métodos embebidos}, cada uno con su propia metodología, ventajas y limitaciones:  
 

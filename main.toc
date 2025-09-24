@@ -33,15 +33,15 @@
 \contentsline {subsection}{\numberline {3.2.2}Análisis de las estimaciones horarias}{40}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}División del conjunto de datos}{40}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Adaptación al sitio con una variable descriptiva}{41}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Adaptación al sitio con múltiples variables descriptivas}{46}{section.3.4}%
-\contentsline {paragraph}{Métodos de filtro.}{46}{section*.18}%
-\contentsline {paragraph}{Métodos envolventes.}{47}{section*.19}%
-\contentsline {paragraph}{Métodos embebidos.}{47}{section*.20}%
-\contentsline {paragraph}{Eliminación recursiva de características (RFE).}{47}{section*.21}%
-\contentsline {paragraph}{LASSO (Least Absolute Shrinkage and Selection Operator).}{47}{section*.22}%
-\contentsline {paragraph}{Stepwise (selección hacia adelante y hacia atrás).}{47}{section*.23}%
-\contentsline {paragraph}{}{48}{section*.24}%
-\contentsline {section}{\numberline {3.5}Adaptación al sitio tomando consideraciones de una serie temporal}{52}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{52}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Conclusiones}{55}{chapter.4}%
-\contentsline {chapter}{\textbf {Anexo 1}}{65}{chapter*.25}%
+\contentsline {section}{\numberline {3.4}Adaptación al sitio con múltiples variables descriptivas}{49}{section.3.4}%
+\contentsline {paragraph}{Métodos de filtro.}{50}{section*.18}%
+\contentsline {paragraph}{Métodos envolventes.}{50}{section*.19}%
+\contentsline {paragraph}{Métodos embebidos.}{50}{section*.20}%
+\contentsline {paragraph}{Eliminación recursiva de características (RFE).}{50}{section*.21}%
+\contentsline {paragraph}{LASSO (Least Absolute Shrinkage and Selection Operator).}{50}{section*.22}%
+\contentsline {paragraph}{Stepwise (selección hacia adelante y hacia atrás).}{51}{section*.23}%
+\contentsline {paragraph}{}{51}{section*.24}%
+\contentsline {section}{\numberline {3.5}Adaptación al sitio tomando consideraciones de una serie temporal}{55}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{56}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Conclusiones}{58}{chapter.4}%
+\contentsline {chapter}{\textbf {Anexo 1}}{68}{chapter*.25}%
