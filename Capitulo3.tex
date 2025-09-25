@@ -282,7 +282,7 @@ De acuerdo a lo indicado en la sección \ref{MLM} el conjunto de datos debe ser 
 
 
 
-\section{Adaptación al sitio con una variable descriptiva}
+\section{Adaptación al sitio con una variable descriptiva}\label{sec:01}
 
 
 En los trabajos citados en la Sección \ref{ch_3} sobre la evaluación del proceso de Adaptación al Sitio (SA), se ha prestado escasa atención a las razones subyacentes por las cuales ciertos modelos de aprendizaje automático (ML) superan a otros en este proceso. Dado que algunos modelos de ML poseen una naturaleza inherentemente más compleja que otros, podría suponerse que los modelos más complejos ofrecerían un rendimiento superior frente a aquellos de menor complejidad. En este contexto, el término complejidad hace referencia tanto a la complejidad computacional —es decir, la cantidad de operaciones necesarias para ejecutar el modelo— como a la complejidad conceptual, relacionada con el nivel de conocimiento requerido para comprender su funcionamiento.\\
@@ -507,7 +507,7 @@ Además, el análisis reveló que los modelos más flexibles, como el MLP, son p
  
 
 
-\section{Adaptación al sitio con múltiples variables descriptivas}
+\section{Adaptación al sitio con múltiples variables descriptivas}\label{sec:02}
 En la sección anterior se presentaron los resultados del proceso de Adaptación al Sitio (SA) utilizando un enfoque basado en mejorar la estimación de un modelo a partir de la variable propiamente modelada y de mediciones in situ. Este enfoque tradicional se centra en la relación directa entre la variable objetivo y sus observaciones, pero en los últimos años se ha desarrollado una estrategia más avanzada que consiste en incorporar variables regresoras adicionales durante el entrenamiento de los modelos de regresión. La idea subyacente es que estas variables pueden aportar información complementaria, lo que podría mejorar la precisión de la estimación en comparación con un enfoque que utiliza únicamente una variable regresora. 
 
 En la práctica, estas variables adicionales pueden provenir de distintos modelos de reanálisis o de fuentes satelitales, y se seleccionan con la expectativa de que estén correlacionadas, de alguna manera, con la irradiancia global horizontal (GHI) medida. Este enfoque ha sido aplicado y documentado en trabajos previos, como \cite{Salazar2025, Miranda2021, Miranda2023}.\\
@@ -718,19 +718,19 @@ Por otro lado, pensamos que la selección de siete predictores representa un com
 
 
 \section{Adaptación al sitio tomando consideraciones de una serie temporal}
+En las Secciones \ref{sec:01} y \ref{sec:02} se han presentado las primeras evaluaciones del proceso de adaptación al sitio en la región del NOA, siguiendo enfoques previamente reportados en la literatura por distintos autores. Las implementaciones basadas en estos enfoques nos han proporcionado una base sólida para comprender la influencia del entorno local en la variable GHI, además hemos dimesionado cuales son los límites en la mejora que se puede obtener tras site adaptar una serie siguiendo estos enfoques.\\
 
-Una <<serie temporal>> es un conjunto de observaciones de una o más variables recolectadas y ordenadas cronológicamente. El orden temporal es esencial para su análisis e interpretación \cite{Olivas2022}.\\
+En la presente sección se introducen los resultados obtenidos al aplicar un enfoque exploratorio desarrollado en esta tesis, basado en la desestacionalización de series temporales, con el objetivo de mejorar el proceso de adaptación al sitio (AS).
 
-El análisis de series temporales es aplicable en múltiples disciplinas. En Economía, permite estudiar tendencias de precios y demanda; en Marketing, ayuda a comprender la evolución de ventas. En Medicina, las bioseñales como ECG, EEG o EOG son ejemplos de series temporales. También se aplican en la gestión hospitalaria, por ejemplo, para analizar la afluencia de pacientes a urgencias o la demanda de especialistas. Otro campo fundamental es la meteorología, de especial interés en este trabajo, donde se utilizan para caracterizar, clasificar y predecir variables como la GHI.\\
+Una serie temporal se define como un conjunto de observaciones de una o más variables recolectadas y ordenadas cronológicamente. El orden temporal no es arbitrario, sino que es esencial para el análisis, la interpretación y la modelización de los datos, ya que permite identificar patrones, tendencias y comportamientos periódicos que pueden ser fundamentales para la toma de decisiones \cite{Olivas2022}.
 
+El análisis de series temporales tiene aplicaciones en múltiples disciplinas. En Economía, permite estudiar la evolución de precios, la demanda de productos o la inflación. En Marketing, facilita la comprensión de la dinámica de ventas a lo largo del tiempo. En Medicina, las bioseñales, como el electrocardiograma (ECG), el electroencefalograma (EEG) o el electrooculograma (EOG), son ejemplos claros de series temporales utilizadas para diagnóstico y monitoreo de pacientes. Además, en la gestión hospitalaria, el análisis temporal puede aplicarse para evaluar la afluencia de pacientes a servicios de urgencias o la demanda de especialistas en diferentes períodos. Otro ámbito crucial es la meteorología, que constituye el foco principal de este trabajo. En este contexto, las series temporales permiten caracterizar, clasificar y predecir variables climáticas de interés, como la irradiancia global horizontal (GHI), entre otras.
 
-La <<estacionalidad>> de una serie temporal es una característica por la cual los datos experimentan cambios regulares y predecibles con una frecuencia constante. Esta frecuencia puede ser, por ejemplo, diaria, semanal o mensual. Cualquier fluctuación predecible de frecuencia constante que aparezca en una serie temporal se dice que es estacional.\\
+Una característica clave de muchas series temporales es la estacionalidad, que se manifiesta cuando los datos muestran fluctuaciones regulares y predecibles con una frecuencia constante. Esta frecuencia puede ser diaria, semanal, mensual o anual, dependiendo del fenómeno que se estudie. Por ejemplo, en meteorología, la GHI presenta variaciones estacionales debidas a cambios en la posición del sol, la nubosidad o las condiciones atmosféricas. La presencia de estacionalidad puede influir significativamente en la interpretación y modelización de los datos, dado que introduce patrones repetitivos que podrían enmascarar otras tendencias o variaciones importantes.
 
+El enfoque propuesto en esta tesis consiste en desestacionalizar las series temporales de GHI antes de aplicar el proceso de adaptación al sitio. La desestacionalización implica eliminar o ajustar estas fluctuaciones periódicas, de manera que se pueda analizar la serie en términos de su comportamiento subyacente, sin que las variaciones estacionales interfieran en la evaluación del proceso de AS. Este procedimiento permite comparar los datos en condiciones más homogéneas, mejorando la precisión y confiabilidad de los análisis.
 
-
-En esta sección se ha evaluado el impacto en el proceso de AS la tener en cuenta la estacionalidad de la serie GHI. Se han comparado dos enfoques distintos respecto al enfoque tradicional. 
-
-
+En esta sección se evalúa el impacto de considerar la estacionalidad en la serie GHI sobre el proceso de AS, comparando el enfoque tradicional, que no realiza ajustes, con la metodología propuesta de desestacionalización. Los resultados obtenidos ofrecen una visión más clara de cómo la estacionalidad puede influir en la adaptación al sitio y destacan la importancia de integrar este paso en los procedimientos de análisis de series temporales en meteorología y energía solar.
 
 
 

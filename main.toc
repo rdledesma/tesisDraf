@@ -41,6 +41,6 @@
 \contentsline {paragraph}{LASSO (Least Absolute Shrinkage and Selection Operator).}{50}{section*.22}%
 \contentsline {paragraph}{Stepwise (selección hacia adelante y hacia atrás).}{51}{section*.23}%
 \contentsline {section}{\numberline {3.5}Adaptación al sitio tomando consideraciones de una serie temporal}{58}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{59}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{60}{section.3.6}%
 \contentsline {chapter}{\numberline {4}Conclusiones}{62}{chapter.4}%
 \contentsline {chapter}{\textbf {Anexo 1}}{72}{chapter*.24}%
