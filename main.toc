@@ -2,7 +2,7 @@
 \contentsline {chapter}{\textbf {Agradecimientos.}}{\es@scroman {ii}}{Doc-Start}%
 \contentsline {chapter}{\textbf {Índice de figuras}}{\es@scroman {iv}}{chapter*.2}%
 \contentsline {chapter}{\textbf {Índice de tablas}}{\es@scroman {vii}}{chapter*.3}%
-\contentsline {chapter}{\textbf {Resumen.}}{\es@scroman {ix}}{chapter*.4}%
+\contentsline {chapter}{\textbf {Resumen.}}{\es@scroman {x}}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Estudio de la Radiación Solar en Argentina y en el Noroeste Argentino}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Redes de Medidas}{8}{section.1.2}%
@@ -42,5 +42,5 @@
 \contentsline {paragraph}{Stepwise (selección hacia adelante y hacia atrás).}{51}{section*.23}%
 \contentsline {section}{\numberline {3.5}Adaptación al sitio tomando consideraciones de una serie temporal}{58}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{60}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Conclusiones}{62}{chapter.4}%
-\contentsline {chapter}{\textbf {Anexo 1}}{72}{chapter*.24}%
+\contentsline {chapter}{\numberline {4}Conclusiones}{65}{chapter.4}%
+\contentsline {chapter}{\textbf {Anexo 1}}{75}{chapter*.24}%

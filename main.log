@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.23)  25 SEP 2025 14:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.23)  25 SEP 2025 17:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -928,10 +928,19 @@ LaTeX Info: Redefining \% on input line 1.
 
  [8
 
-]
+] [9]
 \openout2 = `resumen.aux'.
 
- (./resumen.tex) [9
+ (./resumen.tex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10
 
 ]
 \openout2 = `Capitulo1.aux'.
@@ -1194,7 +1203,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-<figuras/SiteAdapation-Example.png, id=558, 867.24pt x 433.62pt>
+<figuras/SiteAdapation-Example.png, id=571, 867.24pt x 433.62pt>
 File: figuras/SiteAdapation-Example.png Graphic file (type png)
 <use figuras/SiteAdapation-Example.png>
 Package pdftex.def Info: figuras/SiteAdapation-Example.png  used on input line 
@@ -1215,7 +1224,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-<figuras/siteAdaptation.png, id=568, 555.0336pt x 362.09123pt>
+<figuras/siteAdaptation.png, id=581, 555.0336pt x 362.09123pt>
 File: figuras/siteAdaptation.png Graphic file (type png)
 <use figuras/siteAdaptation.png>
 Package pdftex.def Info: figuras/siteAdaptation.png  used on input line 52.
@@ -1243,7 +1252,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15 <./figuras/siteAdaptation.png>]
-<figuras/scatter-01.png, id=583, 1387.584pt x 700.2963pt>
+<figuras/scatter-01.png, id=597, 1387.584pt x 700.2963pt>
 File: figuras/scatter-01.png Graphic file (type png)
 <use figuras/scatter-01.png>
 Package pdftex.def Info: figuras/scatter-01.png  used on input line 76.
@@ -1283,7 +1292,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figuras/ML.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<figuras/ML.pdf, id=644, 606.76688pt x 255.20343pt>
+<figuras/ML.pdf, id=657, 606.76688pt x 255.20343pt>
 File: figuras/ML.pdf Graphic file (type pdf)
 <use figuras/ML.pdf>
 Package pdftex.def Info: figuras/ML.pdf  used on input line 159.
@@ -1310,7 +1319,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [20 <./figuras/ML.pdf>]
-<figuras/neurona.png, id=664, 576.1525pt x 221.82875pt>
+<figuras/neurona.png, id=678, 576.1525pt x 221.82875pt>
 File: figuras/neurona.png Graphic file (type png)
 <use figuras/neurona.png>
 Package pdftex.def Info: figuras/neurona.png  used on input line 194.
@@ -1328,7 +1337,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [21 <./figuras/neurona.png>]
-<figuras/MLP.png, id=683, 812.03375pt x 200.75pt>
+<figuras/MLP.png, id=696, 812.03375pt x 200.75pt>
 File: figuras/MLP.png Graphic file (type png)
 <use figuras/MLP.png>
 Package pdftex.def Info: figuras/MLP.png  used on input line 269.
@@ -1356,7 +1365,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [23 <./figuras/MLP.png>]
-<figuras/mlp.png, id=715, 1541.76pt x 1027.84pt>
+<figuras/mlp.png, id=729, 1541.76pt x 1027.84pt>
 File: figuras/mlp.png Graphic file (type png)
 <use figuras/mlp.png>
 Package pdftex.def Info: figuras/mlp.png  used on input line 322.
@@ -1384,7 +1393,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 411--412
 
  []
 
-<figuras/tree_1.png, id=748, 404.51125pt x 409.53pt>
+<figuras/tree_1.png, id=761, 404.51125pt x 409.53pt>
 File: figuras/tree_1.png Graphic file (type png)
 <use figuras/tree_1.png>
 Package pdftex.def Info: figuras/tree_1.png  used on input line 417.
@@ -1473,7 +1482,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
  (./Capitulo3.tex
 Cap\'{\i }tulo 3.
-<figuras/sites.png, id=866, 694.595pt x 327.2225pt>
+<figuras/sites.png, id=880, 694.595pt x 327.2225pt>
 File: figuras/sites.png Graphic file (type png)
 <use figuras/sites.png>
 Package pdftex.def Info: figuras/sites.png  used on input line 19.
@@ -1520,7 +1529,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [36]
-<figuras/errors_15.png, id=902, 1156.32pt x 289.08pt>
+<figuras/errors_15.png, id=915, 1156.32pt x 289.08pt>
 File: figuras/errors_15.png Graphic file (type png)
 <use figuras/errors_15.png>
 Package pdftex.def Info: figuras/errors_15.png  used on input line 167.
@@ -1535,12 +1544,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
-<figuras/season_15_tesis.png, id=903, 1387.584pt x 700.2963pt>
+<figuras/season_15_tesis.png, id=916, 1387.584pt x 700.2963pt>
 File: figuras/season_15_tesis.png Graphic file (type png)
 <use figuras/season_15_tesis.png>
 Package pdftex.def Info: figuras/season_15_tesis.png  used on input line 179.
 (pdftex.def)             Requested size: 486.25761pt x 245.40657pt.
-<figuras/RMSE-kt-15.pdf, id=907, 358.4592pt x 179.2296pt>
+<figuras/RMSE-kt-15.pdf, id=920, 358.4592pt x 179.2296pt>
 File: figuras/RMSE-kt-15.pdf Graphic file (type pdf)
 <use figuras/RMSE-kt-15.pdf>
 Package pdftex.def Info: figuras/RMSE-kt-15.pdf  used on input line 195.
@@ -1563,7 +1572,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [38 <./figuras/season_15_tesis.png>]
-<figuras/RMSE-sza-15.pdf, id=921, 358.4592pt x 179.2296pt>
+<figuras/RMSE-sza-15.pdf, id=935, 358.4592pt x 179.2296pt>
 File: figuras/RMSE-sza-15.pdf Graphic file (type pdf)
 <use figuras/RMSE-sza-15.pdf>
 Package pdftex.def Info: figuras/RMSE-sza-15.pdf  used on input line 209.
@@ -1656,32 +1665,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [44]
-<figuras/scatter_yu_1.png, id=985, 1011.78pt x 433.62pt>
+<figuras/scatter_yu_1.png, id=999, 1011.78pt x 433.62pt>
 File: figuras/scatter_yu_1.png Graphic file (type png)
 <use figuras/scatter_yu_1.png>
 Package pdftex.def Info: figuras/scatter_yu_1.png  used on input line 440.
 (pdftex.def)             Requested size: 437.62888pt x 187.55792pt.
-<figuras/scatter_sa_1.png, id=987, 1011.78pt x 433.62pt>
+<figuras/scatter_sa_1.png, id=1001, 1011.78pt x 433.62pt>
 File: figuras/scatter_sa_1.png Graphic file (type png)
 <use figuras/scatter_sa_1.png>
 Package pdftex.def Info: figuras/scatter_sa_1.png  used on input line 451.
 (pdftex.def)             Requested size: 437.62888pt x 187.55792pt.
-<figuras/scatter_sca_1.png, id=988, 1011.78pt x 433.62pt>
+<figuras/scatter_sca_1.png, id=1002, 1011.78pt x 433.62pt>
 File: figuras/scatter_sca_1.png Graphic file (type png)
 <use figuras/scatter_sca_1.png>
 Package pdftex.def Info: figuras/scatter_sca_1.png  used on input line 459.
 (pdftex.def)             Requested size: 437.62888pt x 187.55792pt.
-<figuras/scatter_ero_1.png, id=989, 1011.78pt x 433.62pt>
+<figuras/scatter_ero_1.png, id=1003, 1011.78pt x 433.62pt>
 File: figuras/scatter_ero_1.png Graphic file (type png)
 <use figuras/scatter_ero_1.png>
 Package pdftex.def Info: figuras/scatter_ero_1.png  used on input line 467.
 (pdftex.def)             Requested size: 437.62888pt x 187.55792pt.
-<figuras/scatter_lq_1.png, id=990, 1011.78pt x 433.62pt>
+<figuras/scatter_lq_1.png, id=1004, 1011.78pt x 433.62pt>
 File: figuras/scatter_lq_1.png Graphic file (type png)
 <use figuras/scatter_lq_1.png>
 Package pdftex.def Info: figuras/scatter_lq_1.png  used on input line 476.
 (pdftex.def)             Requested size: 437.62888pt x 187.55792pt.
-<figuras/comparativasRMSE15.png, id=992, 867.24pt x 462.528pt>
+<figuras/comparativasRMSE15.png, id=1006, 867.24pt x 462.528pt>
 File: figuras/comparativasRMSE15.png Graphic file (type png)
 <use figuras/comparativasRMSE15.png>
 Package pdftex.def Info: figuras/comparativasRMSE15.png  used on input line 486
@@ -1776,7 +1785,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 540--541
 
  []
 
-<figuras/procedure_1.png, id=1066, 761.84625pt x 439.6425pt>
+<figuras/procedure_1.png, id=1081, 761.84625pt x 439.6425pt>
 File: figuras/procedure_1.png Graphic file (type png)
 <use figuras/procedure_1.png>
 Package pdftex.def Info: figuras/procedure_1.png  used on input line 564.
@@ -1871,7 +1880,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 667--668
 
  []
 
-<figuras/rmsd-multiple-mejor.png, id=1101, 1318.9275pt x 667.7748pt>
+<figuras/rmsd-multiple-mejor.png, id=1114, 1318.9275pt x 667.7748pt>
 File: figuras/rmsd-multiple-mejor.png Graphic file (type png)
 <use figuras/rmsd-multiple-mejor.png>
 Package pdftex.def Info: figuras/rmsd-multiple-mejor.png  used on input line 69
@@ -1918,12 +1927,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [58]
-Underfull \hbox (badness 10000) in paragraph at lines 740--741
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3281) has occurred while \output is active []
 
 
 
@@ -1935,16 +1939,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [59]
-Underfull \hbox (badness 10000) in paragraph at lines 742--743
+Underfull \hbox (badness 10000) in paragraph at lines 743--744
 
  []
 
-<figuras/gridSA.png, id=1135, 705.63625pt x 660.4675pt>
-File: figuras/gridSA.png Graphic file (type png)
-<use figuras/gridSA.png>
-Package pdftex.def Info: figuras/gridSA.png  used on input line 754.
-(pdftex.def)             Requested size: 437.62888pt x 409.61662pt.
-)
+<figuras/approaches.png, id=1149, 1387.584pt x 703.1871pt>
+File: figuras/approaches.png Graphic file (type png)
+<use figuras/approaches.png>
+Package pdftex.def Info: figuras/approaches.png  used on input line 768.
+(pdftex.def)             Requested size: 486.25761pt x 246.4196pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--822
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1962,12 +1970,49 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[61 <./figuras/gridSA.png>]
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 823--824
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[62 <./figuras/approaches.png>]
+<figuras/gridSA.png, id=1177, 705.63625pt x 660.4675pt>
+File: figuras/gridSA.png Graphic file (type png)
+<use figuras/gridSA.png>
+Package pdftex.def Info: figuras/gridSA.png  used on input line 835.
+(pdftex.def)             Requested size: 437.62888pt x 409.61662pt.
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[63]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[64 <./figuras/gridSA.png>]
 \openout2 = `conclusiones.aux'.
 
  (./conclusiones.tex
 Cap\'{\i }tulo 4.
-) [62
+) [65
 
 
 
@@ -1975,39 +2020,12 @@ Cap\'{\i }tulo 4.
 ]
 \openout2 = `bibliografia.aux'.
 
- (./bibliografia.tex (./main.bbl [63
+ (./bibliografia.tex (./main.bbl [66
 
 
 
 
 ]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
-
-[64]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
-
-[65]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
-
-[66]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -2043,7 +2061,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
-[70]))
+[70]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -2053,9 +2071,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
 [71]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.11469pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11469pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
+
+[72]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.11469pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11469pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
+
+[73]))
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.11469pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11469pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
+
+[74]
 \openout2 = `anexo.aux'.
 
- (./anexo.tex) [72
+ (./anexo.tex) [75
 
 
 
@@ -2074,10 +2119,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 616AB0F53CB80A06E912B306F6F57320;6575.
  ) 
 Here is how much of TeX's memory you used:
- 35064 strings out of 474222
- 814823 string characters out of 5748733
- 1967975 words of memory out of 5000000
- 56406 multiletter control sequences out of 15000+600000
+ 35092 strings out of 474222
+ 815346 string characters out of 5748733
+ 1968975 words of memory out of 5000000
+ 56422 multiletter control sequences out of 15000+600000
  575155 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,20n,93p,1404b,2365s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2101,10 +2146,10 @@ m1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt
 1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on main.pdf (82 pages, 6458975 bytes).
+Output written on main.pdf (86 pages, 6616278 bytes).
 PDF statistics:
- 1451 PDF objects out of 1728 (max. 8388607)
- 1260 compressed objects within 13 object streams
- 301 named destinations out of 1000 (max. 500000)
- 390 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1494 PDF objects out of 1728 (max. 8388607)
+ 1297 compressed objects within 13 object streams
+ 313 named destinations out of 1000 (max. 500000)
+ 395 words of extra memory for PDF output out of 10000 (max. 10000000)
 
