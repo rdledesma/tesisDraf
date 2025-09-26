@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.23)  25 SEP 2025 17:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.23)  26 SEP 2025 15:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1949,7 +1949,7 @@ File: figuras/approaches.png Graphic file (type png)
 Package pdftex.def Info: figuras/approaches.png  used on input line 768.
 (pdftex.def)             Requested size: 486.25761pt x 246.4196pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 812--813
+Underfull \hbox (badness 10000) in paragraph at lines 823--824
 
  []
 
@@ -1962,7 +1962,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [60]
-Underfull \hbox (badness 10000) in paragraph at lines 814--815
+Underfull \hbox (badness 10000) in paragraph at lines 825--826
 
  []
 
@@ -1978,7 +1978,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <figuras/gridSA.png, id=1171, 705.63625pt x 660.4675pt>
 File: figuras/gridSA.png Graphic file (type png)
 <use figuras/gridSA.png>
-Package pdftex.def Info: figuras/gridSA.png  used on input line 826.
+Package pdftex.def Info: figuras/gridSA.png  used on input line 837.
 (pdftex.def)             Requested size: 437.62888pt x 409.61662pt.
 )
 
@@ -2137,7 +2137,7 @@ m1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt
 1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on main.pdf (85 pages, 6615707 bytes).
+Output written on main.pdf (85 pages, 6615895 bytes).
 PDF statistics:
  1488 PDF objects out of 1728 (max. 8388607)
  1292 compressed objects within 13 object streams
