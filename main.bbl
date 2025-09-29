@@ -1,4 +1,4 @@
-\begin{thebibliography}{85}
+\begin{thebibliography}{86}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,6 +12,12 @@ Gonzalo Abal, Rodrigo Alonso-Suárez, and Agustín Laguarda.
 \newblock Laboratorio de Energía Solar, Uruguay, versión 4.0 edition, junio
   2020.
 \newblock URL \url{http://les.edu.uy/}.
+
+\bibitem[Abu-Mostafa et~al.(2012)Abu-Mostafa, Magdon-Ismail, and
+  Lin]{Mostafa2012}
+Yaser~S. Abu-Mostafa, Malik Magdon-Ismail, and Hsuan-Tien Lin.
+\newblock \emph{Learning From Data}.
+\newblock AMLBook, 2012.
 
 \bibitem[{Alonso Suárez} et~al.(2012){Alonso Suárez}, Abal, Siri, and
   Musé]{ALONSOSUAREZ2012}

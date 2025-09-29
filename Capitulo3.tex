@@ -772,7 +772,7 @@ En cada caso, los coeficientes $a$ y $b$ se obtienen mediante regresión lineal 
 
 
 
-Los resultados obtenidos para cada uno de estos enfoques se presentan en la Tabla T. Cabe destacar que el Enfoque 1 fue el primero evaluado en esta tesis; para facilitar una comparación, se ha incluido también el reporte de las métricas correspondientes a este enfoque.
+Los resultados obtenidos para cada uno de estos enfoques se presentan en la Tabla T. Cabe destacar que el Enfoque 1 fue es el evaluado en las secciones anteriores en esta tesis; para facilitar una comparación, se ha incluido también el reporte de las métricas correspondientes a este enfoque.
 
 
 
@@ -812,8 +812,7 @@ SLR-LSASAF  & -5.3 & 16.7 & 24.7 &  4.2 & 23.8 & 35.4 & 4.3 & 19.2 & 28.7 & 0.9 
 \end{table*}
 
 
-
-
+La Tabla \ref{tab:metricas_4_1} muestra las métricas de desempeño obtenidas tras evaluar tres enfoques sobre la desestacionalización de la serie. El Enfoque 3 presenta un buen desempeño en sitios de altitud como Ero y LQ particularmente ante el modelo de CAMS.
 
 
 
@@ -824,7 +823,7 @@ Las evaluaciones realizadas en este trabajo y en estudios previos sobre SA se ha
 
 Los enfoques previos de SA aplicados a mediciones terrestres de una estación enfrentan una limitación intrínseca: la información derivada de los productos satelitales es finita, lo que restringe la capacidad de aprendizaje de cualquier técnica de aprendizaje automático implementada, incluso sin sobreajuste. Para superar esta restricción, proponemos un enfoque que amplía el alcance espacial de los datos de entrada incorporando valores de GHI modelados de celdas satelitales adyacentes. La hipótesis central es que la variabilidad de la irradiancia solar en un punto no es aislada, sino que forma parte de una estructura espacialmente coherente gobernada por la dinámica atmosférica regional. Al incluir las estimaciones de irradiancia de celdas vecinas como predictores adicionales, el modelo dispone de información espacial más rica, mejorando su capacidad para identificar patrones complejos y generalizar de manera más efectiva.\\
 
-Este enfoque aprovecha correlaciones bien documentadas en los campos de irradiancia solar, impulsadas por el movimiento de nubes, el transporte de aerosoles y los sistemas meteorológicos a escala sinóptica \citep{IHSAN2024}. A diferencia de los métodos tradicionales de AS, que se limitan a variables locales dentro de una sola celda, el marco propuesto utiliza de manera innovadora la irradiancia satelital de las celdas circundantes como características de entrada para los modelos de aprendizaje automático. Hasta ahora, ningún trabajo había explorado explícitamente esta integración del contexto espacial.
+Este enfoque busca aprovechar correlaciones bien documentadas en los campos de irradiancia solar, impulsadas por el movimiento de nubes, el transporte de aerosoles y los sistemas meteorológicos a escala sinóptica \citep{IHSAN2024}. A diferencia de los métodos tradicionales de AS, que se limitan a variables locales dentro de una sola celda, el marco propuesto utiliza de manera innovadora la irradiancia satelital de las celdas circundantes como características de entrada para los modelos de aprendizaje automático. Hasta ahora, ningún trabajo había explorado explícitamente esta integración del contexto espacial.
 
 
 

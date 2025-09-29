@@ -632,3 +632,49 @@ En resumen, mientras que un árbol de decisión actúa como un experto solitario
 
 
 
+\section{Entrenamiento y Prueba}
+
+El proceso de construcción de un modelo de aprendizaje automático no termina en su diseño, sino que requiere fases diferenciadas de \textbf{entrenamiento}, \textbf{validación} y \textbf{prueba}, cuyo objetivo principal es garantizar la capacidad de generalización del modelo ante datos no observados.
+
+\subsection*{División del conjunto de datos}
+La práctica estándar consiste en dividir el conjunto de datos en tres subconjuntos:
+
+\begin{itemize}
+\item \textbf{Entrenamiento}: utilizado para ajustar los parámetros internos del modelo (pesos y sesgos en redes neuronales, divisiones en árboles de decisión, etc.).
+\item \textbf{Validación}: empleado durante el entrenamiento para seleccionar hiperparámetros y evitar el sobreajuste (\textit{overfitting}). Una proporción habitual es 80\% para entrenamiento y 20\% para validación dentro del subconjunto inicial de entrenamiento \cite{Olivas2022}.
+\item \textbf{Prueba (test)}: reservado exclusivamente para la evaluación final. Nunca se utiliza en la fase de ajuste, ya que su propósito es ofrecer una estimación imparcial del error de generalización \cite{Mostafa2012}.
+\end{itemize}
+
+\subsection*{Dinámica de entrenamiento}
+Durante el entrenamiento, el error de entrenamiento disminuye progresivamente a medida que el modelo se ajusta a los datos. Paralelamente, el error de validación suele descender inicialmente, reflejando la mejora de la capacidad de generalización, hasta que alcanza un punto mínimo. A partir de ahí, si el entrenamiento continúa, el error de validación aumenta, lo que indica que el modelo comienza a memorizar los datos y pierde capacidad predictiva. Este fenómeno se conoce como \textbf{sobreajuste}, y la estrategia recomendada es detener el entrenamiento en el punto donde el error de validación es mínimo, aplicando técnicas como \textit{early stopping} o el almacenamiento de los mejores pesos (\textit{model checkpointing}) \cite{Olivas2022}.
+
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{figuras/dinamicatv.png}
+    \caption{Dinámica de entrenamiento de un modelo de aprendizaje automático. La curva azul muestra el error de entrenamiento, que disminuye progresivamente a medida que el modelo se ajusta a los datos. La curva naranja representa el error de validación, que disminuye inicialmente reflejando la mejora de la capacidad de generalización, pero comienza a aumentar después de la mejor época (línea roja discontinua), evidenciando el sobreajuste.}
+    \label{fig:dinamica}
+\end{figure}
+
+
+La figura \ref{fig:dinamica} ilustra la dinámica durante el entrenamiento, indicando que el modelo se adapta cada vez mejor a los datos de entrenamiento. Por otro lado, el error de validación inicialmente sigue la misma tendencia, mostrando que la capacidad de generalización del modelo mejora. Sin embargo, después de alcanzar un punto mínimo —marcado como la mejor época en la figura—, el error de validación comienza a incrementarse, mientras que el error de entrenamiento sigue descendiendo. Este comportamiento refleja el fenómeno de \textbf{sobreajuste}, en el cual el modelo comienza a memorizar los datos de entrenamiento y pierde capacidad predictiva en datos nuevos. La figura ilustra claramente este efecto y destaca la importancia de detener el entrenamiento en la época óptima o emplear técnicas como \textit{early stopping} para evitar la degradación del desempeño en validación.
+
+
+\subsection*{Técnicas de regularización y validación}
+Para mejorar la robustez del modelo se emplean diversas estrategias:
+
+\begin{itemize}
+\item \textbf{Regularización}: penalizaciones sobre los parámetros (L1, L2) o el uso de \textit{dropout} en redes neuronales.
+\item \textbf{Aumento de datos (Data Augmentation)}: generación de variaciones sintéticas del conjunto de entrenamiento para mejorar la capacidad de generalización.
+\item \textbf{Validación cruzada (Cross-Validation)}: división repetida del conjunto de datos en diferentes particiones de entrenamiento y validación, promediando los resultados para obtener una estimación más estable.
+\end{itemize}
+
+\subsection*{Evaluación del modelo}
+Al finalizar el entrenamiento, se evalúa el modelo con el conjunto de prueba para estimar su rendimiento en situaciones reales. Las métricas empleadas dependen del tipo de problema:
+\begin{itemize}
+\item \textbf{Clasificación}: exactitud (\textit{accuracy}), precisión, exhaustividad (\textit{recall}), F1-score, AUC-ROC.
+\item \textbf{Regresión}: error cuadrático medio (MSE), error absoluto medio (MAE), $R^2$.
+\end{itemize}
+
+Esta separación entre entrenamiento, validación y prueba refleja el compromiso fundamental en aprendizaje automático: alcanzar un balance adecuado entre \textbf{aproximación} (capacidad de ajuste) y \textbf{generalización} (capacidad de predecir datos no vistos) \cite{Mostafa2012}.
