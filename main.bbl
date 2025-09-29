@@ -1,4 +1,4 @@
-\begin{thebibliography}{84}
+\begin{thebibliography}{85}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -475,6 +475,15 @@ Zhipeng Qu, Armel Oumbe, Philippe Blanc, Bella Espinar, Gerhard Gesell,
   02 2017.
 \newblock \doi{10.1127/metz/2016/0781}.
 \newblock URL \url{http://dx.doi.org/10.1127/metz/2016/0781}.
+
+\bibitem[Quansah et~al.(2024)Quansah, Boakye, Quansah, et~al.]{Quansah2024}
+Alfred~Dawson Quansah, Patrick Boakye, David~Ato Quansah, et~al.
+\newblock Site adaptation of nasa-power reanalysis solar radiation products for
+  tropical climates in ghana using bias correction for clean energy
+  application.
+\newblock Preprint, July 2024.
+\newblock URL \url{https://doi.org/10.21203/rs.3.rs-4571887/v1}.
+\newblock Version 1.
 
 \bibitem[Ramchoun et~al.(2016)Ramchoun, Ghanou, Amine, Idrissi, and
   Tairi]{ghanou2016mlp}

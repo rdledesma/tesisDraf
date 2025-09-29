@@ -58,7 +58,7 @@ En la Figura \ref{fig:site-adapation} puede verse el resultado que busca obtener
 
 Vamos a presentar una pequeña analogía que ayude a explicar de manera más cotidiana la idea general del preceso de SA.
 \begin{quote}
-Imagina que tienes un \textbf{termómetro económico} en tu casa (equivalente a los datos de un \textit{modelo}), 
+Pensemos en que tienes un \textbf{termómetro económico} en tu casa (equivalente a los datos de un \textit{modelo}), 
 pero al lado colocas uno profesional del hospital (equivalente a la \textit{medición en sitio}).  
 
 Al comparar, notas que tu termómetro casero siempre marca \(-2\,^{\circ}\mathrm{C}\) respecto al valor real.  
@@ -141,10 +141,51 @@ En el trabajo de \citep{SALAMALIKIS2022}, se aplicó SA al modelo Heliosat-4 con
 En \citep{ZAINALI2024} se evaluó un proceso de SA en tres sitios del norte de Europa utilizando diversos ajustes de mapeo de cuantiles y modelos de aprendizaje automático para ajustar los datos del modelo STRANG. Los hallazgos indican que los modelos de aprendizaje automático generalmente obtienen un rendimiento superior al de los métodos estadísticos, logrando una mejora de hasta el 9,2\% en la reducción del sesgo.
 
 
-
-
 \section{Características}
+
+Entendiendo que SA se define como el proceso de corrección de las series de irradiancia solar modeladas (ya sean satelitales o de reanálisis) mediante un periodo corto de mediciones terrestres de alta calidad. Entre sus principales características se destacan:
+
+Objetivo principal: reducir sesgos sistemáticos y errores aleatorios en las estimaciones de irradiancia, mejorando su precisión y representatividad local \citep{POLO2020, Fernández2020}.
+
+Dependencia del sitio: el desempeño de los métodos de adaptación es altamente dependiente de las condiciones locales de nubosidad, aerosoles y régimen de radiación; no existe un modelo universal válido para todas las regiones \citep{ZAINALI2024}.
+
+Duración de las mediciones necesarias: se ha demostrado que series de aproximadamente un año de datos de medición in-situ suelen ser suficientes para entrenar y validar los modelos de ajuste \citep{POLO2020, ZAINALI2024}.
+
+Diversidad metodológica: existen enfoques físicos, estadísticos y basados en aprendizaje automático (p. ej. Random Forest, redes neuronales), con desempeños variables según el contexto \citep{BABAR2020, NARVAEZ2021}.
+
+Aplicabilidad en cualquier fuente de modelado y escala temporal: la SA puede aplicarse tanto a productos derivados de satélite como a bases de datos de reanálisis, así como a resoluciones horarias, diarias o mensuales, dependiendo de la aplicación energética \citep{Fernández2020, Quansah2024}.
+
+Accesibilidad: en la práctica, se están desarrollando herramientas de libre acceso (p. ej. paquetes en R como SiteAdapt) que facilitan la implementación de los métodos de corrección \citep{Fernández2020}.
+
+
 \section{Ventajas y Desventajas}
+
+\subsection*{Ventajas}
+
+Reducción significativa del sesgo: numerosos estudios han mostrado disminuciones de hasta el 100\% en el sesgo relativo de GHI tras la aplicación de SA \citep{BABAR2020,  SALAMALIKIS2022}.
+
+Mejora en la precisión estadística: métricas como RMSE, desviación relativa y similitud de distribuciones mejoran de forma consistente (con reducciones del 3–10\% en RMSE en muchos casos) \citep{Fernández2020, ZAINALI2024}.
+
+Mayor confiabilidad bancaria: la SA es una práctica solicitada por instituciones financieras en proyectos solares, al reducir la incertidumbre en los estudios de recurso \citep{Fernández2020}.
+
+Flexibilidad metodológica: la posibilidad de usar métodos simples (regresión lineal) o complejos (machine learning) permite adaptar la técnica a distintos recursos de datos y niveles de complejidad \citep{NARVAEZ2021, YANG2021}.
+
+Aplicaciones múltiples: útil para proyectos fotovoltaicos, termosolares y agrivoltaicos, ya que mejora la estimación de radiación tanto para dimensionamiento energético como para balances agrícolas \citep{ZAINALI2024}.
+
+\subsection*{Desventajas}
+
+Dependencia de datos locales: requiere campañas de medición en el sitio, que pueden ser costosas o inexistentes en ciertas regiones \citep{Quansah2024}.
+
+Limitación espacial: la corrección es estrictamente local y no siempre extrapolable a regiones cercanas sin mediciones adicionales \citep{POLO2020}.
+
+No generalización: los resultados dependen del modelo de origen y de las condiciones climáticas locales; un método que funciona bien en un sitio puede no ser adecuado en otro \citep{Fernández2020, ZAINALI2024}.
+
+Sobrecoste computacional: en el caso de los métodos de aprendizaje automático, la calibración y validación pueden requerir recursos computacionales elevados y experiencia técnica.
+
+Persistencia de incertidumbre: aunque se reduzca, nunca se elimina completamente la incertidumbre de la estimación; además, eventos extremos o fenómenos atmosféricos poco frecuentes pueden no quedar bien representados.
+
+
+
 
 
 \section{Modelos de Aprendizaje Automático} \label{MLM}
@@ -283,7 +324,7 @@ donde $x$ es el vector de entrada, $W^{(1)}, W^{(2)}$ son matrices de pesos, $b^
 
 En el contexto de la estimación de la irradiancia global horizontal (GHI), el MLP puede verse como un \textit{equipo de expertos neuronales}. Cada neurona aporta una “opinión parcial” a partir de las variables meteorológicas (nubosidad, humedad, ángulo solar, aerosoles), mientras que las capas ocultas integran estas opiniones para refinar la predicción de manera no lineal \cite{torobayona2012mlp}.  
 
-\begin{figure}[H] 
+\begin{figure} 
 \centering 
 \begin{tikzpicture}[node distance=2.2cm]
 \tikzstyle{neuron} = [circle, draw, minimum size=1cm, fill=blue!20, text centered]
