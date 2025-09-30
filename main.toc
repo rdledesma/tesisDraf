@@ -33,16 +33,16 @@
 \contentsline {section}{\numberline {3.2}Desempeño de los modelos de GHI en el NOA}{39}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Análisis de las estimaciones 15-minutales}{39}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Análisis de las estimaciones horarias}{43}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}División del conjunto de datos}{43}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Adaptación al sitio con una variable descriptiva}{44}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Adaptación al sitio con múltiples variables descriptivas}{52}{section.3.4}%
-\contentsline {paragraph}{Métodos de filtro.}{53}{section*.24}%
-\contentsline {paragraph}{Métodos envolventes.}{53}{section*.25}%
-\contentsline {paragraph}{Métodos embebidos.}{53}{section*.26}%
-\contentsline {paragraph}{Eliminación recursiva de características (RFE).}{53}{section*.27}%
-\contentsline {paragraph}{LASSO (Least Absolute Shrinkage and Selection Operator).}{53}{section*.28}%
-\contentsline {paragraph}{Stepwise (selección hacia adelante y hacia atrás).}{54}{section*.29}%
-\contentsline {section}{\numberline {3.5}Adaptación al sitio tomando consideraciones de una serie temporal}{61}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{64}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Conclusiones}{67}{chapter.4}%
-\contentsline {chapter}{\textbf {Anexo 1}}{78}{chapter*.30}%
+\contentsline {subsection}{\numberline {3.2.3}División del conjunto de datos}{45}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Adaptación al sitio con una variable descriptiva}{45}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Adaptación al sitio con múltiples variables descriptivas}{54}{section.3.4}%
+\contentsline {paragraph}{Métodos de filtro.}{55}{section*.24}%
+\contentsline {paragraph}{Métodos envolventes.}{55}{section*.25}%
+\contentsline {paragraph}{Métodos embebidos.}{55}{section*.26}%
+\contentsline {paragraph}{Eliminación recursiva de características (RFE).}{55}{section*.27}%
+\contentsline {paragraph}{LASSO (Least Absolute Shrinkage and Selection Operator).}{56}{section*.28}%
+\contentsline {paragraph}{Stepwise (selección hacia adelante y hacia atrás).}{56}{section*.29}%
+\contentsline {section}{\numberline {3.5}Adaptación al sitio tomando consideraciones de una serie temporal}{64}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{66}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Conclusiones}{69}{chapter.4}%
+\contentsline {chapter}{\textbf {Anexo 1}}{80}{chapter*.30}%

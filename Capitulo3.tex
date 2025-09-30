@@ -165,7 +165,7 @@ La Figura \ref{fig:general-15} muestra la evaluación comparativa de los modelos
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{figuras/errors_15.png}
-    \caption{Comparación del desempeño de los modelos CAMS y LSA-SAF en cinco sitios de estudio (Yu, Sa, Sca, Er y Lq) mediante las tres métricas estadísticas: Mean Bias Error (MBE), Mean Absolute Error (MAE) y Root Mean Square Error (RMSE) expresadas en términos relativos a escala 15-minutal.}
+    \caption{Comparación del desempeño de los modelos CAMS y LSA-SAF en los cinco sitios de estudio (Yu, Sa, Sca, Er y Lq) mediante las tres métricas estadísticas: MBE, MAE y RMSE expresadas en términos porcentuales relativos a escala 15-minutal.}
     \label{fig:general-15}
 \end{figure}
 
@@ -186,7 +186,9 @@ La Figura \ref{fig:season-15} muestra la variación estacional del rRMSE (\%) pa
 
 
 
+En relación al MAE, ambos modelos presentan magnitudes relativamente similares, aunque LSA-SAF tiende a mostrar errores absolutos ligeramente mayores en sitios como Yu y Sa, mientras que CAMS presenta valores más altos en Sca y Er. Esto sugiere que ninguno de los dos modelos logra una reducción clara y consistente del error en todos los sitios.\\
 
+Por último, en la métrica RMSE, que penaliza los errores grandes, se mantiene un patrón semejante: LSA-SAF suele exhibir errores algo superiores a los de CAMS en Yu y Sa, mientras que en Er y Lq la diferencia favorece al modelo satelital. En general, los resultados muestran que el desempeño relativo de los modelos depende fuertemente del sitio, sin que exista un claro ganador en todos los casos.\\
 
 
 
@@ -199,7 +201,7 @@ La Figura \ref{fig:season-15} muestra la variación estacional del rRMSE (\%) pa
 
 
 
-En el caso de RRMSD vs Kt (Figura \ref{fig:RMSE-kt-15}), se observa una marcada disminución del error a medida que aumenta la claridad atmosférica. Para condiciones de cielo más nuboso (Kt < 0.3), los valores de RRMSD son elevados en todos los sitios, superando en algunos casos los 200 \%, especialmente en la estimación proveniente de LSASAF. Sin embargo, conforme Kt aumenta (>0.5), el error desciende rápidamente y tiende a estabilizarse por debajo del 50\%, alcanzando valores mínimos en condiciones de cielo despejado (Kt > 0.7). Esta tendencia se mantiene consistente en ambos productos (CAMS y LSASAF), aunque LSASAF presenta errores relativamente mayores en las condiciones más turbias.
+En el caso de RMSD vs Kt (Figura \ref{fig:RMSE-kt-15}), se observa una marcada disminución del error a medida que aumenta la claridad atmosférica. Para condiciones de cielo más nuboso (Kt < 0.3), los valores de RRMSD son elevados en todos los sitios, superando en algunos casos los 200 \%, especialmente en la estimación proveniente de LSASAF. Sin embargo, conforme Kt aumenta (>0.5), el error desciende rápidamente y tiende a estabilizarse por debajo del 50\%, alcanzando valores mínimos en condiciones de cielo despejado (Kt > 0.7). Esta tendencia se mantiene consistente en ambos productos (CAMS y LSASAF), aunque LSASAF presenta errores relativamente mayores en las condiciones más turbias.
 
 
 
@@ -219,6 +221,28 @@ En conjunto, estos resultados indican que la precisión de ambos productos depen
 
 
 \subsection{Análisis de las estimaciones horarias}
+
+La Figura \ref{fig:general-60} presenta la evaluación comparativa del desempeño de los modelos satelitales CAMS y LSA-SAF, junto con los reanálisis ERA5 y MERRA-2, a escala horaria. En términos generales, se observa que tanto los modelos satelitales como los de reanálisis muestran un comportamiento con aparente dependencia de las condiciones de nubosidad del sitio. En localidades con predominio de cielo despejado, ambos tipos de modelos tienden a mostrar un desempeño similar, con la excepción del modelo CAMS en Ero, cuyo comportamiento particular se discute de manera separada. Por el contrario, en sitios con condiciones de nubosidad más variables, los modelos de reanálisis tienden a presentar un desempeño inferior en comparación con los modelos satelitales. Estas métricas son coincidentes con los reportes ya documentados sobre el desempeño de estos modelos en la región \citep{Ledesma2025}.\\
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{figuras/errors_60.png}
+    \caption{Comparación del desempeño de los modelos satelitaltes CAMS y LSA-SAF y de re-análisis en los cinco sitios de estudio (Yu, Sa, Sca, Er y Lq) mediante las tres métricas estadísticas: MBE, MAE y RMSE expresadas en términos porcentuales relativos a escala horaria.}
+    \label{fig:general-60}
+\end{figure}
+
+
+En Ero, el modelo de CAMS presenta un comportamiento atípico en su estimación. Como se observa en la Figura \ref{fig:ero}, el modelo tiende a sobreestimar la nubosidad. Este problema ya ha sido documentado por los propios desarrolladores y se ha reportado un comportamiento similar en un sitio desértico \cite{qu2017}. Según los autores, el modelo tiene dificultades para clasificar correctamente ciertos instantes despejados, que son identificados erróneamente como nubosos. Esto ocurre porque un píxel desértico puede aparecer frío en el canal térmico y brillante en el visible, lo que provoca falsos positivos de nubes en el algoritmo APOLLO/SEV.
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{figuras/ero.png}
+    \caption{Comparación de la serie de GHI medida frente a las estimaciones de los modelos LSA-SAF y CAMS para dos días en Ero.}
+    \label{fig:ero}
+\end{figure}
+
+
 
 
 
