@@ -1,4 +1,4 @@
-\begin{thebibliography}{119}
+\begin{thebibliography}{124}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -445,6 +445,14 @@ Won~Hee Ko, Stefano Schiavon, Hui Zhang, Lindsay~T. Graham, Gail Brager, Iris
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0360132320301372}.
 
+\bibitem[Krige(1951)]{Krige1951}
+D.~G. Krige.
+\newblock A statistical approach to some basic mine valuation problems on the
+  witwatersrand.
+\newblock \emph{Journal of the Southern African Institute of Mining and
+  Metallurgy}, 52\penalty0 (6):\penalty0 119--139, 1951.
+\newblock URL \url{https://journals.co.za/content/saimm/52/6/AJA0038223X_4792}.
+
 \bibitem[Laguarda(2025)]{Laguarda2021}
 A.~Laguarda.
 \newblock \emph{Modelado de la irradiancia solar sobre la superficie terrestre:
@@ -462,6 +470,14 @@ A.~Laguarda, P.~Iturbide, X.~Orsi, M.~J. Denegri, S.~Luza, B.~L. Burgos,
   2022.
 \newblock URL
   \url{https://portalderevistas.unsa.edu.ar/index.php/erma/article/view/2877}.
+
+\bibitem[Langle(2017)]{OEDI}
+Nick Langle.
+\newblock Swera: Solar and wind energy resource assessment.
+\newblock Open Energy Data Initiative (OEDI), National Renewable Energy
+  Laboratory, https://data.openei.org/submissions/425, 2017.
+\newblock URL \url{https://data.openei.org/submissions/425}.
+\newblock Accessed: 2025-10-01.
 
 \bibitem[Laspiur et~al.(2013)Laspiur, Salazar, Zerpa, and Watkins]{Laspiur2013}
 R.~Laspiur, G.~A. Salazar, J.~Zerpa, and M.~Watkins.
@@ -535,6 +551,15 @@ Chuck~N Long and Yan Shi.
 Gilles Louppe.
 \newblock \emph{Understanding Random Forests from theory to practice}.
 \newblock PhD thesis, Universit\'e de Li\`ege, 2015.
+
+\bibitem[Mani and Chacko(1980)]{MANI1980}
+Anna Mani and Oommen Chacko.
+\newblock Attenuation of solar radiation in the atmosphere.
+\newblock \emph{Solar Energy}, 24\penalty0 (4):\penalty0 347--349, 1980.
+\newblock ISSN 0038-092X.
+\newblock \doi{https://doi.org/10.1016/0038-092X(80)90296-0}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/0038092X80902960}.
 
 \bibitem[Miranda(2023)]{Miranda2023}
 Diego Miranda.
@@ -728,6 +753,16 @@ M.R. Rietveld.
 \newblock \doi{https://doi.org/10.1016/0002-1571(78)90014-6}.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/0002157178900146}.
+
+\bibitem[Rigollier et~al.(2000)Rigollier, Bauer, and Wald]{Rigollier2000}
+Christelle Rigollier, Olivier Bauer, and Lucien Wald.
+\newblock On the clear sky model of the esra — european solar radiation atlas
+  — with respect to the heliosat method.
+\newblock \emph{Solar Energy}, 68\penalty0 (1):\penalty0 33--48, 2000.
+\newblock ISSN 0038-092X.
+\newblock \doi{https://doi.org/10.1016/S0038-092X(99)00055-9}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0038092X99000559}.
 
 \bibitem[Roesch et~al.(2010)Roesch, Wild, Ohmura, Dutton, Long, and
   Zhang]{Roesch2010}
@@ -1005,6 +1040,17 @@ Lucien Wald.
 \newblock 05 2021.
 \newblock ISBN 9781003155454.
 \newblock \doi{10.1201/9781003155454}.
+
+\bibitem[Wald et~al.(2004)Wald, Albuisson, Best, delamare, Dumortier, Gaboardi,
+  Hammer, Heinemann, Kift, KUNZ, Lefèvre, Leroy, Martinoli, Menard, Page,
+  Prager, Ratto, Reise, Remund, and Webb]{Wald2004}
+Lucien Wald, Michel Albuisson, Clive Best, Catherine delamare, Dominique
+  Dumortier, Elena Gaboardi, Annette Hammer, Detlev Heinemann, Richard Kift,
+  Stefan KUNZ, Mireille Lefèvre, Sébastien Leroy, Mario Martinoli, Lionel
+  Menard, John Page, Tamas Prager, Corrado Ratto, Christian Reise, Jan Remund,
+  and Ann Webb.
+\newblock Soda: a web service on solar radiation.
+\newblock 01 2004.
 
 \bibitem[Wiatros-Motyka et~al.(2022)Wiatros-Motyka, Jones, Broadbent, Fulghum,
   Dizon, and MacDonald]{Wiatros2022}
