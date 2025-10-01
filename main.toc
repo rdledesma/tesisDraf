@@ -7,9 +7,9 @@
 \contentsline {section}{\numberline {1.1}Estudio de la Radiación Solar en Argentina y en el Noroeste Argentino}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Redes de Medidas}{8}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Modelos de Estimación}{9}{section.1.3}%
-\contentsline {subsubsection}{Modelos de reanálisis}{9}{section*.5}%
-\contentsline {subsubsection}{Modelos satelitales}{10}{section*.6}%
-\contentsline {subsection}{\numberline {1.3.1}Control de Calidad}{12}{subsection.1.3.1}%
+\contentsline {subsubsection}{Modelos de reanálisis}{10}{section*.5}%
+\contentsline {subsubsection}{Modelos satelitales}{11}{section*.6}%
+\contentsline {section}{\numberline {1.4}Control de Calidad}{12}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Adaptación al Sitio}{13}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Historia}{17}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Características}{19}{section.2.2}%
@@ -43,6 +43,6 @@
 \contentsline {paragraph}{LASSO (Least Absolute Shrinkage and Selection Operator).}{56}{section*.28}%
 \contentsline {paragraph}{Stepwise (selección hacia adelante y hacia atrás).}{56}{section*.29}%
 \contentsline {section}{\numberline {3.5}Adaptación al sitio tomando consideraciones de una serie temporal}{64}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{66}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Conclusiones}{69}{chapter.4}%
-\contentsline {chapter}{\textbf {Anexo 1}}{80}{chapter*.30}%
+\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{69}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Conclusiones}{71}{chapter.4}%
+\contentsline {chapter}{\textbf {Anexo 1}}{85}{chapter*.30}%

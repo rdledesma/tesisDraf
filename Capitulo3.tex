@@ -817,17 +817,17 @@ Modelo & MBE & MAE & RMSE & MBE & MAE & RMSE  & MBE & MAE & RMSE & MBE & MAE & R
 CAMS    & -0.2 & 17.4 & 27.2 &  3.9 & 23.4 & 33.7 &  2.6 & 21.8 & 29.8 & -23.6 & 27.6 & 40.9 & -6.9 & 16.5 & 25.8 \\
 LSA-SAF &  7.6 & 16.5 & 25.5 & 17.9 & 27.4 & 39.4 & 13.1 & 22.2 & 30.9 &  -7.7 & 16.2 & 26.5 &  4.0 & 12.6 & 22.6 \\
 \hline
-\multicolumn{16}{|c|}{\textit{Adaptación al sitio usando Enfoque 1}} \\
+\multicolumn{16}{|c|}{\textit{Adaptación al sitio usando Enfoque 1 (E1)}} \\
 \hline
 SLR-CAMS    & -0.9 & 17.1 & 26.4 &  3.8 & 21.3 & 31.5 & -1.5 & 18.4 & 26.0 & 2.5 & 24.8 & 31.5 & 2.1 & 15.9 & 23.5 \\
 SLR-LSASAF  & -5.5 & 18.4 & 25.0 &  4.4 & 23.9 & 34.6 &  1.0 & 18.0 & 26.7 & 2.7 & 17.1 & 25.4 & 2.2 & 12.9 & 22.3 \\
 \hline
-\multicolumn{16}{|c|}{\textit{Adaptación al sitio usando Enfoque 2}} \\
+\multicolumn{16}{|c|}{\textit{Adaptación al sitio usando Enfoque 2 (E2)}} \\
 \hline
 SLR-CAMS    & -0.9 & 17.1 & 26.4 &  3.8 & 21.3 & 31.5 & -1.5 & 18.4 & 25.9 & 2.5 & 24.8 & 31.5 & 2.1 & 15.9 & 23.5 \\
 SLR-LSASAF  & -5.5 & 18.4 & 25   &  4.4 & 23.9 & 34.6 &  1   & 18   & 26.7 & 2.7 & 17.1 & 25.4 & 2.2 & 12.8 & 22.3 \\
 \hline
-\multicolumn{16}{|c|}{\textit{Adaptación al sitio usando Enfoque 3}} \\
+\multicolumn{16}{|c|}{\textit{Adaptación al sitio usando Enfoque 3 (E3)}} \\
 \hline
 SLR-CAMS    & -2   & 17.5 & 27.1 &  3.8 & 22.7 & 33.3 & 3.3 & 19.1 & 28.6 & 0.1 & 13.6 & 22   & 2.9 & 12.7 & 21.2 \\
 SLR-LSASAF  & -5.3 & 16.7 & 24.7 &  4.2 & 23.8 & 35.4 & 4.3 & 19.2 & 28.7 & 0.9 & 12.7 & 21.5 & 2.6 & 12.8 & 21.9  \\
@@ -836,7 +836,34 @@ SLR-LSASAF  & -5.3 & 16.7 & 24.7 &  4.2 & 23.8 & 35.4 & 4.3 & 19.2 & 28.7 & 0.9 
 \end{table*}
 
 
-La Tabla \ref{tab:metricas_4_1} muestra las métricas de desempeño obtenidas tras evaluar tres enfoques sobre la desestacionalización de la serie. El Enfoque 3 presenta un buen desempeño en sitios de altitud como Ero y LQ particularmente ante el modelo de CAMS.
+La Tabla \ref{tab:metricas_4_1} y la Figura \ref{fig:metricas_estacionalidad} muestran las métricas de desempeño obtenidas tras evaluar los tres enfoques sobre la desestacionalización de la serie. Se comparan las estimaciones satelitales originales (CAMS y LSA-SAF) con sus adaptaciones al sitio mediante los enfoques E1, E2 y E3. 
+Cada subplot corresponde a una métrica distinta, y dentro de cada sitio se presentan primero los modelos basados en CAMS y luego, separados visualmente, los basados en LSA-SAF. 
+
+El Enfoque 1, que aplica una regresión lineal simple sobre los valores modelados, tiende a funcionar de manera consistente cuando la relación entre la irradiancia modelada y la medida es aproximadamente lineal y estable a lo largo del tiempo. Sin embargo, puede ser menos efectivo en sitios donde existen patrones estacionales complejos o variaciones sistemáticas que no se capturan con una regresión simple. 
+
+El Enfoque 2, basado en modelar la diferencia entre el GHI medido y el modelado, permite ajustar directamente el error sistemático y suele mejorar el desempeño en sitios donde el sesgo del modelo es relativamente constante, pero puede fallar si las diferencias presentan fuerte dependencia estacional o si los errores son heterocedásticos a lo largo del año.
+
+Finalmente, el Enfoque 3, que desestacionaliza tanto la variable regresora como la objetivo usando el GHI de cielo despejado, permite capturar patrones estacionales más complejos y corregir errores dependientes del ciclo solar diario y anual. Esto explica por qué, en general, presenta mejores métricas de rMAE y rRMSE en sitios con alta variabilidad estacional, como Ero y Lq, donde los enfoques anteriores muestran limitaciones.\\
+
+
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{errors_estacionalidad.png}
+    \caption{Métricas de desempeño relativas (\textit{rMBE}, \textit{rMAE} y \textit{rRMSE}, en \%) obtenidas en los cinco sitios de prueba (Yu, Sa, Sca, Ero y Lq). 
+    Se comparan las estimaciones satelitales originales (CAMS y LSA-SAF) con sus adaptaciones al sitio mediante los enfoques E1, E2 y E3. 
+    En cada subplot se agrupan las barras por sitio, mostrando primero los modelos basados en CAMS y luego, separados visualmente, los modelos basados en LSA-SAF.}
+    \label{fig:metricas_estacionalidad}
+\end{figure}
+
+
+La Tabla \ref{tab:metricas_4_1} y la Figura \ref{fig:metricas_estacionalidad} muestran las métricas de desempeño obtenidas tras evaluar los tres enfoques sobre la desestacionalización de la serie. Se comparan las estimaciones satelitales originales (CAMS y LSA-SAF) con sus adaptaciones al sitio mediante los enfoques E1, E2 y E3. Cada subplot corresponde a una métrica distinta, y dentro de cada sitio se presentan primero los modelos basados en CAMS y luego, separados visualmente, los basados en LSA-SAF.
+
+En general, los enfoques 1 y 2 muestran métricas bastante similares, lo que sugiere que ambos logran capturar de manera equivalente las correcciones sistemáticas del modelo; sin embargo, podrían no ajustarse perfectamente a sitios con variaciones estacionales más complejas o patrones de error no lineales.
+
+El Enfoque 3, que desestacionaliza tanto la variable regresora como la objetivo utilizando la GHI de cielo claro, tiende a mejorar de manera consistente la estimación original y resulta especialmente útil en sitios con alta variabilidad estacional, como Ero y Lq. No obstante, en sitios con nubosidad persistente o cobertura irregular, la desestacionalización puede ser menos efectiva, ya que los patrones estacionales quedan parcialmente enmascarados por la frecuente presencia de nubes, lo que dificulta capturar con precisión las fluctuaciones de la GHI. A pesar de esta limitación, el Enfoque 3 mantiene la capacidad de corregir errores dependientes del ciclo solar y, incluso en los casos menos favorables, logra mejorar la estimación original respecto a los modelos sin adaptación.
 
 
 

@@ -13,51 +13,53 @@ A level-1 auxiliary file: bibliografia.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: anexo.aux
 Database file #1: bibliografia.bib
+Warning--I didn't find a database entry for "MANI1980"
 Warning--empty publisher in GrossiRighini2007
+Warning--empty journal in Long2010
 Warning--empty chapter and pages in Thejll2015
 Warning--empty publisher in Thejll2015
 Warning--empty chapter and pages in Wald2007
 Warning--empty publisher in Wald2007
 Warning--empty publisher in Wald2021
-You've used 86 entries,
+You've used 119 entries,
             2773 wiz_defined-function locations,
-            1235 strings with 27814 characters,
-and the built_in function-call counts, 45400 in all, are:
-= -- 4045
-> -- 3140
-< -- 37
-+ -- 1067
-- -- 975
-* -- 4067
-:= -- 7269
-add.period$ -- 382
-call.type$ -- 86
-change.case$ -- 574
-chr.to.int$ -- 80
-cite$ -- 178
-duplicate$ -- 1785
-empty$ -- 3209
-format.name$ -- 1081
-if$ -- 9341
+            1495 strings with 37167 characters,
+and the built_in function-call counts, 63350 in all, are:
+= -- 5659
+> -- 4433
+< -- 52
++ -- 1502
+- -- 1377
+* -- 5705
+:= -- 10181
+add.period$ -- 539
+call.type$ -- 119
+change.case$ -- 807
+chr.to.int$ -- 113
+cite$ -- 245
+duplicate$ -- 2447
+empty$ -- 4426
+format.name$ -- 1532
+if$ -- 13005
 int.to.chr$ -- 7
 int.to.str$ -- 1
-missing$ -- 86
-newline$ -- 560
-num.names$ -- 344
-pop$ -- 1003
+missing$ -- 119
+newline$ -- 783
+num.names$ -- 476
+pop$ -- 1365
 preamble$ -- 1
-purify$ -- 496
+purify$ -- 696
 quote$ -- 0
-skip$ -- 1383
+skip$ -- 1927
 stack$ -- 0
-substring$ -- 1435
-swap$ -- 175
-text.length$ -- 6
+substring$ -- 2007
+swap$ -- 208
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 886
-warning$ -- 6
-while$ -- 335
+type$ -- 1239
+warning$ -- 7
+while$ -- 464
 width$ -- 0
-write$ -- 1360
-(There were 6 warnings)
+write$ -- 1901
+(There were 8 warnings)

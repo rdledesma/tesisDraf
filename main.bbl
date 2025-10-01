@@ -1,4 +1,4 @@
-\begin{thebibliography}{86}
+\begin{thebibliography}{119}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -19,6 +19,15 @@ Yaser~S. Abu-Mostafa, Malik Magdon-Ismail, and Hsuan-Tien Lin.
 \newblock \emph{Learning From Data}.
 \newblock AMLBook, 2012.
 
+\bibitem[Almanza(2011)]{Almanza2011}
+Pedro~J. Almanza.
+\newblock Determinación del crecimiento y desarrollo del fruto de vid (vitis
+  vinifera l.) bajo condiciones de clima frío tropical.
+\newblock Tesis de maestría, Universidad Nacional de Colombia, 2011.
+\newblock URL \url{https://repositorio.unal.edu.co/handle/unal/7895}.
+\newblock Recuperado de:
+  \url{https://repositorio.unal.edu.co/handle/unal/7895}.
+
 \bibitem[{Alonso Suárez} et~al.(2012){Alonso Suárez}, Abal, Siri, and
   Musé]{ALONSOSUAREZ2012}
 R.~{Alonso Suárez}, G.~Abal, R.~Siri, and P.~Musé.
@@ -29,6 +38,14 @@ R.~{Alonso Suárez}, G.~Abal, R.~Siri, and P.~Musé.
 \newblock \doi{https://doi.org/10.1016/j.solener.2012.08.012}.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0038092X12003040}.
+
+\bibitem[Angstrom(1924)]{angstrom1924}
+Anders Angstrom.
+\newblock Solar and terrestrial radiation. report to the international
+  commission for solar research on actinometric investigations of solar and
+  atmospheric radiation.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  50\penalty0 (210):\penalty0 121--126, 1924.
 
 \bibitem[Aristegui and Righini(2012)]{aristegui2012}
 R.~Aristegui and R.~Righini.
@@ -50,6 +67,26 @@ Bilal Babar, Luigi~Tommaso Luppino, Tobias Boström, and Stian~Normann
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0038092X20300426}.
 
+\bibitem[Bai et~al.(2024)Bai, Wan, Arslan, and Zong]{Bai2024}
+Jianhui Bai, Xiaowei Wan, Erhan Arslan, and Xuemei Zong.
+\newblock Global solar radiation and its interactions with atmospheric
+  substances and their effects on air temperature change in ankara province.
+\newblock \emph{Climate}, 12\penalty0 (3), 2024.
+\newblock ISSN 2225-1154.
+\newblock \doi{10.3390/cli12030035}.
+\newblock URL \url{https://www.mdpi.com/2225-1154/12/3/35}.
+
+\bibitem[Bamisile et~al.(2025)Bamisile, Acen, Cai, Huang, and
+  Staffell]{BAMISILE2025}
+Olusola Bamisile, Caroline Acen, Dongsheng Cai, Qi~Huang, and Iain Staffell.
+\newblock The environmental factors affecting solar photovoltaic output.
+\newblock \emph{Renewable and Sustainable Energy Reviews}, 208:\penalty0
+  115073, 2025.
+\newblock ISSN 1364-0321.
+\newblock \doi{https://doi.org/10.1016/j.rser.2024.115073}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S1364032124007998}.
+
 \bibitem[Belmonte et~al.(2006)Belmonte, Núñez, Franco, and
   Viramonte]{Belmonte2006}
 Silvina Belmonte, Virgilio Núñez, Judith Franco, and José Viramonte.
@@ -65,6 +102,13 @@ L.~Breiman, J.~Friedman, C.J. Stone, and R.A. Olshen.
 \newblock Taylor \& Francis, 1984.
 \newblock ISBN 9780412048418.
 \newblock URL \url{https://books.google.com.ar/books?id=JwQx-WOmSyQC}.
+
+\bibitem[Cestari and Buster(2017)]{Cestari2017}
+Tania Cestari and Kesha Buster.
+\newblock Photoprotection in specific populations: children and people of
+  color.
+\newblock \emph{Journal of the American Academy of Dermatology}, 76\penalty0
+  (3):\penalty0 S110--S121, 2017.
 
 \bibitem[Che et~al.(2024{\natexlab{a}})Che, Li, and Huang]{Che2024b}
 Chang Che, Chen Li, and Zengyi Huang.
@@ -114,6 +158,18 @@ Oscar Claveria, Enric Monte, and Salvador Torra.
   Institute of Applied Economics, January 2015.
 \newblock URL \url{https://ideas.repec.org/p/ira/wpaper/201503.html}.
 
+\bibitem[Cossu et~al.(2014)Cossu, Murgia, Ledda, Deligios, Sirigu, Chessa, and
+  Pazzona]{COSSU2014}
+Marco Cossu, Lelia Murgia, Luigi Ledda, Paola~A. Deligios, Antonella Sirigu,
+  Francesco Chessa, and Antonio Pazzona.
+\newblock Solar radiation distribution inside a greenhouse with south-oriented
+  photovoltaic roofs and effects on crop productivity.
+\newblock \emph{Applied Energy}, 133:\penalty0 89--100, 2014.
+\newblock ISSN 0306-2619.
+\newblock \doi{https://doi.org/10.1016/j.apenergy.2014.07.070}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0306261914007533}.
+
 \bibitem[Cutler et~al.(2011)Cutler, Cutler, and Stevens]{cutler2011}
 Adele Cutler, D.~Richard Cutler, and John~R. Stevens.
 \newblock Random forests.
@@ -146,6 +202,18 @@ Javier~Jesús Espinosa-Zúñiga.
   (3):\penalty0 1--16, 2020.
 \newblock \doi{10.22201/fi.25940732e.2020.21.3.022}.
 
+\bibitem[Espitia et~al.(2024)Espitia, Velázquez, Rodriguez, Gomez, Baeza,
+  Aguilar-Rodríguez, Flores-Velazquez, and Villagran]{Espitia2024}
+John~Javier Espitia, Fabián~Andrés Velázquez, Jader Rodriguez, Luisa Gomez,
+  Esteban Baeza, Cruz~Ernesto Aguilar-Rodríguez, Jorge Flores-Velazquez, and
+  Edwin Villagran.
+\newblock Solar energy applications in protected agriculture: A technical and
+  bibliometric review of greenhouse systems and solar technologies.
+\newblock \emph{Agronomy}, 14\penalty0 (12), 2024.
+\newblock ISSN 2073-4395.
+\newblock \doi{10.3390/agronomy14122791}.
+\newblock URL \url{https://www.mdpi.com/2073-4395/14/12/2791}.
+
 \bibitem[Fernández-Peruchena et~al.(2020)Fernández-Peruchena, Polo, Martín,
   and Mazorra]{Fernández2020}
 Carlos~M. Fernández-Peruchena, Jesús Polo, Luis Martín, and Luis Mazorra.
@@ -166,6 +234,18 @@ S.~Fritz, P.~Krishna Rao, and M.~Weinstein.
 \newblock URL
   \url{https://journals.ametsoc.org/view/journals/atsc/21/2/1520-0469_1964_021_0141_smorse_2_0_co_2.xml}.
 
+\bibitem[{Garnacho Saucedo} et~al.(2020){Garnacho Saucedo}, {Salido Vallejo},
+  and {Moreno Giménez}]{GARNACHO2020}
+Gloria~M. {Garnacho Saucedo}, Rafael {Salido Vallejo}, and Jose~Carlos {Moreno
+  Giménez}.
+\newblock Efectos de la radiación solar y actualización en fotoprotección.
+\newblock \emph{Anales de Pediatría}, 92\penalty0 (6):\penalty0
+  377.e1--377.e9, 2020.
+\newblock ISSN 1695-4033.
+\newblock \doi{https://doi.org/10.1016/j.anpedi.2020.04.014}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S1695403320301661}.
+
 \bibitem[Gautier et~al.(1980)Gautier, Diak, and Masse]{Gautier1980}
 Catherine Gautier, Georges Diak, and Serge Masse.
 \newblock A simple physical model to estimate incident solar radiation at the
@@ -176,6 +256,15 @@ Catherine Gautier, Georges Diak, and Serge Masse.
 \newblock URL
   \url{https://journals.ametsoc.org/view/journals/apme/19/8/1520-0450_1980_019_1005_aspmte_2_0_co_2.xml}.
 
+\bibitem[Glover and McCulloch(1958)]{Glover1958}
+J.~Glover and J.~S.~G. McCulloch.
+\newblock The empirical relation between solar radiation and hours of sunshine.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  84\penalty0 (360):\penalty0 172--175, 1958.
+\newblock \doi{https://doi.org/10.1002/qj.49708436011}.
+\newblock URL
+  \url{https://rmets.onlinelibrary.wiley.com/doi/abs/10.1002/qj.49708436011}.
+
 \bibitem[Goodfellow et~al.(2016)Goodfellow, Bengio, and
   Courville]{Goodfellow2016}
 Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
@@ -183,6 +272,18 @@ Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
 \newblock MIT Press, 2016.
 \newblock URL \url{http://www.deeplearningbook.org}.
 \newblock Book in preparation for MIT Press.
+
+\bibitem[Gray et~al.(2010)Gray, Beer, Geller, Haigh, Lockwood, Matthes,
+  Cubasch, Fleitmann, Harrison, Hood, Luterbacher, Meehl, Shindell, van Geel,
+  and White]{Gray2010}
+L.~J. Gray, J.~Beer, M.~Geller, J.~D. Haigh, M.~Lockwood, K.~Matthes,
+  U.~Cubasch, D.~Fleitmann, G.~Harrison, L.~Hood, J.~Luterbacher, G.~A. Meehl,
+  D.~Shindell, B.~van Geel, and W.~White.
+\newblock Solar influences on climate.
+\newblock \emph{Reviews of Geophysics}, 48\penalty0 (4), 2010.
+\newblock \doi{https://doi.org/10.1029/2009RG000282}.
+\newblock URL
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2009RG000282}.
 
 \bibitem[Grossi~Gallegos(1998{\natexlab{a}})]{GrossiGallegos1998A}
 Hugo Grossi~Gallegos.
@@ -219,6 +320,48 @@ Chris Gueymard.
 \newblock \emph{Solar Energy}, 74:\penalty0 355--379, 05 2003.
 \newblock \doi{10.1016/S0038-092X(03)00195-6}.
 
+\bibitem[Gueymard and Myers(2009)]{Gueymard2009}
+Christian~A. Gueymard and Daryl~R. Myers.
+\newblock Evaluation of conventional and high-performance routine solar
+  radiation measurements for improved solar resource, climatological trends,
+  and radiative modeling.
+\newblock \emph{Solar Energy}, 83\penalty0 (2):\penalty0 171--185, 2009.
+\newblock ISSN 0038-092X.
+\newblock \doi{https://doi.org/10.1016/j.solener.2008.07.015}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0038092X08001813}.
+
+\bibitem[Guo et~al.(2020)Guo, Aviv, Loyola, Teitelbaum, Houchois, and
+  Meggers]{GUO2020}
+Hongshan Guo, Dorit Aviv, Mauricio Loyola, Eric Teitelbaum, Nicholas Houchois,
+  and Forrest Meggers.
+\newblock On the understanding of the mean radiant temperature within both the
+  indoor and outdoor environment, a critical review.
+\newblock \emph{Renewable and Sustainable Energy Reviews}, 117:\penalty0
+  109207, 2020.
+\newblock ISSN 1364-0321.
+\newblock \doi{https://doi.org/10.1016/j.rser.2019.06.014}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S1364032119304071}.
+
+\bibitem[Gómez et~al.(2023)Gómez, Molina, and Galiana-Merino]{GOMEZ2023}
+Igor Gómez, Sergio Molina, and Juan~José Galiana-Merino.
+\newblock Evaluating the influence of air pollution on solar radiation
+  observations over the coastal region of alicante (southeastern spain).
+\newblock \emph{Journal of Environmental Sciences}, 126:\penalty0 633--643,
+  2023.
+\newblock ISSN 1001-0742.
+\newblock \doi{https://doi.org/10.1016/j.jes.2022.05.004}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S1001074222002492}.
+
+\bibitem[Haigh and Cargill(2015)]{Haigh2015}
+Joanna~D. Haigh and Peter Cargill.
+\newblock \emph{The Sun's Influence on Climate}, volume~11.
+\newblock Princeton University Press, 2015.
+\newblock \doi{10.2307/j.ctt1d2dm38}.
+\newblock URL \url{https://doi.org/10.2307/j.ctt1d2dm38}.
+
 \bibitem[Hanson(1976)]{Hanson1976}
 Kirby~J. Hanson.
 \newblock A new estimate of solar irradiance at the earth's surface on zonal
@@ -254,6 +397,16 @@ M.~Hongn, R.~Lozano, and G.~Salazar.
 \newblock \emph{Avances en Energías Renovables y Medio Ambiente}, 22:\penalty0
   02.119--02.129, 2018.
 
+\bibitem[Hottel(1976)]{Hottel1976}
+Hoyt~C. Hottel.
+\newblock A simple model for estimating the transmittance of direct solar
+  radiation through clear atmospheres.
+\newblock \emph{Solar Energy}, 18\penalty0 (2):\penalty0 129--134, 1976.
+\newblock ISSN 0038-092X.
+\newblock \doi{https://doi.org/10.1016/0038-092X(76)90045-1}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/0038092X76900451}.
+
 \bibitem[Huang et~al.(2024)Huang, Zheng, Li, and Che]{Huang2024}
 Zengyi Huang, Haotian Zheng, Chen Li, and Chang Che.
 \newblock Application of machine learning-based k-means clustering for
@@ -279,6 +432,18 @@ Kalingga Titon~Nur Ihsan, Hideaki Takenaka, Atsushi Higuchi, Anjar~Dimara
 \newblock \doi{https://doi.org/10.1016/j.solener.2024.112678}.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0038092X24003736}.
+
+\bibitem[Ko et~al.(2020)Ko, Schiavon, Zhang, Graham, Brager, Mauss, and
+  Lin]{KO2020}
+Won~Hee Ko, Stefano Schiavon, Hui Zhang, Lindsay~T. Graham, Gail Brager, Iris
+  Mauss, and Yu-Wen Lin.
+\newblock The impact of a view from a window on thermal comfort, emotion, and
+  cognitive performance.
+\newblock \emph{Building and Environment}, 175:\penalty0 106779, 2020.
+\newblock ISSN 0360-1323.
+\newblock \doi{https://doi.org/10.1016/j.buildenv.2020.106779}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0360132320301372}.
 
 \bibitem[Laguarda(2025)]{Laguarda2021}
 A.~Laguarda.
@@ -333,6 +498,16 @@ Rubén~D. Ledesma, Germán~A. Salazar, and Olga de~Castro~Vilela.
 \newblock URL
   \url{https://portalderevistas.unsa.edu.ar/index.php/averma/article/view/3838}.
 
+\bibitem[Liu and Jordan(1960)]{Liu1960}
+Benjamin~Y.H. Liu and Richard~C. Jordan.
+\newblock The interrelationship and characteristic distribution of direct,
+  diffuse and total solar radiation.
+\newblock \emph{Solar Energy}, 4\penalty0 (3):\penalty0 1--19, 1960.
+\newblock ISSN 0038-092X.
+\newblock \doi{https://doi.org/10.1016/0038-092X(60)90062-1}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/0038092X60900621}.
+
 \bibitem[Liu et~al.(2023)Liu, Yu, Che, Lin, Hu, and Zhao]{liu2023}
 Bo~Liu, Liqiang Yu, Chang Che, Qunwei Lin, Hao Hu, and Xinyu Zhao.
 \newblock Integration and performance analysis of artificial intelligence and
@@ -344,6 +519,17 @@ Houze Liu, Chongqing Wang, Xiaoan Zhan, Haotian Zheng, and Chang Che.
 \newblock Enhancing 3d object detection by using neural network with
   self-adaptive thresholding, 2024.
 \newblock URL \url{https://arxiv.org/abs/2405.07479}.
+
+\bibitem[Long and Dutton(2010)]{Long2010}
+Charles~N Long and Ellsworth~G Dutton.
+\newblock Bsrn global network recommended qc tests, v2. x.
+\newblock 2010.
+
+\bibitem[Long and Shi(2008)]{Long2008}
+Chuck~N Long and Yan Shi.
+\newblock An automated quality assessment and control algorithm for surface
+  radiation measurements.
+\newblock \emph{Open Atmos. Sci. J}, 2\penalty0 (1):\penalty0 23--37, 2008.
 
 \bibitem[Louppe(2015)]{louppe2015}
 Gilles Louppe.
@@ -371,6 +557,23 @@ Diego Miranda, Janis Galdino, Leonardo Petribú, Olga~C. Vilela, Tarcísio~S.
   (DEN-UFPE) e Centro de Energias Renováveis da Universidade Federal de
   Pernambuco (CER-UFPE).
 
+\bibitem[Montero~Torres(2022)]{Montero2022}
+Julio Montero~Torres.
+\newblock Relación de la radiación solar con la producción de plantas:
+  agroproductivas: Julio montero torres.
+\newblock \emph{Revista de Investigación e Innovación Agropecuaria y de
+  Recursos Naturales}, 9\penalty0 (1):\penalty0 52–66, abr. 2022.
+\newblock \doi{10.53287/oqym7033yy88k}.
+\newblock URL \url{https://riiarn.umsa.bo/index.php/RIIARn/article/view/220}.
+
+\bibitem[Moreno-Tejera et~al.(2016)Moreno-Tejera, Silva-P{\'e}rez, Lillo-Bravo,
+  and Ram{\'\i}rez-Santigosa]{Moreno2016}
+Sara Moreno-Tejera, Manuel~Antonio Silva-P{\'e}rez, Isidoro Lillo-Bravo, and
+  Lourdes Ram{\'\i}rez-Santigosa.
+\newblock Solar resource assessment in seville, spain. statistical
+  characterisation of solar radiation at different time resolutions.
+\newblock \emph{Solar Energy}, 132:\penalty0 430--441, 2016.
+
 \bibitem[Narvaez et~al.(2021)Narvaez, Giraldo, Bressan, and
   Pantoja]{NARVAEZ2021}
 Gabriel Narvaez, Luis~Felipe Giraldo, Michael Bressan, and Andres Pantoja.
@@ -380,6 +583,16 @@ Gabriel Narvaez, Luis~Felipe Giraldo, Michael Bressan, and Andres Pantoja.
 \newblock \doi{https://doi.org/10.1016/j.renene.2020.11.089}.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0960148120318395}.
+
+\bibitem[Neale et~al.(2019)Neale, Khan, Lucas, Waterhouse, Whiteman, and
+  Olsen]{Neale2019}
+Rachel~E. Neale, Sham~R. Khan, Robyn~M. Lucas, Michele Waterhouse, David~C.
+  Whiteman, and Catherine~M. Olsen.
+\newblock The effect of sunscreen on vitamin d: a review.
+\newblock \emph{British Journal of Dermatology}, 181\penalty0 (5):\penalty0
+  907--915, November 2019.
+\newblock \doi{10.1111/bjd.17980}.
+\newblock Epub 2019 Jul 9.
 
 \bibitem[Nollas et~al.(2023)Nollas, Salazar, and Gueymard]{Nollas2023}
 Fernando~M. Nollas, German~A. Salazar, and Christian~A. Gueymard.
@@ -470,6 +683,11 @@ Cameron~W. Potter, Debra Lew, Jim McCaa, Sam Cheng, Scott Eichelberger, and
 \newblock \doi{10.1260/0309-524X.32.4.325}.
 \newblock URL \url{https://doi.org/10.1260/0309-524X.32.4.325}.
 
+\bibitem[Prescott(1940)]{prescott1940}
+JA~Prescott.
+\newblock Evaporation from a water surface in relation to solar radiation.
+\newblock \emph{Trans. Roy. Soc. S. Aust.}, 46:\penalty0 114--118, 1940.
+
 \bibitem[Qu et~al.(2017)Qu, Oumbe, Blanc, Espinar, Gesell, Gschwind,
   Kl{\"u}ser, Lef{\`e}vre, Saboret, Schroedter-Homscheidt, and Wald]{qu2017}
 Zhipeng Qu, Armel Oumbe, Philippe Blanc, Bella Espinar, Gerhard Gesell,
@@ -499,6 +717,26 @@ Hassan Ramchoun, Youssef Ghanou, Mohammed Amine, Mohammed A.~Janati Idrissi,
 \newblock \emph{International Journal of Interactive Multimedia and Artificial
   Intelligence}, 4\penalty0 (1):\penalty0 26--30, 2016.
 \newblock \doi{10.9781/ijimai.2016.415}.
+
+\bibitem[Rietveld(1978)]{Rietveld1978}
+M.R. Rietveld.
+\newblock A new method for estimating the regression coefficients in the
+  formula relating solar radiation to sunshine.
+\newblock \emph{Agricultural Meteorology}, 19\penalty0 (2):\penalty0 243--252,
+  1978.
+\newblock ISSN 0002-1571.
+\newblock \doi{https://doi.org/10.1016/0002-1571(78)90014-6}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/0002157178900146}.
+
+\bibitem[Roesch et~al.(2010)Roesch, Wild, Ohmura, Dutton, Long, and
+  Zhang]{Roesch2010}
+Andreas Roesch, Martin Wild, Atsumu Ohmura, Ellsworth~G Dutton, Charles~N Long,
+  and Taiping Zhang.
+\newblock Assessment of bsrn radiation records for the computation of monthly
+  means.
+\newblock \emph{Atmospheric Measurement Techniques Discussions}, 3\penalty0
+  (5):\penalty0 4423--4457, 2010.
 
 \bibitem[Romano~Armada et~al.(2017)Romano~Armada, Suligoy, Fernández, and
   Salazar]{RomanoArmada2017}
@@ -579,6 +817,17 @@ Germ{\'a}n~A. Salazar, Alejandro~L. Hern{\'a}ndez, and Luis~R. Saravia.
 \newblock \emph{Renewable Energy}, 2010.
 \newblock \doi{10.1016/j.renene.2010.01.033}.
 
+\bibitem[Salazar et~al.(2009)Salazar, Suligoy, Fernández, Saravia, and
+  Palacios]{Salazar2009}
+Germán Salazar, Hugo Suligoy, Carlos Fernández, Luis Saravia, and Aldo
+  Palacios.
+\newblock Análisis preliminar de valores de irradiancia global horizontal,
+  temperatura, humedad relativa y humedad absoluta tomados en un sitio de
+  altura en la provincia de salta (argentina).
+\newblock \emph{Avances en Energías Renovables y Medio Ambiente}, 13, 2009.
+\newblock ISSN 0329-5184.
+\newblock Impreso en la Argentina.
+
 \bibitem[Salazar et~al.(2013)Salazar, Hernández, Echazú, Saravia, and
   Romero]{Salazar2013}
 Germán Salazar, Alejandro Hernández, Ricardo Echazú, Luis Saravia, and
@@ -623,6 +872,24 @@ Nilsa~Maria Sarmiento~Barbieri, Silvina Belmonte, Pablo~Roberto Dellicompagni,
   salta, argentina.
 \newblock \emph{Renewable Energy}, 132:\penalty0 68--80, March 2019.
 
+\bibitem[Sengupta et~al.(2024)Sengupta, Habte, Wilbert, Gueymard, Remund,
+  Lorenz, van Sark, and Jensen]{Sengupta2024}
+Manajit Sengupta, Aron Habte, Stefan Wilbert, Christian Gueymard, Jan Remund,
+  Elke Lorenz, Wilfried van Sark, and Adam~R Jensen.
+\newblock Best practices handbook for the collection and use of solar resource
+  data for solar energy applications.
+\newblock Technical report, National Renewable Energy Laboratory (NREL),
+  Golden, CO (United States), 2024.
+
+\bibitem[Shi et~al.(2008)Shi, Hayasaka, Ohmura, Chen, Wang, Zhao, Che, and
+  Xu]{Shi2008}
+Guang-Yu Shi, Tadahiro Hayasaka, Atsumu Ohmura, Zhi-Hua Chen, Biao Wang,
+  Jian-Qi Zhao, Hui-Zheng Che, and Li~Xu.
+\newblock Data quality assessment and the long-term trend of ground solar
+  radiation in china.
+\newblock \emph{Journal of applied meteorology and climatology}, 47\penalty0
+  (4):\penalty0 1006--1016, 2008.
+
 \bibitem[Soria~Olivas et~al.(2022)Soria~Olivas, Rodríguez~Belenguer,
   García~Vidal, Vaquer~Estalrich, Camisón, and Vila~Tomás]{Soria2022}
 Emilio Soria~Olivas, Pablo Rodríguez~Belenguer, Quique García~Vidal, Fran
@@ -631,6 +898,17 @@ Emilio Soria~Olivas, Pablo Rodríguez~Belenguer, Quique García~Vidal, Fran
   profundo}.
 \newblock Ediciones de la U, Bogotá, Colombia, 1 edition, 2022.
 \newblock ISBN 978-958-792-440-4.
+
+\bibitem[Sun et~al.(2022)Sun, Shan, Rong, and Yang]{SUN2022}
+Tao Sun, Ming Shan, Xing Rong, and Xudong Yang.
+\newblock Estimating the spatial distribution of solar photovoltaic power
+  generation potential on different types of rural rooftops using a deep
+  learning network applied to satellite images.
+\newblock \emph{Applied Energy}, 315:\penalty0 119025, 2022.
+\newblock ISSN 0306-2619.
+\newblock \doi{https://doi.org/10.1016/j.apenergy.2022.119025}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0306261922004305}.
 
 \bibitem[Suárez et~al.(2021)Suárez, Castillo, Salazar, Acosta, Cadena, Marin,
   Utrillas, and Martínez]{Suazarez2014}
@@ -687,6 +965,20 @@ Guillermo~Antonio Toro~Bayona and Iván~Alberto Lizarazo~Salcedo.
 \newblock \emph{Ingeniería}, 17\penalty0 (1):\penalty0 61--72, 2012.
 \newblock URL \url{http://www.redalyc.org/articulo.oa?id=498850174008}.
 
+\bibitem[Trenberth and Stepaniak(2004)]{Trenberth2004}
+Kevin~E. Trenberth and David~P. Stepaniak.
+\newblock The flow of energy through the earth's climate system.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  130\penalty0 (603):\penalty0 2677--2701, 2004.
+\newblock \doi{https://doi.org/10.1256/qj.04.83}.
+\newblock URL
+  \url{https://rmets.onlinelibrary.wiley.com/doi/abs/10.1256/qj.04.83}.
+
+\bibitem[Vignola et~al.(2019)Vignola, Michalsky, and Stoffel]{Vignola2019}
+Frank Vignola, Joseph Michalsky, and Thomas Stoffel.
+\newblock \emph{Solar and infrared radiation measurements}.
+\newblock CRC press, 2019.
+
 \bibitem[Vilela et~al.(2015)Vilela, Pedrosa~Filho, Escobedo, Dal~Pai, Salazr,
   Raichjk, Righini, Grossi, and Fraidenraich]{Vilela2015}
 O.~C. Vilela, M.~H.~O. Pedrosa~Filho, J.~F. Escobedo, A.~Dal~Pai, G.~Salazr,
@@ -713,6 +1005,12 @@ Lucien Wald.
 \newblock 05 2021.
 \newblock ISBN 9781003155454.
 \newblock \doi{10.1201/9781003155454}.
+
+\bibitem[Wiatros-Motyka et~al.(2022)Wiatros-Motyka, Jones, Broadbent, Fulghum,
+  Dizon, and MacDonald]{Wiatros2022}
+M~Wiatros-Motyka, D~Jones, H~Broadbent, N~Fulghum, R~Dizon, and P~MacDonald.
+\newblock Global electricity mid-year insights 2022.
+\newblock \emph{no. October}, 2022.
 
 \bibitem[Yang and Gueymard(2021{\natexlab{a}})]{YANG2021}
 Dazhi Yang and Christian~A. Gueymard.
@@ -766,5 +1064,15 @@ Jie Zhang, Anthony Florita, Bri-Mathias Hodge, Siyuan Lu, Hendrik~F. Hamann,
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0038092X14005027}.
 \newblock Available: \url{https://doi.org/10.1016/j.solener.2014.10.016}.
+
+\bibitem[Zhang et~al.(2022)Zhang, Zhang, Cui, and He]{Zhang2022}
+Xinshuo Zhang, Mengli Zhang, Yong Cui, and Ying He.
+\newblock Estimation of daily ground-received global solar radiation using air
+  pollutant data.
+\newblock \emph{Frontiers in Public Health}, Volume 10 - 2022, 2022.
+\newblock ISSN 2296-2565.
+\newblock \doi{10.3389/fpubh.2022.860107}.
+\newblock URL
+  \url{https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.860107}.
 
 \end{thebibliography}
