@@ -42,7 +42,7 @@
 \contentsline {paragraph}{Eliminación recursiva de características (RFE).}{56}{section*.27}%
 \contentsline {paragraph}{LASSO (Least Absolute Shrinkage and Selection Operator).}{57}{section*.28}%
 \contentsline {paragraph}{Stepwise (selección hacia adelante y hacia atrás).}{57}{section*.29}%
-\contentsline {section}{\numberline {3.5}Adaptación al sitio tomando consideraciones de una serie temporal}{65}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{70}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Conclusiones}{72}{chapter.4}%
-\contentsline {chapter}{\textbf {Anexo 1}}{87}{chapter*.30}%
+\contentsline {section}{\numberline {3.5}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{65}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Adaptación al sitio tomando consideraciones de una serie temporal}{71}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Conclusiones}{77}{chapter.4}%
+\contentsline {chapter}{\textbf {Anexo 1}}{92}{chapter*.30}%

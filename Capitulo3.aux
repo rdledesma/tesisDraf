@@ -91,27 +91,35 @@
 \newlabel{tab:metrics_7pred}{{3.10}{63}{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo y conjunto satelital en los cinco sitios, utilizando los siete predictores mejor posicionados con resolución de 15 minutos. Los valores están normalizados y expresados como porcentaje respecto al GHI promedio de cada sitio: 429.2~W/m$^2$ (YU), 432.9~W/m$^2$ (SA), 554.4~W/m$^2$ (SCA), 628.4~W/m$^2$ (ERO) y 648.7~W/m$^2$ (LQ)}{table.3.10}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces Comparación del rendimiento entre el modelo original y los modelos ajustados con 15, 7 y 1 regresor en términos de RMSD. Las barras se muestran agrupadas por sitio y conjunto de datos, junto con flechas que indican la mejora o el deterioro con respecto al modelo original, así como deltas en puntos porcentuales (pp) y porcentaje relativo.}}{64}{figure.3.16}\protected@file@percent }
 \newlabel{fig:rrmsd-multiple}{{3.16}{64}{Comparación del rendimiento entre el modelo original y los modelos ajustados con 15, 7 y 1 regresor en términos de RMSD. Las barras se muestran agrupadas por sitio y conjunto de datos, junto con flechas que indican la mejora o el deterioro con respecto al modelo original, así como deltas en puntos porcentuales (pp) y porcentaje relativo}{figure.3.16}{}}
-\citation{Olivas2022}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Adaptación al sitio tomando consideraciones de una serie temporal}{65}{section.3.5}\protected@file@percent }
-\citation{ZAINALI2024}
-\citation{Ledesma2023a}
-\newlabel{ec:approache1}{{3.4}{66}{Adaptación al sitio tomando consideraciones de una serie temporal}{equation.3.5.4}{}}
-\newlabel{eq:approach2}{{3.6}{66}{Adaptación al sitio tomando consideraciones de una serie temporal}{equation.3.5.6}{}}
-\newlabel{eq:approach3}{{3.9}{66}{Adaptación al sitio tomando consideraciones de una serie temporal}{equation.3.5.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces Diferencias entre los tres enfoques de adaptación.}}{67}{figure.3.17}\protected@file@percent }
-\newlabel{fig:approaches}{{3.17}{67}{Diferencias entre los tres enfoques de adaptación}{figure.3.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces Métricas de desempeño relativas (\textit  {rMBE}, \textit  {rMAE} y \textit  {rRMSE}, en \%) obtenidas en los cinco sitios de prueba (Yu, Sa, Sca, Ero y Lq). Se comparan las estimaciones satelitales originales (CAMS y LSA-SAF) con sus adaptaciones al sitio mediante los enfoques E1, E2 y E3. En cada subplot se agrupan las barras por sitio, mostrando primero los modelos basados en CAMS y luego, separados visualmente, los modelos basados en LSA-SAF.}}{68}{figure.3.18}\protected@file@percent }
-\newlabel{fig:metricas_estacionalidad}{{3.18}{68}{Métricas de desempeño relativas (\textit {rMBE}, \textit {rMAE} y \textit {rRMSE}, en \%) obtenidas en los cinco sitios de prueba (Yu, Sa, Sca, Ero y Lq). Se comparan las estimaciones satelitales originales (CAMS y LSA-SAF) con sus adaptaciones al sitio mediante los enfoques E1, E2 y E3. En cada subplot se agrupan las barras por sitio, mostrando primero los modelos basados en CAMS y luego, separados visualmente, los modelos basados en LSA-SAF}{figure.3.18}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.11}{\ignorespaces Métricas de desempeño (MBE, MAE, RMSE) para cada modelo en el conjunto de prubeas de los cinco sitios. Los valores están normalizados y expresados como porcentajes relativos a la media de GHI en cada sitio: 429.2~W/m$^2$ (Yu), 432.9~W/m$^2$ (Sa), 554.4~W/m$^2$ (Sca), 628.4~W/m$^2$ (Ero), y 648.7~W/m$^2$ (Lq). Los modelos etiquetados con ``(1 var.)'' indican adaptación al sitio realizada utilizando solo un regresor (CAMS o LSA-SAF).}}{69}{table.3.11}\protected@file@percent }
-\newlabel{tab:metricas_4_1}{{3.11}{69}{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo en el conjunto de prubeas de los cinco sitios. Los valores están normalizados y expresados como porcentajes relativos a la media de GHI en cada sitio: 429.2~W/m$^2$ (Yu), 432.9~W/m$^2$ (Sa), 554.4~W/m$^2$ (Sca), 628.4~W/m$^2$ (Ero), y 648.7~W/m$^2$ (Lq). Los modelos etiquetados con ``(1 var.)'' indican adaptación al sitio realizada utilizando solo un regresor (CAMS o LSA-SAF)}{table.3.11}{}}
 \citation{IHSAN2024}
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{70}{section.3.6}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces Grilla }}{71}{figure.3.19}\protected@file@percent }
-\newlabel{fig:gridSA}{{3.19}{71}{Grilla}{figure.3.19}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{65}{section.3.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces Grilla utilizada por el modelo Helisat-4 de CAMS distribuido por CAMS Volume}}{66}{figure.3.17}\protected@file@percent }
+\newlabel{fig:gridSA}{{3.17}{66}{Grilla utilizada por el modelo Helisat-4 de CAMS distribuido por CAMS Volume}{figure.3.17}{}}
+\newlabel{ec:SiteAdap}{{3.4}{67}{Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{equation.3.5.4}{}}
+\newlabel{ec:dist}{{3.5}{67}{Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{equation.3.5.5}{}}
+\newlabel{tab:metrics-as-4}{{3.5}{68}{Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{equation.3.5.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.11}{\ignorespaces Métricas de desempeño (MBE, MAE, RMSE) para cada modelo adaptado en los cinco sitios en el \textbf  {conjunto de pruebas}}}{68}{table.3.11}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces Matriz de rRMSD (\%) obtenida a partir de la validación cruzada entre sitios para el modelo ERA5, utilizando los modelos ajustados con celdas satelitales adyacentes al sitio de interés.}}{69}{figure.3.18}\protected@file@percent }
+\newlabel{fig:crossValidation}{{3.18}{69}{Matriz de rRMSD (\%) obtenida a partir de la validación cruzada entre sitios para el modelo ERA5, utilizando los modelos ajustados con celdas satelitales adyacentes al sitio de interés}{figure.3.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces Diferencia en desempeño entre el modelo sin ajustar (ERA5 original) y el modelo adaptado a cada sitio. Cada fila indica el sitio de entrenamiento y cada columna el sitio de prueba.}}{70}{figure.3.19}\protected@file@percent }
+\newlabel{fig:deltaCrossValidation}{{3.19}{70}{Diferencia en desempeño entre el modelo sin ajustar (ERA5 original) y el modelo adaptado a cada sitio. Cada fila indica el sitio de entrenamiento y cada columna el sitio de prueba}{figure.3.19}{}}
+\citation{Olivas2022}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Adaptación al sitio tomando consideraciones de una serie temporal}{71}{section.3.6}\protected@file@percent }
+\citation{ZAINALI2024}
+\newlabel{ec:approache1}{{3.6}{72}{Adaptación al sitio tomando consideraciones de una serie temporal}{equation.3.6.6}{}}
+\newlabel{eq:approach2}{{3.8}{72}{Adaptación al sitio tomando consideraciones de una serie temporal}{equation.3.6.8}{}}
+\citation{Ledesma2023a}
+\newlabel{eq:approach3}{{3.11}{73}{Adaptación al sitio tomando consideraciones de una serie temporal}{equation.3.6.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces Diferencias entre los tres enfoques de adaptación.}}{73}{figure.3.20}\protected@file@percent }
+\newlabel{fig:approaches}{{3.20}{73}{Diferencias entre los tres enfoques de adaptación}{figure.3.20}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.12}{\ignorespaces Métricas de desempeño (MBE, MAE, RMSE) para cada modelo en el conjunto de prubeas de los cinco sitios. Los valores están normalizados y expresados como porcentajes relativos a la media de GHI en cada sitio: 429.2~W/m$^2$ (Yu), 432.9~W/m$^2$ (Sa), 554.4~W/m$^2$ (Sca), 628.4~W/m$^2$ (Ero), y 648.7~W/m$^2$ (Lq). Los modelos etiquetados con ``(1 var.)'' indican adaptación al sitio realizada utilizando solo un regresor (CAMS o LSA-SAF).}}{74}{table.3.12}\protected@file@percent }
+\newlabel{tab:metricas_4_1}{{3.12}{74}{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo en el conjunto de prubeas de los cinco sitios. Los valores están normalizados y expresados como porcentajes relativos a la media de GHI en cada sitio: 429.2~W/m$^2$ (Yu), 432.9~W/m$^2$ (Sa), 554.4~W/m$^2$ (Sca), 628.4~W/m$^2$ (Ero), y 648.7~W/m$^2$ (Lq). Los modelos etiquetados con ``(1 var.)'' indican adaptación al sitio realizada utilizando solo un regresor (CAMS o LSA-SAF)}{table.3.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.21}{\ignorespaces Métricas de desempeño relativas (\textit  {rMBE}, \textit  {rMAE} y \textit  {rRMSE}, en \%) obtenidas en los cinco sitios de prueba (Yu, Sa, Sca, Ero y Lq). Se comparan las estimaciones satelitales originales (CAMS y LSA-SAF) con sus adaptaciones al sitio mediante los enfoques E1, E2 y E3. En cada subplot se agrupan las barras por sitio, mostrando primero los modelos basados en CAMS y luego, separados visualmente, los modelos basados en LSA-SAF.}}{75}{figure.3.21}\protected@file@percent }
+\newlabel{fig:metricas_estacionalidad}{{3.21}{75}{Métricas de desempeño relativas (\textit {rMBE}, \textit {rMAE} y \textit {rRMSE}, en \%) obtenidas en los cinco sitios de prueba (Yu, Sa, Sca, Ero y Lq). Se comparan las estimaciones satelitales originales (CAMS y LSA-SAF) con sus adaptaciones al sitio mediante los enfoques E1, E2 y E3. En cada subplot se agrupan las barras por sitio, mostrando primero los modelos basados en CAMS y luego, separados visualmente, los modelos basados en LSA-SAF}{figure.3.21}{}}
 \@setckpt{Capitulo3}{
-\setcounter{page}{72}
-\setcounter{equation}{9}
-\setcounter{enumi}{4}
+\setcounter{page}{77}
+\setcounter{equation}{11}
+\setcounter{enumi}{3}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
@@ -124,13 +132,13 @@
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{19}
-\setcounter{table}{11}
+\setcounter{figure}{21}
+\setcounter{table}{12}
 \setcounter{float@type}{4}
 \setcounter{parentequation}{0}
 \setcounter{NAT@ctr}{0}
 \setcounter{section@level}{1}
-\setcounter{Item}{29}
+\setcounter{Item}{32}
 \setcounter{Hfootnote}{0}
 \setcounter{bookmark@seq@number}{32}
 }
