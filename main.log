@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.23)  7 OCT 2025 17:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.23)  8 OCT 2025 14:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1861,7 +1861,7 @@ File: figuras/procedure_1.png Graphic file (type png)
 Package pdftex.def Info: figuras/procedure_1.png  used on input line 587.
 (pdftex.def)             Requested size: 316.06447pt x 182.38785pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 635--636
+Underfull \hbox (badness 10000) in paragraph at lines 638--639
 
  []
 
@@ -1883,17 +1883,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [59]
-Underfull \hbox (badness 10000) in paragraph at lines 638--639
+Underfull \hbox (badness 10000) in paragraph at lines 641--642
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 642--643
+Underfull \hbox (badness 10000) in paragraph at lines 645--646
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--645
+Underfull \hbox (badness 10000) in paragraph at lines 647--648
 
  []
 
@@ -1906,12 +1906,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [60]
-Underfull \hbox (badness 10000) in paragraph at lines 657--658
+Underfull \hbox (badness 10000) in paragraph at lines 660--661
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 684--685
+Underfull \hbox (badness 10000) in paragraph at lines 687--688
 
  []
 
@@ -1924,17 +1924,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [61]
-Underfull \hbox (badness 10000) in paragraph at lines 686--687
+Underfull \hbox (badness 10000) in paragraph at lines 689--690
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--689
+Underfull \hbox (badness 10000) in paragraph at lines 691--692
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 690--691
+Underfull \hbox (badness 10000) in paragraph at lines 693--694
 
  []
 
@@ -1951,20 +1951,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: figuras/rmsd-multiple-mejor.png Graphic file (type png)
 <use figuras/rmsd-multiple-mejor.png>
 Package pdftex.def Info: figuras/rmsd-multiple-mejor.png  used on input line 72
-0.
+3.
 (pdftex.def)             Requested size: 486.25761pt x 246.18633pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 726--727
+Underfull \hbox (badness 10000) in paragraph at lines 729--730
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 730--731
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--742
+Underfull \hbox (badness 10000) in paragraph at lines 744--745
 
  []
 
@@ -1990,24 +1990,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [64 <./figuras/rmsd-multiple-mejor.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 744--745
+Underfull \hbox (badness 10000) in paragraph at lines 747--748
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--747
+Underfull \hbox (badness 10000) in paragraph at lines 749--750
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--749
+Underfull \hbox (badness 10000) in paragraph at lines 751--752
 
  []
 
 <figuras/gridSA.png, id=1417, 705.63625pt x 660.4675pt>
 File: figuras/gridSA.png Graphic file (type png)
 <use figuras/gridSA.png>
-Package pdftex.def Info: figuras/gridSA.png  used on input line 753.
+Package pdftex.def Info: figuras/gridSA.png  used on input line 756.
 (pdftex.def)             Requested size: 340.37885pt x 318.59294pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2027,7 +2027,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [66 <./figuras/gridSA.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 814--815
+Underfull \hbox (badness 10000) in paragraph at lines 818--819
 
  []
 
@@ -2040,7 +2040,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [67]
-Underfull \hbox (badness 10000) in paragraph at lines 818--819
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 
  []
 
@@ -2048,16 +2048,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 818--819
 File: figuras/CrossValidationOneSite.png Graphic file (type png)
 <use figuras/CrossValidationOneSite.png>
 Package pdftex.def Info: figuras/CrossValidationOneSite.png  used on input line
- 822.
+ 826.
 (pdftex.def)             Requested size: 340.37885pt x 255.18921pt.
 <figuras/DeltaCrossValidationOneSite.png, id=1440, 577.4373pt x 432.8973pt>
 File: figuras/DeltaCrossValidationOneSite.png Graphic file (type png)
 <use figuras/DeltaCrossValidationOneSite.png>
 Package pdftex.def Info: figuras/DeltaCrossValidationOneSite.png  used on input
- line 832.
+ line 836.
 (pdftex.def)             Requested size: 340.37885pt x 255.18921pt.
 
-Overfull \hbox (1.03876pt too wide) in paragraph at lines 838--842
+Overfull \hbox (1.03876pt too wide) in paragraph at lines 842--846
 []\T1/cmr/m/n/12 La Fi-gu-ra [][]3.19[][] mues-tra la ma-triz de di-fe-ren-cias
  del rRMSD ($\OT1/cmr/m/n/12 ^^A[] = [][] \OMS/cmsy/m/n/12 ^^@
  []
@@ -2098,7 +2098,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [71]
-Underfull \hbox (badness 10000) in paragraph at lines 890--891
+Underfull \hbox (badness 10000) in paragraph at lines 894--895
 
  []
 
@@ -2114,7 +2114,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <figuras/approaches.png, id=1483, 1387.584pt x 703.1871pt>
 File: figuras/approaches.png Graphic file (type png)
 <use figuras/approaches.png>
-Package pdftex.def Info: figuras/approaches.png  used on input line 915.
+Package pdftex.def Info: figuras/approaches.png  used on input line 919.
 (pdftex.def)             Requested size: 486.25761pt x 246.4196pt.
 
 
@@ -2126,7 +2126,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [73 <./figuras/approaches.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 969--970
+Underfull \hbox (badness 10000) in paragraph at lines 973--974
 
  []
 
@@ -2134,7 +2134,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 969--970
 File: ./figuras/errors_estacionalidad.png Graphic file (type png)
 <use ./figuras/errors_estacionalidad.png>
 Package pdftex.def Info: ./figuras/errors_estacionalidad.png  used on input lin
-e 977.
+e 981.
 (pdftex.def)             Requested size: 486.25761pt x 245.40657pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2351,7 +2351,7 @@ m1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt
 1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on main.pdf (103 pages, 6998704 bytes).
+Output written on main.pdf (103 pages, 6998818 bytes).
 PDF statistics:
  1901 PDF objects out of 2073 (max. 8388607)
  1671 compressed objects within 17 object streams
