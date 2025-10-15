@@ -768,14 +768,35 @@ Por otro lado, pensamos que la selección de siete predictores representa un com
 
 
 \section{Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}
-En las Secciones \ref{sec:01} y \ref{sec:02} se han presentado las primeras evaluaciones del proceso de adaptación al sitio en la región del NOA, siguiendo enfoques previamente reportados en la literatura por distintos autores. Las implementaciones basadas en estos enfoques nos han proporcionado una base sólida para comprender la influencia del entorno local en la variable GHI, además hemos dimesionado cuales son los límites en la mejora que se puede obtener tras site adaptar una serie siguiendo estos enfoques.\\
+
+En las Secciones \ref{sec:01} y \ref{sec:02} se presentaron las primeras evaluaciones del proceso de adaptación al sitio en la región del NOA, siguiendo metodologías previamente reportadas en la literatura. Estas implementaciones proporcionaron una base sólida para comprender la influencia del entorno local en la variable GHI y para dimensionar los límites de mejora que pueden alcanzarse al aplicar dichos enfoques.\\
+
+Las evaluaciones realizadas, tanto en este trabajo como en estudios previos sobre SA, se han basado exclusivamente en datos medidos en una estación meteorológica que se combinan con una o más variables modeladas —provenientes de una celda de un modelo satelital o de reanálisis— que representan geográficamente la ubicación de dicha estación. En otras palabras, la información utilizada para entrenar y validar los modelos de corrección se limita a la celda específica del punto de medición, sin considerar el contexto espacial más amplio que podría aportar información adicional relevante.\\
+
+Esta restricción impone una limitación intrínseca: la información proveniente de los productos satelitales se encuentra confinada a una única celda, definida por la resolución del modelo. En este trabajo se propone ampliar el alcance espacial de los datos de entrada incorporando valores de GHI modelados en celdas satelitales o de reanálisis adyacentes. La hipótesis central es que la variabilidad de la irradiancia solar en un punto no es un fenómeno aislado, sino que forma parte de una estructura espacialmente coherente gobernada por la dinámica atmosférica regional. Hasta el momento, no se han encontrado antecedentes que apliquen explícitamente este enfoque al proceso de adaptación al sitio.\\
+
+Al incluir las estimaciones de irradiancia de las celdas vecinas como predictores adicionales, el modelo accede a una representación espacial más completa, lo que mejora su capacidad para identificar patrones complejos y generalizar de manera más efectiva.\\
 
 
-Las evaluaciones realizadas en este trabajo y en estudios previos sobre SA se han basado exclusivamente en datos medidos en una estación meteorológica. Estos datos se combinan con una o más variables modeladas —provenientes de una celda satelital o de un modelo de reanálisis— que representan geográficamente la ubicación de dicha estación. En otras palabras, la información utilizada para entrenar y validar los modelos de corrección se limita a la celda específica del punto de medición, sin considerar el contexto espacial más amplio que podría aportar información adicional relevante.\\
+\noindent
+Esta idea puede entenderse mediante una analogía sencilla: cada celda satelital o de re-analásis puede imaginarse como una \emph{cámara de observación} que registra la irradiancia solar sobre una porción finita de la superficie terrestre. La estación meteorológica se encuentra dentro del campo de visión de una de esas cámaras —la celda central—, que proporciona una estimación promedio del recurso solar en dicho punto. Sin embargo, es probable que esta cámara no pueda captar completamente los fenómenos atmosféricos que se desarrollan en los bordes de su área, tales como el paso de nubes, la llegada de masas de aire o la variación en la carga de aerosoles. Suena natural que estos procesos se extiendan más allá de los límites de una celda, manifestándose parcialmente en las celdas vecinas.
 
-Los enfoques previos de SA aplicados a mediciones terrestres de una estación enfrentan una limitación intrínseca: la información derivada de los productos satelitales es finita, lo que restringe la capacidad de aprendizaje de cualquier técnica de aprendizaje automático implementada, incluso sin sobreajuste. Para superar esta restricción, proponemos un enfoque que amplía el alcance espacial de los datos de entrada incorporando valores de GHI modelados de celdas satelitales adyacentes. La hipótesis central es que la variabilidad de la irradiancia solar en un punto no es aislada, sino que forma parte de una estructura espacialmente coherente gobernada por la dinámica atmosférica regional. Al incluir las estimaciones de irradiancia de celdas vecinas como predictores adicionales, el modelo dispone de información espacial más rica, mejorando su capacidad para identificar patrones complejos y generalizar de manera más efectiva.\\
+Desde esta perspectiva, la información contenida en las celdas adyacentes actúa como una \emph{visión periférica} del entorno atmosférico que rodea al punto de interés. Al incorporar dichas celdas como variables predictoras, el modelo de adaptación al sitio accede a una representación más completa del contexto espacial. En otras palabras, utilizar únicamente la celda que contiene a la estación es equivalente a observar el cielo a través de una ventana; en cambio, incluir las celdas vecinas permite “salir al jardín” y percibir el desplazamiento de las nubes y otros patrones regionales que influyen directamente sobre la irradiancia local. Este enfoque reconoce, por tanto, que la variabilidad de la GHI en un punto no es un fenómeno aislado, sino el resultado de una dinámica espacialmente coherente gobernada por la atmósfera regional.
 
-Este enfoque busca aprovechar correlaciones bien documentadas en los campos de irradiancia solar, impulsadas por el movimiento de nubes, el transporte de aerosoles y los sistemas meteorológicos a escala sinóptica \citep{IHSAN2024}. A diferencia de los métodos tradicionales de AS, que se limitan a variables locales dentro de una sola celda, el marco propuesto utiliza de manera innovadora la irradiancia satelital de las celdas circundantes como características de entrada para los modelos de aprendizaje automático. Hasta ahora, ningún trabajo había explorado explícitamente esta integración del contexto espacial.\\
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{figuras/AnalogiaVecinos.png}
+    \caption{Analogía espacial: celdas del producto de GHI y dinámica atmosférica}
+    \label{fig:analogiaVecinos}
+\end{figure}
+
+La Figura \ref{fig:analogiaVecinos} describe gráficamente la analogía desarrollada. Las tonalidades grises representan el campo de nubes o aerosoles, que se extiende entre celdas (no respeta los límites). La celda azul contiene tu estación (el punto de interés). Las celdas verdes vecinas capturan información de esa estructura atmosférica continua. El rayo solar naranja simboliza la irradiancia (GHI) afectada por esas nubes. Así se ve claramente que la información relevante para la GHI local no está confinada en la celda central, sino que fluye espacialmente.\\
+
+
+
+Es decir que, este enfoque busca aprovechar correlaciones bien documentadas en los campos de irradiancia solar, impulsadas por el movimiento de nubes, el transporte de aerosoles y los sistemas meteorológicos a escala sinóptica \citep{IHSAN2024}. A diferencia de los métodos tradicionales de SA, que se limitan a variables locales dentro de una sola celda, el marco propuesto utiliza de manera innovadora la irradiancia satelital de las celdas circundantes como características de entrada para los modelos de aprendizaje automático. Hasta ahora, ningún trabajo había explorado explícitamente esta integración del contexto espacial.\\
 
 
 \begin{figure}
@@ -805,11 +826,11 @@ DM = \frac{|\text{lat}p - \text{lat}{ac}|}{\Delta} + \frac{|\text{lon}p - \text{
 
 \noindent donde $\Delta$ es la resolución de la grilla, $(lat_{p}, lon_{p})$ denota las coordenadas geográficas del punto de interés, y $(lat_{ac}, lon_{ac})$ corresponde a las coordenadas de una celda vecina (adyacente).
 
-La MD permite identificar automáticamente las celdas satelitales adyacentes que rodean la celda central donde se encuentra la estación en tierra. Consideramos que esta métrica es adecuada porque, los productos de los servicios de estimación están organizados en una cuadrícula regular de latitud–longitud, formando una malla rectangular. En dicha grilla, las celdas se alinean en filas y columnas, y la MD, definida como la suma de las diferencias absolutas en latitud y longitud normalizadas por la resolución de la grilla, captura efectivamente el número de pasos necesarios para alcanzar una celda vecina tanto horizontal como verticalmente.
+La MD permite identificar automáticamente las celdas satelitales adyacentes que rodean la celda central donde se encuentra la estación en tierra. Consideramos que esta métrica es adecuada porque, los productos de los servicios de estimación están organizados en una cuadrícula regular de latitud–longitud, formando una malla rectangular. En dicha grilla, las celdas se alinean en filas y columnas, y la MD, definida como la suma de las diferencias absolutas en latitud y longitud normalizadas por la resolución de la grilla, captura efectivamente el número de pasos necesarios para alcanzar una celda vecina tanto horizontal como verticalmente.\\
 
-Las celdas con $DM=1$ son directamente adyacentes a la celda central (es decir, al norte, sur, este u oeste), siendo las más relevantes para capturar la variabilidad espacial local de las condiciones atmosféricas. A diferencia de la distancia euclidiana, que enfatiza la proximidad radial, la MD refleja mejor las relaciones de vecindad en productos satelitales en grilla, asegurando que la información espacial utilizada para la adaptación site-specific sea consistente con la estructura regular del producto.
+Las celdas con $DM=1$ son directamente adyacentes a la celda central (es decir, al norte, sur, este u oeste), siendo las más relevantes para capturar la variabilidad espacial local de las condiciones atmosféricas. A diferencia de la distancia euclidiana, que enfatiza la proximidad radial, la MD refleja mejor las relaciones de vecindad en productos satelitales en grilla, asegurando que la información espacial utilizada para la adaptación site-specific sea consistente con la estructura regular del producto.\\
 
-En conjunto, esta metodología permite que la adaptación del GHI al sitio integre tanto la estimación directa del producto satelital como la información de celdas vecinas, mejorando la capacidad de predicción local y la transferencia del modelo a diferentes condiciones espaciales.
+En conjunto, esta metodología permite que la adaptación del GHI al sitio integre tanto la estimación directa del producto satelital como la información de celdas vecinas, mejorando la capacidad de predicción local y la transferencia del modelo a diferentes condiciones espaciales.\\
 
 
 
@@ -843,6 +864,12 @@ En conjunto, esta metodología permite que la adaptación del GHI al sitio integ
     \end{tabular}%
   }
 \end{table*}
+
+
+En la Tabla \ref{tab:metrics-as-4} se muestran los resultados obtenidos utilizando este enfoque adaptación.
+
+
+
 
 Resulta de gran interés analizar el comportamiento de los modelos de regresión cuando se aplican en sitios distintos de aquellos en los que fueron entrenados. A este enfoque vamos a denominarlo validación cruzada entre sitios.\\
 
@@ -968,25 +995,33 @@ Los resultados obtenidos para cada uno de estos enfoques se presentan en la Tabl
       & \multicolumn{3}{c}{Yu} & \multicolumn{3}{c}{Sa} & \multicolumn{3}{c}{Sca} & \multicolumn{3}{c}{Ero} & \multicolumn{3}{c}{Lq} \\
 Modelo & MBE & MAE & RMSE & MBE & MAE & RMSE  & MBE & MAE & RMSE & MBE & MAE & RMSE & MBE & MAE & RMSE  \\
 \hline
-\multicolumn{16}{|c|}{\textit{Estimaciones satelitales en bruto}} \\
+\multicolumn{16}{|c|}{\textit{Adaptación al sitio en Escala 15-Minutal}} \\
 \hline
-CAMS    & -0.2 & 17.4 & 27.2 &  3.9 & 23.4 & 33.7 &  2.6 & 21.8 & 29.8 & -23.6 & 27.6 & 40.9 & -6.9 & 16.5 & 25.8 \\
-LSA-SAF &  7.6 & 16.5 & 25.5 & 17.9 & 27.4 & 39.4 & 13.1 & 22.2 & 30.9 &  -7.7 & 16.2 & 26.5 &  4.0 & 12.6 & 22.6 \\
+LSA-SAF      & 7.6  & 16.5 & 25.5 & 17.9 & 27.4  & 39.4 & 13.1& 22.2 & 30.9  & -7.7 & 16.2 & 26.5 & 4   & 12.6 & 22.6 \\
+LSA-SAF - E1 & -5.5 & 18.4 & 25   & 4.4  & 23.9  & 34.6 & 1   & 18   & 26.7  &  2.7 & 17.1 & 25.4 & 2.2 & 12.8 & 22.3 \\
+LSA-SAF - E2 & -5.5 & 18.4 & 25   & 4.4  & 23.9  & 34.6 & 1   & 18   & 26.7  &  2.7 & 17.1 & 25.4 & 2.2 & 12.8 & 22.3 \\
+LSA-SAF - E3 & -5.3 & 16.7 & 24.7 & 4.2  & 23.8  & 35.4 & 4.3 & 19.2 & 28.7  &  0.9 & 12.7 & 21.5 & 2.6 & 12.8 & 21.9 \\
+
 \hline
-\multicolumn{16}{|c|}{\textit{Adaptación al sitio usando Enfoque 1 (E1)}} \\
+\multicolumn{16}{|c|}{\textit{Adaptación al sitio en Escala Horaria}} \\
 \hline
-SLR-CAMS    & -0.9 & 17.1 & 26.4 &  3.8 & 21.3 & 31.5 & -1.5 & 18.4 & 26.0 & 2.5 & 24.8 & 31.5 & 2.1 & 15.9 & 23.5 \\
-SLR-LSASAF  & -5.5 & 18.4 & 25.0 &  4.4 & 23.9 & 34.6 &  1.0 & 18.0 & 26.7 & 2.7 & 17.1 & 25.4 & 2.2 & 12.9 & 22.3 \\
+
+
+LSA-SAF      & 12.6 & 18.5 & 26.6  & 17.9 & 25.3   & 35.6 & 13.2 & 20.2 & 27.1 & -7.6 & 14.3 & 24 & 4.8 & 10.8 & 18.2 \\
+LSA-SAF - E1 & 5.1  & 16.5 & 24    & 4.3 & 21.2 & 30.5 & 1.1 & 15.6 & 22.7 &   2.5 & 15.7 & 22.8 &  0.3 & 10.6 & 17.4 \\
+LSA-SAF - E2 & 5.1  & 16.5 & 24    & 4.3 & 21.2 & 30.5 & 1.1 & 15.6 & 22.7 &   2.5 & 15.7 & 22.8 &  0.3 & 10.6 & 17.4 \\
+LSA-SAF - E3 & 4.7  & 15.7 & 23.2  & 4.1 & 21.1 & 31.1 & 4.7 & 17.1 & 25.1 &   1.3 & 11.1 & 18.9 &   0  & 10.7 & 17 \\
 \hline
-\multicolumn{16}{|c|}{\textit{Adaptación al sitio usando Enfoque 2 (E2)}} \\
+ERA5         & -1   & 23.1 & 35.2 & 9.4 & 27   & 37.7 & 1.9 & 20.1 & 29.6 & -13.9 & 19.3 & 25.5 & -0.7 & 11.3 & 18.4 \\
+ERA5 - E1    & -2.2 & 23.2 & 35.2 & 6.4 & 26.5 & 36.9 & -6.4& 20.1 & 29.1 & -0.6  & 15.4 & 21.4 & 2.1  & 11.6 & 18.4 \\
+ERA5 - E2    & -2.2 & 23.2 & 35.2 & 6.4 & 26.5 & 36.9 & -6.4& 20.1 & 29.1 & -0.6  & 15.4 & 21.4 & 2.1  & 11.6 & 18.4 \\
+ERA5 - E3    & 0.2  & 23.2 & 33.7 & 6.8 & 26.9 & 37.2 & 0.2 & 18.8 & 26.7 & -0.4  & 12.7 & 19.4 & 0.7  & 10.5 & 17 \\
 \hline
-SLR-CAMS    & -0.9 & 17.1 & 26.4 &  3.8 & 21.3 & 31.5 & -1.5 & 18.4 & 25.9 & 2.5 & 24.8 & 31.5 & 2.1 & 15.9 & 23.5 \\
-SLR-LSASAF  & -5.5 & 18.4 & 25   &  4.4 & 23.9 & 34.6 &  1   & 18   & 26.7 & 2.7 & 17.1 & 25.4 & 2.2 & 12.8 & 22.3 \\
-\hline
-\multicolumn{16}{|c|}{\textit{Adaptación al sitio usando Enfoque 3 (E3)}} \\
-\hline
-SLR-CAMS    & -2   & 17.5 & 27.1 &  3.8 & 22.7 & 33.3 & 3.3 & 19.1 & 28.6 & 0.1 & 13.6 & 22   & 2.9 & 12.7 & 21.2 \\
-SLR-LSASAF  & -5.3 & 16.7 & 24.7 &  4.2 & 23.8 & 35.4 & 4.3 & 19.2 & 28.7 & 0.9 & 12.7 & 21.5 & 2.6 & 12.8 & 21.9  \\
+MERRA-2      & 28.1 & 36   & 52.4 & 43.4 & 48.2 & 65   & 10.9 & 21.6 & 30.3 & -3.8 & 13.1 & 20.4 & 1.3 & 13.4 & 20.7 \\
+MERRA-2 - E1 & 3.1  & 33.4 & 43.5 & 7.1  & 35.2 & 46   & -2.2 & 20.3 & 27.7 & 0.7  & 12.9 & 20.1 & 0.3 & 13.1 & 20.4 \\
+MERRA-2 - E2 & 3.1  & 33.4 & 43.5 & 7.1  & 35.2 & 46   & -2.2 & 20.3 & 27.7 & 0.7  & 12.9 & 20.1 & 0.3 & 13.1 & 20.4 \\
+MERRA-2 - E3 & 5.9  & 34.3 & 44.7 & 7.5  & 35.6 & 48.1 &  2.5 & 19.8 & 28.6 & 0.4  & 11.4 & 18.7 &-0.5 & 11.6 & 18.2 \\
+
 \hline
 \end{tabular}}
 \end{table*}
