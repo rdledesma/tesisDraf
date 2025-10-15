@@ -44,5 +44,5 @@
 \contentsline {paragraph}{Stepwise (selección hacia adelante y hacia atrás).}{59}{section*.29}%
 \contentsline {section}{\numberline {3.5}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{66}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Adaptación al sitio tomando consideraciones de una serie temporal}{74}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Conclusiones}{80}{chapter.4}%
-\contentsline {chapter}{\textbf {Anexo 1}}{95}{chapter*.30}%
+\contentsline {chapter}{\numberline {4}Conclusiones}{81}{chapter.4}%
+\contentsline {chapter}{\textbf {Anexo 1}}{96}{chapter*.30}%

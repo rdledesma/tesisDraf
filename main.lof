@@ -37,6 +37,6 @@
 \contentsline {figure}{\numberline {3.19}{\ignorespaces Grilla utilizada por el modelo Helisat-4 de CAMS distribuido por CAMS Volume}}{69}{figure.3.19}%
 \contentsline {figure}{\numberline {3.20}{\ignorespaces Matriz de rRMSD (\%) obtenida a partir de la validación cruzada entre sitios para el modelo ERA5, utilizando los modelos ajustados con celdas satelitales adyacentes al sitio de interés.}}{72}{figure.3.20}%
 \contentsline {figure}{\numberline {3.21}{\ignorespaces Diferencia en desempeño entre el modelo sin ajustar (ERA5 original) y el modelo adaptado a cada sitio. Cada fila indica el sitio de entrenamiento y cada columna el sitio de prueba.}}{73}{figure.3.21}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Diferencias entre los tres enfoques de adaptación.}}{76}{figure.3.22}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Diferencias entre los tres enfoques de adaptación.}}{78}{figure.3.22}%
 \contentsline {figure}{\numberline {3.23}{\ignorespaces Métricas de desempeño relativas (\textit {rMBE}, \textit {rMAE} y \textit {rRMSE}, en \%) obtenidas en los cinco sitios de prueba (Yu, Sa, Sca, Ero y Lq). Se comparan las estimaciones satelitales originales (CAMS y LSA-SAF) con sus adaptaciones al sitio mediante los enfoques E1, E2 y E3. En cada subplot se agrupan las barras por sitio, mostrando primero los modelos basados en CAMS y luego, separados visualmente, los modelos basados en LSA-SAF.}}{79}{figure.3.23}%
 \addvspace {10\p@ }
