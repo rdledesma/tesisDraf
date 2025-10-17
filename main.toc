@@ -2,7 +2,7 @@
 \contentsline {chapter}{\textbf {Agradecimientos.}}{\es@scroman {ii}}{Doc-Start}%
 \contentsline {chapter}{\textbf {Índice de figuras}}{\es@scroman {iv}}{chapter*.2}%
 \contentsline {chapter}{\textbf {Índice de tablas}}{\es@scroman {vii}}{chapter*.3}%
-\contentsline {chapter}{\textbf {Resumen.}}{\es@scroman {x}}{chapter*.4}%
+\contentsline {chapter}{\textbf {Resumen.}}{\es@scroman {ix}}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Estudio de la Radiación Solar en Argentina y en el Noroeste Argentino}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Redes de Medidas}{8}{section.1.2}%
@@ -42,7 +42,7 @@
 \contentsline {paragraph}{Eliminación recursiva de características (RFE).}{60}{section*.27}%
 \contentsline {paragraph}{LASSO (Least Absolute Shrinkage and Selection Operator).}{60}{section*.28}%
 \contentsline {paragraph}{Stepwise (selección hacia adelante y hacia atrás).}{61}{section*.29}%
-\contentsline {section}{\numberline {3.5}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{68}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Adaptación al sitio tomando consideraciones de una serie temporal}{76}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Conclusiones}{82}{chapter.4}%
-\contentsline {chapter}{\textbf {Anexo 1}}{97}{chapter*.30}%
+\contentsline {section}{\numberline {3.5}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{61}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Adaptación al sitio tomando consideraciones de una serie temporal}{69}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Conclusiones}{74}{chapter.4}%
+\contentsline {chapter}{\textbf {Anexo 1}}{89}{chapter*.30}%
