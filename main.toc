@@ -36,13 +36,9 @@
 \contentsline {subsection}{\numberline {3.2.3}División del conjunto de datos}{48}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Adaptación al sitio con una variable descriptiva}{48}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Adaptación al sitio con múltiples variables descriptivas}{59}{section.3.4}%
-\contentsline {paragraph}{Métodos de filtro.}{60}{section*.24}%
-\contentsline {paragraph}{Métodos envolventes.}{60}{section*.25}%
-\contentsline {paragraph}{Métodos embebidos.}{60}{section*.26}%
-\contentsline {paragraph}{Eliminación recursiva de características (RFE).}{60}{section*.27}%
-\contentsline {paragraph}{LASSO (Least Absolute Shrinkage and Selection Operator).}{60}{section*.28}%
-\contentsline {paragraph}{Stepwise (selección hacia adelante y hacia atrás).}{61}{section*.29}%
-\contentsline {section}{\numberline {3.5}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{61}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Adaptación al sitio tomando consideraciones de una serie temporal}{69}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Conclusiones}{74}{chapter.4}%
-\contentsline {chapter}{\textbf {Anexo 1}}{89}{chapter*.30}%
+\contentsline {subsection}{\numberline {3.4.1}La necesidad de un análisis exploratorio de datos}{59}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Implementación de la adaptación con múltiples regresores}{60}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{63}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Adaptación al sitio tomando consideraciones de una serie temporal}{70}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Conclusiones}{76}{chapter.4}%
+\contentsline {chapter}{\textbf {Anexo 1}}{90}{chapter*.24}%

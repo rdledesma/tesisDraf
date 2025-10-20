@@ -1,4 +1,4 @@
-\begin{thebibliography}{124}
+\begin{thebibliography}{122}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -110,19 +110,10 @@ Tania Cestari and Kesha Buster.
 \newblock \emph{Journal of the American Academy of Dermatology}, 76\penalty0
   (3):\penalty0 S110--S121, 2017.
 
-\bibitem[Che et~al.(2024{\natexlab{a}})Che, Li, and Huang]{Che2024b}
-Chang Che, Chen Li, and Zengyi Huang.
-\newblock The integration of generative artificial intelligence and computer
-  vision in industrial robotic arms.
-\newblock \emph{International Journal of Computer Science and Information
-  Technology}, 2\penalty0 (3):\penalty0 1–9, May 2024{\natexlab{a}}.
-\newblock \doi{10.62051/ijcsit.v2n3.01}.
-\newblock URL \url{https://wepub.org/index.php/IJCSIT/article/view/1820}.
-
-\bibitem[Che et~al.(2024{\natexlab{b}})Che, Lin, Zhao, Huang, and Yu]{che2024a}
+\bibitem[Che et~al.(2024)Che, Lin, Zhao, Huang, and Yu]{che2024a}
 Chang Che, Qunwei Lin, Xinyu Zhao, Jiaxin Huang, and Liqiang Yu.
 \newblock Enhancing multimodal understanding with clip-based image-to-text
-  transformation, 2024{\natexlab{b}}.
+  transformation, 2024.
 \newblock URL \url{https://arxiv.org/abs/2401.06167}.
 
 \bibitem[Chen and Guestrin(2016{\natexlab{a}})]{Chen2016}
@@ -529,12 +520,6 @@ Bo~Liu, Liqiang Yu, Chang Che, Qunwei Lin, Hao Hu, and Xinyu Zhao.
 \newblock Integration and performance analysis of artificial intelligence and
   computer vision based on deep learning algorithms, 2023.
 \newblock URL \url{https://arxiv.org/abs/2312.12872}.
-
-\bibitem[Liu et~al.(2024)Liu, Wang, Zhan, Zheng, and Che]{liu2024}
-Houze Liu, Chongqing Wang, Xiaoan Zhan, Haotian Zheng, and Chang Che.
-\newblock Enhancing 3d object detection by using neural network with
-  self-adaptive thresholding, 2024.
-\newblock URL \url{https://arxiv.org/abs/2405.07479}.
 
 \bibitem[Long and Dutton(2010)]{Long2010}
 Charles~N Long and Ellsworth~G Dutton.

@@ -13,6 +13,11 @@ A level-1 auxiliary file: bibliografia.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: anexo.aux
 Database file #1: bibliografia.bib
+Warning--I didn't find a database entry for "Tukey1977"
+Warning--I didn't find a database entry for "Behrens1997"
+Warning--I didn't find a database entry for "Wilks2011"
+Warning--I didn't find a database entry for "James2013"
+Warning--I didn't find a database entry for "Kuhn2013"
 Warning--empty publisher in GrossiRighini2007
 Warning--empty journal in Long2010
 Warning--empty chapter and pages in Thejll2015
@@ -21,45 +26,45 @@ Warning--empty chapter and pages in Wald2007
 Warning--empty publisher in Wald2007
 Warning--empty publisher in Wald2021
 Warning--empty booktitle in Wald2004
-You've used 124 entries,
+You've used 122 entries,
             2773 wiz_defined-function locations,
-            1530 strings with 38625 characters,
-and the built_in function-call counts, 66365 in all, are:
-= -- 5915
-> -- 4687
+            1529 strings with 38217 characters,
+and the built_in function-call counts, 65344 in all, are:
+= -- 5829
+> -- 4609
 < -- 55
-+ -- 1588
-- -- 1458
-* -- 5980
-:= -- 10671
-add.period$ -- 563
-call.type$ -- 124
-change.case$ -- 849
-chr.to.int$ -- 118
-cite$ -- 256
-duplicate$ -- 2546
-empty$ -- 4616
-format.name$ -- 1620
-if$ -- 13617
-int.to.chr$ -- 7
++ -- 1561
+- -- 1434
+* -- 5879
+:= -- 10510
+add.period$ -- 555
+call.type$ -- 122
+change.case$ -- 835
+chr.to.int$ -- 117
+cite$ -- 252
+duplicate$ -- 2509
+empty$ -- 4544
+format.name$ -- 1594
+if$ -- 13409
+int.to.chr$ -- 6
 int.to.str$ -- 1
-missing$ -- 123
-newline$ -- 817
-num.names$ -- 496
-pop$ -- 1445
+missing$ -- 122
+newline$ -- 805
+num.names$ -- 488
+pop$ -- 1418
 preamble$ -- 1
-purify$ -- 733
+purify$ -- 721
 quote$ -- 0
-skip$ -- 2014
+skip$ -- 1985
 stack$ -- 0
-substring$ -- 2078
-swap$ -- 214
+substring$ -- 2059
+swap$ -- 209
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1294
+type$ -- 1272
 warning$ -- 8
-while$ -- 483
+while$ -- 476
 width$ -- 0
-write$ -- 1981
-(There were 8 warnings)
+write$ -- 1952
+(There were 13 warnings)
