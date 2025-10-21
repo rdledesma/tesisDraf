@@ -1,4 +1,4 @@
-\begin{thebibliography}{122}
+\begin{thebibliography}{123}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -246,6 +246,13 @@ Catherine Gautier, Georges Diak, and Serge Masse.
 \newblock \doi{10.1175/1520-0450(1980)019<1005:ASPMTE>2.0.CO;2}.
 \newblock URL
   \url{https://journals.ametsoc.org/view/journals/apme/19/8/1520-0450_1980_019_1005_aspmte_2_0_co_2.xml}.
+
+\bibitem[Geher and Hall(2016)]{Geher2016}
+Glenn Geher and Sara Hall.
+\newblock \emph{Straightforward Statistics: Understanding the Tools of
+  Research}.
+\newblock Oxford University Press, New York, 2016.
+\newblock ISBN 9780199751761.
 
 \bibitem[Glover and McCulloch(1958)]{Glover1958}
 J.~Glover and J.~S.~G. McCulloch.
