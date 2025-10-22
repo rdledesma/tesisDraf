@@ -26,45 +26,45 @@ Warning--empty chapter and pages in Wald2007
 Warning--empty publisher in Wald2007
 Warning--empty publisher in Wald2021
 Warning--empty booktitle in Wald2004
-You've used 123 entries,
+You've used 128 entries,
             2773 wiz_defined-function locations,
-            1536 strings with 38369 characters,
-and the built_in function-call counts, 65718 in all, are:
-= -- 5861
-> -- 4630
-< -- 56
-+ -- 1568
-- -- 1440
-* -- 5904
-:= -- 10571
-add.period$ -- 559
-call.type$ -- 123
-change.case$ -- 839
-chr.to.int$ -- 118
-cite$ -- 254
-duplicate$ -- 2529
-empty$ -- 4576
-format.name$ -- 1603
-if$ -- 13488
+            1571 strings with 39252 characters,
+and the built_in function-call counts, 67898 in all, are:
+= -- 6067
+> -- 4731
+< -- 60
++ -- 1603
+- -- 1470
+* -- 6074
+:= -- 10909
+add.period$ -- 579
+call.type$ -- 128
+change.case$ -- 864
+chr.to.int$ -- 123
+cite$ -- 264
+duplicate$ -- 2633
+empty$ -- 4769
+format.name$ -- 1642
+if$ -- 13946
 int.to.chr$ -- 6
 int.to.str$ -- 1
-missing$ -- 124
-newline$ -- 811
-num.names$ -- 492
-pop$ -- 1429
+missing$ -- 129
+newline$ -- 841
+num.names$ -- 512
+pop$ -- 1472
 preamble$ -- 1
-purify$ -- 725
+purify$ -- 745
 quote$ -- 0
-skip$ -- 2000
+skip$ -- 2074
 stack$ -- 0
-substring$ -- 2061
-swap$ -- 210
+substring$ -- 2149
+swap$ -- 216
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1278
+type$ -- 1333
 warning$ -- 8
-while$ -- 479
+while$ -- 501
 width$ -- 0
-write$ -- 1967
+write$ -- 2041
 (There were 13 warnings)

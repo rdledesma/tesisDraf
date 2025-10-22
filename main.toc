@@ -1,8 +1,8 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\textbf {Agradecimientos.}}{\es@scroman {ii}}{Doc-Start}%
 \contentsline {chapter}{\textbf {Índice de figuras}}{\es@scroman {iv}}{chapter*.2}%
-\contentsline {chapter}{\textbf {Índice de tablas}}{\es@scroman {vii}}{chapter*.3}%
-\contentsline {chapter}{\textbf {Resumen.}}{\es@scroman {x}}{chapter*.4}%
+\contentsline {chapter}{\textbf {Índice de tablas}}{\es@scroman {viii}}{chapter*.3}%
+\contentsline {chapter}{\textbf {Resumen.}}{\es@scroman {xi}}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Estudio de la Radiación Solar en Argentina y en el Noroeste Argentino}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Redes de Medidas}{8}{section.1.2}%
@@ -38,7 +38,7 @@
 \contentsline {section}{\numberline {3.4}Adaptación al sitio con múltiples variables descriptivas}{59}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}La necesidad de un análisis exploratorio de datos}{59}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Implementación de la adaptación con múltiples regresores}{60}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{68}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Adaptación al sitio tomando consideraciones de una serie temporal}{75}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Conclusiones}{81}{chapter.4}%
-\contentsline {chapter}{\textbf {Anexo 1}}{95}{chapter*.24}%
+\contentsline {section}{\numberline {3.5}Adaptación al sitio tomando consideraciones de una serie temporal}{71}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{77}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Conclusiones}{85}{chapter.4}%
+\contentsline {chapter}{\textbf {Anexo 1}}{100}{chapter*.24}%
