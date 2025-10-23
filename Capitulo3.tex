@@ -1084,48 +1084,141 @@ En conjunto, esta metodología permite que la adaptación del GHI al sitio integ
 	  ERA5          & 1.2  & 22.2 & 33.7 & 9.4 & 27.1 & 37.7 & 1.9  & 20.2 & 29.7 & -14 & 19.3 & 25.6 & -0.8 & 11.3 & 18.4 \\
       ERA5 MLR      & 0.6  & 22.6 & 31.8 & 7   & 26.5 & 36.8 & -2.2 & 19.5 & 26.2 & 1.1 & 10.7 & 17.8 & 0.9  & 10.4 & 16.7 \\
       ERA5 MLP      & 1.7  & 22.7 & 33.5 & 8.3 & 26.4 & 37.2 & -2.5 & 19.8 & 26.6 & 1.4 & 10.9 & 17.9 & 1.4  & 10.4 & 16.7  \\
-	  ERA5 GXB      & 1.5  & 23.3 & 35.3 & 6.6 & 26.8 & 37   & -2.5 & 19.4 & 26.4 & 0.8 & 11.1 & 18.1 & 0.9  & 10.5 & 16.7\\
+	  ERA5 GXB      & 1.5  & 23.3 & 33.5 & 6.6 & 26.8 & 37   & -2.5 & 19.4 & 26.4 & 0.8 & 11.1 & 18.1 & 0.9  & 10.5 & 16.7\\
+      \hline	
+	  MERRA-2       & 24.9 & 33.5 & 51.2 & 43.4 & 48.3 & 65.0 & 10.9 & 21.7 & 30.3 & -3.8  & 13.1 & 20.4 & 1.4  & 13.4 & 20.8 \\
+      MERRA-2 MLR   & -2.8 & 34.4 & 43.4 & 8.2 & 32.3 & 43.2 & 1   & 20.8 & 29.1 & 0.4 & 11.5 & 18.7 & -0.4 & 11.5 & 17.9\\
+      MERRA-2 MLP   & -4.9 & 34.5 & 43   & 9.2 & 31.6 & 43   & 1.8 & 20.7 & 29.5 & 0.2 & 11.6 & 18.7 &  0.3 & 11.4 & 17.9\\
+	  MERRA-2 GXB   & -4.2 & 34.2 & 43.1 & 7.9 & 32.6 & 43.2 & 0.4  & 21   & 29.7   & 0.5   & 11.6    & 18.8    & -0.3 & 11.8 & 18.2 \\
       \hline	
     \end{tabular}%
   }
 \end{table*}
 
 
-En la Tabla \ref{tab:metrics-as-4} se muestran los resultados obtenidos utilizando este enfoque adaptación. Para comodidad del lector también se repiten las métricas de desempeño de los modelos sin adaptación.\\
+En la Tabla \ref{tab:metrics-as-4} se presentan los resultados obtenidos utilizando el enfoque de adaptación propuesto. Para facilitar la comparación, también se incluyen las métricas de desempeño de los modelos sin adaptación.
+
+Puede observarse que, en términos del RMSE (\%), cada modelo de estimación muestra una mejora en todos los sitios, independientemente del algoritmo de regresión empleado. Además, se observa un comportamiento similar entre los modelos basados en MLR, MLP y XGB, lo cual refuerza la conclusión previamente señalada: el aumento en la complejidad del modelo de regresión no necesariamente conduce a una mejora significativa en las métricas de desempeño.
+
+
+
+Por otra parte, a partir de lo analizado en la Sección \ref{sec:02}, puede justificarse la elección de la temperatura como variable regresora adicional para mejorar el desempeño de los modelos.
+
+Considerando esto, se evaluó un enfoque que combina la información proveniente de las celdas vecinas adyacentes a la celda de interés con la temperatura modelada (TM2) obtenida de ERA5. Además, dado que el modelo MLR ha mostrado un desempeño consistente y comparable al de los modelos MLP y XGB, se optó por evaluar su rendimiento en esta nueva configuración.
+
+Los resultados correspondientes se presentan en la Tabla \ref{tab:metrics-as-5}, donde puede observarse una mejora general en las métricas, lo que evidencia el beneficio de incorporar información térmica como variable auxiliar en el proceso de adaptación.
+
+
+\begin{table*}%[]
+  \centering
+  
+  \caption{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo adaptado en los cinco sitios en el \textbf{conjunto de pruebas}}
+  \label{tab:metrics-final}
+  \resizebox{\linewidth}{!}{%
+    \begin{tabular}{|l|ccc|ccc|ccc|ccc|ccc|}
+      \hline
+      & \multicolumn{3}{c|}{YU} & \multicolumn{3}{c|}{SA} & \multicolumn{3}{c|}{SCA} & \multicolumn{3}{c|}{ERO} & \multicolumn{3}{c|}{LQ} \\
+      \cline{2-16}
+      Modelo  & MBE & MAE & RMSE & MBE & MAE & RMSE & MBE & MAE & RMSE & MBE & MAE & RMSE & MBE & MAE & RMSE \\
+      \hline
+      \multicolumn{16}{|c|}{\textit{Resolución Temporal: horaria}} \\
+      \hline
+ 
+	  ERA5          & 1.2   & 22.2 & 33.7 & 9.4 & 27.1 & 37.7 & 1.9  & 20.2 & 29.7 & -14 & 19.3 & 25.6 & -0.8 & 11.3 & 18.4 \\
+      ERA5 MLR      & -0.7  & 21.9 & 30.4 & 6.7 & 26.4 & 36.2 & -2.8 & 19.5 & 25.7 & 0.6 & 10.8 & 17.6 &  0.8 & 10.2 & 16.2\\
+      \hline
+      \end{tabular}%
+      }
+\end{table*}
 
 
 
 
-Resulta de gran interés analizar el comportamiento de los modelos de regresión cuando se aplican en sitios distintos de aquellos en los que fueron entrenados. A este enfoque vamos a denominarlo validación cruzada entre sitios.\\
 
-Este procedimiento consiste en entrenar un modelo en un sitio determinado y posteriormente evaluar su desempeño en otros sitios geográficamente diferentes. De esta manera, es posible analizar la capacidad de generalización espacial del modelo, es decir, su habilidad para mantener un rendimiento aceptable fuera del entorno en el que fue ajustado originalmente.\
 
-La validación cruzada entre sitios permite evaluar si las correcciones o ajustes aplicados en un sitio pueden extenderse a un territorio más amplio. Esto resulta especialmente útil para el desarrollo de mapas o modelos regionales adaptados a sitios.\\
+Este enfoque parece consolidarse como una estrategia efectiva para mejorar la precisión de los modelos de adaptación al sitio (SA) aplicados a la estimación de la irradiancia solar global (GHI) en superficie. Los resultados obtenidos evidencian que la incorporación de información proveniente de celdas satelitales adyacentes permite capturar de forma más realista la estructura espacial de la atmósfera, lo que se traduce en reducciones consistentes del error cuadrático medio (RMSE) y, en menor medida, del error medio absoluto (MAE) en todos los sitios analizados.
+
+En particular, se observa que la mejora relativa es más pronunciada en estaciones ubicadas en entornos con alta variabilidad topográfica o atmosférica, donde las discontinuidades locales en la nubosidad o la resolución espacial de los modelos aparentan introducir sesgos significativos sobre las estimaciones. En estos casos, la información espacial adicional actúa como un mecanismo de compensación que suaviza los efectos de dichas heterogeneidades.
+
+Asimismo, la estabilidad del modelo MLR frente a los enfoques basados en aprendizaje profundo (MLP) o en ensamblado de árboles (XGB) refuerza la hipótesis de que la ganancia principal proviene de la incorporación de contexto espacial, más que del aumento de complejidad del algoritmo. Este hallazgo tiene implicancias prácticas relevantes: demuestra que, con un modelo lineal relativamente simple, es posible capturar buena parte de la variabilidad espacial si la información de entrada está adecuadamente estructurada.
+
+Desde un punto de vista físico, la coherencia espacial del campo de irradiancia responde a procesos atmosféricos de mesoescala, como el desplazamiento de sistemas nubosos, los cuales presentan una estructura continua sobre varias decenas de kilómetros. Esta correlación natural explica por qué la estrategia de vecindad produce mejoras sistemáticas en todos los casos.
+
+En los resultados presentados, las reducciones promedio en RMSE alcanzan valores del orden del 5 al 15\%, dependiendo del sitio y del producto satelital empleado. Si bien estas magnitudes pueden considerarse moderadas, adquieren gran relevancia en aplicaciones que requieren alta precisión radiativa, tales como la calibración de sistemas fotovoltaicos, la validación de modelos climáticos regionales o la planificación de infraestructura energética distribuida.
+
+Otro aspecto destacable es la consistencia del comportamiento entre diferentes resoluciones temporales (15 min y horaria). Esto sugiere que la mejora introducida por el uso de celdas adyacentes no se limita a un determinado rango temporal, sino que actúa de manera robusta a distintas escalas. En consecuencia, el método podría adaptarse fácilmente a bases de datos con diferentes resoluciones o a esquemas de reanálisis con pasos de tiempo variables.
 
 \begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{figuras/CrossValidationOneSite.png}
-\caption{Matriz de rRMSD (\%) obtenida a partir de la validación cruzada entre sitios para el modelo ERA5, utilizando los modelos ajustados con celdas satelitales adyacentes al sitio de interés.}
-\label{fig:crossValidation}
+    \centering
+    \includegraphics[width=1\textwidth]{figuras/rmsd_vecinos.png}
+    \caption{RMSD(\%) comparativo para las evaluaciones utilizando el enfoque de celdas adyacentes}
+    \label{fig:rrmsdVecinos}
 \end{figure}
 
-La Figura \ref{fig:crossValidation} muestra un análisis de sensibilidad en función del rRMSD (\%) obtenido a partir de las validaciones cruzadas realizadas en cada sitio para ERA5 utilizando los MLP ajustados, siguiendo el enfoque de adaptación al sitio presentado anteriormente en esta sección.
+
+La incorporación adicional de la temperatura como variable auxiliar (caso TM2) refuerza la capacidad predictiva del modelo (Ver Figura \ref{fig:rrmsdVecinos}). Dado que la temperatura del aire está estrechamente ligada a los procesos de transferencia radiativa y a la presencia de nubosidad, su inclusión permite capturar efectos de segundo orden que no están completamente representados por el GHI modelado. La mejora observada en las métricas al combinar temperatura e información espacial confirma la complementariedad entre ambas fuentes de variabilidad.
+
+En conjunto, los resultados respaldan la hipótesis de trabajo: la irradiancia solar medida en un sitio forma parte de un sistema espacialmente coherente, y la representación de ese sistema mediante un vecindario de celdas mejora la estimación puntual del recurso solar. De este modo, el enfoque propuesto constituye un avance metodológico que amplía el paradigma clásico de adaptación al sitio, tradicionalmente confinado a una única celda.
+
+Finalmente, cabe destacar que el marco planteado mantiene un equilibrio adecuado entre complejidad y generalización. Su implementación es sencilla, no requiere aumentar de manera significativa los costos computacionales y puede integrarse en flujos de procesamiento ya existentes para la calibración de productos satelitales o de reanálisis. En este sentido, representa una alternativa práctica y científicamente fundamentada para mejorar la representatividad espacial de los modelos de irradiancia.
 
 
-\begin{figure}
+
+
+\section{Validación cruzada de los modelos de adaptación al sitio}
+
+En las secciones anteriores hemos evaluado distintos enfoques para la adaptación al sitio, evidenciando el potencial de este proceso dependiendo de las características del modelo de estimación y del sitio donde se aplique dicho proceso. Sin embargo, cada uno de los enfoques implementados fue testado en el mismo sitio en el que se ajustó; esto corresponde al proceso tradicional de adaptación al sitio. Resulta de gran interés analizar el comportamiento de los modelos de regresión cuando se aplican en sitios distintos de aquellos en los que fueron entrenados. A este enfoque lo denominamos \textbf{validación cruzada entre sitios}.
+
+Este procedimiento consiste en entrenar un modelo en un sitio determinado y posteriormente evaluar su desempeño en otros sitios geográficamente diferentes. De esta manera, es posible analizar la capacidad de generalización espacial del modelo, es decir, su habilidad para mantener un rendimiento aceptable fuera del entorno en el que fue ajustado originalmente.
+
+La validación cruzada entre sitios permite evaluar si los ajustes aplicados en un sitio pueden extenderse a un territorio más amplio. Esto resulta especialmente útil para el desarrollo de modelos regionales o mapas climáticos basados en técnicas de adaptación al sitio, donde se busca reducir la dependencia de calibraciones locales y aprovechar patrones espaciales comunes.
+
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{figuras/DeltaCrossValidationOneSite.png}
+\begin{subfigure}[b]{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figuras/CrossValidationOneSite.png}
+\caption{Matriz de RMSD (\%) obtenida a partir de la validación cruzada entre sitios para el modelo ERA5, utilizando los modelos ajustados con celdas satelitales adyacentes al sitio de interés.}
+\label{fig:crossValidation}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figuras/DeltaCrossValidationOneSite.png}
 \caption{Diferencia en desempeño entre el modelo sin ajustar (ERA5 original) y el modelo adaptado a cada sitio. Cada fila indica el sitio de entrenamiento y cada columna el sitio de prueba.}
 \label{fig:deltaCrossValidation}
+\end{subfigure}
+\caption{Resultados de la validación cruzada entre sitios para el modelo ERA5.}
+\label{fig:crossValidationAll}
 \end{figure}
 
+La Figura \ref{fig:crossValidation} muestra la matriz de sensibilidad del RMSD (\%) obtenida a partir de las validaciones cruzadas realizadas para cada sitio usando los modelos MLR ajustados (cuyos resultados fueron presentados en la Tabla \ref{tab:metrics-final}). Cada celda representa el desempeño del modelo entrenado en un sitio (filas) y aplicado en otro (columnas), permitiendo identificar patrones de transferencia entre sitios.
 
-La Figura \ref{fig:deltaCrossValidation} muestra la matriz de diferencias del rRMSD
+En general, se observa que el error aumenta cuando los modelos se aplican en sitios con características ambientales marcadamente distintas a las del sitio de entrenamiento. Esto indica que la capacidad de extrapolación espacial de los modelos de adaptación al sitio es limitada y depende fuertemente de la similitud climática y topográfica entre las estaciones.
+
+La Figura \ref{fig:deltaCrossValidation} muestra la matriz de diferencias del rRMSD 
 ($\Delta \text{rRMSD} = \text{rRMSD}_{\text{ERA5 original}} - \text{rRMSD}_{\text{site-adapted}}$) 
 para los cinco sitios considerados: YU (401 m), SA (1230 m), SCA (1320 m), ERO (3355 m) y LQ (3500 m). 
-Cada fila representa el sitio de entrenamiento y cada columna el sitio de prueba.
+Cada fila representa el sitio de entrenamiento y cada columna el sitio de prueba. Los valores positivos indican que la adaptación al sitio reduce el error respecto al modelo ERA5 sin ajustar, mientras que los valores negativos muestran un empeoramiento.
 
-Los valores positivos indican que la adaptación al sitio reduce el error respecto al modelo ERA5 sin ajustar, mientras que los valores negativos muestran un empeoramiento. Se pueden destacar varias tendencias relevantes:
+\textbf{(1)} En primer lugar, se aprecia que los modelos entrenados en sitios de baja altitud (como YU) tienden a presentar un mejor desempeño cuando se aplican en sitios con condiciones altitudinales similares, mientras que su transferencia a zonas de mayor altitud resulta menos efectiva.
+
+\textbf{(2)} En contraste, los modelos ajustados en sitios de alta montaña (por ejemplo, LQ y ERO) muestran cierta robustez cuando se aplican en otros sitios de altura comparable. Esto sugiere que la variable altitud, al influir fuertemente en la estructura térmica y la humedad del aire, actúa como un factor limitante en la generalización de los modelos.
+
+\textbf{(3)} Los valores negativos en la matriz $\Delta \text{rRMSD}$ reflejan los casos donde la adaptación al sitio no solo no mejora el desempeño, sino que incluso introduce sesgos. Este comportamiento podría deberse a sobreajustes locales o a la ausencia de representatividad espacial de las variables predictoras en otros contextos geográficos.
+
+\textbf{(4)} Asimismo, puede observarse que algunos sitios actúan como “donantes” más universales, es decir, presentan modelos que se transfieren con mejor desempeño general. Identificar estos sitios resulta clave para optimizar la estrategia de calibración regional y reducir la necesidad de entrenamientos específicos en cada punto.
+
+\textbf{(5)} Por otra parte, la magnitud de las mejoras observadas (valores positivos en $\Delta \text{rRMSD}$) tiende a ser mayor cuando los sitios comparten condiciones climáticas semejantes, lo que refuerza la idea de que la coherencia espacial de las variables predictoras es esencial para la eficacia de la adaptación al sitio.
+
+\textbf{(6)} Este análisis también permite evidenciar la direccionalidad de la transferencia: un modelo entrenado en un sitio A puede funcionar bien en un sitio B, pero no necesariamente a la inversa. Ello sugiere una dependencia asimétrica asociada a las características de variabilidad local y regional.
+
+\textbf{(7)} En términos prácticos, la validación cruzada entre sitios constituye una herramienta valiosa para definir el grado de representatividad espacial de los modelos. Permite identificar qué ajustes locales pueden ser reutilizados en áreas vecinas y cuáles requieren recalibración específica.
+
+\textbf{(8)} Finalmente, los resultados aquí presentados destacan la importancia de integrar información geográfica adicional (como gradientes de elevación, cobertura del suelo o proximidad al mar) para mejorar la capacidad de generalización de los modelos de adaptación al sitio. De este modo, se avanzaría hacia la construcción de modelos híbridos que combinen la precisión local con la coherencia regional.
+
+
+
 
 \begin{itemize}
     \item \textbf{Mejoras locales dominantes:} La diagonal de la matriz muestra que los modelos entrenados en un sitio específico obtienen la mayor reducción de rRMSD en el mismo sitio, evidenciando la eficacia de la adaptación local. Por ejemplo, el modelo entrenado en ERO reduce el error en 7.63\% al evaluarse en ERO, y el modelo de YU mejora 1.1\% en YU.
