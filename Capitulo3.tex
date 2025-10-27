@@ -986,13 +986,13 @@ Por otra parte, a partir de lo analizado en la Sección \ref{sec:02}, puede just
 
 Considerando esto, se evaluó un enfoque que combina la información proveniente de las celdas vecinas adyacentes a la celda de interés con la temperatura modelada (TM2) obtenida de ERA5. Además, dado que el modelo MLR ha mostrado un desempeño consistente y comparable al de los modelos MLP y XGB, se optó por evaluar su rendimiento en esta nueva configuración.
 
-Los resultados correspondientes se presentan en la Tabla \ref{tab:metrics-as-5}, donde puede observarse una mejora general en las métricas, lo que evidencia el beneficio de incorporar información térmica como variable auxiliar en el proceso de adaptación.
+Los resultados correspondientes se presentan en la Tabla \ref{tab:metrics-final}, donde puede observarse una mejora general en las métricas, lo que evidencia el beneficio de incorporar información térmica como variable auxiliar en el proceso de adaptación.
 
 
 \begin{table*}%[]
   \centering
   
-  \caption{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo adaptado en los cinco sitios en el \textbf{conjunto de pruebas}}
+  \caption{Métricas de desempeño (MBE, MAE, RMSE) del modelo ERA5 adapado en los cinco sitios en el \textbf{conjunto de pruebas}}
   \label{tab:metrics-final}
   \resizebox{\linewidth}{!}{%
     \begin{tabular}{|l|ccc|ccc|ccc|ccc|ccc|}
@@ -1017,6 +1017,7 @@ Los resultados correspondientes se presentan en la Tabla \ref{tab:metrics-as-5},
 
 
 Este enfoque parece consolidarse como una estrategia efectiva para mejorar la precisión de los modelos de adaptación al sitio (SA) aplicados a la estimación de la irradiancia solar global (GHI) en superficie. Los resultados obtenidos evidencian que la incorporación de información proveniente de celdas satelitales adyacentes permite capturar de forma más realista la estructura espacial de la atmósfera, lo que se traduce en reducciones consistentes del error cuadrático medio (RMSE) y, en menor medida, del error medio absoluto (MAE) en todos los sitios analizados.
+
 
 En particular, se observa que la mejora relativa es más pronunciada en estaciones ubicadas en entornos con alta variabilidad topográfica o atmosférica, donde las discontinuidades locales en la nubosidad o la resolución espacial de los modelos aparentan introducir sesgos significativos sobre las estimaciones. En estos casos, la información espacial adicional actúa como un mecanismo de compensación que suaviza los efectos de dichas heterogeneidades.
 
