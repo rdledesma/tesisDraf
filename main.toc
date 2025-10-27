@@ -36,11 +36,11 @@
 \contentsline {subsection}{\numberline {3.3.2}Análisis de las estimaciones horarias}{46}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}División del conjunto de datos}{48}{subsection.3.3.3}%
 \contentsline {section}{\numberline {3.4}Adaptación al sitio con una variable descriptiva}{48}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Adaptación al sitio con múltiples variables descriptivas}{59}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}La necesidad de un análisis exploratorio de datos}{59}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Implementación de la adaptación con múltiples regresores}{60}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{71}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Adaptación al sitio tomando consideraciones de una serie temporal}{78}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Validación cruzada de los modelos de adaptación al sitio}{86}{section.3.8}%
+\contentsline {section}{\numberline {3.5}Adaptación al sitio con múltiples variables descriptivas}{60}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}La necesidad de un análisis exploratorio de datos}{60}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Implementación de la adaptación con múltiples regresores}{61}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{72}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Adaptación al sitio tomando consideraciones de una serie temporal}{79}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Validación cruzada de los modelos de adaptación al sitio}{87}{section.3.8}%
 \contentsline {chapter}{\numberline {4}Conclusiones}{93}{chapter.4}%
-\contentsline {chapter}{\textbf {Anexo 1}}{108}{chapter*.84}%
+\contentsline {chapter}{\textbf {Anexo 1}}{110}{chapter*.84}%

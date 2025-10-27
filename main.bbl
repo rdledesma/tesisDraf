@@ -1,4 +1,4 @@
-\begin{thebibliography}{128}
+\begin{thebibliography}{149}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -94,6 +94,14 @@ Olusola Bamisile, Caroline Acen, Dongsheng Cai, Qi~Huang, and Iain Staffell.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S1364032124007998}.
 
+\bibitem[Behrens(1997)]{Behrens1997}
+John~T. Behrens.
+\newblock Principles and procedures of exploratory data analysis.
+\newblock \emph{Psychological Methods}, 2\penalty0 (2):\penalty0 131--160,
+  1997.
+\newblock \doi{10.1037/1082-989X.2.2.131}.
+\newblock URL \url{https://doi.org/10.1037/1082-989X.2.2.131}.
+
 \bibitem[Belmonte et~al.(2006)Belmonte, Núñez, Franco, and
   Viramonte]{Belmonte2006}
 Silvina Belmonte, Virgilio Núñez, Judith Franco, and José Viramonte.
@@ -109,6 +117,17 @@ L.~Breiman, J.~Friedman, C.J. Stone, and R.A. Olshen.
 \newblock Taylor \& Francis, 1984.
 \newblock ISBN 9780412048418.
 \newblock URL \url{https://books.google.com.ar/books?id=JwQx-WOmSyQC}.
+
+\bibitem[Ceamanos et~al.(2014)Ceamanos, Carrer, and Roujean]{Ceamanos2014}
+X.~Ceamanos, D.~Carrer, and J.-L. Roujean.
+\newblock Improved retrieval of direct and diffuse downwelling surface
+  shortwave flux in cloudless atmosphere using dynamic estimates of aerosol
+  content and type: application to the {LSA-SAF} project.
+\newblock \emph{Atmospheric Chemistry and Physics}, 14\penalty0 (15):\penalty0
+  8209--8232, 2014.
+\newblock \doi{10.5194/acp-14-8209-2014}.
+\newblock URL \url{https://acp.copernicus.org/articles/14/8209/2014/}.
+\newblock Available: \url{https://doi.org/10.5194/acp-14-8209-2014}.
 
 \bibitem[Cestari and Buster(2017)]{Cestari2017}
 Tania Cestari and Kesha Buster.
@@ -173,6 +192,14 @@ Adele Cutler, D.~Richard Cutler, and John~R. Stevens.
 \newblock Random forests.
 \newblock In \emph{Machine Learning}, pages 157--175. Springer, 2011.
 
+\bibitem[Derrien and Gléau(2005)]{Derrien2005}
+M.~Derrien and H.~Le Gléau.
+\newblock Msg/seviri cloud mask and type from safnwc.
+\newblock \emph{International Journal of Remote Sensing}, 26\penalty0
+  (21):\penalty0 4707--4732, 2005.
+\newblock \doi{10.1080/01431160500166128}.
+\newblock URL \url{https://doi.org/10.1080/01431160500166128}.
+
 \bibitem[Developers(2018)]{xgboostdoc}
 XGBoost Developers.
 \newblock \emph{XGBoost Documentation, Release 0.80}, 2018.
@@ -211,6 +238,16 @@ John~Javier Espitia, Fabián~Andrés Velázquez, Jader Rodriguez, Luisa Gomez,
 \newblock ISSN 2073-4395.
 \newblock \doi{10.3390/agronomy14122791}.
 \newblock URL \url{https://www.mdpi.com/2073-4395/14/12/2791}.
+
+\bibitem[Feng and Wang(2018)]{feng}
+Fei Feng and Kaicun Wang.
+\newblock Does the modern‐era retrospective analysis for research and
+  applications‐2 aerosol reanalysis introduce an improvement in the
+  simulation of surface solar radiation over {C}hina?
+\newblock \emph{International Journal of Climatology}, 39:\penalty0 1305--1318,
+  10 2018.
+\newblock \doi{10.1002/joc.5881}.
+\newblock Available: \url{https://doi.org/10.1002/joc.5881}.
 
 \bibitem[Fernández-Peruchena et~al.(2020)Fernández-Peruchena, Polo, Martín,
   and Mazorra]{Fernández2020}
@@ -260,6 +297,30 @@ Glenn Geher and Sara Hall.
   Research}.
 \newblock Oxford University Press, New York, 2016.
 \newblock ISBN 9780199751761.
+
+\bibitem[Geiger et~al.(2008)Geiger, Meurey, Lajas, Franchistéguy, Carrer, and
+  Roujean]{Geiger2008}
+Bernhard Geiger, Catherine Meurey, Dulce Lajas, Laurent Franchistéguy,
+  Dominique Carrer, and Jean-Louis Roujean.
+\newblock Near real-time provision of downwelling shortwave radiation estimates
+  derived from satellite observations.
+\newblock \emph{Meteorological Applications}, 15\penalty0 (3):\penalty0
+  411--420, 2008.
+\newblock \doi{10.1002/met.84}.
+\newblock URL
+  \url{https://rmets.onlinelibrary.wiley.com/doi/abs/10.1002/met.84}.
+\newblock Available: \url{https://doi.org/10.1002/met.84}.
+
+\bibitem[{Gelaro et al.}(2017)]{gelaro}
+Ronald {Gelaro et al.}
+\newblock The {Modern-Era Retrospective Analysis for Research and Applications,
+  Version 2 (MERRA-2)}.
+\newblock \emph{Journal of Climate}, 30\penalty0 (14):\penalty0 5419--5454,
+  2017.
+\newblock \doi{10.1175/JCLI-D-16-0758.1}.
+\newblock URL
+  \url{https://journals.ametsoc.org/view/journals/clim/30/14/jcli-d-16-0758.1.xml}.
+\newblock Available: \url{https://doi.org/10.1175/JCLI-D-16-0758.1}.
 
 \bibitem[Glover and McCulloch(1958)]{Glover1958}
 J.~Glover and J.~S.~G. McCulloch.
@@ -401,6 +462,28 @@ Alejandro Hernández.
 \newblock \emph{Avances en Energías Renovables y Medio Ambiente}, 7:\penalty0
   19 -- 24, 10 2003.
 
+\bibitem[{Hersbach et al.}(2020)]{era-5}
+Hans {Hersbach et al.}
+\newblock The era5 global reanalysis.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  146\penalty0 (730):\penalty0 1999--2049, 2020.
+\newblock \doi{https://doi.org/10.1002/qj.3803}.
+\newblock URL
+  \url{https://rmets.onlinelibrary.wiley.com/doi/abs/10.1002/qj.3803}.
+\newblock Available: \url{https://doi.org/10.1023/A:1008202821328}.
+
+\bibitem[Hoffmann et~al.(2019)Hoffmann, G\"unther, Li, Stein, Wu, Griessbach,
+  Heng, Konopka, M\"uller, Vogel, and Wright]{era}
+L.~Hoffmann, G.~G\"unther, D.~Li, O.~Stein, X.~Wu, S.~Griessbach, Y.~Heng,
+  P.~Konopka, R.~M\"uller, B.~Vogel, and J.~S. Wright.
+\newblock From era-interim to era5: the considerable impact of ecmwf's
+  next-generation reanalysis on lagrangian transport simulations.
+\newblock \emph{Atmospheric Chemistry and Physics}, 19\penalty0 (5):\penalty0
+  3097--3124, 2019.
+\newblock \doi{10.5194/acp-19-3097-2019}.
+\newblock URL \url{https://acp.copernicus.org/articles/19/3097/2019/}.
+\newblock Available: \url{https://doi.org/10.1023/A:1008202821328}.
+
 \bibitem[Hongn et~al.(2018)Hongn, Lozano, and Salazar]{Hongn2018}
 M.~Hongn, R.~Lozano, and G.~Salazar.
 \newblock Simulación del funcionamiento de una planta solar térmica de gran
@@ -456,6 +539,15 @@ Won~Hee Ko, Stefano Schiavon, Hui Zhang, Lindsay~T. Graham, Gail Brager, Iris
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0360132320301372}.
 
+\bibitem[Kriebel et~al.(2003)Kriebel, Gesell, Ka¨stner, and
+  Mannstein]{Kriebel2003}
+K.~T. Kriebel, G.~Gesell, M.~Ka¨stner, and H.~Mannstein.
+\newblock The cloud analysis tool apollo: Improvements and validations.
+\newblock \emph{International Journal of Remote Sensing}, 24\penalty0
+  (12):\penalty0 2389--2408, 2003.
+\newblock \doi{10.1080/01431160210163065}.
+\newblock URL \url{https://doi.org/10.1080/01431160210163065}.
+
 \bibitem[Krige(1951)]{Krige1951}
 D.~G. Krige.
 \newblock A statistical approach to some basic mine valuation problems on the
@@ -504,6 +596,15 @@ R.~Ledesma, G.~Salazar, and O.~Vilela.
 \newblock Avances en la estimación de irradiancia solar en las provincias de
   salta y jujuy mediante imágenes satelitales goes-16, 2023{\natexlab{a}}.
 \newblock Manuscrito no publicado.
+
+\bibitem[Ledesma et~al.(2024)Ledesma, Salazar, and Vilela]{Ledesma2024}
+R.~Ledesma, G.~Salazar, and O.~Vilela.
+\newblock Avances en la estimación de irradiancia solar en las provincias de
+  salta y jujuy mediante imágenes satelitales goes-16.
+\newblock \emph{Avances en Energías Renovables y Medio Ambiente - AVERMA},
+  27:\penalty0 413–427, sep. 2024.
+\newblock URL
+  \url{https://portalderevistas.unsa.edu.ar/index.php/averma/article/view/4643}.
 
 \bibitem[Ledesma et~al.(2025)Ledesma, Alonso-Suárez, Salazar, Nollas, and
   Vilela]{Ledesma2025}
@@ -566,6 +667,15 @@ Anna Mani and Oommen Chacko.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/0038092X80902960}.
 
+\bibitem[Mayer and Kylling(2005)]{Mayer2005}
+B.~Mayer and A.~Kylling.
+\newblock Technical note: The libradtran software package for radiative
+  transfer calculations - description and examples of use.
+\newblock \emph{Atmospheric Chemistry and Physics}, 5\penalty0 (7):\penalty0
+  1855--1877, 2005.
+\newblock \doi{10.5194/acp-5-1855-2005}.
+\newblock URL \url{https://acp.copernicus.org/articles/5/1855/2005/}.
+
 \bibitem[Miranda(2023)]{Miranda2023}
 Diego Miranda.
 \newblock Procedimento de classificação e regressão aplicado ao site
@@ -586,6 +696,12 @@ Diego Miranda, Janis Galdino, Leonardo Petribú, Olga~C. Vilela, Tarcísio~S.
 \newblock Departamento de Energia Nuclear da Universidade Federal de Pernambuco
   (DEN-UFPE) e Centro de Energias Renováveis da Universidade Federal de
   Pernambuco (CER-UFPE).
+
+\bibitem[Molod et~al.(2015)Molod, Takacs, Suárez, and Bacmeister]{molod}
+A.~Molod, L.~Takacs, M.~Suárez, and J.~Bacmeister.
+\newblock Development of the {GEOS-5} atmospheric general circulation model:
+  Evolution from {MERRA} to {MERRA2}.
+\newblock \emph{Geoscientific Model Development}, 8:\penalty0 1339--1356, 2015.
 
 \bibitem[Montero~Torres(2022)]{Montero2022}
 Julio Montero~Torres.
@@ -623,6 +739,17 @@ Rachel~E. Neale, Sham~R. Khan, Robyn~M. Lucas, Michele Waterhouse, David~C.
   907--915, November 2019.
 \newblock \doi{10.1111/bjd.17980}.
 \newblock Epub 2019 Jul 9.
+
+\bibitem[Nogueira(2020)]{nogueira}
+Miguel Nogueira.
+\newblock Inter-comparison of era-5, era-interim and gpcp rainfall over the
+  last 40 years: Process-based analysis of systematic and random differences.
+\newblock \emph{Journal of Hydrology}, 583:\penalty0 124632, 2020.
+\newblock ISSN 0022-1694.
+\newblock \doi{https://doi.org/10.1016/j.jhydrol.2020.124632}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0022169420300925}.
+\newblock Available: \url{https://doi.org/10.1023/A:1008202821328}.
 
 \bibitem[Nollas et~al.(2023)Nollas, Salazar, and Gueymard]{Nollas2023}
 Fernando~M. Nollas, German~A. Salazar, and Christian~A. Gueymard.
@@ -724,7 +851,7 @@ Zhipeng Qu, Armel Oumbe, Philippe Blanc, Bella Espinar, Gerhard Gesell,
   Beno{\^i}t Gschwind, Lars Kl{\"u}ser, Mireille Lef{\`e}vre, Laurent Saboret,
   Marion Schroedter-Homscheidt, and Lucien Wald.
 \newblock Fast radiative transfer parameterisation for assessing the surface
-  solar irradiance: The heliosat?4 method.
+  solar irradiance: The heliosat 4 method.
 \newblock \emph{Meteorologische Zeitschrift}, 26\penalty0 (1):\penalty0 33--57,
   02 2017.
 \newblock \doi{10.1127/metz/2016/0781}.
@@ -747,6 +874,25 @@ Hassan Ramchoun, Youssef Ghanou, Mohammed Amine, Mohammed A.~Janati Idrissi,
 \newblock \emph{International Journal of Interactive Multimedia and Artificial
   Intelligence}, 4\penalty0 (1):\penalty0 26--30, 2016.
 \newblock \doi{10.9781/ijimai.2016.415}.
+
+\bibitem[Rienecker(2008)]{rienecker}
+M.M. Rienecker.
+\newblock \emph{The GEOS-5 data assimilation system: documentation of versions
+  5.0.1, 5.1.0, and 5.2.0}.
+\newblock NASA technical memorandum. National Aeronautics and Space
+  Administration, Goddard Space Flight Center, 2008.
+\newblock URL \url{https://books.google.com.ar/books?id=q9UajwEACAAJ}.
+
+\bibitem[{Rienecker et al.}(2011)]{rienecker2}
+Michele {Rienecker et al.}
+\newblock {MERRA: NASA’s Modern-Era Retrospective Analysis for Research and
+  Applications}.
+\newblock \emph{Journal of Climate}, 24\penalty0 (14):\penalty0 3624--3648,
+  2011.
+\newblock \doi{10.1175/JCLI-D-11-00015.1}.
+\newblock URL
+  \url{https://journals.ametsoc.org/view/journals/clim/24/14/jcli-d-11-00015.1.xml}.
+\newblock Available: \url{https://doi.org/10.1175/JCLI-D-11-00015.1}.
 
 \bibitem[Rietveld(1978)]{Rietveld1978}
 M.R. Rietveld.
@@ -791,6 +937,12 @@ Martín Romano~Armada, Hugo~César Suligoy, Carlos Fernández, and
   \url{http://portalderevistas.unsa.edu.ar/index.php/averma/article/view/1292}.
 \newblock Peer-reviewed.
 
+\bibitem[SAF(2014)]{nwc-2014}
+NWC SAF.
+\newblock Product user manual for "cloud products ".
+\newblock Technical report, Météo-France / Centre de Météorologie Spatiale,
+  2014.
+
 \bibitem[Salamalikis et~al.(2022)Salamalikis, Tzoumanikas, Argiriou, and
   Kazantzidis]{SALAMALIKIS2022}
 Vasileios Salamalikis, Panayiotis Tzoumanikas, Athanassios~A. Argiriou, and
@@ -810,6 +962,16 @@ G.~Salazar and C.~Raichijk.
 \newblock \emph{Renewable Energy}, 64:\penalty0 197--202, 2014.
 \newblock \doi{10.1016/j.renene.2013.11.003}.
 \newblock URL \url{https://doi.org/10.1016/j.renene.2013.11.003}.
+
+\bibitem[Salazar et~al.(2022)Salazar, Alonso-Suárez, Laguarda~Cirigliano, and
+  Ledesma]{Salazar2022}
+G.~A. Salazar, R.~Alonso-Suárez, A.~Laguarda~Cirigliano, and R.~D. Ledesma.
+\newblock Evaluación del proceso de adaptación al sitio aplicado a la
+  irradiancia solar global medida en la ciudad de salta, argentina.
+\newblock \emph{Avances en Energías Renovables y Medio Ambiente - AVERMA},
+  25:\penalty0 353–362, may 2022.
+\newblock URL
+  \url{https://portalderevistas.unsa.edu.ar/index.php/averma/article/view/2431}.
 
 \bibitem[Salazar(2010)]{Salazar2010b}
 Germ{\'a}n~A. Salazar.
@@ -878,6 +1040,18 @@ Germán Salazar, Alejandro Hernández, Ricardo Echazú, Luis Saravia, and
   11 2013.
 \newblock \doi{10.7770/ejee-V0N0-art531}.
 
+\bibitem[Salazar et~al.(2024)Salazar, Ledesma, Ruiz, and Vilela]{Salazar2024}
+Germán Salazar, Rubén Ledesma, Constanza~Lopez Ruiz, and Olga~Castro Vilela.
+\newblock Development of a solar irradiance cloud index model for northwest
+  argentina using goes-16 imagery. comparison against reanalysis and satellite
+  databases.
+\newblock In \emph{Proceedings of the International Academy of Astronautics
+  Latin American Conference on Small Satellite Technologies and Applications},
+  pages 191--197, Paris, France, November 2024. IAA, International Academy of
+  Astronautics.
+\newblock ISBN 978-2-917761-85-4.
+\newblock © 2024 IAA International Academy of Astronautics.
+
 \bibitem[Salazar et~al.(2025)Salazar, Ledesma, López~Ruiz, and
   de~Castro~Vilela]{Salazar2025}
 Germán Salazar, Rubén~Darío Ledesma, Constanza López~Ruiz, and Olga
@@ -918,6 +1092,14 @@ Justin~A. Schulte.
 \newblock \emph{Nonlinear Processes in Geophysics}, 23\penalty0 (3):\penalty0
   257--267, 2016.
 \newblock \doi{10.5194/npg-23-257-2016}.
+
+\bibitem[Sengupta et~al.(2014)Sengupta, Habte, Gotseff, Weekley, Lopez,
+  Molling, and Heidinger]{Sengupta2014}
+Manajit Sengupta, Aron Habte, P.~Gotseff, Andrew Weekley, Anthony Lopez,
+  C.~Molling, and Andrew Heidinger.
+\newblock A physics-based goes satellite product for use in nrel's national
+  solar radiation database.
+\newblock 2:\penalty0 937--943, 01 2014.
 
 \bibitem[Sengupta et~al.(2024)Sengupta, Habte, Wilbert, Gueymard, Remund,
   Lorenz, van Sark, and Jensen]{Sengupta2024}
@@ -1021,6 +1203,14 @@ Kevin~E. Trenberth and David~P. Stepaniak.
 \newblock URL
   \url{https://rmets.onlinelibrary.wiley.com/doi/abs/10.1256/qj.04.83}.
 
+\bibitem[Tukey(1977)]{Tukey1977}
+J.W. Tukey.
+\newblock \emph{Exploratory Data Analysis}.
+\newblock Number v. 2 in Addison-Wesley series in behavioral science.
+  Addison-Wesley Publishing Company, 1977.
+\newblock ISBN 9780201076165.
+\newblock URL \url{https://books.google.com.ar/books?id=UT9dAAAAIAAJ}.
+
 \bibitem[Ventosa-Santaul{\`a}ria(2009)]{Ventosa2009}
 Daniel Ventosa-Santaul{\`a}ria.
 \newblock Spurious regression.
@@ -1076,6 +1266,12 @@ Lucien Wald, Michel Albuisson, Clive Best, Catherine delamare, Dominique
 M~Wiatros-Motyka, D~Jones, H~Broadbent, N~Fulghum, R~Dizon, and P~MacDonald.
 \newblock Global electricity mid-year insights 2022.
 \newblock \emph{no. October}, 2022.
+
+\bibitem[Wilks(2006)]{Wilks2006}
+Daniel Wilks.
+\newblock Statistical methods in the atmospheric sciences.
+\newblock \emph{International Geophysics Series}, 59, 01 2006.
+\newblock \doi{10.1016/S0074-6142(06)80036-7}.
 
 \bibitem[Wu et~al.(2021)Wu, Xu, Wang, and Long]{Wu2021}
 Haixu Wu, Jiehui Xu, Jianmin Wang, and Mingsheng Long.
