@@ -19,14 +19,14 @@ Existen diferentes enunciados a los que se hace referencia mediante el término 
 \enquote{\textit{la aplicación de un método de corrección a productos DSR en cuadrícula mediante el uso de mediciones del sitio}} \citep{rs17101720}.\\
 
 
-Aunque cada definición tiene un matiz distinto, todas coinciden en lo esencial: ajustar los datos de irradiancia solar obtenidos por satélite o modelos para que representen con mayor precisión las condiciones reales de un sitio específico.\\ 
+Aunque cada definición tiene un matiz distinto, todas coinciden en lo esencial: ajustar los datos de irradiancia solar obtenidos por satélite o modelos de re-análisis para que representen con mayor precisión las condiciones reales de un sitio específico.\\ 
 
 Una interpretación de estas definiciones nos permite expresar que este proceso consiste en aplicar correcciones estadísticas a los datos de radiación solar obtenidos de satélites o modelos numéricos (como los re-análisis), con el fin de hacerlos más representativos del sitio específico donde se quiere aplicar —por ejemplo, una futura planta solar.\\
 
 
 
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.97\linewidth]{figuras/SiteAdapation-Example.png}
     \caption{Comparación de irradiancia solar diaria entre datos de satélite sin adaptar, datos de satélite adaptados y mediciones locales en el sitio de referencia. Se observa cómo la adaptación al sitio corrige el sesgo sistemático y mejora la representatividad de los datos satelitales.}
@@ -34,7 +34,7 @@ Una interpretación de estas definiciones nos permite expresar que este proceso 
 \end{figure}
 
 
-Dado que los datos modelados tienen errores, especialmente errores sistemáticos (sesgos) y errores aleatorios, esta técnica usa mediciones reales de radiación tomadas en el sitio (aunque sea durante un período corto) como referencia para calibrar los datos. El objetivo es reducir la incertidumbre y mejorar la precisión en las estimaciones de largo plazo.\\
+Dado que los datos modelados tienen errores, especialmente errores sistemáticos (sesgos) y errores aleatorios, esta proceso usa mediciones reales de radiación tomadas en el sitio (aunque sea durante un período corto) como referencia para calibrar los datos modelados. El objetivo es reducir la incertidumbre y mejorar la precisión en las estimaciones de largo plazo.\\
 
 La Figura \ref{fig:example}  ilustra una comparación entre tres conjuntos de datos de irradiancia solar a lo largo de un mes:
 
@@ -58,20 +58,16 @@ En la Figura \ref{fig:site-adapation} puede verse el resultado que busca obtener
 
 Vamos a presentar una pequeña analogía que ayude a explicar de manera más cotidiana la idea general del preceso de SA.
 \begin{quote}
-Pensemos en que tienes un \textbf{termómetro económico} en tu casa (equivalente a los datos de un \textit{modelo}), 
-pero al lado colocas uno profesional del hospital (equivalente a la \textit{medición en sitio}).  
+Pensemos en un agricultor de una zona rural que todos los días escucha por la radio el pronóstico de la temperatura. Esa información es fundamental para planificar su jornada: saber si debe llevar abrigo, más agua o proteger ciertos cultivos. En esta historia, ese pronóstico radial representa los datos de un modelo o de un satélite —una estimación general que sirve como guía, pero que no siempre refleja con precisión lo que ocurre en su propio terreno.
 
-Al comparar, notas que tu termómetro casero siempre marca \(-2\,^{\circ}\mathrm{C}\) respecto al valor real.  
+Después de notar que el pronóstico a menudo no coincide con la realidad local, el agricultor decide instalar un termómetro propio en su finca. De este modo, obtiene mediciones locales (análogas a las mediciones en sitio). Sin embargo, mantener ese sensor resulta costoso y difícil: la exposición al sol y la lluvia termina por dañarlo, por lo que solo logra registrar datos durante un período corto.
 
-Si corriges ese error sumando esos 2 grados, tu termómetro económico comienza a ser \textbf{útil y confiable} para el uso diario.  
+Al comparar esos registros con los pronósticos de la radio, descubre que su termómetro local siempre marca aproximadamente 5 °C menos en invierno y 3 ºC mas en verano que los valores reales promedio. Entonces aplica una corrección: suma 5 °C o resta 3 ºC a las predicciones del modelo según corresponda. A partir de ese ajuste, las estimaciones comienzan a representar mucho mejor las condiciones reales del lugar, incluso cuando el sensor ya no está disponible.
 
-\medskip
-$\Rightarrow$ Eso es, en esencia, la \textbf{adaptación al sitio}: reducir el error de un modelo a partir de  una referencia local.
+Eso, en esencia, es la Adaptación al Sitio: utilizar un período breve de mediciones reales como referencia para corregir los errores sistemáticos de los datos modelados o satelitales. Así, se logra que la información estimada sea más confiable y representativa del sitio específico —por ejemplo, para evaluar con mayor certeza el recurso solar de una futura planta fotovoltaica.
 \end{quote}
 
-
-
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=\textwidth]{figuras/scatter-01.png}
 \caption{Diagrama de dispersión entre mediciones en sitio y estimaciones satelitales.
@@ -94,7 +90,7 @@ Después de la corrección (verde): los puntos se agrupan alrededor de la línea
 \section{Historia}
 Uno de los principales aportes sobre el tema fue realizado en el trabajo de \cite{POLO2016} en el marco de la Tarea 46 del Programa de Calefacción y Refrigeración Solar de la Agencia Internacional de la Energía Evaluación y pronóstico de recursos solares. En este trabajo se indica que la idea general de este proceso de corrección o calibración de datos modelados es similar a lo que se ha desarrollado en  la industria eólica en el pasado \citep{Potter}.
  
-Según Polo y sus colaboraores SA en un término actualmente utilizado en proyectos de energía solar para referirse a la mejora que puede lograrse en la irradiancia solar derivada de satélite y los datos del modelo cuando se utilizan mediciones terrestres locales a corto plazo para corregir errores sistemáticos y sesgos en el conjunto de datos original. A partir de esta idea general se han agrupado a los diversos métodos para SA en cinco categorías en las cuales se comprenden las principales estrategias para mejorar la precisión y reducir la incertidumbre en las estimaciones de radiación solar derivadas de satélites mediante el uso de mediciones locales de corta duración.
+Según Polo y sus colaboraores SA es un término actualmente utilizado en proyectos de energía solar para referirse a la mejora que puede lograrse en la irradiancia solar derivada de satélite y los datos del modelo cuando se utilizan mediciones terrestres locales a corto plazo para corregir errores sistemáticos y sesgos en el conjunto de datos original. A partir de esta idea general se han agrupado a los diversos métodos para SA en cinco categorías en las cuales se comprenden las principales estrategias para mejorar la precisión y reducir la incertidumbre en las estimaciones de radiación solar derivadas de satélites mediante el uso de mediciones locales de corta duración.
 
 \begin{enumerate}
     \item Métodos basados en modelos físicos (Physically based methods)\\
@@ -191,7 +187,7 @@ Persistencia de incertidumbre: aunque se reduzca, nunca se elimina completamente
 \section{Modelos de Aprendizaje Automático} \label{MLM}
 Aunque Arthur Samuel no fue el primero en publicar un artículo que empleara el término ``aprendizaje automático'', se le atribuye la creación y definición de este concepto como el campo especializado que conocemos hoy. En su trabajo `Algunos estudios sobre aprendizaje automático usando el juego de damas' \cite{samuel1959}, presentó el aprendizaje automático como una rama de la informática que permite a las computadoras mejorar su desempeño sin necesidad de ser programadas de forma explícita.
 
-Si bien la definición original de Samuel no lo menciona directamente, un aspecto fundamental del aprendizaje automático es el autoaprendizaje. Este concepto implica el uso de modelos estadísticos para identificar patrones y optimizar el rendimiento con base en datos e información empírica, sin requerir instrucciones de programación explícitas \cite{Theobald2024}.
+Si bien la definición original de Samuel no lo menciona directamente, un aspecto fundamental del aprendizaje automático es el \textit{autoaprendizaje}. Este concepto implica el uso de modelos estadísticos para identificar patrones y optimizar el rendimiento con base en datos e información empírica, sin requerir instrucciones de programación explícitas \cite{Theobald2024}.
 
 Samuel no infirió que las máquinas puedan tomar decisiones sin programación previa. Al contrario, el aprendizaje automático depende en gran medida de la entrada de código. En cambio, observó que las máquinas pueden realizar una tarea específica utilizando datos de entrada en lugar de depender de un comando de entrada directo.
 

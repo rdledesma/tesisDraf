@@ -1,4 +1,4 @@
-\begin{thebibliography}{149}
+\begin{thebibliography}{151}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -555,6 +555,13 @@ D.~G. Krige.
 \newblock \emph{Journal of the Southern African Institute of Mining and
   Metallurgy}, 52\penalty0 (6):\penalty0 119--139, 1951.
 \newblock URL \url{https://journals.co.za/content/saimm/52/6/AJA0038223X_4792}.
+
+\bibitem[Kuhn and Johnson(2013)]{Kuhn2013}
+M.~Kuhn and K.~Johnson.
+\newblock \emph{Applied Predictive Modeling}.
+\newblock SpringerLink : B{\"u}cher. Springer New York, 2013.
+\newblock ISBN 9781461468493.
+\newblock URL \url{https://books.google.com.ar/books?id=xYRDAAAAQBAJ}.
 
 \bibitem[Laguarda(2025)]{Laguarda2021}
 A.~Laguarda.
@@ -1127,6 +1134,14 @@ Emilio Soria~Olivas, Pablo Rodríguez~Belenguer, Quique García~Vidal, Fran
   profundo}.
 \newblock Ediciones de la U, Bogotá, Colombia, 1 edition, 2022.
 \newblock ISBN 978-958-792-440-4.
+
+\bibitem[Spearman(1904)]{Spearman1904}
+Charles Spearman.
+\newblock The proof and measurement of association between two things.
+\newblock \emph{The American Journal of Psychology}, 15\penalty0 (1):\penalty0
+  72--101, 1904.
+\newblock \doi{10.2307/1412159}.
+\newblock URL \url{https://doi.org/10.2307/1412159}.
 
 \bibitem[Sun et~al.(2022)Sun, Shan, Rong, and Yang]{SUN2022}
 Tao Sun, Ming Shan, Xing Rong, and Xudong Yang.

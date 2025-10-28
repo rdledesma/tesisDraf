@@ -13,7 +13,6 @@ A level-1 auxiliary file: bibliografia.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: anexo.aux
 Database file #1: bibliografia.bib
-Warning--I didn't find a database entry for "Kuhn2013"
 Warning--empty publisher in GrossiRighini2007
 Warning--empty journal in Long2010
 Warning--empty journal in Sengupta2014
@@ -23,45 +22,45 @@ Warning--empty chapter and pages in Wald2007
 Warning--empty publisher in Wald2007
 Warning--empty publisher in Wald2021
 Warning--empty booktitle in Wald2004
-You've used 149 entries,
+You've used 151 entries,
             2773 wiz_defined-function locations,
-            1723 strings with 44928 characters,
-and the built_in function-call counts, 78694 in all, are:
-= -- 7101
-> -- 5325
-< -- 74
-+ -- 1807
-- -- 1653
-* -- 7014
-:= -- 12613
-add.period$ -- 685
-call.type$ -- 149
-change.case$ -- 987
-chr.to.int$ -- 144
-cite$ -- 307
-duplicate$ -- 3068
-empty$ -- 5603
-format.name$ -- 1852
-if$ -- 16187
+            1738 strings with 45274 characters,
+and the built_in function-call counts, 79500 in all, are:
+= -- 7182
+> -- 5356
+< -- 76
++ -- 1818
+- -- 1662
+* -- 7073
+:= -- 12743
+add.period$ -- 696
+call.type$ -- 151
+change.case$ -- 995
+chr.to.int$ -- 146
+cite$ -- 311
+duplicate$ -- 3108
+empty$ -- 5674
+format.name$ -- 1865
+if$ -- 16358
 int.to.chr$ -- 6
 int.to.str$ -- 1
-missing$ -- 151
-newline$ -- 986
-num.names$ -- 596
-pop$ -- 1657
+missing$ -- 154
+newline$ -- 1000
+num.names$ -- 604
+pop$ -- 1671
 preamble$ -- 1
-purify$ -- 848
+purify$ -- 855
 quote$ -- 0
-skip$ -- 2394
+skip$ -- 2422
 stack$ -- 0
-substring$ -- 2672
-swap$ -- 251
+substring$ -- 2698
+swap$ -- 253
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1554
+type$ -- 1571
 warning$ -- 9
-while$ -- 594
+while$ -- 602
 width$ -- 0
-write$ -- 2396
-(There were 10 warnings)
+write$ -- 2430
+(There were 9 warnings)

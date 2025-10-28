@@ -135,7 +135,7 @@ El conjunto de datos de reanálisis denominado \textit{Modern-Era Retrospective 
 
 MERRA-2 abarca el período comprendido desde 1980 hasta la actualidad, con una resolución espacial de $0.5\times0.625$º en latitud-longitud y una resolución temporal de 60 minutos. En comparación con su predecesor, MERRA versión 1 \citep{rienecker2}, este modelo mejora la representación de los aerosoles y de la información asociada que influye en la irradiancia solar bajo condiciones de cielo despejado. Asimismo, incorpora otras mejoras físicas —como la estimación del contenido de vapor de agua y la modelización de nubes \citep{feng}— que contribuyen a una mejor simulación de la irradiancia solar bajo todo tipo de condiciones atmosféricas. 
 
-Como resultado de estas actualizaciones, se espera que MERRA-2 ofrezca un desempeño más preciso en la estimación de la irradiancia solar que su versión anterior. Los datos están disponibles de manera gratuita en: \url{https://disc.gsfc.nasa.gov/datasets?project=MERRA-2}.
+Como resultado de estas actualizaciones, se espera que MERRA-2 ofrezca un desempeño más preciso en la estimación de la irradiancia solar que su versión anterior. Los datos están disponibles de manera gratuita en: \url{https://disc.gsfc.nasa.gov/datasets?project=MERRA-2}.\\
 
 
 
@@ -365,9 +365,9 @@ En los trabajos citados en la Sección \ref{ch_3} sobre la evaluación del proce
 
 En esta sección se presenta una implementación del proceso de SA basada en uno de los enfoques clásicos, que consiste en adaptar una serie temporal modelada (proveniente de datos satelitales o de reanálisis) utilizando como referencia una serie de mediciones in situ.\\
 
-Dado que el modelo de Regresión Lineal Simple (RLS) puede considerarse el menos complejo entre los empleados en este estudio, la primera evaluación del proceso de SA en la región de interés se realiza utilizando este modelo. El objetivo es comparar el desempeño de la RLS con el de modelos de regresión más complejos, como el Perceptrón Multicapa (MLP) y XGBoost, utilizando las mismas métricas de evaluación.\\
+Dado que el modelo de Regresión Lineal Simple (SLR por sus siglas en ingles) puede considerarse el menos complejo entre los empleados en este estudio, la primera evaluación del proceso de SA es realizada utilizando este modelo de regresión. El objetivo es comparar el desempeño de SLR con el de modelos de regresión más complejos, como el Perceptrón Multicapa (MLP) y XGBoost (XGB), utilizando las mismas métricas de evaluación.\\
 
-Para los modelos MLP y XGBoost, la determinación de la configuración óptima de hiperparámetros fue fundamental para lograr un desempeño consistente en las particiones de validación cruzada. Esto se llevó a cabo mediante una búsqueda exhaustiva en rejilla (Grid Search) implementada con la función \textbf{GridSearchCV} de la biblioteca \textbf{Scikit-learn} en Python \cite{Pedregosa2012}. Los rangos específicos de hiperparámetros evaluados para MLP y XGBoost se presentan en la Tabla \ref{tab:gridsearch}. La selección de hiperparámetros óptimos constituye un paso crítico en el aprendizaje automático, ya que influye directamente en la complejidad del modelo, su capacidad de generalización y su rendimiento predictivo global \cite{Goodfellow2016}.\\
+Para los modelos MLP y XGB, la determinación de la configuración óptima de hiperparámetros fue fundamental para lograr un desempeño consistente en las particiones de validación cruzada. Esto se llevó a cabo mediante una búsqueda exhaustiva en rejilla (Grid Search) implementada con la función \textbf{GridSearchCV} de la biblioteca \textbf{Scikit-learn} en Python \cite{Pedregosa2012}. Los rangos específicos de hiperparámetros evaluados para MLP y XGBoost se presentan en la Tabla \ref{tab:gridsearch}. La selección de hiperparámetros óptimos constituye un paso crítico en el aprendizaje automático, ya que influye directamente en la complejidad del modelo, su capacidad de generalización y su rendimiento predictivo global \cite{Goodfellow2016}.\\
 
 
 
@@ -398,18 +398,16 @@ Booster               & gbtree & & & \\
 \end{tabular}}
 \end{table}
 
-En cuanto al preprocesamiento de los datos de entrada, la normalización o el escalado de características es una práctica común en aprendizaje automático para mejorar la convergencia y la estabilidad, particularmente en modelos sensibles a la magnitud de las variables de entrada. Sin embargo, en este estudio \textbf{no se aplicó normalización}, ya que no se consideró necesaria para los modelos y datos utilizados.  
+En cuanto al preprocesamiento de los datos de entrada, la normalización o el escalado de características es una práctica común en aprendizaje automático para mejorar la convergencia y la estabilidad, particularmente en modelos sensibles a la magnitud de las variables de entrada. Sin embargo, en esta evaluación \textbf{no se aplicó normalización}, ya que no se consideró necesaria para los modelos y datos utilizados.  
 
-En el caso del modelo \textbf{SLR}, el escalado de la variable independiente no es necesario porque el modelo es inherentemente invariante al escalado: multiplicar la entrada por un factor constante provoca un cambio inversamente proporcional en el coeficiente de la pendiente, dejando las predicciones sin alterar.  
+En el caso del modelo SLR, el escalado de la variable independiente no es necesario porque el modelo es inherentemente invariante al escalado: multiplicar la entrada por un factor constante provoca un cambio inversamente proporcional en el coeficiente de la pendiente, dejando las predicciones sin alterar.  
 
-De manera similar, \textbf{XGB}, cuando se implementa con árboles de decisión como aprendices base, \textbf{no requiere escalado de características}, ya que las divisiones en los nodos dependen del \textbf{orden relativo} de los valores y no de sus magnitudes absolutas \cite{Soria2022, Chen2016}.  
+De manera similar, XGB, cuando se implementa con árboles de decisión como aprendices base, \textbf{no requiere escalado de características}, ya que las divisiones en los nodos dependen del \textbf{orden relativo} de los valores y no de sus magnitudes absolutas \cite{Soria2022, Chen2016}.  
 
-En el caso del modelo \textbf{MLP}, el escalado puede ser importante cuando las variables de entrada difieren significativamente en su rango o unidades. Sin embargo, en el presente estudio se utilizó \textbf{una sola variable de entrada} (GHI derivado de satélite), expresada en las \textbf{mismas unidades y rango} que la variable objetivo (GHI medido en superficie). Por lo tanto, no se consideró necesaria ninguna normalización adicional.\\
-
-Los resultados obtenidos son expresados en la Tabla \ref{tab:metrics-as-1}.
+En el caso del modelo MLP, el escalado puede ser importante cuando las variables de entrada difieren significativamente en su rango o unidades. Sin embargo, en el presente estudio se utilizó \textbf{una sola variable de entrada} (GHI derivado de satélite), expresada en las \textbf{mismas unidades y rango} que la variable objetivo (GHI medido en superficie). Por lo tanto, no se consideró necesaria ninguna normalización adicional.\\
 
 
-\begin{table*}%[]
+\begin{table*}[h]
   \centering
   
   \caption{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo adaptado en los cinco sitios en el \textbf{conjunto de pruebas}}
@@ -454,11 +452,11 @@ Los resultados obtenidos son expresados en la Tabla \ref{tab:metrics-as-1}.
   }
 \end{table*}
 
-La evaluación comparativa de los modelos SLR,MLP y XGB, utilizando como variables de entrada los productos satelitales \textit{CAMS} y \textit{LSA-SAF}, se realizó en cinco sitios con características climáticas y geográficas diversas. El desempeño se expresó en términos de error medio de sesgo (MBE), error absoluto medio (MAE) y raíz del error cuadrático medio (RMSE), todos normalizados respecto al promedio de la irradiancia global horizontal (GHI) en cada estación (Tablas~\ref{tab:metrics-as-1} y \ref{tbl:metrics_test}).  
+Los resultados obtenidos son expresados en la Tabla \ref{tab:metrics-as-1}. La evaluación comparativa de los modelos SLR,MLP y XGB, utilizando como variables de entrada los productos satelitales \textit{CAMS} y \textit{LSA-SAF}, se realizó en cinco sitios con características climáticas y geográficas diversas. El desempeño se expresó en términos de error medio de sesgo (MBE), error absoluto medio (MAE) y raíz del error cuadrático medio (RMSE), todos expresados en términos procentuales normalizados respecto al promedio de la GHI medida en cada estación (Tabla \ref{tbl:metrics_test}).  
 
 En términos generales, los errores normalizados se mantuvieron dentro de un rango moderado en todas las combinaciones de modelos y conjuntos de datos, sin observarse diferencias sustanciales entre los enfoques lineales y los no lineales. El modelo SLR mostró un desempeño competitivo en ambos conjuntos de datos, con métricas de error cercanas a las obtenidas por los modelos más complejos.  
 
-En el caso de \textbf{CAMS}, aunque el MLP logró reducir ligeramente el RMSE en algunos sitios, esto se produjo a costa de sesgos más pronunciados en el MBE, lo cual evidencia una compensación entre reducción de varianza e incremento del error sistemático. El modelo XGB, por su parte, presentó un comportamiento muy similar al de SLR, con diferencias marginales.  
+En el caso de \textbf{CAMS}, aunque el MLP logró reducir ligeramente el RMSE en algunos sitios, esto se produjo a costa de sesgos más pronunciados en el MBE, lo cual permite suponer una compensación entre reducción de varianza e incremento del error sistemático. El modelo XGB, por su parte, presentó un comportamiento muy similar al de SLR, con diferencias marginales.  
 
 Por otro lado, al emplear \textbf{LSA-SAF} se observó una ligera mejora respecto a CAMS, particularmente en estaciones de mayor altitud (ERO y LQ), donde tanto XGB como MLP alcanzaron menores valores de MAE y RMSE. Esto sugiere que la mayor resolución temporal o la representación más detallada de nubes en LSA-SAF aportan información adicional útil para el proceso de adaptación local.  
 
@@ -512,7 +510,7 @@ No obstante, el incremento de la complejidad del modelo no se tradujo en gananci
 La Figura \ref{fig:rmse15} muestra el comportamiento del RMSE (\%) en cada sitio para los diferentes modelos de regresión utilizados. Se observa que todas las propuestas de adaptación logran reducir el RMSE en cada sitio. Aunque en algunos casos la mejora puede ser modesta, como en YU y LQ, queda evidenciado que un simple ajuste específico puede mejorar el desempeño del modelo para una ubicación determinada. Además se puede apreciar que el grado de mejora mediante la adaptación aparenta depender del modelo de estimación empleado. Cada modelo impone un límite sobre la precisión de la serie resultante, y optimizar su salida no garantiza necesariamente un desempeño superior frente a otro modelo que, de forma natural, ya proporciona una estimación más adecuada para un sitio específico.\\
 
 
-
+La Figura \ref{fig:scatter-yu-01} muestra un gráfico de dispersión para la GHI medida y las los modelos de CAMS (izquierdo) y LSA-SAF (derecho) con sus correspondeintes adaptaciones usando SLR y MLP
 
 \begin{figure}
     \centering
@@ -521,8 +519,7 @@ La Figura \ref{fig:rmse15} muestra el comportamiento del RMSE (\%) en cada sitio
     \label{fig:scatter-yu-01}
 \end{figure}
 
-
-La Figura \ref{fig:scatter-yu-01} muestra un gráfico de dispersión para la GHI medida y las los modelos de CAMS (izquierdo) y LSA-SAF (derecho) con sus correspondeintes adaptaciones usando SLR y MLP.   
+En Yu puede observarse que las nubes de puntos siguen de cerca la línea 1:1 y las tendencias adaptadas se solapan prácticamente con ella, mostrando un ajuste sobresaliente. Esto sugiere que en YU los productos satelitales capturan bien la variabilidad local de la irradiancia, por lo que la adaptación ofrece refinamientos marginales más que correcciones estructurales. 
 
 
 \begin{figure}
@@ -533,6 +530,10 @@ La Figura \ref{fig:scatter-yu-01} muestra un gráfico de dispersión para la GHI
 \end{figure}
 
 
+
+El sitio Sa presenta una mayor complejidad. Se observa una subestimación pronunciada en los modelos sin adaptar, especialmente en los valores altos de irradiancia, donde CAMS tiende a saturarse. Las adaptaciones corrigen parcialmente este sesgo, acercando las tendencias a la línea ideal. Aun así, la dispersión sigue siendo notable, indicando que las condiciones atmosféricas locales probablemente dificultan la modelización directa. Las métricas de la Tabla \ref{tab:metrics-as-1} reflejan esto. En general, la corrección estadística mitiga el sesgo pero no elimina la alta variabilidad del error, lo que sugiere limitaciones estructurales en la estimación satelital sobre esta zona.
+
+
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{figuras/scatter_sca_1.png}
@@ -541,14 +542,20 @@ La Figura \ref{fig:scatter-yu-01} muestra un gráfico de dispersión para la GHI
 \end{figure}
 
 
+
+En Ero, observa una alta subestimación por parte de CAMS y una ligera sobreestimación en LSA-SAF. La tendencia de los nuevamente la tendencia de los modelos modelos adaptados se acerca más a la línea 1:1, lo que indica una mejora significativa en la representación de los valores observados. Esto concuerda con las métricas: el RMSE disminuye de 40.9\% (CAMS) y 26.5\% (LSA-SAF) a alrededor de 31\% y 25\%, respectivamente, tras la adaptación. En conjunto, se evidencia el potencial del proceso de adaptación al sitio.
+
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{figuras/scatter_ero_1.png}
-    \caption{Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en El Rosal.}
+    \caption{Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en El Rosal.}	
     \label{fig:scatter-ero-01}
 \end{figure}
 
 
+
+
+En Lq, se aprecia un comportamiento notablemente más ajustado para todos los modelos. Tanto CAMS como LSA-SAF muestran nubes de puntos más concentradas a lo largo de la línea 1:1, y las líneas de tendencia adaptadas prácticamente se superponen a ella. Los modelos sin adaptar ya presentaban un desempeño razonablemente bueno (RMSE de 25.8\% para CAMS y 22.6\% para LSA-SAF), pero las adaptaciones logran mejoras adicionales, alcanzando valores en torno a 23.5\% y 22\%. La homogeneidad y baja dispersión en el scatter sugieren una estabilidad radiativa del sitio y una alta representatividad de los datos satelitales, lo que explica la pequeña ganancia adicional obtenida mediante adaptación.
 
 \begin{figure}
     \centering
@@ -556,6 +563,8 @@ La Figura \ref{fig:scatter-yu-01} muestra un gráfico de dispersión para la GHI
     \caption{Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en La Quiaca.}
     \label{fig:scatter-lq-01}
 \end{figure}
+
+
 
 
 
@@ -569,14 +578,6 @@ La Figura \ref{fig:mejorModelo} presenta las variaciones del rRMSE en cada sitio
 
 
 
-
-
-%\begin{figure}
-%    \centering
-%    \includegraphics[width=0.9\textwidth]{figuras/comparativasRMSE60.png}
-%    \caption{Variación del error cuadrático medio relativo (RRMSD) en función del ángulo cenital solar (SZA) para los cinco sitios analizados (YU, SA, SCA, ERO y LQ). Resultados para CAMS (líneas continuas) y LSASAF (líneas punteadas).}
-%    \label{fig:RMSE-60}
-%\end{figure}
 
 
 
@@ -669,7 +670,7 @@ Las variables \texttt{tm}, \texttt{uw}, \texttt{dw} y \texttt{2mdt} provienen de
 Aunque, desde un punto de vista técnico, es posible interpolar estas variables para obtener valores a intervalos menores, el resultado dependería más del método de interpolación que de las características físicas del sitio o del proceso de adaptación del modelo. Mantener la escala temporal original garantiza así una mayor consistencia y validez en el análisis.\\
 
 
-\begin{table*}
+\begin{table*}[h]
 \caption{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo en el conjunto de prubeas de los cinco sitios. Los valores están normalizados y expresados como porcentajes relativos a la media de GHI en cada sitio: 429.2~W/m$^2$ (Yu), 432.9~W/m$^2$ (Sa), 554.4~W/m$^2$ (Sca), 628.4~W/m$^2$ (Ero), y 648.7~W/m$^2$ (Lq). Los modelos etiquetados con ``(1 var.)'' indican adaptación al sitio realizada utilizando solo un regresor (CAMS o LSA-SAF).}
 \label{tab:metricas_3_1}
 \centering
@@ -691,20 +692,19 @@ MERRA-2 & 24.9 & 33.5 & 51.2 & 43.4 & 48.3 & 65.0 & 10.9 & 21.7 & 30.3 & -3.8  &
 \multicolumn{16}{|c|}{\textit{Adaptación al sitio conjunto completo de regresores (15 vars.)}} \\
 \hline
 CAMS    MLR & -3.3 & 14.6 & 21.7 & 3.4 & 18.3 & 26.6 & 1.1 & 16.3 & 23.5 & 0.6 & 13   & 20 & 0.8 & 10.6 & 16.2 \\
-LSA-SAF MLR & -4.9 & 14.4 & 20.7 & 3.9 & 21   & 29.9 & 0.2 & 18.5 & 25.2 & 0.9 & 12.2 & 19.2 & 0.1 & 11.4 & 17.1 \\
-ERA5    MLR & -1.5 & 22.8 & 31.1 & 5.9 & 26.4 & 35.9 & -2.8 & 20  & 26.6 & -0.8& 12.9 & 19.4 & 0.4 & 10.9 & 17 \\
-MERRA-2 MLR & -6.1 & 31.2 & 39.6 & 5.5 & 31.2 & 40.2 & -0.2 & 20.4& 27.7 & 0.7 & 12   & 19.0 & -0.2 & 12.1 & 18.2 \\
-
-\hline
-\hline
 CAMS    MLP & -2.8 & 13.9 & 20.9 & 3.5 & 18   & 26.3 & 3.6  & 16.8 & 24.3 & 0.3 & 13.3 & 20.2 &  0   & 10.8 & 16.1 \\
-LSA-SAF MLP & -5.0 & 14.2 & 20.3 & 3.0 & 20.6 & 29.3 & 3.1  & 18.3 & 25.8 & 0.7 & 12.6 & 19.4 & -0.3 & 11.5 & 16.8 \\
-ERA5    MLP & -0.6 & 22.7 & 31.3 & 6.3 & 26.9 & 36   & -1.2 & 20.2 & 27.2 & -1  & 13.4 & 19.7 & -0.8 & 11.7 & 17.2 \\
-MERRA-2 MLP & -4.3 & 31.5 & 39.6 & 5.7 & 30.4 & 39.3 & 3    & 19.2 & 27.2 & 0.7 & 12.3 & 19.1 & -1.5 & 12.4 & 18  \\
-\hline
 CAMS    XGB & -2.8 & 14.6 & 21.5 & 2.2 & 18.1 & 26.9 & -0.1 & 18.8 & 26.1 & 0.1 & 13.8 & 21.5 & 0.7 & 10.9 & 16.9 \\
+\hline
+LSA-SAF MLR & -4.9 & 14.4 & 20.7 & 3.9 & 21   & 29.9 & 0.2 & 18.5 & 25.2 & 0.9 & 12.2 & 19.2 & 0.1 & 11.4 & 17.1 \\
+LSA-SAF MLP & -5.0 & 14.2 & 20.3 & 3.0 & 20.6 & 29.3 & 3.1  & 18.3 & 25.8 & 0.7 & 12.6 & 19.4 & -0.3 & 11.5 & 16.8 \\
 LSA-SAF XGB& -4.1 & 14.7 & 21.1 & 2.6 & 21.2 & 30.5 & -1.1 & 21.2 & 29.3 & 0.4 & 13.1 & 20.5 & -0.1 & 11.6 & 17.5 \\
+\hline
+ERA5    MLR & -1.5 & 22.8 & 31.1 & 5.9 & 26.4 & 35.9 & -2.8 & 20  & 26.6 & -0.8& 12.9 & 19.4 & 0.4 & 10.9 & 17 \\
+ERA5    MLP & -0.6 & 22.7 & 31.3 & 6.3 & 26.9 & 36   & -1.2 & 20.2 & 27.2 & -1  & 13.4 & 19.7 & -0.8 & 11.7 & 17.2 \\
 ERA5    XGB & -0.2 & 24.1 & 32.9 & 4.0 & 26.8 & 37.1 & -3.4 & 23.3 & 31.7 & -1.0 & 13.7 & 20.9 & 0.3 & 11.9 & 18.6 \\
+\hline
+MERRA-2 MLR & -6.1 & 31.2 & 39.6 & 5.5 & 31.2 & 40.2 & -0.2 & 20.4& 27.7 & 0.7 & 12   & 19.0 & -0.2 & 12.1 & 18.2 \\
+MERRA-2 MLP & -4.3 & 31.5 & 39.6 & 5.7 & 30.4 & 39.3 & 3    & 19.2 & 27.2 & 0.7 & 12.3 & 19.1 & -1.5 & 12.4 & 18  \\
 MERRA-2 XGB & -4.4 & 31.1 & 39.7 & 4.4 & 29.8 & 40.0 & -0.8 & 22.1 & 30.3 & -0.1 & 13.3 & 20.7 & -0.6 & 12.4 & 18.5 \\
 
 \hline
@@ -724,7 +724,7 @@ Los resultados de la Tabla \ref{tab:metricas_3_1} y la Figura \ref{fig:regressor
 
 Entre los regresores evaluados, se observa que XGB y MLP no producen mejoras significativamente mayores que las obtenidas con MLR. Esto indica que, aunque los modelos regresores más sofisticados son capaces de capturar relaciones no lineales, es necesario un análisis previo que permita identificar qué variables tienen mayor potencial como regresores antes de introducirlas en el modelo.
 
-Estos resultados preliminares subrayan la importancia de realizar un análisis exploratorio que permita determinar qué variables son más prometedoras para cada sitio y, de este modo, seleccionar un conjunto de regresores que garantice un desempeño consistente y robusto. En este sentido, la selección de características se convierte en un paso crítico del preprocesamiento al entrenar modelos de aprendizaje automático, ya que permite identificar las variables más relevantes y eliminar aquellas redundantes o irrelevantes \cite{liu2023, Huang2024}. Una selección adecuada de características mejora la interpretabilidad del modelo, optimiza su eficiencia computacional y aumenta su capacidad predictiva, mientras que la inclusión de variables irrelevantes puede inducir sobreajuste \cite{che2024a}. Métodos como los de filtro, envolventes y embebidos permiten automatizar este proceso, pero el análisis exploratorio de datos sigue siendo fundamental para guiar la selección inicial de regresores y variables \cite{Cheng2024}.
+Estos resultados preliminares subrayan la importancia de realizar un análisis exploratorio que permita determinar qué variables son más prometedoras para cada sitio y, de este modo, seleccionar un conjunto de regresores que garantice un desempeño consistente y robusto. En este sentido, la selección de características se convierte en un paso crítico del preprocesamiento al entrenar modelos de ML, ya que permite identificar las variables más relevantes y eliminar aquellas redundantes o irrelevantes \citep{liu2023, Huang2024}. Una selección adecuada de características mejora la interpretabilidad del modelo, optimiza su eficiencia computacional y aumenta su capacidad predictiva, mientras que la inclusión de variables irrelevantes puede inducir sobreajuste \citep{che2024a}. Si bien, métodos como los de filtro, envolventes y embebidos permiten automatizar este proceso, pero el análisis exploratorio de datos sigue siendo fundamental para guiar la selección inicial de regresores y variables \citep{Cheng2024}.
 
 \begin{figure*}
     \centering
@@ -733,7 +733,10 @@ Estos resultados preliminares subrayan la importancia de realizar un análisis e
     \label{fig:correlacion}
 \end{figure*}
 
-La Figura \ref{fig:correlacion} muestra la matriz de correlación de los regresores en la estación SA, considerando únicamente las relaciones entre las variables predictoras, sin incluir su vínculo con la variable objetivo (GHI medida). Este análisis es fundamental, ya que permite identificar variables que presentan una alta correlación entre sí y, por tanto, aportan información redundante. Incluir todas estas variables en el modelo puede generar problemas de multicolinealidad, dificultar la interpretación de los coeficientes y aumentar el riesgo de sobreajuste. Además, reducir la redundancia contribuye a simplificar el modelo y disminuir la carga computacional, lo cual resulta especialmente relevante en algoritmos de mayor complejidad, como redes neuronales o modelos de tipo XGBoost. En este sentido, la matriz de correlación constituye un primer paso clave en la selección de variables, que posteriormente debe complementarse con el análisis de la relación de cada regresor con la variable objetivo, con el fin de construir modelos más eficientes, interpretables y generalizables.\
+La Figura \ref{fig:correlacion} muestra la matriz de correlación según \textbf{Pearson} de los regresores en la estación Sa, considerando únicamente las relaciones entre las variables predictoras, sin incluir su vínculo con la variable objetivo (GHI medida).
+El coeficiente de Pearson mide la correlación lineal entre dos variables continuas, asumiendo que los datos siguen una distribución aproximadamente normal y que la relación entre ellos puede representarse mediante una recta. Este coeficiente es especialmente útil cuando las variables presentan una relación proporcional directa o inversa y se desea evaluar la fuerza y dirección del vínculo lineal.\\
+
+Este análisis es fundamental, ya que permite identificar variables que presentan una alta correlación entre sí y, por tanto, aportan información redundante. Incluir todas estas variables en el modelo puede generar problemas de multicolinealidad, dificultar la interpretación de los coeficientes y aumentar el riesgo de sobreajuste. Además, reducir la redundancia contribuye a simplificar el modelo y disminuir la carga computacional, lo cual resulta especialmente relevante en algoritmos de mayor complejidad, como MLP o modelos de tipo XGBoost. En este sentido, la matriz de correlación constituye un primer paso clave en la selección de variables, que posteriormente debe complementarse con el análisis de la relación de cada regresor con la variable objetivo, con el fin de construir modelos más eficientes, interpretables y generalizables.\\
 
 Según \citet{Geher2016}, existen umbrales de correlación a partir de los cuales puede considerarse que dos variables están fuertemente asociadas. De acuerdo con estos autores, las correlaciones entre 0 y ±0.3 se consideran débiles, entre ±0.3 y ±0.7 moderadas, y entre ±0.7 y ±1.0 fuertes. Por tanto, en este trabajo se propone eliminar aquellas variables que podrían resultar redundantes cuando su coeficiente de correlación sea mayor a 0.85 o menor a –0.85, de modo que se reduzca la colinealidad y se mejore la estabilidad del modelo.
 
@@ -747,17 +750,14 @@ Según \citet{Geher2016}, existen umbrales de correlación a partir de los cuale
 
 La Figura \ref{fig:correlacion_filtrados} presenta la matriz de correlación con el conjunto de variables regresores reducidos para la estación SA, este mismo procedimiento fue aplicado para las demás estaciones.
 
-En este punto se puede analizar la relación que puede existir entre las variables regresoras y la variable objetivo. Una de las estratégias más utilizadas es la de nuevamente analizar la correlación pero ahora respecto a la medida. En la Tabla presentamos los resultados que expresa el estadístico de Pearson y Spreman. \\
+En este punto se puede analizar la relación que puede existir entre las variables regresoras y la variable objetivo. Una de las estratégias más utilizadas es la de nuevamente analizar la correlación pero ahora respecto a la medida. En la Tabla presentamos los resultados que expresa el estadístico de Pearson y \textbf{Spreman}. \\
+
+El coeficiente de Spearman \citep{Spearman1904} es una medida no paramétrica de correlación basada en los rangos de los datos. No requiere que la relación sea lineal ni que las variables estén normalmente distribuidas. Su aplicación resulta apropiada cuando existen relaciones monótonas no lineales o cuando los datos pueden estar afectados por valores atípicos que distorsionan la correlación de Pearson.
+
+El uso conjunto de ambos estadísticos permite contrastar la robustez de las asociaciones detectadas. Si ambos coeficientes son similares en magnitud y signo, se puede inferir que la relación entre las variables es consistente, tanto en términos lineales como monotónicos. En cambio, diferencias notables entre ambos valores podrían indicar la presencia de relaciones no lineales o la influencia de valores extremos.\\
 
 
-El coeficiente de Pearson mide la correlación lineal entre dos variables continuas, asumiendo que los datos siguen una distribución aproximadamente normal y que la relación entre ellos puede representarse mediante una recta. Este coeficiente es especialmente útil cuando las variables presentan una relación proporcional directa o inversa y se desea evaluar la fuerza y dirección del vínculo lineal.
-
-Por su parte, el coeficiente de Spearman es una medida no paramétrica de correlación basada en los rangos de los datos. No requiere que la relación sea lineal ni que las variables estén normalmente distribuidas. Su aplicación resulta apropiada cuando existen relaciones monótonas no lineales o cuando los datos pueden estar afectados por valores atípicos que distorsionan la correlación de Pearson.
-
-El uso conjunto de ambos estadísticos permite contrastar la robustez de las asociaciones detectadas. Si ambos coeficientes son similares en magnitud y signo, se puede inferir que la relación entre las variables es consistente, tanto en términos lineales como monotónicos. En cambio, diferencias notables entre ambos valores podrían indicar la presencia de relaciones no lineales o la influencia de valores extremos.
-
-
-\begin{table*}[htbp]
+\begin{table*}[h]
 \caption{Coeficientes de correlación de Pearson y Spearman entre las variables meteorológicas y las distintas metodologías (Yu, Sa, Sca, Ero y Lq).}
 \label{tab:correlacion}
 \centering
@@ -801,7 +801,7 @@ En conjunto, los resultados evidencian que las variables radiativas y térmicas 
 
 
 \begin{table*}
-\caption{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo en el conjunto de prubeas de los cinco sitios. Los valores están normalizados y expresados como porcentajes relativos a la media de GHI en cada sitio: 429.2~W/m$^2$ (Yu), 432.9~W/m$^2$ (Sa), 554.4~W/m$^2$ (Sca), 628.4~W/m$^2$ (Ero), y 648.7~W/m$^2$ (Lq). Los modelos etiquetados con ``(1 var.)'' indican adaptación al sitio realizada utilizando solo un regresor (CAMS o LSA-SAF).}
+\caption{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo en el conjunto de prubeas de los cinco sitios utilizando como regresores la GHI modelada, la GHI en condiciones de cielo claro según Argpv2 y TM según ERA5. Los valores están normalizados y expresados como porcentajes relativos a la media de GHI en cada sitio: 429.2~W/m$^2$ (Yu), 432.9~W/m$^2$ (Sa), 554.4~W/m$^2$ (Sca), 628.4~W/m$^2$ (Ero), y 648.7~W/m$^2$ (Lq).}
 \label{tab:metricas_3_2}
 \centering
 \resizebox{\linewidth}{!}{
@@ -1048,7 +1048,7 @@ Finalmente, cabe destacar que el marco planteado mantiene un equilibrio adecuado
 \section{Adaptación al sitio tomando consideraciones de una serie temporal}\label{sec:04}
 
 
-El análisis presentado en las Secciones \ref{sec:01} y \ref{sec:02} permitió establecer que, en el contexto de la adaptación al sitio (AS), el grado de mejora obtenido en las estimaciones de la irradiancia global horizontal (GHI) no depende necesariamente de la complejidad de los modelos regresores utilizados. Más bien, los resultados evidencian la importancia de una adecuada selección de variables regresoras para garantizar un desempeño correcto y estable de los modelos de regresión.
+El análisis presentado en las Secciones \ref{sec:01} y \ref{sec:02} permitió establecer que, en el contexto de la adaptación al sitio (SA por sus siglas en ingles), el grado de mejora obtenido en las estimaciones de la irradiancia global horizontal (GHI) no depende necesariamente de la complejidad de los modelos regresores utilizados. Más bien, los resultados evidencian la importancia de una adecuada selección de variables regresoras para garantizar un desempeño correcto y estable de los modelos de regresión.
 
 En la Sección \ref{sec:03} se exploró un enfoque que deriva los regresores a partir de la información espacial circundante en celdas adyacentes al sitio de interés. Además, estos regresores, en combinación con aquellos que mantienen una relación física directa con la GHI —como la GHI en condiciones de cielo claro y la temperatura—, condujeron a los mejores resultados obtenidos en este trabajo.
 
@@ -1074,7 +1074,7 @@ Una característica clave de las series temporales meteorológicas es la \textbf
 
 El enfoque propuesto en esta tesis consiste en \textbf{desestacionalizar} las series temporales de GHI antes de aplicar el proceso de adaptación al sitio, de modo que se eliminen o ajusten las fluctuaciones periódicas y se analice el comportamiento subyacente de la serie sin la influencia directa de las variaciones estacionales. Este procedimiento permite comparar los datos en condiciones más homogéneas y evaluar de manera más precisa el desempeño de los modelos.\\
 
-En esta sección se evalúa el impacto de considerar la estacionalidad en la serie de GHI sobre el proceso de AS, comparando el enfoque tradicional —que no realiza ajustes temporales— con una metodología basada en la desestacionalización. A continuación, se presenta formalmente la formulación matemática del proceso de adaptación al sitio tradicional, empleando como referencia el modelo de regresión lineal simple (SLR), que representa la forma más básica de este tipo de ajuste.
+En esta sección se evalúa el impacto de considerar la estacionalidad en la serie de GHI sobre el proceso de SA, comparando el enfoque tradicional —que no realiza ajustes temporales— con una metodología basada en la desestacionalización. A continuación, se presenta formalmente la formulación matemática del proceso de adaptación al sitio tradicional, empleando como referencia el modelo de regresión lineal simple (SLR), que representa la forma más básica de este tipo de ajuste.
 
 
 
