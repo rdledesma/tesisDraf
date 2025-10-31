@@ -11,19 +11,19 @@
 \contentsline {subsubsection}{Modelos satelitales}{11}{section*.7}%
 \contentsline {section}{\numberline {1.4}Control de Calidad}{12}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Adaptación al Sitio}{14}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Historia}{17}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Historia}{19}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Características}{21}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Ventajas y Desventajas}{21}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Modelos de Aprendizaje Automático}{22}{section.2.4}%
+\contentsline {section}{\numberline {2.3}Ventajas y Desventajas}{22}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Modelos de Aprendizaje Automático}{23}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Modelo de red neuronal}{23}{subsection.2.4.1}%
-\contentsline {paragraph}{1. Propagación hacia adelante}{27}{section*.25}%
+\contentsline {paragraph}{1. Propagación hacia adelante}{28}{section*.25}%
 \contentsline {paragraph}{2. Cálculo del error}{28}{section*.26}%
 \contentsline {paragraph}{3. Retropropagación}{28}{section*.27}%
 \contentsline {paragraph}{4. Actualización de pesos}{28}{section*.28}%
 \contentsline {paragraph}{5. Resumen del ciclo de aprendizaje}{28}{section*.29}%
 \contentsline {subsection}{\numberline {2.4.2}Arboles de Decisión}{29}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Random Forest}{30}{subsection.2.4.3}%
-\contentsline {subsection}{Random Forest: Un Enfoque de Aprendizaje Autom\'atico}{30}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.3}Random Forest}{29}{subsection.2.4.3}%
+\contentsline {subsection}{Random Forest: Un Enfoque de Aprendizaje Autom\'atico}{29}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}XGBoost}{31}{subsection.2.4.4}%
 \contentsline {section}{\numberline {2.5}Entrenamiento y Prueba}{35}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Adaptación al Sitio en NOA}{38}{chapter.3}%
