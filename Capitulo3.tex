@@ -6,8 +6,12 @@
 \renewcommand{\footrulewidth}{1pt}
 \chapter{Adaptación al Sitio en NOA}\label{ch_3}
 
+En este capítulo se aborda la aplicación de los métodos de adaptación al sitio en la región del Noroeste Argentino (NOA), con el objetivo de mejorar la representatividad espacial de las estimaciones de radiación solar provenientes de modelos satelitales y de reanálisis. A partir de las mediciones de GHI realizadas en distintas estaciones de Salta y Jujuy, se analiza el desempeño de los productos disponibles y se propone su corrección mediante técnicas de aprendizaje automático.
 
-En este capítulo se presentan los resultados obtenidos a partir de las distintas evaluaciones realizadas a la AS. 
+El desarrollo de este capítulo permite comprender cómo las particularidades geográficas y climáticas del NOA —su topografía compleja, la marcada variabilidad estacional y la diversidad de condiciones atmosféricas— influyen en la precisión de las estimaciones del recurso solar. Por ello, la adaptación al sitio se presenta no solo como una etapa metodológica, sino como una herramienta clave para trasladar los modelos globales a contextos locales, reduciendo sesgos y aumentando la confiabilidad de los datos.
+
+A lo largo del capítulo se describen las estaciones de medida utilizadas, los procedimientos de control de calidad aplicados a las mediciones en tierra, las métricas empleadas para evaluar los modelos y los distintos enfoques de adaptación implementados, desde los más simples —con una variable descriptiva— hasta los más complejos, basados en múltiples regresores y en el aprovechamiento de información satelital adyacente. Finalmente, se discuten los resultados obtenidos, destacando las mejoras alcanzadas en la precisión y estabilidad de las estimaciones adaptadas, así como su potencial de generalización hacia otras zonas del NOA con condiciones similares.
+
 
 \section{Medidas en tierra}
 
@@ -22,11 +26,11 @@ Los sitios analizados en esta tesis se resumen en la Tabla \ref{tab:sites}, dond
 \end{figure}
 
 
-La estación Sa se encuentra en el campus experimental del INENCO, en la Universidad Nacional de Salta. Está situada en un entorno urbano preandino dentro del Valle de Lerma, una zona donde es común la formación de nubes debido a la cercanía de la cordillera. Su clima es subtropical de montaña, con inviernos secos y veranos frescos (Cwb). Las mediciones se realizaron entre 2009 y 2020 utilizando un piranómetro Eppley PSP.\\
+La estación \textbf{Sa} (Salta Capital) se encuentra en el campus experimental del INENCO, en la Universidad Nacional de Salta. Está situada en un entorno urbano preandino dentro del Valle de Lerma, una zona donde es común la formación de nubes debido a la cercanía de la cordillera. Su clima es subtropical de montaña, con inviernos secos y veranos frescos (Cwb). Las mediciones se realizaron entre 2009 y 2020 utilizando un piranómetro Eppley PSP.
 
-La estación Lq, localizada en La Quiaca, presenta un clima estepario frío semiárido (BSk) típico de regiones andinas, y destaca por registrar uno de los mayores niveles de horas de sol anuales en Argentina. Contó con un piranómetro Kipp \& Zonen CMP11 y recopiló datos entre 2018 y 2023.
+La estación \textbf{Lq} (Ciudad de La Quiaca - Jujuy), se encuentra ubicada en una región que un clima estepario frío semiárido (BSk) típico de regiones andinas, y destaca por registrar uno de los mayores niveles de horas de sol anuales en Argentina. Los datos fueron registrados mediante un piranómetro Kipp \& Zonen CMP11 entre los años 2018 y 2023.
 
-La estación Yu, ubicada en una zona de clima subtropical húmedo (Cwa), registró datos entre 2017 y 2018 con un sensor CMP11. La estación Sca, también con clima Cwb, operó entre 2012 y 2013 con un piranómetro CMP3. Finalmente, la estación Ero, situada en una región de gran altitud con clima BSk, recopiló datos entre 2016 y 2018, igualmente con un CMP3.
+La estación \textbf{Yu}, ubicada en una zona de clima subtropical húmedo (Cwa), registró datos entre 2017 y 2018 con un sensor CMP11. La estación Sca, también con clima Cwb, operó entre 2012 y 2013 con un piranómetro CMP3. Finalmente, la estación Ero, situada en una región de gran altitud con clima BSk, recopiló datos entre 2016 y 2018, igualmente con un CMP3.
 
 Todas las estaciones utilizan piranómetros que cumplen con los estándares de la norma ISO 9060:2018 Clase A o B para la medición de la irradiancia global horizontal (GHI). Los datos se registraron a intervalos de un minuto, y cada valor corresponde al promedio de seis muestras tomadas cada 10 segundos.
 

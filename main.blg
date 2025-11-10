@@ -18,49 +18,47 @@ Warning--empty journal in Long2010
 Warning--empty journal in Sengupta2014
 Warning--empty chapter and pages in Thejll2015
 Warning--empty publisher in Thejll2015
-Warning--empty chapter and pages in Wald2007
-Warning--empty publisher in Wald2007
 Warning--empty publisher in Wald2021
 Warning--empty booktitle in Wald2004
-You've used 151 entries,
+You've used 147 entries,
             2773 wiz_defined-function locations,
-            1738 strings with 45274 characters,
-and the built_in function-call counts, 79500 in all, are:
-= -- 7182
-> -- 5356
-< -- 76
-+ -- 1818
-- -- 1662
-* -- 7073
-:= -- 12743
-add.period$ -- 696
-call.type$ -- 151
-change.case$ -- 995
-chr.to.int$ -- 146
-cite$ -- 311
-duplicate$ -- 3108
-empty$ -- 5674
-format.name$ -- 1865
-if$ -- 16358
+            1700 strings with 43951 characters,
+and the built_in function-call counts, 77818 in all, are:
+= -- 7045
+> -- 5157
+< -- 77
++ -- 1751
+- -- 1599
+* -- 6901
+:= -- 12390
+add.period$ -- 668
+call.type$ -- 147
+change.case$ -- 959
+chr.to.int$ -- 142
+cite$ -- 301
+duplicate$ -- 3068
+empty$ -- 5629
+format.name$ -- 1796
+if$ -- 16066
 int.to.chr$ -- 6
 int.to.str$ -- 1
-missing$ -- 154
-newline$ -- 1000
-num.names$ -- 604
-pop$ -- 1671
+missing$ -- 150
+newline$ -- 964
+num.names$ -- 588
+pop$ -- 1631
 preamble$ -- 1
-purify$ -- 855
+purify$ -- 826
 quote$ -- 0
-skip$ -- 2422
+skip$ -- 2388
 stack$ -- 0
-substring$ -- 2698
-swap$ -- 253
-text.length$ -- 9
+substring$ -- 2792
+swap$ -- 271
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1571
-warning$ -- 9
+type$ -- 1537
+warning$ -- 7
 while$ -- 602
 width$ -- 0
-write$ -- 2430
-(There were 9 warnings)
+write$ -- 2346
+(There were 7 warnings)

@@ -17,20 +17,20 @@ De manera similar, \citet{rs17101720} hace referencia a “la aplicación de un 
 
 Aunque cada definición destaca aspectos particulares del proceso, todas convergen en un propósito fundamental: ajustar los datos satelitales o modelados para que reflejen con mayor precisión las condiciones reales de irradiancia en un punto geográfico específico. Dicho de otro modo, la Adaptación al Sitio consiste en aplicar técnicas estadísticas que permitan reducir tanto el sesgo como la dispersión inherentes a los productos derivados de satélites, utilizando mediciones terrestres como patrón de referencia.
 
-Este procedimiento resulta especialmente relevante en el contexto del desarrollo de proyectos solares, donde las estimaciones precisas del recurso en el largo plazo son críticas para análisis económicos, dimensionamiento y evaluación de riesgos. Aun cuando las mediciones locales se dispongan únicamente por un periodo limitado (por ejemplo, uno o dos años), la información recolectada permite calibrar series satelitales de varios años, consiguiendo una reconstrucción más confiable del comportamiento histórico del recurso solar en el sitio de interés.
+Este procedimiento resulta especialmente relevante en el contexto del desarrollo de proyectos solares, donde las estimaciones precisas del recurso en el largo plazo son críticas para análisis económicos, dimensionamiento y evaluación de riesgos. Aun cuando las mediciones locales se dispongan únicamente por un periodo limitado (por ejemplo, uno o dos años), la información recolectada permite calibrar series modeladas de varios años, consiguiendo una reconstrucción más confiable del comportamiento histórico del recurso solar en el sitio de interés.
 
 
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
-    \includegraphics[width=0.97\linewidth]{figuras/SiteAdapation-Example.png}
+    \includegraphics[width=0.97\linewidth]{figuras/SiteAdaptation-Example.png}
     \caption{Comparación de irradiancia solar diaria entre datos de satélite sin adaptar, datos de satélite adaptados y mediciones locales en el sitio de referencia. Se observa cómo la adaptación al sitio corrige el sesgo sistemático y mejora la representatividad de los datos satelitales.}
     \label{fig:example}
 \end{figure}
 
 
-La Figura \ref{fig:example}  ilustra una comparación entre tres conjuntos de datos de irradiancia solar a lo largo de un mes:
+La Figura \ref{fig:example}  ilustra una comparación entre tres conjuntos de datos de irradiancia solar a lo largo de dos días teóricos:
 
 Medición en sitio (línea sólida): representa la referencia real tomada con instrumentos locales.
 
@@ -94,42 +94,42 @@ Después de la corrección (verde): los puntos se agrupan alrededor de la línea
 
 
 \section{Historia}
-Uno de los principales aportes sobre el tema fue realizado en el trabajo de \cite{POLO2016} en el marco de la Tarea 46 del Programa de Calefacción y Refrigeración Solar de la Agencia Internacional de la Energía Evaluación y pronóstico de recursos solares. En este trabajo se indica que la idea general de este proceso de corrección o calibración de datos modelados es similar a lo que se ha desarrollado en  la industria eólica en el pasado \citep{Potter}.
- 
-Según Polo y sus colaboraores SA es un término actualmente utilizado en proyectos de energía solar para referirse a la mejora que puede lograrse en la irradiancia solar derivada de satélite y los datos del modelo cuando se utilizan mediciones terrestres locales a corto plazo para corregir errores sistemáticos y sesgos en el conjunto de datos original. A partir de esta idea general se han agrupado a los diversos métodos para SA en cinco categorías en las cuales se comprenden las principales estrategias para mejorar la precisión y reducir la incertidumbre en las estimaciones de radiación solar derivadas de satélites mediante el uso de mediciones locales de corta duración.
+Uno de los principales aportes sobre el tema fue realizado en el trabajo de \cite{POLO2016}, en el marco de la Tarea 46 del Programa de Calefacción y Refrigeración Solar de la Agencia Internacional de la Energía, Evaluación y pronóstico de recursos solares. En este trabajo se indica que la idea general de este proceso de corrección o calibración de datos modelados es similar a lo que se ha desarrollado en la industria eólica en el pasado \citep{Potter}.
+
+Según Polo y sus colaboradores, el término Site Adaptation (SA) es actualmente utilizado en proyectos de energía solar para referirse a la mejora que puede lograrse en la irradiancia solar derivada de satélite y en los datos de modelo cuando se utilizan mediciones terrestres locales a corto plazo para corregir errores sistemáticos y sesgos en el conjunto de datos original. A partir de esta idea general, se han agrupado los diversos métodos de SA en cinco categorías que comprenden las principales estrategias para mejorar la precisión y reducir la incertidumbre en las estimaciones de radiación solar derivadas de satélites mediante el uso de mediciones locales de corta duración.
 
 \begin{enumerate}
-    \item Métodos basados en modelos físicos (Physically based methods)\\
-        Ajustan los datos de entrada atmosféricos (como la turbidez por aerosoles o el vapor de agua) para que los resultados coincidan mejor con las observaciones en tierra. Ejemplos: uso del modelo REST2 y corrección del AOD (Aerosol Optical Depth)
-    \item Métodos estadísticos (Statistical methods) \\
-        Ajustan los datos del modelo para eliminar errores sistemáticos (sesgo) y mejorar la concordancia con datos medidos localmente.
-
-        \begin{itemize}
-            \item Eliminación de sesgo mediante adaptación lineal
-            \item Métodos no lineales (transformación de características, polinomios, etc.)
-            \item MOS (Model Output Statistics)
-            \item MCP (Measure–Correlate–Predict)
-            \item Adaptación regional (usando estaciones cercanas)
-            \item Adaptación usando funciones de distribución acumulativa (CDF)
-        \end{itemize}
-        
-    \item Adaptación de parámetros de entrada del modelo satelital \\
-        Se modifican directamente los parámetros de entrada del modelo (como el índice de claridad o datos atmosféricos) en lugar de los resultados de irradiancia.
-    \item Técnicas MCP aplicadas a datos satelitales y de reanálisis \\
-        Uso de métodos de correlación-predicción (común en energía eólica) para extender los datos de corto plazo a largo plazo con apoyo en modelos de reanálisis.
-        
-    \item Combinación de datos satelitales con modelos meteorológicos numéricos (NWP)\\
-        Mejora de la precisión mediante regresiones no paramétricas (como modelos aditivos generalizados - GAM) que combinan datos satelitales con modelos meteorológicos.
+    \item \textbf{Métodos basados en modelos físicos (Physically based methods)}\\
+    Este enfoque busca ajustar los datos de entrada atmosféricos (como la turbidez por aerosoles o el vapor de agua) de manera que los resultados del modelo coincidan mejor con las observaciones en tierra. Una evaluación de este enfoque fue realizada sobre el modelo REST2 \citep{Gueymard2008}, donde se buscó corregir la entrada del AOD (Aerosol Optical Depth), tal como se reporta en \citep{Gueymard2012}.
+    
+    \item \textbf{Métodos estadísticos (Statistical methods)}\\
+    En diversos campos de la meteorología es común aplicar correcciones estadísticas sobre los datos modelados. Por ejemplo, las tasas de lluvia pueden corregirse para reflejar mejor las condiciones locales, o las velocidades del viento pueden adaptarse a mediciones locales para análisis de recursos eólicos. De manera similar, en este enfoque se ajustan los datos de un modelo con el objetivo de eliminar errores sistemáticos (sesgos) y mejorar la concordancia con los datos medidos localmente.\\
+    
+    Bajo este enfoque se han evaluado propuestas que buscan reducir el sesgo a partir de factores de corrección derivados de series medidas y modeladas superpuestas, como en \citep{Polo2015, Harmsen2014}, donde se aplican correcciones lineales sobre la serie modelada. También se han explorado alternativas no lineales que dependen de múltiples parámetros, utilizando funciones polinómicas \citep{Carow2008}.\\
+    
+    Dentro de este enfoque se incluyen los métodos basados en estadísticas de salida de modelos (Model Output Statistics, MOS) \citep{Bender2011}. MOS consiste en un análisis de regresión lineal multivariante entre un conjunto prescrito de predictores (por ejemplo, datos derivados de satélite o estimaciones de modelos de predicción meteorológica numérica) y observaciones de superficie. El objetivo es desarrollar una ecuación de regresión multilineal que corrija los valores estimados, eliminando el sesgo y ajustando la varianza.\\
+    
+    Además, dentro de este grupo se encuentran las denominadas \textit{Adaptaciones regionales}, que emplean estaciones cercanas. Estos métodos utilizan un período de superposición de datos derivados de terreno y modelo para desarrollar una corrección aplicable a todo el registro del modelo, incluso en períodos sin datos superpuestos. Por lo tanto, su aplicación requiere disponer de al menos 9--12 meses de datos simultáneos para capturar efectos estacionales. Sin embargo, la disminución de la autocorrelación temporal al aumentar el tiempo entre los períodos de entrenamiento y corrección del modelo suele no considerarse, lo que puede resultar en sobrecorrecciones o subcorrecciones. Este aspecto es especialmente crítico para el DNI, cuya variabilidad interanual es mayor que la del GHI \citep{Lohmann2006}.\\
+    
+    Para ampliar la disponibilidad de mediciones, algunos autores han propuesto utilizar observaciones de irradiancia en una o más ubicaciones cercanas al sitio objetivo, siempre que se considere la estructura de covarianza espacial entre los datos modelados y las mediciones terrestres \citep{Ruiz2013}.\\
+    
+    Finalmente, dentro de este enfoque se incluye la \textit{Adaptación mediante funciones de distribución acumulativa (CDF)}. En este método se busca ajustar la función de distribución acumulativa de los datos derivados de satélite para que coincida con la de los datos de tierra \citep{Cebecauer2012}.
+    
+    \item \textbf{Adaptación de parámetros de entrada del modelo satelital}\\
+    En este caso, se modifican directamente los parámetros de entrada del modelo (por ejemplo, el índice de claridad o los datos atmosféricos) en lugar de los resultados de irradiancia.
+    
+    \item \textbf{Técnicas MCP aplicadas a datos satelitales y de reanálisis}\\
+    Se utilizan métodos de correlación-predicción, comunes en energía eólica, para extender los datos de corto plazo a largo plazo mediante el apoyo de modelos de reanálisis.
+    
+    \item \textbf{Combinación de datos satelitales con modelos meteorológicos numéricos (NWP)}\\
+    Este enfoque mejora la precisión mediante técnicas de regresión no paramétrica, como los modelos aditivos generalizados (GAM), que combinan datos satelitales con salidas de modelos meteorológicos numéricos.
 \end{enumerate}
-
-
-Además de presentar la clasificación anterior, se han indicado algunas directrizces que deben ser tomadas en cuenta en un proceso de adaptación. \\
 
 
 
 A partir del año 2020 se comenzaron a publicar diversos trabajos sobre Adaptación al Sitio (SA). En \citep{POLO2020} se presentan los resultados de adaptaciones realizadas en diez estaciones a escala horaria, considerando ocho modelos satelitales y dos de re-análisis. En \citep{Fernández2020} se evaluaron los resultados de la adaptación al sitio utilizando regresiones lineales múltiples (MLR) y se combinaron estos resultados con un ajuste mediante mapeo de cuantiles (QM). Este enfoque de ensamble de modelos mostró una reducción promedio del 1,7\% en el sesgo relativo y del 3,3\% en la desviación cuadrática media relativa a escala horaria. El estudio también sugiere que un año de datos es suficiente para entrenar los modelos de ajuste.
 
-En el trabajo de \citep{BABAR2020} se evaluó el desempeño de la SA en los valores medios diarios del modelo satelital CLARA-A2 y del modelo de re-análisis ERA5. Para ello, se utilizó un modelo de Random Forest para la regresión, incorporando como predictores los valores de GHI modelados por CLARA-A2 y ERA5, sus respectivos índices de cielo despejado y el ángulo cenital solar medio. Los resultados demostraron una reducción de la desviación cuadrática media de 17,9 W/m² a 16,2 W/m² y una corrección completa del sesgo inicial de -1,5 W/m². La motivación para adoptar un modelo de regresión basado en aprendizaje automático surgió de la hipótesis de que este tipo de algoritmo podría aplicar funciones de regresión distintas a cada subconjunto del espacio de datos predictivos. Este trabajo es uno de los primeros en utilizar modelos de aprendizaje automático como Random Forest para determinar una función de ajuste que calibra las mediciones en tierra y puede aplicarse a series de largo plazo.
+En el trabajo de \citep{BABAR2020} se evaluó el desempeño del proceso de SA en los valores medios diarios del modelo satelital CLARA-A2 y del modelo de re-análisis ERA5. Para ello, se utilizó un modelo de Random Forest para la regresión, incorporando como predictores los valores de GHI modelados por CLARA-A2 y ERA5, sus respectivos índices de cielo despejado y el ángulo cenital solar medio. Los resultados demostraron una reducción de la desviación cuadrática media de 17,9 W/m² a 16,2 W/m² y una corrección completa del sesgo inicial de -1,5 W/m². La motivación para adoptar un modelo de regresión basado en aprendizaje automático surgió de la hipótesis de que este tipo de algoritmo podría aplicar funciones de regresión distintas a cada subconjunto del espacio de datos predictivos. Este trabajo es uno de los primeros en utilizar modelos de aprendizaje automático como Random Forest para determinar una función de ajuste que calibra las mediciones en tierra y puede aplicarse a series de largo plazo.
 
 A partir del trabajo de Babar y colaboradores, se han publicado diversos estudios en los que se exploran modelos de aprendizaje automático como alternativa para determinar funciones de ajuste sobre series modeladas, ya sean satelitales o de re-análisis.
 
