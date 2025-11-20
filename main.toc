@@ -12,22 +12,27 @@
 \contentsline {subsubsection}{Modelos de reanálisis}{12}{section*.6}%
 \contentsline {subsubsection}{Modelos satelitales}{13}{section*.7}%
 \contentsline {section}{\numberline {1.6}Control de Calidad}{14}{section.1.6}%
-\contentsline {chapter}{\numberline {2}Adaptación al Sitio}{16}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Historia}{21}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Características}{24}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Ventajas y Desventajas}{24}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Modelos de Aprendizaje Automático}{25}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Modelo de red neuronal}{26}{subsection.2.4.1}%
-\contentsline {paragraph}{1. Propagación hacia adelante}{30}{section*.25}%
-\contentsline {paragraph}{2. Cálculo del error}{31}{section*.26}%
-\contentsline {paragraph}{3. Retropropagación}{31}{section*.27}%
-\contentsline {paragraph}{4. Actualización de pesos}{31}{section*.28}%
-\contentsline {paragraph}{5. Resumen del ciclo de aprendizaje}{31}{section*.29}%
-\contentsline {subsection}{\numberline {2.4.2}Arboles de Decisión}{32}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Random Forest}{33}{subsection.2.4.3}%
-\contentsline {subsection}{Random Forest: Un Enfoque de Aprendizaje Autom\'atico}{33}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}XGBoost}{34}{subsection.2.4.4}%
-\contentsline {section}{\numberline {2.5}Entrenamiento y Prueba}{38}{section.2.5}%
+\contentsline {chapter}{\numberline {2}Adaptación al Sitio y Aprendizaje Automático}{16}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introducción}{16}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Adaptación al Sitio (SA)}{16}{section.2.2}%
+\contentsline {subsubsection}{Definiciones}{16}{section*.8}%
+\contentsline {subsubsection}{Proceso conceptual}{17}{section*.9}%
+\contentsline {section}{\numberline {2.3}Estado del arte en Adaptación al Sitio}{21}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Características, Ventajas y Desventajas de la SA}{24}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Características}{24}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Modelos de Aprendizaje Automático aplicados a SA}{25}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Modelo de red neuronal}{26}{subsection.2.5.1}%
+\contentsline {paragraph}{1. Propagación hacia adelante}{30}{section*.27}%
+\contentsline {paragraph}{2. Cálculo del error}{30}{section*.28}%
+\contentsline {paragraph}{3. Retropropagación}{30}{section*.29}%
+\contentsline {paragraph}{4. Actualización de pesos}{31}{section*.30}%
+\contentsline {paragraph}{5. Resumen del ciclo de aprendizaje}{31}{section*.31}%
+\contentsline {subsection}{\numberline {2.5.2}Arboles de Decisión}{31}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Random Forest}{32}{subsection.2.5.3}%
+\contentsline {subsection}{Random Forest: Un Enfoque de Aprendizaje Autom\'atico}{32}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}XGBoost}{34}{subsection.2.5.4}%
+\contentsline {section}{\numberline {2.6}Entrenamiento y Prueba}{37}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Síntetis del Capítulo}{40}{section.2.7}%
 \contentsline {chapter}{\numberline {3}Adaptación al Sitio en NOA}{41}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Medidas en tierra}{41}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Control de Calidad en las Medidas}{43}{subsection.3.1.1}%
@@ -35,14 +40,15 @@
 \contentsline {section}{\numberline {3.2}Modelos de estimación}{44}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Desempeño de los modelos de GHI en el NOA}{46}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Análisis de las estimaciones 15-minutales}{46}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Análisis de las estimaciones horarias}{50}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}División del conjunto de datos}{52}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Adaptación al sitio con una variable descriptiva}{52}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Adaptación al sitio con múltiples variables descriptivas}{64}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}La necesidad de un análisis exploratorio de datos}{64}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Implementación de la adaptación con múltiples regresores}{65}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{76}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Adaptación al sitio tomando consideraciones de una serie temporal}{83}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Validación cruzada de los modelos de adaptación al sitio}{90}{section.3.8}%
-\contentsline {chapter}{\numberline {4}Conclusiones}{97}{chapter.4}%
-\contentsline {chapter}{\textbf {Anexo 1}}{114}{chapter*.84}%
+\contentsline {subsection}{\numberline {3.3.2}Análisis de las estimaciones horarias}{51}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}División del conjunto de datos}{53}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Adaptación al sitio con una variable descriptiva}{55}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Adaptación al sitio con múltiples variables descriptivas}{66}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}La necesidad de un análisis exploratorio de datos}{66}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Implementación de la adaptación con múltiples regresores}{67}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{78}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Adaptación al sitio tomando consideraciones de una serie temporal}{85}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Validación cruzada de los modelos de adaptación al sitio}{92}{section.3.8}%
+\contentsline {chapter}{\numberline {4}Conclusiones}{99}{chapter.4}%
+\contentsline {chapter}{\textbf {Anexo 1}}{116}{chapter*.86}%
+\contentsline {chapter}{\textbf {Anexo 1}}{117}{chapter*.87}%

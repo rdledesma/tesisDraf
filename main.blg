@@ -11,7 +11,8 @@ A level-1 auxiliary file: Capitulo3.aux
 A level-1 auxiliary file: conclusiones.aux
 A level-1 auxiliary file: bibliografia.aux
 The style file: plainnat.bst
-A level-1 auxiliary file: anexo.aux
+A level-1 auxiliary file: anexo1.aux
+A level-1 auxiliary file: anexo2.aux
 Database file #1: bibliografia.bib
 Warning--empty publisher in GrossiRighini2007
 Warning--empty journal in Long2010
@@ -20,45 +21,45 @@ Warning--empty chapter and pages in Thejll2015
 Warning--empty publisher in Thejll2015
 Warning--empty publisher in Wald2021
 Warning--empty booktitle in Wald2004
-You've used 147 entries,
+You've used 148 entries,
             2773 wiz_defined-function locations,
-            1700 strings with 43951 characters,
-and the built_in function-call counts, 77818 in all, are:
-= -- 7045
-> -- 5157
-< -- 77
-+ -- 1751
-- -- 1599
-* -- 6901
-:= -- 12390
-add.period$ -- 668
-call.type$ -- 147
-change.case$ -- 959
-chr.to.int$ -- 142
-cite$ -- 301
-duplicate$ -- 3068
-empty$ -- 5629
-format.name$ -- 1796
-if$ -- 16066
+            1708 strings with 44149 characters,
+and the built_in function-call counts, 78121 in all, are:
+= -- 7073
+> -- 5167
+< -- 78
++ -- 1755
+- -- 1602
+* -- 6914
+:= -- 12437
+add.period$ -- 672
+call.type$ -- 148
+change.case$ -- 963
+chr.to.int$ -- 143
+cite$ -- 303
+duplicate$ -- 3083
+empty$ -- 5661
+format.name$ -- 1800
+if$ -- 16132
 int.to.chr$ -- 6
 int.to.str$ -- 1
 missing$ -- 150
-newline$ -- 964
-num.names$ -- 588
-pop$ -- 1631
+newline$ -- 970
+num.names$ -- 592
+pop$ -- 1643
 preamble$ -- 1
-purify$ -- 826
+purify$ -- 829
 quote$ -- 0
-skip$ -- 2388
+skip$ -- 2400
 stack$ -- 0
-substring$ -- 2792
-swap$ -- 271
+substring$ -- 2794
+swap$ -- 272
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1537
+type$ -- 1548
 warning$ -- 7
-while$ -- 602
+while$ -- 605
 width$ -- 0
-write$ -- 2346
+write$ -- 2360
 (There were 7 warnings)

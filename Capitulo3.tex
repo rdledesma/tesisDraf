@@ -49,7 +49,7 @@ Todas las estaciones utilizan piranómetros que cumplen con los estándares de l
         \textbf{Sa} & Salta & Salta & -24.72 & -65.4 & 1233 & \textbf{Cwb}\\ 
         \textbf{Sca} & Salta & San Carlos & -25.8951 & -65.925 & 1624 & \textbf{Cwb}\\
         \textbf{Er} & Salta & El Rosal & -24.39278 & -65.76806 & 3355& \textbf{Bsk}\\
-        \textbf{Lq} & Jujuy & La Quiaca & -24.39278 & -65.76806 & 3355& \textbf{Bsk}\\
+        \textbf{Lq} & Jujuy & La Quiaca & -22.10 & -65.60 & 3500& \textbf{Bsk}\\
         \hline
         
         
@@ -147,9 +147,8 @@ Adicionalmente, existen otros modelos de estimación que cubren nuestro territor
 
 
 \section{Desempeño de los modelos de GHI en el NOA}
-Previo a la presentación del desempeño de los distintos procesos de adaptación al sitio se evaluaron los modelos de estimación de GHI disponibles en la región. Siendo este uno de los aportes que se pretende en este trabajo. A continuación se muestran las métricas de desempeño de los modelos calculadas sobre el conjunto de datos de de cada sitio.
 
-
+Antes de presentar el desempeño de los distintos procesos de adaptación al sitio, se evaluaron los modelos de estimación de GHI disponibles para la región, lo cual constituye uno de los principales aportes de este trabajo. A continuación, se muestran las métricas de desempeño de los modelos calculadas sobre el conjunto de datos correspondiente a cada sitio.
 
 % Antes de la tabla, si quieres aumentar la altura de filas
 \renewcommand{\arraystretch}{1.5}
@@ -214,39 +213,63 @@ Por último, en la métrica RMSE, que penaliza los errores grandes, se mantiene 
 La Figura \ref{fig:season-15} muestra la variación estacional del rRMSE (\%) para los productos CAMS y LSA-SAF con resolución de 15 minutos en todos los sitios de estudio. Se observa una clara tendencia estacional en el comportamiento del error: en general, el rRMSE tiende a aumentar durante el verano, lo que indica que la precisión de las estimaciones disminuye en este período en la mayoría de los sitios. La excepción es Yuto, donde el error permanece relativamente estable a lo largo de las estaciones. Este patrón sugiere que durante el verano hay una mayor presencia de nubosidad, lo cual podría estar afectando la capacidad de los modelos satelitales para estimar correctamente la radiación solar, mientras que en otras estaciones la cobertura nubosa es menor, permitiendo estimaciones más precisas.
 
 
+En relación con el \textit{MAE}, ambos modelos presentan magnitudes relativamente similares, aunque \textit{LSA-SAF} tiende a mostrar errores absolutos ligeramente mayores en sitios como Yu y Sa, mientras que \textit{CAMS} presenta valores más altos en Sca y Er. Esto sugiere que ninguno de los dos modelos logra una reducción clara y consistente del error en todos los sitios.
 
-En relación al MAE, ambos modelos presentan magnitudes relativamente similares, aunque LSA-SAF tiende a mostrar errores absolutos ligeramente mayores en sitios como Yu y Sa, mientras que CAMS presenta valores más altos en Sca y Er. Esto sugiere que ninguno de los dos modelos logra una reducción clara y consistente del error en todos los sitios.\\
+Por su parte, en la métrica \textit{RMSE}, que penaliza en mayor medida los errores grandes, se mantiene un patrón semejante: \textit{LSA-SAF} suele exhibir errores algo superiores a los de \textit{CAMS} en Yu y Sa, mientras que en Er y Lq la diferencia favorece al modelo satelital. En general, los resultados muestran que el desempeño relativo de los modelos depende fuertemente del sitio, sin que exista un claro ganador en todos los casos.
 
-Por último, en la métrica RMSE, que penaliza los errores grandes, se mantiene un patrón semejante: LSA-SAF suele exhibir errores algo superiores a los de CAMS en Yu y Sa, mientras que en Er y Lq la diferencia favorece al modelo satelital. En general, los resultados muestran que el desempeño relativo de los modelos depende fuertemente del sitio, sin que exista un claro ganador en todos los casos.\\
+Para complementar este análisis, la Figura~\ref{fig:RMSE-variabilidad} presenta la distribución del error relativo cuadrático medio (\textit{rRMSE}) en función de dos variables explicativas: el índice de claridad ($k_t$) y un índice de variabilidad calculado a partir de la desviación estándar de las diferencias consecutivas de GHI. Este análisis bidimensional permite examinar cómo las condiciones atmosféricas locales y la estabilidad de la irradiancia influyen en la magnitud del error de los modelos.
 
-
-
-\begin{figure}
+\begin{figure}[ht]
     \centering
-    \includegraphics[width=\linewidth]{figuras/RMSE-kt-15.pdf}
-    \caption{Variación del error cuadrático medio relativo (RRMSD) en función del indice de claridad (kt) para los cinco sitios analizados (YU, SA, SCA, ERO y LQ). Resultados para CAMS (líneas continuas) y LSASAF (líneas punteadas).}
-    \label{fig:RMSE-kt-15}
+    \includegraphics[width=\linewidth]{figuras/variabilidad.png}
+    \caption{Distribución del error relativo cuadrático medio (rRMSE) en función del índice de claridad ($k_t$) y un índice de variabilidad calculado a partir de la desviación estándar de las diferencias consecutivas de GHI.}
+    \label{fig:RMSE-variabilidad}
 \end{figure}
 
+El gráfico evidencia una relación clara entre el error y las condiciones radiativas:
 
+\begin{itemize}
+    \item \textbf{Patrón general con el índice de claridad ($k_t$):} En todos los sitios y para ambos modelos, el \textit{rRMSE} aumenta a medida que $k_t$ disminuye. Esto indica que los modelos tienden a desempeñarse mejor bajo condiciones despejadas ($k_t$ alto), mientras que las mayores discrepancias ocurren cuando el cielo está parcialmente nublado o cubierto ($k_t$ bajo), donde la radiación difusa domina y los modelos satelitales suelen presentar mayor incertidumbre. Este comportamiento es esperable y refuerza la sensibilidad de las estimaciones de GHI frente a la cobertura nubosa.
 
-En el caso de RMSD vs Kt (Figura \ref{fig:RMSE-kt-15}), se observa una marcada disminución del error a medida que aumenta la claridad atmosférica. Para condiciones de cielo más nuboso (Kt < 0.3), los valores de RRMSD son elevados en todos los sitios, superando en algunos casos los 200 \%, especialmente en la estimación proveniente de LSASAF. Sin embargo, conforme Kt aumenta (>0.5), el error desciende rápidamente y tiende a estabilizarse por debajo del 50\%, alcanzando valores mínimos en condiciones de cielo despejado (Kt > 0.7). Esta tendencia se mantiene consistente en ambos productos (CAMS y LSASAF), aunque LSASAF presenta errores relativamente mayores en las condiciones más turbias.
+    \item \textbf{Influencia de la variabilidad local ($\sigma$ de $\Delta GHI$):} En la mayoría de los casos, se observa un incremento del \textit{rRMSE} con la variabilidad. Cuando la variabilidad es baja ($\leq 50$ W/m$^2$), el error se mantiene reducido; sin embargo, a medida que aumenta ($\geq 150$–$200$ W/m$^2$), se aprecian regiones más intensas en el mapa (colores amarillos o verdes), lo que sugiere un deterioro progresivo en el ajuste. Esto refleja la dificultad de los modelos para capturar fluctuaciones rápidas en la irradiancia asociadas a nubosidad variable o transiciones atmosféricas dinámicas.
 
+    \item \textbf{Comparación CAMS vs. LSA-SAF:} Ambos modelos muestran patrones similares, aunque \textit{LSA-SAF} presenta un rango de errores ligeramente más amplio, especialmente a valores bajos de $k_t$. \textit{CAMS} exhibe una distribución más homogénea, con menor saturación en los valores altos de \textit{rRMSE}. Estas diferencias podrían estar relacionadas con la resolución temporal o con las estrategias de parametrización de nubosidad empleadas por cada sistema.
 
+    \item \textbf{Variaciones entre sitios:} Aunque el patrón global es consistente, se observan diferencias notables entre sitios. Yu y Sa muestran los mayores valores de \textit{rRMSE} bajo condiciones de bajo $k_t$, posiblemente debido a una mayor presencia de nubosidad variable o efectos locales (por ejemplo, humedad o aerosoles). Ero y Lq presentan errores más bajos en general, lo que podría vincularse con condiciones atmosféricas más estables o una mejor respuesta del modelo en esas latitudes o altitudes. Sca muestra una dispersión más amplia, indicando una combinación de regímenes atmosféricos con distinta estabilidad.
 
+    \item \textbf{Distribución vertical del error:} La mayor concentración de error en la franja $k_t < 0.3$ en todos los casos sugiere que los modelos no representan adecuadamente los componentes difusos de la radiación. Este resultado es relevante para la calibración de modelos locales y la corrección de productos satelitales en condiciones nubladas.
+\end{itemize}
 
-\begin{figure}
+El índice de variabilidad empleado se define como:
+
+\begin{equation}
+\mathrm{VarIndex}(t) = 
+\sigma(\Delta GHI_t) = 
+\sqrt{\frac{1}{N - 1} 
+\sum_{i = t - k}^{t + k} 
+\left[ (GHI_i - GHI_{i-1}) - 
+\overline{(GHI - GHI_{-1})} \right]^2}
+\end{equation}
+
+donde $GHI_i$ representa la irradiancia global horizontal en el instante $i$, 
+$\Delta GHI_t = GHI_t - GHI_{t-1}$ corresponde a la diferencia temporal de GHI, 
+$N$ es el número de muestras dentro de la ventana de cálculo (por ejemplo, $N = 10$), 
+y $\overline{(GHI - GHI_{-1})}$ denota la media de las diferencias dentro de dicha ventana.
+
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{figuras/RMSE-sza-15.pdf}
-    \caption{Variación del error cuadrático medio relativo (RRMSD) en función del ángulo cenital solar (SZA) para los cinco sitios analizados (YU, SA, SCA, ERO y LQ). Resultados para CAMS (líneas continuas) y LSASAF (líneas punteadas).}
+    \caption{Variación del error cuadrático medio relativo (rRMSE) en función del ángulo cenital solar (SZA) para los cinco sitios analizados (Yu, Sa, Sca, Ero y Lq). Resultados para CAMS (líneas continuas) y LSA-SAF (líneas punteadas).}
     \label{fig:RMSE-SZA-15}
 \end{figure}
 
+Por otro lado, la relación \textit{rRMSE}–SZA (Figura~\ref{fig:RMSE-SZA-15}) evidencia un comportamiento en forma de “U” invertida: los menores errores se concentran en ángulos intermedios (30°–50°), mientras que hacia ángulos bajos ($<20°$) y altos ($>70°$) el error aumenta de manera significativa. Esta tendencia se observa en los cinco sitios, con un incremento más pronunciado en Ero y Sa en las condiciones de SZA más extremas. En general, \textit{CAMS} muestra un mejor desempeño que \textit{LSA-SAF} en la mayoría de los intervalos, aunque las diferencias se reducen en los ángulos medios.
+
+En conjunto, estos resultados indican que la precisión de ambos productos depende fuertemente de las condiciones atmosféricas ($k_t$) y de la geometría solar (SZA). En cielos despejados y ángulos intermedios, los errores se reducen notablemente, mientras que en condiciones nubosas y en situaciones de baja o alta elevación solar los modelos presentan las mayores limitaciones.
 
 
-Por otro lado, la relación RRMSD vs SZA (Figura \ref{fig:RMSE-SZA-15}) evidencia un comportamiento en forma de “U” invertida: los menores errores se concentran en ángulos intermedios (30°–50°), mientras que hacia ángulos bajos (<20°) y altos (>70°) el error aumenta de manera significativa. Esta tendencia se observa en los cinco sitios, con un incremento más pronunciado en ERO y SA en las condiciones de SZA más extremas. En general, CAMS muestra un mejor desempeño que LSASAF en la mayoría de los intervalos, aunque las diferencias se reducen en los ángulos medios.
 
-En conjunto, estos resultados indican que la precisión de ambos productos depende fuertemente de las condiciones atmosféricas (Kt) y de la geometría solar (SZA). En cielos despejados y ángulos intermedios, los errores se reducen notablemente, mientras que en condiciones nubosas y en situaciones de baja o alta elevación solar los modelos presentan las mayores limitaciones.
+
 
 
 \subsection{Análisis de las estimaciones horarias}
@@ -344,7 +367,7 @@ De acuerdo a lo indicado en la sección \ref{MLM} el conjunto de datos debe ser 
       \hline
       \multicolumn{16}{|c|}{\textit{Resolución Temporal: 15 minutos}} \\
       \hline
-      c
+      CAMS      & -0.2 & 17.4 & 27.2 & 3.9  & 23.4 & 33.7 & 2.6  & 21.8 & 29.8 & -23.6 & 27.6 & 40.9 & -6.9 & 16.5 & 25.8 \\
       LSA-SAF & 7.6  & 16.5 & 25.5 & 17.9 & 27.4 & 39.4 & 13.1 & 22.2 & 30.9 & -7.7  & 16.2 & 26.5 & 4.0  & 12.6 & 22.6 \\
       \hline
       \multicolumn{16}{|c|}{\textit{Resolución Temporal: horaria}} \\
@@ -371,7 +394,7 @@ En esta sección se presenta una implementación del proceso de SA basada en uno
 
 Dado que el modelo de Regresión Lineal Simple (SLR por sus siglas en ingles) puede considerarse el menos complejo entre los empleados en este estudio, la primera evaluación del proceso de SA es realizada utilizando este modelo de regresión. El objetivo es comparar el desempeño de SLR con el de modelos de regresión más complejos, como el Perceptrón Multicapa (MLP) y XGBoost (XGB), utilizando las mismas métricas de evaluación.\\
 
-Para los modelos MLP y XGB, la determinación de la configuración óptima de hiperparámetros fue fundamental para lograr un desempeño consistente en las particiones de validación cruzada. Esto se llevó a cabo mediante una búsqueda exhaustiva en rejilla (Grid Search) implementada con la función \textbf{GridSearchCV} de la biblioteca \textbf{Scikit-learn} en Python \cite{Pedregosa2012}. Los rangos específicos de hiperparámetros evaluados para MLP y XGBoost se presentan en la Tabla \ref{tab:gridsearch}. La selección de hiperparámetros óptimos constituye un paso crítico en el aprendizaje automático, ya que influye directamente en la complejidad del modelo, su capacidad de generalización y su rendimiento predictivo global \cite{Goodfellow2016}.\\
+Para los modelos MLP y XGB, la determinación de la configuración óptima de hiperparámetros fue fundamental para lograr un desempeño consistente en las particiones de validación cruzada. Esto se llevó a cabo mediante una búsqueda exhaustiva en rejilla (Grid Search) implementada con la función \textbf{GridSearchCV} de la biblioteca \textbf{Scikit-learn} en Python \citep{Pedregosa2012}. Los rangos específicos de hiperparámetros evaluados para MLP y XGBoost se presentan en la Tabla \ref{tab:gridsearch}. La selección de hiperparámetros óptimos constituye un paso crítico en el aprendizaje automático, ya que influye directamente en la complejidad del modelo, su capacidad de generalización y su rendimiento predictivo global \citep{Goodfellow2016}.\\
 
 
 
@@ -456,15 +479,22 @@ En el caso del modelo MLP, el escalado puede ser importante cuando las variables
   }
 \end{table*}
 
-Los resultados obtenidos son expresados en la Tabla \ref{tab:metrics-as-1}. La evaluación comparativa de los modelos SLR,MLP y XGB, utilizando como variables de entrada los productos satelitales \textit{CAMS} y \textit{LSA-SAF}, se realizó en cinco sitios con características climáticas y geográficas diversas. El desempeño se expresó en términos de error medio de sesgo (MBE), error absoluto medio (MAE) y raíz del error cuadrático medio (RMSE), todos expresados en términos procentuales normalizados respecto al promedio de la GHI medida en cada estación (Tabla \ref{tbl:metrics_test}).  
 
-En términos generales, los errores normalizados se mantuvieron dentro de un rango moderado en todas las combinaciones de modelos y conjuntos de datos, sin observarse diferencias sustanciales entre los enfoques lineales y los no lineales. El modelo SLR mostró un desempeño competitivo en ambos conjuntos de datos, con métricas de error cercanas a las obtenidas por los modelos más complejos.  
+Los resultados resumidos en la Tabla \ref{tab:metrics-as-1} reflejan un comportamiento consistente entre los diferentes enfoques de modelado y las fuentes de datos satelitales. En términos generales, las ganancias según las métricas normalizadas que (MBE, MAE y RMSE) permanecen dentro de rangos comparables para todas las combinaciones de modelos y productos, sin evidenciar diferencias estadísticamente significativas entre los modelos lineales (SLR) y los no lineales (MLP, XGB). Este comportamiento sugiere que, bajo las condiciones actuales de los conjuntos de datos modelados, los modelos de regresión simples logran capturar gran parte de la variabilidad entre la irradiancia estimada y la medida en superficie, con un costo computacional significativamente menor.\\
 
-En el caso de \textbf{CAMS}, aunque el MLP logró reducir ligeramente el RMSE en algunos sitios, esto se produjo a costa de sesgos más pronunciados en el MBE, lo cual permite suponer una compensación entre reducción de varianza e incremento del error sistemático. El modelo XGB, por su parte, presentó un comportamiento muy similar al de SLR, con diferencias marginales.  
+Particularmente, el modelo SLR mostró un desempeño competitivo respecto a los modelos más complejos, lo cual coincide con observaciones previas en estudios de adaptación de sitio, donde las mejoras marginales obtenidas por métodos no lineales no siempre justifican su mayor complejidad. En efecto, \citep{Fernández2020} demostraron que la corrección empírica mediante regresión y mapeo cuantil puede reducir el sesgo relativo de la GHI a valores cercanos a cero, mientras que \citep{ZAINALI2024} observaron que el rendimiento de modelos basados en aprendizaje automático (como XGBoost o redes neuronales) depende fuertemente del régimen climático local, sin que exista un modelo universalmente superior.
 
-Por otro lado, al emplear \textbf{LSA-SAF} se observó una ligera mejora respecto a CAMS, particularmente en estaciones de mayor altitud (ERO y LQ), donde tanto XGB como MLP alcanzaron menores valores de MAE y RMSE. Esto sugiere que la mayor resolución temporal o la representación más detallada de nubes en LSA-SAF aportan información adicional útil para el proceso de adaptación local.  
+Asimismo, se observó que los patrones de desempeño inicial de cada producto satelital se mantienen tras la adaptación, lo que refuerza la hipótesis de que el proceso de calibración no altera sustancialmente la estructura del error inherente al origen del dato. Esto concuerda con lo señalado por \cite{POLO2020}, quienes destacan que la efectividad de la adaptación depende tanto de la calidad del producto de entrada como de la representatividad temporal de las mediciones de superficie empleadas para la corrección.
 
-No obstante, el incremento de la complejidad del modelo no se tradujo en ganancias sustanciales de desempeño. Estos resultados indican que, dadas las condiciones actuales de calidad de los datos satelitales, los modelos simples como SLR son capaces de capturar gran parte de la relación entre los insumos derivados de satélite y las mediciones de GHI en superficie, ofreciendo además mayor robustez frente al ruido y a las limitaciones en los datos de entrenamiento.  
+Por otra parte, el incremento en la complejidad del modelo no se tradujo en mejoras significativas en las métricas globales de desempeño. Este resultado es consistente con los hallazgos de \citep{Quansah2024}, quienes al aplicar corrección de sesgo a productos de reanálisis (NASA-POWER) en regiones tropicales, encontraron que métodos relativamente simples como la correspondencia de funciones de distribución acumulada (CDF) fueron suficientes para reducir los errores sistemáticos sin comprometer la coherencia temporal y espacial del recurso solar.
+
+En este sentido, la estabilidad observada del modelo SLR frente al ruido y las limitaciones del conjunto de entrenamiento sugiere que, para las condiciones locales de los sitios analizados, la relación entre las variables de entrada (GHI modelada) y la irradiancia medida puede describirse de manera robusta mediante modelos lineales. Tal comportamiento también ha sido documentado en estudios de latitudes altas, como el de \citep{ZAINALI2024}, donde se concluye que la adaptación de sitio es un proceso fuertemente dependiente de las condiciones espacio-temporales y que la ganancia en precisión ofrecida por técnicas de aprendizaje automático solo se manifiesta cuando existe suficiente heterogeneidad en los datos o presencia de no linealidades marcadas.
+
+Finalmente, estos resultados respaldan la aplicabilidad de estrategias de adaptación de sitio basadas en modelos simples en contextos donde los datos satelitales presentan buena calidad intrínseca y se dispone de series cortas de medición en superficie. En tales escenarios, la implementación de modelos parsimoniosos como SLR puede ofrecer un equilibrio óptimo entre precisión, interpretabilidad y eficiencia computacional, consolidando su utilidad en la mejora operativa de productos satelitales de irradiancia solar y en la planificación de sistemas fotovoltaicos locales.
+
+
+
+
 
 \begin{figure}[ht]
 \centering
@@ -474,7 +504,7 @@ No obstante, el incremento de la complejidad del modelo no se tradujo en gananci
     bar width=7pt,
     width=\linewidth,
     height=8cm,
-    ylabel={RMSE [\%]},
+    ylabel={rRMSE (\%)},
     xlabel={Sitios},
     symbolic x coords={YU, SA, SCA, ERO, LQ},
     xtick=data,
@@ -507,11 +537,11 @@ No obstante, el incremento de la complejidad del modelo no se tradujo en gananci
         LSA-SAF (sin adaptar), LSA-SAF SLR, LSA-SAF MLP, LSA-SAF XGB}
 \end{axis}
 \end{tikzpicture}
-\caption{RMSE en resolución de 15 minutos para cada modelo y sitio, comparando modelos sin adaptación y adaptados.}
+\caption{rRMSE(\%)( en resolución de 15 minutos para cada modelo y sitio, comparando modelos sin adaptación y adaptados.}
 \label{fig:rmse15}
 \end{figure}
 
-La Figura \ref{fig:rmse15} muestra el comportamiento del RMSE (\%) en cada sitio para los diferentes modelos de regresión utilizados. Se observa que todas las propuestas de adaptación logran reducir el RMSE en cada sitio. Aunque en algunos casos la mejora puede ser modesta, como en YU y LQ, queda evidenciado que un simple ajuste específico puede mejorar el desempeño del modelo para una ubicación determinada. Además se puede apreciar que el grado de mejora mediante la adaptación aparenta depender del modelo de estimación empleado. Cada modelo impone un límite sobre la precisión de la serie resultante, y optimizar su salida no garantiza necesariamente un desempeño superior frente a otro modelo que, de forma natural, ya proporciona una estimación más adecuada para un sitio específico.\\
+La Figura \ref{fig:rmse15} muestra el comportamiento del rRMSE en cada sitio para los diferentes modelos de regresión utilizados. Se observa que todas las propuestas de adaptación logran reducir el rRMSE en cada sitio. Aunque en algunos casos la mejora puede ser modesta, como en YU y LQ, queda evidenciado que un simple ajuste específico puede mejorar el desempeño del modelo para una ubicación determinada. Además se puede apreciar que el grado de mejora mediante la adaptación aparenta depender del modelo de estimación empleado. Cada modelo impone un límite sobre la precisión de la serie resultante, y optimizar su salida no garantiza necesariamente un desempeño superior frente a otro modelo que, de forma natural, ya proporciona una estimación más adecuada para un sitio específico.\\
 
 
 La Figura \ref{fig:scatter-yu-01} muestra un gráfico de dispersión para la GHI medida y las los modelos de CAMS (izquierdo) y LSA-SAF (derecho) con sus correspondeintes adaptaciones usando SLR y MLP
@@ -576,7 +606,7 @@ La Figura \ref{fig:mejorModelo} presenta las variaciones del rRMSE en cada sitio
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{figuras/comparativasRMSE15.png}
-    \caption{Comparación del RMSE(\%) para los modelos crudos y el mejor desempeño obtenido.}
+    \caption{Comparación del rRMSE(\%) para los modelos crudos y el mejor desempeño obtenido.}
     \label{fig:mejorModelo}
 \end{figure}
 
@@ -1036,7 +1066,7 @@ Otro aspecto destacable es la consistencia del comportamiento entre diferentes r
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{figuras/rmsd_vecinos.png}
-    \caption{RMSD(\%) comparativo para las evaluaciones utilizando el enfoque de celdas adyacentes}
+    \caption{rRMSE(\%) comparativo para las evaluaciones utilizando el enfoque de celdas adyacentes}
     \label{fig:rrmsdVecinos}
 \end{figure}
 
@@ -1236,7 +1266,7 @@ Este procedimiento permite evaluar la habilidad del modelo para mantener un dese
 \begin{subfigure}[b]{0.48\textwidth}
 \centering
 \includegraphics[width=\textwidth]{figuras/CrossValidationOneSite.png}
-\caption{Matriz de RMSD (\%) obtenida a partir de la validación cruzada entre sitios para el modelo ERA5, utilizando los modelos ajustados con celdas satelitales adyacentes al sitio de interés.}
+\caption{Matriz de rRMSE (\%) obtenida a partir de la validación cruzada entre sitios para el modelo ERA5, utilizando los modelos ajustados con celdas satelitales adyacentes al sitio de interés.}
 \label{fig:crossValidation}
 \end{subfigure}
 \hfill
@@ -1250,11 +1280,11 @@ Este procedimiento permite evaluar la habilidad del modelo para mantener un dese
 \label{fig:crossValidationAll}
 \end{figure}
 
-La Figura \ref{fig:crossValidation} presenta la matriz de sensibilidad del RMSD (\%) obtenida a partir de las validaciones cruzadas entre los distintos sitios, mientras que la Figura \ref{fig:deltaCrossValidation} muestra la diferencia en el desempeño relativo entre el modelo ERA5 original y los modelos adaptados mediante regresión múltiple (MLR). En cada matriz, las filas representan los sitios de entrenamiento y las columnas los sitios de prueba, permitiendo identificar las relaciones de transferencia entre ubicaciones.
+La Figura \ref{fig:crossValidation} presenta la matriz de sensibilidad del rRMSE (\%) obtenida a partir de las validaciones cruzadas entre los distintos sitios, mientras que la Figura \ref{fig:deltaCrossValidation} muestra la diferencia en el desempeño relativo entre el modelo ERA5 original y los modelos adaptados mediante regresión múltiple (MLR). En cada matriz, las filas representan los sitios de entrenamiento y las columnas los sitios de prueba, permitiendo identificar las relaciones de transferencia entre ubicaciones.
 
 Los resultados evidencian un aumento del error cuando los modelos son aplicados en sitios con características ambientales distintas de aquellas en las que fueron entrenados. Este comportamiento confirma que la capacidad de extrapolación espacial de los modelos de adaptación al sitio es limitada y depende fuertemente de la similitud climática y topográfica entre estaciones. En particular, los modelos ajustados en sitios de baja altitud presentan un mejor desempeño en zonas con condiciones altitudinales similares, mientras que su transferencia a regiones de mayor altura suele degradar el rendimiento. De manera opuesta, los modelos entrenados en sitios de alta montaña muestran mayor robustez cuando se aplican en otros sitios con altitudes comparables, lo que sugiere que la altitud actúa como una variable determinante en la estructura térmica y la humedad del aire, influyendo directamente en la radiación solar incidente.
 
-Asimismo, se observó que algunos sitios actúan como \textit{donantes más universales}, cuyos modelos presentan una capacidad de transferencia más amplia. Identificar estos sitios resulta esencial para optimizar la calibración regional y reducir la necesidad de ajustes locales independientes. En contraste, los valores negativos en la matriz $\Delta \text{rRMSD}$ reflejan casos donde la adaptación no solo no mejora, sino que empeora el desempeño, posiblemente debido a sobreajustes locales o a la falta de representatividad espacial de las variables predictoras. De manera general, se concluye que la transferencia entre sitios es direccional y asimétrica: un modelo entrenado en un sitio A puede funcionar adecuadamente en un sitio B, pero no necesariamente a la inversa, dependiendo de las características climáticas y de variabilidad regional de cada zona.
+Asimismo, se observó que algunos sitios actúan como \textit{donantes más universales}, cuyos modelos presentan una capacidad de transferencia más amplia. Identificar estos sitios resulta esencial para optimizar la calibración regional y reducir la necesidad de ajustes locales independientes. En contraste, los valores negativos en la matriz $\Delta \text{rRMSE}$ reflejan casos donde la adaptación no solo no mejora, sino que empeora el desempeño, posiblemente debido a sobreajustes locales o a la falta de representatividad espacial de las variables predictoras. De manera general, se concluye que la transferencia entre sitios es direccional y asimétrica: un modelo entrenado en un sitio A puede funcionar adecuadamente en un sitio B, pero no necesariamente a la inversa, dependiendo de las características climáticas y de variabilidad regional de cada zona.
 
 Estos resultados permiten establecer que la validación cruzada entre sitios constituye una herramienta fundamental para definir el grado de representatividad espacial de los modelos de adaptación. A partir de este análisis, se puede determinar qué ajustes locales son transferibles a áreas vecinas y cuáles requieren una recalibración específica. En consecuencia, para la construcción de mapas regionales \textit{site-adapted}, se propone una estrategia de generalización basada en el uso combinado de la información geográfica y de la similitud ambiental.
 

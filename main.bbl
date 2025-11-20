@@ -1,4 +1,4 @@
-\begin{thebibliography}{147}
+\begin{thebibliography}{148}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -486,6 +486,12 @@ Zengyi Huang, Haotian Zheng, Chen Li, and Chang Che.
   (1):\penalty0 33–39, Mar. 2024.
 \newblock \doi{10.54097/74414c90}.
 \newblock URL \url{https://drpress.org/ojs/index.php/ajst/article/view/19142}.
+
+\bibitem[{IEA Solar Heating and Cooling Programme}(2011--2016)]{Task46}
+{IEA Solar Heating and Cooling Programme}.
+\newblock Iea shc task 46: Solar resource assessment and forecasting.
+\newblock \url{https://task46.iea-shc.org/}, 2011--2016.
+\newblock Task Manager: Dr. David S. Renné.
 
 \bibitem[Ihsan et~al.(2024)Ihsan, Takenaka, Higuchi, Sakti, and
   Wikantika]{IHSAN2024}

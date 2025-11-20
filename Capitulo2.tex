@@ -5,8 +5,18 @@
 \renewcommand{\headrulewidth}{1pt}
 \renewcommand{\footrulewidth}{1pt}
 
-\chapter{Adaptación al Sitio}\label{ch_2}
+\chapter{Adaptación al Sitio y Aprendizaje Automático}\label{ch_2}
 
+\section{Introducción}
+
+
+La estimación precisa de la irradiancia solar es esencial para los estudios energéticos, el dimensionamiento fotovoltaico y la reconstrucción de series históricas del recurso. En regiones con escasa instrumentación, los productos satelitales y de reanálisis constituyen fuentes valiosas, aunque presentan sesgos y limitaciones. La Adaptación al Sitio (Site Adaptation, SA por sus siglas en ingles) busca corregir estos errores mediante un breve período de mediciones locales.
+
+Este capítulo establece el marco conceptual de la SA y describe los modelos de aprendizaje automático empleados para mejorar la representación del recurso solar, proporcionando las bases teóricas para los capítulos metodológicos posteriores.
+
+\section{Adaptación al Sitio (SA)}
+
+\subsubsection{Definiciones}
 El término Adaptación al Sitio (Site Adaptation, SA por sus siglas en inglés) se utiliza para describir diversos procedimientos dirigidos a mejorar la representación local de los recursos solares estimados mediante productos satelitales o modelos numéricos.
 
 En la literatura, se encuentran distintas formulaciones. Por ejemplo, \citet{POLO2016} define la Adaptación al Sitio como “todos los métodos estadísticos desarrollados para reducir la incertidumbre en el recurso solar local, orientados a mejorar los datos de irradiancia derivados de satélites mediante la disminución de errores aleatorios y, particularmente, del sesgo, utilizando observaciones terrestres correspondientes en períodos superpuestos”.
@@ -17,7 +27,16 @@ De manera similar, \citet{rs17101720} hace referencia a “la aplicación de un 
 
 Aunque cada definición destaca aspectos particulares del proceso, todas convergen en un propósito fundamental: ajustar los datos satelitales o modelados para que reflejen con mayor precisión las condiciones reales de irradiancia en un punto geográfico específico. Dicho de otro modo, la Adaptación al Sitio consiste en aplicar técnicas estadísticas que permitan reducir tanto el sesgo como la dispersión inherentes a los productos derivados de satélites, utilizando mediciones terrestres como patrón de referencia.
 
+
+\subsubsection{Proceso conceptual}
+
+
+\begin{comment}
 Este procedimiento resulta especialmente relevante en el contexto del desarrollo de proyectos solares, donde las estimaciones precisas del recurso en el largo plazo son críticas para análisis económicos, dimensionamiento y evaluación de riesgos. Aun cuando las mediciones locales se dispongan únicamente por un periodo limitado (por ejemplo, uno o dos años), la información recolectada permite calibrar series modeladas de varios años, consiguiendo una reconstrucción más confiable del comportamiento histórico del recurso solar en el sitio de interés.
+\end{comment}
+
+La SA se aplica durante un período de superposición entre la base de datos satelital/modelada y las mediciones locales. En ese intervalo se determina una función de ajuste que buscar corrigir sesgos y mejora la representación temporal del recurso. Aplicando dicha función a toda la base modelada, se obtiene una serie adaptada con mayor precisión local.
+
 
 
 
@@ -93,10 +112,14 @@ Después de la corrección (verde): los puntos se agrupan alrededor de la línea
 
 
 
-\section{Historia}
-Uno de los principales aportes sobre el tema fue realizado en el trabajo de \cite{POLO2016}, en el marco de la Tarea 46 del Programa de Calefacción y Refrigeración Solar de la Agencia Internacional de la Energía, Evaluación y pronóstico de recursos solares. En este trabajo se indica que la idea general de este proceso de corrección o calibración de datos modelados es similar a lo que se ha desarrollado en la industria eólica en el pasado \citep{Potter}.
+\section{Estado del arte en Adaptación al Sitio}
+Al revisar la bibliografía sobre el proceso de adaptación al sitio frente a la radiación solar, se observa que esta técnica fue desarrollada en el siglo XXI y que su evolución ha sido rápida. Uno de los principales aportes sobre el tema fue realizado en el trabajo de \cite{POLO2016}, en el marco de la Tarea 46 del Programa de Calefacción y Refrigeración Solar de la Agencia Internacional de la Energía, Evaluación y pronóstico de recursos solares \citep{Task46}. En este trabajo se indica que la idea general de este proceso de corrección o calibración de datos modelados es similar a lo que se ha desarrollado en la industria eólica en el pasado \citep{Potter}.
 
-Según Polo y sus colaboradores, el término Site Adaptation (SA) es actualmente utilizado en proyectos de energía solar para referirse a la mejora que puede lograrse en la irradiancia solar derivada de satélite y en los datos de modelo cuando se utilizan mediciones terrestres locales a corto plazo para corregir errores sistemáticos y sesgos en el conjunto de datos original. A partir de esta idea general, se han agrupado los diversos métodos de SA en cinco categorías que comprenden las principales estrategias para mejorar la precisión y reducir la incertidumbre en las estimaciones de radiación solar derivadas de satélites mediante el uso de mediciones locales de corta duración.
+Según Polo y sus colaboradores, el término Site Adaptation (SA) se emplea actualmente en proyectos de energía solar para describir la mejora que puede obtenerse en la irradiancia solar derivada de satélite y en los datos de modelos cuando se utilizan mediciones terrestres locales de corta duración para corregir sesgos y errores sistemáticos en los datos originales. A partir de esta definición general, Polo y su equipo proponen una clasificación de los métodos de SA en cinco categorías, que reúnen las principales estrategias destinadas a mejorar la precisión y reducir la incertidumbre de las estimaciones de radiación solar derivadas de satélite mediante el uso de mediciones locales de corta duración.
+
+
+Durante la última década, la literatura ha consolidado cinco familias principales de métodos de SA:
+
 
 \begin{enumerate}
     \item \textbf{Métodos basados en modelos físicos (Physically based methods)}\\
@@ -143,54 +166,42 @@ En el trabajo de \citep{SALAMALIKIS2022}, se aplicó SA al modelo Heliosat-4 con
 En \citep{ZAINALI2024} se evaluó un proceso de SA en tres sitios del norte de Europa utilizando diversos ajustes de mapeo de cuantiles y modelos de aprendizaje automático para ajustar los datos del modelo STRANG. Los hallazgos indican que los modelos de aprendizaje automático generalmente obtienen un rendimiento superior al de los métodos estadísticos, logrando una mejora de hasta el 9,2\% en la reducción del sesgo.
 
 
-\section{Características}
+\section{Características, Ventajas y Desventajas de la SA}
 
 Entendiendo que SA se define como el proceso de corrección de las series de irradiancia solar modeladas (ya sean satelitales o de reanálisis) mediante un periodo corto de mediciones terrestres de alta calidad. Entre sus principales características se destacan:
 
-Objetivo principal: reducir sesgos sistemáticos y errores aleatorios en las estimaciones de irradiancia, mejorando su precisión y representatividad local \citep{POLO2020, Fernández2020}.
 
-Dependencia del sitio: el desempeño de los métodos de adaptación es altamente dependiente de las condiciones locales de nubosidad, aerosoles y régimen de radiación; no existe un modelo universal válido para todas las regiones \citep{ZAINALI2024}.
-
-Duración de las mediciones necesarias: se ha demostrado que series de aproximadamente un año de datos de medición in-situ suelen ser suficientes para entrenar y validar los modelos de ajuste \citep{POLO2020, ZAINALI2024}.
-
-Diversidad metodológica: existen enfoques físicos, estadísticos y basados en aprendizaje automático (p. ej. Random Forest, redes neuronales), con desempeños variables según el contexto \citep{BABAR2020, NARVAEZ2021}.
-
-Aplicabilidad en cualquier fuente de modelado y escala temporal: la SA puede aplicarse tanto a productos derivados de satélite como a bases de datos de reanálisis, así como a resoluciones horarias, diarias o mensuales, dependiendo de la aplicación energética \citep{Fernández2020, Quansah2024}.
-
-Accesibilidad: en la práctica, se están desarrollando herramientas de libre acceso (p. ej. paquetes en R como SiteAdapt) que facilitan la implementación de los métodos de corrección \citep{Fernández2020}.
+\subsection{Características}
 
 
-\section{Ventajas y Desventajas}
+\begin{itemize}
+\item Corrige sesgos sistemáticos y errores aleatorios.
+\item Su desempeño depende en gran medida de las condiciones locales.
+\item  Aproximadamente 1 año de mediciones suele ser suficiente para entrenar modelos robustos.
+\item Puede aplicarse a productos satelitales o de reanálisis en múltiples escalas temporales.
+\item Existen herramientas abiertas que facilitan su implementación.
+\end{itemize}
+
 
 \subsection*{Ventajas}
-
-Reducción significativa del sesgo: numerosos estudios han mostrado disminuciones de hasta el 100\% en el sesgo relativo de GHI tras la aplicación de SA \citep{BABAR2020,  SALAMALIKIS2022}.
-
-Mejora en la precisión estadística: métricas como RMSE, desviación relativa y similitud de distribuciones mejoran de forma consistente (con reducciones del 3–10\% en RMSE en muchos casos) \citep{Fernández2020, ZAINALI2024}.
-
-Mayor confiabilidad bancaria: la SA es una práctica solicitada por instituciones financieras en proyectos solares, al reducir la incertidumbre en los estudios de recurso \citep{Fernández2020}.
-
-Flexibilidad metodológica: la posibilidad de usar métodos simples (regresión lineal) o complejos (machine learning) permite adaptar la técnica a distintos recursos de datos y niveles de complejidad \citep{NARVAEZ2021, YANG2021}.
-
-Aplicaciones múltiples: útil para proyectos fotovoltaicos, termosolares y agrivoltaicos, ya que mejora la estimación de radiación tanto para dimensionamiento energético como para balances agrícolas \citep{ZAINALI2024}.
-
-\subsection*{Desventajas}
-
-Dependencia de datos locales: requiere campañas de medición en el sitio, que pueden ser costosas o inexistentes en ciertas regiones \citep{Quansah2024}.
-
-Limitación espacial: la corrección es estrictamente local y no siempre extrapolable a regiones cercanas sin mediciones adicionales \citep{POLO2020}.
-
-No generalización: los resultados dependen del modelo de origen y de las condiciones climáticas locales; un método que funciona bien en un sitio puede no ser adecuado en otro \citep{Fernández2020, ZAINALI2024}.
-
-Sobrecoste computacional: en el caso de los métodos de aprendizaje automático, la calibración y validación pueden requerir recursos computacionales elevados y experiencia técnica.
-
-Persistencia de incertidumbre: aunque se reduzca, nunca se elimina completamente la incertidumbre de la estimación; además, eventos extremos o fenómenos atmosféricos poco frecuentes pueden no quedar bien representados.
+\begin{itemize}
+\item Reducción significativa del sesgo.
+\item Mejora consistente en las métricas estadísticas.
+\item Flexibilidad metodológica desde modelos simples hasta algoritmos avanzados.
+\item Útil en múltiples aplicaciones energéticas y climáticas.
+\end{itemize}
 
 
+\subsection*{Desventajas y limitaciones}
 
+\begin{itemize}
+\item Requiere datos locales de alta calidad.
+\item Alcance espacial limitado: la corrección es esencialmente local.
+\item No todos los métodos se generalizan entre regiones.
+\item Algunos modelos (especialmente los de ML) pueden requerir alta capacidad computacional.
+\end{itemize}
 
-
-\section{Modelos de Aprendizaje Automático} \label{MLM}
+\section{Modelos de Aprendizaje Automático aplicados a SA} \label{MLM}
 Aunque Arthur Samuel no fue el primero en publicar un artículo que empleara el término ``aprendizaje automático'', se le atribuye la creación y definición de este concepto como el campo especializado que conocemos hoy. En su trabajo `Algunos estudios sobre aprendizaje automático usando el juego de damas' \cite{samuel1959}, presentó el aprendizaje automático como una rama de la informática que permite a las computadoras mejorar su desempeño sin necesidad de ser programadas de forma explícita.
 
 Si bien la definición original de Samuel no lo menciona directamente, un aspecto fundamental del aprendizaje automático es el \textit{autoaprendizaje}. Este concepto implica el uso de modelos estadísticos para identificar patrones y optimizar el rendimiento con base en datos e información empírica, sin requerir instrucciones de programación explícitas \cite{Theobald2024}.
@@ -672,11 +683,19 @@ Para mejorar la robustez del modelo se emplean diversas estrategias:
 \item \textbf{Validación cruzada (Cross-Validation)}: división repetida del conjunto de datos en diferentes particiones de entrenamiento y validación, promediando los resultados para obtener una estimación más estable.
 \end{itemize}
 
-\subsection*{Evaluación del modelo}
+\subsection*{Evaluación}
 Al finalizar el entrenamiento, se evalúa el modelo con el conjunto de prueba para estimar su rendimiento en situaciones reales. Las métricas empleadas dependen del tipo de problema:
 \begin{itemize}
 \item \textbf{Clasificación}: exactitud (\textit{accuracy}), precisión, exhaustividad (\textit{recall}), F1-score, AUC-ROC.
-\item \textbf{Regresión}: error cuadrático medio (MSE), error absoluto medio (MAE), $R^2$.
+\item {Regresión}: error cuadrático medio (MSE), error absoluto medio (MAE), $R^2$.
 \end{itemize}
 
 Esta separación entre entrenamiento, validación y prueba refleja el compromiso fundamental en aprendizaje automático: alcanzar un balance adecuado entre \textbf{aproximación} (capacidad de ajuste) y \textbf{generalización} (capacidad de predecir datos no vistos) \cite{Mostafa2012}.
+
+
+Las métricas más relevantes en SA incluyen MAE, RMSE, rMBE y rRMSD, que permiten evaluar tanto el sesgo como la dispersión del error.
+
+
+\section{Síntetis del Capítulo}
+Este capítulo estableció los fundamentos teóricos de la Adaptación al Sitio, revisó los métodos disponibles en la literatura, describió los modelos de ML aplicados en esta tesis y presentó las bases del proceso de entrenamiento y evaluación. Este marco conceptual sostiene la metodología desarrollada en los capítulos siguientes.
+
