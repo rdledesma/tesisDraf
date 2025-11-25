@@ -16,7 +16,7 @@ Este capítulo establece el marco conceptual de la SA y describe los modelos de 
 
 \section{Adaptación al Sitio (SA)}
 
-\subsubsection{Definiciones}
+\subsection{Definiciones}
 El término Adaptación al Sitio (Site Adaptation, SA por sus siglas en inglés) se utiliza para describir diversos procedimientos dirigidos a mejorar la representación local de los recursos solares estimados mediante productos satelitales o modelos numéricos.
 
 En la literatura, se encuentran distintas formulaciones. Por ejemplo, \citet{POLO2016} define la Adaptación al Sitio como “todos los métodos estadísticos desarrollados para reducir la incertidumbre en el recurso solar local, orientados a mejorar los datos de irradiancia derivados de satélites mediante la disminución de errores aleatorios y, particularmente, del sesgo, utilizando observaciones terrestres correspondientes en períodos superpuestos”.
@@ -25,21 +25,33 @@ Asimismo, \citet{YANG2021427} la describe como “procedimientos para corregir e
 
 De manera similar, \citet{rs17101720} hace referencia a “la aplicación de un método de corrección a productos de irradiancia en cuadrícula mediante el uso de mediciones en el sitio”.
 
-Aunque cada definición destaca aspectos particulares del proceso, todas convergen en un propósito fundamental: ajustar los datos satelitales o modelados para que reflejen con mayor precisión las condiciones reales de irradiancia en un punto geográfico específico. Dicho de otro modo, la Adaptación al Sitio consiste en aplicar técnicas estadísticas que permitan reducir tanto el sesgo como la dispersión inherentes a los productos derivados de satélites, utilizando mediciones terrestres como patrón de referencia.
+Aunque cada definición destaca aspectos particulares del proceso, todas convergen en un propósito fundamental: ajustar los datos modelados para que reflejen con mayor precisión las condiciones reales de irradiancia en un punto geográfico específico. Dicho de otro modo, la Adaptación al Sitio consiste en aplicar técnicas estadísticas que permitan reducir tanto el sesgo como la dispersión inherentes a los productos derivados de satélites o de re-análisis, utilizando mediciones terrestres como patrón de referencia.
 
 
-\subsubsection{Proceso conceptual}
+\subsection{Proceso conceptual}
 
 
 \begin{comment}
 Este procedimiento resulta especialmente relevante en el contexto del desarrollo de proyectos solares, donde las estimaciones precisas del recurso en el largo plazo son críticas para análisis económicos, dimensionamiento y evaluación de riesgos. Aun cuando las mediciones locales se dispongan únicamente por un periodo limitado (por ejemplo, uno o dos años), la información recolectada permite calibrar series modeladas de varios años, consiguiendo una reconstrucción más confiable del comportamiento histórico del recurso solar en el sitio de interés.
 \end{comment}
 
-La SA se aplica durante un período de superposición entre la base de datos satelital/modelada y las mediciones locales. En ese intervalo se determina una función de ajuste que buscar corrigir sesgos y mejora la representación temporal del recurso. Aplicando dicha función a toda la base modelada, se obtiene una serie adaptada con mayor precisión local.
+La SA se aplica durante un período de superposición entre la base de datos satelital/modelada y las mediciones locales. En ese intervalo se determina una función de ajuste que busca corrigir sesgos y mejorar la representación temporal del recurso. Aplicando dicha función a toda la base modelada, se obtiene una serie adaptada con mayor precisión local.
 
 
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.97\linewidth]{figuras/SiteAdaptationProcedure.png}
+    \caption{ Esquema conceptual del proceso de adaptación al sitio.}
+    \label{fig:siteProcedure}
+\end{figure}
 
+
+En la Figura \ref{fig:siteProcedure} se muestra conceptualmente el proceso de Adaptación al Sitio, que parte de una base de datos medida (BDM) y de una base de datos satelital (BDS). El periodo temporal en el que los datos medidos y los modelados se superponen (overlap) es cuando se realiza la adaptación propiamente dicha, ya que es cuando se corrigen los datos modelados con los datos medidos mediante una función que intenta correlacionarlos. Aplicando esta función a toda la BDS se puede obtener una base de datos adaptada (BDA).
+En esencia, la Adaptación al Sitio se fundamenta en el principio de que los datos modelados por satélite o de reanálisis, aunque valiosos por su cobertura espacial y continuidad temporal, presentan inevitables limitaciones inherentes al proceso de observación remota, como la resolución espacial de las cámaras satelitales , los algoritmos de recuperación atmosférica, la presencia de nubosidad compleja o condiciones locales particulares, que no logran ser captadas o procesadas y, por lo tanto el modelo no podrá registrarlas en su salidas.\\
+
+
+\begin{comment}
 
 \begin{figure}[ht]
     \centering
@@ -53,9 +65,9 @@ La Figura \ref{fig:example}  ilustra una comparación entre tres conjuntos de da
 
 Medición en sitio (línea sólida): representa la referencia real tomada con instrumentos locales.
 
-Satélite sin adaptar (línea discontinua): se observa un sesgo, ya que la serie está sistemáticamente desplazada respecto a la referencia. Además, los picos y valles no coinciden con exactitud, reflejando errores aleatorios.
+Modelada sin adaptar (línea discontinua): se observa un sesgo, ya que la serie está sistemáticamente desplazada respecto a la referencia. Además, los picos y valles no coinciden con exactitud, reflejando errores aleatorios.
 
-Satélite adaptado (línea punteada): tras aplicar el procedimiento de adaptación al sitio, la serie corregida se ajusta mucho mejor a la referencia. El sesgo desaparece en gran medida y la forma de la curva sigue más de cerca la variabilidad de las mediciones locales.
+Modelada adaptada (línea punteada): tras aplicar el procedimiento de adaptación al sitio, la serie corregida se ajusta mucho mejor a la referencia. El sesgo desaparece en gran medida y la forma de la curva sigue más de cerca la variabilidad de las mediciones locales.
 
 Puede verse cómo la adaptación al sitio reduce tanto el error sistemático como la dispersión, logrando que los datos derivados de satélite sean más representativos de las condiciones reales de irradiancia en el lugar de interés.\\
 
@@ -72,6 +84,7 @@ La Adaptación al Sitio también implica la consideración de aspectos climátic
 
 Finalmente, la implementación de la Adaptación al Sitio contribuye directamente a la gestión del riesgo en proyectos renovables. Al minimizar la incertidumbre en la estimación del recurso solar, se fortalecen las bases técnicas para la toma de decisiones en financiamiento, operación y diseño energético, lo cual es especialmente relevante en mercados donde pequeños cambios en la previsión del recurso pueden significar diferencias significativas en los rendimientos económicos del proyecto.\\
 
+
 \begin{figure}
     \centering
     \includegraphics[width=0.97\linewidth]{figuras/siteAdaptation.png}
@@ -80,8 +93,10 @@ Finalmente, la implementación de la Adaptación al Sitio contribuye directament
 \end{figure}
 
 En la Figura \ref{fig:site-adapation} puede verse el resultado que busca obtenerse al aplicar una adaptación al sitio. En color naranja se muestra la serie de medidas en tierra y en color azul la serie modelada, ambos casos con estilo de linea lleno. Debe tenerse en cuenta que el fondo cambiante de color (blanco y salmón) está realizado así a propósito.\\ 
+\end{comment}
 
-Vamos a presentar una pequeña analogía que ayude a explicar de manera más cotidiana la idea general del preceso de SA.
+
+Presentamos una analogía sencilla que ayude a explicar, de manera más cotidiana, la idea general del preceso de SA.
 \begin{quote}
 Pensemos en un agricultor de una zona rural que todos los días escucha por la radio el pronóstico de la temperatura. Esa información es fundamental para planificar su jornada: saber si debe llevar abrigo, más agua o proteger ciertos cultivos. En esta historia, ese pronóstico radial representa los datos de un modelo o de un satélite —una estimación general que sirve como guía, pero que no siempre refleja con precisión lo que ocurre en su propio terreno.
 
@@ -204,8 +219,10 @@ Entendiendo que SA se define como el proceso de corrección de las series de irr
 \section{Modelos de Aprendizaje Automático aplicados a SA} \label{MLM}
 Aunque Arthur Samuel no fue el primero en publicar un artículo que empleara el término ``aprendizaje automático'', se le atribuye la creación y definición de este concepto como el campo especializado que conocemos hoy. En su trabajo `Algunos estudios sobre aprendizaje automático usando el juego de damas' \cite{samuel1959}, presentó el aprendizaje automático como una rama de la informática que permite a las computadoras mejorar su desempeño sin necesidad de ser programadas de forma explícita.
 
-Si bien la definición original de Samuel no lo menciona directamente, un aspecto fundamental del aprendizaje automático es el \textit{autoaprendizaje}. Este concepto implica el uso de modelos estadísticos para identificar patrones y optimizar el rendimiento con base en datos e información empírica, sin requerir instrucciones de programación explícitas \cite{Theobald2024}.
+Si bien la definición original de Samuel no lo menciona directamente, un aspecto fundamental del aprendizaje automático es el \textit{autoaprendizaje}. Este concepto implica el uso de modelos estadísticos para identificar patrones y optimizar el rendimiento con base en datos e información empírica, sin requerir instrucciones de programación explícitas \citep{Theobald2024}.
 
+
+\begin{comment}
 Samuel no infirió que las máquinas puedan tomar decisiones sin programación previa. Al contrario, el aprendizaje automático depende en gran medida de la entrada de código. En cambio, observó que las máquinas pueden realizar una tarea específica utilizando datos de entrada en lugar de depender de un comando de entrada directo.
 
 \begin{figure}[H]
@@ -214,8 +231,9 @@ Samuel no infirió que las máquinas puedan tomar decisiones sin programación p
     \caption{Comparación entre el comando de entrada y los datos de entrada}
     \label{fig:ML}
 \end{figure}
+\end{comment}
 
-
+ \begin{comment}
 
 \subsection{Modelo de red neuronal}
 
@@ -314,17 +332,19 @@ El perceptrón simple, basado en esta estructura, funciona como un clasificador 
 
 Aunque este modelo es simple y útil, su capacidad de representación es limitada. Para superar estas restricciones se introducen las redes \textbf{multicapa}.
 
+\end{comment}
+
 \subsubsection*{Perceptrón Multicapa (MLP)}
 
 El \textit{Perceptrón Multicapa} (MLP, por sus siglas en inglés) organiza neuronas en diferentes capas: una capa de entrada, una o varias capas ocultas y una capa de salida (Fig. \ref{fig:MLP}). Gracias a esta estructura, el MLP puede aproximar funciones no lineales y resolver problemas más complejos.
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[scale=0.6]{figuras/MLP.png}
     \caption{Esquema de una red neuronal multicapa (MLP).}
     \label{fig:MLP}
 \end{figure}
-
+\begin{comment}
 Un MLP con una capa oculta se puede definir como:
 
 \begin{equation}
@@ -332,10 +352,9 @@ Un MLP con una capa oculta se puede definir como:
 \end{equation}
 
 donde $x$ es el vector de entrada, $W^{(1)}, W^{(2)}$ son matrices de pesos, $b^{(1)}, b^{(2)}$ los sesgos y $f^{(1)}, f^{(2)}$ las funciones de activación de cada capa \cite{ghanou2016mlp}.
+\end{comment}
 
-\subsubsection*{MLP en la estimación de irradiancia solar}
-
-En el contexto de la estimación de la irradiancia global horizontal (GHI), el MLP puede verse como un \textit{equipo de expertos neuronales}. Cada neurona aporta una “opinión parcial” a partir de las variables meteorológicas (nubosidad, humedad, ángulo solar, aerosoles), mientras que las capas ocultas integran estas opiniones para refinar la predicción de manera no lineal \cite{torobayona2012mlp}.  
+En el contexto de la estimación de la GHI, el MLP puede verse como un \textit{equipo de expertos neuronales}. Cada neurona aporta una “opinión parcial” a partir de las variables meteorológicas (nubosidad, humedad, ángulo solar, aerosoles), mientras que las capas ocultas integran estas opiniones para refinar la predicción de manera no lineal \citep{torobayona2012mlp}.  
 
 \begin{figure} 
 \centering 
@@ -366,6 +385,8 @@ En el contexto de la estimación de la irradiancia global horizontal (GHI), el M
 \end{figure}
 
 El MLP ofrece una estructura potente y flexible capaz de modelar relaciones no lineales complejas, esto permite considerarlo como una herramienta adecuada para la estimación de irradiancia solar.
+
+\begin{comment}
 
 \subsubsection*{Ejemplo práctico de entrenamiento en un MLP}
 
@@ -446,7 +467,7 @@ donde $x_i$ es la entrada a la neurona $j$. Este procedimiento se repite para to
 Este procedimiento es la base del entrenamiento de redes neuronales modernas. A pesar de su simplicidad, este esquema permite que los MLP aproximen relaciones altamente no lineales, siendo especialmente útiles para la estimación de la irradiancia solar, donde influyen múltiples variables meteorológicas de manera simultánea.
 
 
-
+\end{comment}
 
 
 
@@ -458,11 +479,12 @@ Este procedimiento es la base del entrenamiento de redes neuronales modernas. A 
 
 
 \subsection{Arboles de Decisión}
-Los árboles de decisión son modelos no paramétricos (es decir que no se no toman suposiciones previas sobre la forma de distribución de los datos) que se utilizan principalmente para la resolución de problemas de clasificación o regresión. También son conocidos como árboles de clasificación y regresión (CART, classification and regression trees). Este tipo de modelo fue propuesto por Leo Breiman en el libro \cite{breiman1984}
+Los árboles de decisión son modelos no paramétricos (es decir que no se no toman suposiciones previas sobre la forma de distribución de los datos) que se utilizan principalmente para la resolución de problemas de clasificación o regresión. También son conocidos como árboles de clasificación y regresión (CART, classification and regression trees). Este tipo de modelo fue propuesto por Leo Breiman en el libro \cite{breiman1984}.
 
+\begin{comment}
 Los árboles de decisión se basan en una serie de reglas de decisión para dividir el espacio de características predictoras en un número menor de regiones disjuntas en cada una de las cuales los valores de la variable respuesta son similares.
 
-Un árbol de decisión parte del conjunto de datos de entrenamiento, correspondiente a un nodo raíz, y lo va dividiendo recursivamente en subconjuntos de datos homogéneos, dando lugar a nuevos nodos. La manera de formar los subgrupos es mediante la formulación de preguntas con respuesta binaria (si la variable respuesta es `jugar al tenis' se formula la pregunta ¿Sí o No juega al tenis?; si es `pesa más o menos de 75 kg.' la pregunta es ¿el peso es <=75 o >75?). \\
+
 
 Los árboles de decisión se pueden clasificar en función del tipo de variable respuesta, si la variable de respuesta $y$ es cuantitativa el árbol es de regresión, si $y$ es cuantitativa el árbol es de clasificación.
 
@@ -480,15 +502,20 @@ El proceso general de construcción de un árbol de regresión puede describirse
 
     \item Hacer una predicción para cada región: para cada observación que cae en una región $R_j$, la predicción será simplemente la media de los valores de respuesta de las observaciones de entrenamiento dentro de $R_j$.
 \end{enumerate}
+\end{comment}
 
 
 \subsection{Random Forest}
 \addcontentsline{toc}{subsection}{Random Forest: Un Enfoque de Aprendizaje Autom\'atico}
 
-El algoritmo \textbf{Random Forest} (RF) es un modelo de aprendizaje supervisado de tipo \textit{ensemble} que se utiliza para resolver problemas de \textbf{clasificaci\'on} y \textbf{regresi\'on} \cite{louppe2015, salman2024}. Este m\'etodo, conceptualizado por Leo Breiman, es una extensi\'on del concepto de \textit{bagging} y se ha establecido como una t\'ecnica muy precisa y robusta en la miner\'ia de datos \cite{cutler2011}.
+El algoritmo \textbf{Random Forest} (RF) es un modelo de aprendizaje supervisado de tipo \textit{ensemble} que se utiliza para resolver problemas de \textbf{clasificaci\'on} y \textbf{regresi\'on} \citep{louppe2015, salman2024}. Este m\'etodo, conceptualizado por Leo Breiman, es una extensi\'on del concepto de \textit{bagging} y se ha establecido como una t\'ecnica muy precisa y robusta en la miner\'ia de datos \citep{cutler2011}.
 
 
-El fundamento de RF es la construcci\'on de un conjunto de m\'ultiples \'arboles de decisi\'on, donde cada \'arbol se entrena sobre un subconjunto de datos generado de forma aleatoria \cite{salman2024}. La aleatoriedad se introduce en dos niveles principales para garantizar que los \'arboles sean diversos y que el modelo no se sobreajuste:
+El fundamento de RF es la construcci\'on de un conjunto de m\'ultiples \'arboles de decisi\'on, donde cada \'arbol se entrena sobre un subconjunto de datos generado de forma aleatoria.
+
+\begin{comment}
+
+La aleatoriedad se introduce en dos niveles principales para garantizar que los \'arboles sean diversos y que el modelo no se sobreajuste:
 
 \begin{enumerate}
     \item \textbf{Muestreo con reemplazo (Bootstrapping)}: Se generan m\'ultiples submuestras del conjunto de datos de entrenamiento original, con la posibilidad de que una misma observaci\'on aparezca varias veces en la misma submuestra. Cada submuestra se usa para entrenar un \'arbol de decisi\'on individual \cite{salman2024}.
@@ -525,13 +552,13 @@ Random Forest ofrece varias ventajas significativas para el an\'alisis de datos 
     \item \textbf{Estimaci\'on de la importancia de las variables}: El algoritmo proporciona una medida integrada que indica la contribuci\'on relativa de cada variable al modelo, lo que facilita la interpretaci\'on de los resultados \cite{cutler2011}.
 \end{itemize}
 
-
+\end{comment}
 
 \subsection{XGBoost}
 
-El algoritmo \textit{Extreme Gradient Boosting} (XGBoost) es una implementación optimizada del método de \textit{Gradient Boosted Decision Trees} (GBDT) \cite{chen2016xgboost}.
+El algoritmo \textit{Extreme Gradient Boosting} (XGBoost) es una implementación optimizada del método de \textit{Gradient Boosted Decision Trees} (GBDT) \citep{chen2016xgboost}.
 Su funcionamiento consiste en combinar múltiples árboles de decisión simples para construir un modelo robusto, de manera semejante a cómo un equipo de especialistas aporta su conocimiento colectivo para tomar mejores decisiones.
-XGBoost se ha consolidado como estado del arte en aprendizaje automático debido a su alto desempeño en tareas de clasificación y regresión en diversos dominios \cite{espinoza2020aplicacion}.\\
+XGBoost se ha consolidado como estado del arte en aprendizaje automático debido a su alto desempeño en tareas de clasificación y regresión en diversos dominios \citep{espinoza2020aplicacion}.\\
 
 
 Para entender el algoritmo y su aplicación en la estimación de la GHI, podemos usar una analogía. Supongamos que deseamos predecir la GHI en un lugar específico.
@@ -541,6 +568,7 @@ Un único árbol de decisión actúa como un \textit{experto solitario}, que uti
 XGBoost supera esta limitación mediante un \textit{comité de expertos}, es decir, un conjunto de árboles que se construyen secuencialmente para aprender de los errores de sus predecesores. Cada árbol nuevo se centra en corregir las predicciones incorrectas de los anteriores, especializándose en las regiones donde estos fallaron. Así, el modelo colectivo refina sus predicciones de manera progresiva. Esta dinámica se ilustra en la Figura \ref{fig:xgb_experts}.
 
 Podemos compararlo con un proceso de deliberación científica: el primer investigador propone un modelo básico; otro detecta que no captura los días parcialmente nublados y lo corrige; un tercero ajusta los errores en días despejados con baja humedad. Con el tiempo, el grupo obtiene un modelo más completo que cualquiera de los expertos individuales.\\
+
 
 Esta idea refleja la esencia del \textit{gradient boosting}: aprendizaje aditivo y secuencial, donde cada árbol se incorpora para reducir la pérdida residual del conjunto previo \cite{chen2016xgboost}. La fuerza del modelo final no está en la exactitud de cada árbol individual (clasificador débil), sino en la sinergia de todos ellos, formando un predictor colectivo altamente robusto.
 En el caso de la estimación de GHI, el ensamble de árboles de XGBoost permite capturar relaciones complejas entre variables meteorológicas y solares, mientras controla el sobreajuste mediante regularización y técnicas adicionales como \textit{shrinkage} y submuestreo \cite{xgboostdoc}.
@@ -556,6 +584,8 @@ En resumen, si un árbol es un experto solitario con visión parcial, XGBoost fu
 \tikzset{ flecha/.style={ thick, postaction={decorate, decoration={ markings, mark=at position 1 with {\arrow{>}} }} } } 
 % Dibujar las flechas para los nodos exp1, exp2, exp3, exp4 hacia final
 \foreach \i in {1,2,3,4}{ \draw[flecha] (exp\i.east) -- +(2,0) |- (final.west); } \end{tikzpicture} \caption{Analogía del comité de expertos en XGBoost: cada árbol corrige los errores de sus predecesores y contribuye a una predicción final más precisa de la GHI.} \label{fig:xgb_experts} \end{figure}
+
+\begin{comment}
 
 Formalmente, el modelo se define como:
 
@@ -579,7 +609,7 @@ donde $T$ es el número de hojas, $w$ los pesos de cada hoja, $\gamma$ penaliza 
 
 
 % Nuevo TikZ para árbol simple 
-\begin{figure}[H] 
+\begin{figure} 
 \centering 
 \begin{tikzpicture}[sibling distance=12em, every node/.style = {shape=rectangle, rounded corners, draw, align=center, top color=white, bottom color=blue!20}] 
 \node {Nubosidad $<$ 50\%?} child { node {Sí \\ $\Rightarrow$ Alta irradiancia} } child { node {No \\ $\Rightarrow$ Baja irradiancia}};
@@ -600,7 +630,7 @@ donde $g_i$ y $h_i$ son el gradiente y la segunda derivada de la función de pé
 El proceso iterativo se representa en la Figura \ref{fig:boosting}.
 
 % TikZ proceso iterativo 
-\begin{figure}[H] 
+\begin{figure} 
 \centering 
 \begin{tikzpicture}[node distance=2cm] % Nodos de iteración 
 \node[rectangle, draw, fill=blue!20, rounded corners, minimum width=3cm, minimum height=1cm] (tree1) {Árbol 1: predicción inicial}; \node[rectangle, draw, fill=blue!20, rounded corners, minimum width=3cm, minimum height=1cm, below of=tree1] (tree2) {Árbol 2: corrige errores del árbol 1}; \node[rectangle, draw, fill=blue!20, rounded corners, minimum width=3cm, minimum height=1cm, below of=tree2] (tree3) {Árbol 3: corrige errores acumulados}; % Nodo de modelo final 
@@ -633,7 +663,7 @@ De acuerdo a las especificaciones teóricas presentadas, consideramos que el uso
 \end{enumerate}
 
 % TikZ esquema conceptual 
-\begin{figure}[H] 
+\begin{figure} 
 \centering 
 \begin{tikzpicture}[node distance=1.5cm] \node[rectangle, draw, fill=blue!20, rounded corners, minimum width=3cm, minimum height=0.8cm] (t1) {Árbol 1}; \node[rectangle, draw, fill=blue!20, rounded corners, minimum width=3cm, minimum height=0.8cm, below of=t1] (t2) {Árbol 2}; \node[rectangle, draw, fill=blue!20, rounded corners, minimum width=3cm, minimum height=0.8cm, below of=t2] (t3) {Árbol 3}; \node[rectangle, draw, fill=green!20, rounded corners, minimum width=4cm, minimum height=1cm, right of=t2, xshift=6cm] (final) {Predicción colectiva XGBoost}; \foreach \i in {t1,t2,t3}{ \draw[flecha] (\i.east) -- +(2,0) |- (final.west); } \end{tikzpicture} \caption{Esquema conceptual: múltiples árboles (\textit{expertos}) corrigen iterativamente sus errores para formar un modelo robusto.} \label{fig:esquemaxgb} \end{figure}
 
@@ -642,28 +672,28 @@ La Figura \ref{fig:esquemaxgb} resumen la idea para una predicción generica uti
 
 
 En resumen, mientras que un árbol de decisión actúa como un experto solitario y XGBoost combina múltiples árboles secuencialmente, un MLP funciona como un sistema de neuronas interconectadas que colectivamente aprenden patrones complejos en los datos, logrando predicciones precisas de irradiancia solar.
+\end{comment}
 
 
+\section{Entrenamiento, Validación y  Prueba}
 
-\section{Entrenamiento y Prueba}
-
-El proceso de construcción de un modelo de aprendizaje automático no termina en su diseño, sino que requiere fases diferenciadas de \textbf{entrenamiento}, \textbf{validación} y \textbf{prueba}, cuyo objetivo principal es garantizar la capacidad de generalización del modelo ante datos no observados.
+El proceso de construcción de un modelo de aprendizaje automático no termina en su diseño, sino que requiere fases diferenciadas de \textbf{entrenamiento}, \textbf{validación} y \textbf{prueba}, cuyo objetivo principal es garantizar la capacidad de generalización del modelo ante datos no observados. La correcta separación de los datos en entrenamiento, validación y prueba es esencial para evaluar la capacidad de generalización del modelo y evitar el sobreajuste.
 
 \subsection*{División del conjunto de datos}
 La práctica estándar consiste en dividir el conjunto de datos en tres subconjuntos:
 
 \begin{itemize}
 \item \textbf{Entrenamiento}: utilizado para ajustar los parámetros internos del modelo (pesos y sesgos en redes neuronales, divisiones en árboles de decisión, etc.).
-\item \textbf{Validación}: empleado durante el entrenamiento para seleccionar hiperparámetros y evitar el sobreajuste (\textit{overfitting}). Una proporción habitual es 80\% para entrenamiento y 20\% para validación dentro del subconjunto inicial de entrenamiento \cite{Olivas2022}.
-\item \textbf{Prueba (test)}: reservado exclusivamente para la evaluación final. Nunca se utiliza en la fase de ajuste, ya que su propósito es ofrecer una estimación imparcial del error de generalización \cite{Mostafa2012}.
+\item \textbf{Validación}: empleado durante el entrenamiento para seleccionar hiperparámetros y evitar el sobreajuste (\textit{overfitting}). Una proporción habitual es 80\% para entrenamiento y 20\% para validación dentro del subconjunto inicial de entrenamiento.
+\item \textbf{Prueba (test)}: reservado exclusivamente para la evaluación final. Nunca se utiliza en la fase de ajuste, ya que su propósito es ofrecer una estimación imparcial del error de generalización.
 \end{itemize}
 
 \subsection*{Dinámica de entrenamiento}
-Durante el entrenamiento, el error de entrenamiento disminuye progresivamente a medida que el modelo se ajusta a los datos. Paralelamente, el error de validación suele descender inicialmente, reflejando la mejora de la capacidad de generalización, hasta que alcanza un punto mínimo. A partir de ahí, si el entrenamiento continúa, el error de validación aumenta, lo que indica que el modelo comienza a memorizar los datos y pierde capacidad predictiva. Este fenómeno se conoce como \textbf{sobreajuste}, y la estrategia recomendada es detener el entrenamiento en el punto donde el error de validación es mínimo, aplicando técnicas como \textit{early stopping} o el almacenamiento de los mejores pesos (\textit{model checkpointing}) \cite{Olivas2022}.
+Durante el entrenamiento, el error de entrenamiento disminuye progresivamente a medida que el modelo se ajusta a los datos. Paralelamente, el error de validación suele descender inicialmente, reflejando la mejora de la capacidad de generalización, hasta que alcanza un punto mínimo. A partir de ahí, si el entrenamiento continúa, el error de validación aumenta, lo que indica que el modelo comienza a memorizar los datos y pierde capacidad predictiva. Este fenómeno se conoce como \textbf{sobreajuste}, y la estrategia recomendada es detener el entrenamiento en el punto donde el error de validación es mínimo, aplicando técnicas como \textit{early stopping} o el almacenamiento de los mejores pesos (\textit{model checkpointing}).
 
 
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[scale=0.6]{figuras/dinamicatv.png}
     \caption{Dinámica de entrenamiento de un modelo de aprendizaje automático. La curva azul muestra el error de entrenamiento, que disminuye progresivamente a medida que el modelo se ajusta a los datos. La curva naranja representa el error de validación, que disminuye inicialmente reflejando la mejora de la capacidad de generalización, pero comienza a aumentar después de la mejor época (línea roja discontinua), evidenciando el sobreajuste.}
@@ -674,6 +704,8 @@ Durante el entrenamiento, el error de entrenamiento disminuye progresivamente a 
 La figura \ref{fig:dinamica} ilustra la dinámica durante el entrenamiento, indicando que el modelo se adapta cada vez mejor a los datos de entrenamiento. Por otro lado, el error de validación inicialmente sigue la misma tendencia, mostrando que la capacidad de generalización del modelo mejora. Sin embargo, después de alcanzar un punto mínimo —marcado como la mejor época en la figura—, el error de validación comienza a incrementarse, mientras que el error de entrenamiento sigue descendiendo. Este comportamiento refleja el fenómeno de \textbf{sobreajuste}, en el cual el modelo comienza a memorizar los datos de entrenamiento y pierde capacidad predictiva en datos nuevos. La figura ilustra claramente este efecto y destaca la importancia de detener el entrenamiento en la época óptima o emplear técnicas como \textit{early stopping} para evitar la degradación del desempeño en validación.
 
 
+\begin{comment}
+
 \subsection*{Técnicas de regularización y validación}
 Para mejorar la robustez del modelo se emplean diversas estrategias:
 
@@ -682,18 +714,15 @@ Para mejorar la robustez del modelo se emplean diversas estrategias:
 \item \textbf{Aumento de datos (Data Augmentation)}: generación de variaciones sintéticas del conjunto de entrenamiento para mejorar la capacidad de generalización.
 \item \textbf{Validación cruzada (Cross-Validation)}: división repetida del conjunto de datos en diferentes particiones de entrenamiento y validación, promediando los resultados para obtener una estimación más estable.
 \end{itemize}
+\end{comment}
+
 
 \subsection*{Evaluación}
-Al finalizar el entrenamiento, se evalúa el modelo con el conjunto de prueba para estimar su rendimiento en situaciones reales. Las métricas empleadas dependen del tipo de problema:
-\begin{itemize}
-\item \textbf{Clasificación}: exactitud (\textit{accuracy}), precisión, exhaustividad (\textit{recall}), F1-score, AUC-ROC.
-\item {Regresión}: error cuadrático medio (MSE), error absoluto medio (MAE), $R^2$.
-\end{itemize}
 
-Esta separación entre entrenamiento, validación y prueba refleja el compromiso fundamental en aprendizaje automático: alcanzar un balance adecuado entre \textbf{aproximación} (capacidad de ajuste) y \textbf{generalización} (capacidad de predecir datos no vistos) \cite{Mostafa2012}.
+Las métricas más relevantes en SA incluyen \textbf{MBE}, \textbf{MAE} y \textbf{RMSE}, así como sus versiones normalizadas \textbf{rMBE}, \textbf{rMAE} y \textbf{rRMSE}, que permiten evaluar tanto el sesgo como la dispersión del error.
 
+El MAE cuantifica el error medio absoluto entre valores observados y estimados. El RMSE penaliza en mayor medida los errores grandes, siendo sensible a discrepancias puntuales. El rMBE expresa el sesgo relativo, indicando si el modelo sobreestima o subestima de forma sistemática. En conjunto, estas métricas permiten evaluar la fidelidad del ajuste y posibles desviaciones sistemáticas.
 
-Las métricas más relevantes en SA incluyen MAE, RMSE, rMBE y rRMSD, que permiten evaluar tanto el sesgo como la dispersión del error.
 
 
 \section{Síntetis del Capítulo}

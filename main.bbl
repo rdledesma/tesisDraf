@@ -1,4 +1,4 @@
-\begin{thebibliography}{148}
+\begin{thebibliography}{146}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,12 +12,6 @@ Gonzalo Abal, Rodrigo Alonso-Suárez, and Agustín Laguarda.
 \newblock Laboratorio de Energía Solar, Uruguay, versión 4.0 edition, junio
   2020.
 \newblock URL \url{http://les.edu.uy/}.
-
-\bibitem[Abu-Mostafa et~al.(2012)Abu-Mostafa, Magdon-Ismail, and
-  Lin]{Mostafa2012}
-Yaser~S. Abu-Mostafa, Malik Magdon-Ismail, and Hsuan-Tien Lin.
-\newblock \emph{Learning From Data}.
-\newblock AMLBook, 2012.
 
 \bibitem[Almorox et~al.(2011)Almorox, Hontoria, and Benito]{ALMOROX2011}
 J.~Almorox, C.~Hontoria, and M.~Benito.
@@ -845,15 +839,6 @@ Alfred~Dawson Quansah, Patrick Boakye, David~Ato Quansah, et~al.
 \newblock Preprint, July 2024.
 \newblock URL \url{https://doi.org/10.21203/rs.3.rs-4571887/v1}.
 \newblock Version 1.
-
-\bibitem[Ramchoun et~al.(2016)Ramchoun, Ghanou, Amine, Idrissi, and
-  Tairi]{ghanou2016mlp}
-Hassan Ramchoun, Youssef Ghanou, Mohammed Amine, Mohammed A.~Janati Idrissi,
-  and Hamid Tairi.
-\newblock Multilayer perceptron: Architecture optimization and training.
-\newblock \emph{International Journal of Interactive Multimedia and Artificial
-  Intelligence}, 4\penalty0 (1):\penalty0 26--30, 2016.
-\newblock \doi{10.9781/ijimai.2016.415}.
 
 \bibitem[Rienecker(2008)]{rienecker}
 M.M. Rienecker.
