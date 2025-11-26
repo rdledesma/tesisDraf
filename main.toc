@@ -28,7 +28,7 @@
 \contentsline {section}{\numberline {2.6}Entrenamiento, Validación y Prueba}{26}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Síntetis del Capítulo}{29}{section.2.7}%
 \contentsline {chapter}{\numberline {3}Adaptación al Sitio en NOA}{30}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Medidas en tierra}{30}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Medidas en superficie}{30}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Control de Calidad en las Medidas}{32}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Métricas de desempeño}{33}{subsection.3.1.2}%
 \contentsline {section}{\numberline {3.2}Modelos de estimación}{33}{section.3.2}%
