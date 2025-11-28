@@ -5,14 +5,93 @@
 \renewcommand{\footrulewidth}{1pt}
 \chapter{Conclusiones}
 
-Se concluye que la aplicación de técnicas de aprendizaje automático constituye una herramienta eficaz para la adaptación local de estimaciones satelitales de radiación solar. Los modelos desarrollados en esta tesis lograron mejorar la coherencia entre los datos estimados y las mediciones terrestres, reduciendo el sesgo sistemático y aumentando la representatividad espacial en sitios del Noroeste Argentino caracterizados por alta variabilidad topográfica y climática.
+En esta tesis se reportaron los resultados de un conjunto de metodologías y análisis orientados a mejorar la representatividad espacial y la precisión de las estimaciones de irradiancia solar en el Noroeste Argentino (NOA), una región marcada por condiciones meteorológicas complejas, fuerte variabilidad estacional y una histórica escasez de mediciones de superficie. El trabajo integró información proveniente de redes radiométricas locales, modelos de estimación basados en satélites y productos de reanálisis, junto con algoritmos de aprendizaje automático aplicados a la Adaptación al Sitio (Site Adaptation, SA). A partir de esta combinación de fuentes y técnicas, se analizaron en detalle los modelos disponibles para el NOA, se evaluaron estrategias de SA reportadas en la literatura y se propusieron nuevas variantes, cuyo desempeño fue examinado mediante métricas estándar en escalas horarias y de 15 minutos.
 
-Los resultados obtenidos demuestran que la combinación de múltiples fuentes de información —productos satelitales, variables meteorológicas y registros en superficie— permite construir modelos de irradiancia más robustos y precisos. 
 
-La adaptación al sitio no solo mejora la calidad de las estimaciones de radiación solar, sino que también facilita su uso en el diseño y evaluación de proyectos de energía renovable. La metodología propuesta puede integrarse en sistemas de información geográfica y en plataformas de planificación energética, contribuyendo al desarrollo de políticas sustentables y a la optimización de recursos en regiones con limitadas mediciones.
+Los resultados obtenidos constituyen un aporte significativo al diagnóstico del recurso solar en regiones del NOA, permitiendo reducir la incertidumbre de las estimaciones y mejorando la aplicabilidad de estas bases de datos para usos ingenieriles. Las metodologías desarrolladas demuestran que es posible mejorar la calidad de las estimaciones aun en sitios con limitada disponibilidad de medidas. Este capítulo resume los principales hallazgos y aporta una perspectiva sobre las líneas futuras de investigación.
 
-Asimismo, la validación cruzada entre sitios demostró que los modelos ajustados pueden generalizarse a ubicaciones sin medición mediante criterios de similitud geográfica y altitudinal. Esto abre la posibilidad de generar mapas regionales de radiación solar de mayor resolución y confiabilidad, reduciendo la dependencia de redes instrumentales costosas.
+\section{Conclusiones sobre los modelos satelitales utilizados para la estimación de GHI}
+La primera etapa del trabajo consistió en una evaluación integral del desempeño de distintos modelos de estimación satelital y de reanálisis en condiciones representativas del NOA. Para ello se analizaron las estimaciones en escala 15 minutal de los modelos de CAMS y LSASAF así como estimaciones a escala horaria, incluyendo CAMS, LSASAF, ERA5 y MERRA-2.
 
-Como trabajo futuro se propone ampliar la base de datos mediante la incorporación de nuevas estaciones radiométricas y la integración de información proveniente de satélites geoestacionarios de última generación.
+Los resultados mostraron que, si bien los modelos basados en información satelital exhiben en general un mejor desempeño relativo respecto a las estimaciones derivadas de reanálisis, su error aumenta de manera significativa en sitios de alta montaña o con presencia frecuente de nubes de desarrollo vertical. Esta degradación se manifestó especialmente en eventos con rápida evolución de la nubosidad y en días con transiciones abruptas entre cielo claro y condiciones mixtas. En la escala de 15 minutos, las discrepancias con las mediciones de superficie fueron más pronunciadas respecto a la escala horaria, reflejando la dificultad inherente de capturar procesos atmosféricos altamente transitorios mediante modelos operativos.
 
-Finalmente, se sugiere extender la aplicación de la metodología desarrollada a otras regiones del país y del continente, con el fin de generar un sistema regional de estimación de radiación solar adaptado a las condiciones locales. De igual modo, se propone vincular estos modelos con bases de datos de producción fotovoltaica real, fortaleciendo el vínculo entre la investigación académica y la operación práctica de sistemas de energía solar.
+Un aspecto particularmente relevante identificado en esta evaluación fue el desempeño anómalo de CAMS en la estación El Rosal. A diferencia de lo observado en otros sitios, donde CAMS mostró un comportamiento competitivo frente a LSASAF, en El Rosal presentó errores significativamente mayores y un patrón de sesgo persistente. Este resultado evidencia que, aun en modelos con desempeño globalmente robusto, pueden aparecer inconsistencias locales asociadas a limitaciones en la representación de la topografía, la cobertura nubosa o los parámetros atmosféricos específicos del sitio. La presencia de este caso atípico subraya la importancia de no confiar ciegamente en un único producto satelital y de realizar evaluaciones rigurosas a escala local antes de su utilización en aplicaciones sensibles.
+
+A pesar de estas limitaciones, el estudio confirmó que los productos satelitales (CAMS y LSASAF) constituyen un insumo valioso para regiones donde las mediciones de superficie son escasas o discontinuas. Su alta continuidad temporal y su resolución espacial homogénea los convierten en una base adecuada para la construcción de modelos mejorados mediante Adaptación al Sitio. Por otro lado, los modelos de reanálisis —si bien de menor precisión radiométrica— ofrecen series extensas y coherentes que pueden resultar útiles para aplicaciones climatológicas y como soporte en escenarios donde la información satelital no está disponible.
+
+En síntesis, la evaluación inicial proporcionó un diagnóstico claro: los modelos satelitales y de reanálisis disponibles ofrecen estimaciones relevantes, pero resultan insuficientes para aplicaciones de alta precisión en el NOA sin la implementación de ajustes locales. El comportamiento divergente de CAMS en El Rosal refuerza esta conclusión, mostrando que la fiabilidad de los modelos no puede asumirse de manera uniforme y que la Adaptación al Sitio constituye un componente esencial para mejorar la consistencia y la precisión de las estimaciones. Estos elementos justificaron el desarrollo de metodologías avanzadas que se llevaron adelante en este trabajo.
+
+\subsection{Conclusiones sobre la Adaptación al Sitio con variables descriptivas}
+Uno de los aportes centrales de esta tesis fue la implementación de un proceso sistemático de Adaptación al Sitio (SA) mediante modelos de regresión que incorporan información local adicional a la irradiancia modelada. En una primera aproximación se evaluó el desempeño de modelos basados en un único predictor —la irradiancia estimada por cada producto satelital o de reanálisis— con el objetivo de corregir sesgos globales y reducir el error medio. Este enfoque inicial permitió obtener mejoras en todas las localidades analizadas, aunque con un impacto acotado, evidenciando que la información contenida en el producto satelital por sí sola es insuficiente para capturar la complejidad atmosférica del NOA.
+
+En contraste, la evidencia obtenida en este trabajo mostró que la incorporación de variables descriptivas adicionales conduce a mejoras sustancialmente mayores. Los análisis realizados confirman que estas variables permiten representar procesos atmosféricos que los modelos base no capturan adecuadamente, particularmente en sitios afectados por nubosidad convectiva, topografía compleja o elevada variabilidad a corto plazo.
+
+Un resultado importante de la tesis es que el uso de modelos computacionalmente complejos no garantiza mejoras significativas cuando no existe una selección adecuada de variables. La experimentación demostró que técnicas simples como la Regresión Lineal Múltiple (MLR), correctamente configuradas, pueden ser suficientes para obtener reducciones notorias tanto en el sesgo como en el RMSE. En particular, MLR mostró un desempeño robusto y estable en la mayoría de los sitios, incluso en presencia de relaciones no estrictamente lineales, siempre que el conjunto de regresores estuviera cuidadosamente seleccionado en función de un análisis exploratorio detallado.
+
+El trabajo también evidenció que el uso de modelos más complejos, como Multilayer Perceptron o XGBoost, podrían solo estar justificado cuando se dispone de un conjunto más amplio de regresores y cuando estos capturan estructuras no lineales en la variabilidad espacial o temporal de la irradiancia. Sin embargo, cuando las variables relevantes fueron seleccionadas de forma juiciosa, las diferencias entre modelos simples y complejos tendieron a reducirse.
+
+La incorporación de información proveniente de celdas satelitales adyacentes se identificó como uno de los factores que más contribuyó a la mejora del desempeño. Esta estrategia permite introducir de manera explícita la coherencia espacial del campo radiativo, un aspecto crítico en regiones donde los procesos de nubosidad presentan estructuras espaciales bien definidas que los modelos basados en una sola celda no son capaces de capturar. Su aporte fue particularmente notable en eventos parcialmente nublados y en transiciones cielo claro–cielo mixto, donde los modelos base suelen presentar errores extremos.
+
+En conjunto, los resultados permiten afirmar que la Adaptación al Sitio con múltiples regresores constituye una herramienta sólida, versátil y de alta efectividad para mejorar la precisión de los productos satelitales y de reanálisis en regiones complejas. La combinación de selección cuidadosa de variables, modelos de complejidad moderada y la incorporación de información espacial representa un enfoque equilibrado que optimiza el compromiso entre precisión, interpretabilidad y costo computacional. Estos elementos consolidan la SA como un componente indispensable para el desarrollo de bases de irradiancia de alta calidad en el NOA.
+
+
+
+\subsection{Conclusiones sobre la validación cruzada y la generalización espacial}
+
+La validación cruzada entre sitios constituyó un elemento clave del proceso metodológico. Este procedimiento permitió evaluar si los modelos adaptados mantenían su desempeño en sitios sin mediciones, un aspecto crítico en regiones donde la disponibilidad de datos es limitada.
+
+Los resultados indican que los modelos adaptados conservan un desempeño satisfactorio siempre que exista similitud geográfica y altitudinal entre el sitio objetivo y las localidades utilizadas para el entrenamiento. Esta observación confirma que la Adaptación al Sitio no solo es útil para mejorar estimaciones en lugares instrumentados, sino que también puede emplearse para extrapolar correcciones a sitios vecinos donde no se dispone de mediciones de superficie.
+
+Este hallazgo abre la puerta a generar mapas regionales más confiables, con mayor continuidad espacial que los mapas derivados únicamente de datos satelitales. Asimismo, pone de manifiesto la importancia de seleccionar cuidadosamente los sitios de entrenamiento, sugiriendo que una futura expansión de la red de mediciones permitiría aumentar la robustez de estas extrapolaciones.
+
+
+\subsection{Síntesis conceptual del aporte de la tesis}
+
+El trabajo realizado demuestra que la integración de medidas en superficie con técnicas de aprendizaje automático y estimaciones satelitales o de renaláisis permite mejorar significativamente la representatividad espacial de las bases de datos de irradiancia en regiones complejas. Las metodologías propuestas son reproducibles, escalables y de bajo costo relativo, y constituyen una alternativa eficaz frente a la necesidad de expandir redes de medición costosas.
+
+Los aportes principales incluyen:
+
+\begin{itemize}
+\item el diagnóstico detallado del desempeño de modelos de irradiancia actuales en el NOA.
+\item la propuesta y validación de metodologías de Adaptación al Sitio con múltiples regresores.
+\item la demostración del valor de integrar información espacialmente coherente mediante celdas adyacentes.
+\item la confirmación de que la SA puede generalizarse y aplicarse para generar mapas regionales de mejor calidad.
+\end{itemize}
+
+
+Estos elementos constituyen una base conceptual y práctica para futuros desarrollos en la región y sientan las bases para una caracterización más robusta del recurso solar.
+
+
+
+\subsection{Perspectivas a futuro}
+
+
+A partir de los resultados alcanzados, surgen diversas líneas de investigación que podrían profundizar y expandir los aportes de esta tesis:
+
+\begin{itemize}
+
+\item Incorporación de nuevas fuentes satelitales. Incluir variables adicionales basadas en  GOES-16/19 podría ser una buena estrategía debido a las características de la imágenes debribadas de dicho satélite y en realación con el posicionamiento del satélite respecto a región del NOA.
+
+
+\item Extender la capacidad del enfoque basado en celdas adyacentes al sitio de interes. Se pueden evaluar enfoques que consideren variación a corto plazo del recurso solar, por ejemplo añadiendo información diferenciada en el tiempo ademas de solo la información de los vecinos al mismo tiempo.
+
+
+\item Integración con datos de producción fotovoltaica real.   Vincular las estimaciones con datos operativos de plantas solares permitiría validar y ajustar los modelos desde una perspectiva energética y no solo radiométrica.
+
+\item Expansión sistemática de la validación cruzada. La incorporación de nuevas estaciones en zonas de alta montaña permitiría evaluar mejor la capacidad de generalización y la estabilidad de los modelos.
+
+\item Desarrollo de herramientas operativas. Los modelos generados podrían integrarse en plataformas web o servicios API destinados a instituciones públicas o privadas, ampliando su impacto práctico.
+
+
+\end{itemize}
+
+
+
+
+
+\subsection{Conclusión final}
+
+La tesis demuestra que la combinación adecuada de datos satelitales, mediciones de superficie y técnicas modernas de aprendizaje automático ofrece una vía eficaz para mejorar la calidad de las estimaciones de irradiancia en regiones con variabilidad atmosférica compleja. Los avances metodológicos, las mejoras obtenidas y las perspectivas de desarrollo futuro constituyen una contribución relevante para el campo de la evaluación del recurso solar en Argentina y en regiones con características similares.
+
+Los resultados obtenidos no solo reducen la incertidumbre de los modelos existentes, sino que también permiten construir herramientas más robustas, transferibles y de utilidad directa para la planificación y operación de sistemas energéticos basados en la energía solar.
+

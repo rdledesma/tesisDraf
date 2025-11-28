@@ -44,5 +44,11 @@
 \contentsline {section}{\numberline {3.7}Adaptación al sitio tomando consideraciones de una serie temporal}{74}{section.3.7}%
 \contentsline {section}{\numberline {3.8}Validación cruzada de los modelos de adaptación al sitio}{81}{section.3.8}%
 \contentsline {chapter}{\numberline {4}Conclusiones}{88}{chapter.4}%
-\contentsline {chapter}{\textbf {Anexo 1}}{105}{chapter*.64}%
-\contentsline {chapter}{\textbf {Anexo 1}}{106}{chapter*.65}%
+\contentsline {section}{\numberline {4.1}Conclusiones sobre los modelos satelitales utilizados para la estimación de GHI}{88}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Conclusiones sobre la Adaptación al Sitio con variables descriptivas}{89}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Conclusiones sobre la validación cruzada y la generalización espacial}{90}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Síntesis conceptual del aporte de la tesis}{91}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Perspectivas a futuro}{91}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Conclusión final}{92}{subsection.4.1.5}%
+\contentsline {chapter}{\textbf {Anexo 1}}{109}{chapter*.64}%
+\contentsline {chapter}{\textbf {Anexo 1}}{110}{chapter*.65}%
