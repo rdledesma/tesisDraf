@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.23)  28 NOV 2025 14:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.23)  1 DEC 2025 09:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -408,6 +408,18 @@ Package caption Info: New subtype `subfigure' on input line 238.
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count304
 )
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
@@ -844,26 +856,26 @@ LaTeX Info: Redefining \% on input line 12.
 (./conclusiones.aux) (./bibliografia.aux) (./anexo1.aux) (./anexo2.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -887,7 +899,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 58.
+Package hyperref Info: Link coloring ON on input line 60.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -2557,25 +2569,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [108]
 \openout2 = `anexo1.aux'.
 
- (./anexo1.tex) [109
+ (./anexo1.tex [109
 
 
 
 
-]
+])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.11469pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11469pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
+
+[110]
 \openout2 = `anexo2.aux'.
 
- (./anexo2.tex [110
+ (./anexo2.tex [111
 
 
 
 
 ]
-<figuras/Mapas/1_Enero.png, id=1913, 2385.91376pt x 1743.51375pt>
+<figuras/Mapas/1_Enero.png, id=1937, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/1_Enero.png Graphic file (type png)
 <use figuras/Mapas/1_Enero.png>
 Package pdftex.def Info: figuras/Mapas/1_Enero.png  used on input line 38.
-(pdftex.def)             Requested size: 461.94324pt x 337.54956pt.
+(pdftex.def)             Requested size: 481.3977pt x 374.41449pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2588,12 +2609,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
-[111]
-<figuras/Mapas/2_Febrero.png, id=1919, 2393.94376pt x 1720.4275pt>
+[112]
+<figuras/Mapas/2_Febrero.png, id=1942, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/2_Febrero.png Graphic file (type png)
 <use figuras/Mapas/2_Febrero.png>
 Package pdftex.def Info: figuras/Mapas/2_Febrero.png  used on input line 44.
-(pdftex.def)             Requested size: 461.94324pt x 331.97743pt.
+(pdftex.def)             Requested size: 437.62888pt x 340.3726pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2606,12 +2627,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
-[112 <./figuras/Mapas/1_Enero.png>]
-<figuras/Mapas/3_Marzo.png, id=1924, 722.7pt x 650.43pt>
+[113 <./figuras/Mapas/1_Enero.png>]
+<figuras/Mapas/3_Marzo.png, id=1949, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/3_Marzo.png Graphic file (type png)
 <use figuras/Mapas/3_Marzo.png>
 Package pdftex.def Info: figuras/Mapas/3_Marzo.png  used on input line 50.
-(pdftex.def)             Requested size: 461.94324pt x 415.74776pt.
+(pdftex.def)             Requested size: 481.3977pt x 374.41449pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2624,12 +2645,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
-[113 <./figuras/Mapas/2_Febrero.png>]
-<figuras/Mapas/4_Abril.png, id=1930, 722.7pt x 650.43pt>
+[114 <./figuras/Mapas/2_Febrero.png>]
+<figuras/Mapas/4_Abril.png, id=1955, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/4_Abril.png Graphic file (type png)
 <use figuras/Mapas/4_Abril.png>
 Package pdftex.def Info: figuras/Mapas/4_Abril.png  used on input line 56.
-(pdftex.def)             Requested size: 461.94324pt x 415.74776pt.
+(pdftex.def)             Requested size: 481.3977pt x 374.41449pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2642,12 +2663,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
-[114 <./figuras/Mapas/3_Marzo.png>]
-<figuras/Mapas/5_Mayo.png, id=1936, 722.7pt x 650.43pt>
+[115 <./figuras/Mapas/3_Marzo.png>]
+<figuras/Mapas/5_Mayo.png, id=1961, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/5_Mayo.png Graphic file (type png)
 <use figuras/Mapas/5_Mayo.png>
 Package pdftex.def Info: figuras/Mapas/5_Mayo.png  used on input line 62.
-(pdftex.def)             Requested size: 461.94324pt x 415.74776pt.
+(pdftex.def)             Requested size: 481.3977pt x 374.41449pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2660,12 +2681,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
-[115 <./figuras/Mapas/4_Abril.png>]
-<figuras/Mapas/6_Junio.png, id=1942, 722.7pt x 650.43pt>
+[116 <./figuras/Mapas/4_Abril.png>]
+<figuras/Mapas/6_Junio.png, id=1967, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/6_Junio.png Graphic file (type png)
 <use figuras/Mapas/6_Junio.png>
 Package pdftex.def Info: figuras/Mapas/6_Junio.png  used on input line 68.
-(pdftex.def)             Requested size: 461.94324pt x 415.74776pt.
+(pdftex.def)             Requested size: 481.3977pt x 374.41449pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2678,12 +2699,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
-[116 <./figuras/Mapas/5_Mayo.png>]
-<figuras/Mapas/7_Julio.png, id=1948, 722.7pt x 650.43pt>
+[117 <./figuras/Mapas/5_Mayo.png>]
+<figuras/Mapas/7_Julio.png, id=1973, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/7_Julio.png Graphic file (type png)
 <use figuras/Mapas/7_Julio.png>
 Package pdftex.def Info: figuras/Mapas/7_Julio.png  used on input line 74.
-(pdftex.def)             Requested size: 461.94324pt x 415.74776pt.
+(pdftex.def)             Requested size: 481.3977pt x 374.41449pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2696,12 +2717,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
-[117 <./figuras/Mapas/6_Junio.png>]
-<figuras/Mapas/8_Agosto.png, id=1954, 722.7pt x 650.43pt>
+[118 <./figuras/Mapas/6_Junio.png>]
+<figuras/Mapas/8_Agosto.png, id=1979, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/8_Agosto.png Graphic file (type png)
 <use figuras/Mapas/8_Agosto.png>
 Package pdftex.def Info: figuras/Mapas/8_Agosto.png  used on input line 80.
-(pdftex.def)             Requested size: 461.94324pt x 415.74776pt.
+(pdftex.def)             Requested size: 481.3977pt x 374.41449pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2714,13 +2735,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
-[118 <./figuras/Mapas/7_Julio.png>]
-<figuras/Mapas/9_Septiembre.png, id=1960, 722.7pt x 650.43pt>
+[119 <./figuras/Mapas/7_Julio.png>]
+<figuras/Mapas/9_Septiembre.png, id=1986, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/9_Septiembre.png Graphic file (type png)
 <use figuras/Mapas/9_Septiembre.png>
 Package pdftex.def Info: figuras/Mapas/9_Septiembre.png  used on input line 86.
 
-(pdftex.def)             Requested size: 461.94324pt x 415.74776pt.
+(pdftex.def)             Requested size: 481.3977pt x 374.41449pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2733,12 +2754,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
-[119 <./figuras/Mapas/8_Agosto.png>]
-<figuras/Mapas/10_Octubre.png, id=1967, 722.7pt x 650.43pt>
+[120 <./figuras/Mapas/8_Agosto.png>]
+<figuras/Mapas/10_Octubre.png, id=1992, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/10_Octubre.png Graphic file (type png)
 <use figuras/Mapas/10_Octubre.png>
 Package pdftex.def Info: figuras/Mapas/10_Octubre.png  used on input line 92.
-(pdftex.def)             Requested size: 461.94324pt x 415.74776pt.
+(pdftex.def)             Requested size: 481.3977pt x 374.41449pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2751,13 +2772,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
-[120 <./figuras/Mapas/9_Septiembre.png>]
-<figuras/Mapas/11_Noviembre.png, id=1973, 722.7pt x 650.43pt>
+[121 <./figuras/Mapas/9_Septiembre.png>]
+<figuras/Mapas/11_Noviembre.png, id=1998, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/11_Noviembre.png Graphic file (type png)
 <use figuras/Mapas/11_Noviembre.png>
 Package pdftex.def Info: figuras/Mapas/11_Noviembre.png  used on input line 98.
 
-(pdftex.def)             Requested size: 461.94324pt x 415.74776pt.
+(pdftex.def)             Requested size: 481.3977pt x 374.41449pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2770,13 +2791,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
-[121 <./figuras/Mapas/10_Octubre.png>]
-<figuras/Mapas/12_Diciembre.png, id=1979, 722.7pt x 650.43pt>
+[122 <./figuras/Mapas/10_Octubre.png>]
+<figuras/Mapas/12_Diciembre.png, id=2004, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/12_Diciembre.png Graphic file (type png)
 <use figuras/Mapas/12_Diciembre.png>
 Package pdftex.def Info: figuras/Mapas/12_Diciembre.png  used on input line 104
 .
-(pdftex.def)             Requested size: 461.94324pt x 415.74776pt.
+(pdftex.def)             Requested size: 481.3977pt x 374.41449pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2789,11 +2810,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
-[122 <./figuras/Mapas/11_Noviembre.png>]
-<figuras/Mapas/TMY.png, id=1985, 4385.38374pt x 2995.19pt>
+[123 <./figuras/Mapas/11_Noviembre.png>]
+<figuras/Mapas/TMY.png, id=2010, 4385.38374pt x 2995.19pt>
 File: figuras/Mapas/TMY.png Graphic file (type png)
 <use figuras/Mapas/TMY.png>
-Package pdftex.def Info: figuras/Mapas/TMY.png  used on input line 114.
+Package pdftex.def Info: figuras/Mapas/TMY.png  used on input line 111.
 (pdftex.def)             Requested size: 481.3977pt x 328.78638pt.
 )
 
@@ -2804,7 +2825,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
-[123 <./figuras/Mapas/12_Diciembre.png>]
+[124 <./figuras/Mapas/12_Diciembre.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -2813,7 +2834,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
-[124 <./figuras/Mapas/TMY.png>] (./main.aux (./portada.aux)
+[125 <./figuras/Mapas/TMY.png>] (./main.aux (./portada.aux)
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
  (./dedicatoria.aux) (./agradecimientos.aux) (./resumen.aux) (./Capitulo1.aux) 
@@ -2824,14 +2845,18 @@ LaTeX Info: Redefining \% on input line 12.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D2B9F55BBC94DD0D553593AD90F1D021;11654.
+(rerunfilecheck)             Checksum: 10D6306FBE53EABDAA5CC9F6070D7E4C;11657.
  ) 
 Here is how much of TeX's memory you used:
- 36974 strings out of 474222
- 853725 string characters out of 5748733
+ 37071 strings out of 474222
+ 856067 string characters out of 5748733
  1978975 words of memory out of 5000000
- 58179 multiletter control sequences out of 15000+600000
+ 58249 multiletter control sequences out of 15000+600000
  574018 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,19n,93p,2172b,2382s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2851,10 +2876,10 @@ e1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
 frm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/sh
 are/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sfxc1200.pfb>
-Output written on main.pdf (138 pages, 15329594 bytes).
+Output written on main.pdf (139 pages, 15625081 bytes).
 PDF statistics:
- 2172 PDF objects out of 2487 (max. 8388607)
- 1885 compressed objects within 19 object streams
- 426 named destinations out of 1000 (max. 500000)
+ 2204 PDF objects out of 2487 (max. 8388607)
+ 1913 compressed objects within 20 object streams
+ 443 named destinations out of 1000 (max. 500000)
  656 words of extra memory for PDF output out of 10000 (max. 10000000)
 

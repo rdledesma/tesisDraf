@@ -19,7 +19,7 @@
 \contentsline {figure}{\numberline {3.9}{\ignorespaces rRMSE(\%)( en resolución de 15 minutos para cada modelo y sitio, comparando modelos sin adaptación y adaptados.}}{48}{figure.caption.35}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adpaciones con SLR y MLP en Yuto.}}{49}{figure.caption.36}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR Y MLP en Salta.}}{50}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adpataciones con SLR y MLP en San Carlos.}}{50}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en San Carlos.}}{50}{figure.caption.38}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en El Rosal.}}{51}{figure.caption.39}%
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en La Quiaca.}}{52}{figure.caption.40}%
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Comparación del rRMSE(\%) para los modelos crudos y el mejor desempeño obtenido.}}{52}{figure.caption.41}%
@@ -37,16 +37,16 @@
 \contentsline {figure}{\numberline {3.27}{\ignorespaces Ejemplo de asignación por distancia geográfica y altitudinal (normalizada). En gris se representan los puntos donde se pretende aplicar la generalización (sin medición). Los puntos azul y rojo indican estaciones A y B (con medición directa). En verde se muestra el punto objetivo sin medición, que recibe el modelo de la estación más cercana. Las líneas punteadas indican las distancias tridimensionales calculadas tras la normalización, señalando cuál de ellas es menor (la que define el modelo asignado).}}{85}{figure.caption.60}%
 \contentsline {figure}{\numberline {3.28}{\ignorespaces Comparación entre la GHI medida y la estimada mediante el criterio de generalización propuesto para el reanálisis ERA5 en los sitios de Abra Pampa (a) y Cerrillos (b).}}{86}{figure.caption.63}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Mapa de GHI medio mensual – Enero (TMY).}}{112}{figure.caption.67}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Mapa de GHI medio mensual – Febrero (TMY).}}{113}{figure.caption.68}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Mapa de GHI medio mensual – Marzo (TMY).}}{114}{figure.caption.69}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Mapa de GHI medio mensual – Abril (TMY).}}{115}{figure.caption.70}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Mapa de GHI medio mensual – Mayo (TMY).}}{116}{figure.caption.71}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Mapa de GHI medio mensual – Junio (TMY).}}{117}{figure.caption.72}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Mapa de GHI medio mensual – Julio (TMY).}}{118}{figure.caption.73}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Mapa de GHI medio mensual – Agosto (TMY).}}{119}{figure.caption.74}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Mapa de GHI medio mensual – Septiembre (TMY).}}{120}{figure.caption.75}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Mapa de GHI medio mensual – Octubre (TMY).}}{121}{figure.caption.76}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Mapa de GHI medio mensual – Noviembre (TMY).}}{122}{figure.caption.77}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Mapa de GHI medio mensual – Diciembre (TMY).}}{123}{figure.caption.78}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces TMY }}{124}{figure.caption.79}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Mapa de GHI medio mensual – Enero (TMY).}}{113}{figure.caption.75}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Mapa de GHI medio mensual – Febrero (TMY).}}{114}{figure.caption.76}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Mapa de GHI medio mensual – Marzo (TMY).}}{115}{figure.caption.77}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Mapa de GHI medio mensual – Abril (TMY).}}{116}{figure.caption.78}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Mapa de GHI medio mensual – Mayo (TMY).}}{117}{figure.caption.79}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Mapa de GHI medio mensual – Junio (TMY).}}{118}{figure.caption.80}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Mapa de GHI medio mensual – Julio (TMY).}}{119}{figure.caption.81}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Mapa de GHI medio mensual – Agosto (TMY).}}{120}{figure.caption.82}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Mapa de GHI medio mensual – Septiembre (TMY).}}{121}{figure.caption.83}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Mapa de GHI medio mensual – Octubre (TMY).}}{122}{figure.caption.84}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Mapa de GHI medio mensual – Noviembre (TMY).}}{123}{figure.caption.85}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Mapa de GHI medio mensual – Diciembre (TMY).}}{124}{figure.caption.86}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces TMY }}{125}{figure.caption.87}%

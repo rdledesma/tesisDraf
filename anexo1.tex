@@ -8,3 +8,120 @@
 
 
 \noindent \textbf{Modelo estimación de GHI en condiciones de cielo claro utilizado}.
+
+
+En este anexo se presentan las ecuaciones que definen el modelo \textit{ARGP-v2}, una versión 
+mejorada del modelo \textit{ARG-P} propuesto originalmente por Salazar et al.~(2010) para la 
+estimación de la irradiancia global horizontal en condiciones de cielo claro (GHI\textsubscript{cc}) 
+en sitios de gran altitud.  
+El modelo ARGP-v2 utiliza datos del servicio McClear de CAMS para recalibrar el índice 
+representativo de claridad en función de la altura sobre el nivel del mar.
+
+\section*{1. Ecuación general del modelo}
+
+La irradiancia global horizontal en cielo claro estimada mediante el modelo se define como:
+
+\begin{equation}
+\mathrm{GHI_{cc}} = G_0 \, K_{trP} \, M_a^{-1}
+\label{eq:argp_general}
+\end{equation}
+
+donde:
+\begin{itemize}
+  \item $G_0$: irradiancia extraterrestre horizontal.
+  \item $M_a$: masa de aire óptica relativa corregida por presión.
+  \item $K_{trP}$: índice representativo de claridad corregido por presión.
+\end{itemize}
+
+\section*{2. Masa de aire óptica relativa corregida por presión}
+
+La masa de aire óptica utilizada se basa en la formulación de Kasten corregida por presión:
+
+\begin{equation}
+M_a = \left( \frac{P}{1013} \right)
+\left[
+\cos(z) + 0.50572 \left( 96.07995^\circ - z \right)^{-1.6364}
+\right]^{-1}
+\label{eq:ma_kasten}
+\end{equation}
+
+donde $z$ es el ángulo cenital solar y $P$ la presión atmosférica local en hPa.
+
+\section*{3. Modelo ARG-P original}
+
+El índice representativo de claridad corregido por presión ($K_{trP}$) en función de la altura $A$ 
+está dado por:
+
+\subsection*{Sitios con altura menor a 1000 m}
+
+\begin{equation}
+K_{trP} = 0.7570 + 1.0112 \times 10^{-5}\, A^{1.11067}
+\label{eq:ktrp_low}
+\end{equation}
+
+\subsection*{Sitios con altura mayor o igual a 1000 m}
+
+\begin{equation}
+K_{trP} = 0.7000 + 1.6391 \times 10^{-3}\, A^{0.55000}
+\label{eq:ktrp_high}
+\end{equation}
+
+\section*{4. Cálculo del RMSE para calibración}
+
+Para ajustar el modelo ARGP-v2 se buscó minimizar el error cuadrático medio definido por:
+
+\begin{equation}
+\mathrm{RMSE} = 
+\sqrt{
+\frac{1}{M}
+\sum_{i=1}^{M}
+\left(
+\mathrm{GHI_{cc}^{ARGP\_v2}}(i)
+-
+\mathrm{GHI_{cc}^{McClear}}(i)
+\right)^2
+}
+\label{eq:rmse}
+\end{equation}
+
+donde $M$ es la cantidad de datos considerados.
+
+\section*{5. Modelo ARGP-v2}
+
+El modelo ARGP-v2 mantiene la estructura del ARG-P, pero reemplaza el índice de claridad por una 
+nueva función ajustada en función de la altura:
+
+\begin{equation}
+\mathrm{GHI_{cc}^{ARGP\_v2}} = 
+G_0 \, K_{trP\_v2}(A)\, M_a^{-1}
+\label{eq:argpv2_general}
+\end{equation}
+
+La expresión ajustada del nuevo índice de claridad es:
+
+\begin{equation}
+K_{trP\_v2}(A) = 0.649 + 0.020\, A^{0.28}
+\label{eq:ktrpv2}
+\end{equation}
+
+\section*{6. Ecuación final del modelo ARGP-v2}
+
+Sustituyendo \eqref{eq:ma_kasten} y \eqref{eq:ktrpv2} en \eqref{eq:argpv2_general}:
+
+\begin{equation}
+\boxed{
+\mathrm{GHI_{cc}^{ARGP\_v2}} =
+G_0 \left[ 0.649 + 0.020\, A^{0.28} \right]
+\left(
+\frac{P}{1013}
+\left[
+\cos(z) + 0.50572 \left( 96.07995^\circ - z \right)^{-1.6364}
+\right]^{-1}
+\right)^{-1}
+}
+\label{eq:argpv2_final}
+\end{equation}
+
+Esta expresión constituye la formulación final del modelo ARGP-v2 para estimar la irradiancia 
+global horizontal en condiciones de cielo claro.
+

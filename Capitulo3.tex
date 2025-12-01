@@ -279,7 +279,7 @@ La Figura \ref{fig:general-60} presenta la evaluación comparativa del desempeñ
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{figuras/errors_60.png}
-    \caption{Comparación del desempeño de los modelos satelitaltes CAMS y LSA-SAF y de re-análisis en los cinco sitios de estudio (Yu, Sa, Sca, Er y Lq) mediante las tres métricas estadísticas: MBE, MAE y RMSE expresadas en términos porcentuales relativos a escala horaria.}
+    \caption{Comparación del desempeño de los modelos satelitales CAMS y LSA-SAF y de re-análisis en los cinco sitios de estudio (Yu, Sa, Sca, Er y Lq) mediante las tres métricas estadísticas: MBE, MAE y RMSE expresadas en términos porcentuales relativos a escala horaria.}
     \label{fig:general-60}
 \end{figure}
 
@@ -549,7 +549,7 @@ La Figura \ref{fig:scatter-yu-01} muestra un gráfico de dispersión para la GHI
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{figuras/scatter_yu_1.png}
-    \caption{Comparación de modelos CAMS y LSASAF y las adpaciones con SLR y MLP en Yuto.}
+    \caption{Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en Yuto.}
     \label{fig:scatter-yu-01}
 \end{figure}
 
@@ -571,7 +571,7 @@ El sitio Sa presenta una mayor complejidad. Se observa una subestimación pronun
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{figuras/scatter_sca_1.png}
-    \caption{Comparación de modelos CAMS y LSASAF y las adpataciones con SLR y MLP en San Carlos.}
+    \caption{Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en San Carlos.}
     \label{fig:scatter-sca-01}
 \end{figure}
 
@@ -655,7 +655,7 @@ Antes de implementar la adaptación con todos los regresores disponibles, es fun
 
 El AED no solo ayuda a identificar qué variables pueden ser más relevantes, sino que también sirve para detectar problemas en ellas, como valores faltantes, inconsistencias o errores de modelado, que podrían afectar la calidad de la estimación \citep{Tukey1977, Behrens1997, Wilks2006}. Por ejemplo, variables mal calculadas o extremadamente ruidosas podrían introducir sesgos en el modelo de regresión, reduciendo su capacidad de generalización. Comprender estos aspectos antes de la construcción del modelo es crucial para asegurar que los resultados sean confiables y reproducibles.  
 
-Además, el AED permite evaluar relaciones no lineales y patrones temporales que podrían no ser evidentes a simple vista. Por ejemplo, la relación entre la irradiancia solar y la temperatura o la humedad puede variar a lo largo del año, y detectar estos patrones ayuda a definir qué regresores son realmente útiles \cite{ Kuhn2013}. Esta exploración es especialmente importante cuando se dispone de un gran número de variables regresoras, porque es probable que no todas aportaran información significativa.  
+Además, el AED permite evaluar relaciones no lineales y patrones temporales que podrían no ser evidentes a simple vista. Por ejemplo, la relación entre la irradiancia solar y la temperatura o la humedad puede variar a lo largo del año, y detectar estos patrones ayuda a definir qué regresores son realmente útiles \citep{ Kuhn2013}. Esta exploración es especialmente importante cuando se dispone de un gran número de variables regresoras, porque es probable que no todas aportaran información significativa.  
 
 Finalmente, realizar un AED exhaustivo permite planificar estrategias de reducción de dimensionalidad o selección de variables antes de aplicar modelos complejos. En este trabajo, se propone inicialmente realizar la adaptación del modelo utilizando todos los regresores disponibles para obtener una estimación completa. Posteriormente, se utilizarán los resultados del AED para identificar los regresores más relevantes y comparar su desempeño con el modelo completo. Este enfoque dual combina la riqueza de información disponible con la eficiencia y robustez que aporta un conjunto de variables cuidadosamente seleccionado.  
 
@@ -705,7 +705,7 @@ Aunque, desde un punto de vista técnico, es posible interpolar estas variables 
 
 
 \begin{table*}[h]
-\caption{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo en el conjunto de prubeas de los cinco sitios. Los valores están normalizados y expresados como porcentajes relativos a la media de GHI en cada sitio: 429.2~W/m$^2$ (Yu), 432.9~W/m$^2$ (Sa), 554.4~W/m$^2$ (Sca), 628.4~W/m$^2$ (Ero), y 648.7~W/m$^2$ (Lq). Los modelos etiquetados con ``(1 var.)'' indican adaptación al sitio realizada utilizando solo un regresor (CAMS o LSA-SAF).}
+\caption{Métricas de desempeño (MBE, MAE, RMSE) para cada modelo en el conjunto de pruebas de los cinco sitios. Los valores están normalizados y expresados como porcentajes relativos a la media de GHI en cada sitio: 429.2~W/m$^2$ (Yu), 432.9~W/m$^2$ (Sa), 554.4~W/m$^2$ (Sca), 628.4~W/m$^2$ (Ero), y 648.7~W/m$^2$ (Lq). Los modelos etiquetados con ``(1 var.)'' indican adaptación al sitio realizada utilizando solo un regresor (CAMS o LSA-SAF).}
 \label{tab:metricas_3_1}
 \centering
 \resizebox{\linewidth}{!}{
