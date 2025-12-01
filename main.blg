@@ -13,6 +13,7 @@ A level-1 auxiliary file: bibliografia.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: anexo1.aux
 A level-1 auxiliary file: anexo2.aux
+A level-1 auxiliary file: anexo3.aux
 Database file #1: bibliografia.bib
 Warning--empty publisher in GrossiRighini2007
 Warning--empty journal in Long2010
@@ -23,7 +24,7 @@ Warning--empty publisher in Wald2021
 Warning--empty booktitle in Wald2004
 You've used 146 entries,
             2773 wiz_defined-function locations,
-            1697 strings with 43753 characters,
+            1698 strings with 43763 characters,
 and the built_in function-call counts, 77112 in all, are:
 = -- 6990
 > -- 5089
