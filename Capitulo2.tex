@@ -147,7 +147,7 @@ Durante la última década, la literatura ha consolidado cinco familias principa
     
     Dentro de este enfoque se incluyen los métodos basados en estadísticas de salida de modelos (Model Output Statistics, MOS) \citep{Bender2011}. MOS consiste en un análisis de regresión lineal multivariante entre un conjunto prescrito de predictores (por ejemplo, datos derivados de satélite o estimaciones de modelos de predicción meteorológica numérica) y observaciones de superficie. El objetivo es desarrollar una ecuación de regresión multilineal que corrija los valores estimados, eliminando el sesgo y ajustando la varianza.\\
     
-    Además, dentro de este grupo se encuentran las denominadas \textit{Adaptaciones regionales}, que emplean estaciones cercanas. Estos métodos utilizan un período de superposición de datos derivados de terreno y modelo para desarrollar una corrección aplicable a todo el registro del modelo, incluso en períodos sin datos superpuestos. Por lo tanto, su aplicación requiere disponer de al menos 9--12 meses de datos simultáneos para capturar efectos estacionales. Sin embargo, la disminución de la autocorrelación temporal al aumentar el tiempo entre los períodos de entrenamiento y corrección del modelo suele no considerarse, lo que puede resultar en sobrecorrecciones o subcorrecciones. Este aspecto es especialmente crítico para el DNI, cuya variabilidad interanual es mayor que la del GHI \citep{Lohmann2006}.\\
+    Además, dentro de este grupo se encuentran las denominadas \textit{Adaptaciones regionales}, que emplean estaciones cercanas. Estos métodos utilizan un período de superposición de datos derivados de terreno y modelo para desarrollar una corrección aplicable a todo el registro del modelo, incluso en períodos sin datos superpuestos. Por lo tanto, su aplicación requiere disponer de al menos 9 a 12 meses de datos simultáneos para capturar efectos estacionales. Durante este período de superposición ---denominado aquí como período de \textit{calibración}--- se ajustan los parámetros de la función de corrección mediante técnicas estadísticas. Sin embargo, la disminución de la autocorrelación temporal al aumentar el tiempo entre el período de calibración y los períodos de corrección (anteriores o posteriores) suele no considerarse, lo que puede resultar en sobrecorrecciones o subcorrecciones. Este aspecto es especialmente crítico para el DNI, cuya variabilidad interanual es mayor que la del GHI \citep{Lohmann2006}.\\
     
     Para ampliar la disponibilidad de mediciones, algunos autores han propuesto utilizar observaciones de irradiancia en una o más ubicaciones cercanas al sitio objetivo, siempre que se considere la estructura de covarianza espacial entre los datos modelados y las mediciones terrestres \citep{Ruiz2013}.\\
     
@@ -159,7 +159,7 @@ Durante la última década, la literatura ha consolidado cinco familias principa
     \item \textbf{Técnicas MCP aplicadas a datos satelitales y de reanálisis}\\
     Se utilizan métodos de correlación-predicción, comunes en energía eólica, para extender los datos de corto plazo a largo plazo mediante el apoyo de modelos de reanálisis.
     
-    \item \textbf{Combinación de datos satelitales con modelos meteorológicos numéricos (NWP)}\\
+    \item \textbf{Combinación de datos satelitales con modelos meteorológicos numéricos (NWP por sus siglas en ingles)}\\
     Este enfoque mejora la precisión mediante técnicas de regresión no paramétrica, como los modelos aditivos generalizados (GAM), que combinan datos satelitales con salidas de modelos meteorológicos numéricos.
 \end{enumerate}
 
@@ -719,9 +719,12 @@ Para mejorar la robustez del modelo se emplean diversas estrategias:
 
 \subsection*{Evaluación}
 
-Las métricas más relevantes en SA incluyen \textbf{MBE}, \textbf{MAE} y \textbf{RMSE}, así como sus versiones normalizadas \textbf{rMBE}, \textbf{rMAE} y \textbf{rRMSE}, que permiten evaluar tanto el sesgo como la dispersión del error.
+Las métricas más relevantes en SA incluyen \textbf{MBE} (Error Medio de Sesgo), 
+\textbf{MAE} (Error Medio Absoluto) y \textbf{RMSE} (Error Cuadrático Medio), 
+así como sus versiones normalizadas \textbf{rMBE}, \textbf{rMAE} y \textbf{rRMSE},que permiten evaluar tanto el sesgo como la dispersión del error.
 
-El MAE cuantifica el error medio absoluto entre valores observados y estimados. El RMSE penaliza en mayor medida los errores grandes, siendo sensible a discrepancias puntuales. El rMBE expresa el sesgo relativo, indicando si el modelo sobreestima o subestima de forma sistemática. En conjunto, estas métricas permiten evaluar la fidelidad del ajuste y posibles desviaciones sistemáticas.
+El MAE cuantifica el error medio absoluto entre valores observados y estimados, 
+proporcionando una medida directa de la magnitud promedio de los errores sin considerar su signo. El RMSE penaliza en mayor medida los errores grandes, siendo particularmente sensible a discrepancias puntuales o valores atípicos. El MBE expresa el sesgo medio, indicando si el modelo sobreestima o subestima de forma sistemática; sus versiones relativas (rMBE, rMAE, rRMSE) expresan estas métricas como porcentajes del valor promedio medido, facilitando la comparación entre sitios con magnitudes de irradiancia distintas. En conjunto, estas métricas permiten evaluar la fidelidad del ajuste, las desviaciones sistemáticas y la consistencia del modelo en diferentes condiciones de operación.
 
 
 

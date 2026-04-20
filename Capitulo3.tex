@@ -16,7 +16,7 @@ A lo largo del capítulo se describen las estaciones de medida utilizadas, los p
 \section{Medidas en superficie}
 
 
-Los sitios analizados en esta tesis se resumen en la Tabla \ref{tab:sites}, donde se incluyen sus códigos de identificación, coordenadas geográficas, altitud sobre el nivel del mar, periodos de medición, clasificación climática según Köppen–Geiger \citep{peel2007} y el tipo de piranómetro utilizado. Estas estaciones  están ubicadas en el noroeste de Argentina como puede verse en la Figura \ref{fig:sites} y abarcan diversas condiciones climáticas y geográficas, que van desde tierras bajas subtropicales hasta altiplanos andinos de gran altitud.
+Los sitios analizados en esta tesis se resumen en la Tabla \ref{tab:sites}, donde se incluyen sus códigos de identificación, coordenadas geográficas, altitud sobre el nivel del mar y su clasificación climática según Köppen–Geiger \citep{peel2007}. Estas estaciones  están ubicadas en el noroeste de Argentina como puede verse en la Figura \ref{fig:sites} y abarcan diversas condiciones climáticas y geográficas, que van desde tierras bajas subtropicales hasta altiplanos andinos de gran altitud.
 
 \begin{figure}
    \centering
@@ -30,7 +30,7 @@ La estación \textbf{Sa} (Salta Capital) se encuentra en el campus experimental 
 
 La estación \textbf{Lq} (Ciudad de La Quiaca - Jujuy), se encuentra ubicada en una región que un clima estepario frío semiárido (BSk) típico de regiones andinas, y destaca por registrar uno de los mayores niveles de horas de sol anuales en Argentina. Los datos fueron registrados mediante un piranómetro Kipp \& Zonen CMP11 entre los años 2018 y 2023.
 
-La estación \textbf{Yu}, ubicada en una zona de clima subtropical húmedo (Cwa), registró datos entre 2017 y 2018 con un sensor CMP11. La estación Sca, también con clima Cwb, operó entre 2012 y 2013 con un piranómetro CMP3. Finalmente, la estación Ero, situada en una región de gran altitud con clima BSk, recopiló datos entre 2016 y 2018, igualmente con un CMP3.
+La estación \textbf{Yu}, ubicada en una zona de clima subtropical húmedo (Cwa), registró datos entre 2017 y 2018 con un sensor CMP11. La estación \textbf{Sca}, también con clima Cwb, operó entre 2012 y 2013 con un piranómetro CMP3.	 Finalmente, la estación \textbf{Ero}, situada en una región de gran altitud con clima BSk, recopiló datos entre 2016 y 2018, igualmente con un CMP3.
 
 Todas las estaciones utilizan piranómetros que cumplen con los estándares de la norma ISO 9060:2018 Clase A o B para la medición de la irradiancia global horizontal (GHI). Los datos se registraron a intervalos de un minuto, y cada valor corresponde al promedio de seis muestras tomadas cada 10 segundos.
 
@@ -48,7 +48,7 @@ Todas las estaciones utilizan piranómetros que cumplen con los estándares de l
         \textbf{Yu} & Jujuy & Yuto & -23.58 & -64.5 & 401 & \textbf{Cwa}\\ 
         \textbf{Sa} & Salta & Salta & -24.72 & -65.4 & 1233 & \textbf{Cwb}\\ 
         \textbf{Sca} & Salta & San Carlos & -25.8951 & -65.925 & 1624 & \textbf{Cwb}\\
-        \textbf{Er} & Salta & El Rosal & -24.39278 & -65.76806 & 3355& \textbf{Bsk}\\
+        \textbf{Ero} & Salta & El Rosal & -24.39278 & -65.76806 & 3355& \textbf{Bsk}\\
         \textbf{Lq} & Jujuy & La Quiaca & -22.10 & -65.60 & 3500& \textbf{Bsk}\\
         \hline
         
@@ -193,13 +193,13 @@ La Figura \ref{fig:general-15} muestra la evaluación comparativa de los modelos
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{figuras/errors_15.png}
-    \caption{Comparación del desempeño de los modelos CAMS y LSA-SAF en los cinco sitios de estudio (Yu, Sa, Sca, Er y Lq) mediante las tres métricas estadísticas: MBE, MAE y RMSE expresadas en términos porcentuales relativos a escala 15-minutal.}
+    \caption{Comparación del desempeño de los modelos CAMS y LSA-SAF en los cinco sitios de estudio (Yu, Sa, Sca, Ero y Lq) mediante las tres métricas estadísticas: MBE, MAE y RMSE expresadas en términos porcentuales relativos a escala 15-minutal.}
     \label{fig:general-15}
 \end{figure}
 
-En relación al MAE, ambos modelos presentan magnitudes relativamente similares, aunque LSA-SAF tiende a mostrar errores absolutos ligeramente mayores en sitios como Yu y Sa, mientras que CAMS presenta valores más altos en Sca y Er. Esto sugiere que ninguno de los dos modelos logra una reducción clara y consistente del error en todos los sitios.\\
+%En relación al MAE, ambos modelos presentan magnitudes relativamente similares, aunque LSA-SAF tiende a mostrar errores absolutos ligeramente mayores en sitios como Yu y Sa, mientras que CAMS presenta valores más altos en Sca y Ero. Esto sugiere que ninguno de los dos modelos logra una reducción clara y consistente del error en todos los sitios.\\
 
-Por último, en la métrica RMSE, que penaliza los errores grandes, se mantiene un patrón semejante: LSA-SAF suele exhibir errores algo superiores a los de CAMS en Yu y Sa, mientras que en Er y Lq la diferencia favorece al modelo satelital. En general, los resultados muestran que el desempeño relativo de los modelos depende fuertemente del sitio, sin que exista un claro ganador en todos los casos.\\
+%Por último, en la métrica RMSE, que penaliza los errores grandes, se mantiene un patrón semejante: LSA-SAF suele exhibir errores algo superiores a los de CAMS en Yu y Sa, mientras que en Ero y Lq la diferencia favorece al modelo satelital. En general, los resultados muestran que el desempeño relativo de los modelos depende fuertemente del sitio, sin que exista un claro ganador en todos los casos.\\
 
 
 \begin{figure} 
