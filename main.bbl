@@ -1,4 +1,4 @@
-\begin{thebibliography}{146}
+\begin{thebibliography}{143}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -323,19 +323,12 @@ W.~Greuell, J.~F. Meirink, and P.~Wang.
 \newblock URL
   \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/jgrd.50194}.
 
-\bibitem[Grossi~Gallegos(1998{\natexlab{a}})]{GrossiGallegos1998A}
-Hugo Grossi~Gallegos.
-\newblock Distribucion de la radiacion solar global en argentina. i. analisis
-  de la informacion.
-\newblock \emph{Energías Renovables y Medio Ambiente}, 4:\penalty0 13--17, 01
-  1998{\natexlab{a}}.
-
-\bibitem[Grossi~Gallegos(1998{\natexlab{b}})]{GrossiGallegos1998B}
+\bibitem[Grossi~Gallegos(1998)]{GrossiGallegos1998B}
 Hugo Grossi~Gallegos.
 \newblock Distribución de la radiación solar global en la república
   argentina. ii. cartas de radiación.
 \newblock \emph{Energías Renovables y Medio Ambiente}, 5:\penalty0 33--42, 01
-  1998{\natexlab{b}}.
+  1998.
 
 \bibitem[Grossi~Gallegos and Righini(2007)]{GrossiRighini2007}
 Hugo Grossi~Gallegos and R.~Righini.
@@ -1108,15 +1101,6 @@ Charles Spearman.
 \newblock \doi{10.2307/1412159}.
 \newblock URL \url{https://doi.org/10.2307/1412159}.
 
-\bibitem[Stephens(2005)]{Stephens2005}
-Graeme~L. Stephens.
-\newblock Cloud feedbacks in the climate system: A critical review.
-\newblock \emph{Journal of Climate}, 18\penalty0 (2):\penalty0 237 -- 273,
-  2005.
-\newblock \doi{10.1175/JCLI-3243.1}.
-\newblock URL
-  \url{https://journals.ametsoc.org/view/journals/clim/18/2/jcli-3243.1.xml}.
-
 \bibitem[Suárez et~al.(2021)Suárez, Castillo, Salazar, Acosta, Cadena, Marin,
   Utrillas, and Martínez]{Suazarez2014}
 H.~Suárez, J.~Castillo, G.~Salazar, D.~Acosta, C.~Cadena, M.~J. Marin,
@@ -1240,19 +1224,6 @@ Haixu Wu, Jiehui Xu, Jianmin Wang, and Mingsheng Long.
 \newblock In \emph{Advances in Neural Information Processing Systems
   (NeurIPS)}, 2021.
 \newblock URL \url{https://github.com/thuml/Autoformer}.
-
-\bibitem[Xie et~al.(2025)Xie, Sengupta, Yang, Habte, Buster, Benton, Foster,
-  Heidinger, and Liu]{XIE2025}
-Yu~Xie, Manajit Sengupta, Jaemo Yang, Aron Habte, Grant Buster, Brandon Benton,
-  Michael Foster, Andrew Heidinger, and Yangang Liu.
-\newblock The influence of cloud cover on the reliability of satellite-based
-  solar resource data.
-\newblock \emph{Renewable and Sustainable Energy Reviews}, 208:\penalty0
-  115070, 2025.
-\newblock ISSN 1364-0321.
-\newblock \doi{https://doi.org/10.1016/j.rser.2024.115070}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S1364032124007962}.
 
 \bibitem[Yang and Gueymard(2021{\natexlab{a}})]{YANG2021}
 Dazhi Yang and Christian~A. Gueymard.

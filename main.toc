@@ -5,51 +5,50 @@
 \contentsline {chapter}{\textbf {Resumen.}}{\es@scroman {viii}}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivo de la tesis}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Metodología}{4}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Antecedentes del estudio de la radiación solar en Argentina y el NOA.}{4}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Redes de Medidas}{11}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Modelos de Estimación}{12}{section.1.5}%
+\contentsline {section}{\numberline {1.2}Antecedentes del estudio de la radiación solar en Argentina y en el Noroeste Argentino.}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Redes de Medidas}{10}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Modelos de Estimación}{11}{section.1.4}%
 \contentsline {subsubsection}{Modelos de reanálisis}{12}{section*.6}%
 \contentsline {subsubsection}{Modelos satelitales}{13}{section*.7}%
-\contentsline {section}{\numberline {1.6}Control de Calidad}{15}{section.1.6}%
-\contentsline {chapter}{\numberline {2}Adaptación al Sitio y Aprendizaje Automático}{18}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introducción}{18}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Adaptación al Sitio (SA)}{18}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Definiciones}{18}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Proceso conceptual}{19}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Estado del arte en Adaptación al Sitio}{20}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Características, Ventajas y Desventajas de la SA}{25}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Características}{25}{subsection.2.4.1}%
-\contentsline {section}{\numberline {2.5}Modelos de Aprendizaje Automático aplicados a SA}{26}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Arboles de Decisión}{27}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Random Forest}{27}{subsection.2.5.2}%
-\contentsline {subsection}{Random Forest: Un Enfoque de Aprendizaje Autom\'atico}{27}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}XGBoost}{27}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Entrenamiento, Validación y Prueba}{28}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Síntesis del Capítulo}{31}{section.2.7}%
-\contentsline {chapter}{\numberline {3}Adaptación al Sitio en NOA}{32}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Medidas en superficie}{32}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Control de Calidad en las Medidas}{33}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Métricas de desempeño}{35}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Modelos de estimación}{35}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Desempeño de los modelos de GHI en el NOA}{37}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Análisis de las estimaciones 15-minutales}{37}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Análisis de las estimaciones horarias}{43}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}División del conjunto de datos}{46}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Adaptación al sitio con una variable descriptiva}{46}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Adaptación al sitio con múltiples variables descriptivas}{57}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}La necesidad de un análisis exploratorio de datos}{57}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Implementación de la adaptación con múltiples regresores}{58}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{69}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Adaptación al sitio tomando consideraciones de una serie temporal}{76}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Validación cruzada de los modelos de adaptación al sitio}{84}{section.3.8}%
-\contentsline {chapter}{\numberline {4}Conclusiones}{90}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Conclusiones sobre los modelos satelitales utilizados para la estimación de GHI}{90}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Conclusiones sobre la Adaptación al Sitio con variables descriptivas}{91}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Conclusiones sobre la validación cruzada y la generalización espacial}{92}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Síntesis conceptual del aporte de la tesis}{93}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Perspectivas a futuro}{93}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Conclusión final}{94}{subsection.4.1.5}%
-\contentsline {chapter}{\textbf {Anexo 1}}{111}{chapter*.64}%
-\contentsline {chapter}{\textbf {Anexo 2}}{113}{equation.4.1.8}%
-\contentsline {chapter}{\textbf {Anexo 3}}{128}{figure.caption.87}%
+\contentsline {section}{\numberline {1.5}Control de Calidad}{14}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Adaptación al Sitio y Aprendizaje Automático}{16}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introducción}{16}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Adaptación al Sitio (SA)}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Definiciones}{16}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Proceso conceptual}{17}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Estado del arte en Adaptación al Sitio}{18}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Características, Ventajas y Desventajas de la SA}{23}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Características}{23}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Modelos de Aprendizaje Automático aplicados a SA}{24}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Arboles de Decisión}{25}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Random Forest}{25}{subsection.2.5.2}%
+\contentsline {subsection}{Random Forest: Un Enfoque de Aprendizaje Autom\'atico}{25}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}XGBoost}{25}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Entrenamiento, Validación y Prueba}{26}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Síntesis del Capítulo}{29}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Adaptación al Sitio en NOA}{30}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Medidas en superficie}{30}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Control de Calidad en las Medidas}{31}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Métricas de desempeño}{33}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Modelos de estimación}{33}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Desempeño de los modelos de GHI en el NOA}{35}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Análisis de las estimaciones 15-minutales}{35}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Análisis de las estimaciones horarias}{41}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}División del conjunto de datos}{44}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Adaptación al sitio con una variable descriptiva}{44}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Adaptación al sitio con múltiples variables descriptivas}{55}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}La necesidad de un análisis exploratorio de datos}{55}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Implementación de la adaptación con múltiples regresores}{56}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{67}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Adaptación al sitio tomando consideraciones de una serie temporal}{74}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Validación cruzada de los modelos de adaptación al sitio}{82}{section.3.8}%
+\contentsline {chapter}{\numberline {4}Conclusiones}{88}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Conclusiones sobre los modelos satelitales utilizados para la estimación de GHI}{88}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Conclusiones sobre la Adaptación al Sitio con variables descriptivas}{89}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Conclusiones sobre la validación cruzada y la generalización espacial}{90}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Síntesis conceptual del aporte de la tesis}{91}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Perspectivas a futuro}{91}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Conclusión final}{92}{subsection.4.1.5}%
+\contentsline {chapter}{\textbf {Anexo 1}}{108}{chapter*.64}%
+\contentsline {chapter}{\textbf {Anexo 2}}{110}{equation.4.1.8}%
+\contentsline {chapter}{\textbf {Anexo 3}}{125}{figure.caption.87}%

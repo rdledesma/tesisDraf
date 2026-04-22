@@ -16,35 +16,77 @@
 
 \section*{Resumen}
 
-Este trabajasion aborda la mejora de la representatividad espacial de las estimaciones de radiación solar provenientes de bases de datos satelitales en las provincias de Salta y Jujuy, mediante la aplicación de herramientas de inteligencia artificial. El objetivo principal fue desarrollar, evaluar y adaptar modelos de aprendizaje automático que permitan corregir los sesgos sistemáticos y reducir los errores inherentes en los productos satelitales y de reanálisis, incrementando su utilidad en contextos donde las mediciones terrestres son escasas o inexistentes.
 
-La radiación solar constituye una variable fundamental para el diseño y la operación de sistemas energéticos renovables, así como para estudios climáticos, agrícolas y ambientales. Sin embargo, la limitada cobertura espacial y temporal de las estaciones radiométricas en el Noroeste Argentino (NOA) dificulta la caracterización precisa de este recurso. Frente a ello, los modelos satelitales y de reanálisis ofrecen una alternativa viable, aunque sus estimaciones suelen presentar discrepancias respecto a las mediciones en superficie, particularmente en regiones de topografía compleja.
+Este trabajo aborda la mejora de la representatividad espacial de las estimaciones de
+radiación solar provenientes de bases de datos satelitales en las provincias de Salta y
+Jujuy, mediante la aplicación de herramientas de inteligencia artificial. La radiación solar
+constituye una variable fundamental para el diseño y la operación de sistemas energéticos
+renovables, así como para estudios climáticos, agrícolas y ambientales. La limitada cobertura
+espacial y temporal de las estaciones radiométricas en el Noroeste Argentino (NOA) dificulta
+la caracterización precisa de este recurso. Frente a ello, los modelos satelitales y de
+reanálisis ofrecen una alternativa viable, aunque sus estimaciones suelen presentar
+discrepancias respecto a las mediciones en superficie, particularmente en regiones de
+topografía compleja.
+ 
+La investigación se sustentó en una revisión exhaustiva del estado del arte sobre medición,
+modelado y estimación de la irradiancia solar global horizontal (GHI). Se analizaron las
+principales redes de medición existentes a nivel nacional e internacional, destacando la
+escasez de estaciones activas en Argentina y la ausencia de nodos de la red
+\textit{Baseline Surface Radiation Network} (BSRN) en el país. Este diagnóstico evidenció la
+necesidad de optimizar el aprovechamiento de la información satelital mediante procedimientos
+de adaptación local. Se emplearon productos satelitales representativos ---entre ellos CAMS y
+LSA-SAF--- y de reanálisis como ERA5 y MERRA-2, evaluados frente a mediciones radiométricas
+de calidad controlada obtenidas en cinco estaciones del NOA: Yuto, Salta, San Carlos, El
+Rosal y La Quiaca. Estas estaciones abarcan un amplio rango altitudinal y climático, lo que
+permitió analizar la respuesta de los modelos en condiciones geográficas contrastantes.
+ 
+El proceso de adaptación al sitio se define como un conjunto de métodos estadísticos
+orientados a corregir errores sistemáticos y aleatorios de las estimaciones satelitales usando
+como referencia mediciones terrestres dispersas pero de calidad. En esta tesis se desarrollaron
+y compararon diversos esquemas de aprendizaje automático: modelos de regresión lineal simple
+y múltiple (SLR, MLR), redes neuronales multicapa (MLP), bosques aleatorios
+(\textit{Random Forest}) y gradiente reforzado (XGBoost). Estos modelos se entrenaron y
+validaron con subconjuntos de datos independientes, aplicando metodologías de control de
+calidad y de validación cruzada espacial y temporal.
+ 
+Los resultados mostraron que la incorporación de variables explicativas locales ---como la
+altitud, la temperatura media, la nubosidad o la radiación estimada por diferentes
+productos--- mejora de forma importante la concordancia entre las estimaciones adaptadas y la
+referencia terrestre. Entre las técnicas evaluadas, los modelos no lineales ---en particular
+las redes neuronales MLP y los métodos de ensamble como \textit{Random Forest} y XGBoost---
+demostraron una mayor capacidad para capturar las complejas relaciones entre las variables
+atmosféricas y la irradiancia global, superando en precisión a los esquemas de regresión
+lineal. La adaptación al sitio logró reducir de manera consistente los errores medios y la
+dispersión de las estimaciones originales, con mejoras más notables en las estaciones ubicadas
+en zonas de relieve abrupto, donde los modelos globales suelen presentar mayor desviación.
+ 
+Asimismo, se demostró que el uso de celdas satelitales adyacentes al sitio de estudio y la
+consideración de la estructura temporal de las series ---dependencias estacionales y
+autocorrelaciones--- contribuyen a mejorar la representación espacial del recurso solar,
+fortaleciendo la generalización de los modelos a sitios sin medición directa. El estudio
+también incluyó un análisis de la transferencia de modelos entre sitios utilizando criterios
+de similitud geográfica y altitudinal, mostrando que es posible generalizar modelos entrenados
+en una estación hacia ubicaciones vecinas con características físicas comparables y mantener
+un desempeño aceptable. Los resultados de validación cruzada confirman la robustez de los
+modelos propuestos y su potencial aplicación a escala regional.
+ 
+La investigación aporta así una metodología integral para la adaptación espacial de productos
+satelitales de radiación solar en zonas con escasa instrumentación, combinando técnicas
+estadísticas, aprendizaje automático y validación experimental. Su aplicación mejora la
+representatividad espacial y la coherencia temporal de los datos, con repercusión directa en
+la calidad de los estudios de potencial solar y en la planificación de proyectos de energía
+renovable. Más allá del ámbito energético, los resultados pueden extenderse a estudios
+climáticos, hidrológicos y agrícolas, donde la radiación solar es un parámetro clave para
+modelar procesos de evapotranspiración, productividad vegetal y balance energético,
+contribuyendo al fortalecimiento del conocimiento ambiental y a la toma de decisiones
+informadas sobre el uso sostenible de los recursos naturales.
 
-La investigación se sustentó en una revisión exhaustiva del estado del arte sobre medición, modelado y estimación de la irradiancia solar global horizontal (GHI). Se analizaron las principales redes de medición existentes a nivel nacional e internacional, destacando la escasez de estaciones activas en Argentina y la ausencia de nodos de la red Baseline Surface Radiation Network (BSRN) en el país. Este diagnóstico evidenció la necesidad de optimizar el aprovechamiento de la información satelital mediante procedimientos de adaptación local.
 
-Se emplearon productos satelitales representativos —entre ellos los modelos CAMS y LSA-SAF— y de reanálisis como ERA5 y MERRA-2, los cuales fueron evaluados frente a mediciones radiométricas de alta calidad obtenidas en cinco estaciones del NOA: Yuto, Salta, San Carlos, El Rosal y La Quiaca. Estas estaciones abarcan un amplio rango altitudinal y climático, lo que permitió analizar la respuesta de los modelos en condiciones geográficas contrastantes.
 
-El proceso de adaptación al sitio se definió como un conjunto de métodos estadísticos orientados a corregir errores sistemáticos y aleatorios de las estimaciones satelitales mediante la referencia a mediciones locales. Este enfoque persigue que los datos adaptados reproduzcan de forma más fiel las condiciones radiativas reales del sitio de interés, reduciendo la incertidumbre en aplicaciones energéticas y científicas.
-
-En esta tesis se desarrollaron y compararon diversos esquemas de aprendizaje automático, incluyendo modelos de regresión lineal simple y múltiple (SLR, MLR), redes neuronales multicapa (MLP), bosques aleatorios (Random Forest) y gradiente reforzado (XGBoost). Estas técnicas se entrenaron y validaron con subconjuntos de datos independientes, aplicando metodologías de control de calidad y de validación cruzada espacial y temporal.
-
-Los resultados mostraron que la incorporación de variables explicativas locales —como la altitud, la temperatura media, la nubosidad o la radiación estimada por diferentes modelos— mejora significativamente la coherencia de las estimaciones adaptadas. Entre las técnicas analizadas, los modelos no lineales, en particular las redes neuronales y los métodos de ensamble, demostraron una mayor capacidad para capturar las complejas relaciones entre las variables atmosféricas y la irradiancia global.
-
-El análisis comparativo evidenció que la adaptación al sitio logra reducir de manera consistente los errores medios y la dispersión de las estimaciones originales, proporcionando series más representativas y estables. En la mayoría de los casos, la mejora en la precisión fue más notable en las estaciones ubicadas en zonas de relieve abrupto, donde los modelos globales suelen presentar mayor desviación.
-
-Asimismo, se demostró que el uso de celdas satelitales adyacentes al sitio de estudio y la consideración de la estructura temporal de las series (dependencias estacionales y autocorrelaciones) contribuyen a mejorar la representación espacial del recurso solar. Esta aproximación permite integrar información contextual y fortalecer la generalización de los modelos a sitios sin medición directa.
-
-El estudio también incluyó un análisis de la transferencia de modelos entre sitios, utilizando criterios de similitud geográfica y altitudinal. Este procedimiento mostró que es posible generalizar modelos entrenados en una estación hacia ubicaciones vecinas con características físicas comparables, manteniendo un desempeño aceptable. Esta capacidad de extrapolación representa una ventaja práctica para ampliar la cobertura del monitoreo radiativo.
-
-Los resultados de validación cruzada confirman la robustez de los modelos propuestos y su potencial aplicación a escala regional. Se comprobó que las estrategias de aprendizaje automático permiten incorporar información de múltiples fuentes y optimizar los ajustes en función de las particularidades locales.
-
-La investigación aporta así una metodología integral para la adaptación espacial de productos satelitales de radiación solar en zonas con escasa instrumentación, combinando técnicas estadísticas, aprendizaje automático y validación experimental. Su aplicación mejora la representatividad espacial y la coherencia temporal de los datos, lo que repercute directamente en la calidad de los estudios de potencial solar y en la planificación de proyectos de energía renovable.
-
-Más allá del ámbito energético, los resultados de esta tesis pueden extenderse a estudios climáticos, hidrológicos y agrícolas, donde la radiación solar es un parámetro clave para modelar procesos de evapotranspiración, productividad vegetal y balance energético. De este modo, la metodología desarrollada contribuye al fortalecimiento del conocimiento ambiental y a la toma de decisiones informadas sobre el uso sostenible de los recursos naturales.
-
+\begin{comment}
 El enfoque interdisciplinario adoptado, que integra física solar, modelado estadístico y aprendizaje automático, constituye un aporte innovador en el contexto regional. La aplicación de estas herramientas al estudio del recurso solar en el NOA refuerza la necesidad de combinar observaciones locales con fuentes satelitales de alta resolución, promoviendo el desarrollo de modelos híbridos con mayor precisión espacial.
 
 En síntesis, esta tesis demuestra que la inteligencia artificial es una herramienta eficaz para mejorar la calidad de las estimaciones satelitales de radiación solar. La adaptación al sitio, fundamentada en el uso de mediciones de referencia y variables auxiliares, permite reducir sesgos, aumentar la representatividad espacial y ampliar la confiabilidad de los productos radiativos para la región de estudio.
 
 Finalmente, el trabajo establece un marco metodológico replicable para otras regiones de Argentina y Latinoamérica, donde la carencia de estaciones radiométricas representa una limitación recurrente. La experiencia adquirida en este estudio constituye una base sólida para el desarrollo de futuros sistemas de modelado adaptativo y para la integración de la inteligencia artificial en la evaluación del recurso solar.
-
+\end{comment}
