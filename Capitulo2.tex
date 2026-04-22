@@ -1,4 +1,4 @@
-\lhead{Capítulo \ref{ch_2}}
+INENCO\lhead{Capítulo \ref{ch_2}}
 %\rhead{\newtitle}
 \rhead{}
 \cfoot{\thepage}
@@ -110,7 +110,7 @@ Eso, en esencia, es la Adaptación al Sitio: utilizar un período breve de medic
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{figuras/scatter-01.png}
-\caption{Diagrama de dispersión entre mediciones en sitio y estimaciones satelitales.
+\caption[Diagrama de dispersión entre mediciones en sitio y estimaciones satelitales.]{Diagrama de dispersión entre mediciones en sitio y estimaciones satelitales.
 Antes de la adaptación (puntos rojos), los datos muestran un sesgo claro al situarse por debajo de la línea 1:1. 
 Después de la adaptación (puntos verdes), las estimaciones se alinean mucho mejor con la referencia, reduciendo el error sistemático.}
 \label{fig:scatter01}
@@ -583,7 +583,7 @@ En resumen, si un árbol es un experto solitario con visión parcial, XGBoost fu
 % cargar librería 
 \tikzset{ flecha/.style={ thick, postaction={decorate, decoration={ markings, mark=at position 1 with {\arrow{>}} }} } } 
 % Dibujar las flechas para los nodos exp1, exp2, exp3, exp4 hacia final
-\foreach \i in {1,2,3,4}{ \draw[flecha] (exp\i.east) -- +(2,0) |- (final.west); } \end{tikzpicture} \caption{Analogía del comité de expertos en XGBoost: cada árbol corrige los errores de sus predecesores y contribuye a una predicción final más precisa de la GHI.} \label{fig:xgb_experts} \end{figure}
+\foreach \i in {1,2,3,4}{ \draw[flecha] (exp\i.east) -- +(2,0) |- (final.west); } \end{tikzpicture} \caption[Analogía del comité de expertos en XGBoost.]{Analogía del comité de expertos en XGBoost: cada árbol corrige los errores de sus predecesores y contribuye a una predicción final más precisa de la GHI.} \label{fig:xgb_experts} \end{figure}
 
 \begin{comment}
 
@@ -696,8 +696,9 @@ Durante el entrenamiento, el error de entrenamiento disminuye progresivamente a 
 \begin{figure}
     \centering
     \includegraphics[scale=0.6]{figuras/dinamicatv.png}
-    \caption{Dinámica de entrenamiento de un modelo de aprendizaje automático. La curva azul muestra el error de entrenamiento, que disminuye progresivamente a medida que el modelo se ajusta a los datos. La curva naranja representa el error de validación, que disminuye inicialmente reflejando la mejora de la capacidad de generalización, pero comienza a aumentar después de la mejor época (línea roja discontinua), evidenciando el sobreajuste.}
+    \caption[Dinámica de entrenamiento de un modelo de aprendizaje automático.]{Dinámica de entrenamiento de un modelo de aprendizaje automático. La curva azul muestra el error de entrenamiento, que disminuye progresivamente a medida que el modelo se ajusta a los datos. La curva naranja representa el error de validación, que disminuye inicialmente reflejando la mejora de la capacidad de generalización, pero comienza a aumentar después de la mejor época (línea roja discontinua), evidenciando el sobreajuste.}
     \label{fig:dinamica}
+    
 \end{figure}
 
 
