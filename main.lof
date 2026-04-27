@@ -24,29 +24,29 @@
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en La Quiaca.}}{53}{figure.caption.40}%
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Comparación del rRMSE(\%) para los modelos crudos y el mejor desempeño obtenido.}}{53}{figure.caption.41}%
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Comparación del comportamiento de la GHI medida y estimada mediante los modelos CAMS y LSA-SAF, junto con sus respectivas adaptaciones basadas en los métodos SLR, MLP y XGB.}}{54}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Comparación del rRMSE(\%) entre estimaciones originales de los satélites y sus versiones adaptadas.}}{59}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Comparación del rRMSE(\%) entre estimaciones originales de los satélites y sus versiones adaptadas.}}{60}{figure.caption.44}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Matriz de correlación de los regresores en la estación SA.}}{62}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Coeficientes de correlación de Pearson y Spearman entre las variables meteorológicas y las distintas metodologías.}}{63}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Coeficientes de correlación de Pearson entre las variables meteorológicas}}{63}{figure.caption.46}%
 \contentsline {figure}{\numberline {3.20}{\ignorespaces Comparación del rRMSE(\%) entre estimaciones originales y las adaptaciones mediante los regresores utilizando como regresores la GHI estimada por cada modelo, GHIargp2 y tm.}}{66}{figure.caption.49}%
 \contentsline {figure}{\numberline {3.21}{\ignorespaces Analogía espacial: celdas del producto de GHI y dinámica atmosférica}}{69}{figure.caption.50}%
 \contentsline {figure}{\numberline {3.22}{\ignorespaces Grilla utilizada por el modelo Helisat-4 de CAMS distribuido por CAMS Volume.}}{70}{figure.caption.51}%
 \contentsline {figure}{\numberline {3.23}{\ignorespaces rRMSE(\%) comparativo para las evaluaciones utilizando el enfoque de celdas adyacentes.}}{74}{figure.caption.54}%
 \contentsline {figure}{\numberline {3.24}{\ignorespaces Diferencias entre los tres enfoques de adaptación.}}{78}{figure.caption.55}%
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Métricas de desempeño para las estimaciones y sus adaptaciones midantes los enfoques E1, E2 y E3 }}{80}{figure.caption.57}%
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Resultados de la validación cruzada entre sitios para el modelo ERA5.}}{83}{figure.caption.58}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Métricas de desempeño para las estimaciones y sus adaptaciones midantes los enfoques E1, E2 y E3 }}{81}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Resultados de la validación cruzada entre sitios para el modelo ERA5.}}{84}{figure.caption.58}%
 \contentsline {figure}{\numberline {3.27}{\ignorespaces Ejemplo de asignación por distancia geográfica y altitudinal.}}{86}{figure.caption.60}%
 \contentsline {figure}{\numberline {3.28}{\ignorespaces Comparación entre la GHI medida y la estimada mediante el criterio de generalización propuesto para ERA5 en los sitios Abra Pampa y Cerrillos.}}{88}{figure.caption.63}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Mapa de GHI medio mensual – Enero (TMY).}}{113}{figure.caption.75}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Mapa de GHI medio mensual – Febrero (TMY).}}{114}{figure.caption.76}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Mapa de GHI medio mensual – Marzo (TMY).}}{115}{figure.caption.77}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Mapa de GHI medio mensual – Abril (TMY).}}{116}{figure.caption.78}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Mapa de GHI medio mensual – Mayo (TMY).}}{117}{figure.caption.79}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Mapa de GHI medio mensual – Junio (TMY).}}{118}{figure.caption.80}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Mapa de GHI medio mensual – Julio (TMY).}}{119}{figure.caption.81}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Mapa de GHI medio mensual – Agosto (TMY).}}{120}{figure.caption.82}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Mapa de GHI medio mensual – Septiembre (TMY).}}{121}{figure.caption.83}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Mapa de GHI medio mensual – Octubre (TMY).}}{122}{figure.caption.84}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Mapa de GHI medio mensual – Noviembre (TMY).}}{123}{figure.caption.85}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Mapa de GHI medio mensual – Diciembre (TMY).}}{124}{figure.caption.86}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces TMY.}}{125}{figure.caption.87}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Mapa de GHI medio mensual – Enero (TMY).}}{115}{figure.caption.75}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Mapa de GHI medio mensual – Febrero (TMY).}}{116}{figure.caption.76}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Mapa de GHI medio mensual – Marzo (TMY).}}{117}{figure.caption.77}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Mapa de GHI medio mensual – Abril (TMY).}}{118}{figure.caption.78}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Mapa de GHI medio mensual – Mayo (TMY).}}{119}{figure.caption.79}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Mapa de GHI medio mensual – Junio (TMY).}}{120}{figure.caption.80}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Mapa de GHI medio mensual – Julio (TMY).}}{121}{figure.caption.81}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Mapa de GHI medio mensual – Agosto (TMY).}}{122}{figure.caption.82}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Mapa de GHI medio mensual – Septiembre (TMY).}}{123}{figure.caption.83}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Mapa de GHI medio mensual – Octubre (TMY).}}{124}{figure.caption.84}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Mapa de GHI medio mensual – Noviembre (TMY).}}{125}{figure.caption.85}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Mapa de GHI medio mensual – Diciembre (TMY).}}{126}{figure.caption.86}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces TMY.}}{127}{figure.caption.87}%

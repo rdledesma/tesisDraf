@@ -34,6 +34,19 @@ R.~{Alonso Suárez}, G.~Abal, R.~Siri, and P.~Musé.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0038092X12003040}.
 
+\bibitem[Alonso-Suárez et~al.(2024)Alonso-Suárez, Abal, Righini, Nollas,
+  Martins, Vilela, Figueiredo, Wolfram, Laguarda, Lell, Russo, Monetta,
+  Fedrizzi, Melendez, Torres, Aristegui, Costa, Gonçalves, Salazar, and
+  Zilles]{Mercosur}
+Rodrigo Alonso-Suárez, G.~Abal, R.~Righini, Fernando Nollas, Fernando Martins,
+  Olga Vilela, Gilberto Figueiredo, Elian Wolfram, Agustín Laguarda, Julián
+  Lell, Paola Russo, Andres Monetta, Cristina Fedrizzi, Teddy Melendez, Emerson
+  Torres, R.~Aristegui, Rodrigo Costa, André Gonçalves, Germán Salazar, and
+  Roberto Zilles.
+\newblock Recomendaciones y buenas prácticas para la medición y registro de
+  la radiación solar en territorio.
+\newblock 04 2024.
+
 \bibitem[Angstrom(1924)]{angstrom1924}
 Anders Angstrom.
 \newblock Solar and terrestrial radiation. report to the international
@@ -147,14 +160,6 @@ Tianqi Chen and Carlos Guestrin.
 \newblock In \emph{Proceedings of the 22nd ACM SIGKDD International Conference
   on Knowledge Discovery and Data Mining}, pages 785--794, 2016{\natexlab{b}}.
 \newblock \doi{10.1145/2939672.2939785}.
-
-\bibitem[Cheng(2024)]{Cheng2024}
-Xueyi Cheng.
-\newblock A comprehensive study of feature selection techniques in machine
-  learning models.
-\newblock \emph{Insights in Computer, Signals and Systems}, 1:\penalty0 65--78,
-  11 2024.
-\newblock \doi{10.70088/xpf2b276}.
 
 \bibitem[Claveria et~al.(2015)Claveria, Monte, and Torra]{Claveria2015}
 Oscar Claveria, Enric Monte, and Salvador Torra.

@@ -9,12 +9,12 @@
 \contentsline {table}{\numberline {3.5}{\ignorespaces Métricas de desempeño para cada modelo en el conjunto de pruebas.}}{46}{table.caption.32}%
 \contentsline {table}{\numberline {3.6}{\ignorespaces Espacio cartesiano de hiperparámetros para las técnicas de aprendizaje supervisado.}}{47}{table.caption.33}%
 \contentsline {table}{\numberline {3.7}{\ignorespaces Métricas de desempeño para cada modelo adaptado en el conjunto de pruebas.}}{48}{table.caption.34}%
-\contentsline {table}{\numberline {3.8}{\ignorespaces Métricas de desempeño para cada modelo en el conjunto de pruebas. }}{60}{table.caption.43}%
-\contentsline {table}{\numberline {3.9}{\ignorespaces Coeficientes de correlación de Pearson y Spearman entre las variables meteorológicas y las distintas metodologías.}}{64}{table.caption.47}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Métricas de desempeño para cada modelo en el conjunto de pruebas. }}{59}{table.caption.43}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces Coeficientes de correlación de Pearson y Spearman entre las variables meteorológicas y GHI medida.}}{64}{table.caption.47}%
 \contentsline {table}{\numberline {3.10}{\ignorespaces Métricas de desempeño para cada modelo en el conjunto de prubeas utilizando como regresores la GHI modelada, la GHI en condiciones de cielo claro según y TM.}}{65}{table.caption.48}%
 \contentsline {table}{\numberline {3.11}{\ignorespaces Métricas de desempeño para cada modelo adaptado en el conjunto de pruebas.}}{72}{table.caption.52}%
 \contentsline {table}{\numberline {3.12}{\ignorespaces Métricas de desempeño del modelo ERA5 adapado en los cinco sitios en el conjunto de pruebas.}}{73}{table.caption.53}%
 \contentsline {table}{\numberline {3.13}{\ignorespaces Métricas de desempeño para cada modelo en el conjunto de prubeas.}}{79}{table.caption.56}%
-\contentsline {table}{\numberline {3.14}{\ignorespaces Estaciones de medida utilizadas para la validación de los modelos ajustados.}}{85}{table.caption.61}%
+\contentsline {table}{\numberline {3.14}{\ignorespaces Estaciones de medida utilizadas para la validación de los modelos ajustados.}}{87}{table.caption.61}%
 \contentsline {table}{\numberline {3.15}{\ignorespaces Métricas de desempeño para el modelo ERA5 en los sitios de validación.}}{87}{table.caption.62}%
 \addvspace {10\p@ }

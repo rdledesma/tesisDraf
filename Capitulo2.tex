@@ -10,90 +10,36 @@
 \section{Introducción}
 
 
-La estimación precisa de la irradiancia solar es esencial para los estudios energéticos, el dimensionamiento fotovoltaico y la reconstrucción de series históricas del recurso. En regiones con escasa instrumentación, los productos satelitales y de reanálisis constituyen fuentes valiosas, aunque presentan sesgos y limitaciones. La Adaptación al Sitio (Site Adaptation, SA por sus siglas en ingles) busca corregir estos errores mediante un breve período de mediciones locales.
+La estimación precisa de la irradiancia solar es esencial para los estudios energéticos que incluyen el aprovechamiento de la energía solar. En particular, resulta fundamental para el dimensionamiento y el análisis económico de proyectos fotovoltaicos y termosolares, para los cuales se requieren series históricas representativas del recurso.
+
+En regiones con escasa instrumentación, los productos satelitales y de reanálisis constituyen fuentes valiosas de información; sin embargo, presentan sesgos y limitaciones, especialmente en series de largo plazo. La Adaptación al Sitio (\textit{Site Adaptation}, SA por sus siglas en inglés) tiene como objetivo corregir estos errores en series de largo plazo mediante la incorporación de un período acotado de mediciones locales de referencia.
 
 Este capítulo establece el marco conceptual de la SA y describe los modelos de aprendizaje automático empleados para mejorar la representación del recurso solar, proporcionando las bases teóricas para los capítulos metodológicos posteriores.
 
 \section{Adaptación al Sitio (SA)}
 
 \subsection{Definiciones}
-El término Adaptación al Sitio (Site Adaptation, SA por sus siglas en inglés) se utiliza para describir diversos procedimientos dirigidos a mejorar la representación local de los recursos solares estimados mediante productos satelitales o modelos numéricos.
+En este trabajo se adopta una convención terminológica con el fin de evitar ambigüedades. El término datos se utiliza como categoría general que incluye tanto mediciones (observaciones obtenidas mediante instrumentación en superficie) como estimaciones (valores derivados de modelos). A su vez, el término estimaciones se emplea como sinónimo de datos modelados, abarcando productos satelitales, datos de reanálisis y salidas de modelos numéricos de la atmósfera, los cuales se consideran en este trabajo como distintas fuentes de una misma clase de información.
 
-En la literatura, se encuentran distintas formulaciones. Por ejemplo, \citet{POLO2016} define la Adaptación al Sitio como “todos los métodos estadísticos desarrollados para reducir la incertidumbre en el recurso solar local, orientados a mejorar los datos de irradiancia derivados de satélites mediante la disminución de errores aleatorios y, particularmente, del sesgo, utilizando observaciones terrestres correspondientes en períodos superpuestos”.
+El término Adaptación al Sitio (\textit{Site Adaptation}, SA por sus siglas en inglés) se utiliza para describir diversos procedimientos dirigidos a mejorar la representación local del recurso solar a partir de estimaciones derivadas de datos modelados.
 
-Asimismo, \citet{YANG2021427} la describe como “procedimientos para corregir errores sistemáticos en series prolongadas de datos modelados en cuadrícula, utilizando un corto periodo de mediciones terrestres como referencia objetiva”.
-
-De manera similar, \citet{rs17101720} hace referencia a “la aplicación de un método de corrección a productos de irradiancia en cuadrícula mediante el uso de mediciones en el sitio”.
-
-Aunque cada definición destaca aspectos particulares del proceso, todas convergen en un propósito fundamental: ajustar los datos modelados para que reflejen con mayor precisión las condiciones reales de irradiancia en un punto geográfico específico. Dicho de otro modo, la Adaptación al Sitio consiste en aplicar técnicas estadísticas que permitan reducir tanto el sesgo como la dispersión inherentes a los productos derivados de satélites o de re-análisis, utilizando mediciones terrestres como patrón de referencia.
+En la literatura se encuentran diferentes formulaciones, en esencia equivalentes. \citet{POLO2016} define la Adaptación al Sitio como “todos los métodos estadísticos desarrollados para reducir la incertidumbre en el recurso solar local, orientados a mejorar los datos de irradiancia derivados de satélites mediante la disminución de errores aleatorios y, particularmente, del sesgo, utilizando observaciones terrestres correspondientes en períodos superpuestos”. \citet{YANG2021427} la describe como “procedimientos para corregir errores sistemáticos en series prolongadas de datos modelados en cuadrícula, utilizando un corto periodo de mediciones terrestres como referencia objetiva”, mientras que \citet{rs17101720} hace referencia a “la aplicación de un método de corrección a productos de irradiancia en cuadrícula mediante el uso de mediciones en el sitio”. En conjunto, estas definiciones convergen en un propósito común: ajustar las estimaciones derivadas de datos modelados para que reproduzcan con mayor fidelidad las condiciones locales de irradiancia, mediante el uso de mediciones en superficie como referencia, reduciendo tanto el sesgo como la dispersión asociados a dichas estimaciones.
 
 
 \subsection{Proceso conceptual}
-
-
-\begin{comment}
-Este procedimiento resulta especialmente relevante en el contexto del desarrollo de proyectos solares, donde las estimaciones precisas del recurso en el largo plazo son críticas para análisis económicos, dimensionamiento y evaluación de riesgos. Aun cuando las mediciones locales se dispongan únicamente por un periodo limitado (por ejemplo, uno o dos años), la información recolectada permite calibrar series modeladas de varios años, consiguiendo una reconstrucción más confiable del comportamiento histórico del recurso solar en el sitio de interés.
-\end{comment}
-
-La SA se aplica durante un período de superposición entre la base de datos satelital/modelada y las mediciones locales. En ese intervalo se determina una función de ajuste que busca corrigir sesgos y mejorar la representación temporal del recurso. Aplicando dicha función a toda la base modelada, se obtiene una serie adaptada con mayor precisión local.
-
-
+La SA comprende tanto el ajuste de un modelo o procedimiento como su posterior aplicación. En un primer paso, una función se entrena (o ajusta) durante un período de superposición entre estimaciones provenientes de datos modelados y mediciones locales. Se busca determinar una función o procedimiento de corrección que logre a reducir sesgos y mejorar la representación temporal del recurso. En una segundo paso, dicha función se aplica a la totalidad del período cubierto por los datos modelados, obteniéndose así una serie adaptada con mayor representatividad local.
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.97\linewidth]{figuras/SiteAdaptationProcedure.png}
-    \caption{ Esquema conceptual del proceso de adaptación al sitio.}
+    \includegraphics[width=0.85\linewidth]{figuras/procedure.png}
+    \caption{Esquema conceptual del proceso de adaptación al sitio.}
     \label{fig:siteProcedure}
 \end{figure}
 
+En la Figura \ref{fig:siteProcedure} se ilustra conceptualmente el proceso de Adaptación al Sitio a partir de una serie de mediciones y estimaciones. El período temporal en el que las mediciones y las estimaciones se superponen (período de solapamiento, \textit{overlap}) se utiliza para ajustar el procedimiento de corrección. Posteriormente, este procedimiento se aplica a la totalidad de las estimaciones para obtener una serie adaptada.
 
-En la Figura \ref{fig:siteProcedure} se muestra conceptualmente el proceso de Adaptación al Sitio, que parte de una base de datos medida (BDM) y de una base de datos satelital (BDS). El periodo temporal en el que los datos medidos y los modelados se superponen (overlap) es cuando se realiza la adaptación propiamente dicha, ya que es cuando se corrigen los datos modelados con los datos medidos mediante una función que intenta correlacionarlos. Aplicando esta función a toda la BDS se puede obtener una base de datos adaptada (BDA).
-En esencia, la Adaptación al Sitio se fundamenta en el principio de que los datos modelados por satélite o de reanálisis, aunque valiosos por su cobertura espacial y continuidad temporal, presentan inevitables limitaciones inherentes al proceso de observación remota, como la resolución espacial de las cámaras satelitales , los algoritmos de recuperación atmosférica, la presencia de nubosidad compleja o condiciones locales particulares, que no logran ser captadas o procesadas y, por lo tanto el modelo no podrá registrarlas en su salidas.\\
+En esencia, la SA se fundamenta en que las estimaciones derivadas de datos modelados —incluyendo productos satelitales, datos de reanálisis y salidas de modelos numéricos de la atmósfera—, si bien ofrecen amplia cobertura espacial y continuidad temporal, presentan limitaciones inherentes a su naturaleza. Entre ellas se destacan la resolución espacial de los sensores (por ejemplo, los radiómetros a bordo de satélites), las simplificaciones en los algoritmos de recuperación atmosférica, y la dificultad para representar condiciones locales específicas, como nubosidad compleja o efectos topográficos. Estas limitaciones se traducen en discrepancias sistemáticas y aleatorias respecto de las mediciones en superficie, que la SA busca corregir mediante el uso de dichas mediciones como referencia.
 
-
-\begin{comment}
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.97\linewidth]{figuras/SiteAdaptation-Example.png}
-    \caption{Comparación de irradiancia solar diaria entre datos de satélite sin adaptar, datos de satélite adaptados y mediciones locales en el sitio de referencia. Se observa cómo la adaptación al sitio corrige el sesgo sistemático y mejora la representatividad de los datos satelitales.}
-    \label{fig:example}
-\end{figure}
-
-
-La Figura \ref{fig:example}  ilustra una comparación entre tres conjuntos de datos de irradiancia solar a lo largo de dos días teóricos:
-
-Medición en sitio (línea sólida): representa la referencia real tomada con instrumentos locales.
-
-Modelada sin adaptar (línea discontinua): se observa un sesgo, ya que la serie está sistemáticamente desplazada respecto a la referencia. Además, los picos y valles no coinciden con exactitud, reflejando errores aleatorios.
-
-Modelada adaptada (línea punteada): tras aplicar el procedimiento de adaptación al sitio, la serie corregida se ajusta mucho mejor a la referencia. El sesgo desaparece en gran medida y la forma de la curva sigue más de cerca la variabilidad de las mediciones locales.
-
-Puede verse cómo la adaptación al sitio reduce tanto el error sistemático como la dispersión, logrando que los datos derivados de satélite sean más representativos de las condiciones reales de irradiancia en el lugar de interés.\\
-
-
-En esencia, la Adaptación al Sitio se fundamenta en el principio de que los datos modelados por satélite o de re-análisis, aunque valiosos por su cobertura espacial y continuidad temporal, presentan inevitables limitaciones inherentes al proceso de observación remota. Estas limitaciones provienen de factores como la resolución espacial, los algoritmos de recuperación atmosférica, la presencia de nubosidad compleja o condiciones locales particulares que no son captadas por el modelo satelital.
-
-Las mediciones terrestres, por el contrario, ofrecen alta precisión y captura directa de las condiciones atmosféricas locales, pero su disponibilidad está restringida en tiempo y espacio debido a los costos operativos de las estaciones de medición. La Adaptación al Sitio actúa, entonces, como un puente metodológico que buscar combinar las fortalezas de ambas fuentes de información, resultando en una serie híbrida que idealmente mantuviera precisión instrumental de las mediciones locales y la extensión temporal de los datos satelitales.
-
-Técnicamente, los métodos empleados pueden abarcar desde procedimientos lineales sencillos —como la corrección por factores multiplicativos o aditivos— hasta técnicas avanzadas que incluyen regresión multivariante, modelos de error distribucional, aprendizaje automático y aproximaciones bayesianas. La selección del método adecuado depende del contexto del proyecto, la calidad y cantidad de datos disponibles, y el nivel de exactitud requerido.
-
-Un aspecto central del proceso es la evaluación estadística previa y posterior a la corrección. Indicadores como sesgo medio (MBE) y el error cuadrático medio (RMSE) permiten cuantificar la magnitud de los errores iniciales y el grado de mejora logrado mediante la adaptación. Estas métricas buscan asegurar la trazabilidad y validez del procedimiento, lo cual es fundamental en aplicaciones energéticas y financieras.
-
-La Adaptación al Sitio también implica la consideración de aspectos climáticos y estacionales. En regiones con alta variabilidad atmosférica o patrones climáticos complejos —por ejemplo, zonas montañosas, costeras o desérticas—, la calibración puede requerir tratamientos específicos para distintos regímenes de nubosidad o épocas del año. Esto asegura que las correcciones no solo reduzcan sesgos promedio, sino que también mejoren la representación de la variabilidad intra-anual del recurso solar.
-
-Finalmente, la implementación de la Adaptación al Sitio contribuye directamente a la gestión del riesgo en proyectos renovables. Al minimizar la incertidumbre en la estimación del recurso solar, se fortalecen las bases técnicas para la toma de decisiones en financiamiento, operación y diseño energético, lo cual es especialmente relevante en mercados donde pequeños cambios en la previsión del recurso pueden significar diferencias significativas en los rendimientos económicos del proyecto.\\
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.97\linewidth]{figuras/siteAdaptation.png}
-    \caption{Adaptación al Sitio sobre una serie genérica}
-    \label{fig:site-adapation}
-\end{figure}
-
-En la Figura \ref{fig:site-adapation} puede verse el resultado que busca obtenerse al aplicar una adaptación al sitio. En color naranja se muestra la serie de medidas en tierra y en color azul la serie modelada, ambos casos con estilo de linea lleno. Debe tenerse en cuenta que el fondo cambiante de color (blanco y salmón) está realizado así a propósito.\\ 
-\end{comment}
 
 
 Presentamos una analogía sencilla que ayude a explicar, de manera más cotidiana, la idea general del preceso de SA.
@@ -117,20 +63,12 @@ Después de la adaptación (puntos verdes), las estimaciones se alinean mucho me
 \end{figure}
 
 
-
-La Figura \ref{fig:scatter01} muestra de manera evidente el efecto de la adaptación al sitio:
-
-Antes de la corrección (rojo): los puntos están sistemáticamente alejados de la línea 1:1, lo que indica que el satélite subestima los valores reales de irradiancia. Existe un sesgo claro.
-
-Después de la corrección (verde): los puntos se agrupan alrededor de la línea 1:1, lo que significa que las estimaciones satelitales ahora representan con mayor fidelidad las mediciones en sitio.
-
-
-
+La Figura \ref{fig:scatter01} muestra el efecto de la Adaptación al Sitio. Antes de la corrección (en rojo), los puntos se encuentran sistemáticamente alejados de la línea 1:1, lo que evidencia la presencia de un sesgo, en este caso asociado a una subestimación de la irradiancia por parte de las estimaciones. Después de la corrección (en verde), los puntos se distribuyen en torno a la línea 1:1, indicando una mejora en la concordancia entre las estimaciones y las mediciones en superficie, y, por lo tanto, una representación más fiel del recurso solar en el sitio de estudio.
 
 \section{Estado del arte en Adaptación al Sitio}
-Al revisar la bibliografía sobre el proceso de adaptación al sitio frente a la radiación solar, se observa que esta técnica fue desarrollada en el siglo XXI y que su evolución ha sido rápida. Uno de los principales aportes sobre el tema fue realizado en el trabajo de \cite{POLO2016}, en el marco de la Tarea 46 del Programa de Calefacción y Refrigeración Solar de la Agencia Internacional de la Energía, Evaluación y pronóstico de recursos solares \citep{Task46}. En este trabajo se indica que la idea general de este proceso de corrección o calibración de datos modelados es similar a lo que se ha desarrollado en la industria eólica en el pasado \citep{Potter}.
+Al revisar la bibliografía sobre el proceso de adaptación al sitio aplicado a la radiación solar, se observa que esta técnica fue desarrollada en el siglo XXI y que su evolución ha sido rápida. Uno de los principales aportes sobre el tema fue realizado en el trabajo de \cite{POLO2016}, en el marco de la Tarea 46 del Programa de Calefacción y Refrigeración Solar de la Agencia Internacional de la Energía, Evaluación y pronóstico de recursos solares \citep{Task46}. En este trabajo se indica que la idea general de este proceso de corrección o calibración de datos modelados es similar a lo que se ha desarrollado en la industria eólica en el pasado \citep{Potter}.
 
-Según Polo y sus colaboradores, el término Site Adaptation (SA) se emplea actualmente en proyectos de energía solar para describir la mejora que puede obtenerse en la irradiancia solar derivada de satélite y en los datos de modelos cuando se utilizan mediciones terrestres locales de corta duración para corregir sesgos y errores sistemáticos en los datos originales. A partir de esta definición general, Polo y su equipo proponen una clasificación de los métodos de SA en cinco categorías, que reúnen las principales estrategias destinadas a mejorar la precisión y reducir la incertidumbre de las estimaciones de radiación solar derivadas de satélite mediante el uso de mediciones locales de corta duración.
+Según Polo y sus colaboradores, el término Site Adaptation (SA) se emplea actualmente en proyectos de energía solar para describir la mejora que puede obtenerse en la irradiancia solar derivada de satélite y en los datos de modelos cuando se utilizan mediciones terrestres locales de corta duración para corregir sesgos y errores sistemáticos en los datos originales. A partir de esta definición general, Polo y su equipo proponen una clasificación de los métodos de SA en cinco categorías, que reúnen las principales estrategias destinadas a mejorar la precisión y reducir la incertidumbre de las estimaciones de radiación solar.
 
 
 Durante la última década, la literatura ha consolidado cinco familias principales de métodos de SA:

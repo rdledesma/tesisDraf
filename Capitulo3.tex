@@ -5,13 +5,11 @@
 \renewcommand{\headrulewidth}{1pt}
 \renewcommand{\footrulewidth}{1pt}
 \chapter{Adaptación al Sitio en NOA}\label{ch_3}
+En este capítulo se presentan las estaciones de medición y los modelos de estimación utilizados, evaluados a resoluciones temporales de 15 minutos y horaria. Asimismo, se aborda el ajuste, validación y prueba de distintos métodos de SA.
 
-En este capítulo se aborda la aplicación de los métodos de adaptación al sitio en la región del Noroeste Argentino (NOA), con el objetivo de mejorar la representatividad espacial de las estimaciones de radiación solar provenientes de modelos satelitales y de reanálisis. A partir de las mediciones de GHI realizadas en distintas estaciones de Salta y Jujuy, se analiza el desempeño de los productos disponibles y se propone su corrección mediante técnicas de aprendizaje automático.
+Se analiza cómo las particularidades geográficas y climáticas del NOA —topografía compleja, marcada variabilidad estacional y diversidad de condiciones atmosféricas— afectan la precisión de las estimaciones del recurso solar. En este contexto, la SA se emplea como herramienta para mejorar la representatividad local de datos derivados de modelos globales, reduciendo sesgos y aumentando su confiabilidad.
 
-El desarrollo de este capítulo permite comprender cómo las particularidades geográficas y climáticas del NOA —su topografía compleja, la marcada variabilidad estacional y la diversidad de condiciones atmosféricas— influyen en la precisión de las estimaciones del recurso solar. Por ello, la adaptación al sitio se presenta no solo como una etapa metodológica, sino como una herramienta clave para trasladar los modelos globales a contextos locales, reduciendo sesgos y aumentando la confiabilidad de los datos.
-
-A lo largo del capítulo se describen las estaciones de medida utilizadas, los procedimientos de control de calidad aplicados a las mediciones en tierra, las métricas empleadas para evaluar los modelos y los distintos enfoques de adaptación implementados, desde los más simples —con una variable descriptiva— hasta los más complejos, basados en múltiples regresores y en el aprovechamiento de información satelital adyacente. Finalmente, se discuten los resultados obtenidos, destacando las mejoras alcanzadas en la precisión y estabilidad de las estimaciones adaptadas, así como su potencial de generalización hacia otras zonas del NOA con condiciones similares.
-
+Se describen las estaciones utilizadas, los procedimientos de control de calidad aplicados a las mediciones, las métricas de evaluación y los enfoques de adaptación considerados, que van desde esquemas simples con una única variable explicativa hasta modelos multivariados que incorporan información espacial de celdas adyacentes. Finalmente, se presentan y discuten los resultados, destacando las mejoras en precisión y robustez de las estimaciones adaptadas, así como su posible extensión a otras zonas del NOA con condiciones similares.
 
 \section{Medidas en superficie}
 
@@ -25,16 +23,17 @@ Los sitios analizados en esta tesis se resumen en la Tabla \ref{tab:sites}, dond
     \label{fig:sites}
 \end{figure}
 
+La estación \textbf{Sa} (Salta Capital) se encuentra en el campus experimental del INENCO, en la Universidad Nacional de Salta. Está situada en un entorno urbano preandino dentro del Valle de Lerma, donde la cercanía a la cordillera favorece la formación de nubosidad convectiva. El clima es subtropical de montaña (Cwb), con inviernos secos y veranos templados. Las mediciones se realizaron entre 2009 y 2020 mediante un piranómetro Eppley PSP.
 
-La estación \textbf{Sa} (Salta Capital) se encuentra en el campus experimental del INENCO, en la Universidad Nacional de Salta. Está situada en un entorno urbano preandino dentro del Valle de Lerma, una zona donde es común la formación de nubes debido a la cercanía de la cordillera. Su clima es subtropical de montaña, con inviernos secos y veranos frescos (Cwb). Las mediciones se realizaron entre 2009 y 2020 utilizando un piranómetro Eppley PSP.
+La estación \textbf{Lq} (La Quiaca, Jujuy) se ubica en la región de la Puna, a gran altitud, caracterizada por un clima frío semiárido (BSk) y una atmósfera generalmente estable y seca, lo que favorece una alta disponibilidad de radiación solar. Las mediciones se efectuaron entre 2018 y 2023 utilizando un piranómetro Kipp \& Zonen CMP11.
 
-La estación \textbf{Lq} (Ciudad de La Quiaca - Jujuy), se encuentra ubicada en una región que un clima estepario frío semiárido (BSk) típico de regiones andinas, y destaca por registrar uno de los mayores niveles de horas de sol anuales en Argentina. Los datos fueron registrados mediante un piranómetro Kipp \& Zonen CMP11 entre los años 2018 y 2023.
+La estación \textbf{Yu} (Yuto, Jujuy) se localiza en una región de transición entre el piedemonte andino y la llanura chaqueña, con clima subtropical húmedo (Cwa), caracterizado por veranos cálidos y húmedos e inviernos más secos. La zona presenta una elevada variabilidad en la nubosidad, con frecuentes eventos convectivos durante la estación estival que afectan significativamente la irradiancia incidente. Registró datos entre 2017 y 2018 mediante un piranómetro Kipp \& Zonen CMP11, lo que la convierte en una estación representativa de condiciones de alta variabilidad atmosférica dentro del NOA.
 
-La estación \textbf{Yu}, ubicada en una zona de clima subtropical húmedo (Cwa), registró datos entre 2017 y 2018 con un sensor CMP11. La estación \textbf{Sca}, también con clima Cwb, operó entre 2012 y 2013 con un piranómetro CMP3.	 Finalmente, la estación \textbf{Ero}, situada en una región de gran altitud con clima BSk, recopiló datos entre 2016 y 2018, igualmente con un CMP3.
+La estación \textbf{Sca} (San Carlos, Salta) se encuentra en una zona de clima subtropical de montaña (Cwb), en un entorno de relieve irregular que introduce efectos locales asociados a sombra orográfica y variaciones en la cobertura nubosa. Estas condiciones generan una marcada variabilidad intra-diaria de la irradiancia. Operó entre 2012 y 2013 utilizando un piranómetro Kipp \& Zonen CMP3, proporcionando una serie representativa de condiciones intermedias entre el valle y regiones de mayor altitud.
 
-Todas las estaciones utilizan piranómetros que cumplen con los estándares de la norma ISO 9060:2018 Clase A o B para la medición de la irradiancia global horizontal (GHI). Los datos se registraron a intervalos de un minuto, y cada valor corresponde al promedio de seis muestras tomadas cada 10 segundos.
+Finalmente, la estación \textbf{Ero} (El Rosal, Salta) está emplazada en una región de gran altitud dentro del dominio andino, con clima frío semiárido (BSk). Se caracteriza por baja humedad atmosférica, escasa nubosidad y elevada transmitancia atmosférica, lo que resulta en altos niveles de irradiancia y baja variabilidad relativa en condiciones despejadas. Sin embargo, pueden presentarse eventos de nubosidad de tipo orográfico y presencia de aerosoles minerales (polvo), que introducen variaciones en la radiación. Registró datos entre 2016 y 2018 mediante un piranómetro Kipp \& Zonen CMP3.
 
-
+Todas las estaciones emplean piranómetros que cumplen con los estándares de la norma ISO 9060:2018, clase A o B, para la medición de la irradiancia global horizontal (GHI). Los datos fueron adquiridos con una resolución temporal de un minuto, correspondiendo cada valor al promedio de seis mediciones realizadas a intervalos de 10 segundos.
 
 
 \begin{table}
@@ -45,11 +44,11 @@ Todas las estaciones utilizan piranómetros que cumplen con los estándares de l
         \textbf{ID} & \textbf{Provincia} & \textbf{Localidad} & \textbf{Latitud} & \textbf{Longitud}& \textbf{Altitud (m.s.n.m}) & \textbf{Clima}\\ 
         \hline
 
-        \textbf{Yu} & Jujuy & Yuto & -23.58 & -64.5 & 401 & \textbf{Cwa}\\ 
-        \textbf{Sa} & Salta & Salta & -24.72 & -65.4 & 1233 & \textbf{Cwb}\\ 
-        \textbf{Sca} & Salta & San Carlos & -25.8951 & -65.925 & 1624 & \textbf{Cwb}\\
-        \textbf{Ero} & Salta & El Rosal & -24.39278 & -65.76806 & 3355& \textbf{Bsk}\\
-        \textbf{Lq} & Jujuy & La Quiaca & -22.10 & -65.60 & 3500& \textbf{Bsk}\\
+        \textbf{Yu} & Jujuy & Yuto      & -23.584 & -64.506 & 401 & \textbf{Cwa}\\ 
+        \textbf{Sa} & Salta & Salta     & -24.728 & -65.409 & 1233& \textbf{Cwb}\\ 
+        \textbf{Sca}& Salta & San Carlos& -25.895 & -65.925 & 1624& \textbf{Cwb}\\
+        \textbf{Ero}& Salta & El Rosal  & -24.392 & -65.768 & 3355& \textbf{Bsk}\\
+        \textbf{Lq} & Jujuy & La Quiaca & -22.103 & -65.599 & 3500& \textbf{Bsk}\\
         \hline
         
         
@@ -148,7 +147,7 @@ Adicionalmente, existen otros modelos de estimación que cubren nuestro territor
 
 \section{Desempeño de los modelos de GHI en el NOA}
 
-Antes de presentar el desempeño de los distintos procesos de adaptación al sitio, se evaluaron los modelos de estimación de GHI disponibles para la región, lo cual constituye uno de los principales aportes de este trabajo. A continuación, se muestran las métricas de desempeño de los modelos calculadas sobre el conjunto de datos correspondiente a cada sitio.
+Antes de presentar el desempeño de los distintos procesos de adaptación al sitio, se evaluaron los modelos de estimación de GHI disponibles para la región. A continuación, se muestran las métricas de desempeño de los modelos calculadas sobre el conjunto de datos correspondiente a cada sitio.
 
 % Antes de la tabla, si quieres aumentar la altura de filas
 \renewcommand{\arraystretch}{1.5}
@@ -187,7 +186,7 @@ Antes de presentar el desempeño de los distintos procesos de adaptación al sit
 
 \subsection{Análisis de las estimaciones 15-minutales}
 
-La Figura \ref{fig:general-15} muestra la evaluación comparativa de los modelos CAMS y LSA-SAF en los sitios de estudio. En el caso del MBE, se observa que LSA-SAF presenta sesgos positivos en la mayoría de los sitios, indicando una tendencia a la sobreestimación sistemática de las variables simuladas, mientras que CAMS exhibe valores más cercanos a cero o incluso negativos, lo que refleja un comportamiento más balanceado, aunque con subestimaciones marcadas en sitios como Er y Lq.
+La Figura \ref{fig:general-15} muestra la evaluación comparativa de los modelos CAMS y LSA-SAF en los sitios de estudio. En el caso del MBE, se observa que LSA-SAF presenta sesgos positivos en la mayoría de los sitios, indicando una tendencia a la sobreestimación sistemática, mientras que CAMS exhibe valores más cercanos a cero o incluso negativos, lo que refleja un comportamiento más balanceado, aunque con subestimaciones marcadas en sitios como Er y Lq.
 
 
 \begin{figure}
@@ -210,11 +209,26 @@ La Figura \ref{fig:general-15} muestra la evaluación comparativa de los modelos
 La Figura \ref{fig:season-15} muestra la variación estacional del rRMSE (\%) para los productos CAMS y LSA-SAF con resolución de 15 minutos en todos los sitios de estudio. Se observa una clara tendencia estacional en el comportamiento del error: en general, el rRMSE tiende a aumentar durante el verano, lo que indica que la precisión de las estimaciones disminuye en este período en la mayoría de los sitios. La excepción es Yuto, donde el error permanece relativamente estable a lo largo de las estaciones. Este patrón sugiere que durante el verano hay una mayor presencia de nubosidad, lo cual podría estar afectando la capacidad de los modelos satelitales para estimar correctamente la radiación solar, mientras que en otras estaciones la cobertura nubosa es menor, permitiendo estimaciones más precisas.
 
 
-En relación con el \textit{MAE}, ambos modelos presentan magnitudes relativamente similares, aunque \textit{LSA-SAF} tiende a mostrar errores absolutos ligeramente mayores en sitios como Yu y Sa, mientras que \textit{CAMS} presenta valores más altos en Sca y Er. Esto sugiere que ninguno de los dos modelos logra una reducción clara y consistente del error en todos los sitios.
+En relación con el MAE, ambos modelos presentan magnitudes relativamente similares, aunque LSA-SAF tiende a mostrar errores absolutos ligeramente mayores en sitios como Yu y Sa, mientras que CAMS presenta valores más altos en Sca y Ero.
 
-Por su parte, en la métrica \textit{RMSE}, que penaliza en mayor medida los errores grandes, se mantiene un patrón semejante: \textit{LSA-SAF} suele exhibir errores algo superiores a los de \textit{CAMS} en Yu y Sa, mientras que en Er y Lq la diferencia favorece al modelo satelital. En general, los resultados muestran que el desempeño relativo de los modelos depende fuertemente del sitio, sin que exista un claro ganador en todos los casos.
+Por su parte, en la métrica RMSE se mantiene un patrón semejante: LSA-SAF suele exhibir errores algo superiores a los de CAMS en Yu y Sa, mientras que en Ero y Lq la diferencia favorece al modelo LSA-SAF. En general, los resultados muestran que el desempeño relativo de los modelos depende del sitio, sin que exista un claro ganador en todos los casos.
 
-Para complementar este análisis, la Figura~\ref{fig:RMSE-variabilidad} presenta la distribución del error relativo cuadrático medio (\textit{rRMSE}) en función de dos variables explicativas: el índice de claridad ($k_t$) y un índice de variabilidad calculado a partir de la desviación estándar de las diferencias consecutivas de GHI. Este análisis bidimensional permite examinar cómo las condiciones atmosféricas locales y la estabilidad de la irradiancia influyen en la magnitud del error de los modelos.
+Para complementar este análisis, la Figura~\ref{fig:RMSE-variabilidad} presenta la distribución del RMSE en función de dos variables explicativas: el índice de claridad ($k_t$) y un índice de variabilidad calculado a partir de la desviación estándar de las diferencias consecutivas de GHI. Este análisis bidimensional permite examinar cómo las condiciones atmosféricas locales y la estabilidad de la irradiancia influyen en la magnitud del error de los modelos.
+
+El índice de variabilidad empleado se define como:
+\begin{equation}
+\mathrm{VarIndex}(t) = 
+\sqrt{\frac{1}{N - 1} 
+\sum_{i \in \mathcal{W}(t)} 
+\left[ (GHI_i - GHI_{i-1}) - 
+\overline{\Delta GHI} \right]^2}
+\end{equation}
+
+
+\noindent \noindent donde $GHI_i$ representa la irradiancia global horizontal en el instante $i$, $\Delta GHI_t = GHI_t - GHI_{t-1}$ corresponde a la diferencia temporal de GHI, 
+$N$ es el número de muestras dentro de la ventana de cálculo (en este trabajo $N = 10$), 
+y $\mathcal{W}(t)$ denota una ventana temporal centrada alrededor de $t$. 
+El término $\overline{\Delta GHI}$ representa la media de las diferencias dentro de dicha ventana.
 
 \begin{figure}[ht]
     \centering
@@ -226,32 +240,18 @@ Para complementar este análisis, la Figura~\ref{fig:RMSE-variabilidad} presenta
 El gráfico evidencia una relación clara entre el error y las condiciones radiativas:
 
 \begin{itemize}
-    \item \textbf{Patrón general con el índice de claridad ($k_t$):} En todos los sitios y para ambos modelos, el \textit{rRMSE} aumenta a medida que $k_t$ disminuye. Esto indica que los modelos tienden a desempeñarse mejor bajo condiciones despejadas ($k_t$ alto), mientras que las mayores discrepancias ocurren cuando el cielo está parcialmente nublado o cubierto ($k_t$ bajo), donde la radiación difusa domina y los modelos satelitales suelen presentar mayor incertidumbre. Este comportamiento es esperable y refuerza la sensibilidad de las estimaciones de GHI frente a la cobertura nubosa.
+    \item \textbf{Patrón general con el índice de claridad ($k_t$):} En todos los sitios y para ambos modelos, el rRMSE aumenta a medida que $k_t$ disminuye. Esto indica que los modelos tienden a desempeñarse mejor bajo condiciones despejadas ($k_t$ alto), mientras que las mayores discrepancias ocurren cuando el cielo está parcialmente nublado o cubierto ($k_t$ bajo), donde la radiación difusa domina y los modelos satelitales suelen presentar mayor incertidumbre. Este comportamiento es esperable y refuerza la sensibilidad de las estimaciones de GHI frente a la cobertura nubosa.
 
-    \item \textbf{Influencia de la variabilidad local ($\sigma$ de $\Delta GHI$):} En la mayoría de los casos, se observa un incremento del \textit{rRMSE} con la variabilidad. Cuando la variabilidad es baja ($\leq 50$ W/m$^2$), el error se mantiene reducido; sin embargo, a medida que aumenta ($\geq 150$–$200$ W/m$^2$), se aprecian regiones más intensas en el mapa (colores naranja que tienen al negro), lo que sugiere un deterioro progresivo en la estimación. Esto refleja la dificultad de los modelos para capturar fluctuaciones rápidas en la irradiancia asociadas a nubosidad variable o transiciones atmosféricas dinámicas.
+    \item \textbf{Influencia de la variabilidad local ($\sigma$ de $\Delta GHI$):} En la mayoría de los casos, se observa un incremento del rRMSE con la variabilidad. Cuando la variabilidad es baja ($\leq 50$ W/m$^2$), el error se mantiene reducido; sin embargo, a medida que aumenta ($\geq 150$–$200$ W/m$^2$), se aprecian regiones más intensas en el mapa (colores naranja que tienen al negro), lo que sugiere un deterioro progresivo en la estimación. Esto refleja la dificultad de los modelos para capturar fluctuaciones rápidas en la irradiancia asociadas a nubosidad variable o transiciones atmosféricas dinámicas.
 
-    \item \textbf{Comparación CAMS vs. LSA-SAF:} Ambos modelos muestran patrones similares, aunque \textit{LSA-SAF} presenta un rango de errores ligeramente más amplio, especialmente a valores bajos de $k_t$. \textit{CAMS} exhibe una distribución más homogénea, con menor saturación en los valores altos de \textit{rRMSE}. Estas diferencias podrían estar relacionadas con la resolución temporal o con las estrategias de parametrización de nubosidad empleadas por cada sistema.
+    \item \textbf{Comparación CAMS vs. LSA-SAF:} Ambos modelos muestran patrones similares, aunque LSA-SAF presenta un rango de errores ligeramente más amplio, especialmente a valores bajos de $k_t$. CAMS exhibe una distribución más homogénea, con menor saturación en los valores altos de rRMSE. Estas diferencias podrían estar relacionadas con las estrategias de parametrización de nubosidad empleadas por cada sistema dado que comparten la misma información satelital de origen.
 
-    \item \textbf{Variaciones entre sitios:} Aunque el patrón global es consistente, se observan diferencias notables entre sitios. Yu y Sa muestran los mayores valores de \textit{rRMSE} en condiciones de bajo $k_t$, posiblemente debido a una mayor presencia de nubosidad variable o efectos locales (por ejemplo, humedad o aerosoles). Ero y Lq presentan errores más bajos en general, lo que podría vincularse con condiciones atmosféricas más estables o una mejor respuesta del modelo en esas latitudes o altitudes. Sca muestra una dispersión más amplia, indicando una combinación de regímenes atmosféricos con distinta estabilidad.
+    \item \textbf{Variaciones entre sitios:} Aunque el patrón global es consistente, se observan diferencias notables entre sitios. Yu y Sa muestran los mayores valores de rRMSE en condiciones de bajo $k_t$, posiblemente debido a una mayor presencia de nubosidad variable o efectos locales (por ejemplo, humedad o aerosoles). Ero y Lq presentan errores más bajos en general, lo que podría vincularse con condiciones atmosféricas más estables o una mejor respuesta del modelo en esas latitudes o altitudes. Sca muestra una dispersión más amplia, indicando una combinación de regímenes atmosféricos con distinta estabilidad.
 
     \item \textbf{Distribución vertical del error:} La mayor concentración de error en la franja $k_t < 0.3$ en todos los casos sugiere que los modelos no representan adecuadamente los componentes difusos de la radiación. Este resultado es relevante para la calibración de modelos locales y la corrección de productos satelitales en condiciones nubladas.
 \end{itemize}
 
-El índice de variabilidad empleado se define como:
 
-\begin{equation}
-\mathrm{VarIndex}(t) = 
-\sigma(\Delta GHI_t) = 
-\sqrt{\frac{1}{N - 1} 
-\sum_{i = t - k}^{t + k} 
-\left[ (GHI_i - GHI_{i-1}) - 
-\overline{(GHI - GHI_{-1})} \right]^2}
-\end{equation}
-
-donde $GHI_i$ representa la irradiancia global horizontal en el instante $i$, 
-$\Delta GHI_t = GHI_t - GHI_{t-1}$ corresponde a la diferencia temporal de GHI, 
-$N$ es el número de muestras dentro de la ventana de cálculo (por ejemplo, $N = 10$), 
-y $\overline{(GHI - GHI_{-1})}$ denota la media de las diferencias dentro de dicha ventana.
 
 \begin{figure}[ht]
     \centering
@@ -260,9 +260,9 @@ y $\overline{(GHI - GHI_{-1})}$ denota la media de las diferencias dentro de dic
     \label{fig:RMSE-SZA-15}
 \end{figure}
 
-Por otro lado, la relación \textit{rRMSE}–SZA (Figura~\ref{fig:RMSE-SZA-15}) evidencia un comportamiento en forma de “U” invertida: los menores errores se concentran en ángulos intermedios (30°–50°), mientras que hacia ángulos bajos ($<20°$) y altos ($>70°$) el error aumenta de manera significativa. Esta tendencia se observa en los cinco sitios, con un incremento más pronunciado en Ero y Sa en las condiciones de SZA más extremas. En general, \textit{CAMS} muestra un mejor desempeño que \textit{LSA-SAF} en la mayoría de los intervalos, aunque las diferencias se reducen en los ángulos medios.
+Por otro lado, la relación \textit{rRMSE}–SZA (Figura~\ref{fig:RMSE-SZA-15}) evidencia un comportamiento en forma de “U” invertida: los menores errores se concentran en ángulos intermedios (30°–50°), mientras que hacia ángulos altos ($>70°$) el error aumenta. Esta tendencia se observa en los cinco sitios, con un incremento más pronunciado en Ero y Sa en las condiciones de SZA más extremas. En general, CAMS muestra un mejor desempeño que LSA-SAF en la mayoría de los intervalos, aunque las diferencias se reducen en los ángulos medios.
 
-En conjunto, estos resultados indican que la precisión de ambos productos depende fuertemente de las condiciones atmosféricas ($k_t$) y de la geometría solar (SZA). En cielos despejados y ángulos intermedios, los errores se reducen notablemente, mientras que en condiciones nubosas y en situaciones de baja o alta elevación solar los modelos presentan las mayores limitaciones.
+En conjunto, estos resultados indican que la precisión de ambos productos depende de las condiciones atmosféricas ($k_t$) y de la geometría solar (SZA). En cielos despejados y ángulos intermedios, los errores se reducen notablemente, mientras que en condiciones nubosas y en situaciones de baja o alta elevación solar los modelos presentan las mayores limitaciones.
 
 
 
@@ -294,7 +294,7 @@ En Ero, el modelo de CAMS presenta un comportamiento atípico en su estimación.
 
 
 
-Como se ha evidenciado, el desempeño de cada modelo varía significativamente dependiendo del sitio observado, y parte de estas diferencias puede explicarse por la resolución espacial de cada modelo de estimación. La Figura \ref{fig:resoluciones} muestra un mapa de los sitios seleccionados, donde se ilustran las celdas correspondientes a los modelos MERRA2, ERA5 y LSASAF, con resoluciones de 0.5°×0.625°, 0.25°×0.25° y ~0.05°×0.05°, respectivamente.\\
+Como se ha evidenciado, el desempeño de cada modelo varía dependiendo del sitio observado, y parte de estas diferencias puede explicarse por la resolución espacial de cada modelo de estimación. La Figura \ref{fig:resoluciones} muestra un mapa de los sitios seleccionados, donde se ilustran las celdas correspondientes a los modelos MERRA2, ERA5 y LSASAF, con resoluciones de 0.5°×0.625°, 0.25°×0.25° y ~0.05°×0.05°, respectivamente.\\
 
 Se observa que los modelos de mayor resolución, como LSASAF, representan áreas más pequeñas y detalladas alrededor de cada sitio, mientras que los modelos de resolución más gruesa, como MERRA2, generan celdas más extensas que promedian las condiciones espaciales en una región más amplia. Esta diferencia espacial es un factor determinante que puede explicar por qué los modelos de alta resolución capturan mejor la variabilidad local de las condiciones atmosféricas, mientras que los de baja resolución tienden a suavizar estas variaciones.\\
 
@@ -336,7 +336,7 @@ De acuerdo a lo indicado en la sección \ref{MLM} el conjunto de datos debe ser 
 
         \textbf{YU}  & 2017 & 2017 & 2018 \\ 
         \textbf{SA}  & 2009 & 2009 & 2010 - 2024 \\ 
-        \textbf{SCA} & 2013 & 2013 & 2012-2014 \\
+        \textbf{SCA} & 2013 & 2013 & 2012 - 2014 \\
         \textbf{ERO} & 2013 & 2013 & 2014 - 2024  \\
         \textbf{LQ}  & 2019 & 2019 & 2018, 2021 - 2023  \\
     \hline
@@ -387,7 +387,7 @@ De acuerdo a lo indicado en la sección \ref{MLM} el conjunto de datos debe ser 
 
 En los trabajos citados en la Sección \ref{ch_3} sobre la evaluación del proceso de Adaptación al Sitio (SA), se ha prestado escasa atención a las razones subyacentes por las cuales ciertos modelos de aprendizaje automático (ML) superan a otros en este proceso. Dado que algunos modelos de ML poseen una naturaleza inherentemente más compleja que otros, podría suponerse que los modelos más complejos ofrecerían un rendimiento superior frente a aquellos de menor complejidad. En este contexto, el término complejidad hace referencia tanto a la complejidad computacional —es decir, la cantidad de operaciones necesarias para ejecutar el modelo— como a la complejidad conceptual, relacionada con el nivel de conocimiento requerido para comprender su funcionamiento.\\
 
-En esta sección se presenta una implementación del proceso de SA basada en uno de los enfoques clásicos, que consiste en adaptar una serie temporal modelada (proveniente de datos satelitales o de reanálisis) utilizando como referencia una serie de mediciones in situ.\\
+En esta sección se presenta una implementación del proceso de SA basada en uno de los enfoques clásicos.\\
 
 Dado que el modelo de Regresión Lineal Simple (SLR por sus siglas en ingles) puede considerarse el menos complejo entre los empleados en este estudio, la primera evaluación del proceso de SA es realizada utilizando este modelo de regresión. El objetivo es comparar el desempeño de SLR con el de modelos de regresión más complejos, como el Perceptrón Multicapa (MLP) y XGBoost (XGB), utilizando las mismas métricas de evaluación.\\
 
@@ -644,37 +644,36 @@ En la sección anterior se presentaron los resultados del proceso de adaptación
 
 En la práctica, estas variables adicionales pueden provenir de distintos modelos de reanálisis o de fuentes satelitales, y se seleccionan bajo la expectativa de que estén correlacionadas, de alguna manera, con la irradiancia global horizontal (GHI) medida. Este enfoque ha sido aplicado y documentado en trabajos previos, como \cite{Salazar2025, Miranda2021, Miranda2023}.
 
-La ampliación del conjunto de regresores y la automatización del proceso de entrenamiento resulta especialmente atractiva considerando que los modelos de aprendizaje automático se utilizan cada vez más para identificar patrones y extraer información de grandes volúmenes de datos. No obstante, la efectividad de estos modelos depende en gran medida de la calidad y relevancia de los regresores empleados: no basta con añadir más variables, estas deben ser apropiadas y contener información útil para la tarea de predicción.
+La ampliación del conjunto de regresores y la automatización del proceso de entrenamiento resulta especialmente atractiva considerando que los modelos de aprendizaje automático se utilizan cada vez más para identificar patrones y extraer información de grandes volúmenes de datos. No obstante, la efectividad de estos modelos depende en gran medida de la calidad y relevancia de los regresores empleados: no basta con añadir más variables, estas deben ser apropiadas y contener información útil para la tarea de estimación.
 
 \subsection{La necesidad de un análisis exploratorio de datos}
 
-Antes de implementar la adaptación con todos los regresores disponibles, es fundamental realizar un análisis exploratorio de datos (AED). Este paso se puede comparar con inspeccionar un terreno antes de construir una casa: si no conocemos la distribución del terreno, la presencia de obstáculos o la estabilidad del suelo, cualquier construcción posterior podría ser ineficiente o incluso fallar. De manera análoga, un AED permite comprender las características básicas de cada variable, su rango, posibles valores atípicos, correlaciones y relaciones con la variable objetivo, asegurando que el modelo posterior tenga una base sólida.  
+Antes de implementar la adaptación con todos los regresores disponibles, es fundamental realizar un análisis exploratorio de datos (AED) que ayuden a comprender las características básicas de cada variable, su rango, posibles valores atípicos, correlaciones y relaciones con la variable objetivo, asegurando que el modelo posterior se desarrolle una base más sólida.  
 
-El AED no solo ayuda a identificar qué variables pueden ser más relevantes, sino que también sirve para detectar problemas en ellas, como valores faltantes, inconsistencias o errores de modelado, que podrían afectar la calidad de la estimación \citep{Tukey1977, Behrens1997, Wilks2006}. Por ejemplo, variables mal calculadas o extremadamente ruidosas podrían introducir sesgos en el modelo de regresión, reduciendo su capacidad de generalización. Comprender estos aspectos antes de la construcción del modelo es crucial para asegurar que los resultados sean confiables y reproducibles.  
+El AED no solo ayuda a identificar qué variables pueden ser más relevantes, sino que también sirve para detectar problemas en ellas, como valores faltantes, inconsistencias o errores de modelado, que podrían afectar la calidad de la estimación \citep{Tukey1977, Behrens1997, Wilks2006}. Por ejemplo, variables mal calculadas o extremadamente ruidosas podrían introducir desvios en el modelo de regresión, reduciendo su capacidad de estimación y generalización. Comprender estos aspectos antes de la construcción del modelo es crucial para asegurar que los resultados sean confiables y reproducibles.  
 
 Además, el AED permite evaluar relaciones no lineales y patrones temporales que podrían no ser evidentes a simple vista. Por ejemplo, la relación entre la irradiancia solar y la temperatura o la humedad puede variar a lo largo del año, y detectar estos patrones ayuda a definir qué regresores son realmente útiles \citep{ Kuhn2013}. Esta exploración es especialmente importante cuando se dispone de un gran número de variables regresoras, porque es probable que no todas aportaran información significativa.  
 
 Finalmente, realizar un AED exhaustivo permite planificar estrategias de reducción de dimensionalidad o selección de variables antes de aplicar modelos complejos. En este trabajo, se propone inicialmente realizar la adaptación del modelo utilizando todos los regresores disponibles para obtener una estimación completa. Posteriormente, se utilizarán los resultados del AED para identificar los regresores más relevantes y comparar su desempeño con el modelo completo. Este enfoque dual combina la riqueza de información disponible con la eficiencia y robustez que aporta un conjunto de variables cuidadosamente seleccionado.  
 
 \subsection{Implementación de la adaptación con múltiples regresores}
-
-En la sección anterior, el proceso de adaptación al sitio se definía mediante la siguiente expresión:
+En la sección anterior, el proceso de SA se definió mediante la siguiente expresión:
 
 \begin{equation}
-GHI_{adaptado} = ML_{Regresor}(GHI_{modelado}),
+GHI_{adaptado} = f(GHI_{modelado}),
 \label{ec:SiteAdapSimple}
 \end{equation}
 
-\noindent donde $ML_{Regresor}$ representa cualquiera de los modelos de regresión utilizados (SLR, MLP o XGB). 
+\noindent donde $f_{modelado}$, en este trabajo, denota cualquiera de los modelos de regresión considerados (SLR, MLP o XGB).
 
-En esta sección se propone incrementar el conjunto de variables regresoras, con la expectativa de que estas aporten información adicional al modelo de regresión. De este modo, la alternativa para la adaptación puede expresarse como:
+En esta sección se propone ampliar el conjunto de variables regresoras, con el objetivo de incorporar información adicional al modelo. En consecuencia, la adaptación puede reformularse como:
 
 \begin{equation}
-GHI_{adaptado} = ML_{Regresor}(Reg_{1}, Reg_{2}, Reg_{3},..., Reg_{n}),
+GHI_{adaptado} = f(GHI_{modelado}, Reg_{1}, Reg_{2}, \dots, Reg_{n}),
 \label{ec:SiteAdapMultiple}
 \end{equation}
 
-\noindent donde cada $Reg_{i}$ representa una variable regresora; incluyendo $GHI_{modelado}$, que también forma parte del conjunto.
+\noindent donde cada $Reg_{i}$ representa una variable regresora. Cabe destacar que $GHI_{modelado}$ debe incluirse necesariamente dentro del conjunto de variables de entrada, dado que el enfoque corresponde a un problema de SA; su omisión implicaría abordar un problema de estimación basado en $n$ variables, en lugar de uno de adaptación.
 
 Para este trabajo se propuso un conjunto de variables de carácter astronómico, atmosférico y meteorológico, definidas de la siguiente manera:
 
@@ -682,23 +681,26 @@ Para este trabajo se propuso un conjunto de variables de carácter astronómico,
 \item \texttt{N}: Día del año.
 \item \texttt{SZA}: Ángulo cenital solar.
 \item \texttt{$\alpha$}: Altura solar.
-\item \texttt{TOA}: Irradiancia en la parte superior de la atmósfera.
+\item \texttt{TOA}: Irradiancia en plano horizontal en la parte superior de la atmósfera.
 \item \texttt{GHIargp2}: Irradiancia bajo cielo despejado según \cite{Ledesma2023a}.
 \item \texttt{delta}: Declinación solar.
-\item \texttt{Fn}: Función normalizada de duración del día.
-\item \texttt{E0}: Factor de corrección extraterrestre.
-\item \texttt{mr}: Masa de aire relativa \cite{Gueymard2003}.
+\item \texttt{Fn}: Función normalizada de duración del día, que representa la fracción relativa de horas de luz respecto al máximo anual.
+\item \texttt{E0}: Factor de corrección de la irradiancia extraterrestre, que tiene en cuenta la variación de la distancia Tierra–Sol a lo largo del año.
+\item \texttt{mr}: Masa de aire relativa, definida como la razón entre la longitud del trayecto óptico de la radiación solar en la atmósfera y la correspondiente trayectoria en dirección cenital \cite{Gueymard2003}.
 \item \texttt{tm}: Temperatura media del aire según ERA5.
-\item \texttt{uw}: Componente U del viento según ERA5.
-\item \texttt{dw}: Componente V del viento según ERA5.
+\item \texttt{uw}: Componente zonal (este-oeste) del viento según ERA5.
+\item \texttt{dw}: Componente meridional (norte-sur) del viento según ERA5.
 \item \texttt{tcw}: Vapor de agua total en la columna atmosférica según ERA5.
 \item \texttt{2mdt}: Temperatura del punto de rocío a 2 metros sobre el suelo según ERA5.
-
 \end{itemize}
 
-Las variables \texttt{tm}, \texttt{uw}, \texttt{dw} y \texttt{2mdt} provienen del modelo ERA5 y se encuentran disponibles a escala horaria. Por esta razón, consideramos inapropiado interpolarlas a una resolución de 15 minutos, ya que esta transformación no añade información real y podría introducir errores. En consecuencia, las evaluaciones presentadas en esta sección se realizan exclusivamente a escala horaria.
+Las variables \texttt{tm}, \texttt{uw}, \texttt{dw} y \texttt{2mdt} provienen del modelo ERA5 y se encuentran disponibles a escala horaria. Si bien es técnicamente posible interpolarlas a una resolución de 15 minutos, esta operación no incorpora nueva información física, sino que introduce valores estimados cuya variabilidad depende exclusivamente del método de interpolación utilizado.
 
-Aunque, desde un punto de vista técnico, es posible interpolar estas variables para obtener valores a intervalos menores, el resultado dependería más del método de interpolación que de las características físicas del sitio o del proceso de adaptación del modelo. Mantener la escala temporal original garantiza así una mayor consistencia y validez en el análisis.\\
+En este sentido, el uso de interpolación temporal implica un compromiso entre el posible aumento de resolución y la introducción de ruido artificial. Dado que no existe evidencia a priori de que el downscaling temporal mejore la calidad de las variables en este contexto, y considerando que podría incluso degradarla, en este trabajo se opta por mantener la resolución horaria original. De esta manera, se preserva la consistencia física de los datos y se evita incorporar incertidumbre adicional en el análisis.
+
+Por otro lado, tanto ERA5 como MERRA-2 proporcionan estimaciones de variables meteorológicas como \texttt{tm}, \texttt{uw}, \texttt{dw} y \texttt{2mdt}. En este trabajo se ha optado por utilizar ERA5 debido a su mayor resolución espacial, lo cual permite una mejor representación de las condiciones locales del sitio de estudio. Esta característica resulta especialmente relevante en aplicaciones donde la variabilidad espacial puede tener un impacto significativo en las estimaciones.
+
+En consecuencia, todas las evaluaciones presentadas en esta sección se realizan exclusivamente a escala temporal horaria, en coherencia con la resolución nativa de las variables utilizadas.
 
 
 \begin{table*}[h]
@@ -755,7 +757,7 @@ Los resultados de la Tabla \ref{tab:metricas_3_1} y la Figura \ref{fig:regressor
 
 Entre los regresores evaluados, se observa que XGB y MLP no producen mejoras significativamente mayores que las obtenidas con MLR. Esto indica que, aunque los modelos regresores más sofisticados son capaces de capturar relaciones no lineales, es necesario un análisis previo que permita identificar qué variables tienen mayor potencial como regresores antes de introducirlas en el modelo.
 
-Estos resultados preliminares subrayan la importancia de realizar un análisis exploratorio que permita determinar qué variables son más prometedoras para cada sitio y, de este modo, seleccionar un conjunto de regresores que garantice un desempeño consistente y robusto. En este sentido, la selección de características se convierte en un paso crítico del preprocesamiento al entrenar modelos de ML, ya que permite identificar las variables más relevantes y eliminar aquellas redundantes o irrelevantes \citep{liu2023, Huang2024}. Una selección adecuada de características mejora la interpretabilidad del modelo, optimiza su eficiencia computacional y aumenta su capacidad predictiva, mientras que la inclusión de variables irrelevantes puede inducir sobreajuste \citep{che2024a}. Si bien, métodos como los de filtro, envolventes y embebidos permiten automatizar este proceso, pero el análisis exploratorio de datos sigue siendo fundamental para guiar la selección inicial de regresores y variables \citep{Cheng2024}.
+Estos resultados preliminares subrayan la importancia de realizar un análisis exploratorio que permita determinar qué variables son más prometedoras para cada sitio y, de este modo, seleccionar un conjunto de regresores que garantice un desempeño consistente y robusto. En este sentido, la selección de características se convierte en un paso crítico del preprocesamiento al entrenar modelos de ML, ya que permite identificar las variables más relevantes y eliminar aquellas redundantes o irrelevantes \citep{liu2023, Huang2024}. Una selección adecuada de características mejora la interpretabilidad del modelo, optimiza su eficiencia computacional y aumenta su capacidad predictiva, mientras que la inclusión de variables irrelevantes puede inducir diversos problemas \citep{che2024a}. %Si bien, métodos como los de filtro, envolventes y embebidos permiten automatizar este proceso, pero el análisis exploratorio de datos sigue siendo fundamental para guiar la selección inicial de regresores y variables \citep{Cheng2024}.%
 
 \begin{figure*}
     \centering
@@ -764,17 +766,18 @@ Estos resultados preliminares subrayan la importancia de realizar un análisis e
     \label{fig:correlacion}
 \end{figure*}
 
-La Figura \ref{fig:correlacion} muestra la matriz de correlación según \textbf{Pearson} de los regresores en la estación Sa, considerando únicamente las relaciones entre las variables predictoras, sin incluir su vínculo con la variable objetivo (GHI medida).
-El coeficiente de Pearson mide la correlación lineal entre dos variables continuas, asumiendo que los datos siguen una distribución aproximadamente normal y que la relación entre ellos puede representarse mediante una recta. Este coeficiente es especialmente útil cuando las variables presentan una relación proporcional directa o inversa y se desea evaluar la fuerza y dirección del vínculo lineal.\\
+La Figura \ref{fig:correlacion} muestra la matriz de correlación de \textbf{Pearson} de los regresores en la estación Sa, considerando únicamente las relaciones entre las variables predictoras.
 
-Este análisis es fundamental, ya que permite identificar variables que presentan una alta correlación entre sí y, por tanto, aportan información redundante. Incluir todas estas variables en el modelo puede generar problemas de multicolinealidad, dificultar la interpretación de los coeficientes y aumentar el riesgo de sobreajuste. Además, reducir la redundancia contribuye a simplificar el modelo y disminuir la carga computacional, lo cual resulta especialmente relevante en algoritmos de mayor complejidad, como MLP o modelos de tipo XGBoost. En este sentido, la matriz de correlación constituye un primer paso clave en la selección de variables, que posteriormente debe complementarse con el análisis de la relación de cada regresor con la variable objetivo, con el fin de construir modelos más eficientes, interpretables y generalizables.\\
+El coeficiente de correlación de Pearson es una medida del grado de asociación lineal entre dos variables continuas. Valores cercanos a 1 o -1 indican una fuerte relación lineal positiva o negativa, respectivamente, mientras que valores cercanos a 0 indican una débil asociación lineal, independientemente de la posible existencia de relaciones no lineales entre las variables.\\
 
-Según \citet{Geher2016}, existen umbrales de correlación a partir de los cuales puede considerarse que dos variables están fuertemente asociadas. De acuerdo con estos autores, las correlaciones entre 0 y ±0.3 se consideran débiles, entre ±0.3 y ±0.7 moderadas, y entre ±0.7 y ±1.0 fuertes. Por tanto, en este trabajo se propone eliminar aquellas variables que podrían resultar redundantes cuando su coeficiente de correlación sea mayor a 0.85 o menor a –0.85, de modo que se reduzca la colinealidad y se mejore la estabilidad del modelo.
+Este análisis permite identificar variables altamente correlacionadas entre sí, lo que puede indicar la presencia de información redundante. La inclusión de variables redundantes puede derivar en problemas de multicolinealidad\footnote{La multicolinealidad se refiere a la existencia de altas correlaciones entre variables explicativas, lo que puede dificultar la estimación e interpretación de los parámetros del modelo, además de amplificar la sensibilidad a perturbaciones en los datos.}, afectar la interpretabilidad del modelo y aumentar innecesariamente la complejidad computacional, especialmente en algoritmos como MLP o XGBoost. En este sentido, la matriz de correlación constituye un primer paso en el análisis exploratorio de los datos y en la selección de variables, que luego puede complementarse con otras técnicas que consideren la relación con la variable objetivo.
+
+Según \citet{Geher2016}, existen umbrales orientativos para interpretar la magnitud del coeficiente de correlación: valores entre 0 y ±0.3 suelen considerarse débiles, entre ±0.3 y ±0.7 moderados, y entre ±0.7 y ±1.0 fuertes. En este trabajo, se adopta un criterio conservador y se propone identificar como potencialmente redundantes aquellas variables cuyo coeficiente de correlación sea mayor a 0.85 en valor absoluto, con el objetivo de reducir la colinealidad entre regresores.
 
 \begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{SA_corr_matrix_mini.png} 
-    \caption[Coeficientes de correlación de Pearson y Spearman entre las variables meteorológicas y las distintas metodologías.]{Coeficientes de correlación de Pearson y Spearman entre las variables meteorológicas y las distintas metodologías (Yu, Sa, Sca, Ero y Lq).}
+    \caption[Coeficientes de correlación de Pearson entre las variables meteorológicas]{Coeficientes de correlación de Pearson entre las variables meteorológicas.}
     \label{fig:correlacion_filtrados}
 \end{figure*}
 
@@ -789,7 +792,7 @@ El uso conjunto de ambos estadísticos permite contrastar la robustez de las aso
 
 
 \begin{table*}[h]
-\caption[Coeficientes de correlación de Pearson y Spearman entre las variables meteorológicas y las distintas metodologías.]{Coeficientes de correlación de Pearson y Spearman entre las variables meteorológicas y las distintas metodologías (Yu, Sa, Sca, Ero y Lq).}
+\caption[Coeficientes de correlación de Pearson y Spearman entre las variables meteorológicas y GHI medida.]{Coeficientes de correlación de Pearson y Spearman entre las variables meteorológicas y GHI medida.}
 \label{tab:correlacion}
 \centering
 \resizebox{\linewidth}{!}{
@@ -875,7 +878,7 @@ MERRA-2 XGB & -5.3 & 31.2 & 39.5 & 6.7 & 31.2 & 41.7 & 0.1 & 21.2 & 29.7 & 0.0 &
 \end{figure*}
 
 
-Los resultados mostrados en la Figura \ref{fig:comparacion_filtrados} evidencian una mejora general en las métricas de desempeño cuando se restringe el conjunto de regresores a aquellas variables con influencia física y estadística demostrada sobre la irradiancia global. En particular, el uso combinado de GHIargp2 y la temperatura media (tm) permitió reducir la dispersión y aumentar la estabilidad de los modelos en todos los sitios analizados. Este comportamiento confirma que la inclusión selectiva de variables relevantes puede tener un impacto más significativo que el simple incremento del número de regresores.
+Los resultados mostrados en la Figura \ref{fig:comparacion_filtrados} evidencian una mejora general en las métricas de desempeño cuando se restringe el conjunto de regresores a aquellas variables con influencia física y estadística demostrada sobre la irradiancia global. En particular, el uso combinado de GHIargp2 y la temperatura media (tm) permitió reducir la dispersión de los errores y mejorar la consistencia del desempeño de los modelos en todos los sitios analizados. Este comportamiento confirma que la inclusión selectiva de variables relevantes puede tener un impacto más significativo que el simple incremento del número de regresores.
 
 A diferencia de los resultados previos (Tabla \ref{tab:metricas_3_1} y Figura \ref{fig:regressors_comparison}), donde algunos casos de adaptación presentaban degradaciones puntuales del desempeño (flechas rojas), en esta segunda evaluación se observa una mayor consistencia entre los sitios. Los errores relativos se mantienen dentro de márgenes similares y las diferencias entre modelos tienden a disminuir. Esta homogeneidad sugiere que una correcta selección de variables no solo mejora el ajuste local, sino que también favorece la capacidad de generalización de los modelos de regresión en distintos contextos geográficos y climáticos.
 
@@ -901,7 +904,7 @@ En resumen, los resultados demuestran que la relevancia y coherencia física de 
 
 En las Secciones \ref{sec:01} y \ref{sec:02} se presentaron las primeras evaluaciones del proceso de adaptación al sitio en la región del NOA, siguiendo metodologías previamente reportadas en la literatura relacionada. Estas implementaciones proporcionaron una base sólida para comprender la influencia del entorno local en la variable GHI y para dimensionar los límites de mejora que pueden alcanzarse al aplicar dichos enfoques.\\
 
-Las evaluaciones realizadas, tanto en este trabajo como en estudios previos sobre SA, se han basado exclusivamente en datos medidos en una estación meteorológica que se combinan con una o más variables modeladas —provenientes de una celda de un modelo satelital o de reanálisis— que representan geográficamente la ubicación de dicha estación. En otras palabras, la información utilizada para entrenar y validar los modelos de corrección se limita a la celda específica del punto de medición, sin considerar el contexto espacial más amplio que podría aportar información adicional relevante.\\
+Las evaluaciones realizadas, tanto en este trabajo como en estudios previos sobre SA, se han basado exclusivamente en datos medidos en una estación meteorológica que se combinan con una o más variables modeladas o calculadas —provenientes de una celda de un modelo satelital o de reanálisis— que representan geográficamente la ubicación de dicha estación. En otras palabras, la información utilizada para entrenar y validar los modelos de corrección se limita a la celda específica del punto de medición, sin considerar el contexto espacial más amplio que podría aportar información adicional relevante.\\
 
 Esta restricción impone una limitación intrínseca: la información proveniente de los productos satelitales se encuentra confinada a una única celda, definida por la resolución del modelo. En este trabajo se propone ampliar el alcance espacial de los datos de entrada incorporando valores de GHI modelados en celdas satelitales o de reanálisis adyacentes. La hipótesis central es que la variabilidad de la irradiancia solar en un punto no es un fenómeno aislado, sino que forma parte de una estructura espacialmente coherente gobernada por la dinámica atmosférica regional. Hasta el momento, no se han encontrado antecedentes que apliquen explícitamente este enfoque al proceso de adaptación al sitio.\\
 
@@ -922,7 +925,7 @@ Desde esta perspectiva, la información contenida en las celdas adyacentes actú
     \label{fig:analogiaVecinos}
 \end{figure}
 
-La Figura \ref{fig:analogiaVecinos} describe gráficamente la analogía desarrollada. Las tonalidades grises representan el campo de nubes o aerosoles, que se extiende entre celdas (no respeta los límites). La celda azul contiene tu estación (el punto de interés). Las celdas verdes vecinas capturan información de esa estructura atmosférica continua. El rayo solar naranja simboliza la irradiancia (GHI) afectada por esas nubes. Así se ve claramente que la información relevante para la GHI local no está confinada en la celda central, sino que fluye espacialmente.\\
+La Figura \ref{fig:analogiaVecinos} describe gráficamente la analogía desarrollada. Las tonalidades grises representan el campo de nubes o aerosoles, que se extiende entre celdas (no respeta los límites). La celda azul contiene la estación (el punto de interés). Las celdas verdes vecinas capturan información de esa estructura atmosférica continua. La linea naranja simboliza la irradiancia (GHI) indicdente. Así se ve claramente que la información relevante para la GHI local no está confinada en la celda central, sino que fluye espacialmente.\\
 
 
 
@@ -1056,9 +1059,9 @@ Asimismo, la estabilidad del modelo MLR frente a los enfoques basados en aprendi
 
 Desde un punto de vista físico, la coherencia espacial del campo de irradiancia responde a procesos atmosféricos de mesoescala, como el desplazamiento de sistemas nubosos, los cuales presentan una estructura continua sobre varias decenas de kilómetros. Esta correlación natural explica por qué la estrategia de vecindad produce mejoras sistemáticas en todos los casos.
 
-En los resultados presentados, las reducciones promedio en RMSE alcanzan valores del orden del 5 al 15\%, dependiendo del sitio y del producto satelital empleado. Si bien estas magnitudes pueden considerarse moderadas, adquieren gran relevancia en aplicaciones que requieren alta precisión radiativa, tales como la calibración de sistemas fotovoltaicos, la validación de modelos climáticos regionales o la planificación de infraestructura energética distribuida.
+En los resultados presentados, las reducciones promedio en RMSE alcanzan valores del orden del 5 al 15\%, dependiendo del sitio y del producto satelital empleado. Si bien estas magnitudes pueden considerarse moderadas, adquieren gran relevancia en aplicaciones que requieren alta precisión radiativa, tales como el dimensionamiento de sistemas fotovoltaicos, la validación de modelos climáticos regionales o la planificación de infraestructura energética distribuida.
 
-Otro aspecto destacable es la consistencia del comportamiento entre diferentes resoluciones temporales (15 min y horaria). Esto sugiere que la mejora introducida por el uso de celdas adyacentes no se limita a un determinado rango temporal, sino que actúa de manera robusta a distintas escalas. En consecuencia, el método podría adaptarse fácilmente a bases de datos con diferentes resoluciones o a esquemas de reanálisis con pasos de tiempo variables.
+Otro aspecto destacable es la consistencia del comportamiento entre diferentes resoluciones temporales (15 min y horaria). Esto muestra que la mejora introducida por el uso de celdas adyacentes no se limita a un determinado rango temporal, sino que actúa de manera robusta a distintas escalas. En consecuencia, el método podría adaptarse fácilmente a bases de datos con diferentes resoluciones o a esquemas de reanálisis con pasos de tiempo variables.
 
 \begin{figure}
     \centering

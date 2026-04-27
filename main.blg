@@ -15,6 +15,7 @@ A level-1 auxiliary file: anexo1.aux
 A level-1 auxiliary file: anexo2.aux
 A level-1 auxiliary file: anexo3.aux
 Database file #1: bibliografia.bib
+Warning--empty journal in Mercosur
 Warning--empty publisher in GrossiRighini2007
 Warning--empty journal in Long2010
 Warning--empty journal in Sengupta2014
@@ -24,43 +25,43 @@ Warning--empty publisher in Wald2021
 Warning--empty booktitle in Wald2004
 You've used 143 entries,
             2773 wiz_defined-function locations,
-            1679 strings with 43074 characters,
-and the built_in function-call counts, 75501 in all, are:
-= -- 6846
-> -- 4985
-< -- 76
-+ -- 1692
-- -- 1545
-* -- 6673
-:= -- 12015
-add.period$ -- 651
+            1677 strings with 43418 characters,
+and the built_in function-call counts, 76391 in all, are:
+= -- 6894
+> -- 5158
+< -- 75
++ -- 1749
+- -- 1602
+* -- 6784
+:= -- 12175
+add.period$ -- 650
 call.type$ -- 143
-change.case$ -- 930
+change.case$ -- 949
 chr.to.int$ -- 139
-cite$ -- 293
+cite$ -- 294
 duplicate$ -- 2980
-empty$ -- 5471
-format.name$ -- 1738
-if$ -- 15597
+empty$ -- 5465
+format.name$ -- 1795
+if$ -- 15753
 int.to.chr$ -- 5
 int.to.str$ -- 1
 missing$ -- 144
-newline$ -- 939
+newline$ -- 938
 num.names$ -- 572
-pop$ -- 1584
+pop$ -- 1626
 preamble$ -- 1
-purify$ -- 800
+purify$ -- 819
 quote$ -- 0
-skip$ -- 2326
+skip$ -- 2345
 stack$ -- 0
-substring$ -- 2705
-swap$ -- 264
+substring$ -- 2690
+swap$ -- 263
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 1498
-warning$ -- 7
-while$ -- 585
+warning$ -- 8
+while$ -- 584
 width$ -- 0
-write$ -- 2284
-(There were 7 warnings)
+write$ -- 2280
+(There were 8 warnings)
