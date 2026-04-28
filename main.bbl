@@ -1,4 +1,4 @@
-\begin{thebibliography}{143}
+\begin{thebibliography}{142}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -713,16 +713,6 @@ Fernando~M. Nollas, German~A. Salazar, and Christian~A. Gueymard.
 \newblock \doi{https://doi.org/10.1016/j.renene.2022.11.056}.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0960148122016962}.
-
-\bibitem[Olivas et~al.(2022)Olivas, Belenguer, Vidal, Estalr1ich, Camisón, and
-  Tomás]{Olivas2022}
-Emilio~Salia Olivas, Pablo~Rodríguez Belenguer, Quique~García Vidal,
-  Fran~Vaquer Estalr1ich, Juan~Vicent Camisón, and Jorge~Vila Tomás.
-\newblock \emph{Inteligencia artificial: Casos pr{\'a}cticos con aprendizaje
-  profundo}.
-\newblock Ediciones de la U, 2022.
-\newblock ISBN 9789587924411.
-\newblock URL \url{https://books.google.com.ar/books?id=XHugEAAAQBAJ}.
 
 \bibitem[Pedregosa et~al.(2012)Pedregosa, Varoquaux, Gramfort, Michel, Thirion,
   Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos,

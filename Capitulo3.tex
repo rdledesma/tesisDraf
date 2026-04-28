@@ -1079,10 +1079,10 @@ Finalmente, cabe destacar que el marco planteado mantiene un equilibrio adecuado
 
 
 
-\section{Adaptación al sitio tomando consideraciones de una serie temporal}\label{sec:04}
+\section{Desestacionalización en el proceso de adaptación al sitio}\label{sec:04}
 
 
-El análisis presentado en las Secciones \ref{sec:01} y \ref{sec:02} permitió establecer que, en el contexto de la adaptación al sitio (SA por sus siglas en ingles), el grado de mejora obtenido en las estimaciones de la irradiancia global horizontal (GHI) no depende necesariamente de la complejidad de los modelos regresores utilizados. Más bien, los resultados evidencian la importancia de una adecuada selección de variables regresoras para garantizar un desempeño correcto y estable de los modelos de regresión.
+El análisis presentado en las Secciones \ref{sec:01} y \ref{sec:02} permitió establecer que, en el contexto de SA, el grado de mejora obtenido en las estimaciones de GHI no depende necesariamente de la complejidad de los modelos regresores utilizados. Más bien, los resultados evidencian la importancia de una adecuada selección de variables regresoras para garantizar un desempeño correcto los modelos de regresión.
 
 En la Sección \ref{sec:03} se exploró un enfoque que deriva los regresores a partir de la información espacial circundante en celdas adyacentes al sitio de interés. Además, estos regresores, en combinación con aquellos que mantienen una relación física directa con la GHI —como la GHI en condiciones de cielo claro y la temperatura—, condujeron a los mejores resultados obtenidos en este trabajo.
 
@@ -1092,7 +1092,7 @@ Este tipo de comportamiento ha sido ampliamente documentado en la literatura eco
 
 En consecuencia, la correcta identificación y tratamiento de la no estacionariedad constituye un paso fundamental para evitar correlaciones espurias y mejorar la validez de los modelos aplicados a series temporales meteorológicas. Esta limitación es general al proceso de regresión que se realiza sobre otras series temporales de diversas áreas, y resalta la necesidad de incorporar técnicas que mitiguen los efectos de la tendencia o la estacionalidad, favoreciendo la obtención de residuos estacionarios y estadísticamente consistentes.
 
-En este contexto, la incorporación de técnicas que consideren explícitamente la \textbf{estructura temporal} de los datos representa un paso necesario para mejorar la capacidad de generalización de los modelos de adaptación. La \textbf{desestacionalización} de series temporales permite eliminar la componente periódica asociada a la posición solar y a los ciclos estacionales, resaltando las fluctuaciones residuales que responden a la variabilidad atmosférica real. Este procedimiento no solo facilita una representación más homogénea de los datos, sino que también posibilita que los algoritmos de aprendizaje se centren en los procesos de corto plazo, como la dinámica de nubosidad o la variación de aerosoles, factores determinantes en la modulación instantánea de la irradiancia global.
+En este contexto, la incorporación de técnicas que consideren explícitamente la \textbf{estructura temporal} de los datos representa un un elemento interesante para explorar la mejora de la capacidad de generalización de los modelos de adaptación. La \textbf{desestacionalización} de series temporales permite eliminar la componente periódica asociada a la posición solar y a los ciclos estacionales, resaltando las fluctuaciones residuales que responden a la variabilidad atmosférica real. Este procedimiento no solo facilita una representación más homogénea de los datos, sino que también posibilita que los algoritmos de aprendizaje se centren en los procesos de corto plazo, como la dinámica de nubosidad o la variación de aerosoles, factores determinantes en la modulación instantánea de la irradiancia global.
 
 De manera complementaria, estudios recientes han destacado la importancia de abordar la \textbf{no linealidad} y la \textbf{no estacionariedad} de las series ambientales mediante enfoques multiescala. \citep{Schulte2016} propuso el uso de análisis de \emph{wavelets} y espectros de bicoherencia para identificar componentes no estacionarias y no lineales en series atmosféricas, como la Oscilación Cuasi-Bienal (QBO), mostrando que la estructura de las oscilaciones puede cambiar localmente en el tiempo. Estas herramientas permiten captar variaciones abruptas o cambios de fase, difíciles de representar con métodos lineales clásicos.
 
@@ -1100,9 +1100,7 @@ En el campo de la predicción y modelización avanzada, el tratamiento de la no 
 
 Aplicar un enfoque temporal en el proceso de adaptación al sitio implica, por tanto, una mejora metodológica respecto a las estrategias tradicionales, que suelen tratar las observaciones como datos independientes. Al reconocer y modelar la dependencia temporal inherente a las mediciones de GHI, se busca capturar patrones persistentes y reducir el ruido introducido por las fluctuaciones estacionales, lo que se traduce en una representación más fiel y estable de la señal local.
 
-En la presente sección se introducen los resultados obtenidos al aplicar un enfoque exploratorio desarrollado en esta tesis, basado en la desestacionalización de las series temporales de GHI, con el objetivo de mejorar el proceso de adaptación al sitio. Antes de ello, resulta pertinente contextualizar brevemente el concepto de serie temporal y su relevancia en el ámbito de la meteorología y la predicción solar.
-
-Una serie temporal se define como un conjunto de observaciones de una o más variables recolectadas y ordenadas cronológicamente. El orden temporal no es arbitrario, sino que es esencial para el análisis, la interpretación y la modelización de los datos, ya que permite identificar patrones, tendencias y comportamientos periódicos que pueden ser fundamentales para la toma de decisiones \citep{Olivas2022}. El análisis de series temporales tiene aplicaciones en diversas disciplinas, desde la economía y el marketing hasta la medicina y, de manera central en este trabajo, la meteorología. En este último ámbito, las series temporales permiten caracterizar, clasificar y predecir variables climáticas de interés, como la GHI, que presentan una marcada variabilidad estacional y diurna.
+En la presente sección se introducen los resultados obtenidos al aplicar un enfoque exploratorio desarrollado en esta tesis, basado en la desestacionalización de las series temporales de GHI, con el objetivo de mejorar el proceso de adaptación al sitio. 
 
 Una característica clave de las series temporales meteorológicas es la \textbf{estacionalidad}, que se manifiesta cuando los datos muestran fluctuaciones regulares y predecibles en un intervalo constante. En el caso de la GHI, dichas variaciones se deben principalmente a cambios en la posición solar, la nubosidad y las condiciones atmosféricas. La presencia de estacionalidad puede influir significativamente en la modelización de los datos, dado que introduce patrones repetitivos que podrían enmascarar otras tendencias o variaciones relevantes para el proceso de AS.
 
@@ -1149,7 +1147,7 @@ En cada caso, los coeficientes $a$ y $b$ se obtienen mediante regresión lineal 
 
 
 
-Los resultados obtenidos para cada uno de estos enfoques se presentan en la Tabla T. Cabe destacar que el Enfoque 1 fue es el evaluado en las secciones anteriores en esta tesis; para facilitar una comparación, se ha incluido también el reporte de las métricas correspondientes a este enfoque.
+Los resultados obtenidos para cada uno de estos enfoques se presentan en la Tabla \ref{tab:metricas_4_1}. Cabe destacar que el Enfoque 1 fue evaluado en las secciones anteriores en esta tesis; para facilitar una comparación, se ha incluido también el reporte de las métricas correspondientes a este enfoque.
 
 
 
@@ -1255,7 +1253,7 @@ Finalmente, el enfoque propuesto reafirma la idea de que la simplicidad y la int
 
 
 
-\section{Validación cruzada de los modelos de adaptación al sitio}
+\section{Validación cruzada espacial de los modelos de adaptación al sitio}
 
 En las secciones anteriores se evaluaron distintos enfoques de adaptación al sitio, evidenciando el potencial de este proceso según las características del modelo de estimación y del sitio donde se aplique. Sin embargo, cada uno de los enfoques fue probado únicamente en el mismo sitio en el que se ajustó, siguiendo así el esquema tradicional de adaptación al sitio. Con el fin de analizar la capacidad de generalización espacial de los modelos, se propuso un procedimiento de \textbf{validación cruzada entre sitios}, en el cual los modelos entrenados en una estación se aplican a otras geográficamente distintas.
 
