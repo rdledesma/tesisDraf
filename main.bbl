@@ -1,4 +1,4 @@
-\begin{thebibliography}{142}
+\begin{thebibliography}{137}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -74,13 +74,6 @@ Bilal Babar, Luigi~Tommaso Luppino, Tobias Boström, and Stian~Normann
 \newblock \doi{https://doi.org/10.1016/j.solener.2020.01.034}.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0038092X20300426}.
-
-\bibitem[Baidya and Lee(2024)]{Baidya2024}
-Ranjai Baidya and Sang-Woong Lee.
-\newblock Addressing the non-stationarity and complexity of time series data
-  for long-term forecasts.
-\newblock \emph{Applied Sciences}, 14\penalty0 (11):\penalty0 4436, 2024.
-\newblock \doi{10.3390/app14114436}.
 
 \bibitem[Behrens(1997)]{Behrens1997}
 John~T. Behrens.
@@ -299,12 +292,6 @@ Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
 \newblock MIT Press, 2016.
 \newblock URL \url{http://www.deeplearningbook.org}.
 \newblock Book in preparation for MIT Press.
-
-\bibitem[Granger and Newbold(1974)]{Granger1974}
-C.~W.~J. Granger and P.~Newbold.
-\newblock Spurious regressions in econometrics.
-\newblock \emph{Journal of Econometrics}, 2:\penalty0 111--120, 1974.
-\newblock \doi{10.1016/0304-4076(74)90034-7}.
 
 \bibitem[Gray et~al.(2010)Gray, Beer, Geller, Haigh, Lockwood, Matthes,
   Cubasch, Fleitmann, Harrison, Hood, Luterbacher, Meehl, Shindell, van Geel,
@@ -1046,13 +1033,6 @@ Nilsa~Maria Sarmiento~Barbieri, Silvina Belmonte, Pablo~Roberto Dellicompagni,
   salta, argentina.
 \newblock \emph{Renewable Energy}, 132:\penalty0 68--80, March 2019.
 
-\bibitem[Schulte(2016)]{Schulte2016}
-Justin~A. Schulte.
-\newblock Wavelet analysis for non-stationary, nonlinear time series.
-\newblock \emph{Nonlinear Processes in Geophysics}, 23\penalty0 (3):\penalty0
-  257--267, 2016.
-\newblock \doi{10.5194/npg-23-257-2016}.
-
 \bibitem[Sengupta et~al.(2014)Sengupta, Habte, Gotseff, Weekley, Lopez,
   Molling, and Heidinger]{Sengupta2014}
 Manajit Sengupta, Aron Habte, P.~Gotseff, Andrew Weekley, Anthony Lopez,
@@ -1166,13 +1146,6 @@ J.W. Tukey.
 \newblock ISBN 9780201076165.
 \newblock URL \url{https://books.google.com.ar/books?id=UT9dAAAAIAAJ}.
 
-\bibitem[Ventosa-Santaul{\`a}ria(2009)]{Ventosa2009}
-Daniel Ventosa-Santaul{\`a}ria.
-\newblock Spurious regression.
-\newblock \emph{Journal of Probability and Statistics}, 2009:\penalty0 1--27,
-  2009.
-\newblock \doi{10.1155/2009/802975}.
-
 \bibitem[Vignola et~al.(2019)Vignola, Michalsky, and Stoffel]{Vignola2019}
 Frank Vignola, Joseph Michalsky, and Thomas Stoffel.
 \newblock \emph{Solar and infrared radiation measurements}.
@@ -1211,14 +1184,6 @@ Daniel Wilks.
 \newblock Statistical methods in the atmospheric sciences.
 \newblock \emph{International Geophysics Series}, 59, 01 2006.
 \newblock \doi{10.1016/S0074-6142(06)80036-7}.
-
-\bibitem[Wu et~al.(2021)Wu, Xu, Wang, and Long]{Wu2021}
-Haixu Wu, Jiehui Xu, Jianmin Wang, and Mingsheng Long.
-\newblock Autoformer: Decomposition transformers with auto-correlation for
-  long-term series forecasting.
-\newblock In \emph{Advances in Neural Information Processing Systems
-  (NeurIPS)}, 2021.
-\newblock URL \url{https://github.com/thuml/Autoformer}.
 
 \bibitem[Yang and Gueymard(2021{\natexlab{a}})]{YANG2021}
 Dazhi Yang and Christian~A. Gueymard.

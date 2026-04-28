@@ -1082,61 +1082,94 @@ Finalmente, cabe destacar que el marco planteado mantiene un equilibrio adecuado
 \section{Desestacionalización en el proceso de adaptación al sitio}\label{sec:04}
 
 
-El análisis presentado en las Secciones \ref{sec:01} y \ref{sec:02} permitió establecer que, en el contexto de SA, el grado de mejora obtenido en las estimaciones de GHI no depende necesariamente de la complejidad de los modelos regresores utilizados. Más bien, los resultados evidencian la importancia de una adecuada selección de variables regresoras para garantizar un desempeño correcto los modelos de regresión.
+El análisis presentado en las Secciones \ref{sec:01} y \ref{sec:02} permitió establecer que, en el contexto de SA, el grado de mejora obtenido en las estimaciones de GHI no depende necesariamente de la complejidad de los modelos regresores utilizados. Más bien, los resultados evidencian la importancia de una adecuada selección de variables regresoras para garantizar un desempeño correcto de los modelos.
 
-En la Sección \ref{sec:03} se exploró un enfoque que deriva los regresores a partir de la información espacial circundante en celdas adyacentes al sitio de interés. Además, estos regresores, en combinación con aquellos que mantienen una relación física directa con la GHI —como la GHI en condiciones de cielo claro y la temperatura—, condujeron a los mejores resultados obtenidos en este trabajo.
+En la Sección \ref{sec:03} se exploró un enfoque que deriva los regresores a partir de la información espacial circundante en celdas adyacentes al sitio de interés. Asimismo, la combinación de estos regresores con variables físicamente relacionadas con la GHI —como la irradiancia en condiciones de cielo claro o la temperatura— condujo a los mejores resultados obtenidos en este traabajo.
 
-Por otra parte, es importante reconocer que, incluso cuando se dispone de un conjunto óptimo de variables, persisten fuentes de variabilidad que limitan la capacidad de los modelos para capturar plenamente la dinámica de la radiación solar a escala local y temporal. Una de las principales limitaciones radica en la naturaleza \textbf{no estacionaria} de la serie de irradiancia, la cual está fuertemente modulada por factores astronómicos y estacionales.
+No obstante, incluso con un conjunto adecuado de variables, persisten fuentes de variabilidad que limitan la capacidad de los modelos para representar la dinámica de la radiación solar. En particular, la naturaleza \textbf{no estacionaria} de la serie de irradiancia introduce desafíos adicionales, ya que su comportamiento está fuertemente condicionado por factores astronómicos y estacionales. Esta característica puede inducir relaciones espurias cuando se aplican modelos de regresión convencionales, tal como ha sido ampliamente documentado en la literatura.
 
-Este tipo de comportamiento ha sido ampliamente documentado en la literatura económica. \citet{Granger1974} demostraron que las regresiones sobre series no estacionarias pueden inducir relaciones espurias, en las que el coeficiente de determinación ($R^2$) resulta artificialmente alto sin que exista una relación causal real entre las variables. Este fenómeno, conocido como \emph{spurious regression}, se presenta cuando se aplican métodos de mínimos cuadrados a series con tendencias o raíces unitarias, lo que genera inferencias engañosas \citep{Ventosa2009}.
+En este contexto, la incorporación explícita de la \textbf{estructura temporal} de los datos —por ejemplo, mediante desestacionalización— constituye una estrategia relevante para mejorar la capacidad de generalización de los modelos, al permitir aislar la variabilidad de corto plazo asociada a procesos atmosféricos.
 
-En consecuencia, la correcta identificación y tratamiento de la no estacionariedad constituye un paso fundamental para evitar correlaciones espurias y mejorar la validez de los modelos aplicados a series temporales meteorológicas. Esta limitación es general al proceso de regresión que se realiza sobre otras series temporales de diversas áreas, y resalta la necesidad de incorporar técnicas que mitiguen los efectos de la tendencia o la estacionalidad, favoreciendo la obtención de residuos estacionarios y estadísticamente consistentes.
+A partir de estas consideraciones, en esta sección se evalúa el impacto de considerar la estacionalidad en el proceso de adaptación al sitio, comparando un enfoque tradicional con una reformulación basada en la modelización del error.
 
-En este contexto, la incorporación de técnicas que consideren explícitamente la \textbf{estructura temporal} de los datos representa un un elemento interesante para explorar la mejora de la capacidad de generalización de los modelos de adaptación. La \textbf{desestacionalización} de series temporales permite eliminar la componente periódica asociada a la posición solar y a los ciclos estacionales, resaltando las fluctuaciones residuales que responden a la variabilidad atmosférica real. Este procedimiento no solo facilita una representación más homogénea de los datos, sino que también posibilita que los algoritmos de aprendizaje se centren en los procesos de corto plazo, como la dinámica de nubosidad o la variación de aerosoles, factores determinantes en la modulación instantánea de la irradiancia global.
-
-De manera complementaria, estudios recientes han destacado la importancia de abordar la \textbf{no linealidad} y la \textbf{no estacionariedad} de las series ambientales mediante enfoques multiescala. \citep{Schulte2016} propuso el uso de análisis de \emph{wavelets} y espectros de bicoherencia para identificar componentes no estacionarias y no lineales en series atmosféricas, como la Oscilación Cuasi-Bienal (QBO), mostrando que la estructura de las oscilaciones puede cambiar localmente en el tiempo. Estas herramientas permiten captar variaciones abruptas o cambios de fase, difíciles de representar con métodos lineales clásicos.
-
-En el campo de la predicción y modelización avanzada, el tratamiento de la no estacionariedad ha cobrado especial relevancia en el aprendizaje profundo. \citep{Baidya2024} propusieron estrategias de \emph{weak-stationarizing} y \emph{non-stationarity restoring}, combinadas con descomposición espectral, para eliminar y luego restablecer componentes no estacionarias en series multivariadas. Estas técnicas buscan equilibrar la estabilidad estadística con la preservación de información física relevante. En la misma línea, \cite{Wu2021} introdujeron el modelo \emph{Autoformer}, que incorpora bloques internos de descomposición y mecanismos de autocorrelación periódica para modelar dependencias a largo plazo, desentrañando componentes de tendencia y estacionalidad dentro de arquitecturas profundas.
-
-Aplicar un enfoque temporal en el proceso de adaptación al sitio implica, por tanto, una mejora metodológica respecto a las estrategias tradicionales, que suelen tratar las observaciones como datos independientes. Al reconocer y modelar la dependencia temporal inherente a las mediciones de GHI, se busca capturar patrones persistentes y reducir el ruido introducido por las fluctuaciones estacionales, lo que se traduce en una representación más fiel y estable de la señal local.
-
-En la presente sección se introducen los resultados obtenidos al aplicar un enfoque exploratorio desarrollado en esta tesis, basado en la desestacionalización de las series temporales de GHI, con el objetivo de mejorar el proceso de adaptación al sitio. 
-
-Una característica clave de las series temporales meteorológicas es la \textbf{estacionalidad}, que se manifiesta cuando los datos muestran fluctuaciones regulares y predecibles en un intervalo constante. En el caso de la GHI, dichas variaciones se deben principalmente a cambios en la posición solar, la nubosidad y las condiciones atmosféricas. La presencia de estacionalidad puede influir significativamente en la modelización de los datos, dado que introduce patrones repetitivos que podrían enmascarar otras tendencias o variaciones relevantes para el proceso de AS.
-
-El enfoque propuesto en esta tesis consiste en \textbf{desestacionalizar} las series temporales de GHI antes de aplicar el proceso de adaptación al sitio, de modo que se eliminen o ajusten las fluctuaciones periódicas y se analice el comportamiento subyacente de la serie sin la influencia directa de las variaciones estacionales. Este procedimiento permite comparar los datos en condiciones más homogéneas y evaluar de manera más precisa el desempeño de los modelos.\\
-
-En esta sección se evalúa el impacto de considerar la estacionalidad en la serie de GHI sobre el proceso de SA, comparando el enfoque tradicional —que no realiza ajustes temporales— con una metodología basada en la desestacionalización. A continuación, se presenta formalmente la formulación matemática del proceso de adaptación al sitio tradicional, empleando como referencia el modelo de regresión lineal simple (SLR), que representa la forma más básica de este tipo de ajuste.
-
-
+El enfoque tradicional, denominado en adelante \textbf{Enfoque 1}, modela directamente la relación entre la irradiancia modelada y la irradiancia observada mediante una regresión lineal:
 
 \begin{equation}
 GHI_{\text{adaptada}} = a \cdot GHI_{\text{modelada}} + b,
 \label{ec:approache1}
 \end{equation}
 
-donde \(GHI_{\text{adaptada}}\) representa la irradiancia global horizontal ajustada, \(GHI_{\text{modelada}}\) es la irradiancia modelada (por estimación satelital o re-análisis), y \(a\) y \(b\) son los coeficientes de regresión lineal, a este enfoque de ahora en más vamos a llamarlo Enfoque 1.\\
+\noindent donde a y b son coeficientes ajustados durante el período de entrenamiento.
 
-El Enfoque 2 se basa en la estrategia propuesta por \cite{SALAMALIKIS2022}. En este enfoque, la variable regresora es el GHI modelado ($GHI_{\text{modelado}}$), y la variable objetivo se define como la diferencia entre el GHI medido y el modelado, es decir, 
-$\Delta_{GHI} = GHI_{\text{medido}} - GHI_{\text{modelado}}$. Una vez obtenida la variable objetivo, el GHI adaptado se recupera sumando el factor de error $\Delta_{GHI}$ al GHI modelado.
+Por otro lado, el \textbf{Enfoque 2}, basado en la estrategia propuesta por \cite{SALAMALIKIS2022}, reformula el problema en términos del error del modelo. Durante la fase de entrenamiento —cuando se dispone de mediciones en superficie— se define la variable:
 
-\begin{align}
-\Delta_{GHI} &= GHI_{\text{medido}} - GHI_{\text{modelado}} \\
-GHI_{\text{adaptado}} &= GHI_{\text{modelado}} + (a \cdot \Delta_{GHI} + b)
+\begin{equation}
+\Delta_{GHI} = GHI_{\text{medido}} - GHI_{\text{modelado}}.
+\end{equation}
+
+Esta variable representa el sesgo del modelo en el sitio de interés. Sin embargo, dado que GHI medido no está disponible durante la fase de aplicación, $\Delta_{GHI}$  no puede ser utilizada directamente. En su lugar, se propone modelar esta magnitud como una función de la irradiancia modelada:
+
+\begin{equation}
+\Delta_{GHI} \approx f\left(GHI_{\text{modelado}}\right).
+\end{equation}
+
+De este modo, el modelo aprende —a partir del período de entrenamiento— una relación funcional entre el valor modelado y su error asociado. En la fase operativa, donde únicamente se dispone de GHI modelado, el término de corrección se estima como:
+
+\begin{equation}
+\widehat{\Delta}{GHI} = f\left(GHI{\text{modelado}}\right),
+\end{equation}
+
+y la irradiancia adaptada se obtiene como:
+
+\begin{equation}
+GHI_{\text{adaptado}} = GHI_{\text{modelado}} + \widehat{\Delta}_{GHI}.
 \label{eq:approach2}
-\end{align}
+\end{equation}
 
+Bajo esta formulación, el Enfoque 2 requiere únicamente la irradiancia modelada como entrada durante la fase de aplicación, lo que lo hace directamente comparable con el Enfoque 1 en términos de disponibilidad de información. La diferencia fundamental radica en que, en lugar de ajustar directamente la variable objetivo, se modela explícitamente el error del modelo base como función de dicha variable.
 
-En este enfoque, la variable regresora se define como la diferencia entre el GHI modelado desestacionalizado, que se obtiene restando el GHI de cielo despejado del GHI modelado ($GHI_{\text{modelado}} - GHI_{\text{cielo despejado}}$). La variable objetivo corresponde a la diferencia entre el GHI medido desestacionalizado y el GHI de cielo despejado ($GHI_{\text{medido}} - GHI_{\text{cielo despejado}}$). Una vez estimada la variable objetivo, el valor corregido del GHI se recupera sumando nuevamente el GHI de cielo despejado.
+Esta reformulación permite capturar posibles dependencias no lineales entre la magnitud del error y el valor de GHI
+modelado, lo que puede resultar particularmente útil en presencia de sesgos sistemáticos que varían con el nivel de irradiancia. En consecuencia, el Enfoque 2 introduce un grado adicional de flexibilidad respecto al ajuste directo, manteniendo al mismo tiempo un esquema operativo basado exclusivamente en variables disponibles sin mediciones en superficie.
+
+Finalmente, el \textbf{Enfoque 3} introduce una reformulación basada en la \textbf{desestacionalización} de la señal mediante el uso de la irradiancia en condiciones de cielo despejado. En este caso, tanto la variable regresora como la variable objetivo se definen en términos de desviaciones respecto al comportamiento esperado bajo cielo claro:
 
 \begin{align}
-X &= GHI_{\text{modelado}} - GHI_{\text{cielo despejado}} \\
-Y &= GHI_{\text{medido}} - GHI_{\text{cielo despejado}} \\
-GHI_{\text{adaptado}} &= GHI_{\text{cielo despejado}} + (a \cdot X + b)
-\label{eq:approach3}
+X &= GHI_{\text{modelado}} - GHI_{\text{cielo despejado}} \
+Y &= GHI_{\text{medido}} - GHI_{\text{cielo despejado}}.
 \end{align}
 
-En cada caso, los coeficientes $a$ y $b$ se obtienen mediante regresión lineal simple. El modelo de GHI de cielo despejado utilizado en este estudio es el modelo ARGP-V2 \cite{Ledesma2023a}.
+Aquí, X representa la componente desestacionalizada de la irradiancia modelada, mientras que Y corresponde a la componente desestacionalizada de la irradiancia medida. Esta transformación permite remover, en primera aproximación, la variabilidad determinística asociada a la geometría solar.
+
+Al igual que en el Enfoque 2, es importante destacar que Y solo puede calcularse durante la fase de entrenamiento. Por lo tanto, el objetivo es aprender una relación funcional entre ambas variables:
+
+\begin{equation}
+Y \approx f(X),
+\end{equation}
+
+que, en este trabajo, se modela mediante una regresión lineal simple:
+
+\begin{equation}
+Y \approx a \cdot X + b.
+\end{equation}
+
+Durante la fase operativa, donde no se dispone de GHI
+medido, la variable X puede calcularse únicamente a partir de información disponible (GHI modelado y GHI cielo despejado). De este modo, la componente desestacionalizada se estima como:
+
+\begin{equation}
+\widehat{Y} = a \cdot X + b,
+\end{equation}
+
+y el valor adaptado de GHI se recupera reintroduciendo la componente de cielo despejado:
+
+\begin{equation}
+GHI_{\text{adaptado}} = GHI_{\text{cielo despejado}} + \widehat{Y}.
+\label{eq:approach3}
+\end{equation}
+
+Bajo esta formulación, el Enfoque 3 tampoco requiere mediciones en superficie durante la fase de aplicación, ya que depende exclusivamente de GHI modelado y de un modelo de cielo despejado. En este trabajo, se utiliza el modelo ARGP-V2 \cite{Ledesma2023a}.
+
+Conceptualmente, este enfoque permite separar la señal en dos componentes: una determinística, asociada a la irradiancia en condiciones de cielo claro, y otra residual, vinculada a la variabilidad atmosférica. Al modelar únicamente esta componente residual, se reduce la influencia de la estacionalidad y se facilita la identificación de patrones más homogéneos, lo que puede mejorar la estabilidad y capacidad de generalización del modelo de adaptación.
+
 
 \begin{figure*}[ht!]
 \centering
@@ -1221,7 +1254,7 @@ Finalmente, el Enfoque 3, que desestacionaliza tanto la variable regresora como 
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{errors_estacionalidad.png}
-    \caption[Métricas de desempeño para las estimaciones y sus adaptaciones midantes los enfoques E1, E2 y E3 ]{Métricas de desempeño relativas (\textit{rMBE}, \textit{rMAE} y \textit{rRMSE}, en \%) obtenidas en los cinco sitios de prueba (Yu, Sa, Sca, Ero y Lq). 
+    \caption[Métricas de desempeño para las estimaciones y sus adaptaciones mediante los enfoques E1, E2 y E3 ]{Métricas de desempeño relativas rMBE, rMAE y rRMSE obtenidas en los cinco sitios de prueba (Yu, Sa, Sca, Ero y Lq). 
     Se comparan las estimaciones satelitales originales (CAMS y LSA-SAF) con sus adaptaciones al sitio mediante los enfoques E1, E2 y E3. 
     En cada subplot se agrupan las barras por sitio, mostrando primero los modelos basados en CAMS y luego, separados visualmente, los modelos basados en LSA-SAF.}
     \label{fig:metricas_estacionalidad}
