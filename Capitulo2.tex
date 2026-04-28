@@ -440,40 +440,41 @@ Una vez entrenado el conjunto, la predicción final se obtiene mediante la agreg
 \hat{y} = \frac{1}{N} \sum_{i=1}^{N} \hat{y}_i,
 \end{equation}
 
-donde N es el número de árboles y $\hat{y}_i$ corresponde a la predicción del árbol i. En el caso de clasificación, se utiliza votación mayoritaria.
+\noindent donde N es el número de árboles y $\hat{y}_i$ corresponde a la predicción del árbol i. En el caso de clasificación, se utiliza votación mayoritaria.
 
 Este esquema permite reducir la varianza asociada a los árboles individuales, que suelen ser modelos altamente sensibles a los datos de entrenamiento, y mejora la estabilidad de las predicciones. En consecuencia, Random Forest logra un balance adecuado entre flexibilidad y capacidad de generalización, lo que lo convierte en una herramienta ampliamente utilizada en problemas de regresión no lineal.
 
 \subsection{XGBoost}
+El algoritmo \textit{Extreme Gradient Boosting} (XGBoost) es una implementación optimizada del método de \textit{Gradient Boosted Decision Trees} (GBDT) \citep{chen2016xgboost}. Este enfoque construye un modelo predictivo como una suma de múltiples árboles de decisión, entrenados de manera secuencial. XGBoost se ha consolidado como una de las técnicas más efectivas en aprendizaje automático debido a su alto desempeño en problemas de regresión y clasificación en diversos dominios \citep{espinoza2020aplicacion}.
 
-El algoritmo \textit{Extreme Gradient Boosting} (XGBoost) es una implementación optimizada del método de \textit{Gradient Boosted Decision Trees} (GBDT) \citep{chen2016xgboost}.
-Su funcionamiento consiste en combinar múltiples árboles de decisión simples para construir un modelo robusto, de manera semejante a cómo un equipo de especialistas aporta su conocimiento colectivo para tomar mejores decisiones.
-XGBoost se ha consolidado como estado del arte en aprendizaje automático debido a su alto desempeño en tareas de clasificación y regresión en diversos dominios \citep{espinoza2020aplicacion}.\\
+A diferencia de métodos como Random Forest, donde los árboles se entrenan de forma independiente, en XGBoost cada árbol nuevo se construye para corregir los errores cometidos por el conjunto de árboles previamente entrenados. Formalmente, el modelo se expresa como una suma aditiva:
+
+\begin{equation}
+\hat{y} = \sum_{m=1}^{M} f_m(\mathbf{x}),
+\end{equation}
+
+\noindent donde cada $f_m$ corresponde a un árbol de decisión, y M es el número total de árboles.
+
+El entrenamiento se realiza de manera iterativa. En cada paso, se ajusta un nuevo árbol a los residuos del modelo actual, es decir, a la diferencia entre los valores observados y las predicciones acumuladas hasta ese momento. Este procedimiento puede interpretarse como una optimización en el espacio de funciones, donde cada árbol aproxima el gradiente negativo de la función de pérdida \citep{chen2016xgboost}.
+
+Para ilustrar esta idea, puede considerarse una analogía con un proceso iterativo de mejora de un modelo. Un primer árbol genera una estimación inicial de la GHI a partir de múltiples variables de entrada (por ejemplo, nubosidad, geometría solar y condiciones atmosféricas). Dado que esta estimación es imperfecta, el siguiente árbol se entrena específicamente para modelar los errores residuales del primero. Este proceso se repite sucesivamente, de modo que cada nuevo árbol se enfoca en aquellas regiones del espacio de entrada donde el modelo presenta mayores discrepancias.
+
+Es importante destacar que cada árbol es, en sí mismo, un modelo multivariado capaz de capturar interacciones entre variables. Por lo tanto, la mejora del modelo no proviene de combinar modelos “simples” en el sentido de univariados, sino de la acumulación progresiva de correcciones sobre un predictor inicial.
+
+La contribución de cada árbol al modelo final se controla mediante un factor de aprendizaje, conocido como \textit{shrinkage}\footnote{El \textit{shrinkage} o tasa de aprendizaje es un factor que reduce la contribución de cada árbol en la suma total, típicamente definido como un valor pequeño (por ejemplo, 0.01–0.1), lo que permite un aprendizaje gradual y reduce el riesgo de sobreajuste.}. De este modo, el modelo se actualiza de forma gradual:
+
+\begin{equation}
+\hat{y}^{(m)} = \hat{y}^{(m-1)} + \eta , f_m(\mathbf{x}),
+\end{equation}
+
+\noindent donde $\eta$ es la tasa de aprendizaje.
+
+Adicionalmente, XGBoost incorpora mecanismos de regularización, submuestreo de datos y selección aleatoria de variables, lo que contribuye a mejorar la capacidad de generalización del modelo \cite{xgboostdoc}.
+
+En el contexto de la estimación de GHI, este enfoque permite capturar relaciones no lineales complejas entre variables meteorológicas y radiativas, modelando de manera progresiva las discrepancias entre las estimaciones iniciales y las observaciones. Como resultado, el modelo final combina múltiples correcciones sucesivas, obteniendo una representación más precisa y robusta del fenómeno.
 
 
-Para entender el algoritmo y su aplicación en la estimación de la GHI, podemos usar una analogía. Supongamos que deseamos predecir la GHI en un lugar específico.
 
-Un único árbol de decisión actúa como un \textit{experto solitario}, que utiliza reglas simples para emitir un juicio, por ejemplo: \`si la nubosidad es alta, entonces la irradiancia será baja''. Aunque este razonamiento es útil, tiene limitaciones: la irradiancia también depende de la altura solar, aerosoles, humedad relativa o estacionalidad. Por ello, un solo árbol puede fallar al no capturar la complejidad completa del fenómeno.
-
-XGBoost supera esta limitación mediante un \textit{comité de expertos}, es decir, un conjunto de árboles que se construyen secuencialmente para aprender de los errores de sus predecesores. Cada árbol nuevo se centra en corregir las predicciones incorrectas de los anteriores, especializándose en las regiones donde estos fallaron. Así, el modelo colectivo refina sus predicciones de manera progresiva. Esta dinámica se ilustra en la Figura \ref{fig:xgb_experts}.
-
-Podemos compararlo con un proceso de deliberación científica: el primer investigador propone un modelo básico; otro detecta que no captura los días parcialmente nublados y lo corrige; un tercero ajusta los errores en días despejados con baja humedad. Con el tiempo, el grupo obtiene un modelo más completo que cualquiera de los expertos individuales.\\
-
-
-Esta idea refleja la esencia del \textit{gradient boosting}: aprendizaje aditivo y secuencial, donde cada árbol se incorpora para reducir la pérdida residual del conjunto previo \cite{chen2016xgboost}. La fuerza del modelo final no está en la exactitud de cada árbol individual (clasificador débil), sino en la sinergia de todos ellos, formando un predictor colectivo altamente robusto.
-En el caso de la estimación de GHI, el ensamble de árboles de XGBoost permite capturar relaciones complejas entre variables meteorológicas y solares, mientras controla el sobreajuste mediante regularización y técnicas adicionales como \textit{shrinkage} y submuestreo \cite{xgboostdoc}.
-
-En resumen, si un árbol es un experto solitario con visión parcial, XGBoost funciona como un \textit{panel de expertos} que deliberan y corrigen mutuamente sus errores para alcanzar predicciones más precisas.
-
-\begin{figure} \centering \begin{tikzpicture}[node distance=2.2cm] % Estilos de nodos
-\tikzstyle{expert} = [rectangle, draw, rounded corners, text centered, text width=3.5cm, minimum height=1cm, fill=blue!15] \tikzstyle{consensus} = [rectangle, draw, thick, rounded corners, text centered, text width=4.5cm, minimum height=1.2cm, fill=green!20] % Nodos de expertos 
-\node (exp1) [expert] {Árbol 1:\\ Si nubosidad alta $\Rightarrow$ baja irradiancia''}; \node (exp2) [expert, below of=exp1] {Árbol 2:\\ Corrige error en días despejados}; \node (exp3) [expert, below of=exp2] {Árbol 3:\\ Ajusta casos con alta humedad}; \node (exp4) [expert, below of=exp3] {Árbol 4:\\ Mejora predicción en invierno}; % Nodo de consenso 
-\node (final) [consensus, right of=exp2, xshift=8cm, yshift=-1cm] {Consenso del Comité (XGBoost):\\ Predicción refinada de GHI}; % Flechas de cada experto al consenso 
-% Definir un estilo para las flechas \usetikzlibrary{decorations.markings} 
-% cargar librería 
-\tikzset{ flecha/.style={ thick, postaction={decorate, decoration={ markings, mark=at position 1 with {\arrow{>}} }} } } 
-% Dibujar las flechas para los nodos exp1, exp2, exp3, exp4 hacia final
-\foreach \i in {1,2,3,4}{ \draw[flecha] (exp\i.east) -- +(2,0) |- (final.west); } \end{tikzpicture} \caption[Analogía del comité de expertos en XGBoost.]{Analogía del comité de expertos en XGBoost: cada árbol corrige los errores de sus predecesores y contribuye a una predicción final más precisa de la GHI.} \label{fig:xgb_experts} \end{figure}
 
 \begin{comment}
 
@@ -565,58 +566,66 @@ En resumen, mientras que un árbol de decisión actúa como un experto solitario
 \end{comment}
 
 
-\section{Entrenamiento, Validación y  Prueba}
+\section{Entrenamiento, Validación y Prueba}
 
-El proceso de construcción de un modelo de aprendizaje automático no termina en su diseño, sino que requiere fases diferenciadas de \textbf{entrenamiento}, \textbf{validación} y \textbf{prueba}, cuyo objetivo principal es garantizar la capacidad de generalización del modelo ante datos no observados. La correcta separación de los datos en entrenamiento, validación y prueba es esencial para evaluar la capacidad de generalización del modelo y evitar el sobreajuste.
+El proceso de construcción de un modelo de aprendizaje automático no finaliza en su diseño, sino que requiere fases diferenciadas de \textbf{entrenamiento}, \textbf{validación} y \textbf{prueba}, cuyo objetivo principal es garantizar la capacidad de generalización del modelo ante datos no observados. Una correcta separación de los datos es esencial para evaluar el desempeño del modelo de manera imparcial y evitar el sobreajuste.
 
 \subsection*{División del conjunto de datos}
+
 La práctica estándar consiste en dividir el conjunto de datos en tres subconjuntos:
 
 \begin{itemize}
-\item \textbf{Entrenamiento}: utilizado para ajustar los parámetros internos del modelo (pesos y sesgos en redes neuronales, divisiones en árboles de decisión, etc.).
-\item \textbf{Validación}: empleado durante el entrenamiento para seleccionar hiperparámetros y evitar el sobreajuste (\textit{overfitting}). Una proporción habitual es 80\% para entrenamiento y 20\% para validación dentro del subconjunto inicial de entrenamiento.
-\item \textbf{Prueba (test)}: reservado exclusivamente para la evaluación final. Nunca se utiliza en la fase de ajuste, ya que su propósito es ofrecer una estimación imparcial del error de generalización.
+    \item \textbf{Entrenamiento}: utilizado para ajustar los parámetros internos del modelo (por ejemplo, pesos y sesgos en redes neuronales o estructuras en árboles de decisión).
+    
+    \item \textbf{Validación}: empleado durante el entrenamiento para la selección de hiperparámetros y la prevención del sobreajuste. En este trabajo, se adopta una partición típica dentro del conjunto de entrenamiento, utilizando un 80\% de los datos para entrenamiento efectivo y un 20\% para validación.
+    
+    \item \textbf{Prueba (test)}: reservado exclusivamente para la evaluación final del modelo. Este conjunto no interviene en ninguna etapa del ajuste, y su propósito es proporcionar una estimación imparcial del error de generalización.
 \end{itemize}
 
 \subsection*{Dinámica de entrenamiento}
-Durante el entrenamiento, el error de entrenamiento disminuye progresivamente a medida que el modelo se ajusta a los datos. Paralelamente, el error de validación suele descender inicialmente, reflejando la mejora de la capacidad de generalización, hasta que alcanza un punto mínimo. A partir de ahí, si el entrenamiento continúa, el error de validación aumenta, lo que indica que el modelo comienza a memorizar los datos y pierde capacidad predictiva. Este fenómeno se conoce como \textbf{sobreajuste}, y la estrategia recomendada es detener el entrenamiento en el punto donde el error de validación es mínimo, aplicando técnicas como \textit{early stopping} o el almacenamiento de los mejores pesos (\textit{model checkpointing}).
 
+Durante el entrenamiento, el modelo optimiza una función de costo definida a priori, que cuantifica la discrepancia entre los valores observados y estimados. En este trabajo se utiliza el Error Cuadrático Medio (MSE) como función de costo, aunque es importante destacar que no es la única opción posible, y pueden emplearse alternativas como el Error Absoluto Medio (MAE) u otras funciones según el problema y el modelo considerado.
 
+A medida que avanza el entrenamiento, el valor de la función de costo calculada sobre el conjunto de entrenamiento disminuye progresivamente, reflejando el ajuste del modelo a los datos. En paralelo, el error sobre el conjunto de validación también tiende a disminuir en las primeras etapas, indicando una mejora en la capacidad de generalización.
+
+Sin embargo, tras alcanzar un mínimo, el error de validación comienza a incrementarse mientras que el error de entrenamiento continúa descendiendo. Este comportamiento indica la aparición de \textbf{sobreajuste} (overfitting), fenómeno en el cual el modelo comienza a memorizar los datos de entrenamiento y pierde capacidad predictiva sobre datos no observados.
+
+Para mitigar este efecto, se emplean estrategias como early stopping, que consiste en detener el entrenamiento en la época donde el error de validación alcanza su valor mínimo, o el almacenamiento de los mejores pesos del modelo (model checkpointing).
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.6]{figuras/dinamicatv.png}
-    \caption[Dinámica de entrenamiento de un modelo de aprendizaje automático.]{Dinámica de entrenamiento de un modelo de aprendizaje automático. La curva azul muestra el error de entrenamiento, que disminuye progresivamente a medida que el modelo se ajusta a los datos. La curva naranja representa el error de validación, que disminuye inicialmente reflejando la mejora de la capacidad de generalización, pero comienza a aumentar después de la mejor época (línea roja discontinua), evidenciando el sobreajuste.}
+    \caption[Dinámica de entrenamiento de un modelo de aprendizaje automático.]{
+    Dinámica de entrenamiento de un modelo de aprendizaje automático. La curva azul representa el error de entrenamiento, mientras que la curva naranja muestra el error de validación. La línea roja discontinua indica la época óptima en la cual el error de validación es mínimo. La figura corresponde a un esquema conceptual genérico y no a resultados específicos obtenidos en este trabajo.
+    }
     \label{fig:dinamica}
-    
 \end{figure}
 
+La Figura \ref{fig:dinamica} ilustra este comportamiento típico, evidenciando la divergencia entre ambas curvas una vez superada la época óptima, lo que resalta la importancia de controlar el proceso de entrenamiento para preservar la capacidad de generalización.
 
-La figura \ref{fig:dinamica} ilustra la dinámica durante el entrenamiento, indicando que el modelo se adapta cada vez mejor a los datos de entrenamiento. Por otro lado, el error de validación inicialmente sigue la misma tendencia, mostrando que la capacidad de generalización del modelo mejora. Sin embargo, después de alcanzar un punto mínimo —marcado como la mejor época en la figura—, el error de validación comienza a incrementarse, mientras que el error de entrenamiento sigue descendiendo. Este comportamiento refleja el fenómeno de \textbf{sobreajuste}, en el cual el modelo comienza a memorizar los datos de entrenamiento y pierde capacidad predictiva en datos nuevos. La figura ilustra claramente este efecto y destaca la importancia de detener el entrenamiento en la época óptima o emplear técnicas como \textit{early stopping} para evitar la degradación del desempeño en validación.
+\subsection*{Evaluación del desempeño}
 
+Para la evaluación de los modelos se emplean métricas estándar en el análisis de irradiancia solar: \textbf{MBE} (Error Medio de Sesgo), \textbf{MAE} (Error Medio Absoluto) y \textbf{RMSE} (Error Cuadrático Medio).
 
-\begin{comment}
+El MAE cuantifica la magnitud promedio del error sin considerar su signo, mientras que el RMSE penaliza en mayor medida los errores grandes, siendo sensible a valores atípicos. Por su parte, el MBE permite identificar sesgos sistemáticos, indicando si el modelo tiende a sobreestimar o subestimar.
 
-\subsection*{Técnicas de regularización y validación}
-Para mejorar la robustez del modelo se emplean diversas estrategias:
+Asimismo, se utilizan versiones normalizadas de estas métricas, definidas respecto al valor medio observado de la variable objetivo:
 
-\begin{itemize}
-\item \textbf{Regularización}: penalizaciones sobre los parámetros (L1, L2) o el uso de \textit{dropout} en redes neuronales.
-\item \textbf{Aumento de datos (Data Augmentation)}: generación de variaciones sintéticas del conjunto de entrenamiento para mejorar la capacidad de generalización.
-\item \textbf{Validación cruzada (Cross-Validation)}: división repetida del conjunto de datos en diferentes particiones de entrenamiento y validación, promediando los resultados para obtener una estimación más estable.
-\end{itemize}
-\end{comment}
+\begin{equation}
+rMAE = \frac{MAE}{\overline{GHI}} \times 100, \quad
+rRMSE = \frac{RMSE}{\overline{GHI}} \times 100, \quad
+rMBE = \frac{MBE}{\overline{GHI}} \times 100
+\end{equation}
 
+donde $\overline{GHI}$ representa el valor medio de la irradiancia global horizontal medida en el conjunto de evaluación. Estas versiones permiten comparar el desempeño entre sitios con distintas magnitudes de irradiancia.
 
-\subsection*{Evaluación}
+\subsection*{Consideraciones sobre modelos de aprendizaje automático y métodos de postproceso}
 
-Las métricas más relevantes en SA incluyen \textbf{MBE} (Error Medio de Sesgo), 
-\textbf{MAE} (Error Medio Absoluto) y \textbf{RMSE} (Error Cuadrático Medio), 
-así como sus versiones normalizadas \textbf{rMBE}, \textbf{rMAE} y \textbf{rRMSE},que permiten evaluar tanto el sesgo como la dispersión del error.
+Es importante distinguir entre los modelos de aprendizaje automático y las técnicas estadísticas de postproceso, como la regresión multilineal, el Model Output Statistics (MOS) o el CDF matching
 
-El MAE cuantifica el error medio absoluto entre valores observados y estimados, 
-proporcionando una medida directa de la magnitud promedio de los errores sin considerar su signo. El RMSE penaliza en mayor medida los errores grandes, siendo particularmente sensible a discrepancias puntuales o valores atípicos. El MBE expresa el sesgo medio, indicando si el modelo sobreestima o subestima de forma sistemática; sus versiones relativas (rMBE, rMAE, rRMSE) expresan estas métricas como porcentajes del valor promedio medido, facilitando la comparación entre sitios con magnitudes de irradiancia distintas. En conjunto, estas métricas permiten evaluar la fidelidad del ajuste, las desviaciones sistemáticas y la consistencia del modelo en diferentes condiciones de operación.
+Los modelos de aprendizaje automático requieren un conjunto de validación para la selección de hiperparámetros y la prevención del sobreajuste. En cambio, los métodos de postproceso clásicos no poseen hiperparámetros en el mismo sentido, sino que ajustan directamente una relación funcional a partir de los datos de entrenamiento, por lo que no requieren un conjunto de validación independiente.
 
+Para garantizar una comparación consistente, todos los modelos —tanto de aprendizaje automático como los métodos de postproceso— son evaluados sobre el mismo conjunto de prueba. En el caso de los modelos de aprendizaje automático, este conjunto no interviene en ninguna etapa del entrenamiento ni validación. Para los métodos estadísticos, el ajuste se realiza sobre el conjunto de entrenamiento, y la evaluación final se lleva a cabo sobre el mismo conjunto de prueba definido, asegurando así una comparación equitativa entre enfoques.
 
 
 \section{Síntesis del Capítulo}

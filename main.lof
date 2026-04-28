@@ -5,48 +5,47 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Diagrama de dispersión entre mediciones en sitio y estimaciones satelitales.}}{20}{figure.caption.9}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Esquema de una red neuronal multicapa (MLP).}}{25}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Analogía del MLP como un conjunto de expertos neuronales que refinan la predicción de la GHI.}}{26}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Analogía del comité de expertos en XGBoost.}}{29}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Dinámica de entrenamiento de un modelo de aprendizaje automático.}}{30}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Dinámica de entrenamiento de un modelo de aprendizaje automático.}}{30}{figure.caption.17}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Ubicación de la estaciones de medida.}}{33}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparación del desempeño de los modelos CAMS y LSA-SAF en los cinco sitios de estudio.}}{38}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Variación estacional del rRMSE para los productos CAMS y LSA-SAF con resolución de 15 minutos.}}{39}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribución del rRMSE en función ($k_t$) y un índice de variabilidad.}}{41}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Variación del error cuadrático medio relativo en función del ángulo cenital solar.}}{42}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Comparación del desempeño de los modelos satelitales y de re-análisis.}}{43}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Comparación de la serie de GHI medida frente a las estimaciones de los modelos LSA-SAF y CAMS para dos días en Ero.}}{44}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Mapa con perfil altitudinal para la región del NOA junto con las celdas asociadas a los modelos.}}{45}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces rRMSE(\%) en resolución de 15 minutos para cada modelo y sitio, comparando modelos sin adaptación y adaptados.}}{50}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en Yuto.}}{51}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR Y MLP en Salta.}}{52}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en San Carlos.}}{52}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en El Rosal.}}{53}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en La Quiaca.}}{54}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Comparación del rRMSE(\%) para los modelos crudos y el mejor desempeño obtenido.}}{54}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Comparación del comportamiento de la GHI medida y estimada mediante los modelos CAMS y LSA-SAF, junto con sus respectivas adaptaciones basadas en los métodos SLR, MLP y XGB.}}{55}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Comparación del rRMSE(\%) entre estimaciones originales de los satélites y sus versiones adaptadas.}}{61}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Matriz de correlación de los regresores en la estación SA.}}{63}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Coeficientes de correlación de Pearson entre las variables meteorológicas}}{64}{figure.caption.46}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Comparación del rRMSE(\%) entre estimaciones originales y las adaptaciones mediante los regresores utilizando como regresores la GHI estimada por cada modelo, GHIargp2 y tm.}}{67}{figure.caption.49}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Analogía espacial: celdas del producto de GHI y dinámica atmosférica}}{70}{figure.caption.50}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Grilla utilizada por el modelo Helisat-4 de CAMS distribuido por CAMS Volume.}}{71}{figure.caption.51}%
-\contentsline {figure}{\numberline {3.23}{\ignorespaces rRMSE(\%) comparativo para las evaluaciones utilizando el enfoque de celdas adyacentes.}}{75}{figure.caption.54}%
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Diferencias entre los tres enfoques de adaptación.}}{80}{figure.caption.55}%
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Métricas de desempeño para las estimaciones y sus adaptaciones mediante los enfoques E1, E2 y E3 }}{81}{figure.caption.57}%
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Resultados de la validación cruzada entre sitios para el modelo ERA5.}}{84}{figure.caption.58}%
-\contentsline {figure}{\numberline {3.27}{\ignorespaces Ejemplo de asignación por distancia geográfica y altitudinal.}}{87}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.28}{\ignorespaces Comparación entre la GHI medida y la estimada mediante el criterio de generalización propuesto para ERA5 en los sitios Abra Pampa y Cerrillos.}}{88}{figure.caption.63}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Ubicación de la estaciones de medida.}}{34}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparación del desempeño de los modelos CAMS y LSA-SAF en los cinco sitios de estudio.}}{39}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Variación estacional del rRMSE para los productos CAMS y LSA-SAF con resolución de 15 minutos.}}{40}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribución del rRMSE en función ($k_t$) y un índice de variabilidad.}}{42}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Variación del error cuadrático medio relativo en función del ángulo cenital solar.}}{43}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Comparación del desempeño de los modelos satelitales y de re-análisis.}}{44}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Comparación de la serie de GHI medida frente a las estimaciones de los modelos LSA-SAF y CAMS para dos días en Ero.}}{45}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Mapa con perfil altitudinal para la región del NOA junto con las celdas asociadas a los modelos.}}{46}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces rRMSE(\%) en resolución de 15 minutos para cada modelo y sitio, comparando modelos sin adaptación y adaptados.}}{51}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en Yuto.}}{52}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR Y MLP en Salta.}}{53}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en San Carlos.}}{53}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en El Rosal.}}{54}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Comparación de modelos CAMS y LSASAF y las adaptaciones con SLR y MLP en La Quiaca.}}{55}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Comparación del rRMSE(\%) para los modelos crudos y el mejor desempeño obtenido.}}{55}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Comparación del comportamiento de la GHI medida y estimada mediante los modelos CAMS y LSA-SAF, junto con sus respectivas adaptaciones basadas en los métodos SLR, MLP y XGB.}}{56}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Comparación del rRMSE(\%) entre estimaciones originales de los satélites y sus versiones adaptadas.}}{62}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Matriz de correlación de los regresores en la estación SA.}}{64}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Coeficientes de correlación de Pearson entre las variables meteorológicas}}{65}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Comparación del rRMSE(\%) entre estimaciones originales y las adaptaciones mediante los regresores utilizando como regresores la GHI estimada por cada modelo, GHIargp2 y tm.}}{68}{figure.caption.49}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Analogía espacial: celdas del producto de GHI y dinámica atmosférica}}{71}{figure.caption.50}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Grilla utilizada por el modelo Helisat-4 de CAMS distribuido por CAMS Volume.}}{72}{figure.caption.51}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces rRMSE(\%) comparativo para las evaluaciones utilizando el enfoque de celdas adyacentes.}}{76}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Diferencias entre los tres enfoques de adaptación.}}{81}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Métricas de desempeño para las estimaciones y sus adaptaciones mediante los enfoques E1, E2 y E3 }}{82}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Resultados de la validación cruzada entre sitios para el modelo ERA5.}}{85}{figure.caption.58}%
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Ejemplo de asignación por distancia geográfica y altitudinal.}}{88}{figure.caption.60}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Comparación entre la GHI medida y la estimada mediante el criterio de generalización propuesto para ERA5 en los sitios Abra Pampa y Cerrillos.}}{89}{figure.caption.63}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Mapa de GHI medio mensual – Enero (TMY).}}{114}{figure.caption.75}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Mapa de GHI medio mensual – Febrero (TMY).}}{115}{figure.caption.76}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Mapa de GHI medio mensual – Marzo (TMY).}}{116}{figure.caption.77}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Mapa de GHI medio mensual – Abril (TMY).}}{117}{figure.caption.78}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Mapa de GHI medio mensual – Mayo (TMY).}}{118}{figure.caption.79}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Mapa de GHI medio mensual – Junio (TMY).}}{119}{figure.caption.80}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Mapa de GHI medio mensual – Julio (TMY).}}{120}{figure.caption.81}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Mapa de GHI medio mensual – Agosto (TMY).}}{121}{figure.caption.82}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Mapa de GHI medio mensual – Septiembre (TMY).}}{122}{figure.caption.83}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Mapa de GHI medio mensual – Octubre (TMY).}}{123}{figure.caption.84}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Mapa de GHI medio mensual – Noviembre (TMY).}}{124}{figure.caption.85}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Mapa de GHI medio mensual – Diciembre (TMY).}}{125}{figure.caption.86}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces TMY.}}{126}{figure.caption.87}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Mapa de GHI medio mensual – Enero (TMY).}}{115}{figure.caption.75}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Mapa de GHI medio mensual – Febrero (TMY).}}{116}{figure.caption.76}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Mapa de GHI medio mensual – Marzo (TMY).}}{117}{figure.caption.77}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Mapa de GHI medio mensual – Abril (TMY).}}{118}{figure.caption.78}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Mapa de GHI medio mensual – Mayo (TMY).}}{119}{figure.caption.79}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Mapa de GHI medio mensual – Junio (TMY).}}{120}{figure.caption.80}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Mapa de GHI medio mensual – Julio (TMY).}}{121}{figure.caption.81}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Mapa de GHI medio mensual – Agosto (TMY).}}{122}{figure.caption.82}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Mapa de GHI medio mensual – Septiembre (TMY).}}{123}{figure.caption.83}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Mapa de GHI medio mensual – Octubre (TMY).}}{124}{figure.caption.84}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Mapa de GHI medio mensual – Noviembre (TMY).}}{125}{figure.caption.85}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Mapa de GHI medio mensual – Diciembre (TMY).}}{126}{figure.caption.86}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces TMY.}}{127}{figure.caption.87}%
