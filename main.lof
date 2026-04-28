@@ -8,7 +8,7 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Dinámica de entrenamiento de un modelo de aprendizaje automático.}}{30}{figure.caption.17}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Ubicación de la estaciones de medida.}}{34}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparación del desempeño de los modelos CAMS y LSA-SAF en los cinco sitios de estudio.}}{39}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Desempeño de los modelos CAMS y LSA-SAF.}}{39}{figure.caption.24}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Variación estacional del rRMSE para los productos CAMS y LSA-SAF con resolución de 15 minutos.}}{40}{figure.caption.25}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Distribución del rRMSE en función ($k_t$) y un índice de variabilidad.}}{42}{figure.caption.26}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Variación del error cuadrático medio relativo en función del ángulo cenital solar.}}{43}{figure.caption.27}%

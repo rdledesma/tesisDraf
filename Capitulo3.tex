@@ -192,7 +192,7 @@ La Figura \ref{fig:general-15} muestra la evaluación comparativa de los modelos
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{figuras/errors_15.png}
-    \caption[Comparación del desempeño de los modelos CAMS y LSA-SAF en los cinco sitios de estudio.]{Comparación del desempeño de los modelos CAMS y LSA-SAF en los cinco sitios de estudio (Yu, Sa, Sca, Ero y Lq) mediante las tres métricas estadísticas: MBE, MAE y RMSE expresadas en términos porcentuales relativos a escala 15-minutal.}
+    \caption[Desempeño de los modelos CAMS y LSA-SAF.]{Desempeño de los modelos CAMS y LSA-SAF en los cinco sitios de estudio (Yu, Sa, Sca, Ero y Lq) mediante las tres métricas estadísticas: MBE, MAE y RMSE expresadas en términos porcentuales relativos a escala 15-minutal.}
     \label{fig:general-15}
 \end{figure}
 
@@ -1261,7 +1261,7 @@ Finalmente, el Enfoque 3, que desestacionaliza tanto la variable regresora como 
 \end{figure}
 
 
-La Tabla \ref{tab:metricas_4_1} y la Figura \ref{fig:metricas_estacionalidad} muestran las métricas de desempeño obtenidas tras evaluar los tres enfoques sobre la desestacionalización de la serie. Se comparan las estimaciones satelitales originales (CAMS y LSA-SAF) con sus adaptaciones al sitio mediante los enfoques E1, E2 y E3. Cada subplot corresponde a una métrica distinta, y dentro de cada sitio se presentan primero los modelos basados en CAMS y luego, separados visualmente, los basados en LSA-SAF.
+La Tabla \ref{tab:metricas_4_1} y la Figura \ref{fig:metricas_estacionalidad} muestran las métricas de desempeño obtenidas tras evaluar los tres 	enfoques sobre la desestacionalización de la serie. Se comparan las estimaciones satelitales originales (CAMS y LSA-SAF) con sus adaptaciones al sitio mediante los enfoques E1, E2 y E3. Cada subplot corresponde a una métrica distinta, y dentro de cada sitio se presentan primero los modelos basados en CAMS y luego, separados visualmente, los basados en LSA-SAF.
 
 
 Los resultados muestran que los Enfoques 1 y 2 producen métricas idénticas, lo cual confirma que, bajo un modelo de regresión lineal simple, ambas formulaciones son matemáticamente equivalentes. Esta equivalencia implica que, en contextos donde las diferencias entre las estimaciones modeladas y medidas se comportan de manera lineal y sin dependencia temporal significativa, cualquiera de los dos enfoques puede emplearse sin pérdida de precisión. Sin embargo, en escenarios donde la estacionalidad o las fluctuaciones no lineales del error adquieren un papel preponderante, estos enfoques resultan insuficientes para capturar las variaciones sistemáticas de la irradiancia a lo largo del año.
