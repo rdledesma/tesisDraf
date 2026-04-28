@@ -2,19 +2,19 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Estaciones de medidas utilizadas en este trabajo.}}{33}{table.caption.21}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Filtros de control de calidad aplicados a las mediciones.}}{33}{table.caption.22}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Métricas de desempeño (MBE, MAE, RMSE) para cada modelo y conjunto de datos satelitales.}}{37}{table.caption.23}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces División del conjunto de datos en entrenamiento, validación y prueba.}}{45}{table.caption.31}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Métricas de desempeño para cada modelo en el conjunto de pruebas.}}{46}{table.caption.32}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Espacio cartesiano de hiperparámetros para las técnicas de aprendizaje supervisado.}}{47}{table.caption.33}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Métricas de desempeño para cada modelo adaptado en el conjunto de pruebas.}}{48}{table.caption.34}%
-\contentsline {table}{\numberline {3.8}{\ignorespaces Métricas de desempeño para cada modelo en el conjunto de pruebas. }}{59}{table.caption.43}%
-\contentsline {table}{\numberline {3.9}{\ignorespaces Coeficientes de correlación de Pearson y Spearman entre las variables meteorológicas y GHI medida.}}{64}{table.caption.47}%
-\contentsline {table}{\numberline {3.10}{\ignorespaces Métricas de desempeño para cada modelo en el conjunto de prubeas utilizando como regresores la GHI modelada, la GHI en condiciones de cielo claro según y TM.}}{65}{table.caption.48}%
-\contentsline {table}{\numberline {3.11}{\ignorespaces Métricas de desempeño para cada modelo adaptado en el conjunto de pruebas.}}{72}{table.caption.52}%
-\contentsline {table}{\numberline {3.12}{\ignorespaces Métricas de desempeño del modelo ERA5 adapado en los cinco sitios en el conjunto de pruebas.}}{73}{table.caption.53}%
-\contentsline {table}{\numberline {3.13}{\ignorespaces Métricas de desempeño para cada modelo en el conjunto de prubeas.}}{78}{table.caption.56}%
-\contentsline {table}{\numberline {3.14}{\ignorespaces Estaciones de medida utilizadas para la validación de los modelos ajustados.}}{85}{table.caption.61}%
-\contentsline {table}{\numberline {3.15}{\ignorespaces Métricas de desempeño para el modelo ERA5 en los sitios de validación.}}{87}{table.caption.62}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Estaciones de medidas utilizadas en este trabajo.}}{34}{table.caption.21}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Filtros de control de calidad aplicados a las mediciones.}}{34}{table.caption.22}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Métricas de desempeño (MBE, MAE, RMSE) para cada modelo y conjunto de datos satelitales.}}{38}{table.caption.23}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces División del conjunto de datos en entrenamiento, validación y prueba.}}{46}{table.caption.31}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Métricas de desempeño para cada modelo en el conjunto de pruebas.}}{47}{table.caption.32}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Espacio cartesiano de hiperparámetros para las técnicas de aprendizaje supervisado.}}{48}{table.caption.33}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Métricas de desempeño para cada modelo adaptado en el conjunto de pruebas.}}{49}{table.caption.34}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Métricas de desempeño para cada modelo en el conjunto de pruebas. }}{60}{table.caption.43}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces Coeficientes de correlación de Pearson y Spearman entre las variables meteorológicas y GHI medida.}}{65}{table.caption.47}%
+\contentsline {table}{\numberline {3.10}{\ignorespaces Métricas de desempeño para cada modelo en el conjunto de prubeas utilizando como regresores la GHI modelada, la GHI en condiciones de cielo claro según y TM.}}{66}{table.caption.48}%
+\contentsline {table}{\numberline {3.11}{\ignorespaces Métricas de desempeño para cada modelo adaptado en el conjunto de pruebas.}}{73}{table.caption.52}%
+\contentsline {table}{\numberline {3.12}{\ignorespaces Métricas de desempeño del modelo ERA5 adapado en los cinco sitios en el conjunto de pruebas.}}{74}{table.caption.53}%
+\contentsline {table}{\numberline {3.13}{\ignorespaces Métricas de desempeño para cada modelo en el conjunto de prubeas.}}{79}{table.caption.56}%
+\contentsline {table}{\numberline {3.14}{\ignorespaces Estaciones de medida utilizadas para la validación de los modelos ajustados.}}{86}{table.caption.61}%
+\contentsline {table}{\numberline {3.15}{\ignorespaces Métricas de desempeño para el modelo ERA5 en los sitios de validación.}}{88}{table.caption.62}%
 \addvspace {10\p@ }

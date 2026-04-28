@@ -417,80 +417,32 @@ Este procedimiento es la base del entrenamiento de redes neuronales modernas. A 
 
 
 \subsection{Arboles de Decisión}
-Los árboles de decisión son modelos no paramétricos (es decir que no se no toman suposiciones previas sobre la forma de distribución de los datos) que se utilizan principalmente para la resolución de problemas de clasificación o regresión. También son conocidos como árboles de clasificación y regresión (CART, classification and regression trees). Este tipo de modelo fue propuesto por Leo Breiman en el libro \cite{breiman1984}.
 
-\begin{comment}
-Los árboles de decisión se basan en una serie de reglas de decisión para dividir el espacio de características predictoras en un número menor de regiones disjuntas en cada una de las cuales los valores de la variable respuesta son similares.
+Los árboles de decisión son modelos predictivos utilizados en problemas de regresión y clasificación, basados en la partición recursiva del espacio de variables de entrada. Este tipo de modelo, también conocido como CART (Classification and Regression Trees), fue introducido por \citet{breiman1984}.
 
+El funcionamiento de un árbol consiste en dividir sucesivamente los datos mediante reglas de decisión del tipo $x_j <c$, donde $x_j$  representa una variable de entrada y c un umbral. En cada nodo, el algoritmo selecciona la variable y el punto de corte que optimizan un criterio determinado. En el caso de regresión, este criterio suele estar asociado a la minimización del error cuadrático dentro de cada partición.
 
+A medida que se aplican estas divisiones, el espacio de entrada queda segmentado en regiones cada vez más homogéneas. La construcción del árbol finaliza cuando se alcanza alguna condición de parada, como un número mínimo de observaciones por nodo o una profundidad máxima.
 
-Los árboles de decisión se pueden clasificar en función del tipo de variable respuesta, si la variable de respuesta $y$ es cuantitativa el árbol es de regresión, si $y$ es cuantitativa el árbol es de clasificación.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.25\linewidth]{figuras/tree_1.png}
-    \caption{Ejemplo Árbol de Regresión. Para los datos de Hitters, se construye un árbol de regresión para predecir el logaritmo del salario de un jugador de béisbol, en función del número de años que ha jugado en las grandes ligas y el número de hits que realizó en el año anterior.}
-    \label{fig:tree}
-\end{figure}
-
-
-El proceso general de construcción de un árbol de regresión puede describirse en dos pasos:
-\begin{enumerate}
-    \item  Dividir el espacio de predictores: es decir, el conjunto de valores posibles de $X_1, X_2, ..., X_p$ se divide en $J$ regiones distintas y no superpuestas, $R_1, R_2,..,R_J$.
-
-    \item Hacer una predicción para cada región: para cada observación que cae en una región $R_j$, la predicción será simplemente la media de los valores de respuesta de las observaciones de entrenamiento dentro de $R_j$.
-\end{enumerate}
-\end{comment}
-
+Para una nueva observación, la predicción se obtiene recorriendo el árbol desde la raíz hasta una hoja, aplicando las reglas de decisión en cada nodo. En problemas de regresión, el valor predicho corresponde al promedio de los valores observados en la región final (hoja) a la que pertenece la observación.
 
 \subsection{Random Forest}
-\addcontentsline{toc}{subsection}{Random Forest: Un Enfoque de Aprendizaje Autom\'atico}
 
-El algoritmo \textbf{Random Forest} (RF) es un modelo de aprendizaje supervisado de tipo \textit{ensemble} que se utiliza para resolver problemas de \textbf{clasificaci\'on} y \textbf{regresi\'on} \citep{louppe2015, salman2024}. Este m\'etodo, conceptualizado por Leo Breiman, es una extensi\'on del concepto de \textit{bagging} y se ha establecido como una t\'ecnica muy precisa y robusta en la miner\'ia de datos \citep{cutler2011}.
+El algoritmo Random Forest es un método de aprendizaje supervisado de tipo ensemble que extiende el uso de árboles de decisión mediante la combinación de múltiples modelos entrenados de forma independiente \citep{louppe2015, salman2024}. Este enfoque, propuesto por Leo Breiman, se basa en el principio de bagging y ha demostrado ser una técnica robusta y precisa en diversos problemas de modelización \citep{cutler2011}.
 
+La idea fundamental consiste en construir un conjunto de árboles de decisión, donde cada árbol se entrena sobre un subconjunto de datos generado mediante muestreo con reemplazo (bootstrap). Este procedimiento introduce variabilidad en los datos de entrenamiento, permitiendo obtener modelos ligeramente diferentes entre sí.
 
-El fundamento de RF es la construcci\'on de un conjunto de m\'ultiples \'arboles de decisi\'on, donde cada \'arbol se entrena sobre un subconjunto de datos generado de forma aleatoria.
+Adicionalmente, durante la construcción de cada árbol, la selección de la variable de corte en cada nodo no se realiza sobre el conjunto completo de variables, sino sobre un subconjunto aleatorio de las mismas. Este mecanismo reduce la correlación entre los árboles y contribuye a mejorar la capacidad de generalización del modelo.
 
-\begin{comment}
+Una vez entrenado el conjunto, la predicción final se obtiene mediante la agregación de las predicciones individuales de todos los árboles. En problemas de regresión, esta agregación se realiza mediante el promedio:
 
-La aleatoriedad se introduce en dos niveles principales para garantizar que los \'arboles sean diversos y que el modelo no se sobreajuste:
+\begin{equation}
+\hat{y} = \frac{1}{N} \sum_{i=1}^{N} \hat{y}_i,
+\end{equation}
 
-\begin{enumerate}
-    \item \textbf{Muestreo con reemplazo (Bootstrapping)}: Se generan m\'ultiples submuestras del conjunto de datos de entrenamiento original, con la posibilidad de que una misma observaci\'on aparezca varias veces en la misma submuestra. Cada submuestra se usa para entrenar un \'arbol de decisi\'on individual \cite{salman2024}.
-    \item \textbf{Selecci\'on aleatoria de variables}: En cada nodo de un \'arbol, el algoritmo selecciona un subconjunto aleatorio de las variables predictoras disponibles. La mejor divisi\'on del nodo se determina a partir de este subconjunto reducido \cite{cutler2011, salman2024}. Esta t\'ecnica reduce la correlaci\'on entre los \'arboles y mejora la capacidad de generalizaci\'on del modelo \cite{cutler2011}.
-\end{enumerate}
+donde N es el número de árboles y $\hat{y}_i$ corresponde a la predicción del árbol i. En el caso de clasificación, se utiliza votación mayoritaria.
 
-
-La divisi\'on \'optima en cada nodo del \'arbol se basa en la minimizaci\'on de una funci\'on de costo, que var\'ia seg\'un el tipo de problema.
-
-Para problemas de \textbf{clasificaci\'on}, se utilizan medidas de impureza como el \textbf{\'indice Gini} o la \textbf{Entrop\'ia}. El \'Indice Gini mide la probabilidad de que una muestra elegida al azar de un nodo sea clasificada err\'oneamente, y se calcula de la siguiente manera:
-$$
-I_G(p) = 1 - \sum_{i=1}^{c} p_i^2
-$$
-donde $c$ es el n\'umero de clases y $p_i$ es la proporci\'on de muestras de la clase $i$ en el nodo.
-
-Para problemas de \textbf{regresi\'on}, el criterio de divisi\'on se basa en la minimizaci\'on de la varianza o el \textbf{Error Cuadr\'atico Medio (MSE)} de las predicciones en los nodos hijos:
-$$
-MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
-$$
-donde $n$ es el n\'umero de muestras, $y_i$ es el valor real y $\hat{y}_i$ es el valor predicho.
-
-Para realizar una predicci\'on final, el algoritmo agrega los resultados de todos los \'arboles del \textit{bosque} \cite{salman2024}. En problemas de \textbf{clasificaci\'on}, la predicci\'on se basa en el \textbf{voto mayoritario} de los \'arboles. Para problemas de \textbf{regresi\'on}, la predicci\'on final es el promedio de los resultados de cada \'arbol individual:
-$$
-\hat{y}_{RF}(\mathbf{x}) = \frac{1}{B} \sum_{b=1}^{B} h_b(\mathbf{x})
-$$
-donde $B$ es el n\'umero total de \'arboles en el bosque y $h_b(\mathbf{x})$ es la predicci\'on del $b$-\'esimo \'arbol.
-
-
-Random Forest ofrece varias ventajas significativas para el an\'alisis de datos \cite{cutler2011}:
-
-\begin{itemize}
-    \item \textbf{Resistencia al sobreajuste (\textit{overfitting})}: El algoritmo es intr\'insecamente resistente al sobreajuste, ya que el conjunto de \'arboles se entrena en subconjuntos aleatorios de datos \cite{salman2024}.
-    \item \textbf{Manejo de variables}: Es capaz de manejar eficientemente un gran n\'umero de variables, incluso cuando hay valores perdidos, sin necesidad de imputaci\'on previa \cite{cutler2011}.
-    \item \textbf{Estimaci\'on de la importancia de las variables}: El algoritmo proporciona una medida integrada que indica la contribuci\'on relativa de cada variable al modelo, lo que facilita la interpretaci\'on de los resultados \cite{cutler2011}.
-\end{itemize}
-
-\end{comment}
+Este esquema permite reducir la varianza asociada a los árboles individuales, que suelen ser modelos altamente sensibles a los datos de entrenamiento, y mejora la estabilidad de las predicciones. En consecuencia, Random Forest logra un balance adecuado entre flexibilidad y capacidad de generalización, lo que lo convierte en una herramienta ampliamente utilizada en problemas de regresión no lineal.
 
 \subsection{XGBoost}
 

@@ -21,34 +21,33 @@
 \contentsline {subsection}{\numberline {2.4.1}Características}{24}{subsection.2.4.1}%
 \contentsline {section}{\numberline {2.5}Modelos de Aprendizaje Automático aplicados a SA}{25}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Arboles de Decisión}{26}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Random Forest}{26}{subsection.2.5.2}%
-\contentsline {subsection}{Random Forest: Un Enfoque de Aprendizaje Autom\'atico}{26}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.2}Random Forest}{27}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}XGBoost}{27}{subsection.2.5.3}%
 \contentsline {section}{\numberline {2.6}Entrenamiento, Validación y Prueba}{28}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Síntesis del Capítulo}{30}{section.2.7}%
-\contentsline {chapter}{\numberline {3}Adaptación al Sitio en NOA}{31}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Medidas en superficie}{31}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Control de Calidad en las Medidas}{33}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Métricas de desempeño}{34}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Modelos de estimación}{34}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Desempeño de los modelos de GHI en el NOA}{36}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Análisis de las estimaciones 15-minutales}{37}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Análisis de las estimaciones horarias}{42}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}División del conjunto de datos}{45}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Adaptación al sitio con una variable descriptiva}{45}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Adaptación al sitio con múltiples variables descriptivas}{56}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}La necesidad de un análisis exploratorio de datos}{56}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Implementación de la adaptación con múltiples regresores}{57}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{68}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Desestacionalización en el proceso de adaptación al sitio}{75}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Validación cruzada espacial de los modelos de adaptación al sitio}{82}{section.3.8}%
-\contentsline {chapter}{\numberline {4}Conclusiones}{89}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Conclusiones sobre los modelos satelitales utilizados para la estimación de GHI}{89}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Conclusiones sobre la Adaptación al Sitio con variables descriptivas}{90}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Conclusiones sobre la validación cruzada y la generalización espacial}{91}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Síntesis conceptual del aporte de la tesis}{92}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Perspectivas a futuro}{92}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Conclusión final}{93}{subsection.4.1.5}%
-\contentsline {chapter}{\textbf {Anexo 1}}{109}{chapter*.64}%
-\contentsline {chapter}{\textbf {Anexo 2}}{111}{equation.4.1.8}%
-\contentsline {chapter}{\textbf {Anexo 3}}{126}{figure.caption.87}%
+\contentsline {section}{\numberline {2.7}Síntesis del Capítulo}{31}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Adaptación al Sitio en NOA}{32}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Medidas en superficie}{32}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Control de Calidad en las Medidas}{34}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Métricas de desempeño}{35}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Modelos de estimación}{35}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Desempeño de los modelos de GHI en el NOA}{37}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Análisis de las estimaciones 15-minutales}{38}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Análisis de las estimaciones horarias}{43}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}División del conjunto de datos}{46}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Adaptación al sitio con una variable descriptiva}{46}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Adaptación al sitio con múltiples variables descriptivas}{57}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}La necesidad de un análisis exploratorio de datos}{57}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Implementación de la adaptación con múltiples regresores}{58}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Adaptación al sitio usando celdas satelitáles adyacentes al sitio de interés}{69}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Desestacionalización en el proceso de adaptación al sitio}{76}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Validación cruzada espacial de los modelos de adaptación al sitio}{83}{section.3.8}%
+\contentsline {chapter}{\numberline {4}Conclusiones}{90}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Conclusiones sobre los modelos satelitales utilizados para la estimación de GHI}{90}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Conclusiones sobre la Adaptación al Sitio con variables descriptivas}{91}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Conclusiones sobre la validación cruzada y la generalización espacial}{92}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Síntesis conceptual del aporte de la tesis}{93}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Perspectivas a futuro}{93}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Conclusión final}{94}{subsection.4.1.5}%
+\contentsline {chapter}{\textbf {Anexo 1}}{110}{chapter*.64}%
+\contentsline {chapter}{\textbf {Anexo 2}}{112}{equation.4.1.8}%
+\contentsline {chapter}{\textbf {Anexo 3}}{127}{figure.caption.87}%
