@@ -1,66 +1,62 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.23)  28 APR 2026 16:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.19)  15 MAY 2026 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-22>
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
+Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count187
-\c@chapter=\count188
-\c@section=\count189
-\c@subsection=\count190
-\c@subsubsection=\count191
-\c@paragraph=\count192
-\c@subparagraph=\count193
-\c@figure=\count194
-\c@table=\count195
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen140
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks17
-\inpenc@posthook=\toks18
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2024/01/07 v24.1 The Babel package
-\babel@savecnt=\count196
-\U@D=\dimen141
-\l@unhyphenated=\language89
+Package: babel 2022/01/26 3.70 The Babel package
+\babel@savecnt=\count194
+\U@D=\dimen139
+\l@unhyphenated=\language87
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count197
+\bbl@dirlevel=\count195
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
-\es@quottoks=\toks19
-\es@quotdepth=\count198
+\es@quottoks=\toks18
+\es@quotdepth=\count196
 Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
-Package babel Info: Importing font and identification data for spanish
-(babel)             from babel-es.ini. Reported on input line 11.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks20
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
@@ -71,10 +67,10 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen142
-\Gin@req@width=\dimen143
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
 )
 (/usr/share/texlive/texmf-dist/tex/latex/anysize/anysize.sty
 Package: anysize 1994/08/13 setting margin sizes
@@ -82,37 +78,37 @@ Package: anysize 1994/08/13 setting margin sizes
 document style option `anysize' loaded
 Michael Salzenberg, Thomas Esser, Dirk Hillbrecht
 Version 1.0, Aug 13, 1994
-\@Leftmargin=\dimen144
-\@Rightmargin=\dimen145
-\@Topmargin=\dimen146
-\@Bottommargin=\dimen147
+\@Leftmargin=\dimen142
+\@Rightmargin=\dimen143
+\@Topmargin=\dimen144
+\@Bottommargin=\dimen145
 ) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count199
-\float@exts=\toks21
-\float@box=\box51
-\@float@everytoks=\toks22
-\@floatcapt=\box52
+\c@float@type=\count197
+\float@exts=\toks20
+\float@box=\box50
+\@float@everytoks=\toks21
+\@floatcapt=\box51
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-
-\f@nch@headwidth=\skip50
-\f@nch@O@elh=\skip51
-\f@nch@O@erh=\skip52
-\f@nch@O@olh=\skip53
-\f@nch@O@orh=\skip54
-\f@nch@O@elf=\skip55
-\f@nch@O@erf=\skip56
-\f@nch@O@olf=\skip57
-\f@nch@O@orf=\skip58
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip49
+\f@nch@O@elh=\skip50
+\f@nch@O@erh=\skip51
+\f@nch@O@olh=\skip52
+\f@nch@O@orh=\skip53
+\f@nch@O@elf=\skip54
+\f@nch@O@erf=\skip55
+\f@nch@O@olf=\skip56
+\f@nch@O@orf=\skip57
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip59
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -120,91 +116,81 @@ Package: amstext 2021/08/26 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks23
-\ex@=\dimen148
+\@emptytoks=\toks22
+\ex@=\dimen146
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen149
+\pmbraise@=\dimen147
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2022/04/08 v2.04 operator names
+Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count266
+\inf@bad=\count198
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count267
-\leftroot@=\count268
+\uproot@=\count199
+\leftroot@=\count266
 LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count269
-\DOTSCASE@=\count270
+\classnum@=\count267
+\DOTSCASE@=\count268
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box53
-\strutbox@=\box54
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen150
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+\big@size=\dimen148
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count271
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count272
+\macc@depth=\count269
+\c@MaxMatrixCols=\count270
 \dotsspace@=\muskip16
-\c@parentequation=\count273
-\dspbrk@lvl=\count274
-\tag@help=\toks24
-\row@=\count275
-\column@=\count276
-\maxfields@=\count277
-\andhelp@=\toks25
-\eqnshift@=\dimen151
-\alignsep@=\dimen152
-\tagshift@=\dimen153
-\tagwidth@=\dimen154
-\totwidth@=\dimen155
-\lineht@=\dimen156
-\@envbody=\toks26
-\multlinegap=\skip60
-\multlinetaggap=\skip61
-\mathdisplay@stack=\toks27
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
+\c@parentequation=\count271
+\dspbrk@lvl=\count272
+\tag@help=\toks23
+\row@=\count273
+\column@=\count274
+\maxfields@=\count275
+\andhelp@=\toks24
+\eqnshift@=\dimen149
+\alignsep@=\dimen150
+\tagshift@=\dimen151
+\tagwidth@=\dimen152
+\totwidth@=\dimen153
+\lineht@=\dimen154
+\@envbody=\toks25
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen157
-\ar@mcellbox=\box55
-\extrarowheight=\dimen158
-\NC@list=\toks28
-\extratabsurround=\skip62
-\backup@length=\skip63
-\ar@cellbox=\box56
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen155
+\ar@mcellbox=\box54
+\extrarowheight=\dimen156
+\NC@list=\toks27
+\extratabsurround=\skip61
+\backup@length=\skip62
+\ar@cellbox=\box55
 )
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
+Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count278
+\etb@tempcnta=\count276
 )
-\csq@reset=\count279
-\csq@gtype=\count280
-\csq@glevel=\count281
-\csq@qlevel=\count282
-\csq@maxlvl=\count283
-\csq@tshold=\count284
-\csq@ltx@everypar=\toks29
+\csq@reset=\count277
+\csq@gtype=\count278
+\csq@glevel=\count279
+\csq@qlevel=\count280
+\csq@maxlvl=\count281
+\csq@tshold=\count282
+\csq@ltx@everypar=\toks28
 
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
+File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
@@ -214,28 +200,19 @@ File: csquotes.cfg
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip64
-\bibsep=\skip65
+\bibhang=\skip63
+\bibsep=\skip64
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count285
+\c@NAT@ctr=\count283
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-)
-(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
@@ -247,62 +224,70 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-))
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
-
-(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-
 (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-))
-\c@section@level=\count286
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen159
-\Hy@linkcounter=\count287
-\Hy@pagecounter=\count288
+\@linkdim=\dimen157
+\Hy@linkcounter=\count284
+\Hy@pagecounter=\count285
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
 )
 (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count289
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count286
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 4062.
-Package hyperref Info: Hyper figures OFF on input line 4179.
-Package hyperref Info: Link nesting OFF on input line 4184.
-Package hyperref Info: Hyper index ON on input line 4187.
-Package hyperref Info: Plain pages OFF on input line 4194.
-Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count290
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count287
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen160
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen158
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -311,209 +296,206 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count291
-\Field@Width=\dimen161
-\Fld@charsize=\dimen162
-Package hyperref Info: Hyper figures OFF on input line 6063.
-Package hyperref Info: Link nesting OFF on input line 6068.
-Package hyperref Info: Hyper index ON on input line 6071.
-Package hyperref Info: backreferencing OFF on input line 6078.
-Package hyperref Info: Link coloring ON on input line 6081.
-Package hyperref Info: Link coloring with OCG OFF on input line 6088.
-Package hyperref Info: PDF/A mode OFF on input line 6093.
+\Fld@menulength=\count288
+\Field@Width=\dimen159
+\Fld@charsize=\dimen160
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring ON on input line 6094.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count292
-\c@Item=\count293
-\c@Hfootnote=\count294
+\Hy@abspage=\count289
+\c@Item=\count290
+\c@Hfootnote=\count291
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count295
-\c@bookmark@seq@number=\count296
+\Fld@listcount=\count292
+\c@bookmark@seq@number=\count293
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
 (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-85.
+86.
 )
-\Hy@SectionHShift=\skip66
+\Hy@SectionHShift=\skip65
 )
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen163
-\lightrulewidth=\dimen164
-\cmidrulewidth=\dimen165
-\belowrulesep=\dimen166
-\belowbottomsep=\dimen167
-\aboverulesep=\dimen168
-\abovetopsep=\dimen169
-\cmidrulesep=\dimen170
-\cmidrulekern=\dimen171
-\defaultaddspace=\dimen172
-\@cmidla=\count297
-\@cmidlb=\count298
-\@aboverulesep=\dimen173
-\@belowrulesep=\dimen174
-\@thisruleclass=\count299
-\@lastruleclass=\count300
-\@thisrulewidth=\dimen175
+\heavyrulewidth=\dimen161
+\lightrulewidth=\dimen162
+\cmidrulewidth=\dimen163
+\belowrulesep=\dimen164
+\belowbottomsep=\dimen165
+\aboverulesep=\dimen166
+\abovetopsep=\dimen167
+\cmidrulesep=\dimen168
+\cmidrulekern=\dimen169
+\defaultaddspace=\dimen170
+\@cmidla=\count294
+\@cmidlb=\count295
+\@aboverulesep=\dimen171
+\@belowrulesep=\dimen172
+\@thisruleclass=\count296
+\@lastruleclass=\count297
+\@thisrulewidth=\dimen173
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks30
-\verbatim@line=\toks31
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks29
+\verbatim@line=\toks30
 \verbatim@in@stream=\read3
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen176
-\captionmargin=\dimen177
-\caption@leftmargin=\dimen178
-\caption@rightmargin=\dimen179
-\caption@width=\dimen180
-\caption@indent=\dimen181
-\caption@parindent=\dimen182
-\caption@hangindent=\dimen183
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen174
+\captionmargin@=\dimen175
+\captionwidth=\dimen176
+\caption@tempdima=\dimen177
+\caption@indent=\dimen178
+\caption@parindent=\dimen179
+\caption@hangindent=\dimen180
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count301
-\c@continuedfloat=\count302
+\c@caption@flags=\count298
+\c@continuedfloat=\count299
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 )
-Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count303
-Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count304
+\c@subfigure=\count300
+\c@subtable=\count301
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2024/01/21 v0.5y Insert pages of external PDF documents (AM)
+Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count305
-\calc@Bcount=\count306
-\calc@Adimen=\dimen184
-\calc@Bdimen=\dimen185
-\calc@Askip=\skip67
-\calc@Bskip=\skip68
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count302
+\calc@Bcount=\count303
+\calc@Adimen=\dimen181
+\calc@Bdimen=\dimen182
+\calc@Askip=\skip66
+\calc@Bskip=\skip67
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count307
-\calc@Cskip=\skip69
+\calc@Ccount=\count304
+\calc@Cskip=\skip68
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen186
-\ESO@tempdimb=\dimen187
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen183
+\ESO@tempdimb=\dimen184
 
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 274.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
-Package xcolor Info: Model `RGB' extended on input line 1366.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 ))
-\AM@pagewidth=\dimen188
-\AM@pageheight=\dimen189
-\AM@fboxrule=\dimen190
+\AM@pagewidth=\dimen185
+\AM@pageheight=\dimen186
+\AM@fboxrule=\dimen187
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2024/01/21 v0.5y Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count308
-\AM@pagebox=\box57
-\AM@global@opts=\toks32
-\AM@pagecnt=\count309
-\AM@toc@title=\toks33
-\AM@lof@heading=\toks34
-\c@AM@survey=\count310
-\AM@templatesizebox=\box58
+\pdfpages@includegraphics@status=\count305
+\AM@pagebox=\box56
+\AM@global@opts=\toks31
+\AM@pagecnt=\count306
+\AM@toc@title=\toks32
+\c@AM@survey=\count307
+\AM@templatesizebox=\box57
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks35
-\pgfutil@tempdima=\dimen191
-\pgfutil@tempdimb=\dimen192
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box59
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+\pgfutil@everybye=\toks33
+\pgfutil@tempdima=\dimen188
+\pgfutil@tempdimb=\dimen189
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box58
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks36
-\pgfkeys@temptoks=\toks37
+\pgfkeys@pathtoks=\toks34
+\pgfkeys@temptoks=\toks35
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
-.code.tex
-\pgfkeys@tmptoks=\toks38
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks36
 ))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
-\pgf@x=\dimen193
-\pgf@xa=\dimen194
-\pgf@xb=\dimen195
-\pgf@xc=\dimen196
-\pgf@y=\dimen197
-\pgf@ya=\dimen198
-\pgf@yb=\dimen199
-\pgf@yc=\dimen256
-\c@pgf@counta=\count311
-\c@pgf@countb=\count312
-\c@pgf@countc=\count313
-\c@pgf@countd=\count314
+\pgf@x=\dimen190
+\pgf@xa=\dimen191
+\pgf@xb=\dimen192
+\pgf@xc=\dimen193
+\pgf@y=\dimen194
+\pgf@ya=\dimen195
+\pgf@yb=\dimen196
+\pgf@yc=\dimen197
+\c@pgf@counta=\count308
+\c@pgf@countb=\count309
+\c@pgf@countc=\count310
+\c@pgf@countd=\count311
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen257
-\pgfmath@count=\count315
-\pgfmath@box=\box60
-\pgfmath@toks=\toks39
-\pgfmath@stack@operand=\toks40
-\pgfmath@stack@operation=\toks41
+\pgfmath@dimen=\dimen198
+\pgfmath@count=\count312
+\pgfmath@box=\box59
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
 .tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
@@ -529,233 +511,233 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
 tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
-thmetics.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count316
+\c@pgfmathroundto@lastzeros=\count313
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen258
-\pgffor@skip=\dimen259
-\pgffor@stack=\toks42
-\pgffor@toks=\toks43
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen199
+\pgffor@skip=\dimen256
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
-
-(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
-Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
-F (HO)
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-))
+)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
-\pgf@x=\dimen260
-\pgf@y=\dimen261
-\pgf@xa=\dimen262
-\pgf@ya=\dimen263
-\pgf@xb=\dimen264
-\pgf@yb=\dimen265
-\pgf@xc=\dimen266
-\pgf@yc=\dimen267
-\pgf@xd=\dimen268
-\pgf@yd=\dimen269
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+\pgf@x=\dimen257
+\pgf@y=\dimen258
+\pgf@xa=\dimen259
+\pgf@ya=\dimen260
+\pgf@xb=\dimen261
+\pgf@yb=\dimen262
+\pgf@xc=\dimen263
+\pgf@yc=\dimen264
+\pgf@xd=\dimen265
+\pgf@yd=\dimen266
 \w@pgf@writea=\write3
 \r@pgf@reada=\read4
-\c@pgf@counta=\count317
-\c@pgf@countb=\count318
-\c@pgf@countc=\count319
-\c@pgf@countd=\count320
-\t@pgf@toka=\toks44
-\t@pgf@tokb=\toks45
-\t@pgf@tokc=\toks46
-\pgf@sys@id@count=\count321
+\c@pgf@counta=\count314
+\c@pgf@countb=\count315
+\c@pgf@countc=\count316
+\c@pgf@countd=\count317
+\t@pgf@toka=\toks42
+\t@pgf@tokb=\toks43
+\t@pgf@tokc=\toks44
+\pgf@sys@id@count=\count318
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
 f
-File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
-File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count322
-\pgfsyssoftpath@bigbuffer@items=\count323
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count319
+\pgfsyssoftpath@bigbuffer@items=\count320
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
-File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
-File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen270
-\pgf@picmaxx=\dimen271
-\pgf@picminy=\dimen272
-\pgf@picmaxy=\dimen273
-\pgf@pathminx=\dimen274
-\pgf@pathmaxx=\dimen275
-\pgf@pathminy=\dimen276
-\pgf@pathmaxy=\dimen277
-\pgf@xx=\dimen278
-\pgf@xy=\dimen279
-\pgf@yx=\dimen280
-\pgf@yy=\dimen281
-\pgf@zx=\dimen282
-\pgf@zy=\dimen283
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen267
+\pgf@picmaxx=\dimen268
+\pgf@picminy=\dimen269
+\pgf@picmaxy=\dimen270
+\pgf@pathminx=\dimen271
+\pgf@pathmaxx=\dimen272
+\pgf@pathminy=\dimen273
+\pgf@pathmaxy=\dimen274
+\pgf@xx=\dimen275
+\pgf@xy=\dimen276
+\pgf@yx=\dimen277
+\pgf@yy=\dimen278
+\pgf@zx=\dimen279
+\pgf@zy=\dimen280
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
-File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen284
-\pgf@path@lasty=\dimen285
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen281
+\pgf@path@lasty=\dimen282
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
-File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen286
-\pgf@shorten@start@additional=\dimen287
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen283
+\pgf@shorten@start@additional=\dimen284
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
-File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box61
-\pgf@hbox=\box62
-\pgf@layerbox@main=\box63
-\pgf@picture@serial@count=\count324
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count321
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
-File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen288
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen285
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
-File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen289
-\pgf@pt@y=\dimen290
-\pgf@pt@temp=\dimen291
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen286
+\pgf@pt@y=\dimen287
+\pgf@pt@temp=\dimen288
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
 ex
-File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
 .code.tex
-File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
-File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen292
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen289
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen293
-\pgf@sys@shading@range@num=\count325
-\pgf@shadingcount=\count326
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen290
+\pgf@sys@shading@range@num=\count322
+\pgf@shadingcount=\count323
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
-File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box64
-)
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box63
+))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
-File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
 ode.tex
-File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
 tex
-File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box65
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box64
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
-Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen294
-\pgf@nodesepend=\dimen295
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen291
+\pgf@nodesepend=\dimen292
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
-Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
-File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count327
-\pgfplotmarksize=\dimen296
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count324
+\pgfplotmarksize=\dimen293
 )
-\tikz@lastx=\dimen297
-\tikz@lasty=\dimen298
-\tikz@lastxsaved=\dimen299
-\tikz@lastysaved=\dimen300
-\tikz@lastmovetox=\dimen301
-\tikz@lastmovetoy=\dimen302
-\tikzleveldistance=\dimen303
-\tikzsiblingdistance=\dimen304
-\tikz@figbox=\box66
-\tikz@figbox@bg=\box67
-\tikz@tempbox=\box68
-\tikz@tempbox@bg=\box69
-\tikztreelevel=\count328
-\tikznumberofchildren=\count329
-\tikznumberofcurrentchild=\count330
-\tikz@fig@count=\count331
+\tikz@lastx=\dimen294
+\tikz@lasty=\dimen295
+\tikz@lastxsaved=\dimen296
+\tikz@lastysaved=\dimen297
+\tikz@lastmovetox=\dimen298
+\tikz@lastmovetoy=\dimen299
+\tikzleveldistance=\dimen300
+\tikzsiblingdistance=\dimen301
+\tikz@figbox=\box65
+\tikz@figbox@bg=\box66
+\tikz@tempbox=\box67
+\tikz@tempbox@bg=\box68
+\tikztreelevel=\count325
+\tikznumberofchildren=\count326
+\tikznumberofcurrentchild=\count327
+\tikz@fig@count=\count328
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count332
-\pgfmatrixcurrentcolumn=\count333
-\pgf@matrix@numberofcolumns=\count334
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count329
+\pgfmatrixcurrentcolumn=\count330
+\pgf@matrix@numberofcolumns=\count331
 )
-\tikz@expandcount=\count335
+\tikz@expandcount=\count332
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarydecorations.markings.code.tex
@@ -763,22 +745,22 @@ zlibrarydecorations.markings.code.tex
 zlibrarydecorations.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
 e.tex
-\pgfdecoratedcompleteddistance=\dimen305
-\pgfdecoratedremainingdistance=\dimen306
-\pgfdecoratedinputsegmentcompleteddistance=\dimen307
-\pgfdecoratedinputsegmentremainingdistance=\dimen308
-\pgf@decorate@distancetomove=\dimen309
-\pgf@decorate@repeatstate=\count336
-\pgfdecorationsegmentamplitude=\dimen310
-\pgfdecorationsegmentlength=\dimen311
+\pgfdecoratedcompleteddistance=\dimen302
+\pgfdecoratedremainingdistance=\dimen303
+\pgfdecoratedinputsegmentcompleteddistance=\dimen304
+\pgfdecoratedinputsegmentremainingdistance=\dimen305
+\pgf@decorate@distancetomove=\dimen306
+\pgf@decorate@repeatstate=\count333
+\pgfdecorationsegmentamplitude=\dimen307
+\pgfdecorationsegmentlength=\dimen308
 )
-\tikz@lib@dec@box=\box70
+\tikz@lib@dec@box=\box69
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.markings.code.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
@@ -786,12 +768,12 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks47
-\t@pgfplots@tokb=\toks48
-\t@pgfplots@tokc=\toks49
-\pgfplots@tmpa=\dimen312
-\c@pgfplots@coordindex=\count337
-\c@pgfplots@scanlineindex=\count338
+\t@pgfplots@toka=\toks45
+\t@pgfplots@tokb=\toks46
+\t@pgfplots@tokc=\toks47
+\pgfplots@tmpa=\dimen309
+\c@pgfplots@coordindex=\count334
+\c@pgfplots@scanlineindex=\count335
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
 .tex))
@@ -800,14 +782,7 @@ ex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
 gfsupp_loader.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
-)
-Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks50
-\t@pgf@tokb=\toks51
-\t@pgf@tokc=\toks52
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
-gfsupp_pgfutil-common-lists.tex))
+))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
 tructure.code.tex)
@@ -815,14 +790,14 @@ tructure.code.tex)
 tructureext.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
 .code.tex
-\c@pgfplotsarray@tmp=\count339
+\c@pgfplotsarray@tmp=\count336
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
 x.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
 d.code.tex
-\c@pgfplotstable@counta=\count340
-\t@pgfplotstable@a=\toks53
+\c@pgfplotstable@counta=\count337
+\t@pgfplotstable@a=\toks48
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
 .code.tex)
@@ -834,7 +809,7 @@ de.tex))
 .tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
 fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count341
+\c@pgfplotslibrarysurf@no=\count338
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
 shading.pgfsys-pdftex.def)))
@@ -867,21 +842,21 @@ zlibrarydecorations.pathreplacing.code.tex
 decorations.pathreplacing.code.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
 ntourlua.code.tex)
-\pgfplots@numplots=\count342
-\pgfplots@xmin@reg=\dimen313
-\pgfplots@xmax@reg=\dimen314
-\pgfplots@ymin@reg=\dimen315
-\pgfplots@ymax@reg=\dimen316
-\pgfplots@zmin@reg=\dimen317
-\pgfplots@zmax@reg=\dimen318
+\pgfplots@numplots=\count339
+\pgfplots@xmin@reg=\dimen310
+\pgfplots@xmax@reg=\dimen311
+\pgfplots@ymin@reg=\dimen312
+\pgfplots@ymax@reg=\dimen313
+\pgfplots@zmin@reg=\dimen314
+\pgfplots@zmax@reg=\dimen315
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryplotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
 de.tex
-File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplotstable.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplotstable 2021/05/15 v1.18.1 Table typesetting and Pretty-printing
@@ -897,17 +872,17 @@ Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count343
-\l__pdf_internal_box=\box71
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count340
+\l__pdf_internal_box=\box70
 )
 (./main.aux (./portada.aux)
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
  (./dedicatoria.aux) (./agradecimientos.aux)
-(./resumen.aux) (./Capitulo1.aux) (./Capitulo2.aux) (./Capitulo3.aux)
-(./conclusiones.aux) (./bibliografia.aux) (./anexo1.aux) (./anexo2.aux)
-(./anexo3.aux))
+(./resumen.aux) (./produccion.aux) (./Capitulo1.aux) (./Capitulo2.aux)
+(./Capitulo3.aux) (./conclusiones.aux) (./bibliografia.aux) (./anexo1.aux)
+(./anexo2.aux) (./anexo3.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
@@ -933,17 +908,17 @@ LaTeX Info: Redefining \% on input line 62.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count344
-\scratchdimen=\dimen319
-\scratchbox=\box72
-\nofMPsegments=\count345
-\nofMParguments=\count346
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count347
-\MPscratchDim=\dimen320
-\MPnumerator=\count348
-\makeMPintoPDFobject=\count349
-\everyMPtoPDFconversion=\toks55
+\scratchcounter=\count341
+\scratchdimen=\dimen316
+\scratchbox=\box71
+\nofMPsegments=\count342
+\nofMParguments=\count343
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count344
+\MPscratchDim=\dimen317
+\MPnumerator=\count345
+\makeMPintoPDFobject=\count346
+\everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -954,6 +929,21 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring ON on input line 62.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count347
+)
+LaTeX Info: Redefining \ref on input line 62.
+LaTeX Info: Redefining \pageref on input line 62.
+LaTeX Info: Redefining \nameref on input line 62.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -968,7 +958,7 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 \openout2 = `portada.aux'.
 
 (./portada.tex
-<./figuras/logounsa1.jpg, id=208, 105.39375pt x 186.6975pt>
+<./figuras/logounsa1.jpg, id=212, 105.39375pt x 186.6975pt>
 File: ./figuras/logounsa1.jpg Graphic file (type jpg)
 <use ./figuras/logounsa1.jpg>
 Package pdftex.def Info: ./figuras/logounsa1.jpg  used on input line 3.
@@ -976,12 +966,10 @@ Package pdftex.def Info: ./figuras/logounsa1.jpg  used on input line 3.
 ) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
-dvips/cm-super/cm-super-t1.enc} <./figuras/logounsa1.jpg>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figuras/logounsa1.jpg>]
 \openout2 = `dedicatoria.aux'.
 
-
-(./dedicatoria.tex) [1
+ (./dedicatoria.tex) [1
 
 
 
@@ -993,7 +981,8 @@ dvips/cm-super/cm-super-t1.enc} <./figuras/logounsa1.jpg>]
 
 
 
-] (./main.toc
+]
+(./main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [3
@@ -1004,8 +993,7 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [4]
-(./main.lof
+ [4] (./main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [5
@@ -1044,11 +1032,26 @@ ndencias es-ta-cio-na-les y autocorrelaciones---
  []
 
 ) [9]
+\openout2 = `produccion.aux'.
+
+ (./produccion.tex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10
+
+
+
+]
 \openout2 = `Capitulo1.aux'.
 
  (./Capitulo1.tex
 Cap\'{\i }tulo 1.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -1077,7 +1080,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[3{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
@@ -1356,7 +1359,7 @@ Cap\'{\i }tulo 2.
 
 
 ]
-<figuras/procedure.png, id=761, 825.0825pt x 231.86626pt>
+<figuras/procedure.png, id=772, 825.0825pt x 231.86626pt>
 File: figuras/procedure.png Graphic file (type png)
 <use figuras/procedure.png>
 Package pdftex.def Info: figuras/procedure.png  used on input line 34.
@@ -1371,7 +1374,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18 <./figuras/procedure.png>]
-<figuras/scatter-01.png, id=775, 1011.78pt x 700.2963pt>
+<figuras/scatter-01.png, id=786, 1011.78pt x 700.2963pt>
 File: figuras/scatter-01.png Graphic file (type png)
 <use figuras/scatter-01.png>
 Package pdftex.def Info: figuras/scatter-01.png  used on input line 58.
@@ -1437,6 +1440,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [22]
 
+Package natbib Warning: Citation `Fern�ndez2020' on page 23 undefined on input 
+line 106.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -1454,7 +1461,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [24]
-<figuras/MLP.png, id=885, 812.03375pt x 200.75pt>
+<figuras/MLP.png, id=892, 812.03375pt x 200.75pt>
 File: figuras/MLP.png Graphic file (type png)
 <use figuras/MLP.png>
 Package pdftex.def Info: figuras/MLP.png  used on input line 281.
@@ -1500,7 +1507,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [28]
-<figuras/dinamicatv.png, id=951, 722.7pt x 433.62pt>
+<figuras/dinamicatv.png, id=958, 722.7pt x 433.62pt>
 File: figuras/dinamicatv.png Graphic file (type png)
 <use figuras/dinamicatv.png>
 Package pdftex.def Info: figuras/dinamicatv.png  used on input line 597.
@@ -1546,7 +1553,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
  (./Capitulo3.tex
 Cap\'{\i }tulo 3.
-<figuras/sites.png, id=984, 694.595pt x 327.2225pt>
+<figuras/sites.png, id=992, 694.595pt x 327.2225pt>
 File: figuras/sites.png Graphic file (type png)
 <use figuras/sites.png>
 Package pdftex.def Info: figuras/sites.png  used on input line 21.
@@ -1595,7 +1602,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
 26.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
@@ -1637,12 +1644,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [38]
-<figuras/errors_15.png, id=1096, 1156.32pt x 289.08pt>
+<figuras/errors_15.png, id=1104, 1156.32pt x 289.08pt>
 File: figuras/errors_15.png Graphic file (type png)
 <use figuras/errors_15.png>
 Package pdftex.def Info: figuras/errors_15.png  used on input line 194.
 (pdftex.def)             Requested size: 486.25761pt x 121.56274pt.
-<figuras/season_15_tesis.png, id=1097, 1387.584pt x 700.2963pt>
+<figuras/season_15_tesis.png, id=1105, 1387.584pt x 700.2963pt>
 File: figuras/season_15_tesis.png Graphic file (type png)
 <use figuras/season_15_tesis.png>
 Package pdftex.def Info: figuras/season_15_tesis.png  used on input line 203.
@@ -1666,7 +1673,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [40 <./figuras/season_15_tesis.png>]
-<figuras/variabilidad.png, id=1113, 1011.78pt x 700.2963pt>
+<figuras/variabilidad.png, id=1120, 1011.78pt x 700.2963pt>
 File: figuras/variabilidad.png Graphic file (type png)
 <use figuras/variabilidad.png>
 Package pdftex.def Info: figuras/variabilidad.png  used on input line 235.
@@ -1690,7 +1697,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [42 <./figuras/Variabilidad.png>]
-<figuras/RMSE-sza-15.pdf, id=1126, 358.4592pt x 179.2296pt>
+<figuras/RMSE-sza-15.pdf, id=1133, 358.4592pt x 179.2296pt>
 File: figuras/RMSE-sza-15.pdf Graphic file (type pdf)
 <use figuras/RMSE-sza-15.pdf>
 Package pdftex.def Info: figuras/RMSE-sza-15.pdf  used on input line 258.
@@ -1717,12 +1724,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [43 <./figuras/RMSE-sza-15.pdf>]
-<figuras/errors_60.png, id=1139, 1387.584pt x 700.2963pt>
+<figuras/errors_60.png, id=1146, 1387.584pt x 700.2963pt>
 File: figuras/errors_60.png Graphic file (type png)
 <use figuras/errors_60.png>
 Package pdftex.def Info: figuras/errors_60.png  used on input line 278.
 (pdftex.def)             Requested size: 486.25761pt x 245.40657pt.
-<figuras/ero.png, id=1143, 1387.584pt x 700.2963pt>
+<figuras/ero.png, id=1150, 1387.584pt x 700.2963pt>
 File: figuras/ero.png Graphic file (type png)
 <use figuras/ero.png>
 Package pdftex.def Info: figuras/ero.png  used on input line 289.
@@ -1745,7 +1752,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
  []
 
-<figuras/resoluciones.png, id=1151, 713.66624pt x 900.36375pt>
+<figuras/resoluciones.png, id=1160, 713.66624pt x 900.36375pt>
 File: figuras/resoluciones.png Graphic file (type png)
 <use figuras/resoluciones.png>
 Package pdftex.def Info: figuras/resoluciones.png  used on input line 305.
@@ -1826,6 +1833,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 480--481
  []
 
 
+Package natbib Warning: Citation `Fern�ndez2020' on page 49 undefined on input 
+line 482.
+
+
 Underfull \vbox (badness 1681) has occurred while \output is active []
 
 
@@ -1863,17 +1874,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [51]
-<figuras/scatter_yu_1.png, id=1226, 1011.78pt x 433.62pt>
+<figuras/scatter_yu_1.png, id=1232, 1011.78pt x 433.62pt>
 File: figuras/scatter_yu_1.png Graphic file (type png)
 <use figuras/scatter_yu_1.png>
 Package pdftex.def Info: figuras/scatter_yu_1.png  used on input line 548.
 (pdftex.def)             Requested size: 437.62888pt x 187.55792pt.
-<figuras/scatter_sa_1.png, id=1227, 1011.78pt x 433.62pt>
+<figuras/scatter_sa_1.png, id=1233, 1011.78pt x 433.62pt>
 File: figuras/scatter_sa_1.png Graphic file (type png)
 <use figuras/scatter_sa_1.png>
 Package pdftex.def Info: figuras/scatter_sa_1.png  used on input line 558.
 (pdftex.def)             Requested size: 437.62888pt x 187.55792pt.
-<figuras/scatter_sca_1.png, id=1229, 1011.78pt x 433.62pt>
+<figuras/scatter_sca_1.png, id=1235, 1011.78pt x 433.62pt>
 File: figuras/scatter_sca_1.png Graphic file (type png)
 <use figuras/scatter_sca_1.png>
 Package pdftex.def Info: figuras/scatter_sca_1.png  used on input line 570.
@@ -1897,23 +1908,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [53 <./figuras/scatter_sa_1.png> <./figuras/scatter_sca_1.png>]
-<figuras/scatter_ero_1.png, id=1243, 1011.78pt x 433.62pt>
+<figuras/scatter_ero_1.png, id=1249, 1011.78pt x 433.62pt>
 File: figuras/scatter_ero_1.png Graphic file (type png)
 <use figuras/scatter_ero_1.png>
 Package pdftex.def Info: figuras/scatter_ero_1.png  used on input line 581.
 (pdftex.def)             Requested size: 437.62888pt x 187.55792pt.
-<figuras/scatter_lq_1.png, id=1244, 1011.78pt x 433.62pt>
+<figuras/scatter_lq_1.png, id=1250, 1011.78pt x 433.62pt>
 File: figuras/scatter_lq_1.png Graphic file (type png)
 <use figuras/scatter_lq_1.png>
 Package pdftex.def Info: figuras/scatter_lq_1.png  used on input line 593.
 (pdftex.def)             Requested size: 437.62888pt x 187.55792pt.
-<figuras/comparativasRMSE15.png, id=1246, 867.24pt x 462.528pt>
+<figuras/comparativasRMSE15.png, id=1252, 867.24pt x 462.528pt>
 File: figuras/comparativasRMSE15.png Graphic file (type png)
 <use figuras/comparativasRMSE15.png>
 Package pdftex.def Info: figuras/comparativasRMSE15.png  used on input line 605
 .
 (pdftex.def)             Requested size: 437.62888pt x 233.40187pt.
-<figuras/AdaptacionEro1.png, id=1247, 1387.584pt x 700.2963pt>
+<figuras/AdaptacionEro1.png, id=1253, 1387.584pt x 700.2963pt>
 File: figuras/AdaptacionEro1.png Graphic file (type png)
 <use figuras/AdaptacionEro1.png>
 Package pdftex.def Info: figuras/AdaptacionEro1.png  used on input line 617.
@@ -1982,10 +1993,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [60]
-<./figuras/rmsd_full.png, id=1321, 1155.5973pt x 667.7748pt>
-File: ./figuras/rmsd_full.png Graphic file (type png)
-<use ./figuras/rmsd_full.png>
-Package pdftex.def Info: ./figuras/rmsd_full.png  used on input line 751.
+<./figuras//rmsd_full.png, id=1327, 1155.5973pt x 667.7748pt>
+File: ./figuras//rmsd_full.png Graphic file (type png)
+<use ./figuras//rmsd_full.png>
+Package pdftex.def Info: ./figuras//rmsd_full.png  used on input line 751.
 (pdftex.def)             Requested size: 486.25761pt x 280.98315pt.
 
 
@@ -2005,22 +2016,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[62 <./figuras/rmsd_full.png>]
-<./figuras/SA_corr_matrix.png, id=1341, 560.3334pt x 491.9178pt>
-File: ./figuras/SA_corr_matrix.png Graphic file (type png)
-<use ./figuras/SA_corr_matrix.png>
-Package pdftex.def Info: ./figuras/SA_corr_matrix.png  used on input line 764.
+[62 <./figuras//rmsd_full.png>]
+<./figuras//SA_corr_matrix.png, id=1348, 560.3334pt x 491.9178pt>
+File: ./figuras//SA_corr_matrix.png Graphic file (type png)
+<use ./figuras//SA_corr_matrix.png>
+Package pdftex.def Info: ./figuras//SA_corr_matrix.png  used on input line 764.
+
 (pdftex.def)             Requested size: 486.25761pt x 426.89917pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 771--772
 
  []
 
-<./figuras/SA_corr_matrix_mini.png, id=1346, 560.3334pt x 491.9178pt>
-File: ./figuras/SA_corr_matrix_mini.png Graphic file (type png)
-<use ./figuras/SA_corr_matrix_mini.png>
-Package pdftex.def Info: ./figuras/SA_corr_matrix_mini.png  used on input line 
-779.
+<./figuras//SA_corr_matrix_mini.png, id=1353, 560.3334pt x 491.9178pt>
+File: ./figuras//SA_corr_matrix_mini.png Graphic file (type png)
+<use ./figuras//SA_corr_matrix_mini.png>
+Package pdftex.def Info: ./figuras//SA_corr_matrix_mini.png  used on input line
+ 779.
 (pdftex.def)             Requested size: 486.25761pt x 426.89917pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 787--788
@@ -2044,7 +2056,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[64 <./figuras/SA_corr_matrix.png>]
+[64 <./figuras//SA_corr_matrix.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2053,7 +2065,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[65 <./figuras/SA_corr_matrix_mini.png>]
+[65 <./figuras//SA_corr_matrix_mini.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 791--792
 
  []
@@ -2067,10 +2079,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [66]
-<./figuras/rmsd_filtrados.png, id=1380, 1318.9275pt x 667.7748pt>
-File: ./figuras/rmsd_filtrados.png Graphic file (type png)
-<use ./figuras/rmsd_filtrados.png>
-Package pdftex.def Info: ./figuras/rmsd_filtrados.png  used on input line 875.
+<./figuras//rmsd_filtrados.png, id=1386, 1318.9275pt x 667.7748pt>
+File: ./figuras//rmsd_filtrados.png Graphic file (type png)
+<use ./figuras//rmsd_filtrados.png>
+Package pdftex.def Info: ./figuras//rmsd_filtrados.png  used on input line 875.
+
 (pdftex.def)             Requested size: 486.25761pt x 246.18633pt.
 
 
@@ -2090,7 +2103,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[68 <./figuras/rmsd_filtrados.png>]
+[68 <./figuras//rmsd_filtrados.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2128,7 +2141,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [70]
-<figuras/AnalogiaVecinos.png, id=1409, 552.0625pt x 551.05875pt>
+<figuras/AnalogiaVecinos.png, id=1415, 552.0625pt x 551.05875pt>
 File: figuras/AnalogiaVecinos.png Graphic file (type png)
 <use figuras/AnalogiaVecinos.png>
 Package pdftex.def Info: figuras/AnalogiaVecinos.png  used on input line 923.
@@ -2155,7 +2168,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 932--933
 
  []
 
-<figuras/gridSA.png, id=1418, 705.63625pt x 660.4675pt>
+<figuras/gridSA.png, id=1424, 705.63625pt x 660.4675pt>
 File: figuras/gridSA.png Graphic file (type png)
 <use figuras/gridSA.png>
 Package pdftex.def Info: figuras/gridSA.png  used on input line 937.
@@ -2210,7 +2223,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [75]
-<figuras/rmsd_vecinos.png, id=1448, 1318.9275pt x 667.7748pt>
+<figuras/rmsd_vecinos.png, id=1454, 1318.9275pt x 667.7748pt>
 File: figuras/rmsd_vecinos.png Graphic file (type png)
 <use figuras/rmsd_vecinos.png>
 Package pdftex.def Info: figuras/rmsd_vecinos.png  used on input line 1068.
@@ -2243,7 +2256,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [78]
-<figuras/approaches.png, id=1478, 1387.584pt x 703.1871pt>
+<figuras/approaches.png, id=1484, 1387.584pt x 703.1871pt>
 File: figuras/approaches.png Graphic file (type png)
 <use figuras/approaches.png>
 Package pdftex.def Info: figuras/approaches.png  used on input line 1176.
@@ -2271,11 +2284,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1248--1249
 
  []
 
-<./figuras/errors_estacionalidad.png, id=1497, 1387.584pt x 700.2963pt>
-File: ./figuras/errors_estacionalidad.png Graphic file (type png)
-<use ./figuras/errors_estacionalidad.png>
-Package pdftex.def Info: ./figuras/errors_estacionalidad.png  used on input lin
-e 1256.
+<./figuras//errors_estacionalidad.png, id=1504, 1387.584pt x 700.2963pt>
+File: ./figuras//errors_estacionalidad.png Graphic file (type png)
+<use ./figuras//errors_estacionalidad.png>
+Package pdftex.def Info: ./figuras//errors_estacionalidad.png  used on input li
+ne 1256.
 (pdftex.def)             Requested size: 486.25761pt x 245.40657pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2294,7 +2307,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[82 <./figuras/errors_estacionalidad.png>]
+[82 <./figuras//errors_estacionalidad.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2313,13 +2326,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [84]
-<figuras/CrossValidationOneSite.png, id=1524, 577.4373pt x 432.8973pt>
+<figuras/CrossValidationOneSite.png, id=1530, 577.4373pt x 432.8973pt>
 File: figuras/CrossValidationOneSite.png Graphic file (type png)
 <use figuras/CrossValidationOneSite.png>
 Package pdftex.def Info: figuras/CrossValidationOneSite.png  used on input line
  1299.
 (pdftex.def)             Requested size: 233.40157pt x 174.97896pt.
-<figuras/DeltaCrossValidationOneSite.png, id=1525, 577.4373pt x 432.8973pt>
+<figuras/DeltaCrossValidationOneSite.png, id=1531, 577.4373pt x 432.8973pt>
 File: figuras/DeltaCrossValidationOneSite.png Graphic file (type png)
 <use figuras/DeltaCrossValidationOneSite.png>
 Package pdftex.def Info: figuras/DeltaCrossValidationOneSite.png  used on input
@@ -2345,25 +2358,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [86]
-<./figuras/distancia3d.png, id=1542, 649.7073pt x 505.1673pt>
-File: ./figuras/distancia3d.png Graphic file (type png)
-<use ./figuras/distancia3d.png>
-Package pdftex.def Info: ./figuras/distancia3d.png  used on input line 1348.
+<./figuras//distancia3d.png, id=1549, 649.7073pt x 505.1673pt>
+File: ./figuras//distancia3d.png Graphic file (type png)
+<use ./figuras//distancia3d.png>
+Package pdftex.def Info: ./figuras//distancia3d.png  used on input line 1348.
 (pdftex.def)             Requested size: 486.25761pt x 378.0883pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1353--1354
 
  []
 
-<figuras/AP_corregido.png, id=1544, 432.8973pt x 667.7748pt>
+<figuras/AP_corregido.png, id=1551, 432.8973pt x 667.7748pt>
 File: figuras/AP_corregido.png Graphic file (type png)
 <use figuras/AP_corregido.png>
 Package pdftex.def Info: figuras/AP_corregido.png  used on input line 1394.
 (pdftex.def)             Requested size: 233.40157pt x 360.04279pt.
-<./figuras/CE_corregido.png, id=1545, 432.8973pt x 667.7748pt>
-File: ./figuras/CE_corregido.png Graphic file (type png)
-<use ./figuras/CE_corregido.png>
-Package pdftex.def Info: ./figuras/CE_corregido.png  used on input line 1401.
+<./figuras//CE_corregido.png, id=1552, 432.8973pt x 667.7748pt>
+File: ./figuras//CE_corregido.png Graphic file (type png)
+<use ./figuras//CE_corregido.png>
+Package pdftex.def Info: ./figuras//CE_corregido.png  used on input line 1401.
 (pdftex.def)             Requested size: 233.40157pt x 360.04279pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2382,7 +2395,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[88 <./figuras/distancia3d.png>]
+[88 <./figuras//distancia3d.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2391,7 +2404,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[89 <./figuras/AP_corregido.png> <./figuras/CE_corregido.png>])
+[89 <./figuras/AP_corregido.png> <./figuras//CE_corregido.png>])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2509,7 +2522,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
 [102]
-Underfull \hbox (badness 1377) in paragraph at lines 621--628
+Underfull \hbox (badness 1377) in paragraph at lines 611--618
 []\T1/cmr/m/n/12 Anna Ma-ni and Oom-men Chac-ko.  At-te-nua-tion of so-lar ra-d
 ia-tion in the at-mosphe-
  []
@@ -2611,7 +2624,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-<figuras/Mapas/1_Enero.png, id=1835, 1300.86pt x 1011.78pt>
+<figuras/Mapas/1_Enero.png, id=1840, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/1_Enero.png Graphic file (type png)
 <use figuras/Mapas/1_Enero.png>
 Package pdftex.def Info: figuras/Mapas/1_Enero.png  used on input line 38.
@@ -2629,7 +2642,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
 [114]
-<figuras/Mapas/2_Febrero.png, id=1840, 1300.86pt x 1011.78pt>
+<figuras/Mapas/2_Febrero.png, id=1845, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/2_Febrero.png Graphic file (type png)
 <use figuras/Mapas/2_Febrero.png>
 Package pdftex.def Info: figuras/Mapas/2_Febrero.png  used on input line 44.
@@ -2647,7 +2660,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
 [115 <./figuras/Mapas/1_Enero.png>]
-<figuras/Mapas/3_Marzo.png, id=1846, 1300.86pt x 1011.78pt>
+<figuras/Mapas/3_Marzo.png, id=1851, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/3_Marzo.png Graphic file (type png)
 <use figuras/Mapas/3_Marzo.png>
 Package pdftex.def Info: figuras/Mapas/3_Marzo.png  used on input line 50.
@@ -2665,7 +2678,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
 [116 <./figuras/Mapas/2_Febrero.png>]
-<figuras/Mapas/4_Abril.png, id=1852, 1300.86pt x 1011.78pt>
+<figuras/Mapas/4_Abril.png, id=1858, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/4_Abril.png Graphic file (type png)
 <use figuras/Mapas/4_Abril.png>
 Package pdftex.def Info: figuras/Mapas/4_Abril.png  used on input line 56.
@@ -2683,7 +2696,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
 [117 <./figuras/Mapas/3_Marzo.png>]
-<figuras/Mapas/5_Mayo.png, id=1859, 1300.86pt x 1011.78pt>
+<figuras/Mapas/5_Mayo.png, id=1864, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/5_Mayo.png Graphic file (type png)
 <use figuras/Mapas/5_Mayo.png>
 Package pdftex.def Info: figuras/Mapas/5_Mayo.png  used on input line 62.
@@ -2701,7 +2714,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
 [118 <./figuras/Mapas/4_Abril.png>]
-<figuras/Mapas/6_Junio.png, id=1865, 1300.86pt x 1011.78pt>
+<figuras/Mapas/6_Junio.png, id=1870, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/6_Junio.png Graphic file (type png)
 <use figuras/Mapas/6_Junio.png>
 Package pdftex.def Info: figuras/Mapas/6_Junio.png  used on input line 68.
@@ -2719,7 +2732,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
 [119 <./figuras/Mapas/5_Mayo.png>]
-<figuras/Mapas/7_Julio.png, id=1871, 1300.86pt x 1011.78pt>
+<figuras/Mapas/7_Julio.png, id=1876, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/7_Julio.png Graphic file (type png)
 <use figuras/Mapas/7_Julio.png>
 Package pdftex.def Info: figuras/Mapas/7_Julio.png  used on input line 74.
@@ -2737,7 +2750,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
 [120 <./figuras/Mapas/6_Junio.png>]
-<figuras/Mapas/8_Agosto.png, id=1877, 1300.86pt x 1011.78pt>
+<figuras/Mapas/8_Agosto.png, id=1882, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/8_Agosto.png Graphic file (type png)
 <use figuras/Mapas/8_Agosto.png>
 Package pdftex.def Info: figuras/Mapas/8_Agosto.png  used on input line 80.
@@ -2755,7 +2768,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
 [121 <./figuras/Mapas/7_Julio.png>]
-<figuras/Mapas/9_Septiembre.png, id=1883, 1300.86pt x 1011.78pt>
+<figuras/Mapas/9_Septiembre.png, id=1888, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/9_Septiembre.png Graphic file (type png)
 <use figuras/Mapas/9_Septiembre.png>
 Package pdftex.def Info: figuras/Mapas/9_Septiembre.png  used on input line 86.
@@ -2774,7 +2787,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
 [122 <./figuras/Mapas/8_Agosto.png>]
-<figuras/Mapas/10_Octubre.png, id=1889, 1300.86pt x 1011.78pt>
+<figuras/Mapas/10_Octubre.png, id=1895, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/10_Octubre.png Graphic file (type png)
 <use figuras/Mapas/10_Octubre.png>
 Package pdftex.def Info: figuras/Mapas/10_Octubre.png  used on input line 92.
@@ -2792,7 +2805,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
 [123 <./figuras/Mapas/9_Septiembre.png>]
-<figuras/Mapas/11_Noviembre.png, id=1896, 1300.86pt x 1011.78pt>
+<figuras/Mapas/11_Noviembre.png, id=1901, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/11_Noviembre.png Graphic file (type png)
 <use figuras/Mapas/11_Noviembre.png>
 Package pdftex.def Info: figuras/Mapas/11_Noviembre.png  used on input line 98.
@@ -2811,7 +2824,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
 [124 <./figuras/Mapas/10_Octubre.png>]
-<figuras/Mapas/12_Diciembre.png, id=1902, 1300.86pt x 1011.78pt>
+<figuras/Mapas/12_Diciembre.png, id=1907, 1300.86pt x 1011.78pt>
 File: figuras/Mapas/12_Diciembre.png Graphic file (type png)
 <use figuras/Mapas/12_Diciembre.png>
 Package pdftex.def Info: figuras/Mapas/12_Diciembre.png  used on input line 104
@@ -2830,7 +2843,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
 [125 <./figuras/Mapas/11_Noviembre.png>]
-<figuras/Mapas/TMY.png, id=1908, 4385.38374pt x 2995.19pt>
+<figuras/Mapas/TMY.png, id=1913, 4385.38374pt x 2995.19pt>
 File: figuras/Mapas/TMY.png Graphic file (type png)
 <use figuras/Mapas/TMY.png>
 Package pdftex.def Info: figuras/Mapas/TMY.png  used on input line 111.
@@ -2871,7 +2884,7 @@ oi.org/10.1109/TLA.2025.11072498.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/01_site_adaptation2.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/01_site_adaptation2.pdf, id=1923, 598.2192pt x 845.1322pt>
+<anexo_3/01_site_adaptation2.pdf, id=1929, 598.2192pt x 845.1322pt>
 File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 <use anexo_3/01_site_adaptation2.pdf>
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf  used on input line 34
@@ -2894,7 +2907,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/01_site_adaptation2.pdf): PDF
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/01_site_adaptation2.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/01_site_adaptation2.pdf, id=1926, page=1, 598.2192pt x 845.1322pt>
+<anexo_3/01_site_adaptation2.pdf, id=1932, page=1, 598.2192pt x 845.1322pt>
 File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 <use anexo_3/01_site_adaptation2.pdf, page 1>
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page1 used on input 
@@ -2929,13 +2942,11 @@ File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page1 used on input 
 line 34.
 (pdftex.def)             Requested size: 562.79164pt x 795.08206pt.
- [130
-
- <./anexo_3/01_site_adaptation2.pdf>]
+ [130 <./anexo_3/01_site_adaptation2.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/01_site_adaptation2.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/01_site_adaptation2.pdf, id=1957, page=2, 598.2192pt x 845.1322pt>
+<anexo_3/01_site_adaptation2.pdf, id=1962, page=2, 598.2192pt x 845.1322pt>
 File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 <use anexo_3/01_site_adaptation2.pdf, page 2>
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page2 used on input 
@@ -2951,13 +2962,11 @@ File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page2 used on input 
 line 34.
 (pdftex.def)             Requested size: 562.79164pt x 795.08206pt.
-[131
-
- <./anexo_3/01_site_adaptation2.pdf>]
+[131 <./anexo_3/01_site_adaptation2.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/01_site_adaptation2.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/01_site_adaptation2.pdf, id=1962, page=3, 598.2192pt x 845.1322pt>
+<anexo_3/01_site_adaptation2.pdf, id=1967, page=3, 598.2192pt x 845.1322pt>
 File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 <use anexo_3/01_site_adaptation2.pdf, page 3>
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page3 used on input 
@@ -2973,13 +2982,11 @@ File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page3 used on input 
 line 34.
 (pdftex.def)             Requested size: 562.79164pt x 795.08206pt.
-[132
-
- <./anexo_3/01_site_adaptation2.pdf>]
+[132 <./anexo_3/01_site_adaptation2.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/01_site_adaptation2.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/01_site_adaptation2.pdf, id=1967, page=4, 598.2192pt x 845.1322pt>
+<anexo_3/01_site_adaptation2.pdf, id=1973, page=4, 598.2192pt x 845.1322pt>
 File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 <use anexo_3/01_site_adaptation2.pdf, page 4>
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page4 used on input 
@@ -2995,13 +3002,11 @@ File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page4 used on input 
 line 34.
 (pdftex.def)             Requested size: 562.79164pt x 795.08206pt.
-[133
-
- <./anexo_3/01_site_adaptation2.pdf>]
+[133 <./anexo_3/01_site_adaptation2.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/01_site_adaptation2.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/01_site_adaptation2.pdf, id=1973, page=5, 598.2192pt x 845.1322pt>
+<anexo_3/01_site_adaptation2.pdf, id=1978, page=5, 598.2192pt x 845.1322pt>
 File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 <use anexo_3/01_site_adaptation2.pdf, page 5>
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page5 used on input 
@@ -3017,13 +3022,11 @@ File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page5 used on input 
 line 34.
 (pdftex.def)             Requested size: 562.79164pt x 795.08206pt.
-[134
-
- <./anexo_3/01_site_adaptation2.pdf>]
+[134 <./anexo_3/01_site_adaptation2.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/01_site_adaptation2.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/01_site_adaptation2.pdf, id=1978, page=6, 598.2192pt x 845.1322pt>
+<anexo_3/01_site_adaptation2.pdf, id=1984, page=6, 598.2192pt x 845.1322pt>
 File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 <use anexo_3/01_site_adaptation2.pdf, page 6>
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page6 used on input 
@@ -3039,13 +3042,11 @@ File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page6 used on input 
 line 34.
 (pdftex.def)             Requested size: 562.79164pt x 795.08206pt.
-[135
-
- <./anexo_3/01_site_adaptation2.pdf>]
+[135 <./anexo_3/01_site_adaptation2.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/01_site_adaptation2.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/01_site_adaptation2.pdf, id=1984, page=7, 598.2192pt x 845.1322pt>
+<anexo_3/01_site_adaptation2.pdf, id=1989, page=7, 598.2192pt x 845.1322pt>
 File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 <use anexo_3/01_site_adaptation2.pdf, page 7>
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page7 used on input 
@@ -3061,13 +3062,11 @@ File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page7 used on input 
 line 34.
 (pdftex.def)             Requested size: 562.79164pt x 795.08206pt.
-[136
-
- <./anexo_3/01_site_adaptation2.pdf>]
+[136 <./anexo_3/01_site_adaptation2.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/01_site_adaptation2.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/01_site_adaptation2.pdf, id=1989, page=8, 598.2192pt x 845.1322pt>
+<anexo_3/01_site_adaptation2.pdf, id=1994, page=8, 598.2192pt x 845.1322pt>
 File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 <use anexo_3/01_site_adaptation2.pdf, page 8>
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page8 used on input 
@@ -3083,13 +3082,11 @@ File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page8 used on input 
 line 34.
 (pdftex.def)             Requested size: 562.79164pt x 795.08206pt.
-[137
-
- <./anexo_3/01_site_adaptation2.pdf>]
+[137 <./anexo_3/01_site_adaptation2.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/01_site_adaptation2.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/01_site_adaptation2.pdf, id=1994, page=9, 598.2192pt x 845.1322pt>
+<anexo_3/01_site_adaptation2.pdf, id=1999, page=9, 598.2192pt x 845.1322pt>
 File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 <use anexo_3/01_site_adaptation2.pdf, page 9>
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page9 used on input 
@@ -3105,13 +3102,11 @@ File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page9 used on input 
 line 34.
 (pdftex.def)             Requested size: 562.79164pt x 795.08206pt.
-[138
-
- <./anexo_3/01_site_adaptation2.pdf>]
+[138 <./anexo_3/01_site_adaptation2.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/01_site_adaptation2.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/01_site_adaptation2.pdf, id=1999, page=10, 598.2192pt x 845.1322pt>
+<anexo_3/01_site_adaptation2.pdf, id=2004, page=10, 598.2192pt x 845.1322pt>
 File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 <use anexo_3/01_site_adaptation2.pdf, page 10>
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page10 used on input
@@ -3127,10 +3122,8 @@ File: anexo_3/01_site_adaptation2.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/01_site_adaptation2.pdf , page10 used on input
  line 34.
 (pdftex.def)             Requested size: 562.79164pt x 795.08206pt.
-[139
-
- <./anexo_3/01_site_adaptation2.pdf>]
-<anexo_3/02_Calcusol.pdf, id=2004, 597.23125pt x 845.1575pt>
+[139 <./anexo_3/01_site_adaptation2.pdf>]
+<anexo_3/02_Calcusol.pdf, id=2009, 597.23125pt x 845.1575pt>
 File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 <use anexo_3/02_Calcusol.pdf>
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf  used on input line 35.
@@ -3139,7 +3132,7 @@ File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 <use anexo_3/02_Calcusol.pdf>
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf  used on input line 35.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<anexo_3/02_Calcusol.pdf, id=2007, page=1, 597.23125pt x 845.1575pt>
+<anexo_3/02_Calcusol.pdf, id=2012, page=1, 597.23125pt x 845.1575pt>
 File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 <use anexo_3/02_Calcusol.pdf, page 1>
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page1 used on input line 35.
@@ -3165,10 +3158,8 @@ File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page1 used on input line 35.
 
 (pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
- [140
-
- <./anexo_3/02_Calcusol.pdf>]
-<anexo_3/02_Calcusol.pdf, id=2055, page=2, 597.23125pt x 845.1575pt>
+ [140 <./anexo_3/02_Calcusol.pdf>]
+<anexo_3/02_Calcusol.pdf, id=2061, page=2, 597.23125pt x 845.1575pt>
 File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 <use anexo_3/02_Calcusol.pdf, page 2>
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page2 used on input line 35.
@@ -3185,10 +3176,8 @@ Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page2 used on input line 35.
 
 (pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
 
-[141
-
- <./anexo_3/02_Calcusol.pdf>]
-<anexo_3/02_Calcusol.pdf, id=2084, page=3, 597.23125pt x 845.1575pt>
+[141 <./anexo_3/02_Calcusol.pdf>]
+<anexo_3/02_Calcusol.pdf, id=2089, page=3, 597.23125pt x 845.1575pt>
 File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 <use anexo_3/02_Calcusol.pdf, page 3>
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page3 used on input line 35.
@@ -3204,10 +3193,8 @@ File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page3 used on input line 35.
 
 (pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
- [142
-
- <./anexo_3/02_Calcusol.pdf>]
-<anexo_3/02_Calcusol.pdf, id=2093, page=4, 597.23125pt x 845.1575pt>
+ [142 <./anexo_3/02_Calcusol.pdf>]
+<anexo_3/02_Calcusol.pdf, id=2098, page=4, 597.23125pt x 845.1575pt>
 File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 <use anexo_3/02_Calcusol.pdf, page 4>
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page4 used on input line 35.
@@ -3223,10 +3210,8 @@ File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page4 used on input line 35.
 
 (pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
- [143
-
- <./anexo_3/02_Calcusol.pdf>]
-<anexo_3/02_Calcusol.pdf, id=2108, page=5, 597.23125pt x 845.1575pt>
+ [143 <./anexo_3/02_Calcusol.pdf>]
+<anexo_3/02_Calcusol.pdf, id=2113, page=5, 597.23125pt x 845.1575pt>
 File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 <use anexo_3/02_Calcusol.pdf, page 5>
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page5 used on input line 35.
@@ -3242,10 +3227,8 @@ File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page5 used on input line 35.
 
 (pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
- [144
-
- <./anexo_3/02_Calcusol.pdf>]
-<anexo_3/02_Calcusol.pdf, id=2130, page=6, 597.23125pt x 845.1575pt>
+ [144 <./anexo_3/02_Calcusol.pdf>]
+<anexo_3/02_Calcusol.pdf, id=2135, page=6, 597.23125pt x 845.1575pt>
 File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 <use anexo_3/02_Calcusol.pdf, page 6>
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page6 used on input line 35.
@@ -3261,10 +3244,8 @@ File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page6 used on input line 35.
 
 (pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
- [145
-
- <./anexo_3/02_Calcusol.pdf>]
-<anexo_3/02_Calcusol.pdf, id=2145, page=7, 597.23125pt x 845.1575pt>
+ [145 <./anexo_3/02_Calcusol.pdf>]
+<anexo_3/02_Calcusol.pdf, id=2150, page=7, 597.23125pt x 845.1575pt>
 File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 <use anexo_3/02_Calcusol.pdf, page 7>
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page7 used on input line 35.
@@ -3280,10 +3261,8 @@ File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page7 used on input line 35.
 
 (pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
- [146
-
- <./anexo_3/02_Calcusol.pdf>]
-<anexo_3/02_Calcusol.pdf, id=2156, page=8, 597.23125pt x 845.1575pt>
+ [146 <./anexo_3/02_Calcusol.pdf>]
+<anexo_3/02_Calcusol.pdf, id=2162, page=8, 597.23125pt x 845.1575pt>
 File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 <use anexo_3/02_Calcusol.pdf, page 8>
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page8 used on input line 35.
@@ -3299,10 +3278,8 @@ File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page8 used on input line 35.
 
 (pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
- [147
-
- <./anexo_3/02_Calcusol.pdf>]
-<anexo_3/02_Calcusol.pdf, id=2180, page=9, 597.23125pt x 845.1575pt>
+ [147 <./anexo_3/02_Calcusol.pdf>]
+<anexo_3/02_Calcusol.pdf, id=2185, page=9, 597.23125pt x 845.1575pt>
 File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 <use anexo_3/02_Calcusol.pdf, page 9>
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page9 used on input line 35.
@@ -3318,10 +3295,8 @@ File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page9 used on input line 35.
 
 (pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
-[148
-
- <./anexo_3/02_Calcusol.pdf>]
-<anexo_3/02_Calcusol.pdf, id=2189, page=10, 597.23125pt x 845.1575pt>
+[148 <./anexo_3/02_Calcusol.pdf>]
+<anexo_3/02_Calcusol.pdf, id=2194, page=10, 597.23125pt x 845.1575pt>
 File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 <use anexo_3/02_Calcusol.pdf, page 10>
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page10 used on input line 35
@@ -3337,13 +3312,11 @@ File: anexo_3/02_Calcusol.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/02_Calcusol.pdf , page10 used on input line 35
 .
 (pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
- [149
-
- <./anexo_3/02_Calcusol.pdf>]
+ [149 <./anexo_3/02_Calcusol.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/03_argp.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/03_argp.pdf, id=2198, 597.55246pt x 845.07718pt>
+<anexo_3/03_argp.pdf, id=2203, 597.55246pt x 845.07718pt>
 File: anexo_3/03_argp.pdf Graphic file (type pdf)
 <use anexo_3/03_argp.pdf>
 Package pdftex.def Info: anexo_3/03_argp.pdf  used on input line 36.
@@ -3364,7 +3337,7 @@ found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/03_argp.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/03_argp.pdf, id=2201, page=1, 597.55246pt x 845.07718pt>
+<anexo_3/03_argp.pdf, id=2206, page=1, 597.55246pt x 845.07718pt>
 File: anexo_3/03_argp.pdf Graphic file (type pdf)
 <use anexo_3/03_argp.pdf, page 1>
 Package pdftex.def Info: anexo_3/03_argp.pdf , page1 used on input line 36.
@@ -3385,13 +3358,11 @@ File: anexo_3/03_argp.pdf Graphic file (type pdf)
 <use anexo_3/03_argp.pdf, page 1>
 Package pdftex.def Info: anexo_3/03_argp.pdf , page1 used on input line 36.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[150
-
- <./anexo_3/03_argp.pdf>]
+[150 <./anexo_3/03_argp.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/03_argp.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/03_argp.pdf, id=2247, page=2, 597.55246pt x 845.07718pt>
+<anexo_3/03_argp.pdf, id=2252, page=2, 597.55246pt x 845.07718pt>
 File: anexo_3/03_argp.pdf Graphic file (type pdf)
 <use anexo_3/03_argp.pdf, page 2>
 Package pdftex.def Info: anexo_3/03_argp.pdf , page2 used on input line 36.
@@ -3404,13 +3375,11 @@ File: anexo_3/03_argp.pdf Graphic file (type pdf)
 <use anexo_3/03_argp.pdf, page 2>
 Package pdftex.def Info: anexo_3/03_argp.pdf , page2 used on input line 36.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[151
-
- <./anexo_3/03_argp.pdf>]
+[151 <./anexo_3/03_argp.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/03_argp.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/03_argp.pdf, id=2300, page=3, 597.55246pt x 845.07718pt>
+<anexo_3/03_argp.pdf, id=2306, page=3, 597.55246pt x 845.07718pt>
 File: anexo_3/03_argp.pdf Graphic file (type pdf)
 <use anexo_3/03_argp.pdf, page 3>
 Package pdftex.def Info: anexo_3/03_argp.pdf , page3 used on input line 36.
@@ -3423,13 +3392,11 @@ File: anexo_3/03_argp.pdf Graphic file (type pdf)
 <use anexo_3/03_argp.pdf, page 3>
 Package pdftex.def Info: anexo_3/03_argp.pdf , page3 used on input line 36.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[152
-
- <./anexo_3/03_argp.pdf>]
+[152 <./anexo_3/03_argp.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/03_argp.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/03_argp.pdf, id=2346, page=4, 597.55246pt x 845.07718pt>
+<anexo_3/03_argp.pdf, id=2352, page=4, 597.55246pt x 845.07718pt>
 File: anexo_3/03_argp.pdf Graphic file (type pdf)
 <use anexo_3/03_argp.pdf, page 4>
 Package pdftex.def Info: anexo_3/03_argp.pdf , page4 used on input line 36.
@@ -3442,13 +3409,11 @@ File: anexo_3/03_argp.pdf Graphic file (type pdf)
 <use anexo_3/03_argp.pdf, page 4>
 Package pdftex.def Info: anexo_3/03_argp.pdf , page4 used on input line 36.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[153
-
- <./anexo_3/03_argp.pdf>]
+[153 <./anexo_3/03_argp.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/03_argp.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/03_argp.pdf, id=2393, page=5, 597.55246pt x 845.07718pt>
+<anexo_3/03_argp.pdf, id=2398, page=5, 597.55246pt x 845.07718pt>
 File: anexo_3/03_argp.pdf Graphic file (type pdf)
 <use anexo_3/03_argp.pdf, page 5>
 Package pdftex.def Info: anexo_3/03_argp.pdf , page5 used on input line 36.
@@ -3461,13 +3426,11 @@ File: anexo_3/03_argp.pdf Graphic file (type pdf)
 <use anexo_3/03_argp.pdf, page 5>
 Package pdftex.def Info: anexo_3/03_argp.pdf , page5 used on input line 36.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[154
-
- <./anexo_3/03_argp.pdf>]
+[154 <./anexo_3/03_argp.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/03_argp.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/03_argp.pdf, id=2431, page=6, 597.55246pt x 845.07718pt>
+<anexo_3/03_argp.pdf, id=2436, page=6, 597.55246pt x 845.07718pt>
 File: anexo_3/03_argp.pdf Graphic file (type pdf)
 <use anexo_3/03_argp.pdf, page 6>
 Package pdftex.def Info: anexo_3/03_argp.pdf , page6 used on input line 36.
@@ -3480,13 +3443,11 @@ File: anexo_3/03_argp.pdf Graphic file (type pdf)
 <use anexo_3/03_argp.pdf, page 6>
 Package pdftex.def Info: anexo_3/03_argp.pdf , page6 used on input line 36.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[155
-
- <./anexo_3/03_argp.pdf>]
+[155 <./anexo_3/03_argp.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/03_argp.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/03_argp.pdf, id=2470, page=7, 597.55246pt x 845.07718pt>
+<anexo_3/03_argp.pdf, id=2475, page=7, 597.55246pt x 845.07718pt>
 File: anexo_3/03_argp.pdf Graphic file (type pdf)
 <use anexo_3/03_argp.pdf, page 7>
 Package pdftex.def Info: anexo_3/03_argp.pdf , page7 used on input line 36.
@@ -3499,10 +3460,8 @@ File: anexo_3/03_argp.pdf Graphic file (type pdf)
 <use anexo_3/03_argp.pdf, page 7>
 Package pdftex.def Info: anexo_3/03_argp.pdf , page7 used on input line 36.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[156
-
- <./anexo_3/03_argp.pdf>]
-<anexo_3/04_DSR.pdf, id=2501, 597.50829pt x 845.0471pt>
+[156 <./anexo_3/03_argp.pdf>]
+<anexo_3/04_DSR.pdf, id=2506, 597.50829pt x 845.0471pt>
 File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf>
 Package pdftex.def Info: anexo_3/04_DSR.pdf  used on input line 37.
@@ -3511,7 +3470,7 @@ File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf>
 Package pdftex.def Info: anexo_3/04_DSR.pdf  used on input line 37.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<anexo_3/04_DSR.pdf, id=2504, page=1, 597.50829pt x 845.0471pt>
+<anexo_3/04_DSR.pdf, id=2509, page=1, 597.50829pt x 845.0471pt>
 File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 1>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page1 used on input line 37.
@@ -3532,10 +3491,8 @@ File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 1>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page1 used on input line 37.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [157
-
- <./anexo_3/04_DSR.pdf>]
-<anexo_3/04_DSR.pdf, id=2544, page=2, 597.50829pt x 845.0471pt>
+ [157 <./anexo_3/04_DSR.pdf>]
+<anexo_3/04_DSR.pdf, id=2549, page=2, 597.50829pt x 845.0471pt>
 File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 2>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page2 used on input line 37.
@@ -3548,10 +3505,8 @@ File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 2>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page2 used on input line 37.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [158
-
- <./anexo_3/04_DSR.pdf>]
-<anexo_3/04_DSR.pdf, id=2549, page=3, 597.50829pt x 845.0471pt>
+ [158 <./anexo_3/04_DSR.pdf>]
+<anexo_3/04_DSR.pdf, id=2555, page=3, 597.50829pt x 845.0471pt>
 File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 3>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page3 used on input line 37.
@@ -3564,10 +3519,8 @@ File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 3>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page3 used on input line 37.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [159
-
- <./anexo_3/04_DSR.pdf>]
-<anexo_3/04_DSR.pdf, id=2574, page=4, 597.50829pt x 845.0471pt>
+ [159 <./anexo_3/04_DSR.pdf>]
+<anexo_3/04_DSR.pdf, id=2579, page=4, 597.50829pt x 845.0471pt>
 File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 4>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page4 used on input line 37.
@@ -3580,10 +3533,8 @@ File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 4>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page4 used on input line 37.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [160
-
- <./anexo_3/04_DSR.pdf>]
-<anexo_3/04_DSR.pdf, id=2579, page=5, 597.50829pt x 845.0471pt>
+ [160 <./anexo_3/04_DSR.pdf>]
+<anexo_3/04_DSR.pdf, id=2584, page=5, 597.50829pt x 845.0471pt>
 File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 5>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page5 used on input line 37.
@@ -3596,10 +3547,8 @@ File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 5>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page5 used on input line 37.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [161
-
- <./anexo_3/04_DSR.pdf>]
-<anexo_3/04_DSR.pdf, id=2589, page=6, 597.50829pt x 845.0471pt>
+ [161 <./anexo_3/04_DSR.pdf>]
+<anexo_3/04_DSR.pdf, id=2594, page=6, 597.50829pt x 845.0471pt>
 File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 6>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page6 used on input line 37.
@@ -3612,10 +3561,8 @@ File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 6>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page6 used on input line 37.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [162
-
- <./anexo_3/04_DSR.pdf>]
-<anexo_3/04_DSR.pdf, id=2602, page=7, 597.50829pt x 845.0471pt>
+ [162 <./anexo_3/04_DSR.pdf>]
+<anexo_3/04_DSR.pdf, id=2607, page=7, 597.50829pt x 845.0471pt>
 File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 7>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page7 used on input line 37.
@@ -3628,10 +3575,8 @@ File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 7>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page7 used on input line 37.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [163
-
- <./anexo_3/04_DSR.pdf>]
-<anexo_3/04_DSR.pdf, id=2615, page=8, 597.50829pt x 845.0471pt>
+ [163 <./anexo_3/04_DSR.pdf>]
+<anexo_3/04_DSR.pdf, id=2620, page=8, 597.50829pt x 845.0471pt>
 File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 8>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page8 used on input line 37.
@@ -3645,10 +3590,8 @@ File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page8 used on input line 37.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 
-[164
-
- <./anexo_3/04_DSR.pdf>]
-<anexo_3/04_DSR.pdf, id=2624, page=9, 597.50829pt x 845.0471pt>
+[164 <./anexo_3/04_DSR.pdf>]
+<anexo_3/04_DSR.pdf, id=2630, page=9, 597.50829pt x 845.0471pt>
 File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 9>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page9 used on input line 37.
@@ -3661,10 +3604,8 @@ File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 9>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page9 used on input line 37.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [165
-
- <./anexo_3/04_DSR.pdf>]
-<anexo_3/04_DSR.pdf, id=2630, page=10, 597.50829pt x 845.0471pt>
+ [165 <./anexo_3/04_DSR.pdf>]
+<anexo_3/04_DSR.pdf, id=2635, page=10, 597.50829pt x 845.0471pt>
 File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 10>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page10 used on input line 37.
@@ -3677,10 +3618,8 @@ File: anexo_3/04_DSR.pdf Graphic file (type pdf)
 <use anexo_3/04_DSR.pdf, page 10>
 Package pdftex.def Info: anexo_3/04_DSR.pdf , page10 used on input line 37.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [166
-
- <./anexo_3/04_DSR.pdf>]
-<anexo_3/05_GCIM.pdf, id=2635, 597.50829pt x 845.0471pt>
+ [166 <./anexo_3/04_DSR.pdf>]
+<anexo_3/05_GCIM.pdf, id=2640, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf  used on input line 38.
@@ -3689,7 +3628,7 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf  used on input line 38.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<anexo_3/05_GCIM.pdf, id=2638, page=1, 597.50829pt x 845.0471pt>
+<anexo_3/05_GCIM.pdf, id=2643, page=1, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 1>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page1 used on input line 38.
@@ -3710,10 +3649,8 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 1>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page1 used on input line 38.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [167
-
- <./anexo_3/05_GCIM.pdf>]
-<anexo_3/05_GCIM.pdf, id=2658, page=2, 597.50829pt x 845.0471pt>
+ [167 <./anexo_3/05_GCIM.pdf>]
+<anexo_3/05_GCIM.pdf, id=2663, page=2, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 2>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page2 used on input line 38.
@@ -3726,10 +3663,8 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 2>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page2 used on input line 38.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [168
-
- <./anexo_3/05_GCIM.pdf>]
-<anexo_3/05_GCIM.pdf, id=2677, page=3, 597.50829pt x 845.0471pt>
+ [168 <./anexo_3/05_GCIM.pdf>]
+<anexo_3/05_GCIM.pdf, id=2682, page=3, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 3>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page3 used on input line 38.
@@ -3742,10 +3677,8 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 3>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page3 used on input line 38.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [169
-
- <./anexo_3/05_GCIM.pdf>]
-<anexo_3/05_GCIM.pdf, id=2698, page=4, 597.50829pt x 845.0471pt>
+ [169 <./anexo_3/05_GCIM.pdf>]
+<anexo_3/05_GCIM.pdf, id=2703, page=4, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 4>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page4 used on input line 38.
@@ -3758,10 +3691,8 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 4>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page4 used on input line 38.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [170
-
- <./anexo_3/05_GCIM.pdf>]
-<anexo_3/05_GCIM.pdf, id=2709, page=5, 597.50829pt x 845.0471pt>
+ [170 <./anexo_3/05_GCIM.pdf>]
+<anexo_3/05_GCIM.pdf, id=2715, page=5, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 5>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page5 used on input line 38.
@@ -3774,10 +3705,8 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 5>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page5 used on input line 38.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [171
-
- <./anexo_3/05_GCIM.pdf>]
-<anexo_3/05_GCIM.pdf, id=2717, page=6, 597.50829pt x 845.0471pt>
+ [171 <./anexo_3/05_GCIM.pdf>]
+<anexo_3/05_GCIM.pdf, id=2722, page=6, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 6>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page6 used on input line 38.
@@ -3791,10 +3720,8 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page6 used on input line 38.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 
-[172
-
- <./anexo_3/05_GCIM.pdf>]
-<anexo_3/05_GCIM.pdf, id=2722, page=7, 597.50829pt x 845.0471pt>
+[172 <./anexo_3/05_GCIM.pdf>]
+<anexo_3/05_GCIM.pdf, id=2727, page=7, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 7>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page7 used on input line 38.
@@ -3807,10 +3734,8 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 7>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page7 used on input line 38.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [173
-
- <./anexo_3/05_GCIM.pdf>]
-<anexo_3/05_GCIM.pdf, id=2732, page=8, 597.50829pt x 845.0471pt>
+ [173 <./anexo_3/05_GCIM.pdf>]
+<anexo_3/05_GCIM.pdf, id=2737, page=8, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 8>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page8 used on input line 38.
@@ -3823,10 +3748,8 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 8>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page8 used on input line 38.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [174
-
- <./anexo_3/05_GCIM.pdf>]
-<anexo_3/05_GCIM.pdf, id=2743, page=9, 597.50829pt x 845.0471pt>
+ [174 <./anexo_3/05_GCIM.pdf>]
+<anexo_3/05_GCIM.pdf, id=2748, page=9, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 9>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page9 used on input line 38.
@@ -3839,10 +3762,8 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 9>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page9 used on input line 38.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [175
-
- <./anexo_3/05_GCIM.pdf>]
-<anexo_3/05_GCIM.pdf, id=2754, page=10, 597.50829pt x 845.0471pt>
+ [175 <./anexo_3/05_GCIM.pdf>]
+<anexo_3/05_GCIM.pdf, id=2759, page=10, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 10>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page10 used on input line 38.
@@ -3855,10 +3776,8 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 10>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page10 used on input line 38.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [176
-
- <./anexo_3/05_GCIM.pdf>]
-<anexo_3/05_GCIM.pdf, id=2765, page=11, 597.50829pt x 845.0471pt>
+ [176 <./anexo_3/05_GCIM.pdf>]
+<anexo_3/05_GCIM.pdf, id=2771, page=11, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 11>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page11 used on input line 38.
@@ -3871,10 +3790,8 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 11>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page11 used on input line 38.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [177
-
- <./anexo_3/05_GCIM.pdf>]
-<anexo_3/05_GCIM.pdf, id=2777, page=12, 597.50829pt x 845.0471pt>
+ [177 <./anexo_3/05_GCIM.pdf>]
+<anexo_3/05_GCIM.pdf, id=2782, page=12, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 12>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page12 used on input line 38.
@@ -3887,10 +3804,8 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 12>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page12 used on input line 38.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [178
-
- <./anexo_3/05_GCIM.pdf>]
-<anexo_3/05_GCIM.pdf, id=2786, page=13, 597.50829pt x 845.0471pt>
+ [178 <./anexo_3/05_GCIM.pdf>]
+<anexo_3/05_GCIM.pdf, id=2791, page=13, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 13>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page13 used on input line 38.
@@ -3903,10 +3818,8 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 13>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page13 used on input line 38.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [179
-
- <./anexo_3/05_GCIM.pdf>]
-<anexo_3/05_GCIM.pdf, id=2791, page=14, 597.50829pt x 845.0471pt>
+ [179 <./anexo_3/05_GCIM.pdf>]
+<anexo_3/05_GCIM.pdf, id=2796, page=14, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 14>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page14 used on input line 38.
@@ -3919,10 +3832,8 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 14>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page14 used on input line 38.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [180
-
- <./anexo_3/05_GCIM.pdf>]
-<anexo_3/05_GCIM.pdf, id=2803, page=15, 597.50829pt x 845.0471pt>
+ [180 <./anexo_3/05_GCIM.pdf>]
+<anexo_3/05_GCIM.pdf, id=2808, page=15, 597.50829pt x 845.0471pt>
 File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 15>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page15 used on input line 38.
@@ -3935,330 +3846,302 @@ File: anexo_3/05_GCIM.pdf Graphic file (type pdf)
 <use anexo_3/05_GCIM.pdf, page 15>
 Package pdftex.def Info: anexo_3/05_GCIM.pdf , page15 used on input line 38.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [181
+ [181 <./anexo_3/05_GCIM.pdf>]
 
- <./anexo_3/05_GCIM.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-<anexo_3/06_DESEMPEÑO.pdf, id=2808, 597.55246pt x 845.07718pt>
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf  used on input line 39.
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<anexo_3/06_DESEMPENO.pdf, id=2813, 597.55246pt x 845.07718pt>
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf  used on input line 39.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf  used on input line 39.
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf  used on input line 39.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-<anexo_3/06_DESEMPEÑO.pdf, id=2811, page=1, 597.55246pt x 845.07718pt>
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 1>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page1 used on input line 3
-9.
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<anexo_3/06_DESEMPENO.pdf, id=2816, page=1, 597.55246pt x 845.07718pt>
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 1>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page1 used on input line 39
+.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 1>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page1 used on input line 3
-9.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 1>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page1 used on input line 39
+.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 1>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page1 used on input line 3
-9.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 1>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page1 used on input line 39
+.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 1>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page1 used on input line 3
-9.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 1>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page1 used on input line 39
+.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 1>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page1 used on input line 3
-9.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 1>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page1 used on input line 39
+.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[182
+[182 <./anexo_3/06_DESEMPENO.pdf>]
 
- <./anexo_3/06_DESEMPEÑO.pdf>]
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<anexo_3/06_DESEMPENO.pdf, id=2837, page=2, 597.55246pt x 845.07718pt>
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 2>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page2 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 2>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page2 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 2>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page2 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+[183 <./anexo_3/06_DESEMPENO.pdf>]
 
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-<anexo_3/06_DESEMPEÑO.pdf, id=2831, page=2, 597.55246pt x 845.07718pt>
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 2>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page2 used on input line 3
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<anexo_3/06_DESEMPENO.pdf, id=2850, page=3, 597.55246pt x 845.07718pt>
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 3>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page3 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 3>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page3 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 3>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page3 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+[184 <./anexo_3/06_DESEMPENO.pdf>]
+
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<anexo_3/06_DESEMPENO.pdf, id=2883, page=4, 597.55246pt x 845.07718pt>
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 4>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page4 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 4>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page4 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 4>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page4 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+[185 <./anexo_3/06_DESEMPENO.pdf>]
+
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<anexo_3/06_DESEMPENO.pdf, id=2888, page=5, 597.55246pt x 845.07718pt>
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 5>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page5 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 5>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page5 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 5>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page5 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+[186 <./anexo_3/06_DESEMPENO.pdf>]
+
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<anexo_3/06_DESEMPENO.pdf, id=2893, page=6, 597.55246pt x 845.07718pt>
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 6>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page6 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 6>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page6 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 6>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page6 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+[187 <./anexo_3/06_DESEMPENO.pdf>]
+
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<anexo_3/06_DESEMPENO.pdf, id=2902, page=7, 597.55246pt x 845.07718pt>
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 7>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page7 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 7>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page7 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 7>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page7 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+[188 <./anexo_3/06_DESEMPENO.pdf>]
+
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<anexo_3/06_DESEMPENO.pdf, id=2913, page=8, 597.55246pt x 845.07718pt>
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 8>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page8 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 8>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page8 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 8>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page8 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+[189 <./anexo_3/06_DESEMPENO.pdf>]
+
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<anexo_3/06_DESEMPENO.pdf, id=2918, page=9, 597.55246pt x 845.07718pt>
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 9>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page9 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 9>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page9 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 9>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page9 used on input line 39
+.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+[190 <./anexo_3/06_DESEMPENO.pdf>]
+
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<anexo_3/06_DESEMPENO.pdf, id=2928, page=10, 597.55246pt x 845.07718pt>
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 10>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page10 used on input line 3
 9.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 2>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page2 used on input line 3
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 10>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page10 used on input line 3
 9.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 2>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page2 used on input line 3
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 10>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page10 used on input line 3
 9.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[183
+[191 <./anexo_3/06_DESEMPENO.pdf>]
 
- <./anexo_3/06_DESEMPEÑO.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-<anexo_3/06_DESEMPEÑO.pdf, id=2845, page=3, 597.55246pt x 845.07718pt>
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 3>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page3 used on input line 3
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<anexo_3/06_DESEMPENO.pdf, id=2933, page=11, 597.55246pt x 845.07718pt>
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 11>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page11 used on input line 3
 9.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 3>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page3 used on input line 3
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 11>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page11 used on input line 3
 9.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 3>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page3 used on input line 3
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 11>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page11 used on input line 3
 9.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[184
+[192 <./anexo_3/06_DESEMPENO.pdf>]
 
- <./anexo_3/06_DESEMPEÑO.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-<anexo_3/06_DESEMPEÑO.pdf, id=2878, page=4, 597.55246pt x 845.07718pt>
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 4>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page4 used on input line 3
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<anexo_3/06_DESEMPENO.pdf, id=2938, page=12, 597.55246pt x 845.07718pt>
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 12>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page12 used on input line 3
 9.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 4>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page4 used on input line 3
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 12>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page12 used on input line 3
 9.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 4>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page4 used on input line 3
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 12>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page12 used on input line 3
 9.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[185
+[193 <./anexo_3/06_DESEMPENO.pdf>]
 
- <./anexo_3/06_DESEMPEÑO.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-<anexo_3/06_DESEMPEÑO.pdf, id=2883, page=5, 597.55246pt x 845.07718pt>
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 5>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page5 used on input line 3
+pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPENO.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<anexo_3/06_DESEMPENO.pdf, id=2943, page=13, 597.55246pt x 845.07718pt>
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 13>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page13 used on input line 3
 9.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 5>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page5 used on input line 3
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 13>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page13 used on input line 3
 9.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 5>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page5 used on input line 3
+File: anexo_3/06_DESEMPENO.pdf Graphic file (type pdf)
+<use anexo_3/06_DESEMPENO.pdf, page 13>
+Package pdftex.def Info: anexo_3/06_DESEMPENO.pdf , page13 used on input line 3
 9.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[186
-
- <./anexo_3/06_DESEMPEÑO.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-<anexo_3/06_DESEMPEÑO.pdf, id=2888, page=6, 597.55246pt x 845.07718pt>
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 6>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page6 used on input line 3
-9.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 6>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page6 used on input line 3
-9.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 6>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page6 used on input line 3
-9.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[187
-
- <./anexo_3/06_DESEMPEÑO.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-<anexo_3/06_DESEMPEÑO.pdf, id=2896, page=7, 597.55246pt x 845.07718pt>
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 7>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page7 used on input line 3
-9.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 7>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page7 used on input line 3
-9.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 7>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page7 used on input line 3
-9.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[188
-
- <./anexo_3/06_DESEMPEÑO.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-<anexo_3/06_DESEMPEÑO.pdf, id=2907, page=8, 597.55246pt x 845.07718pt>
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 8>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page8 used on input line 3
-9.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 8>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page8 used on input line 3
-9.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 8>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page8 used on input line 3
-9.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[189
-
- <./anexo_3/06_DESEMPEÑO.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-<anexo_3/06_DESEMPEÑO.pdf, id=2913, page=9, 597.55246pt x 845.07718pt>
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 9>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page9 used on input line 3
-9.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 9>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page9 used on input line 3
-9.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 9>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page9 used on input line 3
-9.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[190
-
- <./anexo_3/06_DESEMPEÑO.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-<anexo_3/06_DESEMPEÑO.pdf, id=2923, page=10, 597.55246pt x 845.07718pt>
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 10>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page10 used on input line 
-39.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 10>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page10 used on input line 
-39.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 10>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page10 used on input line 
-39.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[191
-
- <./anexo_3/06_DESEMPEÑO.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-<anexo_3/06_DESEMPEÑO.pdf, id=2928, page=11, 597.55246pt x 845.07718pt>
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 11>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page11 used on input line 
-39.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 11>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page11 used on input line 
-39.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 11>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page11 used on input line 
-39.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[192
-
- <./anexo_3/06_DESEMPEÑO.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-<anexo_3/06_DESEMPEÑO.pdf, id=2933, page=12, 597.55246pt x 845.07718pt>
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 12>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page12 used on input line 
-39.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 12>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page12 used on input line 
-39.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 12>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page12 used on input line 
-39.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[193
-
- <./anexo_3/06_DESEMPEÑO.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/06_DESEMPEÑO.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-<anexo_3/06_DESEMPEÑO.pdf, id=2938, page=13, 597.55246pt x 845.07718pt>
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 13>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page13 used on input line 
-39.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 13>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page13 used on input line 
-39.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: anexo_3/06_DESEMPEÑO.pdf Graphic file (type pdf)
-<use anexo_3/06_DESEMPEÑO.pdf, page 13>
-Package pdftex.def Info: anexo_3/06_DESEMPEÑO.pdf , page13 used on input line 
-39.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-[194
-
- <./anexo_3/06_DESEMPEÑO.pdf>]
+[194 <./anexo_3/06_DESEMPENO.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/07_DIFUSA.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/07_DIFUSA.pdf, id=2943, 597.55246pt x 845.19763pt>
+<anexo_3/07_DIFUSA.pdf, id=2949, 597.55246pt x 845.19763pt>
 File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf  used on input line 40.
@@ -4279,7 +4162,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/07_DIFUSA.pdf): PDF inclusion
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/07_DIFUSA.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/07_DIFUSA.pdf, id=2946, page=1, 597.55246pt x 845.19763pt>
+<anexo_3/07_DIFUSA.pdf, id=2952, page=1, 597.55246pt x 845.19763pt>
 File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 1>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page1 used on input line 40.
@@ -4300,13 +4183,11 @@ File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 1>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page1 used on input line 40.
 (pdftex.def)             Requested size: 562.1644pt x 795.14362pt.
-[195
-
- <./anexo_3/07_DIFUSA.pdf>]
+[195 <./anexo_3/07_DIFUSA.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/07_DIFUSA.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/07_DIFUSA.pdf, id=2978, page=2, 597.55246pt x 845.19763pt>
+<anexo_3/07_DIFUSA.pdf, id=2983, page=2, 597.55246pt x 845.19763pt>
 File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 2>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page2 used on input line 40.
@@ -4319,13 +4200,11 @@ File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 2>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page2 used on input line 40.
 (pdftex.def)             Requested size: 562.1644pt x 795.14362pt.
-[196
-
- <./anexo_3/07_DIFUSA.pdf>]
+[196 <./anexo_3/07_DIFUSA.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/07_DIFUSA.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/07_DIFUSA.pdf, id=2997, page=3, 597.55246pt x 845.19763pt>
+<anexo_3/07_DIFUSA.pdf, id=3002, page=3, 597.55246pt x 845.19763pt>
 File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 3>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page3 used on input line 40.
@@ -4338,13 +4217,11 @@ File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 3>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page3 used on input line 40.
 (pdftex.def)             Requested size: 562.1644pt x 795.14362pt.
-[197
-
- <./anexo_3/07_DIFUSA.pdf>]
+[197 <./anexo_3/07_DIFUSA.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/07_DIFUSA.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/07_DIFUSA.pdf, id=3013, page=4, 597.55246pt x 845.19763pt>
+<anexo_3/07_DIFUSA.pdf, id=3018, page=4, 597.55246pt x 845.19763pt>
 File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 4>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page4 used on input line 40.
@@ -4357,13 +4234,11 @@ File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 4>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page4 used on input line 40.
 (pdftex.def)             Requested size: 562.1644pt x 795.14362pt.
-[198
-
- <./anexo_3/07_DIFUSA.pdf>]
+[198 <./anexo_3/07_DIFUSA.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/07_DIFUSA.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/07_DIFUSA.pdf, id=3022, page=5, 597.55246pt x 845.19763pt>
+<anexo_3/07_DIFUSA.pdf, id=3027, page=5, 597.55246pt x 845.19763pt>
 File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 5>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page5 used on input line 40.
@@ -4376,13 +4251,11 @@ File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 5>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page5 used on input line 40.
 (pdftex.def)             Requested size: 562.1644pt x 795.14362pt.
-[199
-
- <./anexo_3/07_DIFUSA.pdf>]
+[199 <./anexo_3/07_DIFUSA.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/07_DIFUSA.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/07_DIFUSA.pdf, id=3031, page=6, 597.55246pt x 845.19763pt>
+<anexo_3/07_DIFUSA.pdf, id=3036, page=6, 597.55246pt x 845.19763pt>
 File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 6>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page6 used on input line 40.
@@ -4395,13 +4268,11 @@ File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 6>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page6 used on input line 40.
 (pdftex.def)             Requested size: 562.1644pt x 795.14362pt.
-[200
-
- <./anexo_3/07_DIFUSA.pdf>]
+[200 <./anexo_3/07_DIFUSA.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/07_DIFUSA.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/07_DIFUSA.pdf, id=3048, page=7, 597.55246pt x 845.19763pt>
+<anexo_3/07_DIFUSA.pdf, id=3054, page=7, 597.55246pt x 845.19763pt>
 File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 7>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page7 used on input line 40.
@@ -4414,13 +4285,11 @@ File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 7>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page7 used on input line 40.
 (pdftex.def)             Requested size: 562.1644pt x 795.14362pt.
-[201
-
- <./anexo_3/07_DIFUSA.pdf>]
+[201 <./anexo_3/07_DIFUSA.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/07_DIFUSA.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/07_DIFUSA.pdf, id=3058, page=8, 597.55246pt x 845.19763pt>
+<anexo_3/07_DIFUSA.pdf, id=3064, page=8, 597.55246pt x 845.19763pt>
 File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 8>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page8 used on input line 40.
@@ -4433,13 +4302,11 @@ File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 8>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page8 used on input line 40.
 (pdftex.def)             Requested size: 562.1644pt x 795.14362pt.
-[202
-
- <./anexo_3/07_DIFUSA.pdf>]
+[202 <./anexo_3/07_DIFUSA.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/07_DIFUSA.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/07_DIFUSA.pdf, id=3074, page=9, 597.55246pt x 845.19763pt>
+<anexo_3/07_DIFUSA.pdf, id=3079, page=9, 597.55246pt x 845.19763pt>
 File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 9>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page9 used on input line 40.
@@ -4452,13 +4319,11 @@ File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 9>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page9 used on input line 40.
 (pdftex.def)             Requested size: 562.1644pt x 795.14362pt.
-[203
-
- <./anexo_3/07_DIFUSA.pdf>]
+[203 <./anexo_3/07_DIFUSA.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/07_DIFUSA.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/07_DIFUSA.pdf, id=3089, page=10, 597.55246pt x 845.19763pt>
+<anexo_3/07_DIFUSA.pdf, id=3094, page=10, 597.55246pt x 845.19763pt>
 File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 10>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page10 used on input line 40.
@@ -4471,13 +4336,11 @@ File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 10>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page10 used on input line 40.
 (pdftex.def)             Requested size: 562.1644pt x 795.14362pt.
-[204
-
- <./anexo_3/07_DIFUSA.pdf>]
+[204 <./anexo_3/07_DIFUSA.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/07_DIFUSA.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/07_DIFUSA.pdf, id=3104, page=11, 597.55246pt x 845.19763pt>
+<anexo_3/07_DIFUSA.pdf, id=3109, page=11, 597.55246pt x 845.19763pt>
 File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 11>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page11 used on input line 40.
@@ -4490,13 +4353,11 @@ File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 11>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page11 used on input line 40.
 (pdftex.def)             Requested size: 562.1644pt x 795.14362pt.
-[205
-
- <./anexo_3/07_DIFUSA.pdf>]
+[205 <./anexo_3/07_DIFUSA.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/07_DIFUSA.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/07_DIFUSA.pdf, id=3114, page=12, 597.55246pt x 845.19763pt>
+<anexo_3/07_DIFUSA.pdf, id=3119, page=12, 597.55246pt x 845.19763pt>
 File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 12>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page12 used on input line 40.
@@ -4509,13 +4370,11 @@ File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 12>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page12 used on input line 40.
 (pdftex.def)             Requested size: 562.1644pt x 795.14362pt.
-[206
-
- <./anexo_3/07_DIFUSA.pdf>]
+[206 <./anexo_3/07_DIFUSA.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/07_DIFUSA.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/07_DIFUSA.pdf, id=3130, page=13, 597.55246pt x 845.19763pt>
+<anexo_3/07_DIFUSA.pdf, id=3136, page=13, 597.55246pt x 845.19763pt>
 File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 13>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page13 used on input line 40.
@@ -4528,13 +4387,11 @@ File: anexo_3/07_DIFUSA.pdf Graphic file (type pdf)
 <use anexo_3/07_DIFUSA.pdf, page 13>
 Package pdftex.def Info: anexo_3/07_DIFUSA.pdf , page13 used on input line 40.
 (pdftex.def)             Requested size: 562.1644pt x 795.14362pt.
-[207
-
- <./anexo_3/07_DIFUSA.pdf>]
+[207 <./anexo_3/07_DIFUSA.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/08_small.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/08_small.pdf, id=3140, 597.50786pt x 845.04686pt>
+<anexo_3/08_small.pdf, id=3145, 597.50786pt x 845.04686pt>
 File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf>
 Package pdftex.def Info: anexo_3/08_small.pdf  used on input line 41.
@@ -4555,7 +4412,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/08_small.pdf): PDF inclusion:
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/08_small.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/08_small.pdf, id=3143, page=1, 597.50786pt x 845.04686pt>
+<anexo_3/08_small.pdf, id=3148, page=1, 597.50786pt x 845.04686pt>
 File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 1>
 Package pdftex.def Info: anexo_3/08_small.pdf , page1 used on input line 41.
@@ -4576,13 +4433,11 @@ File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 1>
 Package pdftex.def Info: anexo_3/08_small.pdf , page1 used on input line 41.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
-[208
-
- <./anexo_3/08_small.pdf>]
+[208 <./anexo_3/08_small.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/08_small.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/08_small.pdf, id=3182, page=2, 597.50786pt x 845.04686pt>
+<anexo_3/08_small.pdf, id=3187, page=2, 597.50786pt x 845.04686pt>
 File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 2>
 Package pdftex.def Info: anexo_3/08_small.pdf , page2 used on input line 41.
@@ -4595,13 +4450,11 @@ File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 2>
 Package pdftex.def Info: anexo_3/08_small.pdf , page2 used on input line 41.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
-[209
-
- <./anexo_3/08_small.pdf>]
+[209 <./anexo_3/08_small.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/08_small.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/08_small.pdf, id=3212, page=3, 597.50786pt x 845.04686pt>
+<anexo_3/08_small.pdf, id=3217, page=3, 597.50786pt x 845.04686pt>
 File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 3>
 Package pdftex.def Info: anexo_3/08_small.pdf , page3 used on input line 41.
@@ -4614,13 +4467,11 @@ File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 3>
 Package pdftex.def Info: anexo_3/08_small.pdf , page3 used on input line 41.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
-[210
-
- <./anexo_3/08_small.pdf>]
+[210 <./anexo_3/08_small.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/08_small.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/08_small.pdf, id=3218, page=4, 597.50786pt x 845.04686pt>
+<anexo_3/08_small.pdf, id=3224, page=4, 597.50786pt x 845.04686pt>
 File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 4>
 Package pdftex.def Info: anexo_3/08_small.pdf , page4 used on input line 41.
@@ -4633,13 +4484,11 @@ File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 4>
 Package pdftex.def Info: anexo_3/08_small.pdf , page4 used on input line 41.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
-[211
-
- <./anexo_3/08_small.pdf>]
+[211 <./anexo_3/08_small.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/08_small.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/08_small.pdf, id=3238, page=5, 597.50786pt x 845.04686pt>
+<anexo_3/08_small.pdf, id=3243, page=5, 597.50786pt x 845.04686pt>
 File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 5>
 Package pdftex.def Info: anexo_3/08_small.pdf , page5 used on input line 41.
@@ -4652,13 +4501,11 @@ File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 5>
 Package pdftex.def Info: anexo_3/08_small.pdf , page5 used on input line 41.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
-[212
-
- <./anexo_3/08_small.pdf>]
+[212 <./anexo_3/08_small.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/08_small.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/08_small.pdf, id=3244, page=6, 597.50786pt x 845.04686pt>
+<anexo_3/08_small.pdf, id=3250, page=6, 597.50786pt x 845.04686pt>
 File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 6>
 Package pdftex.def Info: anexo_3/08_small.pdf , page6 used on input line 41.
@@ -4671,13 +4518,11 @@ File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 6>
 Package pdftex.def Info: anexo_3/08_small.pdf , page6 used on input line 41.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
-[213
-
- <./anexo_3/08_small.pdf>]
+[213 <./anexo_3/08_small.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/08_small.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/08_small.pdf, id=3281, page=7, 597.50786pt x 845.04686pt>
+<anexo_3/08_small.pdf, id=3286, page=7, 597.50786pt x 845.04686pt>
 File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 7>
 Package pdftex.def Info: anexo_3/08_small.pdf , page7 used on input line 41.
@@ -4690,13 +4535,11 @@ File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 7>
 Package pdftex.def Info: anexo_3/08_small.pdf , page7 used on input line 41.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
-[214
-
- <./anexo_3/08_small.pdf>]
+[214 <./anexo_3/08_small.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/08_small.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/08_small.pdf, id=3291, page=8, 597.50786pt x 845.04686pt>
+<anexo_3/08_small.pdf, id=3296, page=8, 597.50786pt x 845.04686pt>
 File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 8>
 Package pdftex.def Info: anexo_3/08_small.pdf , page8 used on input line 41.
@@ -4709,10 +4552,8 @@ File: anexo_3/08_small.pdf Graphic file (type pdf)
 <use anexo_3/08_small.pdf, page 8>
 Package pdftex.def Info: anexo_3/08_small.pdf , page8 used on input line 41.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
-[215
-
- <./anexo_3/08_small.pdf>]
-<anexo_3/09_IEEE.pdf, id=3297, 614.295pt x 794.97pt>
+[215 <./anexo_3/08_small.pdf>]
+<anexo_3/09_IEEE.pdf, id=3302, 614.295pt x 794.97pt>
 File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf  used on input line 42.
@@ -4721,7 +4562,7 @@ File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf  used on input line 42.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<anexo_3/09_IEEE.pdf, id=3300, page=1, 614.295pt x 794.97pt>
+<anexo_3/09_IEEE.pdf, id=3305, page=1, 614.295pt x 794.97pt>
 File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 1>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page1 used on input line 42.
@@ -4742,10 +4583,8 @@ File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 1>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page1 used on input line 42.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [216
-
- <./anexo_3/09_IEEE.pdf>]
-<anexo_3/09_IEEE.pdf, id=3327, page=2, 614.295pt x 794.97pt>
+ [216 <./anexo_3/09_IEEE.pdf>]
+<anexo_3/09_IEEE.pdf, id=3332, page=2, 614.295pt x 794.97pt>
 File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 2>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page2 used on input line 42.
@@ -4758,10 +4597,8 @@ File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 2>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page2 used on input line 42.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [217
-
- <./anexo_3/09_IEEE.pdf>]
-<anexo_3/09_IEEE.pdf, id=3366, page=3, 614.295pt x 794.97pt>
+ [217 <./anexo_3/09_IEEE.pdf>]
+<anexo_3/09_IEEE.pdf, id=3371, page=3, 614.295pt x 794.97pt>
 File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 3>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page3 used on input line 42.
@@ -4774,10 +4611,8 @@ File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 3>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page3 used on input line 42.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [218
-
- <./anexo_3/09_IEEE.pdf>]
-<anexo_3/09_IEEE.pdf, id=3377, page=4, 614.295pt x 794.97pt>
+ [218 <./anexo_3/09_IEEE.pdf>]
+<anexo_3/09_IEEE.pdf, id=3383, page=4, 614.295pt x 794.97pt>
 File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 4>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page4 used on input line 42.
@@ -4790,10 +4625,8 @@ File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 4>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page4 used on input line 42.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [219
-
- <./anexo_3/09_IEEE.pdf>]
-<anexo_3/09_IEEE.pdf, id=3383, page=5, 614.295pt x 794.97pt>
+ [219 <./anexo_3/09_IEEE.pdf>]
+<anexo_3/09_IEEE.pdf, id=3388, page=5, 614.295pt x 794.97pt>
 File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 5>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page5 used on input line 42.
@@ -4807,10 +4640,8 @@ File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page5 used on input line 42.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
-[220
-
- <./anexo_3/09_IEEE.pdf>]
-<anexo_3/09_IEEE.pdf, id=3396, page=6, 614.295pt x 794.97pt>
+[220 <./anexo_3/09_IEEE.pdf>]
+<anexo_3/09_IEEE.pdf, id=3402, page=6, 614.295pt x 794.97pt>
 File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 6>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page6 used on input line 42.
@@ -4823,10 +4654,8 @@ File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 6>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page6 used on input line 42.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [221
-
- <./anexo_3/09_IEEE.pdf>]
-<anexo_3/09_IEEE.pdf, id=3405, page=7, 614.295pt x 794.97pt>
+ [221 <./anexo_3/09_IEEE.pdf>]
+<anexo_3/09_IEEE.pdf, id=3410, page=7, 614.295pt x 794.97pt>
 File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 7>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page7 used on input line 42.
@@ -4839,10 +4668,8 @@ File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 7>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page7 used on input line 42.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [222
-
- <./anexo_3/09_IEEE.pdf>]
-<anexo_3/09_IEEE.pdf, id=3410, page=8, 614.295pt x 794.97pt>
+ [222 <./anexo_3/09_IEEE.pdf>]
+<anexo_3/09_IEEE.pdf, id=3415, page=8, 614.295pt x 794.97pt>
 File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 8>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page8 used on input line 42.
@@ -4855,10 +4682,8 @@ File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 8>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page8 used on input line 42.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [223
-
- <./anexo_3/09_IEEE.pdf>]
-<anexo_3/09_IEEE.pdf, id=3428, page=9, 614.295pt x 794.97pt>
+ [223 <./anexo_3/09_IEEE.pdf>]
+<anexo_3/09_IEEE.pdf, id=3433, page=9, 614.295pt x 794.97pt>
 File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 9>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page9 used on input line 42.
@@ -4871,10 +4696,8 @@ File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 9>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page9 used on input line 42.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [224
-
- <./anexo_3/09_IEEE.pdf>]
-<anexo_3/09_IEEE.pdf, id=3433, page=10, 614.295pt x 794.97pt>
+ [224 <./anexo_3/09_IEEE.pdf>]
+<anexo_3/09_IEEE.pdf, id=3439, page=10, 614.295pt x 794.97pt>
 File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 10>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page10 used on input line 42.
@@ -4887,10 +4710,8 @@ File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 10>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page10 used on input line 42.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [225
-
- <./anexo_3/09_IEEE.pdf>]
-<anexo_3/09_IEEE.pdf, id=3439, page=11, 614.295pt x 794.97pt>
+ [225 <./anexo_3/09_IEEE.pdf>]
+<anexo_3/09_IEEE.pdf, id=3444, page=11, 614.295pt x 794.97pt>
 File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 11>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page11 used on input line 42.
@@ -4903,10 +4724,8 @@ File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 11>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page11 used on input line 42.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [226
-
- <./anexo_3/09_IEEE.pdf>]
-<anexo_3/09_IEEE.pdf, id=3447, page=12, 614.295pt x 794.97pt>
+ [226 <./anexo_3/09_IEEE.pdf>]
+<anexo_3/09_IEEE.pdf, id=3452, page=12, 614.295pt x 794.97pt>
 File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 12>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page12 used on input line 42.
@@ -4919,10 +4738,8 @@ File: anexo_3/09_IEEE.pdf Graphic file (type pdf)
 <use anexo_3/09_IEEE.pdf, page 12>
 Package pdftex.def Info: anexo_3/09_IEEE.pdf , page12 used on input line 42.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [227
-
- <./anexo_3/09_IEEE.pdf>]
-<anexo_3/10_SOL.pdf, id=3464, 596.19939pt x 794.97pt>
+ [227 <./anexo_3/09_IEEE.pdf>]
+<anexo_3/10_SOL.pdf, id=3469, 596.19939pt x 794.97pt>
 File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf>
 Package pdftex.def Info: anexo_3/10_SOL.pdf  used on input line 43.
@@ -4931,7 +4748,7 @@ File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf>
 Package pdftex.def Info: anexo_3/10_SOL.pdf  used on input line 43.
 (pdftex.def)             Requested size: 596.19794pt x 794.96806pt.
-<anexo_3/10_SOL.pdf, id=3467, page=1, 596.19939pt x 794.97pt>
+<anexo_3/10_SOL.pdf, id=3472, page=1, 596.19939pt x 794.97pt>
 File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 1>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page1 used on input line 43.
@@ -4952,10 +4769,8 @@ File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 1>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page1 used on input line 43.
 (pdftex.def)             Requested size: 596.9257pt x 795.93848pt.
- [228
-
- <./anexo_3/10_SOL.pdf>]
-<anexo_3/10_SOL.pdf, id=3520, page=2, 596.19939pt x 794.97pt>
+ [228 <./anexo_3/10_SOL.pdf>]
+<anexo_3/10_SOL.pdf, id=3525, page=2, 596.19939pt x 794.97pt>
 File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 2>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page2 used on input line 43.
@@ -4968,10 +4783,8 @@ File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 2>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page2 used on input line 43.
 (pdftex.def)             Requested size: 596.9257pt x 795.93848pt.
- [229
-
- <./anexo_3/10_SOL.pdf>]
-<anexo_3/10_SOL.pdf, id=3531, page=3, 596.19939pt x 794.97pt>
+ [229 <./anexo_3/10_SOL.pdf>]
+<anexo_3/10_SOL.pdf, id=3536, page=3, 596.19939pt x 794.97pt>
 File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 3>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page3 used on input line 43.
@@ -4984,10 +4797,8 @@ File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 3>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page3 used on input line 43.
 (pdftex.def)             Requested size: 596.9257pt x 795.93848pt.
- [230
-
- <./anexo_3/10_SOL.pdf>]
-<anexo_3/10_SOL.pdf, id=3551, page=4, 596.19939pt x 794.97pt>
+ [230 <./anexo_3/10_SOL.pdf>]
+<anexo_3/10_SOL.pdf, id=3557, page=4, 596.19939pt x 794.97pt>
 File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 4>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page4 used on input line 43.
@@ -5000,10 +4811,8 @@ File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 4>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page4 used on input line 43.
 (pdftex.def)             Requested size: 596.9257pt x 795.93848pt.
- [231
-
- <./anexo_3/10_SOL.pdf>]
-<anexo_3/10_SOL.pdf, id=3575, page=5, 596.19939pt x 794.97pt>
+ [231 <./anexo_3/10_SOL.pdf>]
+<anexo_3/10_SOL.pdf, id=3580, page=5, 596.19939pt x 794.97pt>
 File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 5>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page5 used on input line 43.
@@ -5016,10 +4825,8 @@ File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 5>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page5 used on input line 43.
 (pdftex.def)             Requested size: 596.9257pt x 795.93848pt.
- [232
-
- <./anexo_3/10_SOL.pdf>]
-<anexo_3/10_SOL.pdf, id=3593, page=6, 596.19939pt x 794.97pt>
+ [232 <./anexo_3/10_SOL.pdf>]
+<anexo_3/10_SOL.pdf, id=3598, page=6, 596.19939pt x 794.97pt>
 File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 6>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page6 used on input line 43.
@@ -5032,10 +4839,8 @@ File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 6>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page6 used on input line 43.
 (pdftex.def)             Requested size: 596.9257pt x 795.93848pt.
- [233
-
- <./anexo_3/10_SOL.pdf>]
-<anexo_3/10_SOL.pdf, id=3613, page=7, 596.19939pt x 794.97pt>
+ [233 <./anexo_3/10_SOL.pdf>]
+<anexo_3/10_SOL.pdf, id=3618, page=7, 596.19939pt x 794.97pt>
 File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 7>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page7 used on input line 43.
@@ -5048,10 +4853,8 @@ File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 7>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page7 used on input line 43.
 (pdftex.def)             Requested size: 596.9257pt x 795.93848pt.
- [234
-
- <./anexo_3/10_SOL.pdf>]
-<anexo_3/10_SOL.pdf, id=3623, page=8, 596.19939pt x 794.97pt>
+ [234 <./anexo_3/10_SOL.pdf>]
+<anexo_3/10_SOL.pdf, id=3628, page=8, 596.19939pt x 794.97pt>
 File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 8>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page8 used on input line 43.
@@ -5064,10 +4867,8 @@ File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 8>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page8 used on input line 43.
 (pdftex.def)             Requested size: 596.9257pt x 795.93848pt.
- [235
-
- <./anexo_3/10_SOL.pdf>]
-<anexo_3/10_SOL.pdf, id=3628, page=9, 596.19939pt x 794.97pt>
+ [235 <./anexo_3/10_SOL.pdf>]
+<anexo_3/10_SOL.pdf, id=3633, page=9, 596.19939pt x 794.97pt>
 File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 <use anexo_3/10_SOL.pdf, page 9>
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page9 used on input line 43.
@@ -5081,13 +4882,11 @@ File: anexo_3/10_SOL.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/10_SOL.pdf , page9 used on input line 43.
 (pdftex.def)             Requested size: 596.9257pt x 795.93848pt.
 
-[236
-
- <./anexo_3/10_SOL.pdf>]
+[236 <./anexo_3/10_SOL.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/11_ML_JCTS.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/11_ML_JCTS.pdf, id=3633, 597.50829pt x 845.0471pt>
+<anexo_3/11_ML_JCTS.pdf, id=3639, 597.50829pt x 845.0471pt>
 File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf  used on input line 44.
@@ -5108,7 +4907,7 @@ n: found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/11_ML_JCTS.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/11_ML_JCTS.pdf, id=3636, page=1, 597.50829pt x 845.0471pt>
+<anexo_3/11_ML_JCTS.pdf, id=3642, page=1, 597.50829pt x 845.0471pt>
 File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 1>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page1 used on input line 44.
@@ -5129,13 +4928,11 @@ File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 1>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page1 used on input line 44.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
-[237
-
- <./anexo_3/11_ML_JCTS.pdf>]
+[237 <./anexo_3/11_ML_JCTS.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/11_ML_JCTS.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/11_ML_JCTS.pdf, id=3674, page=2, 597.50829pt x 845.0471pt>
+<anexo_3/11_ML_JCTS.pdf, id=3679, page=2, 597.50829pt x 845.0471pt>
 File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 2>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page2 used on input line 44.
@@ -5148,13 +4945,11 @@ File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 2>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page2 used on input line 44.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
-[238
-
- <./anexo_3/11_ML_JCTS.pdf>]
+[238 <./anexo_3/11_ML_JCTS.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/11_ML_JCTS.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/11_ML_JCTS.pdf, id=3687, page=3, 597.50829pt x 845.0471pt>
+<anexo_3/11_ML_JCTS.pdf, id=3692, page=3, 597.50829pt x 845.0471pt>
 File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 3>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page3 used on input line 44.
@@ -5167,13 +4962,11 @@ File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 3>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page3 used on input line 44.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
-[239
-
- <./anexo_3/11_ML_JCTS.pdf>]
+[239 <./anexo_3/11_ML_JCTS.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/11_ML_JCTS.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/11_ML_JCTS.pdf, id=3694, page=4, 597.50829pt x 845.0471pt>
+<anexo_3/11_ML_JCTS.pdf, id=3699, page=4, 597.50829pt x 845.0471pt>
 File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 4>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page4 used on input line 44.
@@ -5186,13 +4979,11 @@ File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 4>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page4 used on input line 44.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
-[240
-
- <./anexo_3/11_ML_JCTS.pdf>]
+[240 <./anexo_3/11_ML_JCTS.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/11_ML_JCTS.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/11_ML_JCTS.pdf, id=3708, page=5, 597.50829pt x 845.0471pt>
+<anexo_3/11_ML_JCTS.pdf, id=3713, page=5, 597.50829pt x 845.0471pt>
 File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 5>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page5 used on input line 44.
@@ -5205,13 +4996,11 @@ File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 5>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page5 used on input line 44.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
-[241
-
- <./anexo_3/11_ML_JCTS.pdf>]
+[241 <./anexo_3/11_ML_JCTS.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/11_ML_JCTS.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/11_ML_JCTS.pdf, id=3737, page=6, 597.50829pt x 845.0471pt>
+<anexo_3/11_ML_JCTS.pdf, id=3742, page=6, 597.50829pt x 845.0471pt>
 File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 6>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page6 used on input line 44.
@@ -5224,13 +5013,11 @@ File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 6>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page6 used on input line 44.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
-[242
-
- <./anexo_3/11_ML_JCTS.pdf>]
+[242 <./anexo_3/11_ML_JCTS.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/11_ML_JCTS.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/11_ML_JCTS.pdf, id=3744, page=7, 597.50829pt x 845.0471pt>
+<anexo_3/11_ML_JCTS.pdf, id=3750, page=7, 597.50829pt x 845.0471pt>
 File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 7>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page7 used on input line 44.
@@ -5243,13 +5030,11 @@ File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 7>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page7 used on input line 44.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
-[243
-
- <./anexo_3/11_ML_JCTS.pdf>]
+[243 <./anexo_3/11_ML_JCTS.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/11_ML_JCTS.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/11_ML_JCTS.pdf, id=3753, page=8, 597.50829pt x 845.0471pt>
+<anexo_3/11_ML_JCTS.pdf, id=3758, page=8, 597.50829pt x 845.0471pt>
 File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 8>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page8 used on input line 44.
@@ -5262,13 +5047,11 @@ File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 8>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page8 used on input line 44.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
-[244
-
- <./anexo_3/11_ML_JCTS.pdf>]
+[244 <./anexo_3/11_ML_JCTS.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/11_ML_JCTS.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/11_ML_JCTS.pdf, id=3760, page=9, 597.50829pt x 845.0471pt>
+<anexo_3/11_ML_JCTS.pdf, id=3765, page=9, 597.50829pt x 845.0471pt>
 File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 9>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page9 used on input line 44.
@@ -5281,13 +5064,11 @@ File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 9>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page9 used on input line 44.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
-[245
-
- <./anexo_3/11_ML_JCTS.pdf>]
+[245 <./anexo_3/11_ML_JCTS.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./anexo_3/11_ML_JCTS.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<anexo_3/11_ML_JCTS.pdf, id=3774, page=10, 597.50829pt x 845.0471pt>
+<anexo_3/11_ML_JCTS.pdf, id=3779, page=10, 597.50829pt x 845.0471pt>
 File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 <use anexo_3/11_ML_JCTS.pdf, page 10>
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page10 used on input line 44.
@@ -5303,10 +5084,8 @@ File: anexo_3/11_ML_JCTS.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/11_ML_JCTS.pdf , page10 used on input line 44.
 
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
-[246
-
- <./anexo_3/11_ML_JCTS.pdf>]
-<anexo_3/12_Cinco.pdf, id=3803, 597.50829pt x 845.0471pt>
+[246 <./anexo_3/11_ML_JCTS.pdf>]
+<anexo_3/12_Cinco.pdf, id=3808, 597.50829pt x 845.0471pt>
 File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf  used on input line 45.
@@ -5315,7 +5094,7 @@ File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf  used on input line 45.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<anexo_3/12_Cinco.pdf, id=3806, page=1, 597.50829pt x 845.0471pt>
+<anexo_3/12_Cinco.pdf, id=3811, page=1, 597.50829pt x 845.0471pt>
 File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 1>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page1 used on input line 45.
@@ -5336,10 +5115,8 @@ File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 1>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page1 used on input line 45.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [247
-
- <./anexo_3/12_Cinco.pdf>]
-<anexo_3/12_Cinco.pdf, id=3826, page=2, 597.50829pt x 845.0471pt>
+ [247 <./anexo_3/12_Cinco.pdf>]
+<anexo_3/12_Cinco.pdf, id=3831, page=2, 597.50829pt x 845.0471pt>
 File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 2>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page2 used on input line 45.
@@ -5352,10 +5129,8 @@ File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 2>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page2 used on input line 45.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [248
-
- <./anexo_3/12_Cinco.pdf>]
-<anexo_3/12_Cinco.pdf, id=3847, page=3, 597.50829pt x 845.0471pt>
+ [248 <./anexo_3/12_Cinco.pdf>]
+<anexo_3/12_Cinco.pdf, id=3853, page=3, 597.50829pt x 845.0471pt>
 File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 3>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page3 used on input line 45.
@@ -5368,10 +5143,8 @@ File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 3>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page3 used on input line 45.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [249
-
- <./anexo_3/12_Cinco.pdf>]
-<anexo_3/12_Cinco.pdf, id=3865, page=4, 597.50829pt x 845.0471pt>
+ [249 <./anexo_3/12_Cinco.pdf>]
+<anexo_3/12_Cinco.pdf, id=3870, page=4, 597.50829pt x 845.0471pt>
 File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 4>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page4 used on input line 45.
@@ -5384,10 +5157,8 @@ File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 4>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page4 used on input line 45.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [250
-
- <./anexo_3/12_Cinco.pdf>]
-<anexo_3/12_Cinco.pdf, id=3872, page=5, 597.50829pt x 845.0471pt>
+ [250 <./anexo_3/12_Cinco.pdf>]
+<anexo_3/12_Cinco.pdf, id=3877, page=5, 597.50829pt x 845.0471pt>
 File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 5>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page5 used on input line 45.
@@ -5401,10 +5172,8 @@ File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page5 used on input line 45.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 
-[251
-
- <./anexo_3/12_Cinco.pdf>]
-<anexo_3/12_Cinco.pdf, id=3879, page=6, 597.50829pt x 845.0471pt>
+[251 <./anexo_3/12_Cinco.pdf>]
+<anexo_3/12_Cinco.pdf, id=3884, page=6, 597.50829pt x 845.0471pt>
 File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 6>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page6 used on input line 45.
@@ -5417,10 +5186,8 @@ File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 6>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page6 used on input line 45.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [252
-
- <./anexo_3/12_Cinco.pdf>]
-<anexo_3/12_Cinco.pdf, id=3884, page=7, 597.50829pt x 845.0471pt>
+ [252 <./anexo_3/12_Cinco.pdf>]
+<anexo_3/12_Cinco.pdf, id=3889, page=7, 597.50829pt x 845.0471pt>
 File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 7>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page7 used on input line 45.
@@ -5433,10 +5200,8 @@ File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 7>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page7 used on input line 45.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [253
-
- <./anexo_3/12_Cinco.pdf>]
-<anexo_3/12_Cinco.pdf, id=3889, page=8, 597.50829pt x 845.0471pt>
+ [253 <./anexo_3/12_Cinco.pdf>]
+<anexo_3/12_Cinco.pdf, id=3894, page=8, 597.50829pt x 845.0471pt>
 File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 8>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page8 used on input line 45.
@@ -5449,10 +5214,8 @@ File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 8>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page8 used on input line 45.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [254
-
- <./anexo_3/12_Cinco.pdf>]
-<anexo_3/12_Cinco.pdf, id=3894, page=9, 597.50829pt x 845.0471pt>
+ [254 <./anexo_3/12_Cinco.pdf>]
+<anexo_3/12_Cinco.pdf, id=3900, page=9, 597.50829pt x 845.0471pt>
 File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 9>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page9 used on input line 45.
@@ -5465,10 +5228,8 @@ File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 9>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page9 used on input line 45.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [255
-
- <./anexo_3/12_Cinco.pdf>]
-<anexo_3/12_Cinco.pdf, id=3900, page=10, 597.50829pt x 845.0471pt>
+ [255 <./anexo_3/12_Cinco.pdf>]
+<anexo_3/12_Cinco.pdf, id=3905, page=10, 597.50829pt x 845.0471pt>
 File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 <use anexo_3/12_Cinco.pdf, page 10>
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page10 used on input line 45.
@@ -5482,84 +5243,81 @@ File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
 Package pdftex.def Info: anexo_3/12_Cinco.pdf , page10 used on input line 45.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 
-[256
+[256 <./anexo_3/12_Cinco.pdf>]
+<anexo_3/12_Cinco.pdf, id=3910, page=11, 597.50829pt x 845.0471pt>
+File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
+<use anexo_3/12_Cinco.pdf, page 11>
+Package pdftex.def Info: anexo_3/12_Cinco.pdf , page11 used on input line 45.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
+<use anexo_3/12_Cinco.pdf, page 11>
+Package pdftex.def Info: anexo_3/12_Cinco.pdf , page11 used on input line 45.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
+<use anexo_3/12_Cinco.pdf, page 11>
+Package pdftex.def Info: anexo_3/12_Cinco.pdf , page11 used on input line 45.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [257 <./anexo_3/12_Cinco.pdf>])
 
- <./anexo_3/12_Cinco.pdf>]
-<anexo_3/12_Cinco.pdf, id=3905, page=11, 597.50829pt x 845.0471pt>
-File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
-<use anexo_3/12_Cinco.pdf, page 11>
-Package pdftex.def Info: anexo_3/12_Cinco.pdf , page11 used on input line 45.
-(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
-File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
-<use anexo_3/12_Cinco.pdf, page 11>
-Package pdftex.def Info: anexo_3/12_Cinco.pdf , page11 used on input line 45.
-(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
-File: anexo_3/12_Cinco.pdf Graphic file (type pdf)
-<use anexo_3/12_Cinco.pdf, page 11>
-Package pdftex.def Info: anexo_3/12_Cinco.pdf , page11 used on input line 45.
-(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [257
+Package natbib Warning: There were undefined citations.
 
- <./anexo_3/12_Cinco.pdf>]) (./main.aux
-(./portada.aux)
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
- (./dedicatoria.aux) (./agradecimientos.aux) (./resumen.aux)
-(./Capitulo1.aux) (./Capitulo2.aux) (./Capitulo3.aux) (./conclusiones.aux)
-(./bibliografia.aux) (./anexo1.aux) (./anexo2.aux) (./anexo3.aux))
- ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-22>
- ***********
+(./main.aux (./portada.aux)
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+ (./dedicatoria.aux) (./agradecimientos.aux)
+(./resumen.aux) (./produccion.aux) (./Capitulo1.aux) (./Capitulo2.aux)
+(./Capitulo3.aux) (./conclusiones.aux) (./bibliografia.aux) (./anexo1.aux)
+(./anexo2.aux) (./anexo3.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6DDB2960D4B0DF75734FAD3D1A4041BF;11400.
+(rerunfilecheck)             Checksum: 5F7686867C9A16D055F33F12DEACAF03;11498.
  ) 
 Here is how much of TeX's memory you used:
- 38427 strings out of 474222
- 886811 string characters out of 5748733
- 1970975 words of memory out of 5000000
- 59446 multiletter control sequences out of 15000+600000
- 578625 words of font info for 80 fonts, out of 8000000 for 9000
+ 38336 strings out of 478287
+ 886464 string characters out of 5849289
+ 1294827 words of memory out of 5000000
+ 55213 multiletter control sequences out of 15000+600000
+ 489815 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,19n,87p,2165b,2369s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-frm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-rm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
-i1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sfxc1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/sym
-bol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
-times/utmri8a.pfb>
-Output written on main.pdf (267 pages, 28530176 bytes).
+ 79i,19n,80p,2165b,2370s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont
+/lcircle1.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+frm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+rm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
+t1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc1200.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
+i8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (268 pages, 28532293 bytes).
 PDF statistics:
- 4156 PDF objects out of 4296 (max. 8388607)
- 3020 compressed objects within 31 object streams
- 572 named destinations out of 1000 (max. 500000)
- 1468 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4161 PDF objects out of 4296 (max. 8388607)
+ 3024 compressed objects within 31 object streams
+ 575 named destinations out of 1000 (max. 500000)
+ 1476 words of extra memory for PDF output out of 10000 (max. 10000000)
 

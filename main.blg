@@ -1,10 +1,11 @@
-This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: portada.aux
 A level-1 auxiliary file: dedicatoria.aux
 A level-1 auxiliary file: agradecimientos.aux
 A level-1 auxiliary file: resumen.aux
+A level-1 auxiliary file: produccion.aux
 A level-1 auxiliary file: Capitulo1.aux
 A level-1 auxiliary file: Capitulo2.aux
 A level-1 auxiliary file: Capitulo3.aux
@@ -15,6 +16,7 @@ A level-1 auxiliary file: anexo1.aux
 A level-1 auxiliary file: anexo2.aux
 A level-1 auxiliary file: anexo3.aux
 Database file #1: bibliografia.bib
+Warning--I didn't find a database entry for "Fernández2020"
 Warning--empty journal in Mercosur
 Warning--empty publisher in GrossiRighini2007
 Warning--empty journal in Long2010
@@ -23,45 +25,45 @@ Warning--empty chapter and pages in Thejll2015
 Warning--empty publisher in Thejll2015
 Warning--empty publisher in Wald2021
 Warning--empty booktitle in Wald2004
-You've used 137 entries,
+You've used 136 entries,
             2773 wiz_defined-function locations,
-            1636 strings with 42235 characters,
-and the built_in function-call counts, 73627 in all, are:
-= -- 6643
-> -- 5000
+            1633 strings with 42032 characters,
+and the built_in function-call counts, 73114 in all, are:
+= -- 6596
+> -- 4961
 < -- 71
-+ -- 1695
-- -- 1554
-* -- 6559
-:= -- 11738
-add.period$ -- 625
-call.type$ -- 137
-change.case$ -- 916
-chr.to.int$ -- 133
-cite$ -- 282
-duplicate$ -- 2855
-empty$ -- 5239
-format.name$ -- 1737
-if$ -- 15179
++ -- 1682
+- -- 1542
+* -- 6510
+:= -- 11652
+add.period$ -- 619
+call.type$ -- 136
+change.case$ -- 909
+chr.to.int$ -- 132
+cite$ -- 280
+duplicate$ -- 2835
+empty$ -- 5207
+format.name$ -- 1724
+if$ -- 15075
 int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 137
-newline$ -- 901
-num.names$ -- 548
-pop$ -- 1564
+missing$ -- 136
+newline$ -- 893
+num.names$ -- 544
+pop$ -- 1555
 preamble$ -- 1
-purify$ -- 791
+purify$ -- 785
 quote$ -- 0
-skip$ -- 2254
+skip$ -- 2237
 stack$ -- 0
-substring$ -- 2600
-swap$ -- 256
+substring$ -- 2598
+swap$ -- 255
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1437
+type$ -- 1426
 warning$ -- 8
-while$ -- 559
+while$ -- 556
 width$ -- 0
-write$ -- 2190
-(There were 8 warnings)
+write$ -- 2171
+(There were 9 warnings)

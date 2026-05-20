@@ -1,4 +1,4 @@
-\begin{thebibliography}{137}
+\begin{thebibliography}{136}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -214,16 +214,6 @@ Fei Feng and Kaicun Wang.
   10 2018.
 \newblock \doi{10.1002/joc.5881}.
 \newblock Available: \url{https://doi.org/10.1002/joc.5881}.
-
-\bibitem[Fernández-Peruchena et~al.(2020)Fernández-Peruchena, Polo, Martín,
-  and Mazorra]{Fernández2020}
-Carlos~M. Fernández-Peruchena, Jesús Polo, Luis Martín, and Luis Mazorra.
-\newblock Site-adaptation of modeled solar radiation data: The siteadapt
-  procedure.
-\newblock \emph{Remote Sensing}, 12\penalty0 (13), 2020.
-\newblock ISSN 2072-4292.
-\newblock \doi{10.3390/rs12132127}.
-\newblock URL \url{https://www.mdpi.com/2072-4292/12/13/2127}.
 
 \bibitem[Fritz et~al.(1964)Fritz, Rao, and Weinstein]{Fritz1964}
 S.~Fritz, P.~Krishna Rao, and M.~Weinstein.
