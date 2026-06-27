@@ -33,7 +33,12 @@ La estación \textbf{Sca} (San Carlos, Salta) se encuentra en una zona de clima 
 
 Finalmente, la estación \textbf{Ero} (El Rosal, Salta) está emplazada en una región de gran altitud dentro del dominio andino, con clima frío semiárido (BSk). Se caracteriza por baja humedad atmosférica, escasa nubosidad y elevada transmitancia atmosférica, lo que resulta en altos niveles de irradiancia y baja variabilidad relativa en condiciones despejadas. Sin embargo, pueden presentarse eventos de nubosidad de tipo orográfico y presencia de aerosoles minerales (polvo), que introducen variaciones en la radiación. Registró datos entre 2016 y 2018 mediante un piranómetro Kipp \& Zonen CMP3.
 
+
 Todas las estaciones emplean piranómetros que cumplen con los estándares de la norma ISO 9060:2018, clase A o B, para la medición de la irradiancia global horizontal (GHI). Los datos fueron adquiridos con una resolución temporal de un minuto, correspondiendo cada valor al promedio de seis mediciones realizadas a intervalos de 10 segundos.
+
+Cabe destacar que toda medición piranométrica lleva asociada una incertidumbre instrumental intrínseca, originada en factores como la
+incertidumbre de calibración y su deriva temporal, la respuesta direccional (o de coseno), la dependencia con la temperatura, la no linealidad, la selectividad espectral y, en los sensores de termopila, el \emph{thermal offset} \citep{Gueymard2009, Sengupta2024}. Los instrumentos empleados en este trabajo no conforman un conjunto homogéneo en este sentido: los piranómetros Kipp \& Zonen CMP11 y Eppley PSP corresponden a la categoría de patrón secundario (clase A según ISO~9060:2018), mientras que los CMP3 pertenecen a una clase inferior, con una incertidumbre asociada sensiblemente mayor. Estos sensores son calibrados de manera periódica en el laboratorio de calibración del Grupo de Estudios de la
+Radiación Solar (GERSolar) de la Universidad Nacional de Luján\footnote{\url{https://www.gersolar.unlu.edu.ar/}}, lo que acota la componente de incertidumbre asociada a la calibración y aporta trazabilidad a las mediciones. Esta incertidumbre tiene una implicancia metodológica directa sobre la evaluación de la adaptación al sitio. Dado que la GHI medida se emplea como referencia para el cálculo del MBE, MAE y RMSE, su error propio se propaga inevitablemente a todas las métricas de desempeño y establece un piso por debajo del cual las diferencias entre un modelo y su versión adaptada no pueden atribuirse de forma concluyente al proceso de ajuste. En consecuencia, las mejoras reportadas en esta tesis deben interpretarse en relación con ese margen: reducciones de error de magnitud comparable a la incertidumbre de medición no constituyen, por sí solas, evidencia inequívoca de una mejora en la bondad del modelo, y las conclusiones sobre el desempeño relativo de los enfoques se sostienen con mayor firmeza cuando las diferencias observadas la superan.
 
 
 \begin{table}
@@ -134,7 +139,7 @@ Este sistema combina observaciones satelitales y mediciones in situ mediante té
 
 
 
-El conjunto de datos de reanálisis denominado \textit{Modern-Era Retrospective Analysis for Research and Applications, version 2} (MERRA-2) \citep{gelaro} fue desarrollado por la NASA utilizando el sistema de asimilación de datos atmosféricos Goddard Earth Observing System (GEOS-5.12.4) \citep{rienecker, molod}. Este conjunto de datos se emplea para estimar diversos parámetros atmosféricos, entre ellos la irradiancia solar de onda corta descendente o GHI. 
+El conjunto de datos de reanálisis denominado Modern-Era Retrospective Analysis for Research and Applications, version 2 (MERRA-2) \citep{gelaro} fue desarrollado por la NASA utilizando el sistema de asimilación de datos atmosféricos Goddard Earth Observing System (GEOS-5.12.4) \citep{rienecker, molod}. Este conjunto de datos se emplea para estimar diversos parámetros atmosféricos, entre ellos la irradiancia solar de onda corta descendente o GHI. 
 
 MERRA-2 abarca el período comprendido desde 1980 hasta la actualidad, con una resolución espacial de $0.5\times0.625$º en latitud-longitud y una resolución temporal de 60 minutos. En comparación con su predecesor, MERRA versión 1 \citep{rienecker2}, este modelo mejora la representación de los aerosoles y de la información asociada que influye en la irradiancia solar bajo condiciones de cielo despejado. Asimismo, incorpora otras mejoras físicas —como la estimación del contenido de vapor de agua y la modelización de nubes \citep{feng}— que contribuyen a una mejor simulación de la irradiancia solar bajo todo tipo de condiciones atmosféricas. 
 
@@ -260,7 +265,7 @@ El gráfico evidencia una relación clara entre el error y las condiciones radia
     \label{fig:RMSE-SZA-15}
 \end{figure}
 
-Por otro lado, la relación \textit{rRMSE}–SZA (Figura~\ref{fig:RMSE-SZA-15}) evidencia un comportamiento en forma de “U” invertida: los menores errores se concentran en ángulos intermedios (30°–50°), mientras que hacia ángulos altos ($>70°$) el error aumenta. Esta tendencia se observa en los cinco sitios, con un incremento más pronunciado en Ero y Sa en las condiciones de SZA más extremas. En general, CAMS muestra un mejor desempeño que LSA-SAF en la mayoría de los intervalos, aunque las diferencias se reducen en los ángulos medios.
+Por otro lado, la relación \textit{rRMSE}–SZA (Figura~\ref{fig:RMSE-SZA-15}) evidencia un comportamiento en forma de “U”: los menores errores se concentran en ángulos intermedios (30°–50°), mientras que hacia ángulos altos ($>70°$) el error aumenta. Esta tendencia se observa en los cinco sitios, con un incremento más pronunciado en Ero y Sa en las condiciones de SZA más extremas. En general, CAMS muestra un mejor desempeño que LSA-SAF en la mayoría de los intervalos, aunque las diferencias se reducen en los ángulos medios.
 
 En conjunto, estos resultados indican que la precisión de ambos productos depende de las condiciones atmosféricas ($k_t$) y de la geometría solar (SZA). En cielos despejados y ángulos intermedios, los errores se reducen notablemente, mientras que en condiciones nubosas y en situaciones de baja o alta elevación solar los modelos presentan las mayores limitaciones.
 
@@ -296,7 +301,9 @@ En Ero, el modelo de CAMS presenta un comportamiento atípico en su estimación.
 
 Como se ha evidenciado, el desempeño de cada modelo varía dependiendo del sitio observado, y parte de estas diferencias puede explicarse por la resolución espacial de cada modelo de estimación. La Figura \ref{fig:resoluciones} muestra un mapa de los sitios seleccionados, donde se ilustran las celdas correspondientes a los modelos MERRA2, ERA5 y LSASAF, con resoluciones de 0.5°×0.625°, 0.25°×0.25° y ~0.05°×0.05°, respectivamente.\\
 
-Se observa que los modelos de mayor resolución, como LSASAF, representan áreas más pequeñas y detalladas alrededor de cada sitio, mientras que los modelos de resolución más gruesa, como MERRA2, generan celdas más extensas que promedian las condiciones espaciales en una región más amplia. Esta diferencia espacial es un factor determinante que puede explicar por qué los modelos de alta resolución capturan mejor la variabilidad local de las condiciones atmosféricas, mientras que los de baja resolución tienden a suavizar estas variaciones.\\
+Se observa que los modelos de mayor resolución, como LSASAF, representan áreas más pequeñas y detalladas alrededor de cada sitio, mientras que los modelos de resolución más gruesa, como MERRA2, generan celdas más extensas que promedian las condiciones espaciales en una región más amplia. Esta diferencia espacial influye en la representación de la variabilidad local: los modelos de alta resolución tienden a captar mejor las fluctuaciones de pequeña escala, mientras que los de baja resolución promedian las condiciones sobre un área mayor. No obstante, una menor
+resolución espacial no implica necesariamente un mayor error. El promedio asociado a una celda más extensa no es únicamente espacial, sino que
+—dado el modo y la frecuencia de muestreo de las imágenes satelitales incorpora también una componente temporal, al integrar el paso de estructuras nubosas que se desplazan sobre el sitio de referencia. Cuando la frecuencia de muestreo es relativamente baja, este efecto de promediado puede resultar incluso deseable, al ofrecer una representación más estable del campo de irradiancia integrado sobre la zona.\\
 
 
 
@@ -541,7 +548,7 @@ Finalmente, estos resultados respaldan la aplicabilidad de estrategias de adapta
 La Figura \ref{fig:rmse15} muestra el comportamiento del rRMSE en cada sitio para los diferentes modelos de regresión utilizados. Se observa que todas las propuestas de adaptación logran reducir el rRMSE en cada sitio. Aunque en algunos casos la mejora puede ser modesta, como en YU y LQ, queda evidenciado que un simple ajuste específico puede mejorar el desempeño del modelo para una ubicación determinada. Además se puede apreciar que el grado de mejora mediante la adaptación aparenta depender del modelo de estimación empleado. Cada modelo impone un límite sobre la precisión de la serie resultante, y optimizar su salida no garantiza necesariamente un desempeño superior frente a otro modelo que, de forma natural, ya proporciona una estimación más adecuada para un sitio específico.\\
 
 
-La Figura \ref{fig:scatter-yu-01} muestra un gráfico de dispersión para la GHI medida y las los modelos de CAMS (izquierdo) y LSA-SAF (derecho) con sus correspondeintes adaptaciones usando SLR y MLP
+La Figura \ref{fig:scatter-yu-01} muestra un gráfico de dispersión para la GHI medida y las los modelos de CAMS (izquierdo) y LSA-SAF (derecho) con sus correspondientes adaptaciones usando SLR y MLP
 
 \begin{figure}
     \centering
@@ -693,6 +700,31 @@ Para este trabajo se propuso un conjunto de variables de carácter astronómico,
 \item \texttt{tcw}: Vapor de agua total en la columna atmosférica según ERA5.
 \item \texttt{2mdt}: Temperatura del punto de rocío a 2 metros sobre el suelo según ERA5.
 \end{itemize}
+
+Cabe aclarar que este conjunto inicial incluye deliberadamente variables
+astronómicas que no son independientes entre sí. En particular, el ángulo
+cenital solar (\texttt{SZA}) y la altura solar (\texttt{$\alpha$}) son
+complementarios —se vinculan mediante $\alpha = 90^\circ - \mathrm{SZA}$— y,
+por lo tanto, contienen la misma información. No se trata de un error de
+etiquetado (por ejemplo, una confusión con el ángulo acimutal), sino de una
+redundancia exacta: ambas se incorporaron al conjunto preliminar por
+completitud, dejando que la etapa de selección basada en correlación
+(Figura~\ref{fig:correlacion_filtrados}) detecte y descarte la dependencia.
+Al ser su correlación lineal perfecta, esta colinealidad es identificada y
+una de las dos variables se elimina antes del entrenamiento.
+
+Una situación análoga, aunque más sutil, ocurre entre el día del año
+(\texttt{N}) y la declinación solar ($\delta$), dado que esta última es una
+función determinística de la primera. Sin embargo, dicha relación es
+periódica y no monótona a lo largo del año, por lo que tanto el coeficiente
+de Pearson como el de Spearman resultan bajos (Tabla~\ref{tab:correlacion}) y
+la redundancia no es capturada por el filtro de correlación. En
+consecuencia, ambas variables se conservan en el conjunto final. No obstante,
+dado que \texttt{N} y $\delta$ exhiben correlaciones débiles con la GHI
+medida, su contribución al desempeño de los modelos es marginal y la
+redundancia residual no afecta las conclusiones. La eliminación explícita de
+una de ellas, o el uso de métodos de selección sensibles a dependencias no
+lineales, constituye una mejora menor a considerar en trabajos futuros.
 
 Las variables \texttt{tm}, \texttt{uw}, \texttt{dw} y \texttt{2mdt} provienen del modelo ERA5 y se encuentran disponibles a escala horaria. Si bien es técnicamente posible interpolarlas a una resolución de 15 minutos, esta operación no incorpora nueva información física, sino que introduce valores estimados cuya variabilidad depende exclusivamente del método de interpolación utilizado.
 
@@ -929,7 +961,7 @@ La Figura \ref{fig:analogiaVecinos} describe gráficamente la analogía desarrol
 
 
 
-Es decir que, este enfoque busca aprovechar correlaciones bien documentadas en los campos de irradiancia solar, impulsadas por el movimiento de nubes, el transporte de aerosoles y los sistemas meteorológicos a escala sinóptica \citep{IHSAN2024}. A diferencia de los métodos tradicionales de SA, que se limitan a variables locales dentro de una sola celda, el marco propuesto utiliza de manera innovadora la irradiancia satelital de las celdas circundantes como características de entrada para los modelos de aprendizaje automático. Hasta ahora, ningún trabajo había explorado explícitamente esta integración del contexto espacial.\\
+Es decir que, este enfoque busca aprovechar correlaciones bien documentadas en los campos de irradiancia solar, impulsadas por el movimiento de nubes, el transporte de aerosoles y los sistemas meteorológicos a escala sinóptica \citep{IHSAN2024}. A diferencia de los métodos tradicionales de SA, que se limitan a variables locales dentro de una sola celda, el marco propuesto incorpora la irradiancia satelital de las celdas circundantes como características de entrada para los modelos de aprendizaje automático. La idea de aprovechar información de celdas vecinas para caracterizar la radiación solar en un sitio no es, en sí misma, nueva: el modelo físico GL1.2 de \cite{Ceballos2004}, por ejemplo, ya evaluaba el uso de arreglos de píxeles de $3\times3$ frente a un único píxel para mejorar la estimación de la irradiancia en un punto. Existe, no obstante, una diferencia conceptual: en esos antecedentes las celdas vecinas se emplean típicamente para promediar o suavizar una única estimación, mientras que en el marco aquí propuesto cada celda circundante se incorpora como un regresor independiente, cuya contribución es ponderada por el modelo de aprendizaje automático. La novedad de este trabajo radica, por tanto, en trasladar el contexto espacial al proceso de adaptación al sitio bajo esta formulación, integración para la cual no se han encontrado antecedentes.\\
 
 
 \begin{figure}
@@ -961,7 +993,9 @@ DM = \frac{|\text{lat}p - \text{lat}{ac}|}{\Delta} + \frac{|\text{lon}p - \text{
 
 La MD permite identificar automáticamente las celdas satelitales adyacentes que rodean la celda central donde se encuentra la estación en tierra. Consideramos que esta métrica es adecuada porque, los productos de los servicios de estimación están organizados en una cuadrícula regular de latitud–longitud, formando una malla rectangular. En dicha grilla, las celdas se alinean en filas y columnas, y la MD, definida como la suma de las diferencias absolutas en latitud y longitud normalizadas por la resolución de la grilla, captura efectivamente el número de pasos necesarios para alcanzar una celda vecina tanto horizontal como verticalmente.\\
 
-Las celdas con $DM=1$ son directamente adyacentes a la celda central (es decir, al norte, sur, este u oeste), siendo las más relevantes para capturar la variabilidad espacial local de las condiciones atmosféricas. A diferencia de la distancia euclidiana, que enfatiza la proximidad radial, la MD refleja mejor las relaciones de vecindad en productos satelitales en grilla, asegurando que la información espacial utilizada para la adaptación site-specific sea consistente con la estructura regular del producto.\\
+Las celdas con $DM=1$ son directamente adyacentes a la celda central (es decir, al norte, sur, este u oeste) y constituyen el vecindario adoptado en este trabajo. A diferencia de la distancia euclidiana, que enfatiza la proximidad radial, la MD refleja mejor las relaciones de vecindad en productos satelitales en grilla, asegurando que la información espacial utilizada para la adaptación site-specific sea consistente con la estructura regular del producto.\\
+
+Cabe señalar que las cuatro celdas diagonales ($DM=2$, a $\sqrt{2}\,\Delta$ de la celda central) no se incorporaron como regresores, bajo el supuesto de que su información resulta, en gran medida, redundante respecto de la ya contenida en las celdas cardinales, dada la elevada autocorrelación espacial del campo de GHI a esta resolución. No obstante, se reconoce que bajo regímenes de advección diagonales —como el ilustrado en la Figura \ref{fig:analogiaVecinos}— una celda diagonal podría aportar información no despreciable sobre la variabilidad local. La evaluación del vecindario de Moore (incluidas las celdas diagonales) constituye, por tanto, una extensión natural de este trabajo.\\
 
 En conjunto, esta metodología permite que la adaptación del GHI al sitio integre tanto la estimación directa del producto satelital como la información de celdas vecinas, mejorando la capacidad de predicción local y la transferencia del modelo a diferentes condiciones espaciales.\\
 
@@ -1283,8 +1317,59 @@ Desde una perspectiva metodológica, incorporar una etapa de desestacionalizaci�
 Finalmente, el enfoque propuesto reafirma la idea de que la simplicidad y la interpretabilidad no son incompatibles con la precisión. Al contrario, un modelo lineal correctamente estructurado, apoyado por un tratamiento temporal adecuado de la serie, puede alcanzar un rendimiento comparable o superior al de modelos más complejos. Esto tiene profundas implicancias en la modelización de irradiancia: permite conservar la trazabilidad física de las variables, facilita la transferencia del conocimiento entre dominios geográficos y reduce la opacidad de los procesos de ajuste, todo ello sin sacrificar capacidad predictiva. En conjunto, la desestacionalización integrada dentro del proceso de adaptación al sitio constituye una alternativa sólida, transparente y científicamente defendible para mejorar las estimaciones de GHI a partir de productos satelitales o de reanálisis.
 
 
+\subsection{Síntesis comparativa de los enfoques de adaptación}\label{subsec:sintesis-enfoques}
+
+A lo largo de este capítulo se evaluaron cuatro estrategias de adaptación al sitio: (i) la adaptación con una única variable descriptiva (Sección \ref{sec:01}), (ii) la incorporación de múltiples variables regresoras seleccionadas por su relevancia física y estadística (Sección \ref{sec:02}), (iii) el uso de celdas satelitales adyacentes al sitio de interés (Sección \ref{sec:03}) y (iv) la desestacionalización de la serie mediante la irradiancia de cielo despejado (Sección \ref{sec:04}). Esta subsección sintetiza su desempeño relativo con el fin de ofrecer una visión integrada, sin reproducir el detalle ya presentado en las tablas correspondientes.
 
 
+Para que la comparación sea homogénea, se restringe el análisis a dos estaciones que representan los extremos del rango climático y topográfico estudiado: \textbf{Sa} (Salta capital), ubicada en el valle de Lerma, un entorno preandino con marcada nubosidad convectiva y, sistemáticamente, uno de los sitios de mayor error en este trabajo; y \textbf{Ero} (El Rosal), emplazada en altura dentro del dominio andino, con predominancia de cielo despejado y fuerte estructura estacional de la irradiancia. Ambos sitios acotan, respectivamente, el peor y el mejor escenario para los modelos de adaptación, por lo que permiten ilustrar tanto el techo como el piso de las mejoras alcanzables.
+
+Asimismo, la síntesis se construye sobre el producto \mbox{LSA-SAF} a resolución horaria. Esta elección no es arbitraria: \mbox{LSA-SAF} es el único producto evaluado bajo los cuatro enfoques, por lo que constituye la única base común que admite una comparación directa entre ellos. Los enfoques que también se evaluaron sobre ERA5 alcanzaron, en algunos casos, mejoras adicionales —en particular, la combinación de celdas adyacentes con temperatura sobre ERA5 obtuvo el menor error en Ero ($r\mathrm{RMSE}=17.6\%$, Tabla \ref{tab:metrics-final})—, pero dichos valores no son extrapolables al resto de las estrategias y se discuten por separado en las secciones respectivas.
+
+
+
+\begin{table}[ht]
+\centering
+\caption[Síntesis del desempeño de los cuatro enfoques de adaptación.]{Síntesis comparativa del desempeño de los cuatro enfoques de adaptación al sitio para el producto \mbox{LSA-SAF} a resolución horaria, discriminado por cada regresor empleado, en las estaciones Sa (valle) y Ero (altiplano). Las métricas $r\mathrm{MBE}$ y $r\mathrm{RMSE}$ se expresan en porcentaje relativo a la media de GHI de cada sitio. Los valores se reproducen de las Tablas \ref{tab:metrics-as-1}, \ref{tab:metricas_3_2}, \ref{tab:metrics-as-4} y \ref{tab:metricas_4_1}; no corresponden a nuevos cálculos. El enfoque de desestacionalización se evaluó únicamente con regresión lineal (formulación E3), por lo que no dispone de variantes MLP y XGB.}
+\label{tab:sintesis-enfoques}
+\begin{tabular}{llcccc}
+\hline
+ & & \multicolumn{2}{c}{\textbf{Sa} (valle)} & \multicolumn{2}{c}{\textbf{Ero} (altiplano)} \\
+\cline{3-6}
+Enfoque & Regresor & $r\mathrm{MBE}$ & $r\mathrm{RMSE}$ & $r\mathrm{MBE}$ & $r\mathrm{RMSE}$ \\
+\hline
+LSA-SAF sin adaptar & ---       & 17.9 & 35.7 & -7.7 & 24.0 \\
+\hline
+1. Una variable          & SLR & 4.3 & 30.5 & 2.5 & 22.8 \\
+                         & MLP & 2.5 & 30.2 & 9.6 & 24.6 \\
+                         & XGB & 4.1 & 30.6 & 2.2 & 22.6 \\
+\hline
+2. Múltiples regresores  & MLR & 4.1 & 30.1 & 1.1 & 18.9 \\
+                         & MLP & 3.4 & 29.4 & 0.7 & 18.8 \\
+                         & XGB & 3.8 & 31.0 & 0.5 & 20.0 \\
+\hline
+3. Celdas adyacentes ($DM=1$) & MLR & 2.6 & 31.9 & 1.9 & 18.8 \\
+                         & MLP & 1.4 & 31.0 & 1.5 & 18.6 \\
+                         & XGB & 3.1 & 30.3 & 1.6 & 18.8 \\
+\hline
+4. Desestacionalización  & Lineal (E3) & 4.1 & 31.1 & 1.3 & 18.9 \\
+\hline
+\end{tabular}
+\end{table}
+
+
+El primer resultado transversal es que, con independencia del enfoque, todos corrigen de manera efectiva el sesgo sistemático del producto satelital. En Sa, el $r\mathrm{MBE}$ se reduce desde $17.9\%$ —una sobreestimación pronunciada— hasta valores en torno a $4\%$; en Ero, la subestimación original de $-7.7\%$ se transforma en un sesgo prácticamente nulo (entre $+1$ y $+2\%$). La eliminación del sesgo es, por tanto, la ganancia más robusta y consistente del proceso de adaptación, y se obtiene incluso con la formulación más simple.
+
+
+Un segundo resultado transversal es que, dentro de un mismo enfoque, la elección del algoritmo de regresión apenas modifica el desempeño. En el enfoque de múltiples regresores, por ejemplo, el $r\mathrm{RMSE}$ en Sa oscila entre $29.4\%$ (MLP) y $31.0\%$ (XGB), y en el enfoque de celdas adyacentes las tres variantes coinciden en torno a $18.8\%$ en Ero. Las diferencias entre regresores son, en general, menores que las diferencias entre enfoques, lo que refuerza una conclusión recurrente de este trabajo: el factor determinante de la mejora es la estructura de la información incorporada —variables físicamente relevantes, contexto espacial o remoción de la estacionalidad— y no la complejidad del algoritmo. La única excepción visible es el modelo MLP aplicado al enfoque de una variable en Ero, donde el error aumenta a $24.6\%$ con un sesgo de $9.6\%$, comportamiento atribuible a la inestabilidad y al sobreajuste del MLP cuando se entrena con un único regresor, en línea con lo discutido en la Sección \ref{sec:01}.
+
+
+El comportamiento del $r\mathrm{RMSE}$, en cambio, es marcadamente dependiente del sitio. En Ero, el paso de una única variable a cualquiera de los tres enfoques restantes produce una reducción sustancial del error (de $22.8\%$ a aproximadamente $18.9\%$), mientras que los enfoques de múltiples regresores, celdas adyacentes y desestacionalización resultan prácticamente equivalentes entre sí. Este patrón es coherente con la naturaleza del sitio: en un entorno de cielo despejado y fuerte ciclo estacional, tanto la incorporación de variables físicamente informativas como la remoción explícita de la componente estacional capturan la misma fracción de variabilidad estructurada, y por ello convergen a un desempeño similar.
+
+
+En Sa, por el contrario, los cuatro enfoques se estabilizan en una banda estrecha ($30$–$32\%$) y los enfoques más elaborados no superan al más simple; de hecho, la estrategia de celdas adyacentes resulta ligeramente menos precisa ($31.9\%$) que la adaptación con una sola variable ($30.5\%$). Antes que una inconsistencia, este resultado debe interpretarse como evidencia de un piso de error de origen estructural: la variabilidad convectiva de submalla y los efectos orográficos del valle de Lerma no son representables a partir de la información disponible en la grilla satelital, de modo que ni la información espacial adicional ni la desestacionalización aportan margen de mejora una vez corregido el sesgo. Esta lectura es consistente con lo señalado en la Sección \ref{sec:01} respecto de las limitaciones estructurales de la estimación satelital sobre esta zona.
+
+En conjunto, la comparación permite formular una recomendación operativa matizada. Cuando el error del producto satelital está dominado por un sesgo sistemático y por variabilidad estacional —como en sitios de altura con predominancia de cielo despejado—, los enfoques que incorporan estructura física o temporal (múltiples regresores, celdas adyacentes o desestacionalización) ofrecen el mayor beneficio, siendo intercambiables en términos de precisión y diferenciándose principalmente por su costo de implementación e interpretabilidad. Cuando el error está dominado por procesos locales de alta frecuencia no resueltos por la grilla —como en valles con nubosidad convectiva—, la adaptación logra remover el sesgo pero encuentra un límite difícilmente franqueable por cualquiera de las estrategias, lo que sugiere que las mejoras futuras en esos contextos dependerán de productos satelitales de mayor resolución espacio-temporal antes que de refinamientos en la etapa de adaptación.
 
 \section{Validación cruzada espacial de los modelos de adaptación al sitio}
 

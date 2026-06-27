@@ -130,7 +130,7 @@ Entendiendo que SA se define como el proceso de corrección de las series de irr
 \begin{itemize}
 \item Corrige sesgos sistemáticos y errores aleatorios.
 \item Su desempeño depende en gran medida de las condiciones locales.
-\item  Aproximadamente 1 año de mediciones suele ser suficiente para entrenar modelos robustos.
+\item  Aproximadamente 1 año de mediciones suele ser suficiente para entrenar modelos robustos, sin que ello garantice su estabilidad a lo largo de toda la serie.
 \item Puede aplicarse a productos satelitales o de reanálisis en múltiples escalas temporales.
 \item Existen herramientas abiertas que facilitan su implementación.
 \end{itemize}
@@ -152,7 +152,20 @@ Entendiendo que SA se define como el proceso de corrección de las series de irr
 \item Alcance espacial limitado: la corrección es esencialmente local.
 \item No todos los métodos se generalizan entre regiones.
 \item Algunos modelos (especialmente los de ML) pueden requerir alta capacidad computacional.
+\item Representatividad temporal limitada: el ajuste se calibra sobre un
+período de solapamiento acotado y se extrapola a toda la serie, bajo el
+supuesto de que la relación entre estimaciones y mediciones permanece
+estable en el tiempo.
 \end{itemize}
+
+Esta última limitación merece atención particular. Dado que la corrección se determina a partir de un período de solapamiento breve —típicamente del orden de un año— y luego se aplica a series que pueden abarcar décadas, su validez descansa en un supuesto de estacionariedad temporal que no siempre se cumple.
+Diversos factores pueden invalidarlo: la degradación progresiva de los
+sensores satelitales —que en algunos casos puede ser relativamente rápida—,
+los cambios de plataforma o de generación de satélite, las modificaciones en los algoritmos de recuperación, y las variaciones de largo plazo en las
+condiciones atmosféricas, como la carga de aerosoles. Si el período de ajuste no es representativo del rango de condiciones presentes en el resto de la serie, o si el sesgo del producto deriva con el tiempo, la corrección
+calibrada durante el solapamiento perderá precisión al extrapolarse, e
+incluso podría introducir error. Por ello, la representatividad del período de solapamiento constituye un factor crítico, y la estabilidad temporal del
+ajuste no debería asumirse sin un análisis específico.
 
 \section{Modelos de Aprendizaje Automático aplicados a SA} \label{MLM}
 Aunque Arthur Samuel no fue el primero en publicar un artículo que empleara el término ``aprendizaje automático'', se le atribuye la creación y definición de este concepto como el campo especializado que conocemos hoy. En su trabajo `Algunos estudios sobre aprendizaje automático usando el juego de damas' \cite{samuel1959}, presentó el aprendizaje automático como una rama de la informática que permite a las computadoras mejorar su desempeño sin necesidad de ser programadas de forma explícita.

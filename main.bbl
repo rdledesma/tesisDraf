@@ -1,4 +1,4 @@
-\begin{thebibliography}{136}
+\begin{thebibliography}{137}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -123,6 +123,14 @@ X.~Ceamanos, D.~Carrer, and J.-L. Roujean.
 \newblock \doi{10.5194/acp-14-8209-2014}.
 \newblock URL \url{https://acp.copernicus.org/articles/14/8209/2014/}.
 \newblock Available: \url{https://doi.org/10.5194/acp-14-8209-2014}.
+
+\bibitem[Ceballos et~al.(2004)Ceballos, Bottino, and de~Souza]{Ceballos2004}
+Juan~C. Ceballos, Marcus~J. Bottino, and Jaidete~M. de~Souza.
+\newblock A simplified physical model for assessing solar radiation over brazil
+  using {GOES} 8 visible imagery.
+\newblock \emph{Journal of Geophysical Research: Atmospheres}, 109\penalty0
+  (D2):\penalty0 D02211, 2004.
+\newblock \doi{10.1029/2003JD003531}.
 
 \bibitem[Cebecauer and {\v{S}}{\'u}ri(2012)]{Cebecauer2012}
 Tomas Cebecauer and M~{\v{S}}{\'u}ri.
