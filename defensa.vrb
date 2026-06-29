@@ -1,0 +1,30 @@
+\frametitle{Síntesis comparativa — la conclusión matizada}
+\scriptsize
+  \begin{columns}[T]
+    \column{0.5\linewidth}
+    LSA-SAF horario, dos extremos: \textbf{Sa} (valle, peor caso) y \textbf{Ero} (altiplano, mejor caso).
+    \vspace{0.3em}
+    \begin{tikzpicture}
+    \begin{axis}[
+        width=\linewidth,height=4.4cm,
+        ybar,bar width=8pt,ymin=0,ymax=40,
+        ylabel={\scriptsize rRMSE (\%)},
+        symbolic x coords={Crudo,E1,E2-mult,E3-vec,E4-des},
+        xtick=data,
+        x tick label style={font=\tiny,rotate=30,anchor=east},
+        ylabel style={font=\scriptsize},
+        legend style={font=\tiny,at={(0.5,1.16)},anchor=north,legend columns=2,draw=none},
+        enlarge x limits=0.12]
+      \addplot[fill=accent,draw=accent] coordinates {(Crudo,35.7)(E1,30.5)(E2-mult,30.1)(E3-vec,31.9)(E4-des,31.1)};
+      \addplot[fill=primary,draw=primary] coordinates {(Crudo,24.0)(E1,22.8)(E2-mult,18.9)(E3-vec,18.8)(E4-des,18.9)};
+      \legend{Sa (valle), Ero (altiplano)}
+    \end{axis}
+    \end{tikzpicture}
+    \column{0.5\linewidth}
+    \begin{itemize}
+      \item \textbf{El sesgo siempre se corrige}: en Sa, MBE 17.9\%$\to\sim$4\%; en Ero, $-7.7\%\to\sim$+1\%.
+      \item Dentro de un enfoque, \textbf{el regresor casi no cambia el resultado}.
+      \item En \textbf{Ero} (cielo claro, fuerte estacionalidad), E2/E3/E4 convergen y mejoran mucho sobre E1.
+      \item En \textbf{Sa} (valle convectivo) hay un \textbf{piso estructural} ($\sim$30–32\%): ni el espacio ni la desestacionalización lo superan.
+    \end{itemize}
+  \end{columns}

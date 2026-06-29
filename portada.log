@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.23)  23 SEP 2025 11:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.5.26)  27 JUN 2026 21:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **portada.tex
 (./portada.tex
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-22>
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
 
 ! LaTeX Error: Missing \begin{document}.
 
@@ -123,6 +123,13 @@ Missing character: There is no C in font nullfont!
 Missing character: There is no I in font nullfont!
 Missing character: There is no A in font nullfont!
 Missing character: There is no S in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no X in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no S in font nullfont!
 
 ! LaTeX Error: \begin{center} on input line 2 ended by \end{large}.
 
@@ -150,8 +157,8 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-<inserted text> \newtitle 
-                          
+<argument> \newtitle 
+                     
 l.14         \textbf{\MakeUppercase{\newtitle}}
                                                \\
 The control sequence at the end of the top line
@@ -226,8 +233,8 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-<inserted text> \newauthor 
-                           
+<argument> \newauthor 
+                      
 l.20         \textbf{\MakeUppercase{\newauthor}}
                                                 \\
 The control sequence at the end of the top line
@@ -288,6 +295,39 @@ Overfull \hbox (10.00003pt too wide) in paragraph at lines 22--22
  \/cmr/m/n/10 ^^Sa 
  []
 
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no S in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -304,15 +344,16 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no 2 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 2 in font nullfont!
-Missing character: There is no 5 in font nullfont!
+Missing character: There is no 6 in font nullfont!
 
 ! LaTeX Error: \begin{center} on input line 2 ended by \end{large}.
 
@@ -320,7 +361,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.26     \end{large}
+l.27     \end{large}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -334,11 +375,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 35 strings out of 474222
- 629 string characters out of 5748733
- 1923975 words of memory out of 5000000
- 22388 multiletter control sequences out of 15000+600000
- 558377 words of font info for 37 fonts, out of 8000000 for 9000
+ 32 strings out of 478287
+ 530 string characters out of 5849289
+ 290007 words of memory out of 5000000
+ 18327 multiletter control sequences out of 15000+600000
+ 469567 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,1n,32p,135b,162s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 23i,1n,32p,134b,155s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
